@@ -2,10 +2,8 @@ import { Link } from 'react-router-dom';
 import {
   Wifi,
   Cable,
-  Globe,
   Monitor,
   Server,
-  Shield,
   Volume2,
   Building2,
   Home as HomeIcon,
