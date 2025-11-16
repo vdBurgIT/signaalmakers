@@ -42,11 +42,24 @@
     <link rel="canonical" href="https://signaalmakers.nl/" />
 
     <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
     <!-- Performance optimization -->
     <link rel="modulepreload" href="/src/main.tsx" />
+
+    <!-- Inline critical CSS for initial render -->
+    <style>
+      /* Critical CSS for above-the-fold content */
+      *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
+      html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif}
+      body{margin:0;line-height:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#1f2937}
+      #root{min-height:100vh;display:flex;flex-direction:column}
+      /* Loading indicator */
+      .loader{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border:4px solid #e5e7eb;border-top-color:#2563eb;border-radius:50%;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
   </head>
   <body>
     <div id="root"></div>
