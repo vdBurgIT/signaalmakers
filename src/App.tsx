@@ -15,23 +15,22 @@ function ScrollToTop() {
   return null;
 }
 
-// Lazy load pages for better performance
-const WifiNetwerk = lazy(() => import('./pages/services/WifiNetwerk'));
-const Databekabeling = lazy(() => import('./pages/services/Databekabeling'));
-const InternetTelefonie = lazy(() => import('./pages/services/InternetTelefonie'));
-const ModerneWerkplek = lazy(() => import('./pages/services/ModerneWerkplek'));
-const HostingDomein = lazy(() => import('./pages/services/HostingDomein'));
-const VeiligOnline = lazy(() => import('./pages/services/VeiligOnline'));
-const Audio = lazy(() => import('./pages/services/Audio'));
-const Zakelijk = lazy(() => import('./pages/Zakelijk'));
-const Particulier = lazy(() => import('./pages/Particulier'));
-const ContentCreators = lazy(() => import('./pages/ContentCreators'));
-const Blog = lazy(() => import('./pages/Blog'));
-const BlogPost = lazy(() => import('./pages/BlogPost'));
-const OverOns = lazy(() => import('./pages/OverOns'));
-const FAQ = lazy(() => import('./pages/FAQ'));
-const StatusSupport = lazy(() => import('./pages/StatusSupport'));
-const Contact = lazy(() => import('./pages/Contact'));
+const WifiNetwerk = lazy(() => import(/* webpackChunkName: "wifi" */ './pages/services/WifiNetwerk'));
+const Databekabeling = lazy(() => import(/* webpackChunkName: "data" */ './pages/services/Databekabeling'));
+const InternetTelefonie = lazy(() => import(/* webpackChunkName: "internet" */ './pages/services/InternetTelefonie'));
+const ModerneWerkplek = lazy(() => import(/* webpackChunkName: "werkplek" */ './pages/services/ModerneWerkplek'));
+const HostingDomein = lazy(() => import(/* webpackChunkName: "hosting" */ './pages/services/HostingDomein'));
+const VeiligOnline = lazy(() => import(/* webpackChunkName: "veilig" */ './pages/services/VeiligOnline'));
+const Audio = lazy(() => import(/* webpackChunkName: "audio" */ './pages/services/Audio'));
+const Zakelijk = lazy(() => import(/* webpackChunkName: "zakelijk" */ './pages/Zakelijk'));
+const Particulier = lazy(() => import(/* webpackChunkName: "particulier" */ './pages/Particulier'));
+const ContentCreators = lazy(() => import(/* webpackChunkName: "creators" */ './pages/ContentCreators'));
+const Blog = lazy(() => import(/* webpackChunkName: "blog" */ './pages/Blog'));
+const BlogPost = lazy(() => import(/* webpackChunkName: "blogpost" */ './pages/BlogPost'));
+const OverOns = lazy(() => import(/* webpackChunkName: "over" */ './pages/OverOns'));
+const FAQ = lazy(() => import(/* webpackChunkName: "faq" */ './pages/FAQ'));
+const StatusSupport = lazy(() => import(/* webpackChunkName: "status" */ './pages/StatusSupport'));
+const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
 
 function App() {
   return (

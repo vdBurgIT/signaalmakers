@@ -28,6 +28,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #1f2937;
   background-color: #ffffff;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
 }
 
 .prose h2 {
