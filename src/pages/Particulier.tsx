@@ -1,11 +1,19 @@
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 import { Home, Wifi, Volume2, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function Particulier() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Particuliere ICT Diensten - WiFi Thuis"
+        description="ICT-diensten voor particulieren. WiFi-installatie in uw woning, tuinkantoor en schuur. Professionele audio-installaties voor thuis."
+        keywords="particulier wifi, wifi thuis, tuinkantoor netwerk, audio installatie thuis, wifi woning"
+        url="https://signaalmakers.nl/particulier"
+      />
+      <div>
       <Hero
         title="Wifi-installatie voor particulieren"
         subtitle="Professionele wifi en audio-installaties voor thuis. Van wifi in uw hele woning tot internet in tuinkantoor en schuur."
@@ -292,5 +300,6 @@ export default function Particulier() {
         </div>
       </section>
     </div>
+    </>
   );
 }

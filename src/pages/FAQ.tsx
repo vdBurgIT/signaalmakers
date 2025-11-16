@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SEO from '../components/SEO';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BackgroundOverlay from '../components/BackgroundOverlay';
@@ -99,7 +100,14 @@ export default function FAQ() {
   ];
 
   return (
-    <div>
+    <>
+      <SEO
+        title="Veelgestelde Vragen (FAQ)"
+        description="Antwoorden op veelgestelde vragen over wifi-installatie, netwerk bekabeling, kosten, werkgebied en onze diensten."
+        keywords="faq, veelgestelde vragen, wifi kosten, installatie vragen, netwerk vragen"
+        url="https://signaalmakers.nl/faq"
+      />
+      <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <BackgroundOverlay variant="mixed" density="light" color="blue" />
@@ -162,5 +170,6 @@ export default function FAQ() {
         </div>
       </section>
     </div>
+    </>
   );
 }

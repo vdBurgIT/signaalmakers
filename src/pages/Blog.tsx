@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function Blog() {
@@ -48,7 +49,14 @@ export default function Blog() {
   ];
 
   return (
-    <div>
+    <>
+      <SEO
+        title="Blog - ICT Tips en Nieuws"
+        description="Lees onze blog voor tips over wifi-netwerken, databekabeling, cybersecurity en ICT-oplossingen. Praktische adviezen van onze specialisten."
+        keywords="blog, ict tips, wifi advies, netwerk tips"
+        url="https://signaalmakers.nl/blog"
+      />
+      <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <BackgroundOverlay variant="data" density="light" color="blue" />
@@ -98,5 +106,6 @@ export default function Blog() {
         </div>
       </section>
     </div>
+    </>
   );
 }

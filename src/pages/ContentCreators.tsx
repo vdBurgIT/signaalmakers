@@ -1,10 +1,18 @@
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 import { Wifi, Upload, Video, CheckCircle2 } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function ContentCreators() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Content Creators - Netwerk voor Streaming"
+        description="Stabiel netwerk en wifi voor content creators en livestreamers. Professionele bekabeling en studio-netwerk voor uploads en gaming."
+        keywords="content creator netwerk, streaming wifi, studio netwerk, gaming internet, livestream verbinding"
+        url="https://signaalmakers.nl/content-creators"
+      />
+      <div>
       <Hero
         title="Netwerk en wifi voor content creators"
         subtitle="Stabiel internet, bekabeld netwerk en wifi voor streamen en uploaden in heel Nederland."
@@ -415,5 +423,6 @@ export default function ContentCreators() {
         </div>
       </section>
     </div>
+    </>
   );
 }

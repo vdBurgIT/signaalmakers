@@ -1,10 +1,18 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Monitor, CheckCircle2 } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function ModerneWerkplek() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Moderne Werkplek - Cloud & Office 365"
+        description="Complete moderne werkplek oplossingen. Cloud workspace, Office 365, Microsoft 365 en secure remote working voor bedrijven."
+        keywords="moderne werkplek, cloud workspace, office 365, microsoft 365, remote working"
+        url="https://signaalmakers.nl/diensten/moderne-werkplek"
+      />
+      <div>
       <Hero
         title="Moderne Werkplek"
         subtitle="Complete werkplekinrichting met Microsoft 365 en professionele hardware via onze IT-partner. Signaalmakers verzorgt de installatie."
@@ -173,5 +181,6 @@ export default function ModerneWerkplek() {
         </div>
       </section>
     </div>
+    </>
   );
 }

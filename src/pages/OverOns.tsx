@@ -1,10 +1,18 @@
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 import { User, Target, Ear, Ruler, Wrench, CheckCircle } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function OverOns() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Over Ons"
+        description="Leer meer over Signaalmakers. Professionele ICT-dienstverlener gespecialiseerd in wifi-netwerken, databekabeling en IT-oplossingen."
+        keywords="over signaalmakers, ict specialist, wifi monteur, netwerk specialist"
+        url="https://signaalmakers.nl/over-ons"
+      />
+      <div>
       <Hero
         title="Over Signaalmakers"
         subtitle="Vakmanschap en eerlijkheid in netwerk- en IT-installaties. Zo simpel is het."
@@ -179,5 +187,6 @@ export default function OverOns() {
         </div>
       </section>
     </div>
+    </>
   );
 }

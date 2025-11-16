@@ -1,10 +1,18 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Globe, Phone, CheckCircle2, Wifi } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function InternetTelefonie() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Internet & Telefonie - Zakelijke Verbindingen"
+        description="Zakelijke internet en telefonie oplossingen. VoIP, zakelijke telefonie, glasvezel internet en betrouwbare verbindingen voor bedrijven."
+        keywords="zakelijke telefonie, voip, internet zakelijk, glasvezel, bedrijfsinternet"
+        url="https://signaalmakers.nl/diensten/internet-telefonie"
+      />
+      <div>
       <Hero
         title="Internet & Telefonie"
         subtitle="Betrouwbare internetverbindingen en moderne cloudtelefonie via onze vaste IT-partner. Signaalmakers verzorgt de installatie op locatie."
@@ -225,5 +233,6 @@ export default function InternetTelefonie() {
         </div>
       </section>
     </div>
+    </>
   );
 }

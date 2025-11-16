@@ -1,10 +1,18 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Shield, CheckCircle2 } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function VeiligOnline() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Veilig Online - Cybersecurity Oplossingen"
+        description="Cybersecurity oplossingen voor bedrijven. Firewalls, VPN, antivirus, backup en beveiligingsadvies voor veilig online werken."
+        keywords="cybersecurity, firewall, vpn, antivirus, beveiliging, online veiligheid"
+        url="https://signaalmakers.nl/diensten/veilig-online"
+      />
+      <div>
       <Hero
         title="Veilig Online & IT-beheer"
         subtitle="Bescherm uw netwerk met professionele beveiligingsoplossingen via onze IT-partner. Signaalmakers verzorgt de implementatie op locatie."
@@ -206,5 +214,6 @@ export default function VeiligOnline() {
         </div>
       </section>
     </div>
+    </>
   );
 }

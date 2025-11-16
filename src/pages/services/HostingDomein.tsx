@@ -1,10 +1,18 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Server, CheckCircle2 } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function HostingDomein() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Hosting & Domeinnaam Registratie"
+        description="Professionele webhosting, domeinnaam registratie, email hosting en website hosting. Betrouwbare hosting voor bedrijven."
+        keywords="hosting, domeinnaam, webhosting, email hosting, domeinregistratie"
+        url="https://signaalmakers.nl/diensten/hosting-domein"
+      />
+      <div>
       <Hero
         title="Hosting & Domein"
         subtitle="Veilige hosting, domeinen en SSL-certificaten via onze IT-partner. Signaalmakers koppelt, test en documenteert alles."
@@ -224,5 +232,6 @@ export default function HostingDomein() {
         </div>
       </section>
     </div>
+    </>
   );
 }

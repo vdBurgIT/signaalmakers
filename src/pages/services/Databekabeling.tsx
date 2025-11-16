@@ -1,10 +1,18 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Cable, Server, CheckCircle2 } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Databekabeling() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Databekabeling - Cat6 & Cat6A Installatie"
+        description="Professionele databekabeling Cat6 en Cat6A voor bedrijven en particulieren. Nette netwerkbekabeling, patchkasten en serverkasten."
+        keywords="databekabeling, cat6, cat6a, netwerkbekabeling, structured cabling, patchkast"
+        url="https://signaalmakers.nl/diensten/databekabeling"
+      />
+      <div>
       <Hero
         title="Professionele databekabeling en patchkasten"
         subtitle="Netwerkbekabeling Cat6 en Cat6A, nette patchkasten en serverkasten voor een toekomstbestendig bedrijfsnetwerk."
@@ -195,5 +203,6 @@ export default function Databekabeling() {
         </div>
       </section>
     </div>
+    </>
   );
 }

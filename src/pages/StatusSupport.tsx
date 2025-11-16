@@ -1,9 +1,17 @@
 import { ExternalLink, Info } from 'lucide-react';
+import SEO from '../components/SEO';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function StatusSupport() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Status & Support"
+        description="Bekijk de huidige status van onze diensten en krijg ondersteuning. Support voor wifi-netwerken, databekabeling en ICT-diensten."
+        keywords="status, support, ondersteuning, helpdesk, service status"
+        url="https://signaalmakers.nl/status-support"
+      />
+      <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <BackgroundOverlay variant="mixed" density="light" color="blue" />
@@ -122,5 +130,6 @@ export default function StatusSupport() {
         </div>
       </section>
     </div>
+    </>
   );
 }

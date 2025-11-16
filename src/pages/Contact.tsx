@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,7 +28,14 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <>
+      <SEO
+        title="Contact - Neem Contact Op"
+        description="Neem contact op met Signaalmakers voor professionele ICT-diensten. Plan een intake, vraag een offerte aan of stel uw vraag. Wij helpen u graag verder."
+        keywords="contact, offerte aanvragen, ICT advies, wifi installatie aanvragen, netwerk advies, contact signaalmakers"
+        url="https://signaalmakers.nl/contact"
+      />
+      <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <BackgroundOverlay variant="network" density="light" color="blue" />
@@ -267,5 +275,6 @@ export default function Contact() {
         </div>
       </section>
     </div>
+    </>
   );
 }

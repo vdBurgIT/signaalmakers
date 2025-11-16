@@ -1,10 +1,18 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Volume2, CheckCircle2 } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Audio() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Audio Installaties - Professioneel Geluid"
+        description="Professionele audio-installaties voor zakelijk en particulier. Achtergrondmuziek, plafondluidsprekers, multiroom systemen."
+        keywords="audio installatie, achtergrondmuziek, plafondluidsprekers, multiroom audio, geluidssysteem"
+        url="https://signaalmakers.nl/diensten/audio"
+      />
+      <div>
       <Hero
         title="Professionele audio-installaties"
         subtitle="Audio-installaties voor bedrijven en particulieren. Van achtergrondmuziek in winkel tot multiroom-systemen thuis."
@@ -288,5 +296,6 @@ export default function Audio() {
         </div>
       </section>
     </div>
+    </>
   );
 }

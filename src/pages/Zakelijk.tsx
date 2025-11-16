@@ -1,11 +1,19 @@
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 import { Building2, Store, Package, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function Zakelijk() {
   return (
-    <div>
+    <>
+      <SEO
+        title="Zakelijke ICT Oplossingen - MKB Netwerken"
+        description="Professionele ICT-diensten voor het MKB. WiFi-netwerken, databekabeling, internet & telefonie, hosting en moderne werkplek oplossingen voor kantoren en bedrijven."
+        keywords="zakelijke ICT, bedrijfsnetwerk, kantoor wifi, professionele databekabeling, zakelijk internet, MKB ICT"
+        url="https://signaalmakers.nl/zakelijk"
+      />
+      <div>
       <Hero
         title="Zakelijke wifi en netwerkinstallaties"
         subtitle="Professionele wifi-installatie en databekabeling voor bedrijven, kantoren, winkels en horeca. Wij zorgen voor stabiele netwerkverbindingen."
@@ -254,5 +262,6 @@ export default function Zakelijk() {
         </div>
       </section>
     </div>
+    </>
   );
 }
