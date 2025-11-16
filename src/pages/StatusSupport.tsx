@@ -1,0 +1,126 @@
+import { ExternalLink, Info } from 'lucide-react';
+import BackgroundOverlay from '../components/BackgroundOverlay';
+
+export default function StatusSupport() {
+  return (
+    <div>
+      <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
+          <BackgroundOverlay variant="mixed" density="light" color="blue" />
+        </div>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Status & Support
+            </h1>
+            <p className="text-lg text-gray-300">
+              Status van diensten en toegang tot support via onze IT-partner
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white relative overflow-hidden">
+        <BackgroundOverlay variant="network" density="light" color="mixed" />
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-12">
+              <div className="flex gap-3">
+                <Info className="w-6 h-6 text-blue-500 flex-shrink-0" />
+                <div>
+                  <h3 className="font-bold text-blue-900 mb-2">Support via IT-partner</h3>
+                  <p className="text-blue-800">
+                    Voor diensten als internet, telefonie, Microsoft 365 en IT-beheer verloopt support via het portaal van onze vaste IT-partner. Daar kunt u ook de status van diensten bekijken en supporttickets aanmaken.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <a
+                href="#"
+                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#FF6A00]"
+              >
+                <div className="w-12 h-12 bg-[#FF6A00] rounded-lg flex items-center justify-center mb-4">
+                  <ExternalLink className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Status van diensten</h3>
+                <p className="text-gray-600 mb-4">
+                  Bekijk de real-time status van uw internet, telefonie en andere diensten.
+                </p>
+                <span className="text-[#FF6A00] font-semibold">Bekijk status →</span>
+              </a>
+
+              <a
+                href="#"
+                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#FF6A00]"
+              >
+                <div className="w-12 h-12 bg-[#FF6A00] rounded-lg flex items-center justify-center mb-4">
+                  <ExternalLink className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Supportportaal</h3>
+                <p className="text-gray-600 mb-4">
+                  Meld storingen, stel vragen en volg uw tickets in het supportportaal.
+                </p>
+                <span className="text-[#FF6A00] font-semibold">Open supportportaal →</span>
+              </a>
+
+              <a
+                href="#"
+                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#FF6A00]"
+              >
+                <div className="w-12 h-12 bg-[#FF6A00] rounded-lg flex items-center justify-center mb-4">
+                  <ExternalLink className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Kennisbank</h3>
+                <p className="text-gray-600 mb-4">
+                  Handleidingen, instructies en veelgestelde vragen in de kennisbank.
+                </p>
+                <span className="text-[#FF6A00] font-semibold">Open kennisbank →</span>
+              </a>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h2 className="text-2xl font-bold text-[#0E243A] mb-6">Hardware-installaties door Signaalmakers</h2>
+              <p className="text-gray-600 mb-4">
+                Voor vragen of problemen met de door Signaalmakers geïnstalleerde hardware (wifi, bekabeling, audio, intercom) kunt u direct contact met ons opnemen:
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold">
+                    1
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#0E243A]">Telefonisch</p>
+                    <p className="text-gray-600">Bel ons op +31 6 12345678</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold">
+                    2
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#0E243A]">Via e-mail</p>
+                    <p className="text-gray-600">Stuur een mail naar support@signaalmakers.nl</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold">
+                    3
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#0E243A]">Via WhatsApp</p>
+                    <p className="text-gray-600">App ons voor snelle vragen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
