@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
+import SEO from '../components/SEO';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -91,7 +92,14 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <>
+      <SEO
+        title="Signaalmakers - ICT & Netwerk Oplossingen voor Bedrijven en Particulieren"
+        description="Professionele ICT-diensten: WiFi-netwerken, databekabeling, internet & telefonie, hosting, moderne werkplek oplossingen en cybersecurity. Voor zakelijk en particulier."
+        keywords="ICT diensten, WiFi netwerk, databekabeling, internet telefonie, hosting, domein, moderne werkplek, cybersecurity, veilig online, wifi monteur, netwerkinstallatie, wifi installatie"
+        url="https://signaalmakers.nl/"
+      />
+      <div>
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-64 h-64 bg-[#FF6A00] rounded-full blur-3xl"></div>
@@ -445,5 +453,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://signaalmakers.nl/sitemap.xml
+
+# Disallow admin or private sections if any
+# Disallow: /admin/
+# Disallow: /private/

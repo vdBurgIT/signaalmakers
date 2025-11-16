@@ -1,4 +1,5 @@
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { Wifi, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
@@ -35,8 +36,15 @@ export default function WifiNetwerk() {
   ];
 
   return (
-    <div>
-      <Hero
+    <>
+      <SEO
+        title="Professionele WiFi-installatie en Netwerk Oplossingen"
+        description="Complete wifi-netwerken met volledige dekking. Van wifi-meting tot installatie, wij zorgen voor een netwerk dat optimaal werkt. Professionele access points voor zakelijk en particulier."
+        keywords="wifi installatie, professionele wifi, wifi netwerk, access points, wifi meting, netwerk installatie, zakelijk wifi, wifi monteur"
+        url="https://signaalmakers.nl/diensten/wifi-netwerk"
+      />
+      <div>
+        <Hero
         title="Professionele wifi-installatie"
         subtitle="Complete wifi-netwerken met volledige dekking. Van wifi-meting tot installatie, wij zorgen voor een netwerk dat optimaal werkt."
         primaryButtonText="Plan een wifi-meting"
@@ -207,5 +215,6 @@ export default function WifiNetwerk() {
         </div>
       </section>
     </div>
+    </>
   );
 }
