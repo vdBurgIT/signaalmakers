@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Signal, Instagram, Facebook, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,9 +7,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center gap-2 text-xl font-bold mb-4">
-              <Signal className="w-8 h-8 text-[#FF6A00]" />
-              <span>Signaalmakers</span>
+            <div className="flex items-center mb-4">
+              <img
+                src="/Transparent-01.png"
+                alt="Signaalmakers Logo"
+                className="h-16 w-auto"
+                loading="lazy"
+              />
             </div>
             <p className="text-gray-300 mb-4">
               Wifi, netwerk & audio die gewoon werkt

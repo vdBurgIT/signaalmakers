@@ -165,19 +165,29 @@ export default function Home() {
             </div>
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="bg-gradient-to-br from-[#FF6A00] to-[#E55F00] p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Wifi className="w-16 h-16 text-white" />
-                    </div>
-                    <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Cable className="w-16 h-16 text-white" />
-                    </div>
-                    <div className="bg-gradient-to-br from-green-500 to-green-600 p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Volume2 className="w-16 h-16 text-white" />
-                    </div>
-                    <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Server className="w-16 h-16 text-white" />
+                <div className="flex flex-col items-center gap-8">
+                  <div className="transform hover:scale-105 transition-transform duration-300">
+                    <img
+                      src="/Transparent-01.png"
+                      alt="Signaalmakers Logo"
+                      className="w-80 h-auto drop-shadow-2xl"
+                      loading="eager"
+                    />
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 w-full">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-gradient-to-br from-[#FF6A00] to-[#E55F00] p-5 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                        <Wifi className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-5 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                        <Cable className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="bg-gradient-to-br from-green-500 to-green-600 p-5 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                        <Volume2 className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-5 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                        <Server className="w-12 h-12 text-white" />
+                      </div>
                     </div>
                   </div>
                 </div>

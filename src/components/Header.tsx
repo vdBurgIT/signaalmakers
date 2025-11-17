@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Signal } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,9 +27,13 @@ export default function Header() {
     <header className="bg-[#0E243A] text-white sticky top-0 z-50 shadow-lg">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-xl font-bold">
-            <Signal className="w-8 h-8 text-[#FF6A00]" />
-            <span>Signaalmakers</span>
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src="/Transparent-01.png"
+              alt="Signaalmakers Logo"
+              className="h-12 w-auto"
+              loading="eager"
+            />
           </Link>
 
           <div className="hidden lg:flex items-center gap-6">
