@@ -16,6 +16,7 @@ import {
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import { blogPosts } from '../data/blogPosts';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -382,7 +383,7 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {blogPosts.map((post, index) => (
+            {blogPosts.slice(0, 3).map((post, index) => (
               <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
                 <div className="h-48 bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] flex items-center justify-center">
                   <Cable className="w-16 h-16 text-white/30 group-hover:text-white/50 transition-colors duration-300" />

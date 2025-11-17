@@ -413,12 +413,12 @@ export default function ContentCreators() {
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               Je kunt ons benaderen voor een vrijblijvende intake, een plan op maat en een complete uitvoering, zodat jouw techniek met je meegroeit terwijl jij aan je kanaal en je community bouwt.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
             >
               Neem contact op
-            </a>
+            </Link>
           </div>
         </div>
       </section>

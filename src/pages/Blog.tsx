@@ -1,52 +1,10 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import BackgroundOverlay from '../components/BackgroundOverlay';
+import { blogPosts } from '../data/blogPosts';
 
 export default function Blog() {
-  const posts = [
-    {
-      title: '5 redenen waarom Cat6A beter is dan Cat5e',
-      excerpt: 'Overweegt u nieuwe bekabeling voor uw kantoor of woning? Cat6A lijkt misschien duurder, maar biedt aanzienlijke voordelen op de lange termijn. In dit artikel leggen we uit waarom Cat6A vaak de slimme keuze is.',
-      date: '15 maart 2025',
-      category: 'Netwerk',
-      slug: 'cat6a-vs-cat5e',
-    },
-    {
-      title: 'Wifi voor thuiswerkers: wat heb je echt nodig?',
-      excerpt: 'Sinds de opkomst van thuiswerken zijn de eisen aan thuisnetwerken enorm gestegen. Videobellingen, grote bestanden uploaden en stabiele verbindingen zijn essentieel. Wij leggen uit welke oplossingen écht werken.',
-      date: '8 maart 2025',
-      category: 'Wifi',
-      slug: 'wifi-thuiswerkers',
-    },
-    {
-      title: 'Gastennetwerk: waarom het essentieel is voor elk bedrijf',
-      excerpt: 'Een apart gastennetwerk lijkt misschien een luxe, maar het is eigenlijk een basisvoorziening voor elk modern bedrijf. Bescherm uw bedrijfsnetwerk door bezoekers een apart netwerk te geven.',
-      date: '1 maart 2025',
-      category: 'Beveiliging',
-      slug: 'gastennetwerk-essentieel',
-    },
-    {
-      title: 'VLAN-segmentatie uitgelegd: wat is het en waarom heb je het nodig?',
-      excerpt: 'VLAN-segmentatie klinkt technisch, maar het principe is simpel: verdeel uw netwerk in aparte zones voor betere beveiliging en prestaties. Ontdek hoe VLAN\'s werken en waarom ze belangrijk zijn.',
-      date: '22 februari 2025',
-      category: 'Netwerk',
-      slug: 'vlan-segmentatie-uitgelegd',
-    },
-    {
-      title: 'Mesh wifi vs professionele access points: wat is beter?',
-      excerpt: 'Mesh-systemen zijn populair voor thuisgebruik, maar zijn ze ook geschikt voor zakelijk gebruik? We vergelijken mesh wifi met professionele access points en leggen uit wanneer je welke oplossing nodig hebt.',
-      date: '15 februari 2025',
-      category: 'Wifi',
-      slug: 'mesh-vs-access-points',
-    },
-    {
-      title: 'De voordelen van PoE: stroom en data over één kabel',
-      excerpt: 'Power over Ethernet (PoE) maakt het mogelijk om apparaten van stroom te voorzien via de netwerkkabel. Handig, maar wat zijn de mogelijkheden en beperkingen? We leggen het uit.',
-      date: '8 februari 2025',
-      category: 'Techniek',
-      slug: 'voordelen-poe',
-    },
-  ];
+  const posts = blogPosts;
 
   return (
     <>
