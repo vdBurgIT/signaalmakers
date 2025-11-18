@@ -7,18 +7,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-<<<<<<< HEAD
-            <div className="mb-4">
-              <img src="/images/logo/logo_signaalmakers.png" alt="Signaalmakers Logo" className="h-10 w-auto" />
-=======
             <div className="flex items-center mb-6">
               <img
-                src="/Transparent-01.png"
+                src="/images/logo/logo_signaalmakers.png"
                 alt="Signaalmakers Logo"
-                className="h-24 md:h-28 w-auto"
+                className="h-10 md:h-12 w-auto"
                 loading="lazy"
               />
->>>>>>> c8fd5f4ccc537170401139db51c392f48431ef3f
             </div>
             <p className="text-gray-300 mb-4">
               Wifi, netwerk & audio die gewoon werkt
