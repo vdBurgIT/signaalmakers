@@ -31,7 +31,7 @@ export default function Header() {
             <img
               src="/Transparent-01.png"
               alt="Signaalmakers Logo"
-              className="h-12 w-auto"
+              className="h-20 md:h-24 w-auto"
               loading="eager"
             />
           </Link>

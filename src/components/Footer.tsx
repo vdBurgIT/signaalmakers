@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-6">
               <img
                 src="/Transparent-01.png"
                 alt="Signaalmakers Logo"
-                className="h-16 w-auto"
+                className="h-24 md:h-28 w-auto"
                 loading="lazy"
               />
             </div>
