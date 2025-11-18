@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import { Wifi, Upload, Video, CheckCircle2 } from 'lucide-react';

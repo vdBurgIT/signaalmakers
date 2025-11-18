@@ -23,7 +23,7 @@ export default function Audio() {
       <section className="py-16 bg-white relative overflow-hidden">
         <BackgroundOverlay variant="audio" density="medium" color="blue" />
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-[1400px] mx-auto">
             <div className="flex gap-6 mb-12">
               <Volume2 className="w-12 h-12 text-[#FF6A00] flex-shrink-0" />
               <div>
@@ -214,12 +214,12 @@ export default function Audio() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Populaire audio-installaties
-            </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
+            Populaire audio-installaties
+          </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+          <div className="max-w-[1400px] mx-auto">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg p-6 shadow">
                 <h3 className="text-xl font-bold text-[#0E243A] mb-4">Achtergrondmuziek retail</h3>
                 <p className="text-gray-600 mb-4">
@@ -263,27 +263,6 @@ export default function Audio() {
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-4">Thuisbioscoop audio-installatie</h3>
-                <p className="text-gray-600 mb-4">
-                  Voor een thuisbioscoop of tv-kamer installeren we surround-systemen of hoogwaardige stereo-oplossingen met inbouw- of plafondluidsprekers. We stemmen de geluidsinstallatie af op de ruimte, zodat u films, series en muziek optimaal beleeft.
-                </p>
-                <ul className="space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Surround-systemen of stereo-oplossingen</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Inbouw- of plafondluidsprekers</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Optimale akoestiek afgestemd op de ruimte</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow">
                 <h3 className="text-xl font-bold text-[#0E243A] mb-4">Audio-installatie tuin en terras</h3>
                 <p className="text-gray-600 mb-4">
                   Met weerbestendige buitenluidsprekers geniet u van muziek op het terras, in de tuin of onder de veranda. De speakers worden zo geplaatst dat ze goed hoorbaar zijn op de gewenste plek, maar zo min mogelijk richting buren stralen. Vaak koppelen we de buitenzone aan uw bestaande binneninstallatie.
@@ -310,7 +289,7 @@ export default function Audio() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-[1400px] mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-8 text-center">
               Werkwijze van Signaalmakers
             </h2>
@@ -360,7 +339,7 @@ export default function Audio() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-[1400px] mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
               Veelgestelde vragen over audio-installaties
             </h2>
