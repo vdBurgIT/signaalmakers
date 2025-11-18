@@ -1,17 +1,49 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+=======
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+>>>>>>> c8fd5f4ccc537170401139db51c392f48431ef3f
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setIsServicesOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="bg-[#0E243A] text-white sticky top-0 z-50 shadow-lg">
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
+<<<<<<< HEAD
           <Link to="/" className="flex items-center">
             <img src="/images/logo/logo_signaalmakers.png" alt="Signaalmakers Logo" className="h-12 w-auto" />
+=======
+          <Link to="/" className="flex items-center gap-2 -my-3">
+            <img
+              src="/Transparent-01.png"
+              alt="Signaalmakers Logo"
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain"
+              loading="eager"
+            />
+>>>>>>> c8fd5f4ccc537170401139db51c392f48431ef3f
           </Link>
 
           <div className="hidden lg:flex items-center gap-6">

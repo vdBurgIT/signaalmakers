@@ -25,11 +25,12 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
+      injectRegister: 'auto',
       manifest: {
         name: 'Signaalmakers - ICT & Netwerk Oplossingen',
         short_name: 'Signaalmakers',
         description: 'Professionele ICT-diensten voor bedrijven en particulieren',
-        theme_color: '#2563eb',
+        theme_color: '#0E243A',
         background_color: '#ffffff',
         display: 'standalone',
         icons: [
@@ -93,7 +94,10 @@ export default defineConfig({
   ],
   optimizeDeps: {
     exclude: ['lucide-react'],
-    include: ['react', 'react-dom', 'react-router-dom'],
+    include: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
+    esbuildOptions: {
+      target: 'esnext',
+    },
   },
   base: '/', // Voor custom domain signaalmakers.nl
 
@@ -117,10 +121,22 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'helmet': ['react-helmet-async'],
-          'icons': ['lucide-react'],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-vendor';
+            }
+            if (id.includes('lucide-react')) {
+              return 'icons';
+            }
+            if (id.includes('react-helmet-async')) {
+              return 'helmet';
+            }
+            return 'vendor';
+          }
+          if (id.includes('/pages/services/')) {
+            return 'services';
+          }
         },
         assetFileNames: 'assets/[name]-[hash][extname]',
         chunkFileNames: 'assets/[name]-[hash].js',
