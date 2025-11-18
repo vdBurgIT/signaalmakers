@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Signal, Instagram, Facebook, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,9 +7,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center gap-2 text-xl font-bold mb-4">
-              <Signal className="w-8 h-8 text-[#FF6A00]" />
-              <span>Signaalmakers</span>
+            <div className="mb-4">
+              <img src="/images/logo/logo_signaalmakers.png" alt="Signaalmakers Logo" className="h-10 w-auto" />
             </div>
             <p className="text-gray-300 mb-4">
               Wifi, netwerk & audio die gewoon werkt
@@ -40,7 +39,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/31612345678"
+                href="https://wa.me/31645251333"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#FF6A00] transition-colors"
@@ -121,8 +120,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-[#FF6A00]" />
-                <a href="tel:+31612345678" className="hover:text-[#FF6A00] transition-colors">
-                  +31 6 12345678
+                <a href="tel:+31645251333" className="hover:text-[#FF6A00] transition-colors">
+                  +31 6 45251333
                 </a>
               </li>
               <li className="flex items-center gap-2">
