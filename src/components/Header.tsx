@@ -27,11 +27,11 @@ export default function Header() {
     <header className="bg-[#0E243A] text-white sticky top-0 z-50 shadow-lg">
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 -my-2">
+          <Link to="/" className="flex items-center gap-2 -my-3">
             <img
               src="/Transparent-01.png"
               alt="Signaalmakers Logo"
-              className="h-16 md:h-20 w-auto object-contain"
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain"
               loading="eager"
             />
           </Link>
