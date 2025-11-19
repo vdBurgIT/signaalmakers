@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -20,26 +20,20 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/signaalmakers/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#FF6A00] transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.linkedin.com/company/signaalmakers"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#FF6A00] transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[#FF6A00] transition-colors"
+                aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -48,6 +42,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#FF6A00] transition-colors"
+                aria-label="WhatsApp"
               >
                 <MessageCircle className="w-5 h-5" />
               </a>
