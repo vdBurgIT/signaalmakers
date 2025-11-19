@@ -18,12 +18,14 @@ export default defineConfig({
       ext: '.gz',
       threshold: 512,
       deleteOriginFile: false,
+      compressionOptions: { level: 9 },
     }),
     viteCompression({
       algorithm: 'brotliCompress',
       ext: '.br',
       threshold: 512,
       deleteOriginFile: false,
+      compressionOptions: { level: 11 },
     }),
     VitePWA({
       registerType: 'autoUpdate',
@@ -137,9 +139,10 @@ export default defineConfig({
     include: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
     esbuildOptions: {
       target: 'esnext',
+      legalComments: 'none',
     },
   },
-  base: '/', // Voor custom domain signaalmakers.nl
+  base: '/',
 
   build: {
     // Production optimizations

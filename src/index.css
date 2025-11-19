@@ -135,6 +135,16 @@ svg {
   height: auto;
 }
 
+/* Prevent CLS for images */
+img {
+  content-visibility: auto;
+}
+
+/* Optimize SVG rendering */
+svg {
+  shape-rendering: geometricPrecision;
+}
+
 a,
 button {
   -webkit-tap-highlight-color: transparent;

@@ -40,11 +40,7 @@ function App() {
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">
-            <Suspense fallback={
-              <div className="flex items-center justify-center min-h-screen bg-white">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#FF6A00]"></div>
-              </div>
-            }>
+            <Suspense fallback={<div className="loader"></div>}>
               <Routes>
                 <Route path="/" element={<Home />} />
 
