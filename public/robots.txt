@@ -5,6 +5,12 @@ Allow: /
 # Sitemap
 Sitemap: https://signaalmakers.nl/sitemap.xml
 
-# Disallow admin or private sections if any
-# Disallow: /admin/
-# Disallow: /private/
+# Google bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Crawl delay
+Crawl-delay: 0

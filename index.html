@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
     <!-- Primary Meta Tags -->
     <title>Signaalmakers - ICT & Netwerk Oplossingen voor Bedrijven en Particulieren</title>
@@ -50,12 +50,16 @@
     <link rel="canonical" href="https://signaalmakers.nl/" />
 
     <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/images/logo/logo_signaalmakers.png" as="image" fetchpriority="high" />
 
     <!-- Performance optimization -->
     <link rel="modulepreload" href="/src/main.tsx" />
-    <link rel="prefetch" href="/src/pages/Home.tsx" as="script" />
 
     <!-- Inline critical CSS for initial render -->
     <style>

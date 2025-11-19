@@ -109,14 +109,20 @@ export default defineConfig({
       compress: {
         drop_console: true,
         drop_debugger: true,
-        passes: 2,
+        passes: 3,
         pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.trace'],
+        unsafe: true,
+        unsafe_comps: true,
+        unsafe_math: true,
+        unsafe_methods: true,
       },
       mangle: {
         safari10: true,
+        toplevel: true,
       },
       format: {
         comments: false,
+        ecma: 2020,
       },
     },
     rollupOptions: {
@@ -149,6 +155,9 @@ export default defineConfig({
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
     assetsInlineLimit: 4096,
+    modulePreload: {
+      polyfill: true,
+    },
   },
 
   server: {
