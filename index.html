@@ -64,6 +64,87 @@
     <!-- Performance optimization -->
     <link rel="modulepreload" href="/src/main.tsx" />
 
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Signaalmakers",
+      "description": "Professionele WiFi-netwerken, databekabeling en audio-installaties voor bedrijven en particulieren",
+      "url": "https://signaalmakers.nl",
+      "telephone": "+31-XXXXXXXXX",
+      "email": "info@signaalmakers.nl",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NL",
+        "addressRegion": "Zuid-Holland"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.9225",
+        "longitude": "4.47917"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Zuid-Holland"
+        },
+        {
+          "@type": "Place",
+          "name": "Noord-Brabant"
+        },
+        {
+          "@type": "Place",
+          "name": "Utrecht"
+        },
+        {
+          "@type": "Place",
+          "name": "Gelderland"
+        },
+        {
+          "@type": "Place",
+          "name": "Overijssel"
+        }
+      ],
+      "priceRange": "€€",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "sameAs": [
+        "https://www.linkedin.com/company/signaalmakers",
+        "https://www.facebook.com/signaalmakers"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ICT & Netwerk Diensten",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "WiFi Netwerk Installatie",
+              "description": "Professionele WiFi-netwerken met volledige dekking voor kantoor en thuis"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Databekabeling",
+              "description": "Cat6 en Cat6A netwerkbekabeling voor bedrijven"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Audio-installaties",
+              "description": "Professionele audio-systemen voor zakelijk en particulier gebruik"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
     <!-- Inline critical CSS for initial render -->
     <style>
       /* Critical CSS for above-the-fold content */

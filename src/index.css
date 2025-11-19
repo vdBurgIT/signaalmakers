@@ -42,11 +42,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #1f2937;
   background-color: #ffffff;
-  font-display: swap;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeSpeed;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   touch-action: manipulation;
+  font-feature-settings: "kern" 1;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
 }
 
 /* Improve touch targets for mobile */
@@ -63,6 +65,24 @@ body {
 @font-face {
   font-family: system-ui;
   font-display: swap;
+}
+
+/* Performance optimizations for animations */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Force GPU acceleration for transforms */
+.hover\:scale-105:hover,
+.hover\:scale-110:hover,
+.hover\:-translate-y-1:hover,
+.hover\:-translate-y-2:hover {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .prose h2 {
