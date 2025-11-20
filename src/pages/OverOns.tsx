@@ -32,13 +32,13 @@ export default function OverOns() {
                 </h2>
                 <div className="text-lg text-gray-600 space-y-4">
                   <p>
-                    Signaalmakers is opgericht door Kevin Froger. Al jarenlang werkt hij in de praktijk met netwerken, wifi, databekabeling en professionele audio-installaties. Naast zijn werk in de audio- en eventwereld heeft hij bij bedrijven en particulieren complete netwerken aangelegd en meegedacht over praktische IT-oplossingen. Die ervaring heeft hij samengevoegd in Signaalmakers, zodat hij nu één aanspreekpunt is voor alles rondom wifi, netwerk en audio op locatie.
+                    Signaalmakers is opgericht door Kevin Froger. Al jarenlang werkt hij in de praktijk met netwerken, <a href="/diensten/wifi-netwerk">wifi</a>, <a href="/diensten/databekabeling">databekabeling</a> en professionele <a href="/diensten/audio">audio-installaties</a>. Naast zijn werk in de audio- en eventwereld heeft hij bij <a href="/zakelijk">bedrijven</a> en <a href="/particulier">particulieren</a> complete netwerken aangelegd en meegedacht over praktische IT-oplossingen. Die ervaring heeft hij samengevoegd in Signaalmakers, zodat hij nu één aanspreekpunt is voor alles rondom wifi, netwerk en audio op locatie.
                   </p>
                   <p>
                     Wij geloven in een andere aanpak dan het snelle werk: rustig luisteren naar wat u écht nodig heeft, meten in plaats van gokken en installaties opleveren waar u de komende 10–15 jaar zo min mogelijk omkijken naar heeft. Geen grote beloftes, geen verborgen kosten, maar gewoon eerlijk en netjes uitgevoerd vakwerk.
                   </p>
                   <p>
-                    We werken samen met een vaste IT-partner voor diensten als internet, telefonie en Microsoft 365. Zo heeft u voor alles één vertrouwd aanspreekpunt, terwijl wij ons volledig kunnen focussen op wat we het beste kunnen: betrouwbare installaties op locatie.
+                    We werken samen met een vaste IT-partner voor diensten als <a href="/diensten/internet-telefonie">internet, telefonie</a> en Microsoft 365. Zo heeft u voor alles één vertrouwd aanspreekpunt, terwijl wij ons volledig kunnen focussen op wat we het beste kunnen: betrouwbare installaties op locatie.
                   </p>
                 </div>
               </div>

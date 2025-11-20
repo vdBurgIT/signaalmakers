@@ -29,7 +29,7 @@ export default function Zakelijk() {
               Wifi-installatie voor elk type bedrijf
             </h2>
             <p className="text-lg text-gray-600">
-              Of u nu een klein kantoor heeft of een groot bedrijfspand, wij leveren zakelijke wifi-oplossingen op maat. Van wifi-meting tot complete netwerkinstallatie.
+              Of u nu een klein kantoor heeft of een groot bedrijfspand, wij leveren zakelijke <a href="/diensten/wifi-netwerk">wifi-oplossingen</a> op maat. Van wifi-meting tot complete <a href="/diensten/databekabeling">netwerkinstallatie</a>.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function Zakelijk() {
               <Building2 className="w-12 h-12 text-[#FF6A00] mb-4" />
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wifi voor kantoren</h3>
               <p className="text-gray-600 mb-4">
-                Van 5 tot 100+ werkplekken. Professionele wifi-installatie, databekabeling en complete zakelijke netwerken.
+                Van 5 tot 100+ werkplekken. Professionele <a href="/diensten/wifi-netwerk">wifi-installatie</a>, <a href="/diensten/databekabeling">databekabeling</a> en complete zakelijke netwerken.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -206,7 +206,7 @@ export default function Zakelijk() {
               Zakelijke wifi en netwerkdiensten
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center">
-              Alles wat uw bedrijf nodig heeft voor een professioneel netwerk en stabiele internetverbinding.
+              Alles wat uw bedrijf nodig heeft voor een professioneel netwerk en stabiele internetverbinding. <a href="/contact">Neem contact op</a> voor een vrijblijvend adviesgesprek.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">

@@ -29,7 +29,7 @@ export default function Particulier() {
               Professionele wifi-installatie thuis
             </h2>
             <p className="text-lg text-gray-600">
-              Als u thuiswerkt of gewoon overal in huis stabiel internet wilt, verdient u professionele kwaliteit. Geen dode hoeken meer, geen bufferende video's. Gewoon wifi die overal werkt.
+              Als u thuiswerkt of gewoon overal in huis stabiel internet wilt, verdient u professionele kwaliteit. Geen dode hoeken meer, geen bufferende video's. Gewoon <a href="/diensten/wifi-netwerk">wifi</a> die overal werkt.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function Particulier() {
               <Home className="w-12 h-12 text-[#FF6A00] mb-4" />
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wifi in hele woning</h3>
               <p className="text-gray-600 mb-4">
-                Stabiel internet in elke kamer, van kelder tot zolder en van voor tot achter. Geen wegvallende verbindingen of dode hoeken meer.
+                Stabiel <a href="/diensten/wifi-netwerk">internet</a> in elke kamer, van kelder tot zolder en van voor tot achter. Geen wegvallende verbindingen of dode hoeken meer.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -90,7 +90,7 @@ export default function Particulier() {
               <Volume2 className="w-12 h-12 text-[#FF6A00] mb-4" />
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Audio-installatie huis en tuin</h3>
               <p className="text-gray-600 mb-4">
-                Muziek door het hele huis en in de tuin. Bedienbaar vanaf uw smartphone of tablet.
+                Muziek door het hele huis en in de tuin. Bedienbaar vanaf uw smartphone of tablet. <a href="/diensten/audio">Meer over audio-installaties</a>.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -122,7 +122,7 @@ export default function Particulier() {
               Herkenbare wifi-problemen thuis
             </h2>
             <p className="text-lg text-gray-300 mb-12 text-center">
-              Herkent u een van deze wifi-problemen? Signaalmakers lost het op met een professionele wifi-installatie.
+              Herkent u een van deze wifi-problemen? Signaalmakers lost het op met een professionele <a href="/diensten/wifi-netwerk">wifi-installatie</a>. <a href="/contact">Neem contact op</a> voor advies.
             </p>
 
             <div className="space-y-6">

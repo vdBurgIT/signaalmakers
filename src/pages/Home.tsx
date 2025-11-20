@@ -196,7 +196,7 @@ export default function Home() {
               Wat wij doen
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Van wifi-installatie tot complete netwerkbekabeling. Signaalmakers zorgt voor stabiele internetverbindingen en professionele audio-oplossingen in heel Nederland.
+              Van <a href="/diensten/wifi-netwerk">wifi-installatie</a> tot complete <a href="/diensten/databekabeling">netwerkbekabeling</a>. Signaalmakers zorgt voor stabiele internetverbindingen en professionele <a href="/diensten/audio">audio-oplossingen</a> in heel Nederland.
             </p>
           </div>
 
