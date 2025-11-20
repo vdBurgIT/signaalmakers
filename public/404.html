@@ -158,22 +158,15 @@
       /* Prevent FOUT */
       .font-loading{visibility:hidden}
     </style>
+
+    <!-- SPA Redirect Script for GitHub Pages -->
+    <script>
+      // Store the actual path that was requested
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+    </script>
   </head>
   <body>
     <div id="root"></div>
-
-    <!-- SPA Redirect Handler for GitHub Pages -->
-    <script>
-      // Check if we were redirected from a 404
-      (function(){
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.pathname) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-    </script>
-
     <script type="module" src="/src/main.tsx"></script>
 
     <!-- Google Tag Manager - Loaded after page interaction for better performance -->
