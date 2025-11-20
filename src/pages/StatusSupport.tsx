@@ -10,6 +10,10 @@ export default function StatusSupport() {
         description="Bekijk de huidige status van onze diensten en krijg ondersteuning. Support voor wifi-netwerken, databekabeling en ICT-diensten."
         keywords="status, support, ondersteuning, helpdesk, service status"
         url="https://signaalmakers.nl/status-support"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Status & Support', item: 'https://signaalmakers.nl/status-support' }
+        ]}
       />
       <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">

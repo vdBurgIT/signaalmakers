@@ -11,6 +11,11 @@ export default function Databekabeling() {
         description="Professionele databekabeling Cat6 en Cat6A voor bedrijven en particulieren. Nette netwerkbekabeling, patchkasten en serverkasten."
         keywords="databekabeling, cat6, cat6a, netwerkbekabeling, structured cabling, patchkast"
         url="https://signaalmakers.nl/diensten/databekabeling"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'Databekabeling', item: 'https://signaalmakers.nl/diensten/databekabeling' }
+        ]}
       />
       <div>
       <Hero

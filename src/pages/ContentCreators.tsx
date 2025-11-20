@@ -12,6 +12,10 @@ export default function ContentCreators() {
         description="Stabiel netwerk en wifi voor content creators en livestreamers. Professionele bekabeling en studio-netwerk voor uploads en gaming."
         keywords="content creator netwerk, streaming wifi, studio netwerk, gaming internet, livestream verbinding"
         url="https://signaalmakers.nl/content-creators"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Content Creators', item: 'https://signaalmakers.nl/content-creators' }
+        ]}
       />
       <div>
       <Hero

@@ -21,6 +21,11 @@ export default function BlogPost() {
         description={post.excerpt}
         keywords={`${post.category.toLowerCase()}, blog, ict, technologie`}
         url={`https://signaalmakers.nl/blog/${post.slug}`}
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Blog', item: 'https://signaalmakers.nl/blog' },
+          { name: post.title, item: `https://signaalmakers.nl/blog/${post.slug}` }
+        ]}
       />
       <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">

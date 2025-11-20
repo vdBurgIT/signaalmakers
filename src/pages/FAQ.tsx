@@ -106,6 +106,10 @@ export default function FAQ() {
         description="Antwoorden op veelgestelde vragen over wifi-installatie, netwerk bekabeling, kosten, werkgebied en onze diensten."
         keywords="faq, veelgestelde vragen, wifi kosten, installatie vragen, netwerk vragen"
         url="https://signaalmakers.nl/faq"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'FAQ', item: 'https://signaalmakers.nl/faq' }
+        ]}
       />
       <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">

@@ -1,5 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 
+interface BreadcrumbItem {
+  name: string;
+  item: string;
+}
+
 interface SEOProps {
   title?: string;
   description?: string;
@@ -7,6 +12,7 @@ interface SEOProps {
   image?: string;
   url?: string;
   type?: string;
+  breadcrumbs?: BreadcrumbItem[];
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -23,6 +29,7 @@ const SEO = ({
   image = 'https://signaalmakers.nl/og-image.jpg',
   url = 'https://signaalmakers.nl/',
   type = 'website',
+  breadcrumbs,
   article,
 }: SEOProps) => {
   const fullTitle = title.includes('Signaalmakers') ? title : `${title} | Signaalmakers`;
@@ -105,6 +112,22 @@ const SEO = ({
               }),
         })}
       </script>
+
+      {/* Breadcrumb JSON-LD */}
+      {breadcrumbs && breadcrumbs.length > 0 && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: breadcrumbs.map((crumb, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              name: crumb.name,
+              item: crumb.item,
+            })),
+          })}
+        </script>
+      )}
     </Helmet>
   );
 };

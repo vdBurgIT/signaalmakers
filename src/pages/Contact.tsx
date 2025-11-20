@@ -34,6 +34,10 @@ export default function Contact() {
         description="Neem contact op met Signaalmakers voor professionele ICT-diensten. Plan een intake, vraag een offerte aan of stel uw vraag. Wij helpen u graag verder."
         keywords="contact, offerte aanvragen, ICT advies, wifi installatie aanvragen, netwerk advies, contact signaalmakers"
         url="https://signaalmakers.nl/contact"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Contact', item: 'https://signaalmakers.nl/contact' }
+        ]}
       />
       <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">

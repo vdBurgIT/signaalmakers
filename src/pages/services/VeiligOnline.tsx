@@ -11,6 +11,11 @@ export default function VeiligOnline() {
         description="Cybersecurity oplossingen voor bedrijven. Firewalls, VPN, antivirus, backup en beveiligingsadvies voor veilig online werken."
         keywords="cybersecurity, firewall, vpn, antivirus, beveiliging, online veiligheid"
         url="https://signaalmakers.nl/diensten/veilig-online"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'Veilig Online', item: 'https://signaalmakers.nl/diensten/veilig-online' }
+        ]}
       />
       <div>
       <Hero

@@ -11,6 +11,11 @@ export default function Audio() {
         description="Professionele audio-installaties en geluidsinstallaties in heel Nederland. Van achtergrondmuziek winkel tot sportveld audio, vergaderruimtes en multiroom systemen thuis."
         keywords="audio installatie, geluidsinstallatie, achtergrondmuziek, plafondluidsprekers, multiroom audio, geluidssysteem, audio sportveld, omroepinstallatie, tribune geluid, sportclub audio"
         url="https://signaalmakers.nl/diensten/audio"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'Audio', item: 'https://signaalmakers.nl/diensten/audio' }
+        ]}
       />
       <div>
       <Hero

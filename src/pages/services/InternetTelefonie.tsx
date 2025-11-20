@@ -11,6 +11,11 @@ export default function InternetTelefonie() {
         description="Zakelijke internet en telefonie oplossingen. VoIP, zakelijke telefonie, glasvezel internet en betrouwbare verbindingen voor bedrijven."
         keywords="zakelijke telefonie, voip, internet zakelijk, glasvezel, bedrijfsinternet"
         url="https://signaalmakers.nl/diensten/internet-telefonie"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'Internet & Telefonie', item: 'https://signaalmakers.nl/diensten/internet-telefonie' }
+        ]}
       />
       <div>
       <Hero

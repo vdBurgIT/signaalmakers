@@ -42,6 +42,11 @@ export default function WifiNetwerk() {
         description="Complete wifi-netwerken met volledige dekking. Van wifi-meting tot installatie, wij zorgen voor een netwerk dat optimaal werkt. Professionele access points voor zakelijk en particulier."
         keywords="wifi installatie, professionele wifi, wifi netwerk, access points, wifi meting, netwerk installatie, zakelijk wifi, wifi monteur"
         url="https://signaalmakers.nl/diensten/wifi-netwerk"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'WiFi Netwerk', item: 'https://signaalmakers.nl/diensten/wifi-netwerk' }
+        ]}
       />
       <div>
         <Hero

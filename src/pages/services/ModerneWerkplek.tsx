@@ -11,6 +11,11 @@ export default function ModerneWerkplek() {
         description="Complete moderne werkplek oplossingen. Cloud workspace, Office 365, Microsoft 365 en secure remote working voor bedrijven."
         keywords="moderne werkplek, cloud workspace, office 365, microsoft 365, remote working"
         url="https://signaalmakers.nl/diensten/moderne-werkplek"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'Moderne Werkplek', item: 'https://signaalmakers.nl/diensten/moderne-werkplek' }
+        ]}
       />
       <div>
       <Hero

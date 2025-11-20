@@ -11,6 +11,11 @@ export default function HostingDomein() {
         description="Professionele webhosting, domeinnaam registratie, email hosting en website hosting. Betrouwbare hosting voor bedrijven."
         keywords="hosting, domeinnaam, webhosting, email hosting, domeinregistratie"
         url="https://signaalmakers.nl/diensten/hosting-domein"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
+          { name: 'Hosting & Domein', item: 'https://signaalmakers.nl/diensten/hosting-domein' }
+        ]}
       />
       <div>
       <Hero

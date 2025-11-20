@@ -12,6 +12,10 @@ export default function Particulier() {
         description="ICT-diensten voor particulieren. WiFi-installatie in uw woning, tuinkantoor en schuur. Professionele audio-installaties voor thuis."
         keywords="particulier wifi, wifi thuis, tuinkantoor netwerk, audio installatie thuis, wifi woning"
         url="https://signaalmakers.nl/particulier"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Particulier', item: 'https://signaalmakers.nl/particulier' }
+        ]}
       />
       <div>
       <Hero

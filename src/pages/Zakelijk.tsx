@@ -12,6 +12,10 @@ export default function Zakelijk() {
         description="Professionele ICT-diensten voor het MKB. WiFi-netwerken, databekabeling, internet & telefonie, hosting en moderne werkplek oplossingen voor kantoren en bedrijven."
         keywords="zakelijke ICT, bedrijfsnetwerk, kantoor wifi, professionele databekabeling, zakelijk internet, MKB ICT"
         url="https://signaalmakers.nl/zakelijk"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Zakelijk', item: 'https://signaalmakers.nl/zakelijk' }
+        ]}
       />
       <div>
       <Hero

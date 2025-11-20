@@ -13,6 +13,10 @@ export default function Blog() {
         description="Lees onze blog voor tips over wifi-netwerken, databekabeling, cybersecurity en ICT-oplossingen. Praktische adviezen van onze specialisten."
         keywords="blog, ict tips, wifi advies, netwerk tips"
         url="https://signaalmakers.nl/blog"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Blog', item: 'https://signaalmakers.nl/blog' }
+        ]}
       />
       <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">

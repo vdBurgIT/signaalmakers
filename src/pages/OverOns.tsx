@@ -11,6 +11,10 @@ export default function OverOns() {
         description="Leer meer over Signaalmakers. Professionele ICT-dienstverlener gespecialiseerd in wifi-netwerken, databekabeling en IT-oplossingen."
         keywords="over signaalmakers, ict specialist, wifi monteur, netwerk specialist"
         url="https://signaalmakers.nl/over-ons"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: 'Over Ons', item: 'https://signaalmakers.nl/over-ons' }
+        ]}
       />
       <div>
       <Hero
