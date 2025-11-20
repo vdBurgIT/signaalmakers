@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
-import { Video, CheckCircle2, ChevronDown, ChevronUp, PlaySquare } from 'lucide-react';
+import { Video, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
@@ -211,7 +211,12 @@ export default function ContentCreators() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6">
-                <PlaySquare className="w-10 h-10 text-[#FF6A00] mb-3" />
+                <img
+                  src="/images/icons/youtube-signaalmakers.png"
+                  alt="YouTube"
+                  className="h-10 w-auto mb-3"
+                  loading="lazy"
+                />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">YouTube (Live & premieres)</h3>
                 <p className="text-gray-600">
                   Encoder-instellingen, constante upload en een netwerk dat langdurige streams aankan, bijvoorbeeld voor talkshows, podcasts of lange sessies.
