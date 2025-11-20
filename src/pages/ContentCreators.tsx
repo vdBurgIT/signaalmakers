@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
-import { Video, CheckCircle2, ChevronDown, ChevronUp, Tv, Music, PlaySquare, Lock, Monitor, Zap } from 'lucide-react';
+import { Video, CheckCircle2, ChevronDown, ChevronUp, PlaySquare } from 'lucide-react';
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
@@ -185,7 +185,12 @@ export default function ContentCreators() {
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-gray-50 rounded-lg p-6">
-                <Tv className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <img
+                  src="/images/icons/twitch-signaalmakers.png"
+                  alt="Twitch"
+                  className="h-10 w-auto mb-3"
+                  loading="lazy"
+                />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">Twitch</h3>
                 <p className="text-gray-600">
                   Stabiele uplink, geschikte bitrate, basis OBS-profiel, scenes en audio. We zorgen dat je verbinding en setup een Twitch-stream aankunnen zonder constante drops.
@@ -193,7 +198,12 @@ export default function ContentCreators() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6">
-                <Music className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <img
+                  src="/images/icons/tiktok-signaalmakers.png"
+                  alt="TikTok LIVE"
+                  className="h-10 w-auto mb-3"
+                  loading="lazy"
+                />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">TikTok LIVE</h3>
                 <p className="text-gray-600">
                   Verticale streaming vanaf telefoon of pc, verbinding die korte pieken aankan en een wifi- of bekabelde setup die niet instort zodra er extra kijkers komen.
@@ -201,7 +211,7 @@ export default function ContentCreators() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6">
-                <PlaySquare className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <PlaySquare className="w-10 h-10 text-[#FF6A00] mb-3" />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">YouTube (Live & premieres)</h3>
                 <p className="text-gray-600">
                   Encoder-instellingen, constante upload en een netwerk dat langdurige streams aankan, bijvoorbeeld voor talkshows, podcasts of lange sessies.
@@ -209,7 +219,12 @@ export default function ContentCreators() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6">
-                <Lock className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <img
+                  src="/images/icons/18+-signaalmakers.png"
+                  alt="18+ fanplatformen"
+                  className="h-10 w-auto mb-3"
+                  loading="lazy"
+                />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">18+ fanplatformen</h3>
                 <p className="text-gray-600">
                   Discrete en betrouwbare verbinding en setup in een afgesloten ruimte. We richten alleen de techniek in, inhoud blijft jouw verantwoordelijkheid.
@@ -217,7 +232,12 @@ export default function ContentCreators() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6">
-                <Monitor className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <img
+                  src="/images/icons/obs-signaalmakers.png"
+                  alt="OBS Studio"
+                  className="h-10 w-auto mb-3"
+                  loading="lazy"
+                />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">OBS Studio</h3>
                 <p className="text-gray-600">
                   Installatie en basisconfiguratie van scenes, bronnen, audio-routing en koppeling met je platformen. Een stabiele basis waar je op verder kunt bouwen.
@@ -225,7 +245,12 @@ export default function ContentCreators() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6">
-                <Zap className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <img
+                  src="/images/icons/streamelements-signaalmakers.svg"
+                  alt="StreamElements"
+                  className="h-10 w-auto mb-3"
+                  loading="lazy"
+                />
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">StreamElements</h3>
                 <p className="text-gray-600">
                   Technische koppeling van overlays en alerts via OBS (bijvoorbeeld via browser source). De vormgeving laat je bij een designer; wij zorgen dat de verbinding klopt.
