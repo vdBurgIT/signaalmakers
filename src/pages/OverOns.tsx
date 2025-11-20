@@ -32,13 +32,13 @@ export default function OverOns() {
                 </h2>
                 <div className="text-lg text-gray-600 space-y-4">
                   <p>
-                    Signaalmakers is opgericht door Kevin Froger, een ervaren netwerk- en IT-specialist die na jaren in de sector te hebben gewerkt besloot zijn eigen weg te gaan. De reden? Te vaak zag hij haastwerk, halve oplossingen en gebrek aan echte aandacht voor de klant.
+                    Signaalmakers is opgericht door Kevin Froger. Al jarenlang werkt hij in de praktijk met netwerken, wifi, databekabeling en professionele audio-installaties. Naast zijn werk in de audio- en eventwereld heeft hij bij bedrijven en particulieren complete netwerken aangelegd en meegedacht over praktische IT-oplossingen. Die ervaring heeft hij samengevoegd in Signaalmakers, zodat hij nu één aanspreekpunt is voor alles rondom wifi, netwerk en audio op locatie.
                   </p>
                   <p>
-                    Wij geloven in een andere aanpak: zorgvuldig luisteren naar wat u écht nodig heeft, professionele metingen uitvoeren en installaties afleveren waar u de komende 10-15 jaar geen omkijken naar heeft. Geen grote beloftes, geen verborgen kosten, gewoon eerlijk vakmanschap.
+                    Wij geloven in een andere aanpak dan het snelle werk: rustig luisteren naar wat u écht nodig heeft, meten in plaats van gokken en installaties opleveren waar u de komende 10–15 jaar zo min mogelijk omkijken naar heeft. Geen grote beloftes, geen verborgen kosten, maar gewoon eerlijk en netjes uitgevoerd vakwerk.
                   </p>
                   <p>
-                    We werken samen met een vaste IT-partner voor diensten als internet, telefonie en Microsoft 365. Zo kunt u voor alles bij één aanspreekpunt terecht, terwijl wij ons focussen op wat we het beste kunnen: installaties op locatie.
+                    We werken samen met een vaste IT-partner voor diensten als internet, telefonie en Microsoft 365. Zo heeft u voor alles één vertrouwd aanspreekpunt, terwijl wij ons volledig kunnen focussen op wat we het beste kunnen: betrouwbare installaties op locatie.
                   </p>
                 </div>
               </div>

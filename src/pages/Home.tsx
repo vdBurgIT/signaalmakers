@@ -14,7 +14,6 @@ import {
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
-import { blogPosts } from '../data/blogPosts';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -204,25 +203,27 @@ export default function Home() {
           <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
-                  <div
-                    key={index}
-                    className="group"
-                  >
-                    <div className="bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl transition-all duration-300 h-full flex flex-col hover:-translate-y-2">
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                        <service.icon className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-[#0E243A] mb-4 min-h-[56px] flex items-center leading-tight">{service.title}</h3>
-                      <p className="text-base text-gray-600 mb-6 leading-relaxed flex-grow">{service.description}</p>
-                      <Link
-                        to={service.link}
-                        className="inline-flex items-center text-[#FF6A00] text-base font-semibold hover:text-[#E55F00] transition-colors group-hover:gap-3 gap-2 mt-auto"
-                      >
-                        Meer informatie
-                        <span className="transition-all duration-300">→</span>
-                      </Link>
-                    </div>
+                <div
+                  key={index}
+                  className="group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl transition-all duration-300 h-full flex flex-col hover:-translate-y-2"
+                >
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <service.icon className="w-8 h-8 text-white" />
                   </div>
+                  <h3 className="text-xl font-bold text-[#0E243A] mb-4 min-h-[56px] flex items-center leading-tight">
+                    {service.title}
+                  </h3>
+                  <p className="text-base text-gray-600 mb-6 leading-relaxed flex-grow">
+                    {service.description}
+                  </p>
+                  <Link
+                    to={service.link}
+                    className="inline-flex items-center text-[#FF6A00] text-base font-semibold hover:text-[#E55F00] transition-colors group-hover:gap-3 gap-2 mt-auto"
+                  >
+                    Meer informatie
+                    <span className="transition-all duration-300">→</span>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
