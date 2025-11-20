@@ -108,6 +108,28 @@ body {
   text-decoration: underline;
 }
 
+/* Internal link styling for content areas */
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+p a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+li a:hover {
+  color: #FF6A00;
+  text-decoration: underline;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
