@@ -1,16 +1,39 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
-import { Wifi, Upload, Video, CheckCircle2 } from 'lucide-react';
+import { Video, CheckCircle2, ChevronDown, ChevronUp, Tv, Music, PlaySquare, Lock, Monitor, Zap } from 'lucide-react';
+import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function ContentCreators() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [showSubsInfo, setShowSubsInfo] = useState(false);
+
+  const faqs = [
+    {
+      question: 'Doet Signaalmakers ook overlays, emotes en kanaaldesign voor Twitch, TikTok of YouTube?',
+      answer: 'Nee. Wij richten ons op de technische kant: verbinding, netwerk, bekabeling, hardware en de basis van je streaming-setup met OBS. Grafisch design, branding en kanaalopmaak laat je het beste doen door een designer of marketingbureau. Wel kunnen we je technisch helpen met de koppeling van overlays en alerts.',
+    },
+    {
+      question: 'Helpen jullie met Twitch subs, Bits en "goedkope subjes"?',
+      answer: 'We verkopen geen subs of Bits en maken Twitch subjes niet goedkoper. De prijzen liggen bij Twitch zelf. Wat we wel doen: we zorgen dat je verbinding en setup goed zijn en leggen uit hoe subs, Bits en donaties technisch werken, zodat je zelf je kanaal logisch kunt inrichten zonder dat de techniek je tegenwerkt.',
+    },
+    {
+      question: 'Wat doen jullie concreet als jullie langskomen in mijn studio of thuis?',
+      answer: 'We beginnen bij de basis: de internetverbinding en het netwerk. We kijken naar je modem, router, wifi en eventuele bekabeling. Daarna bekijken we je streaming-pc of laptop, camera, microfoon en de koppeling met OBS. We maken de nodige aanpassingen, richten een stabiele streaming-setup in en testen samen een stream. Je ziet precies wat we doen en krijgt uitleg onderweg.',
+    },
+    {
+      question: 'Helpen jullie ook met 18+ fanplatformen?',
+      answer: 'Ja, technisch gezien werkt dat vergelijkbaar met andere streaming- en contentplatformen. We richten je verbinding, netwerk en technische setup zo in dat je veilig en stabiel kunt streamen of opnemen. We bemoeien ons niet met de inhoud van je content; onze rol is puur technisch en discreet.',
+    },
+  ];
+
   return (
     <>
       <SEO
-        title="Content Creators - Netwerk voor Streaming"
-        description="Stabiel netwerk en wifi voor content creators en livestreamers. Professionele bekabeling en studio-netwerk voor uploads en gaming."
-        keywords="content creator netwerk, streaming wifi, studio netwerk, gaming internet, livestream verbinding"
+        title="Streaming voor content creators - stabiele verbinding en technische setup"
+        description="Professionele streaming-setup voor Twitch, TikTok LIVE, YouTube en 18+ platforms. Stabiel netwerk, OBS installatie en technische ondersteuning voor content creators."
+        keywords="streaming setup, Twitch setup, OBS installatie, content creator netwerk, TikTok LIVE setup, YouTube streaming, streaming internet, goedkope subjes, Twitch subs, Bits, StreamElements"
         url="https://signaalmakers.nl/content-creators"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -19,322 +42,275 @@ export default function ContentCreators() {
       />
       <div>
       <Hero
-        title="Netwerk en wifi voor content creators"
-        subtitle="Stabiel internet, bekabeld netwerk en wifi voor streamen en uploaden in heel Nederland."
+        title="Netwerk & wifi voor streamers en content creators"
+        subtitle="Stabiele verbinding en technische setup. Geen haperend beeld, geen wegvallend geluid. Gewoon een stream die werkt."
         primaryButtonText="Neem contact op"
         primaryButtonLink="/contact"
       />
 
+      {/* Intro */}
       <section className="py-16 bg-white relative overflow-hidden">
         <BackgroundOverlay variant="network" density="medium" color="blue" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Als content creator wil je maar één ding: dat je stream of upload altijd doorgaat. Geen haperende livestream, geen dropframes, geen upload die op 99% blijft hangen. Signaalmakers richt jouw netwerk en wifi zo in dat je betrouwbaar kunt streamen, opnemen en uploaden. We denken mee over bekabeling, wifi, apparatuur aan de netwerk-kant en praktische instellingen, zodat jij je kunt focussen op je content.
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Of je nu streamt op Twitch, TikTok LIVE, YouTube of een 18+ fanplatform: je bent volledig afhankelijk van een goede internetverbinding en een betrouwbare setup.
             </p>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Of je nu live uitzendt, regelmatig video's publiceert op social media of met een kleine studio werkt voor klanten: wij zorgen voor een stabiele verbinding die past bij jouw manier van werken.
+              Signaalmakers zorgt voor een stabiel netwerk, de juiste bekabeling en een technische streaming-setup die klopt. Geen onnodige poespas, maar een verbinding en setup die doet wat jij nodig hebt, zodat jij je kunt focussen op je content. We werken net zo graag voor een thuisstudio in een slaapkamer als voor een kleine professionele studio of bedrijfslocatie.
             </p>
 
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Voor wie is deze dienst?
+              Voor wie is dit bedoeld?
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Deze dienst is speciaal ontwikkeld voor:
+              Deze pagina is voor creators en streamers die:
             </p>
             <ul className="space-y-3 text-gray-600 mb-12">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Livestreamers (bijvoorbeeld gaming, talkshows, IRL-content, events)</span>
+                <span>Regelmatig live gaan op Twitch, TikTok LIVE of YouTube</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Videomakers die regelmatig nieuwe content uploaden</span>
+                <span>Met OBS werken en bijvoorbeeld StreamElements gebruiken</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Podcasters met video en online shows</span>
+                <span>Content maken voor een 18+ fanplatform of besloten community</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Contentbureaus en kleine productiebedrijven met een eigen studio</span>
+                <span>Problemen hebben met haperende streams, lage kwaliteit of instabiel internet</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Solo-creators die vanuit huis, zolderkamer of kantoorstudio werken</span>
+                <span>Een serieuze maar nuchtere technische partner zoeken voor verbinding en setup</span>
               </li>
             </ul>
-            <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Jouw kanaal en jouw workflow zijn het vertrekpunt. Wij vertalen dat naar een netwerk- en wifi-oplossing die past bij je plannen nu én bij je groei in de toekomst.
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Net als op de rest van de website geldt: we werken voor zowel bedrijven (MKB, kantoren, studio's) als particulieren (thuisnetwerk, zolderkamer, studio aan huis). We plannen zorgvuldig, kijken naar de hele situatie en komen met een oplossing die past bij jouw ruimte, apparatuur en budget.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Wat wij wel/niet doen */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="flex gap-6 mb-8">
-              <Upload className="w-12 h-12 text-[#FF6A00] flex-shrink-0" />
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-                  Uploadsnelheid en stabiliteit – de basis van je stream
-                </h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Voor content creators is uploadsnelheid minstens zo belangrijk als downloadsnelheid. Een stabiele, constante upload is nodig voor:
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
+              Wat wij wél doen voor streamers en creators
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Signaalmakers richt zich op de technische kant van jouw stream. Alles wat met verbinding en netwerk te maken heeft, pakken wij netjes op. We zorgen dat je setup technisch weer 100% in orde is.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="bg-white rounded-lg p-6 shadow">
+                <h3 className="text-xl font-bold text-[#0E243A] mb-4">✓ Dit doen we wél</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Internet en netwerk optimaliseren voor streaming</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Databekabeling naar studio en werkplekken</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Streaming-setup technisch inrichten (pc, camera, microfoon)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>OBS Studio installeren en basisprofiel instellen</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Setup voor meerdere platformen tegelijk</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Heldere uitleg in begrijpelijke taal</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 shadow border-2 border-gray-200">
+                <h3 className="text-xl font-bold text-[#0E243A] mb-4">✗ Dit doen we niet</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-gray-400 flex-shrink-0 mt-0.5">•</span>
+                    <span>Emotes, overlays, alerts of logo's ontwerpen</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-gray-400 flex-shrink-0 mt-0.5">•</span>
+                    <span>Kanaalbranding en social media marketing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-gray-400 flex-shrink-0 mt-0.5">•</span>
+                    <span>Verkoop van subs, Bits of volgers</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-gray-400 flex-shrink-0 mt-0.5">•</span>
+                    <span>Beheer van accounts of kanalen</span>
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-500 mt-4 italic">
+                  We hebben de kennis van streaming, OBS en de platformen, maar blijven bij onze kern: verbinding, wifi, netwerk en technische setup.
                 </p>
               </div>
             </div>
-
-            <ul className="space-y-3 text-gray-600 mb-8">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Livestreams in goede kwaliteit</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Het uploaden van grote videobestanden</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Gelijktijdig gebruik van communicatietools en online opslag</span>
-              </li>
-            </ul>
-
-            <p className="text-lg text-gray-600 mb-6">
-              Signaalmakers kijkt met je mee naar:
-            </p>
-
-            <ul className="space-y-3 text-gray-600 mb-8">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>De inhoud van je internetabonnement en de daadwerkelijke uploadsnelheid</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>De kwaliteit waarin je wilt streamen of uploaden</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Het aantal apparaten en gebruikers dat jouw verbinding deelt</span>
-              </li>
-            </ul>
-
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Op basis daarvan adviseren we over een passend internetpakket bij je provider en richten we je interne netwerk zo in dat die uploads en streams ook in de praktijk stabiel blijven. Geen gokwerk, maar een plan op basis van metingen en ervaring.
-            </p>
           </div>
         </div>
       </section>
 
+      {/* Streaming platformen */}
       <section className="py-16 bg-white relative overflow-hidden">
         <BackgroundOverlay variant="wifi" density="light" color="grey" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex gap-6 mb-8">
-              <Wifi className="w-12 h-12 text-[#FF6A00] flex-shrink-0" />
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-                  Bekabeld waar het moet, wifi waar het kan
-                </h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Voor serieuze streaming en uploaden is een vaste, bekabelde verbinding naar je streaming-pc of werkstation de beste basis. Wifi blijft handig voor mobiele apparaten, maar bekabeld internet blijft het meest stabiel.
-                </p>
-              </div>
-            </div>
-
-            <p className="text-lg text-gray-600 mb-6">
-              Wij verzorgen onder andere:
-            </p>
-
-            <ul className="space-y-3 text-gray-600 mb-8">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Een vaste UTP-verbinding (bijvoorbeeld Cat6 of Cat6A) naar je studio of werkkamer</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Extra netwerkaansluitingen voor tweede pc, NAS, werkstation of upload-pc</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Professionele access points voor goede wifi in je studio, kantoor en woning</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Een logische scheiding tussen "studio-netwerk" en het algemene thuis- of kantoornetwerk</span>
-              </li>
-            </ul>
-
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Zo voorkom je dat een update, download of stream van iemand anders in huis jouw uitzending of upload onderbreekt.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex gap-6 mb-8">
               <Video className="w-12 h-12 text-[#FF6A00] flex-shrink-0" />
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-                  Studio-netwerk op orde – router, switch en patchkast
+                  Streamingplatformen en tools waarmee we rekening houden
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Veel content creators bouwen hun setup stap voor stap uit: eerst één pc, later een game-pc plus streaming-pc, extra schermen, een aparte opnamehoek, netwerkopslag en slimme apparatuur. Als het netwerk niet meegroeit, wordt het al snel onoverzichtelijk.
+                  Op deze pagina gaat het specifiek om creators en streamers. De techniek daarachter is deels hetzelfde als bij andere projecten op de website, maar hier stemmen we alles af op live video.
                 </p>
               </div>
             </div>
 
-            <p className="text-lg text-gray-600 mb-6">
-              Signaalmakers helpt je studio-netwerk op orde te krijgen:
-            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <Tv className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Twitch</h3>
+                <p className="text-gray-600">
+                  Stabiele uplink, geschikte bitrate, basis OBS-profiel, scenes en audio. We zorgen dat je verbinding en setup een Twitch-stream aankunnen zonder constante drops.
+                </p>
+              </div>
 
-            <ul className="space-y-3 text-gray-600 mb-8">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Keuze en basisconfiguratie van router en switch die passen bij jouw gebruik</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Aanleg, labelen en bundelen van UTP-bekabeling naar alle belangrijke punten</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Overzichtelijke meterkast of patchkast in plaats van een wirwar aan kabels</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Duidelijke structuur tussen apparaten voor gaming, streaming, upload en opslag</span>
-              </li>
-            </ul>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <Music className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">TikTok LIVE</h3>
+                <p className="text-gray-600">
+                  Verticale streaming vanaf telefoon of pc, verbinding die korte pieken aankan en een wifi- of bekabelde setup die niet instort zodra er extra kijkers komen.
+                </p>
+              </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Het resultaat: een strak en overzichtelijk netwerk dat je begrijpt, zonder dat je zelf netwerkbeheerder hoeft te worden.
-            </p>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <PlaySquare className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">YouTube (Live & premieres)</h3>
+                <p className="text-gray-600">
+                  Encoder-instellingen, constante upload en een netwerk dat langdurige streams aankan, bijvoorbeeld voor talkshows, podcasts of lange sessies.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6">
+                <Lock className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">18+ fanplatformen</h3>
+                <p className="text-gray-600">
+                  Discrete en betrouwbare verbinding en setup in een afgesloten ruimte. We richten alleen de techniek in, inhoud blijft jouw verantwoordelijkheid.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6">
+                <Monitor className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">OBS Studio</h3>
+                <p className="text-gray-600">
+                  Installatie en basisconfiguratie van scenes, bronnen, audio-routing en koppeling met je platformen. Een stabiele basis waar je op verder kunt bouwen.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6">
+                <Zap className="w-8 h-8 text-[#FF6A00] mb-3" />
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">StreamElements</h3>
+                <p className="text-gray-600">
+                  Technische koppeling van overlays en alerts via OBS (bijvoorbeeld via browser source). De vormgeving laat je bij een designer; wij zorgen dat de verbinding klopt.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white relative overflow-hidden">
-        <BackgroundOverlay variant="data" density="light" color="blue" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Apparatuur en advies voor content creators
-            </h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Wij leveren en installeren netwerkapparatuur zoals routers, switches en access points en kijken of jouw huidige set-up deze goed kan benutten. Daarnaast geven we praktisch advies over:
-            </p>
-
-            <ul className="space-y-3 text-gray-600 mb-8">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Nodige capaciteit voor montage-pc's, laptops en werkstations</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Basiskeuzes voor camera's, opnamesetups en netwerkopslag (NAS)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Slim omgaan met back-ups, online opslag en samenwerken met andere makers</span>
-              </li>
-            </ul>
-
-            <p className="text-lg text-gray-600 leading-relaxed">
-              De kern blijft altijd je verbinding en je netwerk: dat is wat Signaalmakers voor je ontwerpt, installeert en optimaliseert. Apparatuuradvies sluit daar logisch op aan.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      {/* Subs & Bits SEO sectie */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Instellingen en praktijkadvies voor streaming en uploaden
+              Subs, Bits en "goedkope subjes" – wat we wél en niet doen
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Een goed netwerk is stap één; de juiste instellingen zorgen ervoor dat je het maximale eruit haalt. We kijken samen met jou naar:
+              Veel kijkers zoeken online naar termen als "goedkope subjes", "goedkopere Twitch subs", "voordelige Twitch sub" of "Bits gebruiken om streamers te steunen". In de praktijk gaat het daarbij bijna altijd om beter of slimmer steunen van een streamer.
+            </p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              Op Twitch kun je kijkers laten abonneren op je kanaal via "subs". Dat zijn betaalde, terugkerende maandelijkse abonnementen. In ruil krijgen kijkers extra voordelen, zoals emotes, badges, minder advertenties en soms toegang tot subscriber-only content. Daarnaast heb je Bits – virtuele "muntjes" die kijkers kunnen gebruiken om te cheeren in de chat.
             </p>
 
+            <div className="bg-white rounded-lg p-6 shadow mb-6 border-l-4 border-[#FF6A00]">
+              <h3 className="text-xl font-bold text-[#0E243A] mb-3">Belangrijk om eerlijk te zijn:</h3>
+              <p className="text-gray-600 mb-4">
+                Signaalmakers verkoopt <strong>géén subs, géén Bits</strong> en wij maken Twitch subjes <strong>niet goedkoper</strong>. De prijzen van subs en Bits worden volledig door Twitch zelf bepaald. Wij doen niets met kunstmatig "goedkope subjes" of trucjes om regels te omzeilen.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wat wij wél doen:</h3>
             <ul className="space-y-3 text-gray-600 mb-8">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Instellingen voor je streaming- en opname-software (zoals bitrate en resolutie) die passen bij jouw uploadsnelheid</span>
+                <span>We zorgen dat je verbinding stabiel is, zodat je stream niet wegvalt als er veel subs of Bits binnenkomen</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Praktische tips om je netwerk schoon te houden tijdens een stream of upload</span>
+                <span>We richten je streaming-setup zo in dat je in een passende kwaliteit kunt streamen</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Grote downloads en back-ups buiten je stream- of uploadtijden</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Belangrijke apparaten (zoals streaming-pc en NAS) bekabeld aansluiten</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>Andere gebruikers in huis of op kantoor informeren over piekmomenten</span>
+                <span>We leggen uit hoe subs, Bits en donaties technisch werken, zodat jij zelf je kanaal en beloningen slim kunt inrichten</span>
               </li>
             </ul>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Zo krijg je niet alleen betere techniek, maar ook duidelijke afspraken en gewoontes waarmee je je kanaal professioneel kunt runnen.
-            </p>
+            {/* Extra SEO info uitklapbaar */}
+            <button
+              onClick={() => setShowSubsInfo(!showSubsInfo)}
+              className="flex items-center gap-2 text-[#FF6A00] font-semibold hover:text-[#E55F00] transition-colors mb-4"
+            >
+              {showSubsInfo ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+              {showSubsInfo ? 'Minder lezen' : 'Meer lezen over Twitch subs en Bits'}
+            </button>
+
+            {showSubsInfo && (
+              <div className="bg-white rounded-lg p-6 shadow">
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Als je zoekt op <em>goedkope subjes</em>, <em>goedkopere Twitch subs</em>, <em>voordelige Twitch sub</em> of <em>Bits gebruiken om streamers te steunen</em>, dan ben je waarschijnlijk aan het uitzoeken hoe je zo slim mogelijk met je geld omgaat op Twitch – als kijker of als streamer.
+                </p>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Een sub op Twitch is een betaald maandelijks abonnement op één kanaal. Je steunt de streamer en krijgt er voordelen voor terug: speciale emotes, unieke chat-badges, minder advertenties en soms toegang tot extra content of een besloten community. Gifted subs geven je de mogelijkheid om andere kijkers te verrassen en samen hype-trains te starten.
+                </p>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Bits zijn de virtuele valuta van Twitch. Je koopt Bits via Twitch zelf en gebruikt ze om te cheeren in de chat. Daarmee valt je bericht op en weet de streamer precies wie hem of haar ondersteunt. Voor veel creators zijn Bits en subs een belangrijke bron van inkomsten naast donaties en sponsordeals.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  <strong>Signaalmakers verkoopt geen goedkope subjes</strong>, doet niets met het doorverkopen van subs of Bits, en bemoeit zich niet met je inkomsten. Wij focussen op wat we goed kunnen: internet, wifi, netwerk en technische streaming-setup. We zorgen ervoor dat jouw verbinding, bekabeling en apparatuur in orde zijn, zodat jij en je community zonder technische problemen gebruik kunnen maken van subs, Bits en andere manieren om een kanaal te steunen.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-[#0E243A] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Privacy en anonimiteit voor content creators
-            </h2>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              Veel content creators werken liever op de achtergrond of willen niet dat hun locatie, naam of de inhoud van hun werk overal bekend wordt. Dat begrijpen wij volledig. Bij Signaalmakers gaan we zorgvuldig om met iedere klant en iedere studio, groot of klein.
-            </p>
-
-            <ul className="space-y-3 text-gray-300 mb-8">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>We behandelen alle klanten gelijk, ongeacht het bereik of de grootte van het kanaal</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>We delen geen informatie over jouw werklocatie, setup of werkzaamheden met derden</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>We komen alleen op afspraak en communiceren rustig en discreet</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span>We gebruiken nooit foto's of voorbeelden van projecten zonder jouw expliciete toestemming</span>
-              </li>
-            </ul>
-
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Jouw privacy en anonimiteit blijven gewaarborgd. Wij zorgen voor een stabiele verbinding en een goed netwerk, terwijl jij de regie houdt over wat je wel en niet deelt.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      {/* Werkwijze */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Werkwijze – van speedtest tot stabiele setup
+              Hoe we werken
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Iedere situatie is anders. Daarom werken we met een vaste, duidelijke aanpak:
+              Onze werkwijze voor content creators sluit aan op hoe we op de rest van de website werken. We werken met heldere afspraken, eerlijke tarieven en oplossingen die passen bij jouw situatie.
             </p>
 
             <div className="space-y-6">
@@ -343,9 +319,9 @@ export default function ContentCreators() {
                   1
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Intake en speedtest</h3>
+                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Inventarisatie</h3>
                   <p className="text-gray-600">
-                    We bespreken jouw content, stream- of uploaddoelen, huidige problemen en apparatuur. Daarna doen we een meting en speedtest om te zien wat je verbinding nu aankan.
+                    We bespreken jouw situatie: waar je streamt, welke apparatuur je hebt, welke platformen je gebruikt en welke problemen je nu ervaart (bijvoorbeeld lag, haperend beeld, slechte wifi, ruis in audio).
                   </p>
                 </div>
               </div>
@@ -355,9 +331,9 @@ export default function ContentCreators() {
                   2
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Plan en voorstel</h3>
+                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Plan en advies</h3>
                   <p className="text-gray-600">
-                    Op basis van de metingen en jouw wensen maken we een concreet voorstel voor bekabeling, wifi, apparatuur aan de netwerk-kant en eventuele aanpassingen in je studio of werkruimte.
+                    We bekijken welke aanpassingen nodig zijn aan je netwerk, bekabeling en setup. Zo mogelijk hergebruiken we bestaande apparatuur; we adviseren alleen extra hardware als dat echt nodig is.
                   </p>
                 </div>
               </div>
@@ -367,9 +343,9 @@ export default function ContentCreators() {
                   3
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Installatie en optimalisatie</h3>
+                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Uitvoering</h3>
                   <p className="text-gray-600">
-                    We leggen kabels aan, plaatsen access points, richten router en switch in en maken je patchkast of meterkast overzichtelijk. We testen samen met jou of streams en uploads stabiel lopen.
+                    We leggen bekabeling aan, richten wifi en netwerk in, sluiten apparatuur netjes aan en zetten de basis van je streaming-setup goed. Alles zo strak mogelijk afgewerkt.
                   </p>
                 </div>
               </div>
@@ -379,9 +355,21 @@ export default function ContentCreators() {
                   4
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Uitleg en nazorg</h3>
+                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Uitleg en oplevering</h3>
                   <p className="text-gray-600">
-                    Je krijgt een korte uitleg over de nieuwe situatie, belangrijke wachtwoorden en een overzicht van de inrichting. Heb je later vragen of wil je uitbreiden, dan kun je opnieuw op ons rekenen.
+                    Je krijgt uitleg in normaal Nederlands over wat we hebben gedaan en hoe je zelf dingen kunt aanpassen of uitbreiden. Geen complexe handleidingen, maar gewoon duidelijkheid.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  5
+                </div>
+                <div>
+                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Nazorg</h3>
+                  <p className="text-gray-600">
+                    Als er later vragen zijn, kun je bij ons terugkomen. Net als bij de andere diensten van Signaalmakers vinden we het belangrijk dat oplossingen in de praktijk blijven werken.
                   </p>
                 </div>
               </div>
@@ -390,33 +378,55 @@ export default function ContentCreators() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Werkgebied – voor content creators in heel Nederland
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              Veelgestelde vragen
             </h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Signaalmakers helpt content creators in heel Nederland. Of je nu vanuit een rijtjeshuis streamt, een kleine studio in de stad hebt of een kantoorruimte buitenaf gebruikt: wij denken met je mee over de beste oplossing voor jouw netwerk en wifi.
+            <p className="text-lg text-gray-600 mb-12 text-center">
+              Antwoorden op de meest gestelde vragen over streaming-setup en technische ondersteuning
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Waar je ook in Nederland zit, we kijken samen naar wat nodig is om je verbinding op orde te brengen, zodat jouw content zonder technische stress de wereld in kan.
-            </p>
+
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-lg shadow">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors rounded-lg"
+                  >
+                    <span className="font-semibold text-[#0E243A] pr-4">{faq.question}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-16 bg-[#0E243A] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Klaar voor een stabiel netwerk voor jouw content?
+              Klaar met haperende streams?
             </h2>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Wil je zonder zorgen livestreamen, video's uploaden zonder opnieuw te hoeven beginnen en zeker zijn van een stabiele verbinding? Neem contact op met Signaalmakers voor een netwerk- en wifi-oplossing die speciaal is ingericht op content creators en andere makers die professioneel met online content bezig zijn.
+            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+              Een goede stream begint met een goede verbinding. Of je nu net start als streamer of al een vaste community hebt: haperend beeld, slechte wifi en instabiel internet kosten je kijkers en energie.
             </p>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Je kunt ons benaderen voor een vrijblijvende intake, een plan op maat en een complete uitvoering, zodat jouw techniek met je meegroeit terwijl jij aan je kanaal en je community bouwt.
+              Wil je een streaming-setup die technisch klopt en een netwerk dat je streams aankan? Neem dan contact op met Signaalmakers. We kijken naar jouw situatie, maken een plan en zorgen dat je verbinding, wifi, netwerk en setup er klaar voor zijn – zodat jij gewoon live kunt gaan.
             </p>
             <Link
               to="/contact"
