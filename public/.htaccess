@@ -75,3 +75,16 @@
   Order allow,deny
   Deny from all
 </FilesMatch>
+
+# SPA Fallback - Redirect all routes to index.html (React Router)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # If the requested file or directory doesn't exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Redirect everything to index.html
+  RewriteRule ^(.*)$ /index.html [L,QSA]
+</IfModule>
