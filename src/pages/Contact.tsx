@@ -238,14 +238,14 @@ export default function Contact() {
                   <h3 className="text-xl font-bold mb-4">Direct contact</h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:+31612345678"
+                      href="tel:+31645251333"
                       className="block bg-[#FF6A00] text-white px-6 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center"
                     >
                       <Phone className="w-5 h-5 inline mr-2" />
                       Bel nu
                     </a>
                     <a
-                      href="https://wa.me/31612345678"
+                      href="https://wa.me/31645251333"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold text-center"

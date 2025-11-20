@@ -31,6 +31,7 @@ const OverOns = lazy(() => import(/* webpackChunkName: "over" */ './pages/OverOn
 const FAQ = lazy(() => import(/* webpackChunkName: "faq" */ './pages/FAQ'));
 const StatusSupport = lazy(() => import(/* webpackChunkName: "status" */ './pages/StatusSupport'));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
+const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ './pages/NotFound'));
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/status-support" element={<StatusSupport />} />
                 <Route path="/contact" element={<Contact />} />
+
+                {/* 404 - Catch all route */}
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
           </main>

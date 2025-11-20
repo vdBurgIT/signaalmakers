@@ -26,7 +26,7 @@ const SEO = ({
   title = 'Signaalmakers - ICT & Netwerk Oplossingen voor Bedrijven en Particulieren',
   description = 'Professionele ICT-diensten: WiFi-netwerken, databekabeling, internet & telefonie, hosting, moderne werkplek oplossingen en cybersecurity. Voor zakelijk en particulier.',
   keywords = 'ICT diensten, WiFi netwerk, databekabeling, internet telefonie, hosting, domein, moderne werkplek, cybersecurity, veilig online',
-  image = 'https://signaalmakers.nl/og-image.jpg',
+  image = 'https://signaalmakers.nl/Transparent-03.png',
   url = 'https://signaalmakers.nl/',
   type = 'website',
   breadcrumbs,
@@ -103,7 +103,7 @@ const SEO = ({
                 url: url,
                 logo: 'https://signaalmakers.nl/logo.png',
                 image: image,
-                telephone: '+31-XX-XXXXXXX',
+                telephone: '+31645251333',
                 address: {
                   '@type': 'PostalAddress',
                   addressCountry: 'NL',
