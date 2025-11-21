@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Linkedin, MessageCircle, Mail, Phone, MapPin, Building2 } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -129,6 +129,10 @@ export default function Footer() {
                 <a href="mailto:info@signaalmakers.nl" className="hover:text-[#FF6A00] transition-colors">
                   info@signaalmakers.nl
                 </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Building2 className="w-5 h-5 text-[#FF6A00]" />
+                <span>KVK: 82907196</span>
               </li>
             </ul>
           </div>
