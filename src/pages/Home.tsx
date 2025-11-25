@@ -14,9 +14,11 @@ import {
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import NetherlandsMap from '../components/NetherlandsMap';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [hoveredProvince, setHoveredProvince] = useState<string | null>(null);
 
   const services = [
     {
@@ -354,22 +356,52 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-gray-50">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-[#0E243A] to-[#1a3a5c]" id="werkgebied">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-6">
-            Werkgebied wifi-monteur
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-6">
+            Waar zijn wij werkzaam?
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
-            Als wifi-monteur en netwerkspecialist installeren wij wifi-netwerken en databekabeling in heel Nederland. Onze focus ligt op Zuid-Holland, Noord-Brabant, Utrecht, Gelderland en Overijssel, inclusief steden als Rotterdam, Den Haag, Utrecht, Eindhoven, Breda, Arnhem en omgeving.
+          <p className="text-lg md:text-xl text-gray-300 text-center mb-12 max-w-3xl mx-auto leading-relaxed">
+            Signaalmakers is actief in alle 12 provincies van Nederland. Van Groningen tot Zeeland verzorgen wij professionele wifi-netwerken, databekabeling en audio-installaties voor zowel zakelijke als particuliere klanten.
           </p>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {['Zuid-Holland', 'Noord-Brabant', 'Utrecht', 'Gelderland', 'Overijssel', 'Rotterdam', 'Den Haag', 'Eindhoven', 'Breda', 'Arnhem', 'Nijmegen', 'Dordrecht'].map((region) => (
-                <div key={region} className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <p className="font-bold text-[#0E243A] text-lg">{region}</p>
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+              {/* Kaart */}
+              <div className="w-full lg:w-1/2 flex justify-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
+                  <NetherlandsMap
+                    hoveredProvince={hoveredProvince}
+                    onProvinceHover={setHoveredProvince}
+                  />
                 </div>
-              ))}
+              </div>
+
+              {/* Tekst naast de kaart */}
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  Landelijke dekking
+                </h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Van Groningen tot Zeeland en van Noord-Holland tot Limburg: onze wifi-monteurs en netwerkspecialisten staan voor u klaar. Wij verzorgen professionele installaties door heel Nederland.
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {['Groningen', 'Friesland', 'Drenthe', 'Overijssel', 'Flevoland', 'Gelderland', 'Utrecht', 'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Limburg'].map((provincie) => (
+                    <div
+                      key={provincie}
+                      onMouseEnter={() => setHoveredProvince(provincie)}
+                      onMouseLeave={() => setHoveredProvince(null)}
+                      className={`backdrop-blur-sm rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 cursor-pointer ${
+                        hoveredProvince === provincie
+                          ? 'bg-[#FF6A00] text-white'
+                          : 'bg-white/10 text-white/90 hover:bg-white/20'
+                      }`}
+                    >
+                      {provincie}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
