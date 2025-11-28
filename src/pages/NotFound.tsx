@@ -30,7 +30,7 @@ export default function NotFound() {
             </Link>
 
             <Link
-              to="/diensten/wifi-netwerk"
+              to="/diensten"
               className="bg-white/10 backdrop-blur text-white px-6 py-4 rounded-lg hover:bg-white/20 transition-colors flex flex-col items-center gap-2 group"
             >
               <Search className="w-6 h-6 group-hover:scale-110 transition-transform" />
@@ -57,13 +57,13 @@ export default function NotFound() {
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-[#0E243A] mb-6 text-center">Populaire pagina's</h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <Link to="/diensten/wifi-netwerk" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                <h4 className="font-bold text-[#0E243A] mb-2">WiFi Netwerk</h4>
-                <p className="text-gray-600 text-sm">Professionele wifi-installatie</p>
+              <Link to="/diensten/databekabeling" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h4 className="font-bold text-[#0E243A] mb-2">Databekabeling</h4>
+                <p className="text-gray-600 text-sm">Cat6, Cat6A en Cat7 bekabeling</p>
               </Link>
-              <Link to="/zakelijk" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                <h4 className="font-bold text-[#0E243A] mb-2">Zakelijk</h4>
-                <p className="text-gray-600 text-sm">ICT-oplossingen voor bedrijven</p>
+              <Link to="/abonnementen" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h4 className="font-bold text-[#0E243A] mb-2">Abonnementen</h4>
+                <p className="text-gray-600 text-sm">Bekijk onze pakketten</p>
               </Link>
               <Link to="/contact" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
                 <h4 className="font-bold text-[#0E243A] mb-2">Contact</h4>

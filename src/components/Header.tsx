@@ -47,38 +47,23 @@ export default function Header() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white text-[#0E243A] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <Link to="/diensten/wifi-netwerk" className="block px-4 py-3 hover:bg-gray-100">
-                  Wifi & Netwerk
-                </Link>
                 <Link to="/diensten/databekabeling" className="block px-4 py-3 hover:bg-gray-100">
-                  Databekabeling & Patch-/Serverkasten
+                  Databekabeling
                 </Link>
-                <Link to="/diensten/internet-telefonie" className="block px-4 py-3 hover:bg-gray-100">
-                  Internet & Telefonie
-                </Link>
-                <Link to="/diensten/moderne-werkplek" className="block px-4 py-3 hover:bg-gray-100">
-                  Moderne Werkplek
-                </Link>
-                <Link to="/diensten/hosting-domein" className="block px-4 py-3 hover:bg-gray-100">
-                  Hosting & Domein
-                </Link>
-                <Link to="/diensten/veilig-online" className="block px-4 py-3 hover:bg-gray-100">
-                  Veilig Online & IT-beheer
+                <Link to="/diensten/patchkasten" className="block px-4 py-3 hover:bg-gray-100">
+                  Patchkasten
                 </Link>
                 <Link to="/diensten/audio" className="block px-4 py-3 hover:bg-gray-100">
-                  Audio-installaties
+                  Signaallijnen (Audio)
                 </Link>
-                <Link to="/content-creators" className="block px-4 py-3 hover:bg-gray-100">
-                  Content Creators
+                <Link to="/diensten/testen" className="block px-4 py-3 hover:bg-gray-100">
+                  Testen & Documentatie
                 </Link>
               </div>
             </div>
 
-            <Link to="/zakelijk" className="hover:text-[#FF6A00] transition-colors">
-              Zakelijk
-            </Link>
-            <Link to="/particulier" className="hover:text-[#FF6A00] transition-colors">
-              Particulier
+            <Link to="/abonnementen" className="hover:text-[#FF6A00] transition-colors">
+              Abonnementen
             </Link>
             <Link to="/blog" className="hover:text-[#FF6A00] transition-colors">
               Blog
@@ -129,78 +114,43 @@ export default function Header() {
               {isServicesOpen && (
                 <div className="pl-4 space-y-2 mt-2">
                   <Link
-                    to="/diensten/wifi-netwerk"
-                    className="block py-2 text-sm hover:text-[#FF6A00]"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Wifi & Netwerk
-                  </Link>
-                  <Link
                     to="/diensten/databekabeling"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Databekabeling & Patch-/Serverkasten
+                    Databekabeling
                   </Link>
                   <Link
-                    to="/diensten/internet-telefonie"
+                    to="/diensten/patchkasten"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Internet & Telefonie
-                  </Link>
-                  <Link
-                    to="/diensten/moderne-werkplek"
-                    className="block py-2 text-sm hover:text-[#FF6A00]"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Moderne Werkplek
-                  </Link>
-                  <Link
-                    to="/diensten/hosting-domein"
-                    className="block py-2 text-sm hover:text-[#FF6A00]"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Hosting & Domein
-                  </Link>
-                  <Link
-                    to="/diensten/veilig-online"
-                    className="block py-2 text-sm hover:text-[#FF6A00]"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Veilig Online & IT-beheer
+                    Patchkasten
                   </Link>
                   <Link
                     to="/diensten/audio"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Audio-installaties
+                    Signaallijnen (Audio)
                   </Link>
                   <Link
-                    to="/content-creators"
+                    to="/diensten/testen"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Content Creators
+                    Testen & Documentatie
                   </Link>
                 </div>
               )}
             </div>
 
             <Link
-              to="/zakelijk"
+              to="/abonnementen"
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Zakelijk
-            </Link>
-            <Link
-              to="/particulier"
-              className="block py-2 hover:text-[#FF6A00] transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Particulier
+              Abonnementen
             </Link>
             <Link
               to="/blog"

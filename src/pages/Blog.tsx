@@ -9,9 +9,9 @@ export default function Blog() {
   return (
     <>
       <SEO
-        title="Blog - ICT Tips en Nieuws"
-        description="Lees onze blog voor tips over wifi-netwerken, databekabeling, cybersecurity en ICT-oplossingen. Praktische adviezen van onze specialisten."
-        keywords="blog, ict tips, wifi advies, netwerk tips"
+        title="Blog - Praktische tips over bekabeling | Signaalmakers"
+        description="Lees praktische tips over databekabeling, patchkasten, signaallijnen en bekabelingsprojecten. Advies van de bekabelingsspecialist."
+        keywords="blog bekabeling, databekabeling tips, patchkast advies, bekabeling uitleg"
         url="https://signaalmakers.nl/blog"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -29,7 +29,7 @@ export default function Blog() {
               Blog
             </h1>
             <p className="text-lg text-gray-300">
-              Tips, uitleg en achtergronden over netwerken, wifi en IT-installaties
+              Tips, uitleg en achtergronden over bekabeling en installaties
             </p>
           </div>
         </div>

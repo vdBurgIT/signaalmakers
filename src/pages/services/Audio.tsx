@@ -1,341 +1,213 @@
-import Hero from '../../components/Hero';
+import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
-import { Volume2, CheckCircle2 } from 'lucide-react';
+import { Volume2, CheckCircle2, Cable, AlertCircle } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Audio() {
   return (
     <>
       <SEO
-        title="Audio Installaties - Professioneel Geluid voor Bedrijven, Particulieren en Sportclubs"
-        description="Professionele audio-installaties en geluidsinstallaties in heel Nederland. Van achtergrondmuziek winkel tot sportveld audio, vergaderruimtes en multiroom systemen thuis."
-        keywords="audio installatie, geluidsinstallatie, achtergrondmuziek, plafondluidsprekers, multiroom audio, geluidssysteem, audio sportveld, omroepinstallatie, tribune geluid, sportclub audio"
+        title="Signaallijnen (AV/audio) - Bekabeling voor vergaderruimtes | Signaalmakers"
+        description="AV- en audiobekabeling voor vergaderruimtes en presentatieruimtes. Wij leggen alleen de kabels en bereiden aansluitpunten voor. Geen apparatuur-installatie."
+        keywords="signaallijnen, AV bekabeling, audiobekabeling, vergaderruimte bekabeling, presentatieruimte kabels"
         url="https://signaalmakers.nl/diensten/audio"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Diensten', item: 'https://signaalmakers.nl/' },
-          { name: 'Audio', item: 'https://signaalmakers.nl/diensten/audio' }
+          { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' },
+          { name: 'Signaallijnen', item: 'https://signaalmakers.nl/diensten/audio' }
         ]}
       />
-      <div>
-      <Hero
-        title="Audio-installaties zakelijk en particulier"
-        subtitle="Of het nu gaat om achtergrondmuziek in een winkel, heldere spraak in vergaderruimtes, multiroom geluid thuis of een omroepinstallatie op het sportveld: wij installeren professionele audio-installaties en geluidsinstallaties die gewoon werken."
-        primaryButtonText="Plan een audio-advies"
-        primaryButtonLink="/contact"
-      />
 
-      <section className="py-16 bg-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Signaallijnen (AV/audio)
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+              Wij leggen de signaallijnen voor AV en audio. Jouw AV-partner installeert de apparatuur. Zo simpel is het.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-white relative overflow-hidden">
         <BackgroundOverlay variant="audio" density="medium" color="mixed" />
-        <div className="container mx-auto px-4">
+
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <div className="flex gap-6 mb-8">
-              <Volume2 className="w-12 h-12 text-[#FF6A00] flex-shrink-0" />
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-                  Audio-installaties voor elke situatie
-                </h2>
-                <p className="text-lg text-gray-600">
-                  Signaalmakers ontwerpt, levert en installeert vaste geluidsinstallaties in heel Nederland, voor zowel zakelijke als particuliere klanten. Van achtergrondmuziek tot sportveld-audio.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-4">Zakelijke audio-installaties</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Achtergrondmuziek winkel en horeca</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Audio vergaderruimte</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Multi-zone audio-installaties</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Omroepinstallatie magazijn en bedrijfshal</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-4">Particuliere audio-installaties</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Audio-installatie woonkamer</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Audio-installatie tuin</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Multiroom audio-installatie</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Audio tuinkantoor en overkapping</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-[#0E243A] text-white rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-6">Audio voor sportvelden en sportclubs</h3>
-
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-2">Weerbestendige luidsprekers</h4>
-                    <p className="text-gray-300">
-                      Professionele outdoor speakers speciaal ontworpen voor buitengebruik. Bestand tegen regen, wind en temperatuurschommelingen.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-2">Tribune-geluid</h4>
-                    <p className="text-gray-300">
-                      Muziek en omroep richting publiek voor een professionele wedstrijdervaring. Duidelijk verstaanbaar voor alle toeschouwers.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-2">Omroepinstallatie veld</h4>
-                    <p className="text-gray-300">
-                      Rondom het veld voor aankondigingen en informatie. Verschillende zones (veld, tribune, kantine) met aparte volumeregeling.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-2">Audio kantine en kleedkamers</h4>
-                    <p className="text-gray-300">
-                      Geluidsinstallaties voor binnen en buiten aangesloten op één centraal systeem. Eenvoudig te bedienen vanuit één punt.
-                    </p>
-                  </div>
+            <div className="bg-amber-50 border-l-4 border-[#FF6A00] rounded-xl p-8 mb-16">
+              <div className="flex gap-4 items-start">
+                <AlertCircle className="w-8 h-8 text-[#FF6A00] flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold text-[#0E243A] mb-2">Belangrijk: Wij zijn géén AV-installateur</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Wij leggen de signaallijnen en kabels voor audio en AV. We bereiden aansluitpunten voor. Maar we installeren geen speakers, versterkers of AV-systemen. Dat doet jouw AV-partner.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Hoe werkt een audio-installatie?
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
+              Wat we doen
             </h2>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="bg-white rounded-lg p-6 shadow">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-4">Bekabelde audio-installatie</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Centrale versterker met bekabeling naar speakers</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Hoogste betrouwbaarheid en geluidskwaliteit</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Geen vertraging of haperingen</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-4">Wifi en netwerk audio</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Speakers via netwerk aangestuurd</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Flexibel uitbreidbaar met extra zones</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Minder zichtbare bekabeling</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-lg p-6 shadow text-center">
-                <div className="w-12 h-12 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                  1
-                </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Achtergrondmuziek retail</h3>
-                <p className="text-gray-600">
-                  Creëer de juiste sfeer in uw winkel met professionele achtergrondmuziek via plafond- of wandluidsprekers.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow text-center">
-                <div className="w-12 h-12 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                  2
-                </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Audio-installatie horeca</h3>
-                <p className="text-gray-600">
-                  Voor restaurants, cafés en hotels. Binnen en buiten met aparte zones voor bar, lounge, eethoek en terras.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow text-center">
-                <div className="w-12 h-12 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                  3
-                </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Audio tuin en terras</h3>
-                <p className="text-gray-600">
-                  Weerbestendige buitenluidsprekers geplaatst voor optimale geluidsrichting, gekoppeld aan binneninstallatie.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Werkwijze van Signaalmakers
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 text-center">
-              Elke audio-installatie begint met een goede inventarisatie. We luisteren naar uw wensen en bespreken het gewenste gebruik.
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed">
+              Audiokabels en signaallijnen trekken tussen ruimtes en naar de centrale technische ruimte. Kabelroutes voorbereiden, aansluitpunten afmonteren, labelen en documenteren.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                  1
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Inventarisatie</h3>
-                  <p className="text-gray-600">
-                    We bespreken toepassing, ruimtes, gewenste geluidsniveau's en bediening. Indien nodig komen we op locatie kijken en meten.
-                  </p>
-                </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div className="bg-gray-50 rounded-xl p-8">
+                <Volume2 className="w-12 h-12 text-[#FF6A00] mb-6" />
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wat we doen</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Audiokabels en signaallijnen trekken</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Tussen ruimtes en naar technische ruimte</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Kabelroutes voorbereiden</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Aansluitpunten afmonteren</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>Labelen en documenteren</span>
+                  </li>
+                </ul>
               </div>
 
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                  2
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Ontwerp en plan</h3>
-                  <p className="text-gray-600">
-                    We maken een voorstel voor de geluidsinstallatie: type luidsprekers, plaatsing, zones, bekabeling en bediening. U krijgt een duidelijk plan met uitleg.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                  3
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Installatie en bekabeling</h3>
-                  <p className="text-gray-600">
-                    We plaatsen de luidsprekers, leggen bekabeling netjes aan, monteren versterkers en eventueel patchkast-aansluitingen. We werken netjes en laten de ruimte opgeruimd achter.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-[#FF6A00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                  4
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-[#0E243A] mb-2">Afstelling en uitleg</h3>
-                  <p className="text-gray-600">
-                    We stellen de installatie af op verstaanbaarheid en beleving, testen alle zones en geven een korte, duidelijke uitleg over de bediening.
-                  </p>
-                </div>
+              <div className="bg-gray-50 rounded-xl p-8">
+                <Cable className="w-12 h-12 text-red-600 mb-6" />
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wat we niet doen</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 font-bold mt-0.5">✗</span>
+                    <span>Speakers ophangen of monteren</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 font-bold mt-0.5">✗</span>
+                    <span>Versterkers aansluiten</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 font-bold mt-0.5">✗</span>
+                    <span>Systeem afregelen of configureren</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 font-bold mt-0.5">✗</span>
+                    <span>Audio-ontwerp maken</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 font-bold mt-0.5">✗</span>
+                    <span>Apparatuur leveren</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 md:py-28 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Veelgestelde vragen over audio-installaties
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              Voor welke ruimtes?
             </h2>
+            <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
+              Wij leggen signaallijnen voor vergaderruimtes, presentatieruimtes, auditoriums en andere ruimtes waar AV-apparatuur gebruikt wordt.
+            </p>
 
-            <div className="space-y-4">
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-[#0E243A] mb-2">
-                  Wat is het verschil tussen een consumentenset en een professionele geluidsinstallatie?
-                </h3>
-                <p className="text-gray-600">
-                  Een professionele geluidsinstallatie is ontworpen voor langdurig gebruik, betere dekking en eenvoudige bediening in grotere ruimtes of meerdere zones. Consumentenproducten zijn vaak bedoeld voor één kamer en minder geschikt voor winkels, kantoren, horeca of sportvelden.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-[#0E243A] mb-2">
-                  Doen jullie ook audio op sportvelden en tribunes?
-                </h3>
-                <p className="text-gray-600">
-                  Ja, we installeren vaste audio-installaties voor sportvelden, tribunes en sportkantines. We gebruiken weerbestendige luidsprekers en delen het terrein op in zones, zodat u per deel (veld, tribune, kantine) het volume kunt regelen en omroepen duidelijk verstaanbaar zijn.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-[#0E243A] mb-2">
-                  Kan ik mijn eigen muziekbronnen blijven gebruiken?
-                </h3>
-                <p className="text-gray-600">
-                  In de meeste gevallen wel. U kunt vaak blijven streamen vanaf diensten zoals Spotify, radio-apps of uw eigen muziekbibliotheek. We bespreken vooraf welke bronnen u wilt gebruiken en stemmen de installatie daarop af.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-[#0E243A] mb-2">
-                  Hoe weet ik hoeveel luidsprekers ik nodig heb?
-                </h3>
-                <p className="text-gray-600">
-                  Dat hangt af van de grootte van de ruimte, de akoestiek en het gewenste geluidsniveau. Als vuistregel geldt voor achtergrondmuziek ongeveer één luidspreker per 25–40 m², maar we maken altijd een voorstel op maat na een inventarisatie.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-[#0E243A] mb-2">
-                  Werkt het ook met mijn bestaande apparatuur?
-                </h3>
-                <p className="text-gray-600">
-                  In veel situaties kunnen we bestaande versterkers of luidsprekers hergebruiken binnen een nieuwe installatie. We bekijken wat u al heeft, beoordelen de kwaliteit en geven eerlijk advies of hergebruik verstandig is.
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  title: 'Vergaderruimtes',
+                  items: [
+                    'Bekabeling voor microfoons',
+                    'Lijnen naar beamer/scherm',
+                    'Audio naar centrale ruimte',
+                    'Voorbereiden aansluitpunten',
+                  ],
+                },
+                {
+                  title: 'Presentatieruimtes',
+                  items: [
+                    'AV-kabels naar presentatiepunten',
+                    'Bekabeling voor geluidssysteem',
+                    'Verbindingen naar rack',
+                    'Netjes weggewerkt',
+                  ],
+                },
+              ].map((section, index) => (
+                <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
+                  <h3 className="text-2xl font-bold text-[#0E243A] mb-6">{section.title}</h3>
+                  <ul className="space-y-3 text-gray-700">
+                    {section.items.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
-    </div>
+
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              Samenwerking met jouw AV-partner
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
+              Wij werken vaak samen met AV-installateurs. Wij leggen de kabels en bereiden alles voor, zij installeren de apparatuur en stellen het systeem af. Zo doet iedereen waar hij goed in is.
+            </p>
+
+            <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
+              <h3 className="text-xl font-bold text-[#0E243A] mb-4">Heb je nog geen AV-partner?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Wij kunnen je helpen met het vinden van een betrouwbare AV-installateur in jouw regio. Neem contact op en we denken mee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Signaallijnen nodig?
+            </h2>
+            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+              Neem contact op en we bespreken de bekabeling voor jouw AV-project.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/abonnementen"
+                className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                Bekijk abonnementen
+              </Link>
+              <Link
+                to="/contact"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg"
+              >
+                Neem contact op
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

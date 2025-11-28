@@ -16,7 +16,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-4">
-              Wifi, netwerk & audio die gewoon werkt
+              Jouw projecten, onze zekerheid
             </p>
             <div className="flex gap-4">
               <a
@@ -53,28 +53,28 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Diensten</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link to="/diensten/wifi-netwerk" className="hover:text-[#FF6A00] transition-colors">
-                  Wifi & Netwerk
-                </Link>
-              </li>
-              <li>
                 <Link to="/diensten/databekabeling" className="hover:text-[#FF6A00] transition-colors">
                   Databekabeling
                 </Link>
               </li>
               <li>
-                <Link to="/diensten/internet-telefonie" className="hover:text-[#FF6A00] transition-colors">
-                  Internet & Telefonie
+                <Link to="/diensten/patchkasten" className="hover:text-[#FF6A00] transition-colors">
+                  Patchkasten
                 </Link>
               </li>
               <li>
                 <Link to="/diensten/audio" className="hover:text-[#FF6A00] transition-colors">
-                  Audio-installaties
+                  Signaallijnen (Audio)
                 </Link>
               </li>
               <li>
-                <Link to="/content-creators" className="hover:text-[#FF6A00] transition-colors">
-                  Content Creators
+                <Link to="/diensten/testen" className="hover:text-[#FF6A00] transition-colors">
+                  Testen & Documentatie
+                </Link>
+              </li>
+              <li>
+                <Link to="/abonnementen" className="hover:text-[#FF6A00] transition-colors">
+                  Abonnementen
                 </Link>
               </li>
             </ul>
@@ -89,16 +89,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/zakelijk" className="hover:text-[#FF6A00] transition-colors">
-                  Zakelijk
-                </Link>
-              </li>
-              <li>
-                <Link to="/particulier" className="hover:text-[#FF6A00] transition-colors">
-                  Particulier
-                </Link>
-              </li>
-              <li>
                 <Link to="/blog" className="hover:text-[#FF6A00] transition-colors">
                   Blog
                 </Link>
@@ -106,6 +96,16 @@ export default function Footer() {
               <li>
                 <Link to="/faq" className="hover:text-[#FF6A00] transition-colors">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/status-support" className="hover:text-[#FF6A00] transition-colors">
+                  Status & Support
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-[#FF6A00] transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>

@@ -10,101 +10,100 @@ export default function FAQ() {
   const faqs = {
     algemeen: [
       {
-        question: 'Voor wie installeert Signaalmakers wifi-netwerken?',
-        answer: 'Wij installeren professionele wifi-netwerken en databekabeling voor zakelijke klanten zoals kantoren, winkels, horeca en magazijnen, maar ook voor particulieren die stabiel internet nodig hebben in hun woning of tuinkantoor.',
-
+        question: 'Voor wie doet Signaalmakers bekabeling?',
+        answer: (
+          <>
+            Wij doen bekabelingsprojecten voor <a href="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP's, ICT-bedrijven</a>, installatiebedrijven en zakelijke klanten. Wij leggen alleen de <a href="/diensten" style={{ color: '#FF6A00', fontWeight: 600 }}>kabels</a>, jullie IT-partner doet de rest. Zo is er geen overlap en kan iedereen doen waar hij goed in is.
+          </>
+        ),
       },
       {
-        question: 'In welke regio\'s installeert Signaalmakers wifi-netwerken?',
-        answer: 'Als wifi-monteur zijn we actief in Zuid-Holland, Noord-Brabant, Utrecht, Gelderland en Overijssel. Denk aan steden als Rotterdam, Den Haag, Dordrecht, Utrecht, Eindhoven, Breda, Tilburg, Arnhem, Nijmegen en omliggende plaatsen. Voor andere regio\'s kunt u contact opnemen.',
-
+        question: 'In welke regio\'s is Signaalmakers actief?',
+        answer: 'We werken door heel Nederland. Denk aan steden als Rotterdam, Den Haag, Dordrecht, Utrecht, Eindhoven, Breda, Tilburg, Arnhem, Nijmegen, Groningen en omliggende plaatsen. Voor grotere projecten plannen we vooruit.',
       },
       {
-        question: 'Hoe snel kan de wifi-monteur langskomen?',
-        answer: 'In de meeste gevallen kunnen we binnen een week langskomen voor een inventarisatie en wifi-meting. Spoedeisende wifi-installaties proberen we altijd snel in te plannen.',
-
+        question: 'Hoe snel kunnen jullie beginnen?',
+        answer: 'Dat hangt af van de planning en het abonnement. Met een Essential abonnement plannen we binnen 2 weken, met Priority binnen een week en met Express binnen 2 werkdagen. Voor spoed rekenen we €400 extra per dag.',
       },
       {
-        question: 'Leveren jullie ook wifi access points en netwerkmateriaal?',
-        answer: 'Ja, wij leveren alle benodigde apparatuur: professionele wifi access points, netwerkswitches, Cat6/Cat6A databekabeling, patchkasten en meer. Alles wordt door onze wifi-monteur geïnstalleerd en geconfigureerd.',
-
-      },
-    ],
-    wifiNetwerk: [
-      {
-        question: 'Wat kost een professionele wifi-installatie?',
-        answer: 'De kosten voor een wifi-installatie hangen af van de grootte van het pand, het aantal wifi access points en de hoeveelheid databekabeling. Een standaard kantoor van 200-300m² start meestal vanaf €2.500 excl. BTW, inclusief wifi-meting, materiaal en installatie. Voor een exacte offerte komen we graag langs.',
-
-      },
-      {
-        question: 'Waarom geen consumentenrouter maar professionele wifi?',
-        answer: 'Consumentenrouters zijn ontworpen voor kleine ruimtes (50-100m²) en weinig apparaten. In grotere panden of bij veel gebruikers krijgt u dode hoeken, trage snelheden en verbindingsproblemen. Professionele wifi access points zijn gebouwd voor zakelijk gebruik en grotere oppervlaktes.',
-
-      },
-      {
-        question: 'Hoe lang duurt een professionele wifi-installatie?',
-        answer: 'De duur van een wifi-installatie hangt af van de grootte en complexiteit. Een standaard kantoor van 200-300m² met wifi access points en databekabeling leveren we meestal binnen één werkdag op. Grotere wifi-projecten duren langer, maar dat bespreken we vooraf.',
-
-      },
-      {
-        question: 'Wat is een wifi-meting en waarom is dat nodig?',
-        answer: 'Een professionele wifi-meting brengt het pand in kaart: waar is het wifi-signaal sterk of zwak, waar is interferentie, wat zijn de optimale locaties voor access points? Zonder wifi-meting werkt u op goed geluk. Met een meting weet u zeker dat het netwerk optimaal werkt.',
-
-      },
-      {
-        question: 'Wat is een gastennetwerk en heb ik dat nodig?',
-        answer: 'Een gastennetwerk is een apart wifi-netwerk voor bezoekers. Het houdt uw bedrijfsnetwerk veilig door gasten geen toegang te geven tot uw interne systemen, printers en servers. Voor zakelijk gebruik is dit sterk aanbevolen.',
+        question: 'Leveren jullie ook materiaal of alleen arbeid?',
+        answer: (
+          <>
+            We leveren standaard <a href="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>Cat6, Cat6A en Cat7 kabels</a>, patchpanels, keystones en labels. Apparatuur zoals switches en routers leveren we niet, dat doet de <a href="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP of IT-partner</a>. Wij doen alleen de fysieke bekabeling.
+          </>
+        ),
       },
     ],
-    zakelijk: [
+    bekabeling: [
       {
-        question: 'Kunnen jullie wifi ook buiten kantooruren installeren?',
-        answer: 'Ja, dat is vaak zelfs beter om verstoring van uw bedrijfsvoering te minimaliseren. De wifi-installatie kan in overleg \'s avonds, \'s nachts of in het weekend plaatsvinden.',
-
+        question: 'Wat kost een bekabelingsproject?',
+        answer: 'Dat hangt af van het aantal kabels, de afstand en de complexiteit. Voor een standaard kantoor met 20-30 datapunten betaal je ongeveer €2.500-€4.000 excl. BTW, inclusief materiaal, testen en documentatie. Voor een exacte offerte komen we graag langs.',
       },
       {
-        question: 'Bieden jullie ook onderhoud voor wifi-installaties?',
-        answer: 'De wifi access points en netwerkapparatuur die wij installeren hebben meestal weinig onderhoud nodig. Voor software-updates en monitoring van uw netwerk werken we samen met onze vaste IT-partner. Zij bieden verschillende support-pakketten.',
-
+        question: 'Welke bekabeling gebruiken jullie?',
+        answer: (
+          <>
+            Wij werken uitsluitend met <a href="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>Cat6, Cat6A en Cat7 bekabeling</a>. Cat6 ondersteunt tot 1 Gbit/s, Cat6A tot 10 Gbit/s en Cat7 tot 10 Gbit/s met extra afscherming. Dit garandeert toekomstbestendige netwerkinfrastructuur.
+          </>
+        ),
       },
       {
-        question: 'Wat gebeurt er als er na de wifi-installatie problemen zijn?',
-        answer: 'We testen het complete wifi-netwerk uitgebreid tijdens de oplevering. Mocht er toch iets niet goed werken aan uw wifi of netwerk, dan komen we dat natuurlijk oplossen. Op onze wifi-installaties geven we garantie.',
-
+        question: 'Hoe lang duurt een bekabelingsproject?',
+        answer: 'Een standaard kantoor met 20-30 datapunten en een patchkast leveren we meestal binnen 1-2 dagen op. Grotere projecten met meerdere verdiepingen of complexe routing duren langer, maar dat bespreken we vooraf.',
+      },
+      {
+        question: 'Testen jullie alle kabels?',
+        answer: (
+          <>
+            Ja, standaard. Elke kabel wordt <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>getest met professionele meetapparatuur</a>. We controleren lengte, bandbreedte, signaalverlies en connecties. Je krijgt een <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>opleverrapport</a> met alle metingen en nummering.
+          </>
+        ),
+      },
+      {
+        question: 'Wat doen jullie met oude bekabeling?',
+        answer: (
+          <>
+            Bij <a href="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>patchkast-opruiming</a> halen we oude, dode en overbodige kabels weg. Werkende kabels blijven zitten tenzij je anders aangeeft. Alles wordt netjes opgeruimd en <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>gedocumenteerd</a>.
+          </>
+        ),
       },
     ],
-    particulier: [
+    msp: [
       {
-        question: 'Is een professionele wifi-installatie niet te duur voor particulieren?',
-        answer: 'Een professionele wifi-installatie kost meer dan zelf een paar mesh-punten neerzetten, maar u krijgt wel een oplossing die écht werkt en jarenlang meegaat. Voor een gemiddelde woning ligt de investering voor wifi en databekabeling tussen €1.000-€2.500.',
-
+        question: 'Waarom Signaalmakers gebruiken als MSP?',
+        answer: (
+          <>
+            Wij zijn geen concurrent, maar jullie <a href="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>bekabelingspartner</a>. Jullie doen IT en beheer, wij doen de <a href="/diensten" style={{ color: '#FF6A00', fontWeight: 600 }}>kabels</a>. Geen overlap, geen gedoe. Jullie klant krijgt netjes gelabelde bekabeling met <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>documentatie</a>, jij kunt direct installeren zonder zoeken.
+          </>
+        ),
       },
       {
-        question: 'Kunnen jullie wifi installeren in de tuin of schuur?',
-        answer: 'Ja, met outdoor wifi access points kunnen we wifi realiseren in tuinen, overkappingen en vrijstaande bijgebouwen zoals tuinkantoren of schuren. We bekijken eerst de situatie en adviseren de beste wifi-oplossing.',
-
+        question: 'Doen jullie ook configuratie van apparatuur?',
+        answer: 'Nee, wij doen geen IT. Switches, routers, wifi-punten, dat is voor de MSP. Wij leggen de kabels, monteren patchpanels af, testen alles en leveren met documentatie op. Jullie pluggen de apparatuur in en configureren.',
       },
       {
-        question: 'Moet ik mijn hele huis openbreken voor databekabeling?',
-        answer: 'Niet altijd. Afhankelijk van de situatie kunnen we vaak via bestaande kabelgoten, kruipruimtes of plafonds werken met de netwerkbekabeling. Tijdens de inventarisatie bekijken we de mogelijkheden voor wifi en bekabeling.',
-
+        question: 'Kunnen jullie buiten kantooruren werken?',
+        answer: 'Ja, vaak zelfs beter. Bekabeling kan prima \'s avonds, \'s nachts of in het weekend, zodat het bedrijf geen last heeft. We plannen dat graag vooraf in.',
+      },
+      {
+        question: 'Wat als er na oplevering iets niet klopt?',
+        answer: 'We testen alles voordat we opleveren, maar mocht er toch iets niet goed zijn, dan komen we het oplossen. Op onze bekabeling geven we garantie. Staat alles in het opleverrapport, dan werkt het.',
       },
     ],
   };
 
   const allFaqs = [
     ...faqs.algemeen.map(f => ({ ...f, category: 'Algemeen' })),
-    ...faqs.wifiNetwerk.map(f => ({ ...f, category: 'Wifi & Netwerk' })),
-    ...faqs.zakelijk.map(f => ({ ...f, category: 'Zakelijk' })),
-    ...faqs.particulier.map(f => ({ ...f, category: 'Particulier' })),
+    ...faqs.bekabeling.map(f => ({ ...f, category: 'Bekabeling' })),
+    ...faqs.msp.map(f => ({ ...f, category: 'Voor MSP\'s' })),
   ];
 
   return (
     <>
       <SEO
-        title="Veelgestelde Vragen (FAQ)"
-        description="Antwoorden op veelgestelde vragen over wifi-installatie, netwerk bekabeling, kosten, werkgebied en onze diensten."
-        keywords="faq, veelgestelde vragen, wifi kosten, installatie vragen, netwerk vragen"
+        title="Veelgestelde Vragen (FAQ) - Bekabeling | Signaalmakers"
+        description="Antwoorden op veelgestelde vragen over databekabeling, patchkasten, kosten, werkgebied en samenwerking met MSP's."
+        keywords="faq bekabeling, databekabeling kosten, patchkast vragen, Cat6 Cat6A vragen"
         url="https://signaalmakers.nl/faq"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -122,7 +121,7 @@ export default function FAQ() {
               Veelgestelde vragen
             </h1>
             <p className="text-lg text-gray-300">
-              Antwoorden op de meest gestelde vragen over onze diensten
+              Antwoorden op de meest gestelde vragen over bekabeling
             </p>
           </div>
         </div>

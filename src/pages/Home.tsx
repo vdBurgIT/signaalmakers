@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
 import {
-  Wifi,
   Cable,
-  Monitor,
   Server,
   Volume2,
   Building2,
-  Home as HomeIcon,
   CheckCircle2,
   ChevronDown,
   ChevronUp,
+  Clock,
+  Zap,
 } from 'lucide-react';
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
@@ -23,80 +22,72 @@ export default function Home() {
   const services = [
     {
       icon: Cable,
-      title: 'Databekabeling',
-      description: 'Professionele netwerkbekabeling Cat6 en Cat6A, nette patchkasten en serverkasten voor een toekomstbestendig bedrijfsnetwerk.',
+      title: 'Databekabeling & UTP-kabels',
+      description: 'Netwerkbekabeling met Cat6, Cat6A en Cat7 UTP-kabels. Datapunten aanleggen van werkplek naar patchkast. Professioneel kabelmanagement, netjes afgewerkt, gelabeld en gedocumenteerd.',
       link: '/diensten/databekabeling',
     },
     {
-      icon: Wifi,
-      title: 'Wifi & Netwerk',
-      description: 'Professionele wifi-installatie met volledige dekking. Wifi-metingen, access points en optimale prestaties voor kantoor en thuis.',
-      link: '/diensten/wifi-netwerk',
+      icon: Server,
+      title: 'Patchkast Bekabeling',
+      description: 'Patchkast opbouwen, opruimen en moderniseren. Structured cabling volgens de normen. Overzichtelijk kabelmanagement, netjes en klaar voor gebruik door jouw MSP of IT-partner.',
+      link: '/diensten/patchkasten',
     },
     {
       icon: Volume2,
-      title: 'Audio-installaties',
-      description: 'Audio-installaties voor zakelijk gebruik en thuis. Achtergrondmuziek, plafondluidsprekers en multiroom-systemen.',
+      title: 'Signaallijnen & AV-bekabeling',
+      description: 'AV-bekabeling en signaallijnen voor vergaderruimtes, presentatieruimtes en audiosystemen. Wij leggen de kabels, geen apparatuur-installatie.',
       link: '/diensten/audio',
     },
     {
-      icon: Monitor,
-      title: 'Content Creators',
-      description: 'Stabiel netwerk en wifi voor livestreaming en content uploaden. Professionele bekabeling en studio-netwerk voor creators.',
-      link: '/content-creators',
+      icon: CheckCircle2,
+      title: 'Testen & Documentatie',
+      description: 'Elk bekabelingsproject wordt professioneel getest en opgemeten. Opleverrapport met alle metingen, kabelplan en volledige documentatie voor toekomstbestendig netwerk infrastructuur.',
+      link: '/diensten/testen',
     },
   ];
 
   const faqs = [
     {
-      question: 'Voor wie installeert Signaalmakers wifi-netwerken?',
-      answer: 'Wij installeren professionele wifi-netwerken en databekabeling voor zowel zakelijke klanten zoals kantoren, winkels en horeca als particulieren die stabiel internet nodig hebben in hun woning, tuinkantoor of schuur.',
-
+      question: 'Wat doet Signaalmakers precies?',
+      answer: 'Wij leggen databekabeling en signaallijnen. Van werkplek naar patchkast, patchkasten opbouwen en AV-bekabeling. Geen IT, geen configuratie, geen wifi-plannen. Gewoon bekabeling die werkt.',
     },
     {
-      question: 'Hoe lang duurt een professionele wifi-installatie?',
-      answer: 'De duur van een wifi-installatie hangt af van de grootte en complexiteit. Een standaard kantoor van 200-300m² met access points en databekabeling leveren we meestal binnen één werkdag op. We starten altijd met een wifi-meting en intake.',
-
+      question: 'Voor wie zijn de abonnementen bedoeld?',
+      answer: 'Voor MSP\'s, ICT-bedrijven en zakelijke klanten die regelmatig bekabeling nodig hebben. Met een abonnement heb je gegarandeerde capaciteit, vaste doorlooptijden en flinke kortingen.',
     },
     {
-      question: 'Leveren jullie ook netwerkmateriaal en access points?',
-      answer: 'Ja, wij leveren alle benodigde netwerkmateriaal: professionele access points, switches, Cat6/Cat6A databekabeling, patchkasten en meer. Alles wordt door onze wifi-monteur geïnstalleerd en geconfigureerd.',
-
-    },
-    {
-      question: 'In welke regio\'s installeert Signaalmakers wifi-netwerken?',
-      answer: 'Wij installeren wifi-netwerken en databekabeling in Zuid-Holland, Noord-Brabant, Utrecht, Gelderland en Overijssel. Denk aan steden als Rotterdam, Den Haag, Dordrecht, Utrecht, Eindhoven, Breda, Tilburg, Arnhem, Nijmegen en omliggende plaatsen. Voor andere regio\'s kunt u contact opnemen.',
-
+      question: 'Wat zijn de doorlooptijden?',
+      answer: 'Standaard 21 werkdagen. Met Express-abonnement heb je voorrang. Spoedprojecten kunnen binnen 5 werkdagen, tegen spoedtoeslag.',
     },
   ];
 
   const blogPosts = [
     {
-      title: '5 redenen waarom Cat6A beter is dan Cat5e',
-      excerpt: 'Overweegt u nieuwe bekabeling? Ontdek waarom Cat6A de slimme keuze is voor de toekomst.',
+      title: 'Waarom Cat6A de standaard moet zijn',
+      excerpt: 'Cat5 is verouderd. Cat6A biedt meer snelheid, meer bandbreedte en toekomstbestendigheid. Wij leggen uit waarom.',
       date: '15 maart 2025',
-      slug: 'cat6a-vs-cat5e',
+      slug: 'cat6a-standaard',
     },
     {
-      title: 'Wifi voor thuiswerkers: wat heb je echt nodig?',
-      excerpt: 'Thuiswerken vraagt om een stabiel netwerk. Wij leggen uit welke oplossingen écht werken.',
+      title: 'Patchkast opruimen: zo doe je dat',
+      excerpt: 'Een rommelige patchkast kost tijd en geld. Wij laten zien hoe je het netjes en overzichtelijk houdt.',
       date: '8 maart 2025',
-      slug: 'wifi-thuiswerkers',
+      slug: 'patchkast-opruimen',
     },
     {
-      title: 'Gastennetwerk: waarom het essentieel is',
-      excerpt: 'Bescherm uw bedrijfsnetwerk door bezoekers een apart netwerk te geven. Zo doet u dat.',
+      title: 'Doorlooptijden bekabeling: wat is realistisch?',
+      excerpt: 'Waarom duurt bekabeling soms weken? We leggen uit waar de tijd in zit en hoe je sneller bent.',
       date: '1 maart 2025',
-      slug: 'gastennetwerk-essentieel',
+      slug: 'doorlooptijden-bekabeling',
     },
   ];
 
   return (
     <>
       <SEO
-        title="Signaalmakers - ICT & Netwerk Oplossingen voor Bedrijven en Particulieren"
-        description="Professionele ICT-diensten: WiFi-netwerken, databekabeling, internet & telefonie, hosting, moderne werkplek oplossingen en cybersecurity. Voor zakelijk en particulier."
-        keywords="ICT diensten, WiFi netwerk, databekabeling, internet telefonie, hosting, domein, moderne werkplek, cybersecurity, veilig online, wifi monteur, netwerkinstallatie, wifi installatie"
+        title="Signaalmakers - Netwerkbekabeling en Databekabeling door heel Nederland"
+        description="Professionele netwerkbekabeling en databekabeling voor MSP's en bedrijven in heel Nederland. UTP-bekabeling Cat6, Cat6A en Cat7. Patchkasten, signaallijnen, kabelmanagement. Structured cabling met gegarandeerde capaciteit en vaste doorlooptijden. Rotterdam, Den Haag, Utrecht, Eindhoven, Amsterdam."
+        keywords="netwerkbekabeling, databekabeling, UTP-bekabeling, ethernetkabel, structured cabling, patchkast bekabeling, Cat6 bekabeling, Cat6A bekabeling, datapunten aanleggen, kabelplan, kabelmanagement, bekabeld netwerk, wifi-bekabeling, access point bekabeling, bekabeling Nederland, datanetwerk, netwerk infrastructuur"
         url="https://signaalmakers.nl/"
       />
       <div>
@@ -145,23 +136,23 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Wifi, netwerk en audio die gewoon werkt
+                Professionele netwerkbekabeling door heel Nederland
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                Signaalmakers installeert professionele wifi-netwerken en databekabeling voor bedrijven en particulieren in Zuid-Holland, Noord-Brabant, Utrecht, Gelderland en Overijssel. Van wifi-meting tot complete netwerkinstallatie, alles vakkundig uitgevoerd.
+                Wij leggen <Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>databekabeling en UTP-kabels</Link> voor <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en kantoren in heel Nederland. Van datapunten aanleggen tot <Link to="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>patchkast bekabeling</Link> en structured cabling. Alleen de fysieke netwerklaag, geen IT-beheer of configuratie. Met onze <Link to="/abonnementen" style={{ color: '#FF6A00', fontWeight: 600 }}>abonnementen</Link> heb je gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen op uren én materiaal. Cat6, Cat6A en Cat7 bekabeling — netjes afgewerkt, <Link to="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>getest en gedocumenteerd</Link>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/contact"
+                  to="/abonnementen"
                   className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg text-center shadow-lg hover:shadow-xl hover:scale-105"
                 >
-                  Plan een intake
+                  Bekijk abonnementen
                 </Link>
                 <Link
                   to="/contact"
                   className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg text-center"
                 >
-                  Vraag een offerte
+                  Direct contact
                 </Link>
               </div>
             </div>
@@ -170,16 +161,16 @@ export default function Home() {
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                   <div className="grid grid-cols-2 gap-6">
                     <div className="bg-gradient-to-br from-[#FF6A00] to-[#E55F00] p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Wifi className="w-16 h-16 text-white" />
+                      <Cable className="w-16 h-16 text-white" />
                     </div>
                     <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Cable className="w-16 h-16 text-white" />
+                      <Server className="w-16 h-16 text-white" />
                     </div>
                     <div className="bg-gradient-to-br from-green-500 to-green-600 p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
                       <Volume2 className="w-16 h-16 text-white" />
                     </div>
                     <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-6 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                      <Server className="w-16 h-16 text-white" />
+                      <CheckCircle2 className="w-16 h-16 text-white" />
                     </div>
                   </div>
                 </div>
@@ -195,10 +186,10 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] mb-6">
-              Wat wij doen
+              Netwerkbekabeling & Structured Cabling
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Van <a href="/diensten/wifi-netwerk">wifi-installatie</a> tot complete <a href="/diensten/databekabeling">netwerkbekabeling</a>. Signaalmakers zorgt voor stabiele internetverbindingen en professionele <a href="/diensten/audio">audio-oplossingen</a> in heel Nederland.
+              Wij leggen <Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>databekabeling, UTP-kabels en ethernetkabels</Link> voor een stabiel en betrouwbaar bekabeld netwerk. Van <Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>datapunten aanleggen</Link> en <Link to="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>patchkast bekabeling</Link> tot kabelmanagement en kabelplanning. Alleen de fysieke netwerklaag — geen apparatuur, geen IT-beheer, geen configuratie. Gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen voor <Link to="/abonnementen" style={{ color: '#FF6A00', fontWeight: 600 }}>abonnees</Link>.
             </p>
           </div>
 
@@ -238,88 +229,129 @@ export default function Home() {
           <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="network-lines" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M 0 50 L 100 50" stroke="white" strokeWidth="0.5" opacity="0.2" strokeDasharray="5,5" />
-                <path d="M 50 0 L 50 100" stroke="white" strokeWidth="0.5" opacity="0.2" strokeDasharray="5,5" />
-              </pattern>
-              <linearGradient id="signal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="white" stopOpacity="0" />
-                <stop offset="50%" stopColor="white" stopOpacity="0.3" />
-                <stop offset="100%" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#network-lines)" />
-            <circle cx="20%" cy="30%" r="3" fill="white" opacity="0.4" />
-            <circle cx="80%" cy="70%" r="3" fill="white" opacity="0.4" />
-            <circle cx="60%" cy="20%" r="2" fill="white" opacity="0.3" />
-            <circle cx="30%" cy="80%" r="2" fill="white" opacity="0.3" />
-            <path d="M 20% 30% Q 50% 25%, 80% 70%" stroke="url(#signal-gradient)" strokeWidth="1" fill="none" />
-          </svg>
-        </div>
-
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16">
-            Voor bedrijven en particulieren
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6">
+            Abonnementen
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white/10 rounded-2xl p-10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-              <div className="w-16 h-16 bg-[#FF6A00] rounded-xl flex items-center justify-center mb-6">
-                <Building2 className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">MKB en zakelijke klanten</h3>
+          <p className="text-lg md:text-xl text-gray-300 text-center mb-16 max-w-3xl mx-auto">
+            Altijd plek, altijd snelheid, geen gedoe. Gegarandeerde capaciteit en flinke kortingen op uren én materiaal.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-2">Essential</h3>
+              <div className="text-4xl font-bold mb-6">€99<span className="text-lg text-gray-300">/mnd</span></div>
               <ul className="space-y-3 text-gray-300 mb-8">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Wifi voor kantoren en bedrijfspanden</span>
+                  <span>2 projectdagen gegarandeerd</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Netwerk voor retail, winkel en horeca</span>
+                  <span>5% korting op uren</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Wifi-installatie magazijn en logistiek</span>
+                  <span>10% korting op materiaal</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Wifi-metingen en netwerkadvies</span>
+                  <span>Reiskosten €0,60/km</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Spoed: +€400/dag</span>
                 </li>
               </ul>
               <Link
-                to="/zakelijk"
-                className="inline-block bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
+                to="/abonnementen#essential"
+                className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
-                Zakelijke oplossingen
+                Meer info
               </Link>
             </div>
 
-            <div className="bg-white/10 rounded-2xl p-10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-              <div className="w-16 h-16 bg-[#FF6A00] rounded-xl flex items-center justify-center mb-6">
-                <HomeIcon className="w-8 h-8 text-white" />
+            <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border-2 border-[#FF6A00] hover:bg-white/15 transition-all duration-300 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FF6A00] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                Populair
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">Particuliere klanten</h3>
+              <h3 className="text-2xl font-bold mb-2">Priority</h3>
+              <div className="text-4xl font-bold mb-6">€199<span className="text-lg text-gray-300">/mnd</span></div>
               <ul className="space-y-3 text-gray-300 mb-8">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Wifi-installatie in hele woning</span>
+                  <span>4 projectdagen gegarandeerd</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Wifi in tuinkantoor, schuur en overkapping</span>
+                  <span>10% korting op uren</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Audio-installatie huis en tuin</span>
+                  <span>20% korting op materiaal</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Reiskosten €0,36/km</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Spoed: +€300/dag</span>
                 </li>
               </ul>
               <Link
-                to="/particulier"
-                className="inline-block bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
+                to="/abonnementen#priority"
+                className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
-                Particuliere oplossingen
+                Meer info
+              </Link>
+            </div>
+
+            <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-2">Express</h3>
+              <div className="text-4xl font-bold mb-6">€599<span className="text-lg text-gray-300">/mnd</span></div>
+              <ul className="space-y-3 text-gray-300 mb-8">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>8 projectdagen gegarandeerd</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>15% korting op uren</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>30% korting op materiaal</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Reiskosten €0,24/km</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Spoed: +€250/dag</span>
+                </li>
+              </ul>
+              <Link
+                to="/abonnementen#express"
+                className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
+              >
+                Meer info
+              </Link>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-16 text-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 border border-white/20">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Spoed nodig?</h3>
+              <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+                Binnen 5 werkdagen op locatie. Duidelijke spoedtoeslag per abonnement: van €250 tot €400 per dag, afhankelijk van je pakket.
+              </p>
+              <Link
+                to="/contact"
+                className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                Spoed aanvragen
               </Link>
             </div>
           </div>
@@ -331,22 +363,22 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-6">
-            Waarom kiezen voor Signaalmakers
+            Waarom Signaalmakers voor netwerkbekabeling
           </h2>
           <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
-            Als wifi-monteur en netwerkspecialist geloven wij in zorgvuldige voorbereiding en vakkundig werk. Zo garanderen we een netwerk dat jarenlang meegaat.
+            Betrouwbare netwerkbekabeling en databekabeling zonder gedoe. Gegarandeerde monteurscapaciteit, vaste doorlooptijden en eerlijke prijzen. Alleen de fysieke netwerklaag — jouw MSP doet de rest.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { num: 1, title: 'Zorgvuldige planning', desc: 'We starten altijd met een uitgebreide intake en professionele wifi-meting om uw situatie in kaart te brengen.' },
-              { num: 2, title: 'Professionele wifi-metingen', desc: 'Bij elke wifi-installatie voeren we metingen uit voor optimale access point-plaatsing en netwerkprestaties.' },
-              { num: 3, title: 'Nette netwerkinstallatie', desc: 'Databekabeling netjes weggewerkt, access points professioneel gemonteerd en complete documentatie.' },
-              { num: 4, title: 'Transparante prijzen', desc: 'Duidelijke offertes zonder verborgen kosten. U weet van tevoren precies wat de wifi-installatie kost.' },
-            ].map((item) => (
-              <div key={item.num} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6 shadow-lg">
-                  {item.num}
+              { icon: Clock, title: 'Vaste doorlooptijden', desc: 'Standaard 21 werkdagen. Express-abonnees krijgen voorrang. Spoed kan binnen 5 werkdagen.' },
+              { icon: CheckCircle2, title: 'Gegarandeerde capaciteit', desc: 'Met een abonnement heb je elke maand gegarandeerd plek. Geen wachtlijsten, geen gedoe.' },
+              { icon: Cable, title: 'Alleen bekabeling', desc: 'Cat6, Cat6A, Cat7. Patchkasten. Signaallijnen. Meer niet. Geen IT, geen configuratie.' },
+              { icon: Zap, title: 'Flinke kortingen', desc: 'Tot 15% korting op uren en 30% korting op materiaal. Reiskosten vanaf €0,24/km.' },
+            ].map((item, index) => (
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6 shadow-lg">
+                  <item.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#0E243A] mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
@@ -356,13 +388,82 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-6">
+            Voor wie werken wij?
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
+            Wij werken voornamelijk voor MSP's en ICT-bedrijven, maar ook direct voor bedrijven en organisaties.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+            <div className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center mb-6">
+                <Building2 className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor MSP's</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Wij zijn geen concurrent, maar jouw <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>bekabelingspartner</Link>. Wij leveren monteurscapaciteit, standaardisatie en zekerheid. Geen overlap met jouw diensten.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>White label mogelijk (onder jouw naam)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Gegarandeerde monteurscapaciteit</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Alles getest en gedocumenteerd</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Jij doet de configuratie, wij de kabels</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center mb-6">
+                <Server className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor bedrijven en organisaties</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Wij werken vaak in overleg met jouw <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP of IT-partner</Link>. Wij regelen de kabels, zodat jouw IT-partner direct verder kan met de configuratie.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Duidelijke prijzen en planning</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Samenwerking met jouw MSP mogelijk</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Alleen bekabeling, geen IT-beheer</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                  <span>Opleverrapport met metingen</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 md:py-28 bg-gradient-to-br from-[#0E243A] to-[#1a3a5c]" id="werkgebied">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-6">
-            Waar zijn wij werkzaam?
+            Waar we werken
           </h2>
           <p className="text-lg md:text-xl text-gray-300 text-center mb-12 max-w-3xl mx-auto leading-relaxed">
-            Signaalmakers is actief in alle 12 provincies van Nederland. Van Groningen tot Zeeland verzorgen wij professionele wifi-netwerken, databekabeling en audio-installaties voor zowel zakelijke als particuliere klanten.
+            Heel Nederland. Van Rotterdam tot Groningen, van Amsterdam tot Maastricht. Databekabeling en patchkasten voor MSP's, ICT-bedrijven, kantoren en datacenters in steden als Den Haag, Delft, Utrecht, Eindhoven, Breda, Arnhem, Nijmegen, Zwolle en omgeving.
           </p>
 
           <div className="max-w-5xl mx-auto">
@@ -383,7 +484,7 @@ export default function Home() {
                   Landelijke dekking
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Van Groningen tot Zeeland en van Noord-Holland tot Limburg: onze wifi-monteurs en netwerkspecialisten staan voor u klaar. Wij verzorgen professionele installaties door heel Nederland.
+                  Wij werken in alle 12 provincies. Databekabeling en patchkasten voor kantoren, datacenters en bedrijfspanden door heel Nederland.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {['Groningen', 'Friesland', 'Drenthe', 'Overijssel', 'Flevoland', 'Gelderland', 'Utrecht', 'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Limburg'].map((provincie) => (

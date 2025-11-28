@@ -6,9 +6,9 @@ export default function StatusSupport() {
   return (
     <>
       <SEO
-        title="Status & Support"
-        description="Bekijk de huidige status van onze diensten en krijg ondersteuning. Support voor wifi-netwerken, databekabeling en ICT-diensten."
-        keywords="status, support, ondersteuning, helpdesk, service status"
+        title="Status & Support - Contact voor bekabelingsvragen | Signaalmakers"
+        description="Vragen over uw bekabeling? Neem contact op voor support bij databekabeling, patchkasten of signaallijnen."
+        keywords="support bekabeling, contact databekabeling, hulp patchkast, bekabeling support"
         url="https://signaalmakers.nl/status-support"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -26,7 +26,7 @@ export default function StatusSupport() {
               Status & Support
             </h1>
             <p className="text-lg text-gray-300">
-              Status van diensten en toegang tot support via onze IT-partner
+              Contact en ondersteuning voor bekabelingsprojecten
             </p>
           </div>
         </div>
@@ -40,62 +40,18 @@ export default function StatusSupport() {
               <div className="flex gap-3">
                 <Info className="w-6 h-6 text-blue-500 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-2">Support via IT-partner</h3>
+                  <h3 className="font-bold text-blue-900 mb-2">Wij doen alleen bekabeling</h3>
                   <p className="text-blue-800">
-                    Voor diensten als internet, telefonie, Microsoft 365 en IT-beheer verloopt support via het portaal van onze vaste IT-partner. Daar kunt u ook de status van diensten bekijken en supporttickets aanmaken.
+                    Signaalmakers legt alleen kabels. Voor IT-beheer, configuratie en netwerkapparatuur moet u bij uw MSP of IT-partner zijn. Wij kunnen wel helpen met vragen over de door ons geïnstalleerde bekabeling.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <a
-                href="#"
-                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#FF6A00]"
-              >
-                <div className="w-12 h-12 bg-[#FF6A00] rounded-lg flex items-center justify-center mb-4">
-                  <ExternalLink className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Status van diensten</h3>
-                <p className="text-gray-600 mb-4">
-                  Bekijk de real-time status van uw internet, telefonie en andere diensten.
-                </p>
-                <span className="text-[#FF6A00] font-semibold">Bekijk status →</span>
-              </a>
-
-              <a
-                href="#"
-                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#FF6A00]"
-              >
-                <div className="w-12 h-12 bg-[#FF6A00] rounded-lg flex items-center justify-center mb-4">
-                  <ExternalLink className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Supportportaal</h3>
-                <p className="text-gray-600 mb-4">
-                  Meld storingen, stel vragen en volg uw tickets in het supportportaal.
-                </p>
-                <span className="text-[#FF6A00] font-semibold">Open supportportaal →</span>
-              </a>
-
-              <a
-                href="#"
-                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#FF6A00]"
-              >
-                <div className="w-12 h-12 bg-[#FF6A00] rounded-lg flex items-center justify-center mb-4">
-                  <ExternalLink className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Kennisbank</h3>
-                <p className="text-gray-600 mb-4">
-                  Handleidingen, instructies en veelgestelde vragen in de kennisbank.
-                </p>
-                <span className="text-[#FF6A00] font-semibold">Open kennisbank →</span>
-              </a>
-            </div>
-
             <div className="bg-gray-50 rounded-lg p-8">
-              <h2 className="text-2xl font-bold text-[#0E243A] mb-6">Hardware-installaties door Signaalmakers</h2>
+              <h2 className="text-2xl font-bold text-[#0E243A] mb-6">Contact voor bekabeling</h2>
               <p className="text-gray-600 mb-4">
-                Voor vragen of problemen met de door Signaalmakers geïnstalleerde hardware (wifi, bekabeling, audio, intercom) kunt u direct contact met ons opnemen:
+                Voor vragen of problemen met de door Signaalmakers geïnstalleerde bekabeling (databekabeling, patchkasten, signaallijnen) kunt u direct contact met ons opnemen:
               </p>
 
               <div className="space-y-3">

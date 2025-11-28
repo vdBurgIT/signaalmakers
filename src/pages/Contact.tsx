@@ -10,7 +10,7 @@ export default function Contact() {
     email: '',
     phone: '',
     address: '',
-    customerType: 'zakelijk',
+    customerType: 'msp',
     subject: '',
     message: '',
   });
@@ -30,9 +30,9 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact - Neem Contact Op"
-        description="Neem contact op met Signaalmakers voor professionele ICT-diensten. Plan een intake, vraag een offerte aan of stel uw vraag. Wij helpen u graag verder."
-        keywords="contact, offerte aanvragen, ICT advies, wifi installatie aanvragen, netwerk advies, contact signaalmakers"
+        title="Contact - Bekabelingsprojecten zonder gedoe | Signaalmakers"
+        description="Wil je je bekabelingsprojecten zonder gedoe laten uitvoeren? Neem contact op en we plannen direct in. Voor MSP's, ICT-bedrijven en zakelijke klanten door heel Nederland."
+        keywords="contact bekabeling, offerte databekabeling, MSP partner contact, bekabeling aanvragen"
         url="https://signaalmakers.nl/contact"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -47,10 +47,10 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Contact
+              Neem contact op
             </h1>
-            <p className="text-lg text-gray-300">
-              Neem contact met ons op voor advies, een offerte of andere vragen
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Wil je je bekabelingsprojecten zonder gedoe laten uitvoeren? Neem contact op en we plannen direct in. We werken door heel Nederland voor MSP's, ICT-bedrijven en zakelijke klanten.
             </p>
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function Contact() {
 
                     <div>
                       <label htmlFor="customerType" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Type klant *
+                        Type organisatie *
                       </label>
                       <select
                         id="customerType"
@@ -154,8 +154,9 @@ export default function Contact() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6A00] focus:border-transparent"
                       >
-                        <option value="zakelijk">Zakelijk</option>
-                        <option value="particulier">Particulier</option>
+                        <option value="msp">MSP / IT-bedrijf</option>
+                        <option value="installateur">Installatiebedrijf</option>
+                        <option value="zakelijk">Zakelijke klant</option>
                       </select>
                     </div>
 
@@ -207,8 +208,8 @@ export default function Contact() {
                       <MapPin className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-semibold text-gray-900">Adres</p>
-                        <p className="text-gray-600">Voorbeeldstraat 123</p>
-                        <p className="text-gray-600">1234 AB Utrecht</p>
+                        <p className="text-gray-600">Vezelstraat 14</p>
+                        <p className="text-gray-600">3295 VP 's-Gravendeel</p>
                       </div>
                     </div>
 
@@ -216,8 +217,8 @@ export default function Contact() {
                       <Phone className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-semibold text-gray-900">Telefoon</p>
-                        <a href="tel:+31612345678" className="text-gray-600 hover:text-[#FF6A00]">
-                          +31 6 12345678
+                        <a href="tel:+31645251333" className="text-gray-600 hover:text-[#FF6A00]">
+                          +31 6 45251333
                         </a>
                       </div>
                     </div>
@@ -274,6 +275,26 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Google Maps Embed voor lokale SEO */}
+            <div className="mt-12">
+              <div className="bg-gray-50 rounded-lg p-2 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.8!2d4.6189!3d51.7786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c42e5c5c5c5c5c%3A0x5c5c5c5c5c5c5c5c!2sVezelstraat%2014%2C%203295%20VP%20's-Gravendeel!5e0!3m2!1snl!2snl!4v1234567890"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Locatie Signaalmakers - Vezelstraat 14, 's-Gravendeel"
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <p className="text-center text-gray-600 mt-4">
+                <strong>Werkgebied:</strong> 's-Gravendeel, Hoeksche Waard, Dordrecht, Rotterdam en heel Nederland
+              </p>
             </div>
           </div>
         </div>

@@ -15,16 +15,12 @@ function ScrollToTop() {
   return null;
 }
 
-const WifiNetwerk = lazy(() => import(/* webpackChunkName: "wifi" */ './pages/services/WifiNetwerk'));
+const Diensten = lazy(() => import(/* webpackChunkName: "diensten" */ './pages/Diensten'));
 const Databekabeling = lazy(() => import(/* webpackChunkName: "data" */ './pages/services/Databekabeling'));
-const InternetTelefonie = lazy(() => import(/* webpackChunkName: "internet" */ './pages/services/InternetTelefonie'));
-const ModerneWerkplek = lazy(() => import(/* webpackChunkName: "werkplek" */ './pages/services/ModerneWerkplek'));
-const HostingDomein = lazy(() => import(/* webpackChunkName: "hosting" */ './pages/services/HostingDomein'));
-const VeiligOnline = lazy(() => import(/* webpackChunkName: "veilig" */ './pages/services/VeiligOnline'));
+const Patchkasten = lazy(() => import(/* webpackChunkName: "patchkasten" */ './pages/services/Patchkasten'));
 const Audio = lazy(() => import(/* webpackChunkName: "audio" */ './pages/services/Audio'));
-const Zakelijk = lazy(() => import(/* webpackChunkName: "zakelijk" */ './pages/Zakelijk'));
-const Particulier = lazy(() => import(/* webpackChunkName: "particulier" */ './pages/Particulier'));
-const ContentCreators = lazy(() => import(/* webpackChunkName: "creators" */ './pages/ContentCreators'));
+const Testen = lazy(() => import(/* webpackChunkName: "testen" */ './pages/services/Testen'));
+const Abonnementen = lazy(() => import(/* webpackChunkName: "abonnementen" */ './pages/Abonnementen'));
 const Blog = lazy(() => import(/* webpackChunkName: "blog" */ './pages/Blog'));
 const BlogPost = lazy(() => import(/* webpackChunkName: "blogpost" */ './pages/BlogPost'));
 const OverOns = lazy(() => import(/* webpackChunkName: "over" */ './pages/OverOns'));
@@ -45,17 +41,12 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
 
-                <Route path="/diensten/wifi-netwerk" element={<WifiNetwerk />} />
+                <Route path="/diensten" element={<Diensten />} />
                 <Route path="/diensten/databekabeling" element={<Databekabeling />} />
-                <Route path="/diensten/internet-telefonie" element={<InternetTelefonie />} />
-                <Route path="/diensten/moderne-werkplek" element={<ModerneWerkplek />} />
-                <Route path="/diensten/hosting-domein" element={<HostingDomein />} />
-                <Route path="/diensten/veilig-online" element={<VeiligOnline />} />
+                <Route path="/diensten/patchkasten" element={<Patchkasten />} />
                 <Route path="/diensten/audio" element={<Audio />} />
-
-                <Route path="/zakelijk" element={<Zakelijk />} />
-                <Route path="/particulier" element={<Particulier />} />
-                <Route path="/content-creators" element={<ContentCreators />} />
+                <Route path="/diensten/testen" element={<Testen />} />
+                <Route path="/abonnementen" element={<Abonnementen />} />
 
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />

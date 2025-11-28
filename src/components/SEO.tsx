@@ -23,9 +23,9 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = 'Signaalmakers - ICT & Netwerk Oplossingen voor Bedrijven en Particulieren',
-  description = 'Professionele ICT-diensten: WiFi-netwerken, databekabeling, internet & telefonie, hosting, moderne werkplek oplossingen en cybersecurity. Voor zakelijk en particulier.',
-  keywords = 'ICT diensten, WiFi netwerk, databekabeling, internet telefonie, hosting, domein, moderne werkplek, cybersecurity, veilig online',
+  title = 'Signaalmakers - Netwerkbekabeling door heel Nederland | Jouw projecten, onze zekerheid',
+  description = 'Professionele netwerkbekabeling en databekabeling door heel Nederland. Cat6, Cat6A en Cat7 UTP-bekabeling, patchkasten, signaallijnen. Jouw projecten, onze zekerheid.',
+  keywords = 'netwerkbekabeling, databekabeling, UTP-bekabeling, Cat6 bekabeling, Cat6A bekabeling, Cat7 bekabeling, patchkast bekabeling, structured cabling, datapunten aanleggen, kabelmanagement, bekabeld netwerk Nederland',
   image = 'https://signaalmakers.nl/Transparent-03.png',
   url = 'https://signaalmakers.nl/',
   type = 'website',
@@ -99,16 +99,38 @@ const SEO = ({
               }
             : {
                 name: 'Signaalmakers',
+                slogan: 'Jouw projecten, onze zekerheid',
                 description: description,
                 url: url,
                 logo: 'https://signaalmakers.nl/logo.png',
                 image: image,
                 telephone: '+31645251333',
+                email: 'info@signaalmakers.nl',
                 address: {
                   '@type': 'PostalAddress',
+                  streetAddress: 'Vezelstraat 14',
+                  postalCode: '3295 VP',
+                  addressLocality: '\'s-Gravendeel',
+                  addressRegion: 'Zuid-Holland',
                   addressCountry: 'NL',
                 },
-                sameAs: [],
+                geo: {
+                  '@type': 'GeoCoordinates',
+                  latitude: '51.7786',
+                  longitude: '4.6189',
+                },
+                areaServed: [
+                  '\'s-Gravendeel',
+                  'Hoeksche Waard',
+                  'Zuid-Holland',
+                  'Rotterdam',
+                  'Dordrecht',
+                  'Nederland',
+                ],
+                sameAs: [
+                  'https://www.linkedin.com/company/signaalmakers',
+                  'https://www.instagram.com/signaalmakers/',
+                ],
               }),
         })}
       </script>
