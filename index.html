@@ -45,12 +45,16 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://signaalmakers.nl/" />
 
-    <!-- DNS prefetch only (no preconnect to avoid early connections) -->
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <!-- Preconnect to critical domains for faster connections -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/images/logo/logo_signaalmakers.png" as="image" fetchpriority="high" />
+
+    <!-- Prefetch likely next pages for instant navigation -->
+    <link rel="prefetch" href="/diensten" as="document" />
+    <link rel="prefetch" href="/contact" as="document" />
 
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
@@ -171,6 +175,8 @@
       @keyframes spin{to{transform:rotate(360deg)}}
       /* Optimize images and prevent CLS */
       img{max-width:100%;height:auto;display:block;-webkit-user-select:none;user-select:none;content-visibility:auto}
+      /* Logo dimensions to prevent CLS */
+      header img[alt*="Logo"]{width:200px;height:56px}
       a,button{text-decoration:none;border:none;background:none;cursor:pointer}
       /* Touch optimization without layout changes */
       @media (max-width:768px){button,a,[role="button"]{min-height:48px;min-width:48px}}
