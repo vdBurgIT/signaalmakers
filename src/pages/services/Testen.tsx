@@ -131,7 +131,11 @@ export default function Testen() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: 'Voor MSP\'s',
+                  title: (
+                    <>
+                      Voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</Link>
+                    </>
+                  ),
                   desc: 'Jij kunt met vertrouwen installeren. Als het niet werkt, is het snel te vinden dankzij de documentatie.',
                 },
                 {

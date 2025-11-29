@@ -232,7 +232,7 @@ export default function Abonnementen() {
               Voor wie zijn deze pakketten?
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Onze abonnementen zijn bedoeld voor MSP's, ICT-bedrijven en organisaties met een vaste stroom aan bekabelingsprojecten. Je betaalt alleen wat je gebruikt: uren, materiaal en reiskosten. Maar je weet zeker dat we er zijn wanneer jij ons nodig hebt.
+              Onze abonnementen zijn bedoeld voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en organisaties met een vaste stroom aan <Link to="/diensten" style={{ fontWeight: 600 }}>bekabelingsprojecten</Link>. Je betaalt alleen wat je gebruikt: uren, materiaal en reiskosten. Maar je weet zeker dat we er zijn wanneer jij ons nodig hebt.
             </p>
             <Link
               to="/contact"

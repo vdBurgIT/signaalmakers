@@ -13,7 +13,7 @@ export default function FAQ() {
         question: 'Voor wie doet Signaalmakers bekabeling?',
         answer: (
           <>
-            Wij doen bekabelingsprojecten voor <a href="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP's, ICT-bedrijven</a>, installatiebedrijven en zakelijke klanten. Wij leggen alleen de <a href="/diensten" style={{ color: '#FF6A00', fontWeight: 600 }}>kabels</a>, jullie IT-partner doet de rest. Zo is er geen overlap en kan iedereen doen waar hij goed in is.
+            Wij doen bekabelingsprojecten voor <a href="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</a>, installatiebedrijven en zakelijke klanten. Wij leggen alleen de <a href="/diensten" style={{ fontWeight: 600 }}>kabels</a>, jullie IT-partner doet de rest. Zo is er geen overlap en kan iedereen doen waar hij goed in is.
           </>
         ),
       },
@@ -29,7 +29,7 @@ export default function FAQ() {
         question: 'Leveren jullie ook materiaal of alleen arbeid?',
         answer: (
           <>
-            We leveren standaard <a href="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>Cat6, Cat6A en Cat7 kabels</a>, patchpanels, keystones en labels. Apparatuur zoals switches en routers leveren we niet, dat doet de <a href="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP of IT-partner</a>. Wij doen alleen de fysieke bekabeling.
+            We leveren standaard <a href="/diensten/databekabeling" style={{ fontWeight: 600 }}>Cat6, Cat6A en Cat7 kabels</a>, patchpanels, keystones en labels. Apparatuur zoals switches en routers leveren we niet, dat doet de <a href="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</a>. Wij doen alleen de fysieke bekabeling.
           </>
         ),
       },
@@ -43,7 +43,7 @@ export default function FAQ() {
         question: 'Welke bekabeling gebruiken jullie?',
         answer: (
           <>
-            Wij werken uitsluitend met <a href="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>Cat6, Cat6A en Cat7 bekabeling</a>. Cat6 ondersteunt tot 1 Gbit/s, Cat6A tot 10 Gbit/s en Cat7 tot 10 Gbit/s met extra afscherming. Dit garandeert toekomstbestendige netwerkinfrastructuur.
+            Wij werken uitsluitend met <a href="/diensten/databekabeling" style={{ fontWeight: 600 }}>Cat6, Cat6A en Cat7 bekabeling</a>. Cat6 ondersteunt tot 1 Gbit/s, Cat6A tot 10 Gbit/s en Cat7 tot 10 Gbit/s met extra afscherming. Dit garandeert toekomstbestendige netwerkinfrastructuur.
           </>
         ),
       },
@@ -55,7 +55,7 @@ export default function FAQ() {
         question: 'Testen jullie alle kabels?',
         answer: (
           <>
-            Ja, standaard. Elke kabel wordt <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>getest met professionele meetapparatuur</a>. We controleren lengte, bandbreedte, signaalverlies en connecties. Je krijgt een <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>opleverrapport</a> met alle metingen en nummering.
+            Ja, standaard. Elke kabel wordt <a href="/diensten/testen" style={{ fontWeight: 600 }}>getest met professionele meetapparatuur</a>. We controleren lengte, bandbreedte, signaalverlies en connecties. Je krijgt een <a href="/diensten/testen" style={{ fontWeight: 600 }}>opleverrapport</a> met alle metingen en nummering.
           </>
         ),
       },
@@ -63,7 +63,7 @@ export default function FAQ() {
         question: 'Wat doen jullie met oude bekabeling?',
         answer: (
           <>
-            Bij <a href="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>patchkast-opruiming</a> halen we oude, dode en overbodige kabels weg. Werkende kabels blijven zitten tenzij je anders aangeeft. Alles wordt netjes opgeruimd en <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>gedocumenteerd</a>.
+            Bij <a href="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast-opruiming</a> halen we oude, dode en overbodige kabels weg. Werkende kabels blijven zitten tenzij je anders aangeeft. Alles wordt netjes opgeruimd en <a href="/diensten/testen" style={{ fontWeight: 600 }}>gedocumenteerd</a>.
           </>
         ),
       },
@@ -73,7 +73,7 @@ export default function FAQ() {
         question: 'Waarom Signaalmakers gebruiken als MSP?',
         answer: (
           <>
-            Wij zijn geen concurrent, maar jullie <a href="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>bekabelingspartner</a>. Jullie doen IT en beheer, wij doen de <a href="/diensten" style={{ color: '#FF6A00', fontWeight: 600 }}>kabels</a>. Geen overlap, geen gedoe. Jullie klant krijgt netjes gelabelde bekabeling met <a href="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>documentatie</a>, jij kunt direct installeren zonder zoeken.
+            Wij zijn geen concurrent, maar jullie <a href="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>bekabelingspartner</a>. Jullie doen IT en beheer, wij doen de <a href="/diensten" style={{ fontWeight: 600 }}>kabels</a>. Geen overlap, geen gedoe. Jullie klant krijgt netjes gelabelde bekabeling met <a href="/diensten/testen" style={{ fontWeight: 600 }}>documentatie</a>, jij kunt direct installeren zonder zoeken.
           </>
         ),
       },

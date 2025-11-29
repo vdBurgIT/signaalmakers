@@ -81,7 +81,7 @@ export default function Patchkasten() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>MSP kan sneller werken, minder fouten</span>
+                    <span><Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP</Link> kan sneller werken, minder fouten</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -186,7 +186,7 @@ export default function Patchkasten() {
               Voor MSP's
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              Een nette patchkast betekent dat jouw technici sneller kunnen werken. Minder tijd zoeken, minder fouten, meer grip op het netwerk.
+              Een nette patchkast betekent dat jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>technici</Link> sneller kunnen werken. Minder tijd zoeken, minder fouten, meer grip op het netwerk.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">

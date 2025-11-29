@@ -139,7 +139,7 @@ export default function Home() {
                 Professionele netwerkbekabeling door heel Nederland
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                Wij leggen <Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>databekabeling en UTP-kabels</Link> voor <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en kantoren in heel Nederland. Van datapunten aanleggen tot <Link to="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>patchkast bekabeling</Link> en structured cabling. Alleen de fysieke netwerklaag, geen IT-beheer of configuratie. Met onze <Link to="/abonnementen" style={{ color: '#FF6A00', fontWeight: 600 }}>abonnementen</Link> heb je gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen op uren én materiaal. Cat6, Cat6A en Cat7 bekabeling — netjes afgewerkt, <Link to="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>getest en gedocumenteerd</Link>.
+                Wij leggen <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>databekabeling en UTP-kabels</Link> voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en kantoren in heel Nederland. Van datapunten aanleggen tot <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast bekabeling</Link> en structured cabling. Alleen de fysieke netwerklaag, geen IT-beheer of configuratie. Met onze <Link to="/abonnementen" style={{ fontWeight: 600 }}>abonnementen</Link> heb je gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen op uren én materiaal. Cat6, Cat6A en Cat7 bekabeling — netjes afgewerkt, <Link to="/diensten/testen" style={{ fontWeight: 600 }}>getest en gedocumenteerd</Link>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -189,7 +189,7 @@ export default function Home() {
               Netwerkbekabeling & Structured Cabling
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Wij leggen <Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>databekabeling, UTP-kabels en ethernetkabels</Link> voor een stabiel en betrouwbaar bekabeld netwerk. Van <Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>datapunten aanleggen</Link> en <Link to="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>patchkast bekabeling</Link> tot kabelmanagement en kabelplanning. Alleen de fysieke netwerklaag — geen apparatuur, geen IT-beheer, geen configuratie. Gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen voor <Link to="/abonnementen" style={{ color: '#FF6A00', fontWeight: 600 }}>abonnees</Link>.
+              Wij leggen <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>databekabeling, UTP-kabels en ethernetkabels</Link> voor een stabiel en betrouwbaar bekabeld netwerk. Van <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>datapunten aanleggen</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast bekabeling</Link> tot kabelmanagement en kabelplanning. Alleen de fysieke netwerklaag — geen apparatuur, geen IT-beheer, geen configuratie. Gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen voor <Link to="/abonnementen" style={{ fontWeight: 600 }}>abonnees</Link>.
             </p>
           </div>
 
@@ -404,7 +404,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor MSP's</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Wij zijn geen concurrent, maar jouw <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>bekabelingspartner</Link>. Wij leveren monteurscapaciteit, standaardisatie en zekerheid. Geen overlap met jouw diensten.
+                Wij zijn geen concurrent, maar jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>bekabelingspartner</Link>. Wij leveren monteurscapaciteit, standaardisatie en zekerheid. Geen overlap met jouw diensten.
               </p>
               <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
@@ -432,7 +432,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor bedrijven en organisaties</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Wij werken vaak in overleg met jouw <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP of IT-partner</Link>. Wij regelen de kabels, zodat jouw IT-partner direct verder kan met de configuratie.
+                Wij werken vaak in overleg met jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link>. Wij regelen de kabels, zodat jouw IT-partner direct verder kan met de configuratie.
               </p>
               <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start gap-2">

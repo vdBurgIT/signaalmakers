@@ -40,7 +40,7 @@ export default function Databekabeling() {
               Wat we doen
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Bekabeling van werkplekken en ruimtes naar de patchkast of technische ruimte. Netjes, logisch en volgens de standaard.
+              Bekabeling van werkplekken en ruimtes naar de <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link> of technische ruimte. Netjes, logisch en volgens de standaard.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -81,7 +81,7 @@ export default function Databekabeling() {
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>MSP's die monteurs en betrouwbare bekabeling nodig hebben</span>
+                    <span><Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</Link> die monteurs en betrouwbare bekabeling nodig hebben</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -130,7 +130,7 @@ export default function Databekabeling() {
               Waarom met ons werken?
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              Eén standaard manier van werken. Geen gedoe achteraf. Jouw MSP kan direct door met de configuratie.
+              Eén standaard manier van werken. Geen gedoe achteraf. Jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP</Link> kan direct door met de configuratie.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">

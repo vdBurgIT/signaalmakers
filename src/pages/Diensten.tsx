@@ -8,7 +8,11 @@ export default function Diensten() {
     {
       icon: Cable,
       title: 'Databekabeling & UTP-kabels',
-      description: 'Professionele netwerkbekabeling met Cat6, Cat6A en Cat7 UTP-kabels. Wij trekken datapunten van werkplek naar patchkast, monteren netjes af, labelen en testen alles. Structured cabling volgens de normen voor een betrouwbaar bekabeld netwerk.',
+      description: (
+        <>
+          Professionele netwerkbekabeling met <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>Cat6, Cat6A en Cat7</Link> UTP-kabels. Wij trekken datapunten van werkplek naar <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link>, monteren netjes af, labelen en <Link to="/diensten/testen" style={{ fontWeight: 600 }}>testen</Link> alles. Structured cabling volgens de normen voor een betrouwbaar bekabeld netwerk.
+        </>
+      ) as any,
       link: '/diensten/databekabeling',
       features: [
         'Datapunten aanleggen van werkplek naar patchkast',
@@ -21,7 +25,11 @@ export default function Diensten() {
     {
       icon: Server,
       title: 'Patchkast Bekabeling & Opbouw',
-      description: 'Patchkasten opbouwen, opruimen en moderniseren. Oude rommel eruit, overzichtelijk kabelmanagement volgens structured cabling principes. Alles netjes gelabeld en gedocumenteerd voor jouw MSP of IT-partner.',
+      description: (
+        <>
+          <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>Patchkasten opbouwen</Link>, opruimen en moderniseren. Oude rommel eruit, overzichtelijk kabelmanagement volgens structured cabling principes. Alles netjes gelabeld en <Link to="/diensten/testen" style={{ fontWeight: 600 }}>gedocumenteerd</Link> voor jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link>.
+        </>
+      ) as any,
       link: '/diensten/patchkasten',
       features: [
         'Patchkast opruimen en volledig herbouwen',
@@ -84,7 +92,7 @@ export default function Diensten() {
               Netwerkbekabeling & Structured Cabling
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Wij doen alleen netwerkbekabeling en UTP-kabels trekken. Van datapunten aanleggen en patchkast bekabeling tot kabelmanagement en AV-bekabeling. Alleen de fysieke netwerklaag — geen IT-beheer, geen apparatuur, geen configuratie. Voor MSP's, ICT-bedrijven en zakelijke klanten in heel Nederland.
+              Wij doen alleen <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>netwerkbekabeling en UTP-kabels</Link> trekken. Van <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>datapunten aanleggen</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast bekabeling</Link> tot kabelmanagement en <Link to="/diensten/audio" style={{ fontWeight: 600 }}>AV-bekabeling</Link>. Alleen de fysieke netwerklaag — geen IT-beheer, geen apparatuur, geen configuratie. Voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en zakelijke klanten in heel Nederland.
             </p>
           </div>
         </div>

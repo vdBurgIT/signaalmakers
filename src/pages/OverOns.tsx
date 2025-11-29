@@ -46,11 +46,11 @@ export default function OverOns() {
 
             <div className="text-lg text-gray-700 space-y-6 mb-16 leading-relaxed">
               <p>
-                Signaalmakers is specialist in <Link to="/diensten" style={{ color: '#FF6A00', fontWeight: 600 }}>netwerkbekabeling en data-infrastructuur</Link>. Wij leggen de fysieke laag van het netwerk aan: de kabels, datapunten en aansluitingen waar al het verkeer overheen loopt. Geen ingewikkelde IT-verhalen, maar gewoon strak aangelegde bekabeling die klopt, netjes is afgewerkt en klaar is voor de toekomst.
+                Signaalmakers is specialist in <Link to="/diensten" style={{ fontWeight: 600 }}>netwerkbekabeling en data-infrastructuur</Link>. Wij leggen de fysieke laag van het netwerk aan: de kabels, datapunten en aansluitingen waar al het verkeer overheen loopt. Geen ingewikkelde IT-verhalen, maar gewoon strak aangelegde bekabeling die klopt, netjes is afgewerkt en klaar is voor de toekomst.
               </p>
 
               <p>
-                Wij werken in heel Nederland voor MKB-bedrijven, kantoren, winkels, horeca, logistieke omgevingen, magazijnen, zorglocaties, scholen én woningen met een serieuze netwerkvraag. Daarnaast zijn wij vaste <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>bekabelingspartner voor MSP-bedrijven</Link>, IT-dienstverleners en systeembeheerders. Zij regelen de routers, switches, wifi-configuratie en serverbeheer; wij zorgen dat de bekabeling en aansluitpunten tot in detail op orde zijn.
+                Wij werken in heel Nederland voor MKB-bedrijven, kantoren, winkels, horeca, logistieke omgevingen, magazijnen, zorglocaties, scholen én woningen met een serieuze netwerkvraag. Daarnaast zijn wij vaste <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>bekabelingspartner voor MSP-bedrijven</Link>, IT-dienstverleners en systeembeheerders. Zij regelen de routers, switches, wifi-configuratie en serverbeheer; wij zorgen dat de bekabeling en aansluitpunten tot in detail op orde zijn.
               </p>
             </div>
 
@@ -59,11 +59,11 @@ export default function OverOns() {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>Netwerkbekabeling aanleggen</Link></strong> — UTP-datakabels (CAT6, CAT6A, CAT7)</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>Netwerkbekabeling aanleggen</Link></strong> — UTP-datakabels (CAT6, CAT6A, CAT7)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/databekabeling" style={{ color: '#FF6A00', fontWeight: 600 }}>Datapunten aanleggen en aansluiten</Link></strong> — professioneel afgewerkt</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>Datapunten aanleggen en aansluiten</Link></strong> — professioneel afgewerkt</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -75,7 +75,7 @@ export default function OverOns() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/patchkasten" style={{ color: '#FF6A00', fontWeight: 600 }}>Patchkast-bekabeling</Link></strong> — kabelmanagement netjes maken</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>Patchkast-bekabeling</Link></strong> — kabelmanagement netjes maken</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -83,7 +83,7 @@ export default function OverOns() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/testen" style={{ color: '#FF6A00', fontWeight: 600 }}>Labeling en basisdocumentatie</Link></strong> — alles traceerbaar</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/testen" style={{ fontWeight: 600 }}>Labeling en basisdocumentatie</Link></strong> — alles traceerbaar</span>
                 </li>
               </ul>
             </div>
@@ -161,7 +161,7 @@ export default function OverOns() {
               Partner voor MSP's en IT-dienstverleners
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Veel <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link> schakelen Signaalmakers in als specialist voor de fysieke laag. Wij leggen de kabels, jullie doen de configuratie en het beheer.
+              Veel <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link> schakelen Signaalmakers in als specialist voor de fysieke laag. Wij leggen de kabels, jullie doen de configuratie en het beheer.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -196,7 +196,7 @@ export default function OverOns() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Resultaat:</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  De verantwoordelijkheid blijft helder — de <Link to="/blog/msp-bekabelingspartner" style={{ color: '#FF6A00', fontWeight: 600 }}>MSP of IT-partner</Link> beheert het netwerk, Signaalmakers beheert de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.
+                  De verantwoordelijkheid blijft helder — de <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link> beheert het netwerk, Signaalmakers beheert de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.
                 </p>
               </div>
             </div>
