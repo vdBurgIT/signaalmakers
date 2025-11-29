@@ -32,8 +32,8 @@ export default function Header() {
               src="/images/logo/logo_signaalmakers.png"
               alt="Signaalmakers Logo"
               className="h-12 md:h-14 w-auto object-contain"
-              width="200"
-              height="56"
+              width="1180"
+              height="379"
               fetchpriority="high"
               loading="eager"
             />

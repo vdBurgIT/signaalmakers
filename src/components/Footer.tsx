@@ -12,8 +12,8 @@ export default function Footer() {
                 src="/images/logo/logo_signaalmakers.png"
                 alt="Signaalmakers Logo"
                 className="h-10 md:h-12 w-auto"
-                width="200"
-                height="56"
+                width="1180"
+                height="379"
                 loading="lazy"
               />
             </div>
