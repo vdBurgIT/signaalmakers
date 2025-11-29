@@ -19,6 +19,7 @@ export default defineConfig({
       threshold: 512,
       deleteOriginFile: false,
       compressionOptions: { level: 9 },
+      filter: /\.(js|mjs|json|css|html|svg)$/i,
     }),
     viteCompression({
       algorithm: 'brotliCompress',
@@ -26,6 +27,7 @@ export default defineConfig({
       threshold: 512,
       deleteOriginFile: false,
       compressionOptions: { level: 11 },
+      filter: /\.(js|mjs|json|css|html|svg)$/i,
     }),
     VitePWA({
       registerType: 'autoUpdate',

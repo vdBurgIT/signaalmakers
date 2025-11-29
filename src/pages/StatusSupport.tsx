@@ -1,4 +1,4 @@
-import { ExternalLink, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 import SEO from '../components/SEO';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 

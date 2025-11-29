@@ -34,7 +34,7 @@ export default function Header() {
               className="h-12 md:h-14 w-auto object-contain"
               width="1180"
               height="379"
-              fetchpriority="high"
+              fetchPriority="high"
               loading="eager"
             />
           </Link>

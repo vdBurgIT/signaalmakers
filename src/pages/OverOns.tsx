@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Target, Cable, Zap, CheckCircle2, Building2, Users } from 'lucide-react';
+import { Cable, Zap, CheckCircle2, Building2, Users } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 
 export default function OverOns() {

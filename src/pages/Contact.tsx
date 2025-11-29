@@ -17,7 +17,21 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Formulier verzonden! In een echte applicatie zou dit naar een server worden gestuurd.');
+
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject || 'Contact via signaalmakers.nl');
+    const body = encodeURIComponent(
+      `Naam: ${formData.name}\n` +
+      `Bedrijf: ${formData.company || 'Niet opgegeven'}\n` +
+      `Email: ${formData.email}\n` +
+      `Telefoon: ${formData.phone || 'Niet opgegeven'}\n` +
+      `Adres/Plaats: ${formData.address || 'Niet opgegeven'}\n` +
+      `Type organisatie: ${formData.customerType === 'msp' ? 'MSP / IT-bedrijf' : formData.customerType === 'installateur' ? 'Installatiebedrijf' : 'Zakelijke klant'}\n\n` +
+      `Bericht:\n${formData.message}`
+    );
+
+    // Open default email client
+    window.location.href = `mailto:info@signaalmakers.nl?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -262,7 +276,7 @@ export default function Contact() {
                   <div className="space-y-2 text-gray-600">
                     <div className="flex justify-between">
                       <span>Maandag - Vrijdag</span>
-                      <span className="font-semibold">09:00 - 17:00</span>
+                      <span className="font-semibold">08:00 - 18:00</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Zaterdag</span>
@@ -281,7 +295,7 @@ export default function Contact() {
             <div className="mt-12">
               <div className="bg-gray-50 rounded-lg p-2 overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.8!2d4.6189!3d51.7786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c42e5c5c5c5c5c%3A0x5c5c5c5c5c5c5c5c!2sVezelstraat%2014%2C%203295%20VP%20's-Gravendeel!5e0!3m2!1snl!2snl!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.8087087562376!2d4.616689876722433!3d51.778599971856094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c42de7c7c7c7c7%3A0x7c7c7c7c7c7c7c7c!2sVezelstraat%2014%2C%203295%20VP%20's-Gravendeel!5e0!3m2!1snl!2snl!4v1732875000000!5m2!1snl!2snl"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}

@@ -4,6 +4,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,13 +32,21 @@ const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ './pages/N
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <ScrollToTop />
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-grow">
-            <Suspense fallback={<div className="loader"></div>}>
+    <ErrorBoundary>
+      <HelmetProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-grow">
+              <Suspense fallback={
+                <div className="min-h-screen flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="loader mb-4"></div>
+                    <p className="text-gray-600">Laden...</p>
+                  </div>
+                </div>
+              }>
               <Routes>
                 <Route path="/" element={<Home />} />
 
@@ -65,6 +74,7 @@ function App() {
         </div>
       </Router>
     </HelmetProvider>
+    </ErrorBoundary>
   );
 }
 

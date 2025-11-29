@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://signaalmakers.nl/</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Diensten Overzicht -->
   <url>
     <loc>https://signaalmakers.nl/diensten</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Diensten - Databekabeling -->
   <url>
     <loc>https://signaalmakers.nl/diensten/databekabeling</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Diensten - Patchkasten -->
   <url>
     <loc>https://signaalmakers.nl/diensten/patchkasten</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- Diensten - Audio / Signaallijnen -->
   <url>
     <loc>https://signaalmakers.nl/diensten/audio</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -44,7 +44,7 @@
   <!-- Diensten - Testen & Documentatie -->
   <url>
     <loc>https://signaalmakers.nl/diensten/testen</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -52,7 +52,7 @@
   <!-- Abonnementen -->
   <url>
     <loc>https://signaalmakers.nl/abonnementen</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -60,7 +60,7 @@
   <!-- Blog Overzicht -->
   <url>
     <loc>https://signaalmakers.nl/blog</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -111,7 +111,7 @@
   <!-- Over Ons -->
   <url>
     <loc>https://signaalmakers.nl/over-ons</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -119,7 +119,7 @@
   <!-- FAQ -->
   <url>
     <loc>https://signaalmakers.nl/faq</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -127,7 +127,7 @@
   <!-- Status & Support -->
   <url>
     <loc>https://signaalmakers.nl/status-support</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -135,7 +135,7 @@
   <!-- Contact -->
   <url>
     <loc>https://signaalmakers.nl/contact</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

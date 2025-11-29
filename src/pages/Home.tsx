@@ -61,24 +61,25 @@ export default function Home() {
     },
   ];
 
+  // Import echte blog posts
   const blogPosts = [
     {
-      title: 'Waarom Cat6A de standaard moet zijn',
-      excerpt: 'Cat5 is verouderd. Cat6A biedt meer snelheid, meer bandbreedte en toekomstbestendigheid. Wij leggen uit waarom.',
-      date: '15 maart 2025',
-      slug: 'cat6a-standaard',
+      title: 'Waarom MSP-bedrijven baat hebben bij een vaste bekabelingspartner',
+      excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe Signaalmakers als specialist in netwerkbekabeling de fysieke laag verzorgt.',
+      date: '28 november 2024',
+      slug: 'msp-bekabelingspartner',
     },
     {
-      title: 'Patchkast opruimen: zo doe je dat',
-      excerpt: 'Een rommelige patchkast kost tijd en geld. Wij laten zien hoe je het netjes en overzichtelijk houdt.',
-      date: '8 maart 2025',
-      slug: 'patchkast-opruimen',
+      title: 'Waarom netwerkbekabeling de belangrijkste laag van je IT-omgeving is',
+      excerpt: 'Veel bedrijven investeren in dure routers en switches, maar vergeten de basis: de netwerkbekabeling. Toch is dit de fysieke laag waarop alles draait.',
+      date: '28 november 2024',
+      slug: 'netwerkbekabeling-belangrijkste-laag',
     },
     {
-      title: 'Doorlooptijden bekabeling: wat is realistisch?',
-      excerpt: 'Waarom duurt bekabeling soms weken? We leggen uit waar de tijd in zit en hoe je sneller bent.',
-      date: '1 maart 2025',
-      slug: 'doorlooptijden-bekabeling',
+      title: 'Wat is wifi-bekabeling en waarom heb je datakabels nodig voor goede wifi?',
+      excerpt: 'Draadloos internet werkt toch zonder kabels? Ja, maar voor een professioneel wifi-netwerk heb je juist bekabeling nodig.',
+      date: '21 november 2024',
+      slug: 'wifi-bekabeling-uitgelegd',
     },
   ];
 

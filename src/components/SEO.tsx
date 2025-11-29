@@ -102,7 +102,7 @@ const SEO = ({
                 slogan: 'Jouw projecten, onze zekerheid',
                 description: description,
                 url: url,
-                logo: 'https://signaalmakers.nl/logo.png',
+                logo: 'https://signaalmakers.nl/images/logo/logo-klein-signaalmakers.jpg',
                 image: image,
                 telephone: '+31645251333',
                 email: 'info@signaalmakers.nl',

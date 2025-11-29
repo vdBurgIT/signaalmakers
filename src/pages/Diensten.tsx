@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Cable, Server, Volume2, CheckCircle2, Zap, Clock, Building2 } from 'lucide-react';
+import { Cable, Server, Volume2, CheckCircle2, Building2 } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
 
