@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain (optional)
+# https://your-site.netlify.app/* https://signaalmakers.nl/:splat 301!
+
+# SPA fallback - redirect all routes to index.html
+/*    /index.html   200
