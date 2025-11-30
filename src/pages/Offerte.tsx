@@ -16,22 +16,76 @@ export default function Offerte() {
     description: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
 
-    const subject = encodeURIComponent('Offerte-aanvraag via signaalmakers.nl');
-    const body = encodeURIComponent(
-      `Naam: ${formData.name}\n` +
-      `Bedrijf: ${formData.company || 'Niet opgegeven'}\n` +
-      `Email: ${formData.email}\n` +
-      `Telefoon: ${formData.phone || 'Niet opgegeven'}\n` +
-      `Adres/Locatie: ${formData.address || 'Niet opgegeven'}\n` +
-      `Type project: ${formData.projectType === 'netwerk' ? 'Netwerkbekabeling' : formData.projectType === 'audio' ? 'Audiokabels' : formData.projectType === 'camera' ? 'Camera-bekabeling' : formData.projectType === 'patchkast' ? 'Patchkasten' : 'Meten & Certificeren'}\n` +
-      `Aantal locaties/datapunten: ${formData.numLocations || 'Niet opgegeven'}\n\n` +
-      `Projectomschrijving:\n${formData.description}`
-    );
+    // Map project type to readable format
+    const projectTypeMap: Record<string, string> = {
+      netwerk: 'Netwerkbekabeling',
+      audio: 'Audiokabels',
+      camera: 'Camera-bekabeling',
+      patchkast: 'Patchkasten',
+      certificeren: 'Meten & Certificeren',
+    };
 
-    window.location.href = `mailto:info@signaalmakers.nl?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          customerType: 'offerte',
+          subject: 'Offerte-aanvraag',
+          message: `Type project: ${projectTypeMap[formData.projectType] || formData.projectType}\nAantal locaties/datapunten: ${formData.numLocations || 'Niet opgegeven'}\n\nProjectomschrijving:\n${formData.description}`,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitStatus({
+          type: 'success',
+          message: result.message || 'Bedankt voor uw offerte-aanvraag! We nemen zo snel mogelijk contact met u op.',
+        });
+        // Reset form
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          address: '',
+          projectType: 'netwerk',
+          numLocations: '',
+          description: '',
+        });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: result.message || 'Er is een fout opgetreden. Probeer het later opnieuw.',
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Er is een fout opgetreden bij het verzenden van uw aanvraag. Neem direct contact met ons op via info@signaalmakers.nl',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -238,11 +292,24 @@ export default function Offerte() {
                       />
                     </div>
 
+                    {submitStatus.type && (
+                      <div
+                        className={`p-4 rounded-lg ${
+                          submitStatus.type === 'success'
+                            ? 'bg-green-50 text-green-800 border border-green-200'
+                            : 'bg-red-50 text-red-800 border border-red-200'
+                        }`}
+                      >
+                        {submitStatus.message}
+                      </div>
+                    )}
+
                     <button
                       type="submit"
-                      className="w-full bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-lg"
+                      disabled={isSubmitting}
+                      className="w-full bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Verstuur offerte-aanvraag
+                      {isSubmitting ? 'Bezig met verzenden...' : 'Verstuur offerte-aanvraag'}
                     </button>
                   </form>
                 </div>
