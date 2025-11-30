@@ -83,31 +83,58 @@ $email_body .= "==============================================\n";
 $email_body .= "Verzonden op: " . date('d-m-Y H:i:s') . "\n";
 $email_body .= "IP-adres: " . $_SERVER['REMOTE_ADDR'] . "\n";
 
-// Email headers
-$headers = "From: noreply@signaalmakers.nl\r\n";
+// Email headers - Use proper domain-based From address
+$domain = $_SERVER['HTTP_HOST'] ?? 'signaalmakers.nl';
+$from_email = 'noreply@' . str_replace('www.', '', $domain);
+
+$headers = "From: Signaalmakers Contactformulier <{$from_email}>\r\n";
 $headers .= "Reply-To: {$email}\r\n";
+$headers .= "Return-Path: {$from_email}\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$headers .= "Content-Transfer-Encoding: 8bit\r\n";
+
+// Log for debugging
+$log_file = __DIR__ . '/../../contact_log.txt';
+$log_entry = date('Y-m-d H:i:s') . " - Attempting to send email\n";
+$log_entry .= "To: {$to}\n";
+$log_entry .= "From: {$from_email}\n";
+$log_entry .= "Subject: {$email_subject}\n";
+$log_entry .= "Reply-To: {$email}\n";
+$log_entry .= "---\n";
 
 // Send email
 try {
-    $mail_sent = mail($to, $email_subject, $email_body, $headers);
+    $mail_sent = @mail($to, $email_subject, $email_body, $headers);
 
     if ($mail_sent) {
+        $log_entry .= "Status: SUCCESS\n\n";
+        @file_put_contents($log_file, $log_entry, FILE_APPEND);
+
         http_response_code(200);
         echo json_encode([
             'success' => true,
-            'message' => 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.'
+            'message' => 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.',
+            'debug' => 'Mail sent successfully'
         ]);
     } else {
+        $log_entry .= "Status: FAILED (mail() returned false)\n";
+        $log_entry .= "Last error: " . error_get_last()['message'] ?? 'Unknown' . "\n\n";
+        @file_put_contents($log_file, $log_entry, FILE_APPEND);
+
         throw new Exception('Mail functie retourneerde false');
     }
 } catch (Exception $e) {
+    $log_entry .= "Status: EXCEPTION - " . $e->getMessage() . "\n\n";
+    @file_put_contents($log_file, $log_entry, FILE_APPEND);
+
     error_log('Contact form error: ' . $e->getMessage());
     http_response_code(500);
     echo json_encode([
         'success' => false,
-        'message' => 'Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het later opnieuw of neem direct contact met ons op via info@signaalmakers.nl'
+        'message' => 'Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het later opnieuw of neem direct contact met ons op via info@signaalmakers.nl',
+        'debug' => $e->getMessage()
     ]);
 }
 ?>
