@@ -51,7 +51,8 @@ $message = htmlspecialchars($data['message'], ENT_QUOTES, 'UTF-8');
 $customerTypeMap = [
     'msp' => 'MSP / IT-bedrijf',
     'installateur' => 'Installatiebedrijf',
-    'zakelijk' => 'Zakelijke klant'
+    'zakelijk' => 'Zakelijke klant',
+    'offerte' => 'Offerte-aanvraag'
 ];
 $customerType = isset($customerTypeMap[$data['customerType']]) ? $customerTypeMap[$data['customerType']] : $data['customerType'];
 
