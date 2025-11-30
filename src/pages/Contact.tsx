@@ -27,7 +27,12 @@ export default function Contact() {
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      const response = await fetch('/api/contact.php', {
+      const endpoint = new URL(
+        'api/contact.php',
+        window.location.origin + import.meta.env.BASE_URL
+      ).toString();
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -114,7 +119,11 @@ export default function Contact() {
                 <div className="bg-gray-50 rounded-lg p-8">
                   <h2 className="text-2xl font-bold text-[#0E243A] mb-6">Stuur ons een bericht</h2>
 
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form
+                    onSubmit={handleSubmit}
+                    name="contact"
+                    className="space-y-6"
+                  >
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
