@@ -318,7 +318,7 @@ export default function Contact() {
                 ></iframe>
               </div>
               <p className="text-center text-gray-600 mt-4">
-                <strong>Werkgebied:</strong> 's-Gravendeel, Hoeksche Waard, Dordrecht, Rotterdam en heel Nederland
+                <strong>Werkgebied:</strong> Heel Nederland
               </p>
             </div>
           </div>

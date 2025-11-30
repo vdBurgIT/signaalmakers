@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 interface StructuredDataProps {
-  type?: 'LocalBusiness' | 'FAQPage' | 'HowTo';
+  type?: 'LocalBusiness' | 'FAQPage' | 'HowTo' | 'Article';
   data?: Record<string, unknown>;
 }
 
@@ -140,6 +140,28 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
       return {
         '@context': 'https://schema.org',
         '@type': 'HowTo',
+        ...data
+      };
+    }
+
+    if (type === 'Article' && data) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        publisher: {
+          '@type': 'Organization',
+          '@id': 'https://signaalmakers.nl/#organization',
+          name: 'Signaalmakers',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://signaalmakers.nl/images/logo/logo_signaalmakers.png'
+          }
+        },
+        author: {
+          '@type': 'Organization',
+          '@id': 'https://signaalmakers.nl/#organization',
+          name: 'Signaalmakers'
+        },
         ...data
       };
     }

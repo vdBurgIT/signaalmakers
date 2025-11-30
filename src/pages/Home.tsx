@@ -141,10 +141,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Bekabeling die gewoon werkt
+                Databekabeling &amp; netwerkbekabeling door heel Nederland
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                Signaalmakers legt <strong>alle bekabeling voor infrastructuur</strong>: <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audio</Link> en <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera</Link>. We <strong>trekken/leggen</strong>, <strong>monteren af</strong>, <strong>patchen</strong>, <strong>labelen</strong> en <strong>leveren gecertificeerd</strong> op met meetrapporten. Zo zijn <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link> direct klaar voor een <strong>stabiele verbinding</strong>. <strong>Wij doen het voorwerk</strong>; <strong>MSP/IT-partners</strong> regelen daarna <strong>inregeling en beheer</strong>.
+                Specialist in <strong>databekabeling</strong> en <strong>netwerkbekabeling</strong> (Cat6/Cat6A), audiokabels en camera-bekabeling. We trekken kabels, monteren af, labelen en leveren <strong>gecertificeerd</strong> op met meetrapporten. Voor <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link>. Wij doen het voorwerk—<Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen inregeling en beheer.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link

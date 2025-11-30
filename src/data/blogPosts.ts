@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'msp-bekabelingspartner',
     keywords: 'MSP-partner, bekabelingspartner, netwerkbekabeling MSP, wifi-bekabeling specialist, databekabeling MSP, Layer 1 specialist',
     content: `
-      <p>Als MSP-bedrijf heb je genoeg aan je hoofd: klantbeheer, configuratie, monitoring, security, helpdesk, projecten. Het laatste waar je op zit te wachten is gedoe met bekabeling. Toch is de fysieke netwerklaag (Layer 1) de basis van alles wat je doet. Wifi-access points, switches, servers, telefonie — het draait allemaal op <a href="/diensten/databekabeling" style="color: #FF6A00; font-weight: 600;">goede netwerkbekabeling</a>.</p>
+      <p>Als MSP-bedrijf heb je genoeg aan je hoofd: klantbeheer, configuratie, monitoring, security, helpdesk, projecten. Het laatste waar je op zit te wachten is gedoe met bekabeling. Toch is de fysieke netwerklaag (Layer 1) de basis van alles wat je doet. Wifi-access points, switches, servers, telefonie — het draait allemaal op <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">goede netwerkbekabeling</a>.</p>
 
       <p>Daarom kiezen steeds meer MSP's voor een vaste bekabelingspartner. Iemand die alleen bekabeling doet, geen configuratie, geen concurrentie, gewoon: kabels trekken, patchkasten opbouwen, testen, documenteren. Klaar.</p>
 

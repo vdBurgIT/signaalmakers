@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import SEO from '../components/SEO';
+import StructuredData from '../components/StructuredData';
 import { ArrowLeft } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { getBlogPostBySlug, getRelatedPosts } from '../data/blogPosts';
@@ -14,6 +15,32 @@ export default function BlogPost() {
     return <Navigate to="/blog" replace />;
   }
 
+  // Convert Dutch date to ISO format
+  const convertToISO = (dutchDate: string): string => {
+    const months: Record<string, string> = {
+      'januari': '01', 'februari': '02', 'maart': '03', 'april': '04',
+      'mei': '05', 'juni': '06', 'juli': '07', 'augustus': '08',
+      'september': '09', 'oktober': '10', 'november': '11', 'december': '12'
+    };
+    const parts = dutchDate.split(' ');
+    const day = parts[0].padStart(2, '0');
+    const month = months[parts[1]];
+    const year = parts[2];
+    return `${year}-${month}-${day}`;
+  };
+
+  const articleSchema = {
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: convertToISO(post.date),
+    dateModified: convertToISO(post.date),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://signaalmakers.nl/blog/${post.slug}`
+    },
+    keywords: post.keywords || `${post.category.toLowerCase()}, blog, ict, technologie`
+  };
+
   return (
     <>
       <SEO
@@ -27,6 +54,7 @@ export default function BlogPost() {
           { name: post.title, item: `https://signaalmakers.nl/blog/${post.slug}` }
         ]}
       />
+      <StructuredData type="Article" data={articleSchema} />
       <div>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
