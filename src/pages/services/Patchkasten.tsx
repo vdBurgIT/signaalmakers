@@ -1,9 +1,55 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import SEO from '../../components/SEO';
-import { Server, CheckCircle2, LayoutGrid, FileCheck } from 'lucide-react';
+import StructuredData from '../../components/StructuredData';
+import { Server, CheckCircle2, LayoutGrid, FileCheck, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Patchkasten() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: 'Wat is het verschil tussen een patchkast en een serverkast?',
+      answer: 'Een patchkast bevat voornamelijk patchpanelen, switches en kabelmanagement voor netwerkbekabeling. Een serverkast bevat servers en heeft meer focus op koeling, voeding en beveiliging. Beide gebruiken vaak dezelfde 19-inch rack standaard maar met verschillende inrichting.'
+    },
+    {
+      question: 'Hoeveel ruimte heb ik nodig voor een patchkast?',
+      answer: 'Dat hangt af van het aantal aansluitpunten. Voor 24-48 poorten volstaat vaak een 12U wandkast. Grotere installaties (100+ punten) vereisen 42U vloerkasten. We adviseren altijd 30% extra ruimte voor toekomstige uitbreidingen en kabelmanagement.'
+    },
+    {
+      question: 'Wat is kabelmanagement en waarom is het belangrijk?',
+      answer: 'Kabelmanagement zijn systemen (kanalen, ringen, bundels) die kabels netjes en gestructureerd houden. Het voorkomt verwarring, beschadiging en airflow-problemen. Goed kabelmanagement bespaart uren werk bij onderhoud en uitbreidingen omdat alles traceerbaar blijft.'
+    },
+    {
+      question: 'Leveren jullie ook de patchkast zelf?',
+      answer: 'Nee, wij richten bestaande kasten in of werken met door u/MSP geleverde kasten. We adviseren wel over afmetingen, specs en merken. Dit houdt onze focus op vakmanschap: opbouw, bekabeling, labeling en documentatie.'
+    },
+    {
+      question: 'Hoe belangrijk is airflow in een patchkast?',
+      answer: 'Zeer belangrijk. Slechte airflow leidt tot oververhitting van switches en apparatuur, wat levensduur verkort en storingen veroorzaakt. We houden rekening met voor/achter routing, ventilatie-eisen en warmteafvoer bij opbouw van de kast.'
+    },
+    {
+      question: 'Kunnen jullie bestaande patchkasten opruimen en reorganiseren?',
+      answer: 'Ja, dat is een van onze meest gevraagde diensten. We verwijderen dode kabels, reorganiseren patchpanelen, verbeteren kabelmanagement en documenteren alles opnieuw. Vaak werken we buiten kantooruren om verstoring te minimaliseren.'
+    },
+    {
+      question: 'Wat kost het opruimen van een patchkast?',
+      answer: 'Dat hangt af van de complexiteit en omvang. Een standaard 24-poorts kast opruimen en reorganiseren kost €400-800. Grotere kasten (100+ poorten) of zeer vervuilde situaties kosten meer. Vraag een offerte aan voor een exacte prijsopgave.'
+    }
+  ];
+
+  const faqSchema = {
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -17,6 +63,8 @@ export default function Patchkasten() {
           { name: 'Patchkasten', item: 'https://signaalmakers.nl/diensten/patchkasten' }
         ]}
       />
+      <StructuredData type="LocalBusiness" />
+      <StructuredData type="FAQPage" data={faqSchema} />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -201,6 +249,38 @@ export default function Patchkasten() {
                   </div>
                   <h3 className="text-xl font-bold text-[#0E243A] mb-3">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
+              Veelgestelde vragen
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-gray-50 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="font-semibold text-[#0E243A] pr-8">{faq.question}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

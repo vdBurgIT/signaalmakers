@@ -1,9 +1,55 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import SEO from '../../components/SEO';
-import { Volume2, CheckCircle2, Cable, AlertCircle } from 'lucide-react';
+import StructuredData from '../../components/StructuredData';
+import { Volume2, CheckCircle2, Cable, AlertCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Audiokabels() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: 'Wat zijn gebalanceerde audiolijnen?',
+      answer: 'Gebalanceerde lijnen gebruiken twee signaaldraden plus een aarde, waardoor storingen worden onderdrukt. Dit resulteert in een schoner audiosignaal, vooral over langere afstanden. Ideaal voor professionele audio-installaties in kantoren, scholen en horeca.'
+    },
+    {
+      question: 'Doen jullie ook de audio-apparatuur installeren?',
+      answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren en netjes wegwerken. Audio-installateurs sluiten vervolgens speakers, versterkers en mengpanelen aan en regelen de instellingen. Deze scheiding zorgt voor specialisatie en kwaliteit.'
+    },
+    {
+      question: 'Welke kabeltypen gebruiken jullie?',
+      answer: 'Afhankelijk van de toepassing gebruiken we verschillende kabeltypen: XLR-kabels voor microfoons en professionele apparatuur, luidsprekerkabels voor speakers, en multipair kabels voor grotere installaties. We adviseren altijd het beste type voor uw situatie.'
+    },
+    {
+      question: 'Kunnen audiokabels naast stroomkabels?',
+      answer: 'Bij voorkeur niet, om storing (hum/buzz) te voorkomen. We plannen routes zo dat audiokabels minimaal 30cm afstand houden van stroomkabels. Bij kruisingen leggen we deze haaks over elkaar. Dit is cruciaal voor storingsvrije audio.'
+    },
+    {
+      question: 'Hoe voorkom je storingen op audiokabels?',
+      answer: 'Door gebruik te maken van gebalanceerde lijnen, afgeschermde kabels en goede routeplanning. We houden afstand van storingsbronnen zoals stroomkabels, TL-verlichting en transformatoren. Ook zorgen we voor een goede massa-aarding.'
+    },
+    {
+      question: 'Voor welke ruimtes is dit geschikt?',
+      answer: 'Kantoren (vergaderruimten, open spaces), scholen (aula\u2019s, klaslokalen), horeca (restaurants, cafés), retail (winkels, showrooms) en evenementenlocaties. Overal waar vaste audio-installaties nodig zijn.'
+    },
+    {
+      question: 'Leveren jullie ook documentatie?',
+      answer: 'Ja, bij oplevering krijgt u een schema met kabelroutes, aansluitpunten en labeling. Dit maakt onderhoud en uitbreiding door uw audio-installateur eenvoudig. Alles netjes gedocumenteerd en traceerbaar.'
+    }
+  ];
+
+  const faqSchema = {
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -17,6 +63,8 @@ export default function Audiokabels() {
           { name: 'Audiokabels', item: 'https://signaalmakers.nl/diensten/audiokabels' }
         ]}
       />
+      <StructuredData type="LocalBusiness" />
+      <StructuredData type="FAQPage" data={faqSchema} />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -160,6 +208,38 @@ export default function Audiokabels() {
               <p className="text-gray-700 leading-relaxed">
                 Wij trekken gebalanceerde audiokabels voor professionele installaties. Storingsarme routes, afscherming tegen EMI en netjes afgewerkt. Alles gelabeld en gedocumenteerd. Zo kan jouw audio-partner direct aan de slag met inregeling.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
+              Veelgestelde vragen
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-gray-50 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="font-semibold text-[#0E243A] pr-8">{faq.question}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>

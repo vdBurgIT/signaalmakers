@@ -1,9 +1,55 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import SEO from '../../components/SEO';
-import { Camera, CheckCircle2, Cable, Zap } from 'lucide-react';
+import StructuredData from '../../components/StructuredData';
+import { Camera, CheckCircle2, Cable, Zap, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function CameraBekabealing() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: 'Wat is PoE en waarom is het handig voor camera\u2019s?',
+      answer: 'PoE (Power over Ethernet) levert zowel data als stroom over dezelfde netwerkkabel. Dit betekent geen aparte stroomkabels nodig voor IP-camera\u2019s, wat installatie eenvoudiger en goedkoper maakt. Ideaal voor plafond- en buitencamera\u2019s.'
+    },
+    {
+      question: 'Installeren jullie ook de camera\u2019s zelf?',
+      answer: 'Nee, wij leggen alleen de bekabeling. Beveiligingsbedrijven of MSP\u2019s monteren de camera\u2019s, sluiten ze aan en regelen de configuratie. Wij zorgen voor PoE-geschikte bekabeling die klaar is voor aansluiting.'
+    },
+    {
+      question: 'Welke afstand kan een camera-kabel overbruggen?',
+      answer: 'Cat6/Cat6A ondersteunt PoE tot 100 meter. Voor langere afstanden adviseren we PoE-extenders of switches op tussenposities. We plannen altijd routes binnen deze specificaties voor optimale prestaties.'
+    },
+    {
+      question: 'Kunnen jullie ook buitencamera\u2019s bekabelen?',
+      answer: 'Ja, we trekken bekabeling voor zowel binnen- als buitencamera\u2019s. Bij buitentrajecten gebruiken we afgeschermde kabel (Cat6A S/FTP) en beschermende buis waar nodig. Alles volgens best practices voor duurzaamheid.'
+    },
+    {
+      question: 'Hoeveel camera\u2019s kunnen op één switch?',
+      answer: 'Dit hangt af van het PoE-budget van de switch en het stroomverbruik per camera. Een standaard PoE+ switch (30W/poort) kan doorgaans 8-24 camera\u2019s voeden. We adviseren altijd de juiste switchcapaciteit voor uw aantal camera\u2019s.'
+    },
+    {
+      question: 'Leveren jullie ook schema\u2019s van de camera-posities?',
+      answer: 'Ja, bij oplevering krijgt u een volledig schema met alle camera-posities, poortnummers in de patchkast en labeling. Dit maakt beheer en uitbreiding door uw beveiligingsbedrijf eenvoudig.'
+    },
+    {
+      question: 'Werkt PoE-bekabeling ook voor andere apparaten?',
+      answer: 'Ja, dezelfde bekabeling kan ook gebruikt worden voor PoE-toegangspunten (wifi), IP-telefoons en andere PoE-apparaten. Cat6A bekabeling is multifunctioneel inzetbaar voor het hele netwerkinfrastructuur.'
+    }
+  ];
+
+  const faqSchema = {
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -17,6 +63,8 @@ export default function CameraBekabealing() {
           { name: 'Camera-bekabeling', item: 'https://signaalmakers.nl/diensten/camera-bekabeling' }
         ]}
       />
+      <StructuredData type="LocalBusiness" />
+      <StructuredData type="FAQPage" data={faqSchema} />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -163,6 +211,38 @@ export default function CameraBekabealing() {
               <p className="text-gray-700 leading-relaxed">
                 Wij trekken bekabeling voor IP-camera's en monteren af in de patchkast. Gebalanceerde trajecten, PoE-geschikt en netjes gelabeld. Beveiligingsbedrijven en MSP's doen de aansluiting en configuratie van camera's. Zo is er een duidelijke scheiding tussen het voorwerk (wij) en de inregeling (MSP/beveiliging).
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
+              Veelgestelde vragen
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="font-semibold text-[#0E243A] pr-8">{faq.question}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>

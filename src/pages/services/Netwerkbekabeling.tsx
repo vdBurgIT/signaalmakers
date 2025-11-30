@@ -1,10 +1,59 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
-import { Cable, CheckCircle2, FileText } from 'lucide-react';
+import { Cable, CheckCircle2, FileText, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Netwerkbekabeling() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: 'Wat is het verschil tussen Cat6 en Cat6A?',
+      answer: 'Cat6A ondersteunt 10 Gbps tot 100 meter (~500 MHz) en heeft betere afscherming tegen EMI/crosstalk. Cat6 haalt 10 Gbps tot ongeveer 55 meter (~250 MHz). Voor professionele toepassingen adviseren we Cat6A vanwege de toekomstbestendigheid en betere PoE++ ondersteuning.'
+    },
+    {
+      question: 'Doen jullie ook de netwerkconfiguratie?',
+      answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de configuratie van switches, VLAN\u2019s en netwerkapparatuur. Dit zorgt voor duidelijke verantwoordelijkheden en professioneel eindresultaat.'
+    },
+    {
+      question: 'Leveren jullie ook meetrapporten?',
+      answer: 'Ja, alle trajecten worden getest en gecertificeerd volgens TIA/ISO normen. U ontvangt een compleet opleverdossier met meetrapporten, labels en schema\u2019s. Dit geeft zekerheid dat de bekabeling voldoet aan de specificaties.'
+    },
+    {
+      question: 'Wat kost databekabeling per aansluitpunt?',
+      answer: 'De prijs hangt af van het aantal punten, kabellengte, gebouwtype en toegankelijkheid. Voor een indicatie: reken op €75-150 per punt inclusief materiaal, installatie en certificering. Vraag een offerte aan voor een exacte prijsopgave.'
+    },
+    {
+      question: 'Hoe lang duurt een bekabelingsproject?',
+      answer: 'Een standaard kantoor met 20-50 punten duurt 2-4 dagen. Grotere projecten plannen we in fasen. We werken buiten kantooruren indien gewenst om verstoring te minimaliseren.'
+    },
+    {
+      question: 'Werken jullie landelijk?',
+      answer: 'Ja, wij werken in heel Nederland. Van Amsterdam tot Groningen, van Rotterdam tot Maastricht. Voor grote projecten plannen we de werkzaamheden efficiënt in.'
+    },
+    {
+      question: 'Kunnen jullie bestaande bekabeling vervangen?',
+      answer: 'Ja, we kunnen oude Cat5/Cat5e bekabeling vervangen door Cat6A. We beoordelen eerst of we bestaande routes kunnen gebruiken of nieuwe trajecten moeten trekken voor optimale prestaties.'
+    },
+    {
+      question: 'Is Cat6A geschikt voor PoE?',
+      answer: 'Ja, Cat6A ondersteunt PoE++ (tot 100W per poort), ideaal voor IP-telefoons, access points, IP-camera\u2019s en andere PoE-apparaten. De betere afscherming voorkomt opwarming bij hoge PoE-belasting.'
+    }
+  ];
+
+  const faqSchema = {
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -19,6 +68,7 @@ export default function Netwerkbekabeling() {
         ]}
       />
       <StructuredData type="LocalBusiness" />
+      <StructuredData type="FAQPage" data={faqSchema} />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -144,6 +194,38 @@ export default function Netwerkbekabeling() {
                 <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
                   <h3 className="text-xl font-bold text-[#0E243A] mb-3">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
+              Veelgestelde vragen
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-gray-50 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="font-semibold text-[#0E243A] pr-8">{faq.question}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

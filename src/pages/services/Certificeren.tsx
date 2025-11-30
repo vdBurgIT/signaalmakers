@@ -1,9 +1,59 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import SEO from '../../components/SEO';
-import { FileCheck, CheckCircle2, ClipboardList, BarChart3 } from 'lucide-react';
+import StructuredData from '../../components/StructuredData';
+import { FileCheck, CheckCircle2, ClipboardList, BarChart3, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
 export default function Certificeren() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: 'Wat houdt certificering in?',
+      answer: 'Certificering betekent dat elk kabeltraject wordt getest met professionele meetapparatuur volgens TIA/ISO-normen. We controleren doorvoer, signaalverlies, afmontering en integriteit. Je ontvangt meetrapporten die bewijzen dat de bekabeling voldoet aan de specificaties en klaar is voor gebruik.'
+    },
+    {
+      question: 'Waarom is certificering belangrijk?',
+      answer: 'Zonder certificering weet niemand of de bekabeling echt presteert zoals verwacht. Certificering voorkomt discussies achteraf, geeft transparantie over kwaliteit en versnelt troubleshooting. Voor MSP\u2019s en IT-beheerders is het essentieel bewijs dat de infrastructuur betrouwbaar is.'
+    },
+    {
+      question: 'Welke normen gebruiken jullie?',
+      answer: 'We certificeren volgens TIA/EIA-568 en ISO/IEC 11801 normen, de internationale standaarden voor gestructureerde bekabeling. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Alle meetrapporten vermelden de toegepaste norm en meetwaarden.'
+    },
+    {
+      question: 'Wat staat er in een meetrapport?',
+      answer: 'Elk meetrapport bevat kabellengte, doorvoersnelheid, signaalverlies (insertion loss), reflectie (return loss), crosstalk en afmonteringskwaliteit. Ook zie je of het traject voldoet aan de norm (pass/fail). Rapporten bevatten kabelnummers en locaties voor tracering.'
+    },
+    {
+      question: 'Hoe lang duurt het testen en certificeren?',
+      answer: 'Het testen van een enkel traject duurt 2-5 minuten, afhankelijk van lengte en complexiteit. Voor een standaardinstallatie met 20-50 punten rekenen we 1-2 uur testwerk. Het labelen en documenteren neemt extra tijd in beslag, vaak gelijk aan de testtijd.'
+    },
+    {
+      question: 'Krijg ik ook een digitale kopie van de rapporten?',
+      answer: 'Ja, alle meetrapporten worden digitaal opgeleverd als PDF. Ook ontvang je schema\u2019s, labels en overzichten in digitale vorm. Zo kun je documentatie delen met MSP/IT-partners en archiveren voor toekomstig beheer en uitbreidingen.'
+    },
+    {
+      question: 'Wat als een kabel niet voldoet aan de norm?',
+      answer: 'Als een traject faalt, zoeken we de oorzaak (slechte afmontering, beschadiging, te lang traject). We herstellen het probleem en testen opnieuw tot het traject voldoet. Pas daarna leveren we op—alleen trajecten die aan de norm voldoen worden geaccepteerd.'
+    },
+    {
+      question: 'Zijn de kosten van certificering inbegrepen?',
+      answer: 'Ja, meten en certificeren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij—zo garanderen we kwaliteit en transparantie bij elke oplevering.'
+    }
+  ];
+
+  const faqSchema = {
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -17,6 +67,8 @@ export default function Certificeren() {
           { name: 'Meten & Certificeren', item: 'https://signaalmakers.nl/diensten/certificeren' }
         ]}
       />
+      <StructuredData type="LocalBusiness" />
+      <StructuredData type="FAQPage" data={faqSchema} />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -162,6 +214,38 @@ export default function Certificeren() {
               <p className="text-gray-700 leading-relaxed">
                 Meten en certificeren is standaard bij elk bekabelingstraject. Geen extra kosten. Het hoort er gewoon bij – zo weet je zeker dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>infrastructuur</Link> voldoet aan de norm en klaar is voor beheer door MSP/IT.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
+              Veelgestelde vragen
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
+                  >
+                    <span className="font-semibold text-[#0E243A] pr-8">{faq.question}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#FF6A00] flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
