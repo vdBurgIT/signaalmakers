@@ -56,10 +56,10 @@ export default function Offerte() {
 
       const result = await response.json();
 
-      if (response.ok && result.success) {
+      if (result.ok) {
         setSubmitStatus({
           type: 'success',
-          message: result.message || 'Bedankt voor uw offerte-aanvraag! We nemen zo snel mogelijk contact met u op.',
+          message: 'Bedankt voor uw offerte-aanvraag! We nemen zo snel mogelijk contact met u op.',
         });
         // Reset form
         setFormData({
@@ -75,7 +75,7 @@ export default function Offerte() {
       } else {
         setSubmitStatus({
           type: 'error',
-          message: result.message || 'Er is een fout opgetreden. Probeer het later opnieuw.',
+          message: result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.',
         });
       }
     } catch (error) {

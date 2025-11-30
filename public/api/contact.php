@@ -1,5 +1,8 @@
 <?php
-header('Content-Type: application/json');
+declare(strict_types=1);
+
+header('Content-Type: application/json; charset=utf-8');
+header('X-Content-Type-Options: nosniff');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
@@ -7,45 +10,57 @@ header('Access-Control-Allow-Headers: Content-Type');
 // Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
-    exit();
+    exit;
 }
 
 // Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
-    echo json_encode(['success' => false, 'message' => 'Method not allowed']);
-    exit();
+    echo json_encode(['ok' => false, 'error' => 'Method not allowed']);
+    exit;
 }
+
+// === Configuration ===
+$TO_EMAIL = 'info@signaalmakers.nl';
+$FROM_ENVELOPE = 'noreply@signaalmakers.nl';
+$FROM_HEADER = 'noreply@signaalmakers.nl';
+$SITE_NAME = 'signaalmakers.nl';
 
 // Get POST data
-$input = file_get_contents('php://input');
-$data = json_decode($input, true);
+$raw = file_get_contents('php://input') ?: '';
+$data = json_decode($raw, true);
+if (!is_array($data) || $data === []) {
+    $data = $_POST; // fallback
+}
+
+// Rate limiting per IP (30 seconds cooldown)
+$ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+$token = hash('sha256', $ip);
+$rlfile = sys_get_temp_dir() . "/sm_contact_$token";
+$now = time();
+if (is_file($rlfile) && ($now - (int)@file_get_contents($rlfile)) < 30) {
+    http_response_code(429);
+    echo json_encode(['ok' => false, 'error' => 'Even wachten a.u.b. U kunt slechts elke 30 seconden een bericht versturen.']);
+    exit;
+}
+@file_put_contents($rlfile, (string)$now);
+
+// Extract and sanitize input
+$name = trim((string)($data['name'] ?? ''));
+$company = trim((string)($data['company'] ?? ''));
+$email = trim((string)($data['email'] ?? ''));
+$phone = trim((string)($data['phone'] ?? ''));
+$address = trim((string)($data['address'] ?? ''));
+$customerType = trim((string)($data['customerType'] ?? ''));
+$subject = trim((string)($data['subject'] ?? ''));
+$message = trim((string)($data['message'] ?? ''));
 
 // Validate required fields
-$required_fields = ['name', 'email', 'subject', 'message', 'customerType'];
-foreach ($required_fields as $field) {
-    if (empty($data[$field])) {
-        http_response_code(400);
-        echo json_encode(['success' => false, 'message' => "Het veld '{$field}' is verplicht"]);
-        exit();
-    }
+if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || $subject === '' || $message === '' || $customerType === '') {
+    http_response_code(422);
+    echo json_encode(['ok' => false, 'error' => 'Vul alle verplichte velden correct in']);
+    exit;
 }
-
-// Validate email
-if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-    http_response_code(400);
-    echo json_encode(['success' => false, 'message' => 'Ongeldig e-mailadres']);
-    exit();
-}
-
-// Sanitize input
-$name = htmlspecialchars($data['name'], ENT_QUOTES, 'UTF-8');
-$company = !empty($data['company']) ? htmlspecialchars($data['company'], ENT_QUOTES, 'UTF-8') : 'Niet opgegeven';
-$email = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
-$phone = !empty($data['phone']) ? htmlspecialchars($data['phone'], ENT_QUOTES, 'UTF-8') : 'Niet opgegeven';
-$address = !empty($data['address']) ? htmlspecialchars($data['address'], ENT_QUOTES, 'UTF-8') : 'Niet opgegeven';
-$subject = htmlspecialchars($data['subject'], ENT_QUOTES, 'UTF-8');
-$message = htmlspecialchars($data['message'], ENT_QUOTES, 'UTF-8');
 
 // Convert customer type to readable format
 $customerTypeMap = [
@@ -54,87 +69,57 @@ $customerTypeMap = [
     'zakelijk' => 'Zakelijke klant',
     'offerte' => 'Offerte-aanvraag'
 ];
-$customerType = isset($customerTypeMap[$data['customerType']]) ? $customerTypeMap[$data['customerType']] : $data['customerType'];
+$customerTypeReadable = $customerTypeMap[$customerType] ?? $customerType;
 
-// Email configuration
-$to = 'info@signaalmakers.nl';
-$email_subject = 'Contactformulier: ' . $subject;
+// Build email subject
+$emailSubject = "Nieuw bericht via {$SITE_NAME} - {$name}";
 
-// Create email body
-$email_body = "Nieuw bericht via contactformulier signaalmakers.nl\n\n";
-$email_body .= "==============================================\n\n";
-$email_body .= "CONTACTGEGEVENS\n";
-$email_body .= "==============================================\n";
-$email_body .= "Naam: {$name}\n";
-$email_body .= "Bedrijf: {$company}\n";
-$email_body .= "E-mail: {$email}\n";
-$email_body .= "Telefoon: {$phone}\n";
-$email_body .= "Adres/Plaats: {$address}\n";
-$email_body .= "Type organisatie: {$customerType}\n\n";
-$email_body .= "==============================================\n\n";
-$email_body .= "ONDERWERP\n";
-$email_body .= "==============================================\n";
-$email_body .= "{$subject}\n\n";
-$email_body .= "==============================================\n\n";
-$email_body .= "BERICHT\n";
-$email_body .= "==============================================\n";
-$email_body .= "{$message}\n\n";
-$email_body .= "==============================================\n";
-$email_body .= "Verzonden op: " . date('d-m-Y H:i:s') . "\n";
-$email_body .= "IP-adres: " . $_SERVER['REMOTE_ADDR'] . "\n";
+// Build email body
+$lines = [
+    "Nieuw bericht via contactformulier {$SITE_NAME}",
+    "",
+    "CONTACTGEGEVENS",
+    "==============================================",
+    "Naam: {$name}",
+    "E-mail: {$email}",
+    $company !== '' ? "Bedrijf: {$company}" : null,
+    $phone !== '' ? "Telefoon: {$phone}" : null,
+    $address !== '' ? "Adres/Plaats: {$address}" : null,
+    "Type organisatie: {$customerTypeReadable}",
+    "",
+    "ONDERWERP",
+    "==============================================",
+    $subject,
+    "",
+    "BERICHT",
+    "==============================================",
+    $message,
+    "",
+    "==============================================",
+    "Verzonden op: " . date('d-m-Y H:i:s'),
+    "IP-adres: {$ip}",
+];
+$body = implode("\n", array_values(array_filter($lines, fn($v) => $v !== null)));
 
-// Email headers - Use proper domain-based From address
-$domain = $_SERVER['HTTP_HOST'] ?? 'signaalmakers.nl';
-$from_email = 'noreply@' . str_replace('www.', '', $domain);
+// Build headers
+$headers = [];
+$headers[] = "MIME-Version: 1.0";
+$headers[] = "Content-Type: text/plain; charset=UTF-8";
+$headers[] = "From: Website {$SITE_NAME} <{$FROM_HEADER}>";
+$headers[] = "Reply-To: {$name} <{$email}>";
+$headers[] = "X-Mailer: PHP/" . PHP_VERSION;
+$headersStr = implode("\r\n", $headers);
 
-$headers = "From: Signaalmakers Contactformulier <{$from_email}>\r\n";
-$headers .= "Reply-To: {$email}\r\n";
-$headers .= "Return-Path: {$from_email}\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-$headers .= "Content-Transfer-Encoding: 8bit\r\n";
-
-// Log for debugging
-$log_file = __DIR__ . '/../../contact_log.txt';
-$log_entry = date('Y-m-d H:i:s') . " - Attempting to send email\n";
-$log_entry .= "To: {$to}\n";
-$log_entry .= "From: {$from_email}\n";
-$log_entry .= "Subject: {$email_subject}\n";
-$log_entry .= "Reply-To: {$email}\n";
-$log_entry .= "---\n";
+// Set envelope sender (important for DirectAdmin!)
+$additionalParams = "-f {$FROM_ENVELOPE}";
 
 // Send email
-try {
-    $mail_sent = @mail($to, $email_subject, $email_body, $headers);
+$ok = @mail($TO_EMAIL, $emailSubject, $body, $headersStr, $additionalParams);
 
-    if ($mail_sent) {
-        $log_entry .= "Status: SUCCESS\n\n";
-        @file_put_contents($log_file, $log_entry, FILE_APPEND);
-
-        http_response_code(200);
-        echo json_encode([
-            'success' => true,
-            'message' => 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.',
-            'debug' => 'Mail sent successfully'
-        ]);
-    } else {
-        $log_entry .= "Status: FAILED (mail() returned false)\n";
-        $log_entry .= "Last error: " . error_get_last()['message'] ?? 'Unknown' . "\n\n";
-        @file_put_contents($log_file, $log_entry, FILE_APPEND);
-
-        throw new Exception('Mail functie retourneerde false');
-    }
-} catch (Exception $e) {
-    $log_entry .= "Status: EXCEPTION - " . $e->getMessage() . "\n\n";
-    @file_put_contents($log_file, $log_entry, FILE_APPEND);
-
-    error_log('Contact form error: ' . $e->getMessage());
+if ($ok) {
+    echo json_encode(['ok' => true]);
+} else {
     http_response_code(500);
-    echo json_encode([
-        'success' => false,
-        'message' => 'Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het later opnieuw of neem direct contact met ons op via info@signaalmakers.nl',
-        'debug' => $e->getMessage()
-    ]);
+    echo json_encode(['ok' => false, 'error' => 'Versturen mislukt. Probeer het later opnieuw of neem direct contact op via ' . $TO_EMAIL]);
 }
 ?>
