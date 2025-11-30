@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Cable, Server, Volume2, CheckCircle2, Building2, Camera } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import StructuredData from '../components/StructuredData';
 
 export default function Diensten() {
   const services = [
@@ -75,15 +76,16 @@ export default function Diensten() {
   return (
     <>
       <SEO
-        title="Bekabeling voor infrastructuur (netwerk, audio, camera) | Signaalmakers"
-        description="Aanleg, afmontage, patchen, labeling, meten & certificeren. Voorwerk voor MSP/IT—heel Nederland."
-        keywords="Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner"
+        title="Databekabeling, Netwerkbekabeling & Infrastructuur | Signaalmakers"
+        description="Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten. Volledig gecertificeerd met meetrapporten. Landelijk actief."
+        keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner"
         url="https://signaalmakers.nl/diensten"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
           { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' }
         ]}
       />
+      <StructuredData type="LocalBusiness" />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

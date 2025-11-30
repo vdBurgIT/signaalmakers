@@ -11,6 +11,7 @@ import {
 import { useState } from 'react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import StructuredData from '../components/StructuredData';
 import NetherlandsMap from '../components/NetherlandsMap';
 
 export default function Home() {
@@ -88,11 +89,12 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Signaalmakers – Bekabeling voor infrastructuur (netwerk, audio, camera)"
-        description="Wij leggen Cat6/Cat6A, audiokabels en camera-bekabeling. Patchkasten, labeling, meten & gecertificeerd. Voorwerk voor MSP/IT—landelijk actief."
-        keywords="Cat6 bekabeling, Cat6A bekabeling, netwerkbekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling"
+        title="Signaalmakers – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk"
+        description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Volledig gecertificeerd met meetrapporten. Landelijk actief."
+        keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling"
         url="https://signaalmakers.nl/"
       />
+      <StructuredData type="LocalBusiness" />
       <div>
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

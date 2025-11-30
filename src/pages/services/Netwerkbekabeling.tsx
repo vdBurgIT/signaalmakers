@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import StructuredData from '../../components/StructuredData';
 import { Cable, CheckCircle2, FileText } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
@@ -7,9 +8,9 @@ export default function Netwerkbekabeling() {
   return (
     <>
       <SEO
-        title="Netwerkbekabeling Cat6/Cat6A – aanleg & certificering | Signaalmakers"
-        description="Cat6/Cat6A bekabeling, patchkasten, labeling, meetrapporten. Voorwerk voor MSP/IT—landelijk."
-        keywords="Cat6 bekabeling, Cat6A bekabeling, netwerkbekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering"
+        title="Databekabeling & Netwerkbekabeling Cat6/Cat6A | Signaalmakers"
+        description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A). Professionele installatie met patchkasten, labeling en certificering. Landelijk actief."
+        keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering, patchkasten, meetrapporten"
         url="https://signaalmakers.nl/diensten/netwerkbekabeling"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -17,15 +18,16 @@ export default function Netwerkbekabeling() {
           { name: 'Netwerkbekabeling', item: 'https://signaalmakers.nl/diensten/netwerkbekabeling' }
         ]}
       />
+      <StructuredData type="LocalBusiness" />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Netwerkbekabeling die presteert
+              Databekabeling &amp; netwerkbekabeling die presteert
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              We leggen Cat6 en Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Gecertificeerd opgeleverd: meten, labels, schema's. Wij doen het voorwerk—MSP/IT doet inregeling.
+              Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Gecertificeerd opgeleverd: meten, labels, schema&apos;s. Wij doen het voorwerk—MSP/IT doet inregeling.
             </p>
           </div>
         </div>
