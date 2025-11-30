@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://signaalmakers.nl/</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,39 +12,95 @@
   <!-- Diensten Overzicht -->
   <url>
     <loc>https://signaalmakers.nl/diensten</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Diensten - Databekabeling -->
+  <!-- Diensten - Netwerkbekabeling -->
   <url>
-    <loc>https://signaalmakers.nl/diensten/databekabeling</loc>
-    <lastmod>2025-11-29</lastmod>
+    <loc>https://signaalmakers.nl/diensten/netwerkbekabeling</loc>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Diensten - Audiokabels -->
+  <url>
+    <loc>https://signaalmakers.nl/diensten/audiokabels</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Diensten - Camera-bekabeling -->
+  <url>
+    <loc>https://signaalmakers.nl/diensten/camera-bekabeling</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Diensten - Patchkasten -->
   <url>
     <loc>https://signaalmakers.nl/diensten/patchkasten</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Diensten - Audio / Signaallijnen -->
+  <!-- Diensten - Meten & Certificeren -->
   <url>
-    <loc>https://signaalmakers.nl/diensten/audio</loc>
-    <lastmod>2025-11-29</lastmod>
+    <loc>https://signaalmakers.nl/diensten/certificeren</loc>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Diensten - Testen & Documentatie -->
+  <!-- Sectoren Overzicht -->
   <url>
-    <loc>https://signaalmakers.nl/diensten/testen</loc>
-    <lastmod>2025-11-29</lastmod>
+    <loc>https://signaalmakers.nl/sectoren</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sectoren - Serverruimtes & Datacenters -->
+  <url>
+    <loc>https://signaalmakers.nl/sectoren/serverruimtes</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sectoren - Kantoren -->
+  <url>
+    <loc>https://signaalmakers.nl/sectoren/kantoren</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sectoren - Retail & Horeca -->
+  <url>
+    <loc>https://signaalmakers.nl/sectoren/retail</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sectoren - Magazijn & Logistiek -->
+  <url>
+    <loc>https://signaalmakers.nl/sectoren/magazijn</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sectoren - Onderwijs & Zorg -->
+  <url>
+    <loc>https://signaalmakers.nl/sectoren/onderwijs</loc>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -52,7 +108,15 @@
   <!-- Abonnementen -->
   <url>
     <loc>https://signaalmakers.nl/abonnementen</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Offerte -->
+  <url>
+    <loc>https://signaalmakers.nl/offerte</loc>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -60,7 +124,7 @@
   <!-- Blog Overzicht -->
   <url>
     <loc>https://signaalmakers.nl/blog</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -111,7 +175,7 @@
   <!-- Over Ons -->
   <url>
     <loc>https://signaalmakers.nl/over-ons</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -119,7 +183,7 @@
   <!-- FAQ -->
   <url>
     <loc>https://signaalmakers.nl/faq</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -127,7 +191,7 @@
   <!-- Status & Support -->
   <url>
     <loc>https://signaalmakers.nl/status-support</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -135,7 +199,7 @@
   <!-- Contact -->
   <url>
     <loc>https://signaalmakers.nl/contact</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
