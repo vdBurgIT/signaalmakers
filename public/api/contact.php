@@ -33,17 +33,31 @@ if (!is_array($data) || $data === []) {
     $data = $_POST; // fallback
 }
 
-// Rate limiting per IP (30 seconds cooldown)
+// Rate limiting per IP (60 seconds cooldown) - TEMPORARILY DISABLED FOR TESTING
 $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+// TODO: Re-enable rate limiting after testing
+/*
 $token = hash('sha256', $ip);
 $rlfile = sys_get_temp_dir() . "/sm_contact_$token";
 $now = time();
-if (is_file($rlfile) && ($now - (int)@file_get_contents($rlfile)) < 30) {
-    http_response_code(429);
-    echo json_encode(['ok' => false, 'error' => 'Even wachten a.u.b. U kunt slechts elke 30 seconden een bericht versturen.']);
-    exit;
+$rateLimitSeconds = 60;
+
+if (is_file($rlfile)) {
+    $lastSubmit = (int)@file_get_contents($rlfile);
+    $timeSinceLastSubmit = $now - $lastSubmit;
+
+    if ($timeSinceLastSubmit < $rateLimitSeconds) {
+        $waitTime = $rateLimitSeconds - $timeSinceLastSubmit;
+        http_response_code(429);
+        echo json_encode([
+            'ok' => false,
+            'error' => "Even wachten a.u.b. U kunt nog een bericht versturen over {$waitTime} seconden."
+        ]);
+        exit;
+    }
 }
 @file_put_contents($rlfile, (string)$now);
+*/
 
 // Extract and sanitize input
 $name = trim((string)($data['name'] ?? ''));
