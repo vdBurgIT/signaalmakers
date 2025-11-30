@@ -7,9 +7,9 @@ export default function OverOns() {
   return (
     <>
       <SEO
-        title="Over Ons - Specialist in Netwerkbekabeling | Signaalmakers"
-        description="Signaalmakers is specialist in netwerkbekabeling en data-infrastructuur door heel Nederland. Alleen de fysieke netwerklaag - geen IT-beheer, geen configuratie. Partner voor MSP's en bedrijven."
-        keywords="over signaalmakers, netwerkbekabeling specialist, bekabeling bedrijf, MSP partner bekabeling, databekabeling Nederland, UTP bekabeling specialist"
+        title="Over Ons – Bekabeling voor infrastructuur | Signaalmakers"
+        description="Signaalmakers: bekabeling voor infrastructuur. Netwerk, audio, camera's—Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT—landelijk."
+        keywords="over signaalmakers, bekabeling infrastructuur, netwerkbekabeling specialist, MSP partner bekabeling, Cat6A bekabeling Nederland"
         url="https://signaalmakers.nl/over-ons"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -26,10 +26,10 @@ export default function OverOns() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Specialist in Netwerkbekabeling
+              Bekabeling voor infrastructuur
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Signaalmakers is specialist in netwerkbekabeling en data-infrastructuur. Wij leggen de fysieke laag van het netwerk aan: de kabels, datapunten en aansluitingen waar al het verkeer overheen loopt.
+              Netwerk, audio, camera&apos;s – Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij leggen de bekabeling, MSP/IT doet inregeling en beheer. Duidelijke scheiding, professioneel voorwerk—landelijk.
             </p>
           </div>
         </div>
@@ -46,44 +46,36 @@ export default function OverOns() {
 
             <div className="text-lg text-gray-700 space-y-6 mb-16 leading-relaxed">
               <p>
-                Signaalmakers is specialist in <Link to="/diensten" style={{ fontWeight: 600 }}>netwerkbekabeling en data-infrastructuur</Link>. Wij leggen de fysieke laag van het netwerk aan: de kabels, datapunten en aansluitingen waar al het verkeer overheen loopt. Geen ingewikkelde IT-verhalen, maar gewoon strak aangelegde bekabeling die klopt, netjes is afgewerkt en klaar is voor de toekomst.
+                Signaalmakers is specialist in <Link to="/diensten" style={{ fontWeight: 600 }}>bekabeling voor infrastructuur</Link>: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen), camera&apos;s (PoE), patchkasten en certificering. Wij doen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. MSP/IT doet inregeling en beheer van apparatuur.
               </p>
 
               <p>
-                Wij werken in heel Nederland voor MKB-bedrijven, kantoren, winkels, horeca, logistieke omgevingen, magazijnen, zorglocaties, scholen én woningen met een serieuze netwerkvraag. Daarnaast zijn wij vaste <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>bekabelingspartner voor MSP-bedrijven</Link>, IT-dienstverleners en systeembeheerders. Zij regelen de routers, switches, wifi-configuratie en serverbeheer; wij zorgen dat de bekabeling en aansluitpunten tot in detail op orde zijn.
+                Wij werken in heel Nederland voor MKB-bedrijven, kantoren, retail, zorg, onderwijs en magazijnen. Daarnaast zijn wij vaste <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>bekabelingspartner voor MSP&apos;s</Link>, IT-dienstverleners en audio/beveiligingsbedrijven. Zij regelen apparatuur en configuratie – wij zorgen dat de bekabeling en aansluitpunten tot in detail op orde zijn.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-gray-50 border-l-4 border-[#FF6A00] rounded-xl p-10 mb-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Onze focus: de fysieke netwerklaag (Layer 1)</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Wat we leveren</h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>Netwerkbekabeling aanleggen</Link></strong> — UTP-datakabels (CAT6, CAT6A, CAT7)</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Netwerkbekabeling (Cat6/Cat6A)</Link></strong> — 1-10 Gbps, PoE-geschikt</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>Datapunten aanleggen en aansluiten</Link></strong> — professioneel afgewerkt</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>Audiokabels</Link></strong> — gebalanceerde lijnen voor vaste installaties</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong>Kabelroutes en bekabelingsplan</strong> — kabelplan uitwerken</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>Camera-bekabeling</Link></strong> — PoE trajecten voor IP-camera&apos;s</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong>Wifi-bekabeling</strong> — aanleggen naar access point-locaties</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>Patchkasten</Link></strong> — strak ingericht, kabelmanagement, labeling</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>Patchkast-bekabeling</Link></strong> — kabelmanagement netjes maken</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong>Oude bekabeling vernieuwen</strong> — moderniseren en vervangen</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/testen" style={{ fontWeight: 600 }}>Labeling en basisdocumentatie</Link></strong> — alles traceerbaar</span>
+                  <span className="leading-relaxed"><strong><Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>Meten & Certificeren</Link></strong> — meetrapporten, labels, schema&apos;s</span>
                 </li>
               </ul>
             </div>
@@ -91,24 +83,24 @@ export default function OverOns() {
             <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-10 mb-16">
               <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Wat we nadrukkelijk NIET doen</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                We installeren geen switches, routers of wifi-access points en we doen geen netwerkconfiguratie, VLAN's of MSP-diensten. Juist die duidelijke scheiding maakt ons interessant voor MSP's en IT-partners: zij houden controle over de configuratie en het beheer, wij zorgen voor een professionele bekabelde infrastructuur waar zij op kunnen vertrouwen.
+                Wij doen alleen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en certificeren. Geen configuratie, geen apparatuur, geen beheer. Juist die duidelijke scheiding maakt ons interessant voor MSP&apos;s, IT-partners en audio/beveiligingsbedrijven: zij houden controle over apparatuur en configuratie, wij zorgen voor professionele bekabeling waar zij op kunnen vertrouwen.
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 font-bold text-xl">✗</span>
-                  <span className="leading-relaxed">Plaatsing of configuratie van switches, routers of wifi-access points</span>
+                  <span className="leading-relaxed">Installatie van switches, routers, access points, speakers of camera&apos;s</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 font-bold text-xl">✗</span>
-                  <span className="leading-relaxed">VLAN-configuratie, IP-adressering of firewall-regels</span>
+                  <span className="leading-relaxed">Configuratie (VLAN&apos;s, IP-adressering, firewall, audio-afregeling)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 font-bold text-xl">✗</span>
-                  <span className="leading-relaxed">Serverbeheer, cloudbeheer of MSP-diensten</span>
+                  <span className="leading-relaxed">Beheer, MSP-diensten, serverbeheer of monitoring</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 font-bold text-xl">✗</span>
-                  <span className="leading-relaxed">Wifi-site surveys en draadloze metingen</span>
+                  <span className="leading-relaxed">Apparatuur leveren of aanbevelingen over merken/modellen</span>
                 </li>
               </ul>
             </div>

@@ -37,10 +37,10 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Wat we doen
+              Wat we leveren
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Oude rommel en overbodige bekabeling opruimen. Patchkast opnieuw opbouwen volgens een logische structuur. Alles bundelen, labelen en documenteren.
+              Strak ingerichte <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link> en serverkasten. Kabelmanagement, paneelindeling, labeling en documentatie. Airflow/voeding in acht genomen – ideaal voor beheer door <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link>.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -96,9 +96,9 @@ export default function Patchkasten() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Waarom een nette patchkast?</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Waarom een strakke patchkast?</h3>
               <p className="text-gray-700 leading-relaxed">
-                Een rommelige patchkast kost tijd en geld. Fouten traceren duurt langer, uitbreidingen zijn lastig en de kans op storingen groeit. Een nette patchkast bespaart uren werk bij onderhoud en uitbreidingen.
+                Een rommelige patchkast kost tijd en geld. Fouten traceren duurt langer, uitbreidingen zijn lastig en de kans op storingen groeit. Strakke patchkasten met kabelmanagement, labeling en schema&apos;s besparen uren werk bij onderhoud en uitbreidingen. Ideaal voor beheer door MSP/IT.
               </p>
             </div>
           </div>

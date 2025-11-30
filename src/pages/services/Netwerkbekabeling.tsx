@@ -3,18 +3,18 @@ import SEO from '../../components/SEO';
 import { Cable, CheckCircle2, FileText } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
-export default function Databekabeling() {
+export default function Netwerkbekabeling() {
   return (
     <>
       <SEO
-        title="Databekabeling Cat6, Cat6A en Cat7 voor MSP's en bedrijven | Signaalmakers"
-        description="Databekabeling zoals het hoort: Cat6, Cat6A en Cat7. Kabels trekken, afmonteren, labelen en testen. Netjes afgewerkt en gedocumenteerd. Voor MSP's en bedrijven in heel Nederland."
-        keywords="databekabeling, Cat6, Cat6A, Cat7, kabels trekken, netwerkbekabeling, structured cabling, patchpanel, MSP bekabeling"
-        url="https://signaalmakers.nl/diensten/databekabeling"
+        title="Netwerkbekabeling Cat6/Cat6A – aanleg & certificering | Signaalmakers"
+        description="Cat6/Cat6A bekabeling, patchkasten, labeling, meetrapporten. Voorwerk voor MSP/IT—landelijk."
+        keywords="Cat6 bekabeling, Cat6A bekabeling, netwerkbekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering"
+        url="https://signaalmakers.nl/diensten/netwerkbekabeling"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
           { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' },
-          { name: 'Databekabeling', item: 'https://signaalmakers.nl/diensten/databekabeling' }
+          { name: 'Netwerkbekabeling', item: 'https://signaalmakers.nl/diensten/netwerkbekabeling' }
         ]}
       />
 
@@ -22,10 +22,10 @@ export default function Databekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Databekabeling
+              Netwerkbekabeling die presteert
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Wij leggen databekabeling zoals het hoort: strak, logisch, netjes en getest. Cat6, Cat6A en Cat7.
+              We leggen Cat6 en Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Gecertificeerd opgeleverd: meten, labels, schema's. Wij doen het voorwerk—MSP/IT doet inregeling.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Databekabeling() {
               Wat we doen
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Bekabeling van werkplekken en ruimtes naar de <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link> of technische ruimte. Netjes, logisch en volgens de standaard.
+              Cat6/Cat6A bekabeling voor 1-10 Gbps. Werkplekken en ruimtes naar de <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link>. Aandacht voor EMI/crosstalk, PoE-geschikt en strakke routeplanning. Alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd met meetrapporten.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -100,22 +100,22 @@ export default function Databekabeling() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8 mb-16">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Waarom Cat6, Cat6A of Cat7?</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Cat6 of Cat6A – wat is het verschil?</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Wij werken uitsluitend met moderne netwerkbekabeling. Cat6 ondersteunt tot 1 Gbit/s, Cat6A tot 10 Gbit/s en Cat7 biedt nog betere afscherming. Voor toekomstbestendigheid adviseren wij minimaal Cat6A.
+                Cat6A: 10 Gbps tot 100 meter (~500 MHz). Cat6: 10 Gbps tot ~55 meter (~250 MHz). Cat6A is toekomstbestendiger en beter beschermd tegen EMI/crosstalk. Voor professionele installaties adviseren we meestal Cat6A.
               </p>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Cat6A: snelheden tot 10 Gbit/s, geschikt voor PoE++</span>
+                  <span>Cat6A: 10 Gbps tot 100m, ~500 MHz, geschikt voor PoE++</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Cat7: betere afscherming, hogere bandbreedte</span>
+                  <span>Cat6: 10 Gbps tot ~55m, ~250 MHz, geschikt voor PoE+</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Toekomstbestendig voor 15+ jaar</span>
+                  <span>Toekomstbestendig: aandacht voor EMI/crosstalk en afstanden</span>
                 </li>
               </ul>
             </div>

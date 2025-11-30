@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Cable, Server, Volume2, CheckCircle2, Building2 } from 'lucide-react';
+import { Cable, Server, Volume2, CheckCircle2, Building2, Camera } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
 
@@ -7,62 +7,67 @@ export default function Diensten() {
   const services = [
     {
       icon: Cable,
-      title: 'Databekabeling & UTP-kabels',
-      description: (
-        <>
-          Professionele netwerkbekabeling met <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>Cat6, Cat6A en Cat7</Link> UTP-kabels. Wij trekken datapunten van werkplek naar <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link>, monteren netjes af, labelen en <Link to="/diensten/testen" style={{ fontWeight: 600 }}>testen</Link> alles. Structured cabling volgens de normen voor een betrouwbaar bekabeld netwerk.
-        </>
-      ) as any,
-      link: '/diensten/databekabeling',
+      title: 'Netwerkbekabeling (Cat6/Cat6A)',
+      description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Gecertificeerd met meten, labels en schema\'s.',
+      link: '/diensten/netwerkbekabeling',
       features: [
-        'Datapunten aanleggen van werkplek naar patchkast',
-        'Cat6, Cat6A en Cat7 bekabeling',
-        'Kabelroutes en kabelmanagement',
-        'Professioneel afmonteren, labelen en testen',
-        'Netjes bundelen volgens structured cabling normen',
-      ],
-    },
-    {
-      icon: Server,
-      title: 'Patchkast Bekabeling & Opbouw',
-      description: (
-        <>
-          <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>Patchkasten opbouwen</Link>, opruimen en moderniseren. Oude rommel eruit, overzichtelijk kabelmanagement volgens structured cabling principes. Alles netjes gelabeld en <Link to="/diensten/testen" style={{ fontWeight: 600 }}>gedocumenteerd</Link> voor jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link>.
-        </>
-      ) as any,
-      link: '/diensten/patchkasten',
-      features: [
-        'Patchkast opruimen en volledig herbouwen',
-        'Professioneel kabelmanagement en bundeling',
-        'Labeling en volledige documentatie',
-        'Overzichtelijk voor snelle troubleshooting',
-        'Klaar voor gebruik door jouw MSP',
+        'Cat6A: 10 Gbps tot 100m (~500 MHz)',
+        'Cat6: 10 Gbps tot ~55m (~250 MHz)',
+        'Aandacht voor EMI/crosstalk en PoE',
+        'Strakke patchkasten en routeplanning',
+        'Gecertificeerde oplevering met meetrapporten',
       ],
     },
     {
       icon: Volume2,
-      title: 'Signaallijnen & AV-bekabeling',
-      description: 'AV-bekabeling en signaallijnen voor vergaderruimtes, presentatieruimtes en audiosystemen. Wij leggen alleen de kabels en bereiden aansluitpunten voor. Geen apparatuur-installatie, geen AV-configuratie.',
-      link: '/diensten/audio',
+      title: 'Audiokabels',
+      description: 'Trek/afmontage audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsarme routes en netjes afgewerkt. Gelabeld, gedocumenteerd en klaar voor de audio-installateur.',
+      link: '/diensten/audiokabels',
       features: [
-        'Audiokabels en signaallijnen trekken',
-        'Kabelroutes voor AV-systemen voorbereiden',
-        'Aansluitpunten professioneel afmonteren',
-        'Alleen bekabeling, geen apparatuur-installatie',
-        'Documentatie voor de AV-installateur',
+        'Trekken en monteren audiokabels',
+        'Gebalanceerde lijnen, storingsvrij',
+        'Netjes afgewerkt en gelabeld',
+        'Gedocumenteerd voor audio-partner',
+        'Voorwerk - installateur doet inregeling',
+      ],
+    },
+    {
+      icon: Camera,
+      title: 'Camera-bekabeling',
+      description: 'Bekabelingstrajecten voor IP-camera\'s (PoE). Gebalanceerde trajecten, strakke patchkasten en consistente labeling. Opleverdossier met meetrapporten - MSP/IT sluit apparatuur aan.',
+      link: '/diensten/camera-bekabeling',
+      features: [
+        'Bekabeling voor IP-camera\'s (PoE)',
+        'Gebalanceerde trajecten en routes',
+        'Strakke patchkasten en labeling',
+        'Opleverdossier met meetrapporten',
+        'MSP/IT sluit apparatuur aan',
+      ],
+    },
+    {
+      icon: Server,
+      title: 'Patchkasten & Serverkasten',
+      description: 'Strak ingericht en beheersbaar. Kabelmanagement, paneelindeling, labeling en documentatie. Airflow/voeding in acht genomen - ideaal voor beheer door MSP/IT.',
+      link: '/diensten/patchkasten',
+      features: [
+        'Kabelgeleiding & paneelindeling',
+        'Labeling en schema\'s',
+        'Airflow/voeding in acht genomen',
+        'Netjes en beheersbaar',
+        'Ideaal voor beheer door MSP/IT',
       ],
     },
     {
       icon: CheckCircle2,
-      title: 'Testen & Documentatie',
-      description: 'Elk bekabelingsproject wordt professioneel getest en opgemeten. Opleverrapport met alle metingen, kabelplan, nummering en labeling. Bewijs dat het netwerk werkt en toekomstbestendig is.',
-      link: '/diensten/testen',
+      title: 'Meten & Certificeren',
+      description: 'Testen op doorvoer/integriteit. Alles gelabeld en gedocumenteerd. Opleverdossier: meetrapporten, labels, schema\'s - duidelijk voor beheer.',
+      link: '/diensten/certificeren',
       features: [
-        'Professionele meting per UTP-kabel',
-        'Complete nummering en labeling',
-        'Opleverrapport met kabelplan',
-        'Documentatie voor netwerk infrastructuur',
-        'Bewijs van correcte werking',
+        'Meten op doorvoer en integriteit',
+        'Labels en documentatie',
+        'Opleverdossier met meetrapporten',
+        'Schema\'s en overzichten',
+        'Duidelijk voor MSP/IT beheer',
       ],
     },
   ];
@@ -70,9 +75,9 @@ export default function Diensten() {
   return (
     <>
       <SEO
-        title="Netwerkbekabeling Diensten - Databekabeling & Patchkasten | Signaalmakers"
-        description="Professionele netwerkbekabeling diensten in Nederland: UTP-bekabeling Cat6/Cat6A/Cat7, patchkast opbouw, signaallijnen en structured cabling. Alleen de fysieke netwerklaag, geen IT-beheer of configuratie. Voor MSP's en bedrijven."
-        keywords="netwerkbekabeling diensten, databekabeling, UTP-bekabeling, patchkast opbouw, structured cabling, datapunten aanleggen, kabelmanagement, bekabeld netwerk, Cat6 bekabeling, Cat6A bekabeling, netwerk infrastructuur"
+        title="Bekabeling voor infrastructuur (netwerk, audio, camera) | Signaalmakers"
+        description="Aanleg, afmontage, patchen, labeling, meten & certificeren. Voorwerk voor MSP/IT—heel Nederland."
+        keywords="Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner"
         url="https://signaalmakers.nl/diensten"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -89,10 +94,10 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Netwerkbekabeling & Structured Cabling
+              Bekabeling voor infrastructuur
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Wij doen alleen <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>netwerkbekabeling en UTP-kabels</Link> trekken. Van <Link to="/diensten/databekabeling" style={{ fontWeight: 600 }}>datapunten aanleggen</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast bekabeling</Link> tot kabelmanagement en <Link to="/diensten/audio" style={{ fontWeight: 600 }}>AV-bekabeling</Link>. Alleen de fysieke netwerklaag — geen IT-beheer, geen apparatuur, geen configuratie. Voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en zakelijke klanten in heel Nederland.
+              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. We trekken/leggen, monteren af, patchen, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>leveren gecertificeerd</Link> op met meetrapporten. <strong>Wij doen het voorwerk</strong>; <strong>MSP/IT-partners</strong> regelen inregeling en beheer.
             </p>
           </div>
         </div>
@@ -104,10 +109,10 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-              Onze Diensten
+              Bekabeling voor infrastructuur
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Professionele netwerkbekabeling voor een stabiel en betrouwbaar bekabeld netwerk. Structured cabling volgens de normen, getest en gedocumenteerd.
+              Netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificeren. Alles netjes aangelegd, afgewerkt en gedocumenteerd - klaar voor MSP/IT.
             </p>
           </div>
 
@@ -153,10 +158,10 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-              Waarom Signaalmakers voor netwerkbekabeling
+              Waarom Signaalmakers
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Wij richten ons 100% op de fysieke netwerklaag. Geen IT-beheer, geen configuratie, geen overlap met jouw MSP. Alleen betrouwbare netwerkbekabeling.
+              Wij doen het voorwerk: bekabeling voor infrastructuur. Netjes, gedocumenteerd en klaar voor gebruik. MSP/IT doet inregeling en beheer.
             </p>
           </div>
 
@@ -164,18 +169,18 @@ export default function Diensten() {
             {[
               {
                 icon: Cable,
-                title: 'Alleen bekabeling',
-                desc: 'Wij doen geen IT, geen configuratie, geen wifi-planning. Alleen datakabels trekken, patchkasten en signaallijnen. De fysieke netwerklaag, meer niet.',
+                title: 'Infra-first',
+                desc: 'Netwerk (Cat6/Cat6A), audio, camera - alle bekabeling voor infrastructuur. Geen IT-beheer, geen configuratie. Alleen het voorwerk.',
               },
               {
                 icon: CheckCircle2,
-                title: 'Getest & gedocumenteerd',
-                desc: 'Elk bekabelingsproject wordt professioneel getest en opgemeten. Opleverrapport met kabelplan en metingen. Bewijs dat het netwerk werkt.',
+                title: 'Gecertificeerd',
+                desc: 'Meetrapporten, labels en schema\'s. Transparant en traceerbaar. Alles gedocumenteerd voor beheer door MSP/IT.',
               },
               {
                 icon: Building2,
-                title: 'Partner van MSP\'s',
-                desc: 'Wij zijn geen concurrent, maar jouw bekabelingspartner. Wij leggen de kabels, jullie doen IT-beheer en configuratie. Geen overlap.',
+                title: 'Landelijk actief',
+                desc: 'Door heel Nederland. Van serverruimtes tot zorg - overal hetzelfde vakmanschap. Voorwerk voor MSP/IT.',
               },
             ].map((item, index) => (
               <div
@@ -193,40 +198,29 @@ export default function Diensten() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Gegarandeerde capaciteit met abonnementen
-            </h2>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Met onze abonnementen heb je gegarandeerde monteurscapaciteit, vaste doorlooptijden en flinke kortingen op uren én materiaal. Geen wachtlijsten, geen gedoe — altijd plek voor jouw bekabelingsprojecten.
-            </p>
-            <Link
-              to="/abonnementen"
-              className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              Bekijk abonnementen
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 md:py-28 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Voor wie is Signaalmakers
+              Klaar voor betrouwbare bekabeling?
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              MSP's die betrouwbare monteurscapaciteit en bekabeling nodig hebben. ICT-bedrijven die kabelwerk willen uitbesteden. Zakelijke klanten die hun netwerk willen moderniseren. Als je wilt dat de fysieke basis van je netwerk klopt: wij leggen de lijnen, jij of je MSP doet de rest.
+              MSP's, IT-bedrijven en organisaties door heel Nederland kiezen Signaalmakers voor bekabeling die gewoon werkt. Wij doen het voorwerk - jij doet de rest.
             </p>
-            <Link
-              to="/contact"
-              className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              Wil je een stabiel en overzichtelijk netwerk? Neem contact op
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/offerte"
+                className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                Vraag offerte
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-block border-2 border-[#0E243A] text-[#0E243A] px-8 py-4 rounded-lg hover:bg-[#0E243A] hover:text-white transition-all duration-300 font-semibold text-lg"
+              >
+                Plan intake
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -44,9 +44,9 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact - Bekabelingsprojecten zonder gedoe | Signaalmakers"
-        description="Wil je je bekabelingsprojecten zonder gedoe laten uitvoeren? Neem contact op en we plannen direct in. Voor MSP's, ICT-bedrijven en zakelijke klanten door heel Nederland."
-        keywords="contact bekabeling, offerte databekabeling, MSP partner contact, bekabeling aanvragen"
+        title="Contact – Bekabeling voor infrastructuur | Signaalmakers"
+        description="Netwerk, audio, camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij doen voorwerk—MSP/IT doet inregeling. Landelijk."
+        keywords="contact bekabeling, offerte infrastructuur bekabeling, MSP partner contact, Cat6A bekabeling aanvragen"
         url="https://signaalmakers.nl/contact"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -64,7 +64,7 @@ export default function Contact() {
               Neem contact op
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Wil je je bekabelingsprojecten zonder gedoe laten uitvoeren? Neem contact op en we plannen direct in. We werken door heel Nederland voor MSP's, ICT-bedrijven en zakelijke klanten.
+              Netwerk, audio of camera-bekabeling nodig? Wij doen het voorwerk – MSP/IT doet inregeling. Cat6/Cat6A, PoE, gebalanceerde lijnen—gecertificeerd opgeleverd. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -289,6 +289,17 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* MSP/IT Disclaimer */}
+            <div className="mt-12 bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen alleen het voorwerk</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Signaalmakers legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera&apos;s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren—geen configuratie, geen apparatuur, geen beheer.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>MSP/IT-partners</strong> doen inregeling en beheer van switches, routers, access points. <strong>Audio-installateurs</strong> sluiten speakers aan en regelen af. <strong>Beveiligingsbedrijven</strong> installeren camera&apos;s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partner).
+              </p>
             </div>
 
             {/* Google Maps Embed voor lokale SEO */}

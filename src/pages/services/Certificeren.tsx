@@ -3,18 +3,18 @@ import SEO from '../../components/SEO';
 import { FileCheck, CheckCircle2, ClipboardList, BarChart3 } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 
-export default function Testen() {
+export default function Certificeren() {
   return (
     <>
       <SEO
-        title="Testen & Documentatie - Elk project opgeleverd met meetrapport | Signaalmakers"
-        description="Wij testen elke kabel en leveren op met duidelijk rapport. Meting, nummering, labeling en opleverrapport. Bewijs dat alles werkt zoals het hoort."
-        keywords="kabel testen, opleverrapport, bekabeling meten, documentatie, labeling, netwerktest"
-        url="https://signaalmakers.nl/diensten/testen"
+        title="Meten & Certificeren – oplevering met meetrapporten | Signaalmakers"
+        description="Testen op doorvoer en integriteit. Labels, schema's en opleverdossier. Transparant en traceerbaar—klaar voor MSP/IT."
+        keywords="meten certificeren, meetrapporten, bekabeling testen, opleverdossier, labeling, infrastructuur certificering"
+        url="https://signaalmakers.nl/diensten/certificeren"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
           { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' },
-          { name: 'Testen & Documentatie', item: 'https://signaalmakers.nl/diensten/testen' }
+          { name: 'Meten & Certificeren', item: 'https://signaalmakers.nl/diensten/certificeren' }
         ]}
       />
 
@@ -22,10 +22,10 @@ export default function Testen() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Testen & documentatie
+              Meten & Certificeren
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Geen aannames, alles wordt gemeten. Elk project leveren we op met een duidelijk rapport.
+              Testen op doorvoer en integriteit. Alle kabels gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema's en labels – transparant en traceerbaar. Klaar voor beheer door MSP/IT.
             </p>
           </div>
         </div>
@@ -37,79 +37,79 @@ export default function Testen() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Wat we opleveren
+              Wat je krijgt
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Meting per kabel, nummering, labeling en een opleverrapport. Bewijs dat alles werkt zoals het hoort.
+              Elk traject wordt getest, gedocumenteerd en gelabeld. Opleverdossier met meetrapporten, schema's en labels. Bewijs dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>bekabeling</Link> voldoet aan de norm en klaar is voor beheer door MSP/IT.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="bg-gray-50 rounded-xl p-8">
                 <BarChart3 className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Meting per kabel</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Meten per traject</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Elke kabel wordt getest met professionele meetapparatuur. We controleren of de kabel voldoet aan de norm en of er geen storingen zijn.
+                  Elk kabeltraject wordt getest op doorvoer en integriteit. Professionele meetapparatuur volgens de norm. Bewijs dat alles presteert zoals verwacht.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Lengte en bandbreedte</span>
+                    <span>Doorvoer en bandbreedte</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Signaalverlies</span>
+                    <span>Integriteit en signaalverlies</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Connecties en afmontering</span>
+                    <span>Afmontering en connecties</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-8">
                 <ClipboardList className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Nummering en labeling</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Labels en schema's</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Alle kabels worden genummerd en gelabeld. Zowel bij het aansluitpunt als in de patchkast. Zo weet je altijd welke kabel waar naartoe gaat.
+                  Alle kabels gelabeld en genummerd. Schema's en overzichten voor traceerbaar beheer. Alles gedocumenteerd en klaar voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link>.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Duidelijke labels</span>
+                    <span>Consistente labeling</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Logische nummering</span>
+                    <span>Logische nummeringsschema's</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Overzichtelijk</span>
+                    <span>Traceerbaar en beheersbaar</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-8 md:col-span-2">
                 <FileCheck className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Opleverrapport</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Opleverdossier</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Na afronding krijg je een opleverrapport met alle metingen, nummering en een overzicht van de uitgevoerde werkzaamheden. Bewijs dat alles werkt.
+                  Volledig opleverdossier met meetrapporten, labels en schema's. Transparant en traceerbaar. Bewijs dat alle trajecten voldoen aan de norm en klaar zijn voor beheer door MSP/IT.
                 </p>
                 <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Metingen per kabel</span>
+                    <span>Meetrapporten per traject</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Overzicht nummering</span>
+                    <span>Labels en nummeringsschema's</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Plattegrond met routing</span>
+                    <span>Routeschema's en documentatie</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Certificering per kabel</span>
+                    <span>Certificering per kabeltraject</span>
                   </li>
                 </ul>
               </div>
@@ -122,36 +122,33 @@ export default function Testen() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Waarom is dit belangrijk?
+              Waarom meten en certificeren?
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              Zonder testen en documentatie weet je niet of de bekabeling goed is aangelegd. En als er later iets fout gaat, kost het veel tijd om de fout te vinden.
+              Zonder testen en documentatie weet niemand of de bekabeling voldoet aan de norm. Met een opleverdossier is alles transparant, traceerbaar en klaar voor beheer.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: (
-                    <>
-                      Voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</Link>
-                    </>
-                  ),
-                  desc: 'Jij kunt met vertrouwen installeren. Als het niet werkt, is het snel te vinden dankzij de documentatie.',
-                },
-                {
-                  title: 'Minder storingen',
-                  desc: 'Door te testen vangen we fouten op voordat ze problemen veroorzaken. Dat scheelt nazorg.',
-                },
-                {
-                  title: 'Bewijs',
-                  desc: 'Met een opleverrapport heb je bewijs dat de bekabeling correct is aangelegd en voldoet aan de norm.',
-                },
-              ].map((item, index) => (
-                <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                  <h3 className="text-xl font-bold text-[#0E243A] mb-3">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">
+                  Vertrouwen voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link>
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Bewijs dat alles voldoet aan de norm. Labels en schema&apos;s maken beheer eenvoudig en traceerbaar.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Minder nazorg</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Fouten worden vooraf opgespoord en opgelost. Geen discussie achteraf over wat wel of niet werkt.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Transparantie</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Meetrapporten en documentatie geven volledige transparantie over de kwaliteit van de bekabeling.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -161,9 +158,9 @@ export default function Testen() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Standaard bij elk project</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Standaard bij elk traject</h3>
               <p className="text-gray-700 leading-relaxed">
-                Testen en documenteren zit standaard bij elk project. Je betaalt er niet extra voor. Het hoort er gewoon bij, want anders weet je niet of het goed is.
+                Meten en certificeren is standaard bij elk bekabelingstraject. Geen extra kosten. Het hoort er gewoon bij – zo weet je zeker dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>infrastructuur</Link> voldoet aan de norm en klaar is voor beheer door MSP/IT.
               </p>
             </div>
           </div>
@@ -174,10 +171,10 @@ export default function Testen() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Klaar voor een project?
+              Klaar voor gecertificeerde oplevering?
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Neem contact op en we bespreken je bekabelingsproject. Alles wordt getest en gedocumenteerd.
+              Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen. Alle trajecten worden gemeten, gelabeld en gedocumenteerd.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

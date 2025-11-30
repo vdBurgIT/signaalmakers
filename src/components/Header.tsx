@@ -50,20 +50,27 @@ export default function Header() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white text-[#0E243A] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <Link to="/diensten/databekabeling" className="block px-4 py-3 hover:bg-gray-100">
-                  Databekabeling
+                <Link to="/diensten/netwerkbekabeling" className="block px-4 py-3 hover:bg-gray-100">
+                  Netwerkbekabeling
+                </Link>
+                <Link to="/diensten/audiokabels" className="block px-4 py-3 hover:bg-gray-100">
+                  Audiokabels
+                </Link>
+                <Link to="/diensten/camera-bekabeling" className="block px-4 py-3 hover:bg-gray-100">
+                  Camera-bekabeling
                 </Link>
                 <Link to="/diensten/patchkasten" className="block px-4 py-3 hover:bg-gray-100">
                   Patchkasten
                 </Link>
-                <Link to="/diensten/audio" className="block px-4 py-3 hover:bg-gray-100">
-                  Signaallijnen (Audio)
-                </Link>
-                <Link to="/diensten/testen" className="block px-4 py-3 hover:bg-gray-100">
-                  Testen & Documentatie
+                <Link to="/diensten/certificeren" className="block px-4 py-3 hover:bg-gray-100">
+                  Meten &amp; Certificeren
                 </Link>
               </div>
             </div>
+
+            <Link to="/sectoren" className="hover:text-[#FF6A00] transition-colors">
+              Sectoren
+            </Link>
 
             <Link to="/abonnementen" className="hover:text-[#FF6A00] transition-colors">
               Abonnementen
@@ -117,11 +124,25 @@ export default function Header() {
               {isServicesOpen && (
                 <div className="pl-4 space-y-2 mt-2">
                   <Link
-                    to="/diensten/databekabeling"
+                    to="/diensten/netwerkbekabeling"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Databekabeling
+                    Netwerkbekabeling
+                  </Link>
+                  <Link
+                    to="/diensten/audiokabels"
+                    className="block py-2 text-sm hover:text-[#FF6A00]"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Audiokabels
+                  </Link>
+                  <Link
+                    to="/diensten/camera-bekabeling"
+                    className="block py-2 text-sm hover:text-[#FF6A00]"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Camera-bekabeling
                   </Link>
                   <Link
                     to="/diensten/patchkasten"
@@ -131,22 +152,23 @@ export default function Header() {
                     Patchkasten
                   </Link>
                   <Link
-                    to="/diensten/audio"
+                    to="/diensten/certificeren"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Signaallijnen (Audio)
-                  </Link>
-                  <Link
-                    to="/diensten/testen"
-                    className="block py-2 text-sm hover:text-[#FF6A00]"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Testen & Documentatie
+                    Meten &amp; Certificeren
                   </Link>
                 </div>
               )}
             </div>
+
+            <Link
+              to="/sectoren"
+              className="block py-2 hover:text-[#FF6A00] transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Sectoren
+            </Link>
 
             <Link
               to="/abonnementen"

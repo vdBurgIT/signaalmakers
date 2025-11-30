@@ -57,13 +57,13 @@ export default function NotFound() {
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-[#0E243A] mb-6 text-center">Populaire pagina's</h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <Link to="/diensten/databekabeling" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                <h4 className="font-bold text-[#0E243A] mb-2">Databekabeling</h4>
-                <p className="text-gray-600 text-sm">Cat6, Cat6A en Cat7 bekabeling</p>
+              <Link to="/diensten/netwerkbekabeling" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h4 className="font-bold text-[#0E243A] mb-2">Netwerkbekabeling</h4>
+                <p className="text-gray-600 text-sm">Cat6/Cat6A bekabeling voor infrastructuur</p>
               </Link>
-              <Link to="/abonnementen" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                <h4 className="font-bold text-[#0E243A] mb-2">Abonnementen</h4>
-                <p className="text-gray-600 text-sm">Bekijk onze pakketten</p>
+              <Link to="/sectoren" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h4 className="font-bold text-[#0E243A] mb-2">Sectoren</h4>
+                <p className="text-gray-600 text-sm">Bekabeling per sector</p>
               </Link>
               <Link to="/contact" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
                 <h4 className="font-bold text-[#0E243A] mb-2">Contact</h4>

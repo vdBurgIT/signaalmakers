@@ -55,8 +55,18 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Diensten</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link to="/diensten/databekabeling" className="hover:text-[#FF6A00] transition-colors">
-                  Databekabeling
+                <Link to="/diensten/netwerkbekabeling" className="hover:text-[#FF6A00] transition-colors">
+                  Netwerkbekabeling
+                </Link>
+              </li>
+              <li>
+                <Link to="/diensten/audiokabels" className="hover:text-[#FF6A00] transition-colors">
+                  Audiokabels
+                </Link>
+              </li>
+              <li>
+                <Link to="/diensten/camera-bekabeling" className="hover:text-[#FF6A00] transition-colors">
+                  Camera-bekabeling
                 </Link>
               </li>
               <li>
@@ -65,18 +75,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/diensten/audio" className="hover:text-[#FF6A00] transition-colors">
-                  Signaallijnen (Audio)
-                </Link>
-              </li>
-              <li>
-                <Link to="/diensten/testen" className="hover:text-[#FF6A00] transition-colors">
-                  Testen & Documentatie
-                </Link>
-              </li>
-              <li>
-                <Link to="/abonnementen" className="hover:text-[#FF6A00] transition-colors">
-                  Abonnementen
+                <Link to="/diensten/certificeren" className="hover:text-[#FF6A00] transition-colors">
+                  Meten &amp; Certificeren
                 </Link>
               </li>
             </ul>

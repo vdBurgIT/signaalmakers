@@ -17,10 +17,11 @@ function ScrollToTop() {
 }
 
 const Diensten = lazy(() => import(/* webpackChunkName: "diensten" */ './pages/Diensten'));
-const Databekabeling = lazy(() => import(/* webpackChunkName: "data" */ './pages/services/Databekabeling'));
+const Netwerkbekabeling = lazy(() => import(/* webpackChunkName: "netwerk" */ './pages/services/Netwerkbekabeling'));
 const Patchkasten = lazy(() => import(/* webpackChunkName: "patchkasten" */ './pages/services/Patchkasten'));
-const Audio = lazy(() => import(/* webpackChunkName: "audio" */ './pages/services/Audio'));
-const Testen = lazy(() => import(/* webpackChunkName: "testen" */ './pages/services/Testen'));
+const Audiokabels = lazy(() => import(/* webpackChunkName: "audio" */ './pages/services/Audiokabels'));
+const CameraBekabealing = lazy(() => import(/* webpackChunkName: "camera" */ './pages/services/Camera-bekabeling'));
+const Certificeren = lazy(() => import(/* webpackChunkName: "certificeren" */ './pages/services/Certificeren'));
 const Abonnementen = lazy(() => import(/* webpackChunkName: "abonnementen" */ './pages/Abonnementen'));
 const Blog = lazy(() => import(/* webpackChunkName: "blog" */ './pages/Blog'));
 const BlogPost = lazy(() => import(/* webpackChunkName: "blogpost" */ './pages/BlogPost'));
@@ -28,6 +29,13 @@ const OverOns = lazy(() => import(/* webpackChunkName: "over" */ './pages/OverOn
 const FAQ = lazy(() => import(/* webpackChunkName: "faq" */ './pages/FAQ'));
 const StatusSupport = lazy(() => import(/* webpackChunkName: "status" */ './pages/StatusSupport'));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
+const Offerte = lazy(() => import(/* webpackChunkName: "offerte" */ './pages/Offerte'));
+const Sectoren = lazy(() => import(/* webpackChunkName: "sectoren" */ './pages/Sectoren'));
+const Serverruimtes = lazy(() => import(/* webpackChunkName: "serverruimtes" */ './pages/sectoren/Serverruimtes'));
+const Kantoren = lazy(() => import(/* webpackChunkName: "kantoren" */ './pages/sectoren/Kantoren'));
+const RetailHoreca = lazy(() => import(/* webpackChunkName: "retail" */ './pages/sectoren/Retail'));
+const Magazijn = lazy(() => import(/* webpackChunkName: "magazijn" */ './pages/sectoren/Magazijn'));
+const OnderwijsZorg = lazy(() => import(/* webpackChunkName: "onderwijs" */ './pages/sectoren/Onderwijs'));
 const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ './pages/NotFound'));
 
 function App() {
@@ -51,10 +59,11 @@ function App() {
                 <Route path="/" element={<Home />} />
 
                 <Route path="/diensten" element={<Diensten />} />
-                <Route path="/diensten/databekabeling" element={<Databekabeling />} />
+                <Route path="/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
+                <Route path="/diensten/audiokabels" element={<Audiokabels />} />
+                <Route path="/diensten/camera-bekabeling" element={<CameraBekabealing />} />
                 <Route path="/diensten/patchkasten" element={<Patchkasten />} />
-                <Route path="/diensten/audio" element={<Audio />} />
-                <Route path="/diensten/testen" element={<Testen />} />
+                <Route path="/diensten/certificeren" element={<Certificeren />} />
                 <Route path="/abonnementen" element={<Abonnementen />} />
 
                 <Route path="/blog" element={<Blog />} />
@@ -64,6 +73,15 @@ function App() {
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/status-support" element={<StatusSupport />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/offerte" element={<Offerte />} />
+
+                {/* Sectoren */}
+                <Route path="/sectoren" element={<Sectoren />} />
+                <Route path="/sectoren/serverruimtes" element={<Serverruimtes />} />
+                <Route path="/sectoren/kantoren" element={<Kantoren />} />
+                <Route path="/sectoren/retail" element={<RetailHoreca />} />
+                <Route path="/sectoren/magazijn" element={<Magazijn />} />
+                <Route path="/sectoren/onderwijs" element={<OnderwijsZorg />} />
 
                 {/* 404 - Catch all route */}
                 <Route path="*" element={<NotFound />} />
