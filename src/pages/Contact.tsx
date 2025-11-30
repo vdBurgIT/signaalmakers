@@ -15,23 +15,58 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
 
-    // Create mailto link with form data
-    const subject = encodeURIComponent(formData.subject || 'Contact via signaalmakers.nl');
-    const body = encodeURIComponent(
-      `Naam: ${formData.name}\n` +
-      `Bedrijf: ${formData.company || 'Niet opgegeven'}\n` +
-      `Email: ${formData.email}\n` +
-      `Telefoon: ${formData.phone || 'Niet opgegeven'}\n` +
-      `Adres/Plaats: ${formData.address || 'Niet opgegeven'}\n` +
-      `Type organisatie: ${formData.customerType === 'msp' ? 'MSP / IT-bedrijf' : formData.customerType === 'installateur' ? 'Installatiebedrijf' : 'Zakelijke klant'}\n\n` +
-      `Bericht:\n${formData.message}`
-    );
+    try {
+      const response = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Open default email client
-    window.location.href = `mailto:info@signaalmakers.nl?subject=${subject}&body=${body}`;
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitStatus({
+          type: 'success',
+          message: result.message || 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.',
+        });
+        // Reset form
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          address: '',
+          customerType: 'msp',
+          subject: '',
+          message: '',
+        });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: result.message || 'Er is een fout opgetreden. Probeer het later opnieuw.',
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Er is een fout opgetreden bij het verzenden van uw bericht. Neem direct contact met ons op via info@signaalmakers.nl',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -204,11 +239,24 @@ export default function Contact() {
                       />
                     </div>
 
+                    {submitStatus.type && (
+                      <div
+                        className={`p-4 rounded-lg ${
+                          submitStatus.type === 'success'
+                            ? 'bg-green-50 text-green-800 border border-green-200'
+                            : 'bg-red-50 text-red-800 border border-red-200'
+                        }`}
+                      >
+                        {submitStatus.message}
+                      </div>
+                    )}
+
                     <button
                       type="submit"
-                      className="w-full bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-lg"
+                      disabled={isSubmitting}
+                      className="w-full bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Verstuur bericht
+                      {isSubmitting ? 'Bezig met verzenden...' : 'Verstuur bericht'}
                     </button>
                   </form>
                 </div>

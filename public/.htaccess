@@ -76,10 +76,26 @@
   Deny from all
 </FilesMatch>
 
+# Enable PHP processing
+AddHandler application/x-httpd-php .php
+
+# CORS voor API endpoints
+<IfModule mod_headers.c>
+  <FilesMatch "\.php$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+  </FilesMatch>
+</IfModule>
+
 # SPA Fallback - Redirect all routes to index.html (React Router)
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Allow API requests to pass through (don't redirect PHP files)
+  RewriteCond %{REQUEST_URI} ^/api/
+  RewriteRule ^ - [L]
 
   # If the requested file or directory doesn't exist
   RewriteCond %{REQUEST_FILENAME} !-f
