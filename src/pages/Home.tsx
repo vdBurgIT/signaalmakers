@@ -194,7 +194,7 @@ export default function Home() {
               Bekabeling voor infrastructuur
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. Alles netjes <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gemeten en gecertificeerd</Link>. <strong>Wij doen het voorwerk</strong>; <strong>MSP/IT-partners</strong> regelen <strong>inregeling en beheer</strong>.
+              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. Alles netjes <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gemeten en gecertificeerd</Link>. <strong>Wij doen het voorwerk</strong>; <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen <strong>inregeling en beheer</strong>.
             </p>
           </div>
 

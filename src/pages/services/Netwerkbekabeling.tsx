@@ -77,7 +77,7 @@ export default function Netwerkbekabeling() {
               Databekabeling &amp; netwerkbekabeling die presteert
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Gecertificeerd opgeleverd: meten, labels, schema&apos;s. Wij doen het voorwerk—MSP/IT doet inregeling.
+              Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Gecertificeerd opgeleverd: meten, labels, schema&apos;s. Wij doen het voorwerk — MSP/IT doet inregeling.
             </p>
           </div>
         </div>
