@@ -29,7 +29,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/images/logo/logo_signaalmakers.png"
+              src="/images/logo/logo_signaalmakers_fc.png"
               alt="Signaalmakers Logo"
               className="h-12 md:h-14 w-auto object-contain"
               width="1180"
@@ -84,9 +84,9 @@ export default function Header() {
             <Link to="/faq" className="hover:text-[#FF6A00] transition-colors">
               FAQ
             </Link>
-            <Link to="/status-support" className="hover:text-[#FF6A00] transition-colors">
+            {/* <Link to="/status-support" className="hover:text-[#FF6A00] transition-colors">
               Status & Support
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="bg-[#FF6A00] text-white px-6 py-2 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
@@ -198,13 +198,13 @@ export default function Header() {
             >
               FAQ
             </Link>
-            <Link
+            {/* <Link
               to="/status-support"
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Status & Support
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="block bg-[#FF6A00] text-white px-6 py-2 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center mt-4"

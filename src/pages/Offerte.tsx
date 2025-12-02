@@ -64,7 +64,7 @@ export default function Offerte() {
       if (result.ok) {
         setSubmitStatus({
           type: 'success',
-          message: 'Bedankt voor uw offerte-aanvraag! We nemen zo snel mogelijk contact met u op.',
+          message: 'Bedankt voor je offerte-aanvraag! We nemen zo snel mogelijk contact op.',
         });
         // Reset form
         setFormData({
@@ -86,7 +86,7 @@ export default function Offerte() {
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: 'Er is een fout opgetreden bij het verzenden van uw aanvraag. Neem direct contact met ons op via info@signaalmakers.nl',
+        message: 'Er is een fout opgetreden bij het verzenden van je aanvraag. Neem direct contact met ons op via info@signaalmakers.nl',
       });
     } finally {
       setIsSubmitting(false);

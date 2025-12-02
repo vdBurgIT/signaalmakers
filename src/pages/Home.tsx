@@ -144,14 +144,14 @@ export default function Home() {
                 Databekabeling &amp; netwerkbekabeling door heel Nederland
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                Specialist in <strong>databekabeling</strong> en <strong>netwerkbekabeling</strong> (Cat6/Cat6A), audiokabels en camera-bekabeling. We trekken kabels, monteren af, labelen en leveren <strong>gecertificeerd</strong> op met meetrapporten. Voor <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link>. Wij doen het voorwerk—<Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen inregeling en beheer.
+                Specialist in <strong>databekabeling</strong> en <strong>netwerkbekabeling</strong> (Cat6/Cat6A), audiokabels en camera-bekabeling. We trekken kabels, monteren af, labelen en leveren <strong>gecertificeerd</strong> op met meetrapporten. Voor <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen inregeling en beheer.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/offerte"
                   className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg text-center shadow-lg hover:shadow-xl hover:scale-105"
                 >
-                  Vraag offerte
+                  Vraag offerte aan
                 </Link>
                 <Link
                   to="/contact"
@@ -236,7 +236,7 @@ export default function Home() {
             Waarom Signaalmakers
           </h2>
           <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
-            Bekabeling is ons vak. Netjes, gedocumenteerd en klaar voor gebruik. Wij doen het voorwerk - MSP/IT doet de rest.
+            Bekabeling is ons vak. Netjes, gedocumenteerd en klaar voor gebruik. Wij doen het voorwerk - jij als MSP/IT(er) doet de rest.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -264,7 +264,7 @@ export default function Home() {
             Voor wie werken wij?
           </h2>
           <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
-            Wij werken voornamelijk voor MSP's en ICT-bedrijven, maar ook direct voor bedrijven en organisaties.
+            Wij werken enkel voor MSP's en ICT-bedrijven. Ben je geen MSP of ICT-bedrijf maar heb je wel behoefte aan goede bekabeling? Dan brengen we je graag in contact met een van onze partners.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
@@ -302,7 +302,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor bedrijven & organisaties</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Wij werken vaak samen met jouw MSP of IT-partner. Wij regelen de bekabeling, zodat jouw IT-partner direct verder kan met inregeling en beheer.
+                Wij werken samen met jouw MSP of IT-partner. Wij regelen de bekabeling, zodat jouw IT-partner direct verder kan. Heb je nog geen IT-partner voor inregeling en beheer? Dan brengen we je graag in contact via ons betrouwbare partnernetwerk.
               </p>
               <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
@@ -313,10 +313,10 @@ export default function Home() {
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <span>Samenwerking met jouw MSP/IT-partner</span>
                 </li>
-                <li className="flex items-start gap-2">
+                {/* <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <span>Alleen bekabeling, geen IT-beheer</span>
-                </li>
+                </li> */}
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <span>Opleverdossier met meetrapporten</span>

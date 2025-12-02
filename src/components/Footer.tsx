@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               <img
-                src="/images/logo/logo_signaalmakers.png"
+                src="/images/logo/logo_signaalmakers_fc.png"
                 alt="Signaalmakers Logo"
                 className="h-10 md:h-12 w-auto"
                 width="1180"
@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-4">
-              Jouw projecten, onze zekerheid
+              Jouw projecten, onze zekerheid. Gewoon geregeld.
             </p>
             <div className="flex gap-4">
               <a
@@ -100,11 +100,11 @@ export default function Footer() {
                   FAQ
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/status-support" className="hover:text-[#FF6A00] transition-colors">
                   Status & Support
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact" className="hover:text-[#FF6A00] transition-colors">
                   Contact

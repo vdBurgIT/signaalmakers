@@ -195,9 +195,9 @@ export default function FAQ() {
               </div>
 
               <div className="mt-12 bg-[#0E243A] text-white rounded-lg p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Staat uw vraag er niet bij?</h2>
+                <h2 className="text-2xl font-bold mb-4">Staat je vraag er niet bij?</h2>
                 <p className="text-gray-300 mb-6">
-                  Neem gerust contact met ons op. We beantwoorden graag al uw vragen.
+                  Neem gerust contact met ons op. We beantwoorden graag al je vragen.
                 </p>
                 <Link
                   to="/contact"

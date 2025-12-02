@@ -1,7 +1,7 @@
 {
-  "name": "Signaalmakers - ICT & Netwerk Oplossingen",
+  "name": "Signaalmakers - Gewoon geregeld.",
   "short_name": "Signaalmakers",
-  "description": "Professionele ICT-diensten voor bedrijven en particulieren",
+  "description": "Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels en camera-bekabeling door heel Nederland.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/Transparent-03.png",
+      "src": "/brandmark.png",
       "sizes": "320x320",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/Transparent-01.png",
+      "src": "/logo.png",
       "sizes": "320x320",
       "type": "image/png",
       "purpose": "any"

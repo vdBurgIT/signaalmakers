@@ -29,7 +29,7 @@ export default function OverOns() {
               Bekabeling voor infrastructuur
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Netwerk, audio, camera&apos;s – Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij leggen de bekabeling, MSP/IT doet inregeling en beheer. Duidelijke scheiding, professioneel voorwerk—landelijk.
+              Netwerk, audio, camera&apos;s – Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij leggen de bekabeling, jij als MSP/IT doet inregeling en beheer. Duidelijke scheiding, professioneel voorwerk en landelijk inzetbaar.
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function OverOns() {
             <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-10 mb-16">
               <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Wat we nadrukkelijk NIET doen</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Wij doen alleen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en certificeren. Geen configuratie, geen apparatuur, geen beheer. Juist die duidelijke scheiding maakt ons interessant voor MSP&apos;s, IT-partners en audio/beveiligingsbedrijven: zij houden controle over apparatuur en configuratie, wij zorgen voor professionele bekabeling waar zij op kunnen vertrouwen.
+                Wij doen alleen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en certificeren. Geen configuratie, geen apparatuur, geen beheer. Juist die duidelijke scheiding maakt ons dé bekabelingspartner voor MSP&apos;s, IT-specialisten, audiobedrijven en beveiligingsbedrijven: zij houden controle over apparatuur en configuratie, wij zorgen voor professionele bekabeling waar zij op kunnen vertrouwen.
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
@@ -120,7 +120,7 @@ export default function OverOns() {
                 {
                   icon: Cable,
                   title: 'Professionele bekabeling',
-                  desc: 'Strakke, professionele bekabeling die technisch en optisch klopt. Netjes afgewerkt volgens structured cabling normen.',
+                  desc: 'Strakke, professionele bekabeling die technisch en optisch klopt. Netjes afgewerkt volgens gestructureerde bekabelingsnormen.',
                 },
                 {
                   icon: CheckCircle2,
@@ -153,7 +153,7 @@ export default function OverOns() {
               Partner voor MSP's en IT-dienstverleners
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Veel <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link> schakelen Signaalmakers in als specialist voor de fysieke laag. Wij leggen de kabels, jullie doen de configuratie en het beheer.
+              Veel <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link> schakelen Signaalmakers in als specialist voor de fysieke laag. Wij leggen de kabels, jij als MSP/IT-partner doet de configuratie en het beheer.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -169,7 +169,7 @@ export default function OverOns() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>De patchkast netjes en logisch is bekabeld</span>
+                    <span>De patchkast netjes en logisch bekabeld is</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -177,7 +177,7 @@ export default function OverOns() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Alles is gelabeld en gedocumenteerd</span>
+                    <span>Alles gelabeld en gedocumenteerd is</span>
                   </li>
                 </ul>
               </div>
@@ -188,7 +188,7 @@ export default function OverOns() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Resultaat:</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  De verantwoordelijkheid blijft helder — de <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link> beheert het netwerk, Signaalmakers beheert de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.
+                  De verantwoordelijkheid blijft helder — jij als <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link> beheert het netwerk, Signaalmakers regelt de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.
                 </p>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function OverOns() {
               Een solide basis onder jouw datanetwerk
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Of het nu gaat om een nieuw kantoorpand, uitbreiding van een bestaande omgeving, wifi-bekabeling voor access points of het moderniseren van oude bekabeling: Signaalmakers legt de lijnen voor je — in heel Nederland.
+              Of het nu gaat om een nieuw kantoorpand, uitbreiding van een bestaande omgeving, wifi-bekabeling voor access points of het moderniseren van oude bekabeling: Signaalmakers regelt het voor je — in heel Nederland.
             </p>
             <Link
               to="/contact"

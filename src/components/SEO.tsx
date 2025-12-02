@@ -24,9 +24,9 @@ interface SEOProps {
 
 const SEO = ({
   title = 'Signaalmakers - Netwerkbekabeling door heel Nederland | Jouw projecten, onze zekerheid',
-  description = 'Professionele netwerkbekabeling en databekabeling door heel Nederland. Cat6, Cat6A en Cat7 UTP-bekabeling, patchkasten, signaallijnen. Jouw projecten, onze zekerheid.',
+  description = 'Professionele netwerkbekabeling en databekabeling door heel Nederland. Cat6, Cat6A en Cat7 UTP-bekabeling, patchkasten, signaallijnen. Jouw projecten, onze zekerheid. Gewoon geregeld.',
   keywords = 'netwerkbekabeling, databekabeling, UTP-bekabeling, Cat6 bekabeling, Cat6A bekabeling, Cat7 bekabeling, patchkast bekabeling, structured cabling, datapunten aanleggen, kabelmanagement, bekabeld netwerk Nederland',
-  image = 'https://signaalmakers.nl/Transparent-03.png',
+  image = 'https://signaalmakers.nl/brandmark.png',
   url = 'https://signaalmakers.nl/',
   type = 'website',
   breadcrumbs,
@@ -102,7 +102,7 @@ const SEO = ({
                 slogan: 'Jouw projecten, onze zekerheid',
                 description: description,
                 url: url,
-                logo: 'https://signaalmakers.nl/images/logo/logo-klein-signaalmakers.jpg',
+                logo: 'https://signaalmakers.nl/images/logo/icon_signaalmakers_fc.jpg',
                 image: image,
                 telephone: '+31645251333',
                 email: 'info@signaalmakers.nl',
