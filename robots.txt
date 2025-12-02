@@ -1,16 +1,11 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt voor signaalmakers.nl
+# Laatste update: 2 december 2025
+
 User-agent: *
 Allow: /
 
 # Sitemap
 Sitemap: https://signaalmakers.nl/sitemap.xml
 
-# Google bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-# Crawl delay
-Crawl-delay: 0
+# Crawl-delay voor bots (optioneel, voorkomt overbelasting)
+Crawl-delay: 1
