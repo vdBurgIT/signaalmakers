@@ -20,7 +20,7 @@ export default function Abonnementen() {
               Jouw projecten, onze zekerheid
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Klaar met wachten op offertes en eindeloze lead-times? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en flinke kortingen op alles wat telt. Geen losse uren, maar zekerheid.
+              Klaar met wachten op offertes en eindeloze lead-times? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en flinke kortingen op alles wat telt. Gewoon geregeld.
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Abonnementen() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">Reiskosten €0,60/km</span>
+                  <span className="text-[#0E243A]">Reiskosten per km</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -121,7 +121,7 @@ export default function Abonnementen() {
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold">4 gegarandeerde projectdagen</span>
-                    <p className="text-sm text-gray-300">per maand</p>
+                    <p className="text-sm text-gray-300">per maand (virtuele capaciteit)</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -140,7 +140,7 @@ export default function Abonnementen() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Reiskosten €0,36/km (~40% korting)</span>
+                  <span>40% korting op reiskosten</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -166,7 +166,7 @@ export default function Abonnementen() {
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-[#0E243A]">8 gegarandeerde projectdagen</span>
-                    <p className="text-sm text-gray-600">per maand</p>
+                    <p className="text-sm text-gray-600">per maand (virtuele capaciteit)</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -186,7 +186,7 @@ export default function Abonnementen() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">Reiskosten €0,24/km (~60% korting)</span>
+                  <span className="text-[#0E243A]">60% korting op reiskosten</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -263,7 +263,7 @@ export default function Abonnementen() {
                 },
                 {
                   q: 'Kan ik mijn abonnement opzeggen?',
-                  a: 'Ja, maandelijks opzegbaar. Geen langdurige contracten, geen verborgen kosten.'
+                  a: 'Ja, abonnementen zijn maandelijks opzegbaar na 12 maanden. Geen kleine lettertjes, geen verborgen kosten.'
                 },
                 {
                   q: 'Wat als ik meer dagen nodig heb?',

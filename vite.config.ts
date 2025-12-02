@@ -31,7 +31,7 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png', 'Transparent-03.png'],
+      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png', 'brandmark.png'],
       injectRegister: 'auto',
       devOptions: {
         enabled: false,
@@ -50,13 +50,13 @@ export default defineConfig({
         lang: 'nl-NL',
         icons: [
           {
-            src: '/Transparent-03.png',
+            src: '/brandmark.png',
             sizes: '192x192',
             type: 'image/png',
             purpose: 'any maskable',
           },
           {
-            src: '/Transparent-03.png',
+            src: '/brandmark.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',

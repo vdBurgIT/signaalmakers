@@ -45,7 +45,7 @@ export default function Contact() {
       if (result.ok) {
         setSubmitStatus({
           type: 'success',
-          message: 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.',
+          message: 'Bedankt voor je bericht! We nemen zo snel mogelijk contact op.',
         });
         // Reset form
         setFormData({
@@ -67,7 +67,7 @@ export default function Contact() {
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: 'Er is een fout opgetreden bij het verzenden van uw bericht. Neem direct contact met ons op via info@signaalmakers.nl',
+        message: 'Er is een fout opgetreden bij het verzenden van je bericht. Neem direct contact met ons op via info@signaalmakers.nl',
       });
     } finally {
       setIsSubmitting(false);
@@ -104,7 +104,7 @@ export default function Contact() {
               Neem contact op
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Netwerk, audio of camera-bekabeling nodig? Wij doen het voorwerk – MSP/IT doet inregeling. Cat6/Cat6A, PoE, gebalanceerde lijnen—gecertificeerd opgeleverd. Landelijk werkzaam.
+              Netwerk, audio of camera-bekabeling nodig? Wij doen het voorwerk – jij als MSP/IT doet inregeling. Cat6/Cat6A, PoE, gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -213,7 +213,6 @@ export default function Contact() {
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6A00] focus:border-transparent"
                       >
                         <option value="msp">MSP / IT-bedrijf</option>
-                        <option value="installateur">Installatiebedrijf</option>
                         <option value="zakelijk">Zakelijke klant</option>
                       </select>
                     </div>
@@ -341,7 +340,7 @@ export default function Contact() {
                     </div>
                     <div className="flex justify-between">
                       <span>Zondag</span>
-                      <span className="font-semibold">Gesloten</span>
+                      <span className="font-semibold">Op afspraak</span>
                     </div>
                   </div>
                 </div>
@@ -352,7 +351,7 @@ export default function Contact() {
             <div className="mt-12 bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen alleen het voorwerk</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Signaalmakers legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera&apos;s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren—geen configuratie, geen apparatuur, geen beheer.
+                Signaalmakers legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera&apos;s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren — geen configuratie, geen apparatuur, geen beheer.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 <strong>MSP/IT-partners</strong> doen inregeling en beheer van switches, routers, access points. <strong>Audio-installateurs</strong> sluiten speakers aan en regelen af. <strong>Beveiligingsbedrijven</strong> installeren camera&apos;s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partner).

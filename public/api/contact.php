@@ -79,7 +79,6 @@ if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || $subject === '
 // Convert customer type to readable format
 $customerTypeMap = [
     'msp' => 'MSP / IT-bedrijf',
-    'installateur' => 'Installatiebedrijf',
     'zakelijk' => 'Zakelijke klant',
     'offerte' => 'Offerte-aanvraag'
 ];

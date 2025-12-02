@@ -154,7 +154,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
           name: 'Signaalmakers',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://signaalmakers.nl/images/logo/logo_signaalmakers.png'
+            url: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png'
           }
         },
         author: {

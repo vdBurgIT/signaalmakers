@@ -19,7 +19,7 @@ export default function Audiokabels() {
     },
     {
       question: 'Welke kabeltypen gebruiken jullie?',
-      answer: 'Afhankelijk van de toepassing gebruiken we verschillende kabeltypen: XLR-kabels voor microfoons en professionele apparatuur, luidsprekerkabels voor speakers, en multipair kabels voor grotere installaties. We adviseren altijd het beste type voor uw situatie.'
+      answer: 'Afhankelijk van de toepassing gebruiken we verschillende kabeltypen: XLR-kabels voor microfoons en professionele apparatuur, luidsprekerkabels voor speakers, en multipair kabels voor grotere installaties. We adviseren altijd het beste type voor jouw situatie.'
     },
     {
       question: 'Kunnen audiokabels naast stroomkabels?',
@@ -35,7 +35,7 @@ export default function Audiokabels() {
     },
     {
       question: 'Leveren jullie ook documentatie?',
-      answer: 'Ja, bij oplevering krijgt u een schema met kabelroutes, aansluitpunten en labeling. Dit maakt onderhoud en uitbreiding door uw audio-installateur eenvoudig. Alles netjes gedocumenteerd en traceerbaar.'
+      answer: 'Ja, bij oplevering krijgt u een schema met kabelroutes, aansluitpunten en labeling. Dit maakt onderhoud en uitbreiding door jouw audio-installateur eenvoudig. Alles netjes gedocumenteerd en traceerbaar.'
     }
   ];
 

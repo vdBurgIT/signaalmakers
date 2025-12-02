@@ -27,11 +27,11 @@ export default function CameraBekabealing() {
     },
     {
       question: 'Hoeveel camera\u2019s kunnen op één switch?',
-      answer: 'Dit hangt af van het PoE-budget van de switch en het stroomverbruik per camera. Een standaard PoE+ switch (30W/poort) kan doorgaans 8-24 camera\u2019s voeden. We adviseren altijd de juiste switchcapaciteit voor uw aantal camera\u2019s.'
+      answer: 'Dit hangt af van het PoE-budget van de switch en het stroomverbruik per camera. Een standaard PoE+ switch (30W/poort) kan doorgaans 8-24 camera\u2019s voeden. We adviseren altijd de juiste switchcapaciteit voor jouw aantal camera\u2019s.'
     },
     {
       question: 'Leveren jullie ook schema\u2019s van de camera-posities?',
-      answer: 'Ja, bij oplevering krijgt u een volledig schema met alle camera-posities, poortnummers in de patchkast en labeling. Dit maakt beheer en uitbreiding door uw beveiligingsbedrijf eenvoudig.'
+      answer: 'Ja, bij oplevering krijgt u een volledig schema met alle camera-posities, poortnummers in de patchkast en labeling. Dit maakt beheer en uitbreiding door jouw beveiligingsbedrijf eenvoudig.'
     },
     {
       question: 'Werkt PoE-bekabeling ook voor andere apparaten?',

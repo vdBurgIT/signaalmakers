@@ -7,7 +7,7 @@ export default function NotFound() {
     <>
       <SEO
         title="Pagina niet gevonden - 404"
-        description="De pagina die u zoekt bestaat niet of is verplaatst."
+        description="De pagina die je zoekt bestaat niet of is verplaatst."
         url="https://signaalmakers.nl/404"
       />
       <div className="min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] text-white">
@@ -16,7 +16,7 @@ export default function NotFound() {
             <h1 className="text-8xl md:text-9xl font-bold text-[#FF6A00] mb-4">404</h1>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Pagina niet gevonden</h2>
             <p className="text-xl text-gray-300 mb-8">
-              De pagina die u zoekt bestaat niet of is verplaatst. Misschien kunnen deze links u helpen:
+              Oeps! Geen goed signaal! De pagina die je zoekt bestaat niet of is verplaatst. Misschien kunnen deze links je verder helpen:
             </p>
           </div>
 
@@ -41,7 +41,7 @@ export default function NotFound() {
               to="/contact"
               className="bg-white/10 backdrop-blur text-white px-6 py-4 rounded-lg hover:bg-white/20 transition-colors flex flex-col items-center gap-2 group"
             >
-              <ArrowLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
+              <ArrowRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
               <span className="font-semibold">Contact opnemen</span>
             </Link>
           </div>
@@ -55,7 +55,7 @@ export default function NotFound() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-[#0E243A] mb-6 text-center">Populaire pagina's</h3>
+            <h3 className="text-2xl font-bold text-[#FFFFFF] mb-6 text-center">Populaire pagina's</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <Link to="/diensten/netwerkbekabeling" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
                 <h4 className="font-bold text-[#0E243A] mb-2">Netwerkbekabeling</h4>
