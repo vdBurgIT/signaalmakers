@@ -64,7 +64,8 @@ export default function Contact() {
           message: result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.',
         });
       }
-    } catch (error) {
+    } catch (error: unknown) {
+      console.error('Contact form submission error:', error);
       setSubmitStatus({
         type: 'error',
         message: 'Er is een fout opgetreden bij het verzenden van je bericht. Neem direct contact met ons op via info@signaalmakers.nl',

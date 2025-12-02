@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
-header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: https://signaalmakers.nl');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
@@ -33,10 +33,8 @@ if (!is_array($data) || $data === []) {
     $data = $_POST; // fallback
 }
 
-// Rate limiting per IP (60 seconds cooldown) - TEMPORARILY DISABLED FOR TESTING
+// Rate limiting per IP (60 seconds cooldown)
 $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
-// TODO: Re-enable rate limiting after testing
-/*
 $token = hash('sha256', $ip);
 $rlfile = sys_get_temp_dir() . "/sm_contact_$token";
 $now = time();
@@ -57,7 +55,6 @@ if (is_file($rlfile)) {
     }
 }
 @file_put_contents($rlfile, (string)$now);
-*/
 
 // Extract and sanitize input
 $name = trim((string)($data['name'] ?? ''));

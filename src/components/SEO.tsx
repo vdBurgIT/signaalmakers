@@ -117,7 +117,7 @@ const SEO = ({
                 geo: {
                   '@type': 'GeoCoordinates',
                   latitude: '51.64011591833564',
-                  longitude: '4.4.8473775344267365',
+                  longitude: '4.8473775344267365',
                 },
                 areaServed: [
                   { '@type': 'AdministrativeArea', name: 'Zuid-Holland', '@id': 'https://nl.wikipedia.org/wiki/Zuid-Holland' },

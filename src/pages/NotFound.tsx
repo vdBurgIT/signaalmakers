@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Home, Search, ArrowLeft } from 'lucide-react';
+import { Home, Search, ArrowRight } from 'lucide-react';
 
 export default function NotFound() {
   return (

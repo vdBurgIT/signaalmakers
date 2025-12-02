@@ -82,7 +82,11 @@ export default function NetherlandsMap({ hoveredProvince, onProvinceHover }: Net
         setSvgContent(new XMLSerializer().serializeToString(svg));
       })
       .catch((error) => {
-        console.error('Failed to load Netherlands SVG:', error);
+        // Log errors in development
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Failed to load Netherlands SVG:', error);
+        }
+        // Silently fail in production - map is decorative
       });
   }, []);
 
