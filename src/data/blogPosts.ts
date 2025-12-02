@@ -112,7 +112,7 @@ export const blogPosts: BlogPost[] = [
       <ul>
         <li><strong>Alleen bekabeling:</strong> Geen concurrentie, geen overlap met jullie diensten</li>
         <li><strong>Professioneel en gedocumenteerd:</strong> Kabelplannen, testrapport, labeling</li>
-        <li><strong>Door heel Nederland:</strong> Van 's-Gravendeel tot Groningen</li>
+        <li><strong>Door heel Nederland:</strong> Van Breda tot Groningen</li>
         <li><strong>Snel schakelen:</strong> Direct contact, flexibele planning</li>
         <li><strong>MSP-vriendelijk:</strong> Wij snappen jullie werkwijze en verwachtingen</li>
       </ul>

@@ -27,7 +27,6 @@ const Blog = lazy(() => import(/* webpackChunkName: "blog" */ './pages/Blog'));
 const BlogPost = lazy(() => import(/* webpackChunkName: "blogpost" */ './pages/BlogPost'));
 const OverOns = lazy(() => import(/* webpackChunkName: "over" */ './pages/OverOns'));
 const FAQ = lazy(() => import(/* webpackChunkName: "faq" */ './pages/FAQ'));
-const StatusSupport = lazy(() => import(/* webpackChunkName: "status" */ './pages/StatusSupport'));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
 const Offerte = lazy(() => import(/* webpackChunkName: "offerte" */ './pages/Offerte'));
 const Sectoren = lazy(() => import(/* webpackChunkName: "sectoren" */ './pages/Sectoren'));

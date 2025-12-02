@@ -278,8 +278,8 @@ export default function Contact() {
                       <MapPin className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-semibold text-gray-900">Adres</p>
-                        <p className="text-gray-600">Vezelstraat 14</p>
-                        <p className="text-gray-600">3295 VP 's-Gravendeel</p>
+                        <p className="text-gray-600">Bredaseweg 108A</p>
+                        <p className="text-gray-600">4902 NS Oosterhout</p>
                       </div>
                     </div>
 
@@ -362,14 +362,14 @@ export default function Contact() {
             <div className="mt-12">
               <div className="bg-gray-50 rounded-lg p-2 overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.8087087562376!2d4.616689876722433!3d51.778599971856094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c42de7c7c7c7c7%3A0x7c7c7c7c7c7c7c7c!2sVezelstraat%2014%2C%203295%20VP%20's-Gravendeel!5e0!3m2!1snl!2snl!4v1732875000000!5m2!1snl!2snl"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.100568048937!2d4.842009489723982!3d51.639683299244844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c699333cb7b2c3%3A0xb2c98ccc5b4f2d7!2sBredaseweg%20108A%2C%204902%20NS%20Oosterhout!5e0!3m2!1snl!2snl!4v1764708672074!5m2!1snl!2snl"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Locatie Signaalmakers - Vezelstraat 14, 's-Gravendeel"
+                  title="Locatie Signaalmakers - Bredaseweg 108A, Oosterhout"
                   className="rounded-lg"
                 ></iframe>
               </div>

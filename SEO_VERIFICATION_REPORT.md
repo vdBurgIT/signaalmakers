@@ -25,7 +25,6 @@
 ✓ FAQ.tsx
 ✓ Blog.tsx
 ✓ BlogPost.tsx
-✓ StatusSupport.tsx
 ✓ WifiNetwerk.tsx
 ✓ Databekabeling.tsx
 ✓ InternetTelefonie.tsx

@@ -150,7 +150,7 @@ export default function Kantoren() {
                 to="/offerte"
                 className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Vraag offerte
+                Vraag offerte aan
               </Link>
               <Link
                 to="/contact"

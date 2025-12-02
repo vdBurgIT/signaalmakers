@@ -19,15 +19,15 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         email: 'info@signaalmakers.nl',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Vezelstraat 14',
-          postalCode: '3295 VP',
-          addressLocality: "'s-Gravendeel",
+          streetAddress: 'Bredaseweg 108A',
+          postalCode: '4902 NS',
+          addressLocality: "Oosterhout",
           addressCountry: 'NL'
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: '51.7797',
-          longitude: '4.6194'
+          latitude: '51.64011591833564',
+          longitude: '4.4.8473775344267365',
         },
         areaServed: [
           { '@type': 'AdministrativeArea', name: 'Zuid-Holland', '@id': 'https://nl.wikipedia.org/wiki/Zuid-Holland' },
