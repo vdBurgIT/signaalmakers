@@ -104,7 +104,7 @@ export default function Offerte() {
     <>
       <SEO
         title="Offerte aanvragen – Bekabeling voor infrastructuur | Signaalmakers"
-        description="Vraag een offerte aan voor netwerk, audio of camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen—gecertificeerd opgeleverd. Landelijk werkzaam."
+        description="Vraag een offerte aan voor netwerk, audio of camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam."
         keywords="offerte bekabeling, offerte infrastructuur, Cat6A offerte, netwerkbekabeling prijs, MSP bekabeling offerte"
         url="https://signaalmakers.nl/offerte"
         breadcrumbs={[

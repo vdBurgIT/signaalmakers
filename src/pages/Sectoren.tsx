@@ -46,7 +46,7 @@ export default function Sectoren() {
     <>
       <SEO
         title="Sectoren – Bekabeling voor infrastructuur | Signaalmakers"
-        description="Bekabeling voor infrastructuur in kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE, gebalanceerde lijnen—landelijk."
+        description="Bekabeling voor infrastructuur in kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE, gebalanceerde lijnen — landelijk."
         keywords="bekabeling kantoor, retail bekabeling, zorg infrastructuur, onderwijs netwerk, magazijn bekabeling"
         url="https://signaalmakers.nl/sectoren"
         breadcrumbs={[
@@ -62,7 +62,7 @@ export default function Sectoren() {
               Bekabeling voor iedere sector
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Netwerk, audio en camera-bekabeling voor kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE en gebalanceerde lijnen—gecertificeerd opgeleverd. Landelijk werkzaam.
+              Netwerk, audio en camera-bekabeling voor kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE en gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Sectoren() {
               Onze expertise per sector
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Wij leveren bekabeling voor infrastructuur in diverse sectoren. Van serverruimtes tot retail, van onderwijs tot magazijnen—overal waar professionele bekabeling nodig is.
+              Wij leveren bekabeling voor infrastructuur in diverse sectoren. Van serverruimtes tot retail, van onderwijs tot magazijnen — overal waar professionele bekabeling nodig is.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

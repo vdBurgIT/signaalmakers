@@ -22,7 +22,7 @@ export default function Home() {
     {
       icon: Cable,
       title: 'Netwerkbekabeling Cat6/Cat6A',
-      description: 'Cat6/Cat6A bekabeling voor 1–10 Gbps. Professioneel aangelegd, netjes afgewerkt en klaar voor stabiele verbindingen. Voorwerk voor MSP/IT—wij leveren de infra.',
+      description: 'Cat6/Cat6A bekabeling voor 1–10 Gbps. Professioneel aangelegd, netjes afgewerkt en klaar voor stabiele verbindingen. Voorwerk voor MSP/IT — wij leveren de infra.',
       link: '/diensten/netwerkbekabeling',
     },
     {

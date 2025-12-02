@@ -8,7 +8,7 @@ export default function Onderwijs() {
     <>
       <SEO
         title="Onderwijs & Zorg – Betrouwbare bekabeling | Signaalmakers"
-        description="Bekabeling voor onderwijs en zorg: netwerk, camera\u2019s, audio. Cat6/Cat6A, PoE—veilig, gedocumenteerd en betrouwbaar. Landelijk."
+        description="Bekabeling voor onderwijs en zorg: netwerk, camera\u2019s, audio. Cat6/Cat6A, PoE — veilig, gedocumenteerd en betrouwbaar. Landelijk."
         keywords="onderwijs bekabeling, zorg bekabeling, school netwerk, ziekenhuis bekabeling, PoE onderwijs"
         url="https://signaalmakers.nl/sectoren/onderwijs"
         breadcrumbs={[
@@ -28,7 +28,7 @@ export default function Onderwijs() {
               Bekabeling voor onderwijs &amp; zorg
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Betrouwbare infrastructuur voor scholen, ziekenhuizen en zorginstellingen. Cat6/Cat6A, PoE, audio—veilig en gedocumenteerd. Landelijk werkzaam.
+              Betrouwbare infrastructuur voor scholen, ziekenhuizen en zorginstellingen. Cat6/Cat6A, PoE, audio — veilig en gedocumenteerd. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Onderwijs() {
               Betrouwbare infrastructuur voor onderwijs en zorg
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Scholen, ziekenhuizen en zorginstellingen vragen om betrouwbare, veilige en goed gedocumenteerde bekabeling. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link> voor netwerk, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audio</Link>—alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> en gedocumenteerd.
+              Scholen, ziekenhuizen en zorginstellingen vragen om betrouwbare, veilige en goed gedocumenteerde bekabeling. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link> voor netwerk, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audio</Link> — alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> en gedocumenteerd.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">

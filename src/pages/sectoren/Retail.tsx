@@ -8,7 +8,7 @@ export default function Retail() {
     <>
       <SEO
         title="Retail & Horeca – Bekabeling voor winkels en horeca | Signaalmakers"
-        description="Bekabeling voor retail en horeca: kassa\u2019s, camera\u2019s, audio, netwerk. Cat6/Cat6A, PoE—snel, netjes, minimale verstoring. Landelijk."
+        description="Bekabeling voor retail en horeca: kassa\u2019s, camera\u2019s, audio, netwerk. Cat6/Cat6A, PoE — snel, netjes, minimale verstoring. Landelijk."
         keywords="retail bekabeling, horeca bekabeling, kassa bekabeling, camera winkel, PoE bekabeling retail"
         url="https://signaalmakers.nl/sectoren/retail"
         breadcrumbs={[
@@ -28,7 +28,7 @@ export default function Retail() {
               Bekabeling voor retail &amp; horeca
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Bekabeling voor kassa\u2019s, camera\u2019s en audio. Cat6/Cat6A, PoE—snel, netjes en met minimale verstoring van de bedrijfsvoering. Landelijk werkzaam.
+              Bekabeling voor kassa\u2019s, camera\u2019s en audio. Cat6/Cat6A, PoE — snel, netjes en met minimale verstoring van de bedrijfsvoering. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Retail() {
               Professionele bekabeling voor winkels en horeca
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Van kleine winkel tot groot winkelcentrum, van café tot restaurant: wij leggen de bekabeling voor kassa\u2019s, camera\u2019s, audio en netwerk. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>gebalanceerde audio</Link>—alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd.
+              Van kleine winkel tot groot winkelcentrum, van café tot restaurant: wij leggen de bekabeling voor kassa\u2019s, camera\u2019s, audio en netwerk. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>gebalanceerde audio</Link> — alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -63,7 +63,7 @@ export default function Retail() {
                 </div>
                 <h3 className="text-xl font-bold text-[#0E243A] mb-3">Camera\u2019s &amp; beveiliging</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  PoE-trajecten voor IP-camera\u2019s (binnen/buiten). Voorwerk voor beveiligingsbedrijven—wij doen kabels, zij doen apparatuur.
+                  PoE-trajecten voor IP-camera\u2019s (binnen/buiten). Voorwerk voor beveiligingsbedrijven — wij doen kabels, zij doen apparatuur.
                 </p>
               </div>
 
@@ -81,7 +81,7 @@ export default function Retail() {
             <div className="bg-gradient-to-br from-purple-50 to-gray-50 rounded-2xl p-8 shadow-lg mb-16">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-6">Minimale verstoring, maximaal resultaat</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Wij werken buiten openingstijden of in fasen, zodat je winkel of horecagelegenheid open kan blijven. Bekabeling wordt netjes weggewerkt in wanden, plafonds of kanalen—geen losse kabels, professioneel eindresultaat.
+                Wij werken buiten openingstijden of in fasen, zodat je winkel of horecagelegenheid open kan blijven. Bekabeling wordt netjes weggewerkt in wanden, plafonds of kanalen — geen losse kabels, professioneel eindresultaat.
               </p>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>

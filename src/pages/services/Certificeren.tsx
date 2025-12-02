@@ -35,11 +35,11 @@ export default function Certificeren() {
     },
     {
       question: 'Wat als een kabel niet voldoet aan de norm?',
-      answer: 'Als een traject faalt, zoeken we de oorzaak (slechte afmontering, beschadiging, te lang traject). We herstellen het probleem en testen opnieuw tot het traject voldoet. Pas daarna leveren we op—alleen trajecten die aan de norm voldoen worden geaccepteerd.'
+      answer: 'Als een traject faalt, zoeken we de oorzaak (slechte afmontering, beschadiging, te lang traject). We herstellen het probleem en testen opnieuw tot het traject voldoet. Pas daarna leveren we op — alleen trajecten die aan de norm voldoen worden geaccepteerd.'
     },
     {
       question: 'Zijn de kosten van certificering inbegrepen?',
-      answer: 'Ja, meten en certificeren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij—zo garanderen we kwaliteit en transparantie bij elke oplevering.'
+      answer: 'Ja, meten en certificeren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij — zo garanderen we kwaliteit en transparantie bij elke oplevering.'
     }
   ];
 
@@ -58,7 +58,7 @@ export default function Certificeren() {
     <>
       <SEO
         title="Meten & Certificeren – oplevering met meetrapporten | Signaalmakers"
-        description="Testen op doorvoer en integriteit. Labels, schema's en opleverdossier. Transparant en traceerbaar—klaar voor MSP/IT."
+        description="Testen op doorvoer en integriteit. Labels, schema's en opleverdossier. Transparant en traceerbaar — klaar voor MSP/IT."
         keywords="meten certificeren, meetrapporten, bekabeling testen, opleverdossier, labeling, infrastructuur certificering"
         url="https://signaalmakers.nl/diensten/certificeren"
         breadcrumbs={[

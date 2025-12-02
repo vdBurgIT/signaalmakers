@@ -54,7 +54,7 @@ export default function CameraBekabealing() {
     <>
       <SEO
         title="Camera-bekabeling – PoE trajecten voor IP-camera's | Signaalmakers"
-        description="Bekabeling voor IP-camera's met PoE. Gebalanceerde trajecten, strakke patchkasten en meetrapporten. Voorwerk voor MSP/IT—landelijk."
+        description="Bekabeling voor IP-camera's met PoE. Gebalanceerde trajecten, strakke patchkasten en meetrapporten. Voorwerk voor MSP/IT — landelijk."
         keywords="camera bekabeling, IP camera bekabeling, PoE camera, beveiligingscamera bekabeling, infrastructuur camera"
         url="https://signaalmakers.nl/diensten/camera-bekabeling"
         breadcrumbs={[

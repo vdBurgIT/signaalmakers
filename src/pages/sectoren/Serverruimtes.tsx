@@ -8,7 +8,7 @@ export default function Serverruimtes() {
     <>
       <SEO
         title="Serverruimtes & Datacenters – Cat6A bekabeling | Signaalmakers"
-        description="Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, gecertificeerde oplevering. Voorwerk voor MSP/IT—landelijk."
+        description="Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, gecertificeerde oplevering. Voorwerk voor MSP/IT — landelijk."
         keywords="serverruimte bekabeling, datacenter bekabeling, Cat6A 10Gbps, patchkast datacenter, MSP bekabeling partner"
         url="https://signaalmakers.nl/sectoren/serverruimtes"
         breadcrumbs={[
@@ -28,7 +28,7 @@ export default function Serverruimtes() {
               Bekabeling voor serverruimtes &amp; datacenters
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Cat6A bekabeling voor 10 Gbps, strakke patchkasten en gecertificeerde oplevering. Wij leggen de bekabeling—MSP/IT doet inregeling en beheer. Landelijk werkzaam.
+              Cat6A bekabeling voor 10 Gbps, strakke patchkasten en gecertificeerde oplevering. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Serverruimtes() {
               Professionele bekabeling voor kritieke omgevingen
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              In serverruimtes en datacenters is betrouwbare bekabeling essentieel. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6A trajecten</Link> voor 10 Gbps, strakke <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link> met doordacht kabelmanagement en volledige <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificering</Link>. Wij doen het voorwerk—<Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link> doet configuratie en beheer.
+              In serverruimtes en datacenters is betrouwbare bekabeling essentieel. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6A trajecten</Link> voor 10 Gbps, strakke <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link> met doordacht kabelmanagement en volledige <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificering</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link> doet configuratie en beheer.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -163,7 +163,7 @@ export default function Serverruimtes() {
               Bekabeling voor jouw serverruimte of datacenter
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Vraag een offerte aan voor Cat6A bekabeling, patchkasten en certificering. Landelijk werkzaam—van nieuwbouw tot uitbreiding.
+              Vraag een offerte aan voor Cat6A bekabeling, patchkasten en certificering. Landelijk werkzaam — van nieuwbouw tot uitbreiding.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -8,7 +8,7 @@ export default function Magazijn() {
     <>
       <SEO
         title="Magazijn & Logistiek – Robuuste bekabeling | Signaalmakers"
-        description="Bekabeling voor magazijnen en logistiek: netwerk, scanners, camera\u2019s. Cat6/Cat6A, PoE—robuust en geschikt voor zware omgevingen. Landelijk."
+        description="Bekabeling voor magazijnen en logistiek: netwerk, scanners, camera\u2019s. Cat6/Cat6A, PoE — robuust en geschikt voor zware omgevingen. Landelijk."
         keywords="magazijn bekabeling, logistiek bekabeling, scanner bekabeling, warehouse netwerk, PoE magazijn"
         url="https://signaalmakers.nl/sectoren/magazijn"
         breadcrumbs={[
@@ -28,7 +28,7 @@ export default function Magazijn() {
               Bekabeling voor magazijn &amp; logistiek
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Robuuste bekabeling voor scanners, camera\u2019s en netwerk. Cat6/Cat6A, PoE—geschikt voor zware omgevingen. Landelijk werkzaam.
+              Robuuste bekabeling voor scanners, camera\u2019s en netwerk. Cat6/Cat6A, PoE — geschikt voor zware omgevingen. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Magazijn() {
               Robuuste infrastructuur voor magazijn en logistiek
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              In magazijnen en logistieke omgevingen moet bekabeling tegen een stootje kunnen. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link> voor netwerk en scanners, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en wifi-access points—allemaal robuust uitgevoerd en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd.
+              In magazijnen en logistieke omgevingen moet bekabeling tegen een stootje kunnen. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link> voor netwerk en scanners, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en wifi-access points — allemaal robuust uitgevoerd en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -116,7 +116,7 @@ export default function Magazijn() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span>Voorwerk voor beveiligingsbedrijven—wij doen kabels, zij doen apparatuur</span>
+                      <span>Voorwerk voor beveiligingsbedrijven — wij doen kabels, zij doen apparatuur</span>
                     </li>
                   </ul>
                 </div>

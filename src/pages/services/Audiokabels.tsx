@@ -54,7 +54,7 @@ export default function Audiokabels() {
     <>
       <SEO
         title="Audiokabels – trek/afmontage voor vaste installaties | Signaalmakers"
-        description="Trek en afmontage audiokabels. Gebalanceerde lijnen, storingsvrij, netjes afgewerkt. Voorwerk voor audio-installateur—landelijk."
+        description="Trek en afmontage audiokabels. Gebalanceerde lijnen, storingsvrij, netjes afgewerkt. Voorwerk voor audio-installateur — landelijk."
         keywords="audiokabels, gebalanceerde lijnen, audio bekabeling, vaste installaties, voorwerk audio, MSP audio"
         url="https://signaalmakers.nl/diensten/audiokabels"
         breadcrumbs={[

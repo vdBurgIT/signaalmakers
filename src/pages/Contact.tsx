@@ -85,7 +85,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact – Bekabeling voor infrastructuur | Signaalmakers"
-        description="Netwerk, audio, camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij doen voorwerk—MSP/IT doet inregeling. Landelijk."
+        description="Netwerk, audio, camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij doen voorwerk — MSP/IT doet inregeling. Landelijk."
         keywords="contact bekabeling, offerte infrastructuur bekabeling, MSP partner contact, Cat6A bekabeling aanvragen"
         url="https://signaalmakers.nl/contact"
         breadcrumbs={[

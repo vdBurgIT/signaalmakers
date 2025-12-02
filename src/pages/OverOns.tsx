@@ -8,7 +8,7 @@ export default function OverOns() {
     <>
       <SEO
         title="Over Ons – Bekabeling voor infrastructuur | Signaalmakers"
-        description="Signaalmakers: bekabeling voor infrastructuur. Netwerk, audio, camera's—Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT—landelijk."
+        description="Signaalmakers: bekabeling voor infrastructuur. Netwerk, audio, camera's — Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT — landelijk."
         keywords="over signaalmakers, bekabeling infrastructuur, netwerkbekabeling specialist, MSP partner bekabeling, Cat6A bekabeling Nederland"
         url="https://signaalmakers.nl/over-ons"
         breadcrumbs={[
