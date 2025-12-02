@@ -35,6 +35,7 @@ const Kantoren = lazy(() => import(/* webpackChunkName: "kantoren" */ './pages/s
 const RetailHoreca = lazy(() => import(/* webpackChunkName: "retail" */ './pages/sectoren/Retail'));
 const Magazijn = lazy(() => import(/* webpackChunkName: "magazijn" */ './pages/sectoren/Magazijn'));
 const OnderwijsZorg = lazy(() => import(/* webpackChunkName: "onderwijs" */ './pages/sectoren/Onderwijs'));
+const Sitemap = lazy(() => import(/* webpackChunkName: "sitemap" */ './pages/Sitemap'));
 const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ './pages/NotFound'));
 
 function App() {
@@ -80,6 +81,9 @@ function App() {
                 <Route path="/sectoren/retail" element={<RetailHoreca />} />
                 <Route path="/sectoren/magazijn" element={<Magazijn />} />
                 <Route path="/sectoren/onderwijs" element={<OnderwijsZorg />} />
+
+                {/* Sitemap */}
+                <Route path="/sitemap" element={<Sitemap />} />
 
                 {/* 404 - Catch all route */}
                 <Route path="*" element={<NotFound />} />

@@ -101,6 +101,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/sitemap" className="hover:text-[#FF6A00] transition-colors">
+                  Sitemap
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="hover:text-[#FF6A00] transition-colors">
                   Contact
                 </Link>
