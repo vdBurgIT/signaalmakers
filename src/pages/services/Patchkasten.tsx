@@ -23,7 +23,7 @@ export default function Patchkasten() {
     },
     {
       question: 'Leveren jullie ook de patchkast zelf?',
-      answer: 'Nee, wij richten bestaande kasten in of werken met door u/MSP geleverde kasten. We adviseren wel over afmetingen, specs en merken. Dit houdt onze focus op vakmanschap: opbouw, bekabeling, labeling en documentatie.'
+      answer: 'Nee, wij richten bestaande kasten in of werken met door jouw/MSP geleverde kasten. We adviseren wel over afmetingen, specs en merken. Dit houdt onze focus op vakmanschap: opbouw, bekabeling, labeling en documentatie.'
     },
     {
       question: 'Hoe belangrijk is airflow in een patchkast?',

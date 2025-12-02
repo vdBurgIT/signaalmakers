@@ -132,42 +132,42 @@
   <!-- Blog Posts -->
   <url>
     <loc>https://signaalmakers.nl/blog/msp-bekabelingspartner</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/netwerkbekabeling-belangrijkste-laag</loc>
-    <lastmod>2024-11-28</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/wifi-bekabeling-uitgelegd</loc>
-    <lastmod>2024-11-21</lastmod>
+    <lastmod>2025-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/bekabeling-moderniseren</loc>
-    <lastmod>2024-11-14</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/kabelplan-essentieel</loc>
-    <lastmod>2024-11-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/kabelmanagement-documentatie</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -186,14 +186,6 @@
     <lastmod>2025-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-
-  <!-- Status & Support -->
-  <url>
-    <loc>https://signaalmakers.nl/status-support</loc>
-    <lastmod>2025-11-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 
   <!-- Contact -->

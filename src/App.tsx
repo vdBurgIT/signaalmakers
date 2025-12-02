@@ -71,7 +71,6 @@ function App() {
 
                 <Route path="/over-ons" element={<OverOns />} />
                 <Route path="/faq" element={<FAQ />} />
-                <Route path="/status-support" element={<StatusSupport />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/offerte" element={<Offerte />} />
 

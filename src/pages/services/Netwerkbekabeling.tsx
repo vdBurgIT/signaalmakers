@@ -19,7 +19,7 @@ export default function Netwerkbekabeling() {
     },
     {
       question: 'Leveren jullie ook meetrapporten?',
-      answer: 'Ja, alle trajecten worden getest en gecertificeerd volgens TIA/ISO normen. U ontvangt een compleet opleverdossier met meetrapporten, labels en schema\u2019s. Dit geeft zekerheid dat de bekabeling voldoet aan de specificaties.'
+      answer: 'Ja, alle trajecten worden getest en gecertificeerd volgens kabelnormen. U ontvangt een compleet opleverdossier met meetrapporten, labels en schema\u2019s. Dit geeft zekerheid dat de bekabeling voldoet aan de specificaties.'
     },
     {
       question: 'Wat kost databekabeling per aansluitpunt?',

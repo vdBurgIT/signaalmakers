@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: 'Waarom MSP-bedrijven baat hebben bij een vaste bekabelingspartner',
     excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe Signaalmakers als specialist in netwerkbekabeling en wifi-bekabeling de fysieke laag verzorgt voor MSP\'s in heel Nederland.',
-    date: '28 november 2024',
+    date: '28 november 2025',
     category: 'MSP-partner',
     slug: 'msp-bekabelingspartner',
     keywords: 'MSP-partner, bekabelingspartner, netwerkbekabeling MSP, wifi-bekabeling specialist, databekabeling MSP, Layer 1 specialist',
@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
       <h3>2. Bekabeling is specialistisch werk</h3>
       <p>Goede bekabeling vraagt kennis van:</p>
       <ul>
-        <li>Structured cabling normen (EN 50173, ISO/IEC 11801)</li>
+        <li>Structured cabling normen (zoals EN 50173, ISO/IEC 11801)</li>
         <li>Cat6, Cat6A, Cat7 specificaties en toepassingen</li>
         <li>Correct afmonteren van RJ45-connectoren en patchpanelen</li>
         <li>Kabelroutes, doorvoeringen en brandcompartimenten</li>
@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: 'Waarom netwerkbekabeling de belangrijkste laag van je IT-omgeving is',
     excerpt: 'Veel bedrijven investeren in dure routers, switches en wifi-apparatuur, maar vergeten de basis: de netwerkbekabeling. Toch is dit de fysieke laag waarop alles draait. In dit artikel leggen we uit waarom goede bekabeling essentieel is voor een stabiel datanetwerk.',
-    date: '28 november 2024',
+    date: '28 november 2025',
     category: 'Netwerkbekabeling',
     slug: 'netwerkbekabeling-belangrijkste-laag',
     keywords: 'netwerkbekabeling, datanetwerk, UTP-bekabeling, patchkast-bekabeling, datapunten aanleggen',
@@ -184,7 +184,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: 'Wat is wifi-bekabeling en waarom heb je datakabels nodig voor goede wifi?',
     excerpt: 'Draadloos internet werkt toch zonder kabels? Ja, tussen jouw laptop en de access point wel. Maar voor een professioneel wifi-netwerk heb je juist bekabeling nodig. In dit artikel leggen we uit hoe wifi-bekabeling werkt en waarom het cruciaal is.',
-    date: '21 november 2024',
+    date: '21 november 2025',
     category: 'Wifi-bekabeling',
     slug: 'wifi-bekabeling-uitgelegd',
     keywords: 'wifi-bekabeling, access point bekabeling, UTP-bekabeling, draadloos netwerk, wifi-infrastructuur',
@@ -262,7 +262,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: 'Wanneer is het tijd om je netwerkbekabeling te vervangen en te moderniseren?',
     excerpt: 'Netwerkbekabeling gaat lang mee, maar niet eeuwig. Cat5-bekabeling uit 2005 remt moderne netwerken af. In dit artikel leggen we uit wanneer het tijd is om je bekabeling te vervangen en te moderniseren naar Cat6A of Cat7.',
-    date: '14 november 2024',
+    date: '14 november 2025',
     category: 'Netwerkbekabeling',
     slug: 'bekabeling-moderniseren',
     keywords: 'bekabeling moderniseren, CAT6 bekabeling, netwerk vervangen, oude bekabeling, netwerkinfrastructuur vernieuwen',
@@ -379,7 +379,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: 'Waarom een goed kabelplan onmisbaar is voor een professioneel datanetwerk',
     excerpt: 'Een kabelplan lijkt misschien overbodig, maar het is de basis van elk professioneel datanetwerk. Zonder plan wordt bekabeling rommelig, ondocumenteerbaar en onbeheerbaar. In dit artikel leggen we uit waarom een kabelplan essentieel is.',
-    date: '7 november 2024',
+    date: '7 november 2025',
     category: 'Kabelplan',
     slug: 'kabelplan-essentieel',
     keywords: 'kabelplan, bekabelingsplan, datapunten aanleggen, netwerkdocumentatie, structured cabling plan',
@@ -496,7 +496,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: 'Kabelmanagement en documentatie: de stille helden achter efficiënt netwerkbeheer',
     excerpt: 'Patchkasten vol spaghetti-kabels en geen enkele label. We zien het te vaak. Goed kabelmanagement en documentatie lijken saai, maar maken het verschil tussen een professioneel netwerk en een onbeheersbare puinhoop.',
-    date: '31 oktober 2024',
+    date: '31 oktober 2025',
     category: 'Patchkast',
     slug: 'kabelmanagement-documentatie',
     keywords: 'kabelmanagement, patchkast-bekabeling, documentatie, structured cabling, netwerk infrastructuur',

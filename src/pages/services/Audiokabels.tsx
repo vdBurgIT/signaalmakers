@@ -35,7 +35,7 @@ export default function Audiokabels() {
     },
     {
       question: 'Leveren jullie ook documentatie?',
-      answer: 'Ja, bij oplevering krijgt u een schema met kabelroutes, aansluitpunten en labeling. Dit maakt onderhoud en uitbreiding door jouw audio-installateur eenvoudig. Alles netjes gedocumenteerd en traceerbaar.'
+      answer: 'Ja, bij oplevering krijgt je een schema met kabelroutes, aansluitpunten en labeling. Dit maakt onderhoud en uitbreiding door jouw audio-installateur eenvoudig. Alles netjes gedocumenteerd en traceerbaar.'
     }
   ];
 

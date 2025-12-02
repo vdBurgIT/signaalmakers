@@ -11,7 +11,7 @@ export default function Certificeren() {
   const faqs = [
     {
       question: 'Wat houdt certificering in?',
-      answer: 'Certificering betekent dat elk kabeltraject wordt getest met professionele meetapparatuur volgens TIA/ISO-normen. We controleren doorvoer, signaalverlies, afmontering en integriteit. Je ontvangt meetrapporten die bewijzen dat de bekabeling voldoet aan de specificaties en klaar is voor gebruik.'
+      answer: 'Certificering betekent dat elk kabeltraject wordt getest met professionele meetapparatuur volgens kabelnormen. We controleren doorvoer, signaalverlies, afmontering en integriteit. Je ontvangt meetrapporten die bewijzen dat de bekabeling voldoet aan de specificaties en klaar is voor gebruik.'
     },
     {
       question: 'Waarom is certificering belangrijk?',
@@ -19,7 +19,7 @@ export default function Certificeren() {
     },
     {
       question: 'Welke normen gebruiken jullie?',
-      answer: 'We certificeren volgens TIA/EIA-568 en ISO/IEC 11801 normen, de internationale standaarden voor gestructureerde bekabeling. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Alle meetrapporten vermelden de toegepaste norm en meetwaarden.'
+      answer: 'We certificeren volgens kabelnormen en internationale standaarden voor gestructureerde bekabeling. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Alle meetrapporten vermelden de toegepaste norm en meetwaarden.'
     },
     {
       question: 'Wat staat er in een meetrapport?',

@@ -31,7 +31,7 @@ export default function CameraBekabealing() {
     },
     {
       question: 'Leveren jullie ook schema\u2019s van de camera-posities?',
-      answer: 'Ja, bij oplevering krijgt u een volledig schema met alle camera-posities, poortnummers in de patchkast en labeling. Dit maakt beheer en uitbreiding door jouw beveiligingsbedrijf eenvoudig.'
+      answer: 'Ja, bij oplevering krijg je een volledig schema met alle camera-posities, poortnummers in de patchkast en labeling. Dit maakt beheer en uitbreiding door jouw beveiligingsbedrijf eenvoudig.'
     },
     {
       question: 'Werkt PoE-bekabeling ook voor andere apparaten?',

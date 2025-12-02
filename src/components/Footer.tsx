@@ -100,11 +100,6 @@ export default function Footer() {
                   FAQ
                 </Link>
               </li>
-              {/* <li>
-                <Link to="/status-support" className="hover:text-[#FF6A00] transition-colors">
-                  Status & Support
-                </Link>
-              </li> */}
               <li>
                 <Link to="/contact" className="hover:text-[#FF6A00] transition-colors">
                   Contact

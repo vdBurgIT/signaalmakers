@@ -66,7 +66,7 @@ export default function Serverruimtes() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Elk traject gemeten en gecertificeerd conform TIA/ISO normen</span>
+                    <span>Elk traject gemeten en gecertificeerd conform kabelnormen</span>
                   </li>
                 </ul>
               </div>
@@ -142,7 +142,7 @@ export default function Serverruimtes() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span>Meetrapporten en certificaten (TIA/ISO)</span>
+                      <span>Meetrapporten en certificaten</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />

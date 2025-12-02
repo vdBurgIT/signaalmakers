@@ -67,7 +67,6 @@ Alle pagina's hebben:
 /faq
 /blog
 /blog/:slug (dynamisch)
-/status-support
 /contact
 /diensten/wifi-netwerk
 /diensten/databekabeling

@@ -157,7 +157,7 @@ export default function Magazijn() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Meetrapporten en certificering conform TIA/ISO</span>
+                    <span>Meetrapporten en certificering conform kabelnormen</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />

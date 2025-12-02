@@ -84,9 +84,6 @@ export default function Header() {
             <Link to="/faq" className="hover:text-[#FF6A00] transition-colors">
               FAQ
             </Link>
-            {/* <Link to="/status-support" className="hover:text-[#FF6A00] transition-colors">
-              Status & Support
-            </Link> */}
             <Link
               to="/contact"
               className="bg-[#FF6A00] text-white px-6 py-2 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
@@ -198,13 +195,6 @@ export default function Header() {
             >
               FAQ
             </Link>
-            {/* <Link
-              to="/status-support"
-              className="block py-2 hover:text-[#FF6A00] transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Status & Support
-            </Link> */}
             <Link
               to="/contact"
               className="block bg-[#FF6A00] text-white px-6 py-2 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center mt-4"

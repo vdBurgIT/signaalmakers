@@ -108,7 +108,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
               itemOffered: {
                 '@type': 'Service',
                 name: 'Meten & Certificeren',
-                description: 'Professionele certificering conform TIA/ISO normen met meetrapporten.'
+                description: 'Professionele certificering conform kabelnormen met meetrapporten.'
               }
             }
           ]

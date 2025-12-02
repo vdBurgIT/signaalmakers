@@ -69,19 +69,19 @@ export default function Home() {
     {
       title: 'Waarom MSP-bedrijven baat hebben bij een vaste bekabelingspartner',
       excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe Signaalmakers als specialist in netwerkbekabeling de fysieke laag verzorgt.',
-      date: '28 november 2024',
+      date: '28 november 2025',
       slug: 'msp-bekabelingspartner',
     },
     {
       title: 'Waarom netwerkbekabeling de belangrijkste laag van je IT-omgeving is',
       excerpt: 'Veel bedrijven investeren in dure routers en switches, maar vergeten de basis: de netwerkbekabeling. Toch is dit de fysieke laag waarop alles draait.',
-      date: '28 november 2024',
+      date: '28 november 2025',
       slug: 'netwerkbekabeling-belangrijkste-laag',
     },
     {
       title: 'Wat is wifi-bekabeling en waarom heb je datakabels nodig voor goede wifi?',
       excerpt: 'Draadloos internet werkt toch zonder kabels? Ja, maar voor een professioneel wifi-netwerk heb je juist bekabeling nodig.',
-      date: '21 november 2024',
+      date: '21 november 2025',
       slug: 'wifi-bekabeling-uitgelegd',
     },
   ];
