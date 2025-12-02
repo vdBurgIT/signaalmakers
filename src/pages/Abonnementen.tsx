@@ -7,7 +7,7 @@ export default function Abonnementen() {
   return (
     <>
       <SEO
-        title="Abonnementen - Gegarandeerde capaciteit voor bekabeling | Signaalmakers"
+        title="Abonnementen - Gegarandeerde capaciteit voor bekabeling | SIGNAALMAKERS"
         description="Klaar met wachten op offertes? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en tot 30% korting op materiaal. Essential vanaf €99/mnd, Priority €199/mnd, Express €599/mnd."
         keywords="bekabeling abonnement, databekabeling pakket, MSP partner, gegarandeerde capaciteit, vaste doorlooptijd, bekabeling korting"
         url="https://signaalmakers.nl/abonnementen"

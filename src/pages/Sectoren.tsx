@@ -45,7 +45,7 @@ export default function Sectoren() {
   return (
     <>
       <SEO
-        title="Sectoren – Bekabeling voor infrastructuur | Signaalmakers"
+        title="Sectoren – Bekabeling voor infrastructuur | SIGNAALMAKERS"
         description="Bekabeling voor infrastructuur in kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE, gebalanceerde lijnen — landelijk."
         keywords="bekabeling kantoor, retail bekabeling, zorg infrastructuur, onderwijs netwerk, magazijn bekabeling"
         url="https://signaalmakers.nl/sectoren"

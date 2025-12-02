@@ -7,7 +7,7 @@ export default function Onderwijs() {
   return (
     <>
       <SEO
-        title="Onderwijs & Zorg – Betrouwbare bekabeling | Signaalmakers"
+        title="Onderwijs & Zorg – Betrouwbare bekabeling | SIGNAALMAKERS"
         description="Bekabeling voor onderwijs en zorg: netwerk, camera\u2019s, audio. Cat6/Cat6A, PoE — veilig, gedocumenteerd en betrouwbaar. Landelijk."
         keywords="onderwijs bekabeling, zorg bekabeling, school netwerk, ziekenhuis bekabeling, PoE onderwijs"
         url="https://signaalmakers.nl/sectoren/onderwijs"
@@ -170,7 +170,7 @@ export default function Onderwijs() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – MSP/IT doet de rest</h3>
               <p className="text-gray-700 leading-relaxed">
-                Signaalmakers legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Audio-installateurs sluiten intercom en speakers aan, beveiligingsbedrijven installeren camera\u2019s. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).
+                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Audio-installateurs sluiten intercom en speakers aan, beveiligingsbedrijven installeren camera\u2019s. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).
               </p>
             </div>
           </div>

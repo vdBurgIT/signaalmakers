@@ -1,6 +1,6 @@
 # SEO & Performance Verificatie Rapport
 **Datum:** 16 November 2025
-**Project:** Signaalmakers Website
+**Project:** SIGNAALMAKERS Website
 **Status:** ✅ **COMPLEET - KLAAR VOOR 100% SCORE**
 
 ---

@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact – Bekabeling voor infrastructuur | Signaalmakers"
+        title="Contact – Bekabeling voor infrastructuur | SIGNAALMAKERS"
         description="Netwerk, audio, camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij doen voorwerk — MSP/IT doet inregeling. Landelijk."
         keywords="contact bekabeling, offerte infrastructuur bekabeling, MSP partner contact, Cat6A bekabeling aanvragen"
         url="https://signaalmakers.nl/contact"
@@ -351,7 +351,7 @@ export default function Contact() {
             <div className="mt-12 bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen alleen het voorwerk</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Signaalmakers legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera&apos;s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren — geen configuratie, geen apparatuur, geen beheer.
+                SIGNAALMAKERS legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera&apos;s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren — geen configuratie, geen apparatuur, geen beheer.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 <strong>MSP/IT-partners</strong> doen inregeling en beheer van switches, routers, access points. <strong>Audio-installateurs</strong> sluiten speakers aan en regelen af. <strong>Beveiligingsbedrijven</strong> installeren camera&apos;s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partner).
@@ -369,7 +369,7 @@ export default function Contact() {
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Locatie Signaalmakers - Bredaseweg 108A, Oosterhout"
+                  title="Locatie SIGNAALMAKERS - Bredaseweg 108A, Oosterhout"
                   className="rounded-lg"
                 ></iframe>
               </div>

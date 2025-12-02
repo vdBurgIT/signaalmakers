@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <>
       <SEO
-        title="Blog - Praktische tips over bekabeling | Signaalmakers"
+        title="Blog - Praktische tips over bekabeling | SIGNAALMAKERS"
         description="Lees praktische tips over databekabeling, patchkasten, signaallijnen en bekabelingsprojecten. Advies van de bekabelingsspecialist."
         keywords="blog bekabeling, databekabeling tips, patchkast advies, bekabeling uitleg"
         url="https://signaalmakers.nl/blog"

@@ -7,8 +7,8 @@ export default function OverOns() {
   return (
     <>
       <SEO
-        title="Over Ons – Bekabeling voor infrastructuur | Signaalmakers"
-        description="Signaalmakers: bekabeling voor infrastructuur. Netwerk, audio, camera's — Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT — landelijk."
+        title="Over Ons – Bekabeling voor infrastructuur | SIGNAALMAKERS"
+        description="SIGNAALMAKERS: bekabeling voor infrastructuur. Netwerk, audio, camera's — Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT — landelijk."
         keywords="over signaalmakers, bekabeling infrastructuur, netwerkbekabeling specialist, MSP partner bekabeling, Cat6A bekabeling Nederland"
         url="https://signaalmakers.nl/over-ons"
         breadcrumbs={[
@@ -46,7 +46,7 @@ export default function OverOns() {
 
             <div className="text-lg text-gray-700 space-y-6 mb-16 leading-relaxed">
               <p>
-                Signaalmakers is specialist in <Link to="/diensten" style={{ fontWeight: 600 }}>bekabeling voor infrastructuur</Link>: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen), camera&apos;s (PoE), patchkasten en certificering. Wij doen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. MSP/IT doet inregeling en beheer van apparatuur.
+                SIGNAALMAKERS is specialist in <Link to="/diensten" style={{ fontWeight: 600 }}>bekabeling voor infrastructuur</Link>: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen), camera&apos;s (PoE), patchkasten en certificering. Wij doen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. MSP/IT doet inregeling en beheer van apparatuur.
               </p>
 
               <p>
@@ -112,7 +112,7 @@ export default function OverOns() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              Signaalmakers staat voor
+              SIGNAALMAKERS staat voor
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -153,7 +153,7 @@ export default function OverOns() {
               Partner voor MSP's en IT-dienstverleners
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Veel <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link> schakelen Signaalmakers in als specialist voor de fysieke laag. Wij leggen de kabels, jij als MSP/IT-partner doet de configuratie en het beheer.
+              Veel <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link> schakelen SIGNAALMAKERS in als specialist voor de fysieke laag. Wij leggen de kabels, jij als MSP/IT-partner doet de configuratie en het beheer.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -188,7 +188,7 @@ export default function OverOns() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Resultaat:</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  De verantwoordelijkheid blijft helder — jij als <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link> beheert het netwerk, Signaalmakers regelt de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.
+                  De verantwoordelijkheid blijft helder — jij als <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link> beheert het netwerk, SIGNAALMAKERS regelt de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.
                 </p>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function OverOns() {
               Een solide basis onder jouw datanetwerk
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Of het nu gaat om een nieuw kantoorpand, uitbreiding van een bestaande omgeving, wifi-bekabeling voor access points of het moderniseren van oude bekabeling: Signaalmakers regelt het voor je — in heel Nederland.
+              Of het nu gaat om een nieuw kantoorpand, uitbreiding van een bestaande omgeving, wifi-bekabeling voor access points of het moderniseren van oude bekabeling: SIGNAALMAKERS regelt het voor je — in heel Nederland.
             </p>
             <Link
               to="/contact"

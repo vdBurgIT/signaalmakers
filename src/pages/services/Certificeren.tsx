@@ -57,7 +57,7 @@ export default function Certificeren() {
   return (
     <>
       <SEO
-        title="Meten & Certificeren – oplevering met meetrapporten | Signaalmakers"
+        title="Meten & Certificeren – oplevering met meetrapporten | SIGNAALMAKERS"
         description="Testen op doorvoer en integriteit. Labels, schema's en opleverdossier. Transparant en traceerbaar — klaar voor MSP/IT."
         keywords="meten certificeren, meetrapporten, bekabeling testen, opleverdossier, labeling, infrastructuur certificering"
         url="https://signaalmakers.nl/diensten/certificeren"

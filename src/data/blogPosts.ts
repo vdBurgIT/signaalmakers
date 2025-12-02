@@ -11,7 +11,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     title: 'Waarom MSP-bedrijven baat hebben bij een vaste bekabelingspartner',
-    excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe Signaalmakers als specialist in netwerkbekabeling en wifi-bekabeling de fysieke laag verzorgt voor MSP\'s in heel Nederland.',
+    excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe SIGNAALMAKERS als specialist in netwerkbekabeling en wifi-bekabeling de fysieke laag verzorgt voor MSP\'s in heel Nederland.',
     date: '28 november 2025',
     category: 'MSP-partner',
     slug: 'msp-bekabelingspartner',
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tarieven en afspraken</h2>
       <p>Wij werken met vaste <a href="/abonnementen" style="color: #FF6A00; font-weight: 600;">abonnementen voor MSP's</a> of per-project-tarieven. Bij vaste afspraken krijg je voorrang bij planning en scherpe tarieven. Interesse? Neem <a href="/contact" style="color: #FF6A00; font-weight: 600;">contact</a> op voor een vrijblijvend gesprek.</p>
 
-      <h2>Waarom Signaalmakers?</h2>
+      <h2>Waarom SIGNAALMAKERS?</h2>
       <ul>
         <li><strong>Alleen bekabeling:</strong> Geen concurrentie, geen overlap met jullie diensten</li>
         <li><strong>Professioneel en gedocumenteerd:</strong> Kabelplannen, testrapport, labeling</li>
@@ -171,7 +171,7 @@ export const blogPosts: BlogPost[] = [
       <h2>MSP's en netwerkbeheerders weten dit</h2>
       <p>MSP-bedrijven en netwerkbeheerders weten: configuratie, switches en wifi zijn hun domein. Maar de bekabeling? Daar willen ze op kunnen vertrouwen. Geen halve kabels, geen Cat5-troep uit 2005, geen slecht afgemonteerde datapunten. Ze willen een professioneel bekabeld netwerk waar ze hun apparatuur op kunnen aansluiten zonder zorgen.</p>
 
-      <h2>Waarom Signaalmakers?</h2>
+      <h2>Waarom SIGNAALMAKERS?</h2>
       <p>Wij doen alleen netwerkbekabeling. Geen IT-beheer, geen configuratie, geen hardware-installatie. Alleen datakabels trekken, patchkasten opbouwen en aansluitpunten afmaken. Dat maakt ons geen concurrent, maar een vaste partner voor MSP's en IT-bedrijven.</p>
       <p>Wij zorgen dat de fysieke laag klopt. Jullie doen de rest.</p>
 
@@ -249,8 +249,8 @@ export const blogPosts: BlogPost[] = [
       </ul>
       <p>Resultaat: volledige wifi-dekking, snelle roaming tussen access points, aparte gastnetwerken, en alles centraal beheerd vanuit één systeem.</p>
 
-      <h2>Signaalmakers doet alleen de bekabeling</h2>
-      <p>Let op: Signaalmakers legt alleen de netwerkbekabeling aan. We trekken UTP-kabels van de patchkast naar de access point-locaties, monteren netjes af, labelen alles en testen de verbindingen.</p>
+      <h2>SIGNAALMAKERS doet alleen de bekabeling</h2>
+      <p>Let op: SIGNAALMAKERS legt alleen de netwerkbekabeling aan. We trekken UTP-kabels van de patchkast naar de access point-locaties, monteren netjes af, labelen alles en testen de verbindingen.</p>
       <p>We installeren GEEN access points, doen GEEN wifi-configuratie en GEEN site surveys. Dat laten we over aan jouw MSP of IT-partner. Wij zorgen alleen dat de kabels kloppen, zodat zij hun access points probleemloos kunnen aansluiten.</p>
 
       <h2>Conclusie</h2>
@@ -355,7 +355,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Bij verkoop van het pand:</strong> Moderne bekabeling verhoogt de waarde</li>
       </ul>
 
-      <h2>Wat doet Signaalmakers bij modernisering?</h2>
+      <h2>Wat doet SIGNAALMAKERS bij modernisering?</h2>
       <p>Wij vervangen oude bekabeling door professionele Cat6A of Cat7 bekabeling:</p>
       <ul>
         <li>Inventarisatie van bestaande situatie</li>
@@ -478,7 +478,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
       <p>Dit kan in AutoCAD, Visio of zelfs een nette handtekening. Belangrijk is dat het klopt en leesbaar is.</p>
 
-      <h2>Wat doet Signaalmakers met kabelplannen?</h2>
+      <h2>Wat doet SIGNAALMAKERS met kabelplannen?</h2>
       <p>Bij elk bekabelingsproject maken wij een kabelplan:</p>
       <ul>
         <li>Vooraf: plan ter goedkeuring (waar komen datapunten, hoe is de nummering?)</li>
@@ -579,7 +579,7 @@ export const blogPosts: BlogPost[] = [
         <li>Uitbreidingen kunnen gepland worden zonder reverse-engineering</li>
       </ul>
 
-      <h2>Wat doet Signaalmakers met kabelmanagement?</h2>
+      <h2>Wat doet SIGNAALMAKERS met kabelmanagement?</h2>
       <p>Bij elk bekabelingsproject zorgen wij voor professioneel kabelmanagement:</p>
       <ul>
         <li>Kabels netjes bundelen met klittenband (geen tie-wraps)</li>
@@ -599,7 +599,7 @@ export const blogPosts: BlogPost[] = [
         <li>Hun klanten zien een professionele installatie</li>
         <li>Ze hoeven geen tijd te verspillen aan reverse-engineering</li>
       </ul>
-      <p>Daarom werken veel MSP's met vaste bekabelingspartners zoals Signaalmakers. Wij zorgen voor de kabels, zij voor de configuratie en het beheer. Geen overlap, geen gedoe.</p>
+      <p>Daarom werken veel MSP's met vaste bekabelingspartners zoals SIGNAALMAKERS. Wij zorgen voor de kabels, zij voor de configuratie en het beheer. Geen overlap, geen gedoe.</p>
 
       <h2>Bestaande patchkast opruimen?</h2>
       <p>Heb je een bestaande patchkast vol spaghetti-kabels? Dat kunnen we opruimen en herbouwen:</p>

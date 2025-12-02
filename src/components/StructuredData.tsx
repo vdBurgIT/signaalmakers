@@ -12,7 +12,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
         '@id': 'https://signaalmakers.nl/#organization',
-        name: 'Signaalmakers',
+        name: 'SIGNAALMAKERS',
         description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificering voor bedrijven in heel Nederland.',
         url: 'https://signaalmakers.nl',
         telephone: '+31645251333',
@@ -151,7 +151,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         publisher: {
           '@type': 'Organization',
           '@id': 'https://signaalmakers.nl/#organization',
-          name: 'Signaalmakers',
+          name: 'SIGNAALMAKERS',
           logo: {
             '@type': 'ImageObject',
             url: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png'
@@ -160,7 +160,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         author: {
           '@type': 'Organization',
           '@id': 'https://signaalmakers.nl/#organization',
-          name: 'Signaalmakers'
+          name: 'SIGNAALMAKERS'
         },
         ...data
       };

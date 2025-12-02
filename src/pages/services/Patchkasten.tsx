@@ -53,7 +53,7 @@ export default function Patchkasten() {
   return (
     <>
       <SEO
-        title="Patchkast opbouwen en optimaliseren - Overzichtelijk en beheersbaar | Signaalmakers"
+        title="Patchkast opbouwen en optimaliseren - Overzichtelijk en beheersbaar | SIGNAALMAKERS"
         description="Patchkast opruimen, opbouwen en optimaliseren. Oude rommel eruit, alles netjes gebundeld, gelabeld en gedocumenteerd. Voor MSP's en bedrijven in heel Nederland."
         keywords="patchkast opbouwen, patchkast opruimen, kabelmanagement, patchpanel, serverschakel, MSP patchkast"
         url="https://signaalmakers.nl/diensten/patchkasten"

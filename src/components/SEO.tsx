@@ -23,7 +23,7 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = 'Signaalmakers - Netwerkbekabeling door heel Nederland | Jouw projecten, onze zekerheid',
+  title = 'SIGNAALMAKERS - Netwerkbekabeling door heel Nederland | Jouw projecten, onze zekerheid',
   description = 'Professionele netwerkbekabeling en databekabeling door heel Nederland. Cat6, Cat6A en Cat7 UTP-bekabeling, patchkasten, signaallijnen. Jouw projecten, onze zekerheid. Gewoon geregeld.',
   keywords = 'netwerkbekabeling, databekabeling, UTP-bekabeling, Cat6 bekabeling, Cat6A bekabeling, Cat7 bekabeling, patchkast bekabeling, structured cabling, datapunten aanleggen, kabelmanagement, bekabeld netwerk Nederland',
   image = 'https://signaalmakers.nl/brandmark.png',
@@ -32,7 +32,7 @@ const SEO = ({
   breadcrumbs,
   article,
 }: SEOProps) => {
-  const fullTitle = title.includes('Signaalmakers') ? title : `${title} | Signaalmakers`;
+  const fullTitle = title.includes('SIGNAALMAKERS') ? title : `${title} | SIGNAALMAKERS`;
 
   return (
     <Helmet>
@@ -51,7 +51,7 @@ const SEO = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="nl_NL" />
-      <meta property="og:site_name" content="Signaalmakers" />
+      <meta property="og:site_name" content="SIGNAALMAKERS" />
 
       {/* Article specific tags */}
       {article && (
@@ -94,11 +94,11 @@ const SEO = ({
                 dateModified: article?.modifiedTime,
                 author: {
                   '@type': 'Organization',
-                  name: article?.author || 'Signaalmakers',
+                  name: article?.author || 'SIGNAALMAKERS',
                 },
               }
             : {
-                name: 'Signaalmakers',
+                name: 'SIGNAALMAKERS',
                 slogan: 'Jouw projecten, onze zekerheid',
                 description: description,
                 url: url,

@@ -37,8 +37,8 @@ export default defineConfig({
         enabled: false,
       },
       manifest: {
-        name: 'Signaalmakers - ICT & Netwerk Oplossingen',
-        short_name: 'Signaalmakers',
+        name: 'SIGNAALMAKERS - ICT & Netwerk Oplossingen',
+        short_name: 'SIGNAALMAKERS',
         description: 'Professionele ICT-diensten: WiFi-netwerken, databekabeling en audio-installaties voor bedrijven en particulieren',
         theme_color: '#0E243A',
         background_color: '#ffffff',

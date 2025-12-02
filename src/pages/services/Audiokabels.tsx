@@ -53,7 +53,7 @@ export default function Audiokabels() {
   return (
     <>
       <SEO
-        title="Audiokabels – trek/afmontage voor vaste installaties | Signaalmakers"
+        title="Audiokabels – trek/afmontage voor vaste installaties | SIGNAALMAKERS"
         description="Trek en afmontage audiokabels. Gebalanceerde lijnen, storingsvrij, netjes afgewerkt. Voorwerk voor audio-installateur — landelijk."
         keywords="audiokabels, gebalanceerde lijnen, audio bekabeling, vaste installaties, voorwerk audio, MSP audio"
         url="https://signaalmakers.nl/diensten/audiokabels"
@@ -162,7 +162,7 @@ export default function Audiokabels() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Waarom Signaalmakers voor audiokabels?
+              Waarom SIGNAALMAKERS voor audiokabels?
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
               Wij leggen de basis voor betrouwbare geluidssystemen. Gebalanceerde lijnen, storingsvrij en netjes afgewerkt. Audio-partners kunnen direct aan de slag met inregeling.

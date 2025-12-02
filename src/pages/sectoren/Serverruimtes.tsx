@@ -7,7 +7,7 @@ export default function Serverruimtes() {
   return (
     <>
       <SEO
-        title="Serverruimtes & Datacenters – Cat6A bekabeling | Signaalmakers"
+        title="Serverruimtes & Datacenters – Cat6A bekabeling | SIGNAALMAKERS"
         description="Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, gecertificeerde oplevering. Voorwerk voor MSP/IT — landelijk."
         keywords="serverruimte bekabeling, datacenter bekabeling, Cat6A 10Gbps, patchkast datacenter, MSP bekabeling partner"
         url="https://signaalmakers.nl/sectoren/serverruimtes"
@@ -99,7 +99,7 @@ export default function Serverruimtes() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8 mb-16">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – MSP/IT doet de rest</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Signaalmakers legt de bekabeling: trajecten trekken, patchkasten monteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, firewalls en doen configuratie (VLAN&apos;s, routing, monitoring).
+                SIGNAALMAKERS legt de bekabeling: trajecten trekken, patchkasten monteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, firewalls en doen configuratie (VLAN&apos;s, routing, monitoring).
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, MSP/IT beheert de logica en apparatuur. Geen overlap, professioneel resultaat.

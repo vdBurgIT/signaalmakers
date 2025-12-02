@@ -1,6 +1,6 @@
-# SEO & PageSpeed Optimalisaties - Signaalmakers
+# SEO & PageSpeed Optimalisaties - SIGNAALMAKERS
 
-Dit document beschrijft alle SEO en PageSpeed optimalisaties die zijn toegepast op de Signaalmakers website.
+Dit document beschrijft alle SEO en PageSpeed optimalisaties die zijn toegepast op de SIGNAALMAKERS website.
 
 ## ✅ Toegepaste Optimalisaties
 

@@ -7,7 +7,7 @@ export default function Kantoren() {
   return (
     <>
       <SEO
-        title="Kantoren – Netwerkbekabeling en infrastructuur | Signaalmakers"
+        title="Kantoren – Netwerkbekabeling en infrastructuur | SIGNAALMAKERS"
         description="Bekabeling voor kantoren: netwerk, audio, camera\u2019s. Cat6/Cat6A, PoE, wifi-trajecten. Professioneel voorwerk voor MSP/IT—landelijk."
         keywords="kantoor bekabeling, netwerkbekabeling kantoor, wifi bekabeling, Cat6A kantoor, MSP partner kantoor"
         url="https://signaalmakers.nl/sectoren/kantoren"
@@ -126,7 +126,7 @@ export default function Kantoren() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – MSP/IT doet inregeling</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Signaalmakers legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, wifi-controllers en doen configuratie (VLAN\u2019s, SSID\u2019s, netwerksegmentatie).
+                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, wifi-controllers en doen configuratie (VLAN\u2019s, SSID\u2019s, netwerksegmentatie).
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Voor audio en camera\u2019s werken we samen met installateurs en beveiligingsbedrijven: wij leggen de bekabeling, zij sluiten apparatuur aan en regelen af. Duidelijke scheiding, professioneel resultaat.

@@ -57,7 +57,7 @@ export default function Netwerkbekabeling() {
   return (
     <>
       <SEO
-        title="Databekabeling & Netwerkbekabeling Cat6/Cat6A | Signaalmakers"
+        title="Databekabeling & Netwerkbekabeling Cat6/Cat6A | SIGNAALMAKERS"
         description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A). Professionele installatie met patchkasten, labeling en certificering. Landelijk actief."
         keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering, patchkasten, meetrapporten"
         url="https://signaalmakers.nl/diensten/netwerkbekabeling"

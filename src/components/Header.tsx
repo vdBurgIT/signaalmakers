@@ -30,7 +30,7 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-2">
             <img
               src="/images/logo/logo_signaalmakers_fc.png"
-              alt="Signaalmakers Logo"
+              alt="SIGNAALMAKERS Logo"
               className="h-12 md:h-14 w-auto object-contain"
               width="1180"
               height="379"

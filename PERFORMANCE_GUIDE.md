@@ -1,4 +1,4 @@
-# Performance Optimalisatie Gids - Signaalmakers
+# Performance Optimalisatie Gids - SIGNAALMAKERS
 
 Deze gids helpt je om de **maximale PageSpeed Insights score** te behalen.
 

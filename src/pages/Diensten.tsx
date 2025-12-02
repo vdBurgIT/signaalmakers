@@ -76,7 +76,7 @@ export default function Diensten() {
   return (
     <>
       <SEO
-        title="Databekabeling, Netwerkbekabeling & Infrastructuur | Signaalmakers"
+        title="Databekabeling, Netwerkbekabeling & Infrastructuur | SIGNAALMAKERS"
         description="Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten. Volledig gecertificeerd met meetrapporten. Landelijk actief."
         keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner"
         url="https://signaalmakers.nl/diensten"
@@ -160,7 +160,7 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-              Waarom Signaalmakers
+              Waarom SIGNAALMAKERS
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Wij doen het voorwerk: bekabeling voor infrastructuur. Netjes, gedocumenteerd en klaar voor gebruik. MSP/IT doet inregeling en beheer.
@@ -207,7 +207,7 @@ export default function Diensten() {
               Klaar voor betrouwbare bekabeling?
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              MSP's, IT-bedrijven en organisaties door heel Nederland kiezen Signaalmakers voor bekabeling die gewoon werkt. Wij doen het voorwerk - jij doet de rest.
+              MSP's, IT-bedrijven en organisaties door heel Nederland kiezen SIGNAALMAKERS voor bekabeling die gewoon werkt. Wij doen het voorwerk - jij doet de rest.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

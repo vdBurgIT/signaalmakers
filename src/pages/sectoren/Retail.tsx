@@ -7,7 +7,7 @@ export default function Retail() {
   return (
     <>
       <SEO
-        title="Retail & Horeca – Bekabeling voor winkels en horeca | Signaalmakers"
+        title="Retail & Horeca – Bekabeling voor winkels en horeca | SIGNAALMAKERS"
         description="Bekabeling voor retail en horeca: kassa\u2019s, camera\u2019s, audio, netwerk. Cat6/Cat6A, PoE — snel, netjes, minimale verstoring. Landelijk."
         keywords="retail bekabeling, horeca bekabeling, kassa bekabeling, camera winkel, PoE bekabeling retail"
         url="https://signaalmakers.nl/sectoren/retail"
@@ -125,7 +125,7 @@ export default function Retail() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – partners doen de rest</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Signaalmakers legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\u2019s.
+                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\u2019s.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, partners doen apparatuur en configuratie. Geen overlap, professioneel resultaat.

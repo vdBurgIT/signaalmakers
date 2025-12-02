@@ -68,7 +68,7 @@ export default function Home() {
   const blogPosts = [
     {
       title: 'Waarom MSP-bedrijven baat hebben bij een vaste bekabelingspartner',
-      excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe Signaalmakers als specialist in netwerkbekabeling de fysieke laag verzorgt.',
+      excerpt: 'Voor MSP-bedrijven is een betrouwbare bekabelingspartner goud waard. Lees hoe SIGNAALMAKERS als specialist in netwerkbekabeling de fysieke laag verzorgt.',
       date: '28 november 2025',
       slug: 'msp-bekabelingspartner',
     },
@@ -89,7 +89,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Signaalmakers – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk"
+        title="SIGNAALMAKERS – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk"
         description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Volledig gecertificeerd met meetrapporten. Landelijk actief."
         keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling"
         url="https://signaalmakers.nl/"
@@ -233,7 +233,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-6">
-            Waarom Signaalmakers
+            Waarom SIGNAALMAKERS
           </h2>
           <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
             Bekabeling is ons vak. Netjes, gedocumenteerd en klaar voor gebruik. Wij doen het voorwerk - jij als MSP/IT(er) doet de rest.

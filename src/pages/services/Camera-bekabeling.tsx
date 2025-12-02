@@ -53,7 +53,7 @@ export default function CameraBekabealing() {
   return (
     <>
       <SEO
-        title="Camera-bekabeling – PoE trajecten voor IP-camera's | Signaalmakers"
+        title="Camera-bekabeling – PoE trajecten voor IP-camera's | SIGNAALMAKERS"
         description="Bekabeling voor IP-camera's met PoE. Gebalanceerde trajecten, strakke patchkasten en meetrapporten. Voorwerk voor MSP/IT — landelijk."
         keywords="camera bekabeling, IP camera bekabeling, PoE camera, beveiligingscamera bekabeling, infrastructuur camera"
         url="https://signaalmakers.nl/diensten/camera-bekabeling"
@@ -166,7 +166,7 @@ export default function CameraBekabealing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Waarom Signaalmakers voor camera-bekabeling?
+              Waarom SIGNAALMAKERS voor camera-bekabeling?
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
               Wij leggen de basis voor betrouwbare camerasystemen. PoE-geschikt, gebalanceerde routes en strakke afwerking. MSP/IT kan direct aan de slag met configuratie.

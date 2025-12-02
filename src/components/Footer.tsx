@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex items-center mb-6">
               <img
                 src="/images/logo/logo_signaalmakers_fc.png"
-                alt="Signaalmakers Logo"
+                alt="SIGNAALMAKERS Logo"
                 className="h-10 md:h-12 w-auto"
                 width="1180"
                 height="379"
@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Signaalmakers. Alle rechten voorbehouden.</p>
+          <p>&copy; {new Date().getFullYear()} SIGNAALMAKERS. Alle rechten voorbehouden.</p>
         </div>
       </div>
     </footer>

@@ -7,7 +7,7 @@ export default function Magazijn() {
   return (
     <>
       <SEO
-        title="Magazijn & Logistiek – Robuuste bekabeling | Signaalmakers"
+        title="Magazijn & Logistiek – Robuuste bekabeling | SIGNAALMAKERS"
         description="Bekabeling voor magazijnen en logistiek: netwerk, scanners, camera\u2019s. Cat6/Cat6A, PoE — robuust en geschikt voor zware omgevingen. Landelijk."
         keywords="magazijn bekabeling, logistiek bekabeling, scanner bekabeling, warehouse netwerk, PoE magazijn"
         url="https://signaalmakers.nl/sectoren/magazijn"
@@ -170,7 +170,7 @@ export default function Magazijn() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – MSP/IT doet de rest</h3>
               <p className="text-gray-700 leading-relaxed">
-                Signaalmakers legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Beveiligingsbedrijven installeren camera\u2019s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).
+                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Beveiligingsbedrijven installeren camera\u2019s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).
               </p>
             </div>
           </div>
