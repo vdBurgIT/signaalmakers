@@ -52,7 +52,7 @@ export default function FAQ() {
         "@type": "Service",
         "name": "Netwerkbekabeling en Databekabeling",
         "provider": {
-          "@type": "LocalBusiness",
+          "@type": "Organization",
           "name": "SIGNAALMAKERS",
           "url": "https://signaalmakers.nl",
           "areaServed": [

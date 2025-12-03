@@ -94,7 +94,7 @@ export default function Home() {
         keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling"
         url="https://signaalmakers.nl/"
       />
-      <StructuredData type="LocalBusiness" />
+      <StructuredData type="Organization" />
       <div>
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

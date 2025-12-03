@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <SEO
-        title="Pagina niet gevonden - 404"
+        title="Pagina niet gevonden - 404 | SIGNAALMAKERS"
         description="De pagina die je zoekt bestaat niet of is verplaatst."
         url="https://signaalmakers.nl/404"
       />

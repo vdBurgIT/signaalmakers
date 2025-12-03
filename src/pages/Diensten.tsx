@@ -85,7 +85,7 @@ export default function Diensten() {
           { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' }
         ]}
       />
-      <StructuredData type="LocalBusiness" />
+      <StructuredData type="Organization" />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

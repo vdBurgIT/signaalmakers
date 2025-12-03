@@ -63,7 +63,7 @@ export default function Patchkasten() {
           { name: 'Patchkasten', item: 'https://signaalmakers.nl/diensten/patchkasten' }
         ]}
       />
-      <StructuredData type="LocalBusiness" />
+      <StructuredData type="Organization" />
       <StructuredData type="FAQPage" data={faqSchema} />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">

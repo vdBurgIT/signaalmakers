@@ -104,7 +104,7 @@ const SEO = ({
                 url: url,
                 logo: 'https://signaalmakers.nl/images/logo/icon_signaalmakers_fc.jpg',
                 image: image,
-                telephone: '+31645251333',
+                telephone: '+31 6 45251333',
                 email: 'info@signaalmakers.nl',
                 address: {
                   '@type': 'PostalAddress',

@@ -1,21 +1,21 @@
 import { Helmet } from 'react-helmet-async';
 
 interface StructuredDataProps {
-  type?: 'LocalBusiness' | 'FAQPage' | 'HowTo' | 'Article';
+  type?: 'Organization' | 'FAQPage' | 'HowTo' | 'Article';
   data?: Record<string, unknown>;
 }
 
-export default function StructuredData({ type = 'LocalBusiness', data }: StructuredDataProps) {
+export default function StructuredData({ type = 'Organization', data }: StructuredDataProps) {
   const getStructuredData = () => {
-    if (type === 'LocalBusiness') {
+    if (type === 'Organization') {
       return {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
+        '@type': 'Organization',
         '@id': 'https://signaalmakers.nl/#organization',
         name: 'SIGNAALMAKERS',
         description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificering voor bedrijven in heel Nederland.',
         url: 'https://signaalmakers.nl',
-        telephone: '+31645251333',
+        telephone: '+31 6 45251333',
         email: 'info@signaalmakers.nl',
         address: {
           '@type': 'PostalAddress',
@@ -27,7 +27,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         geo: {
           '@type': 'GeoCoordinates',
           latitude: '51.64011591833564',
-          longitude: '4.4.8473775344267365',
+          longitude: '4.8473775344267365',
         },
         areaServed: [
           { '@type': 'AdministrativeArea', name: 'Zuid-Holland', '@id': 'https://nl.wikipedia.org/wiki/Zuid-Holland' },
