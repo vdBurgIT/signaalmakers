@@ -288,7 +288,20 @@ export default function Contact() {
                       <Phone className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-semibold text-gray-900">Telefoon</p>
-                        <a href="tel:+31645251333" className="text-gray-600 hover:text-[#FF6A00]">
+                        <a
+                          href="tel:+31645251333"
+                          onClick={(e) => {
+                            if (window.innerWidth > 768) {
+                              e.preventDefault();
+                              navigator.clipboard.writeText('+31 6 45251333').then(() => {
+                                alert('📋 Telefoonnummer gekopieerd: +31 6 45251333');
+                              }).catch(() => {
+                                alert('📱 Bel ons op: +31 6 45251333');
+                              });
+                            }
+                          }}
+                          className="text-gray-600 hover:text-[#FF6A00] cursor-pointer"
+                        >
                           +31 6 45251333
                         </a>
                       </div>
@@ -311,7 +324,19 @@ export default function Contact() {
                   <div className="space-y-3">
                     <a
                       href="tel:+31645251333"
-                      className="block bg-[#FF6A00] text-white px-6 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center"
+                      onClick={(e) => {
+                        // Op desktop: kopieer nummer naar clipboard
+                        if (window.innerWidth > 768) {
+                          e.preventDefault();
+                          navigator.clipboard.writeText('+31 6 45251333').then(() => {
+                            alert('📋 Telefoonnummer gekopieerd: +31 6 45251333\n\nJe kunt ons bellen via je mobiel.');
+                          }).catch(() => {
+                            alert('📱 Bel ons op: +31 6 45251333');
+                          });
+                        }
+                        // Op mobiel: gewoon bellen (default gedrag)
+                      }}
+                      className="block bg-[#FF6A00] text-white px-6 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center cursor-pointer"
                     >
                       <Phone className="w-5 h-5 inline mr-2" />
                       Bel nu
