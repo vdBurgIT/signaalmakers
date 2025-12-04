@@ -1,0 +1,73 @@
+Keyword Group,Keyword,Search Intent,Priority,Current Ranking,Target URL,Notes
+BRAND_EXACT,signaalmakers,Navigational,HIGH,Monitor,https://signaalmakers.nl/,Pure merknaam
+BRAND_EXACT,signaalmakers nl,Navigational,HIGH,Monitor,https://signaalmakers.nl/,Merknaam + domein
+BRAND_EXACT,signaalmakers.nl,Navigational,MEDIUM,Monitor,https://signaalmakers.nl/,Direct domein
+BRAND_EXACT,bedrijf signaalmakers,Informational,MEDIUM,Monitor,https://signaalmakers.nl/over-ons,Wie is Signaalmakers
+BRAND_EXACT,signaalmakers bedrijf,Informational,MEDIUM,Monitor,https://signaalmakers.nl/over-ons,Wie is Signaalmakers
+
+SERVICE_GENERIC,databekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Hoofddienst
+SERVICE_GENERIC,netwerkbekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Hoofddienst
+SERVICE_GENERIC,databekabeling en netwerkbekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/,Hoofdpropositie
+SERVICE_GENERIC,professionele databekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten,Kwaliteitsindicator
+SERVICE_GENERIC,professionele netwerkbekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten,Kwaliteitsindicator
+SERVICE_GENERIC,databekabeling infrastructuur,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Kernfocus
+SERVICE_GENERIC,netwerkbekabeling infrastructuur,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Kernfocus
+SERVICE_GENERIC,bekabeling voor infrastructuur,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Kernpropositie
+SERVICE_GENERIC,bekabeling infrastructuur nederland,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/,Landelijk
+
+SERVICE_TECHNISCH,cat6 bekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Technische spec
+SERVICE_TECHNISCH,cat6a bekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Technische spec
+SERVICE_TECHNISCH,cat7 bekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Technische spec
+SERVICE_TECHNISCH,utp-bekabeling cat6,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Kabel type
+SERVICE_TECHNISCH,utp-bekabeling cat6a,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Kabel type
+SERVICE_TECHNISCH,utp-bekabeling cat7,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Kabel type
+
+SERVICE_COMPONENTEN,patchkast,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/patchkasten,Componentdienst
+SERVICE_COMPONENTEN,patchkasten,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/patchkasten,Componentdienst
+SERVICE_COMPONENTEN,patchkast bekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/patchkasten,Specifieke dienst
+SERVICE_COMPONENTEN,signaallijnen,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/audiokabels,Audio component
+SERVICE_COMPONENTEN,kabelmanagement,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/patchkasten,Organisatie
+
+BRAND_SERVICE_COMBO,signaalmakers databekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Merk + dienst
+BRAND_SERVICE_COMBO,signaalmakers netwerkbekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Merk + dienst
+BRAND_SERVICE_COMBO,signaalmakers databekabeling en netwerkbekabeling,Commercial,HIGH,Monitor,https://signaalmakers.nl/,Merk + propositie
+BRAND_SERVICE_COMBO,signaalmakers professionele databekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten,Merk + kwaliteit
+BRAND_SERVICE_COMBO,signaalmakers professionele netwerkbekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten,Merk + kwaliteit
+BRAND_SERVICE_COMBO,signaalmakers bekabeling voor infrastructuur,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Merk + kernfocus
+BRAND_SERVICE_COMBO,signaalmakers databekabeling infrastructuur,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Merk + focus
+BRAND_SERVICE_COMBO,signaalmakers netwerkbekabeling infrastructuur,Commercial,HIGH,Monitor,https://signaalmakers.nl/diensten,Merk + focus
+
+BRAND_MATERIALEN_COMBO,signaalmakers cat6 bekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Merk + spec
+BRAND_MATERIALEN_COMBO,signaalmakers cat6a bekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Merk + spec
+BRAND_MATERIALEN_COMBO,signaalmakers cat7 bekabeling,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Merk + spec
+BRAND_MATERIALEN_COMBO,signaalmakers utp bekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Merk + type
+BRAND_MATERIALEN_COMBO,signaalmakers utp cat6,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Merk + spec
+BRAND_MATERIALEN_COMBO,signaalmakers utp cat6a,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/netwerkbekabeling,Merk + spec
+
+BRAND_COMPONENTEN_COMBO,signaalmakers patchkasten,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/patchkasten,Merk + component
+BRAND_COMPONENTEN_COMBO,signaalmakers patchkast bekabeling,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten/patchkasten,Merk + dienst
+BRAND_COMPONENTEN_COMBO,signaalmakers signaallijnen,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/audiokabels,Merk + audio
+BRAND_COMPONENTEN_COMBO,signaalmakers kabelmanagement,Commercial,LOW,Monitor,https://signaalmakers.nl/diensten/patchkasten,Merk + organisatie
+
+BRAND_REGIO,signaalmakers nederland,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/,Merk + dekking
+BRAND_REGIO,signaalmakers bekabeling nederland,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/,Merk + dienst + land
+BRAND_REGIO,signaalmakers noord-brabant,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/,Merk + provincie
+BRAND_REGIO,signaalmakers oosterhout,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/contact,Merk + vestigingsplaats
+BRAND_REGIO,signaalmakers rotterdam,Commercial,LOW,Monitor,https://signaalmakers.nl/,Merk + stad
+BRAND_REGIO,signaalmakers amsterdam,Commercial,LOW,Monitor,https://signaalmakers.nl/,Merk + stad
+
+SERVICE_REGIO,databekabeling door heel nederland,Commercial,HIGH,Monitor,https://signaalmakers.nl/,Dienst + dekking
+SERVICE_REGIO,netwerkbekabeling door heel nederland,Commercial,HIGH,Monitor,https://signaalmakers.nl/,Dienst + dekking
+SERVICE_REGIO,bekabeling infrastructuur door heel nederland,Commercial,MEDIUM,Monitor,https://signaalmakers.nl/diensten,Dienst + dekking
+
+BRAND_TRUST,signaalmakers ervaringen,Informational,MEDIUM,Monitor,https://signaalmakers.nl/,Reviews/testimonials
+BRAND_TRUST,signaalmakers review,Informational,MEDIUM,Monitor,https://signaalmakers.nl/,Reviews
+BRAND_TRUST,signaalmakers recensies,Informational,MEDIUM,Monitor,https://signaalmakers.nl/,Reviews
+BRAND_TRUST,signaalmakers beoordeling,Informational,LOW,Monitor,https://signaalmakers.nl/,Rating
+
+BRAND_TRANSACTIONAL,signaalmakers offerte,Transactional,HIGH,Monitor,https://signaalmakers.nl/offerte,Direct actie
+BRAND_TRANSACTIONAL,signaalmakers bekabeling offerte,Transactional,HIGH,Monitor,https://signaalmakers.nl/offerte,Specifieke offerte
+BRAND_TRANSACTIONAL,signaalmakers prijs bekabeling,Transactional,MEDIUM,Monitor,https://signaalmakers.nl/offerte,Prijsinformatie
+BRAND_TRANSACTIONAL,signaalmakers databekabeling kosten,Transactional,MEDIUM,Monitor,https://signaalmakers.nl/offerte,Kostenoverzicht
+BRAND_TRANSACTIONAL,signaalmakers netwerkbekabeling kosten,Transactional,MEDIUM,Monitor,https://signaalmakers.nl/offerte,Kostenoverzicht
+BRAND_TRANSACTIONAL,signaalmakers contact,Navigational,HIGH,Monitor,https://signaalmakers.nl/contact,Contactpagina
