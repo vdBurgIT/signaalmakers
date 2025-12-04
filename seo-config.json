@@ -137,5 +137,260 @@
     "SOCIAL_LINK_LINKEDIN_URL": "https://www.linkedin.com/company/signaalmakers",
     "SOCIAL_LINK_INSTAGRAM_URL": "https://www.instagram.com/signaalmakers/",
     "SOCIAL_LINK_WHATSAPP_URL": "https://wa.me/31645251333"
+  },
+  "geographic_targeting": {
+    "PRIMARY_SERVICE_AREA": "Nederland",
+    "PRIMARY_REGION": "Noord-Brabant",
+    "HEADQUARTERS_CITY": "Oosterhout",
+    "HEADQUARTERS_PROVINCE": "Noord-Brabant",
+    "HEADQUARTERS_REGION": "West-Brabant",
+    "SERVICE_RADIUS_KM": null,
+    "NATIONWIDE_COVERAGE": true,
+    "TARGET_PROVINCES": [
+      {
+        "name": "Noord-Brabant",
+        "priority": "CRITICAL",
+        "reason": "Thuisbasis, primaire markt"
+      },
+      {
+        "name": "Zuid-Holland",
+        "priority": "HIGH",
+        "reason": "Nabij vestiging, grote zakelijke markt"
+      },
+      {
+        "name": "Noord-Holland",
+        "priority": "HIGH",
+        "reason": "Amsterdam regio, grootste zakelijke markt"
+      },
+      {
+        "name": "Utrecht",
+        "priority": "HIGH",
+        "reason": "Centraal gelegen, zakelijk centrum"
+      },
+      {
+        "name": "Gelderland",
+        "priority": "MEDIUM",
+        "reason": "Grote steden, zakelijke kansen"
+      },
+      {
+        "name": "Limburg",
+        "priority": "MEDIUM",
+        "reason": "Zuid-Nederland, nabij Brabant"
+      },
+      {
+        "name": "Overijssel",
+        "priority": "LOW",
+        "reason": "Oost-Nederland, selectieve projecten"
+      },
+      {
+        "name": "Groningen",
+        "priority": "LOW",
+        "reason": "Noord-Nederland, grote projecten"
+      },
+      {
+        "name": "Flevoland",
+        "priority": "LOW",
+        "reason": "Snelgroeiende regio"
+      }
+    ],
+    "TARGET_CITIES_TIER_1": {
+      "description": "Grootste steden (G4 + Eindhoven) - hoogste zakelijke potentieel",
+      "cities": [
+        {
+          "name": "Amsterdam",
+          "province": "Noord-Holland",
+          "population": 872000,
+          "priority": "HIGH",
+          "keywords": ["signaalmakers amsterdam", "databekabeling amsterdam", "netwerkbekabeling amsterdam"]
+        },
+        {
+          "name": "Rotterdam",
+          "province": "Zuid-Holland",
+          "population": 651000,
+          "priority": "HIGH",
+          "keywords": ["signaalmakers rotterdam", "databekabeling rotterdam", "netwerkbekabeling rotterdam"]
+        },
+        {
+          "name": "Den Haag",
+          "province": "Zuid-Holland",
+          "population": 545000,
+          "priority": "HIGH",
+          "keywords": ["signaalmakers den haag", "databekabeling den haag", "netwerkbekabeling den haag"]
+        },
+        {
+          "name": "Utrecht",
+          "province": "Utrecht",
+          "population": 361000,
+          "priority": "HIGH",
+          "keywords": ["signaalmakers utrecht", "databekabeling utrecht", "netwerkbekabeling utrecht"]
+        },
+        {
+          "name": "Eindhoven",
+          "province": "Noord-Brabant",
+          "population": 235000,
+          "priority": "HIGH",
+          "keywords": ["signaalmakers eindhoven", "databekabeling eindhoven", "netwerkbekabeling eindhoven"]
+        }
+      ]
+    },
+    "TARGET_CITIES_TIER_2": {
+      "description": "Grote steden (100k-250k inwoners) - middelgrote zakelijke markt",
+      "cities": [
+        {
+          "name": "Tilburg",
+          "province": "Noord-Brabant",
+          "population": 219000,
+          "priority": "HIGH"
+        },
+        {
+          "name": "Groningen",
+          "province": "Groningen",
+          "population": 234000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Almere",
+          "province": "Flevoland",
+          "population": 214000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Breda",
+          "province": "Noord-Brabant",
+          "population": 184000,
+          "priority": "HIGH"
+        },
+        {
+          "name": "Nijmegen",
+          "province": "Gelderland",
+          "population": 177000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Apeldoorn",
+          "province": "Gelderland",
+          "population": 164000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Haarlem",
+          "province": "Noord-Holland",
+          "population": 162000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Arnhem",
+          "province": "Gelderland",
+          "population": 161000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Enschede",
+          "province": "Overijssel",
+          "population": 159000,
+          "priority": "LOW"
+        },
+        {
+          "name": "Amersfoort",
+          "province": "Utrecht",
+          "population": 158000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Zaanstad",
+          "province": "Noord-Holland",
+          "population": 156000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "s-Hertogenbosch",
+          "province": "Noord-Brabant",
+          "population": 155000,
+          "priority": "HIGH"
+        },
+        {
+          "name": "Leiden",
+          "province": "Zuid-Holland",
+          "population": 125000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Maastricht",
+          "province": "Limburg",
+          "population": 122000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Dordrecht",
+          "province": "Zuid-Holland",
+          "population": 119000,
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    "TARGET_CITIES_TIER_3": {
+      "description": "Regionale steden (<100k) - primair in Noord-Brabant",
+      "cities": [
+        {
+          "name": "Oosterhout",
+          "province": "Noord-Brabant",
+          "population": 55000,
+          "priority": "CRITICAL",
+          "reason": "Vestigingsplaats"
+        },
+        {
+          "name": "Waalwijk",
+          "province": "Noord-Brabant",
+          "population": 48000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Etten-Leur",
+          "province": "Noord-Brabant",
+          "population": 44000,
+          "priority": "MEDIUM"
+        },
+        {
+          "name": "Hoofddorp",
+          "province": "Noord-Holland",
+          "population": 76000,
+          "priority": "MEDIUM",
+          "reason": "Schiphol business area"
+        },
+        {
+          "name": "Gilze en Rijen",
+          "province": "Noord-Brabant",
+          "population": 27000,
+          "priority": "LOW"
+        },
+        {
+          "name": "Dongen",
+          "province": "Noord-Brabant",
+          "population": 26000,
+          "priority": "LOW"
+        }
+      ]
+    },
+    "LOCATION_CONTENT_STRATEGY": {
+      "natural_integration": true,
+      "avoid_city_landing_pages": true,
+      "use_in_blog": true,
+      "use_in_case_studies": true,
+      "mention_format": "Door heel Nederland actief, van {stad1} tot {stad2}",
+      "regional_mentions": [
+        "Noord-Brabant, Zuid-Holland en Noord-Holland",
+        "Van Amsterdam tot Maastricht",
+        "Regio Breda, Tilburg en Eindhoven",
+        "Randstad (Amsterdam, Rotterdam, Den Haag, Utrecht)"
+      ]
+    },
+    "GEO_SCHEMA_ADDITIONS": {
+      "add_service_area": true,
+      "service_area_type": "GeoCircle",
+      "service_area_cities": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Breda", "Tilburg"],
+      "add_area_served": true,
+      "area_served_country": "NL",
+      "area_served_regions": ["Noord-Brabant", "Zuid-Holland", "Noord-Holland", "Utrecht"]
+    }
   }
 }

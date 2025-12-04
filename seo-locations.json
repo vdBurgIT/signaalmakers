@@ -1,0 +1,303 @@
+{
+  "target_regions": {
+    "primary": {
+      "name": "Noord-Brabant",
+      "type": "provincie",
+      "priority": "HIGH",
+      "cities": [
+        {
+          "name": "Oosterhout",
+          "population": 55000,
+          "priority": "CRITICAL",
+          "reason": "Vestigingsplaats - hoofdkantoor"
+        },
+        {
+          "name": "Breda",
+          "population": 184000,
+          "priority": "HIGH",
+          "reason": "Grote stad in regio, nabij vestiging"
+        },
+        {
+          "name": "Tilburg",
+          "population": 219000,
+          "priority": "HIGH",
+          "reason": "Grote stad in regio"
+        },
+        {
+          "name": "s-Hertogenbosch",
+          "population": 155000,
+          "priority": "HIGH",
+          "reason": "Provinciehoofdstad"
+        },
+        {
+          "name": "Eindhoven",
+          "population": 235000,
+          "priority": "HIGH",
+          "reason": "Grootste stad Noord-Brabant, tech hub"
+        },
+        {
+          "name": "Waalwijk",
+          "population": 48000,
+          "priority": "MEDIUM",
+          "reason": "Nabij vestiging"
+        },
+        {
+          "name": "Etten-Leur",
+          "population": 44000,
+          "priority": "MEDIUM",
+          "reason": "Nabij Breda"
+        },
+        {
+          "name": "Dongen",
+          "population": 26000,
+          "priority": "MEDIUM",
+          "reason": "Regio Oosterhout"
+        },
+        {
+          "name": "Gilze en Rijen",
+          "population": 27000,
+          "priority": "MEDIUM",
+          "reason": "Regio Oosterhout"
+        }
+      ]
+    },
+    "secondary_provinces": [
+      {
+        "name": "Zuid-Holland",
+        "type": "provincie",
+        "priority": "HIGH",
+        "cities": [
+          {
+            "name": "Rotterdam",
+            "population": 651000,
+            "priority": "HIGH",
+            "reason": "Grootste haven Europa, zakelijk centrum"
+          },
+          {
+            "name": "Den Haag",
+            "population": 545000,
+            "priority": "HIGH",
+            "reason": "Regeringszetel, kantoren"
+          },
+          {
+            "name": "Dordrecht",
+            "population": 119000,
+            "priority": "MEDIUM",
+            "reason": "Industriestad nabij Noord-Brabant"
+          },
+          {
+            "name": "Leiden",
+            "population": 125000,
+            "priority": "MEDIUM",
+            "reason": "Zakelijk centrum"
+          }
+        ]
+      },
+      {
+        "name": "Noord-Holland",
+        "type": "provincie",
+        "priority": "HIGH",
+        "cities": [
+          {
+            "name": "Amsterdam",
+            "population": 872000,
+            "priority": "HIGH",
+            "reason": "Hoofdstad, grootste zakelijke markt"
+          },
+          {
+            "name": "Haarlem",
+            "population": 162000,
+            "priority": "MEDIUM",
+            "reason": "Zakelijk centrum"
+          },
+          {
+            "name": "Zaanstad",
+            "population": 156000,
+            "priority": "MEDIUM",
+            "reason": "Industriegebied"
+          },
+          {
+            "name": "Hoofddorp",
+            "population": 76000,
+            "priority": "MEDIUM",
+            "reason": "Schiphol business area"
+          }
+        ]
+      },
+      {
+        "name": "Utrecht",
+        "type": "provincie",
+        "priority": "HIGH",
+        "cities": [
+          {
+            "name": "Utrecht",
+            "population": 361000,
+            "priority": "HIGH",
+            "reason": "Centraal gelegen, zakelijk centrum"
+          },
+          {
+            "name": "Amersfoort",
+            "population": 158000,
+            "priority": "MEDIUM",
+            "reason": "Zakelijk centrum"
+          }
+        ]
+      },
+      {
+        "name": "Gelderland",
+        "type": "provincie",
+        "priority": "MEDIUM",
+        "cities": [
+          {
+            "name": "Nijmegen",
+            "population": 177000,
+            "priority": "MEDIUM",
+            "reason": "Grote stad oost-Nederland"
+          },
+          {
+            "name": "Arnhem",
+            "population": 161000,
+            "priority": "MEDIUM",
+            "reason": "Provinciehoofdstad"
+          },
+          {
+            "name": "Apeldoorn",
+            "population": 164000,
+            "priority": "MEDIUM",
+            "reason": "Groot zakelijk centrum"
+          }
+        ]
+      },
+      {
+        "name": "Limburg",
+        "type": "provincie",
+        "priority": "MEDIUM",
+        "cities": [
+          {
+            "name": "Maastricht",
+            "population": 122000,
+            "priority": "MEDIUM",
+            "reason": "Provinciehoofdstad, zakelijk centrum zuid"
+          }
+        ]
+      },
+      {
+        "name": "Overijssel",
+        "type": "provincie",
+        "priority": "MEDIUM",
+        "cities": [
+          {
+            "name": "Enschede",
+            "population": 159000,
+            "priority": "MEDIUM",
+            "reason": "Grote stad oost-Nederland, tech regio"
+          }
+        ]
+      },
+      {
+        "name": "Groningen",
+        "type": "provincie",
+        "priority": "LOW",
+        "cities": [
+          {
+            "name": "Groningen",
+            "population": 234000,
+            "priority": "MEDIUM",
+            "reason": "Grootste stad noord-Nederland"
+          }
+        ]
+      },
+      {
+        "name": "Flevoland",
+        "type": "provincie",
+        "priority": "LOW",
+        "cities": [
+          {
+            "name": "Almere",
+            "population": 214000,
+            "priority": "MEDIUM",
+            "reason": "Snelgroeiende stad"
+          }
+        ]
+      },
+      {
+        "name": "Zeeland",
+        "type": "provincie",
+        "priority": "LOW",
+        "cities": []
+      },
+      {
+        "name": "Friesland",
+        "type": "provincie",
+        "priority": "LOW",
+        "cities": []
+      },
+      {
+        "name": "Drenthe",
+        "type": "provincie",
+        "priority": "LOW",
+        "cities": []
+      }
+    ]
+  },
+  "service_areas": {
+    "primary_area": {
+      "radius_km": 50,
+      "center": "Oosterhout",
+      "coverage": "Heel Noord-Brabant en Zuid-Holland"
+    },
+    "secondary_area": {
+      "coverage": "Heel Nederland",
+      "description": "Landelijke dekking voor grotere projecten"
+    }
+  },
+  "keyword_strategy": {
+    "tier_1_cities": {
+      "description": "Grote steden met hoogste zakelijke potentieel",
+      "cities": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven"],
+      "keyword_combinations": [
+        "signaalmakers [stad]",
+        "databekabeling [stad]",
+        "netwerkbekabeling [stad]",
+        "signaalmakers netwerkbekabeling [stad]"
+      ]
+    },
+    "tier_2_cities": {
+      "description": "Middelgrote steden en regio Noord-Brabant",
+      "cities": ["Breda", "Tilburg", "s-Hertogenbosch", "Nijmegen", "Arnhem", "Groningen", "Almere"],
+      "keyword_combinations": [
+        "signaalmakers [stad]",
+        "databekabeling [stad]",
+        "netwerkbekabeling [stad]"
+      ]
+    },
+    "tier_3_cities": {
+      "description": "Kleinere steden in primaire regio",
+      "cities": ["Oosterhout", "Dordrecht", "Waalwijk", "Etten-Leur"],
+      "keyword_combinations": [
+        "signaalmakers [stad]"
+      ]
+    },
+    "provinces": {
+      "description": "Provinciale dekking",
+      "targets": ["Noord-Brabant", "Zuid-Holland", "Noord-Holland", "Utrecht"],
+      "keyword_combinations": [
+        "signaalmakers [provincie]",
+        "databekabeling [provincie]",
+        "netwerkbekabeling [provincie]"
+      ]
+    }
+  },
+  "content_integration": {
+    "blog_topics": [
+      "Projecten in [stad]",
+      "Netwerkbekabeling voor bedrijven in [regio]",
+      "Case study: Databekabeling [stad]"
+    ],
+    "natural_mentions": [
+      "Door heel Nederland actief, van Amsterdam tot Maastricht",
+      "Projecten in Noord-Brabant, Zuid-Holland en Utrecht",
+      "Van ons hoofdkantoor in Oosterhout bedienen we heel Nederland"
+    ]
+  }
+}
