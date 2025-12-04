@@ -1,22 +1,25 @@
 import { Helmet } from 'react-helmet-async';
 
 interface StructuredDataProps {
-  type?: 'Organization' | 'FAQPage' | 'HowTo' | 'Article';
+  type?: 'LocalBusiness' | 'WebSite' | 'FAQPage' | 'HowTo' | 'Article';
   data?: Record<string, unknown>;
 }
 
-export default function StructuredData({ type = 'Organization', data }: StructuredDataProps) {
+export default function StructuredData({ type = 'LocalBusiness', data }: StructuredDataProps) {
   const getStructuredData = () => {
-    if (type === 'Organization') {
+    if (type === 'LocalBusiness') {
       return {
         '@context': 'https://schema.org',
-        '@type': 'Organization',
+        '@type': 'LocalBusiness',
         '@id': 'https://signaalmakers.nl/#organization',
         name: 'SIGNAALMAKERS',
         description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificering voor bedrijven in heel Nederland.',
         url: 'https://signaalmakers.nl',
+        logo: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png',
+        image: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png',
         telephone: '+31 6 45251333',
         email: 'info@signaalmakers.nl',
+        vatID: '82907196',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Bredaseweg 108A',
@@ -113,17 +116,42 @@ export default function StructuredData({ type = 'Organization', data }: Structur
             }
           ]
         },
-        openingHoursSpecification: {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-          opens: '08:00',
-          closes: '17:00'
-        },
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '09:00',
+            closes: '17:00'
+          },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Saturday', 'Sunday'],
+            opens: '00:00',
+            closes: '00:00',
+            description: 'Op afspraak'
+          }
+        ],
         sameAs: [
           'https://www.instagram.com/signaalmakers/',
           'https://www.linkedin.com/company/signaalmakers'
         ],
         priceRange: '€€',
+        ...data
+      };
+    }
+
+    if (type === 'WebSite') {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        '@id': 'https://signaalmakers.nl/#website',
+        url: 'https://signaalmakers.nl',
+        name: 'SIGNAALMAKERS',
+        description: 'Specialist in databekabeling en netwerkbekabeling door heel Nederland',
+        publisher: {
+          '@id': 'https://signaalmakers.nl/#organization'
+        },
+        inLanguage: 'nl-NL',
         ...data
       };
     }
