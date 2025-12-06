@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async';
+import { Hreflang } from '../i18n';
+import { useI18n } from '../i18n';
 
 interface BreadcrumbItem {
   name: string;
@@ -20,6 +22,8 @@ interface SEOProps {
     section?: string;
     tags?: string[];
   };
+  includehreflang?: boolean;
+  hreflangPath?: string;
 }
 
 const SEO = ({
@@ -31,11 +35,19 @@ const SEO = ({
   type = 'website',
   breadcrumbs,
   article,
+  includehreflang = true,
+  hreflangPath,
 }: SEOProps) => {
+  const { locale } = useI18n();
   const fullTitle = title.includes('SIGNAALMAKERS') ? title : `${title} | SIGNAALMAKERS`;
 
+  // Determine og:locale based on current locale
+  const ogLocale = locale === 'nl-NL' ? 'nl_NL' : locale === 'nl-BE' ? 'nl_BE' : 'en_US';
+
   return (
-    <Helmet>
+    <>
+      {includehreflang && <Hreflang path={hreflangPath} />}
+      <Helmet>
       {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
@@ -50,7 +62,7 @@ const SEO = ({
       <meta property="og:image" content={image} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:locale" content="nl_NL" />
+      <meta property="og:locale" content={ogLocale} />
       <meta property="og:site_name" content="SIGNAALMAKERS" />
 
       {/* Article specific tags */}
@@ -171,6 +183,7 @@ const SEO = ({
         </script>
       )}
     </Helmet>
+    </>
   );
 };
 

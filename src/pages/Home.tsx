@@ -13,8 +13,10 @@ import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
 import NetherlandsMap from '../components/NetherlandsMap';
+import { useTranslation } from '../i18n';
 
 export default function Home() {
+  const t = useTranslation();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [hoveredProvince, setHoveredProvince] = useState<string | null>(null);
 
@@ -89,10 +91,11 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="SIGNAALMAKERS – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk"
-        description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Functioneel getest en opgeleverd met kabelplan. Landelijk actief."
-        keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling"
+        title={t.seo.home.title}
+        description={t.seo.home.description}
+        keywords={t.seo.home.keywords}
         url="https://signaalmakers.nl/"
+        hreflangPath="/"
       />
       <StructuredData type="LocalBusiness" />
       <StructuredData type="WebSite" />
@@ -142,23 +145,23 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Databekabeling &amp; netwerkbekabeling door heel Nederland
+                {t.home.hero.title}
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                Specialist in <strong>databekabeling</strong> en <strong>netwerkbekabeling</strong> (Cat6/Cat6A), audiokabels en camera-bekabeling. We trekken kabels, monteren af, labelen en leveren functioneel getest op met kabelplan. Voor <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen inregeling en beheer.
+                {t.home.hero.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/offerte"
                   className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg text-center shadow-lg hover:shadow-xl hover:scale-105"
                 >
-                  Vraag offerte aan
+                  {t.home.hero.ctaQuote}
                 </Link>
                 <Link
                   to="/contact"
                   className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg text-center"
                 >
-                  Plan intake
+                  {t.common.contact}
                 </Link>
               </div>
             </div>

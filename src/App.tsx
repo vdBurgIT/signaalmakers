@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ErrorBoundary from './components/ErrorBoundary';
+import { I18nProvider } from './i18n';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -43,10 +44,11 @@ function App() {
     <ErrorBoundary>
       <HelmetProvider>
         <Router>
-          <ScrollToTop />
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            <main className="flex-grow">
+          <I18nProvider>
+            <ScrollToTop />
+            <div className="min-h-screen flex flex-col">
+              <Header />
+              <main className="flex-grow">
               <Suspense fallback={
                 <div className="min-h-screen flex items-center justify-center">
                   <div className="text-center">
@@ -89,11 +91,12 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
-          </main>
-          <Footer />
-        </div>
-      </Router>
-    </HelmetProvider>
+            </main>
+            <Footer />
+          </div>
+          </I18nProvider>
+        </Router>
+      </HelmetProvider>
     </ErrorBoundary>
   );
 }
