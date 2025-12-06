@@ -207,7 +207,7 @@ export const nlBE: TranslationKeys = {
   },
 
   footer: {
-    tagline: 'Bekabeling voor infrastructuur',
+    tagline: 'Jouw projecten, onze zekerheid. Gewoon geregeld.',
     description: 'Professionele databekabeling, netwerkbekabeling en infrastructuur in België en Nederland. Cat6/Cat6A, audio, camera - functioneel getest en opgeleverd met kabelplan.',
     quickLinks: 'Snelle links',
     services: 'Diensten',

@@ -20,7 +20,10 @@ export default function Footer() {
                 loading="lazy"
               />
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-2 font-semibold">
+              {t.footer.tagline}
+            </p>
+            <p className="text-gray-400 mb-4 text-sm">
               {t.footer.description}
             </p>
             <div className="flex gap-4">

@@ -207,7 +207,7 @@ export const en: TranslationKeys = {
   },
 
   footer: {
-    tagline: 'Infrastructure cabling',
+    tagline: 'Your projects, our certainty. Simply arranged.',
     description: 'Professional data cabling, network cabling and infrastructure in the Netherlands and Belgium. Cat6/Cat6A, audio, camera - functionally tested and delivered with cable plans.',
     quickLinks: 'Quick links',
     services: 'Services',
