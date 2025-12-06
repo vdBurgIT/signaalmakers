@@ -47,25 +47,6 @@ export default function Home() {
     },
   ];
 
-  const faqs = [
-    {
-      question: 'Doen jullie ook inregeling en apparatuur?',
-      answer: 'Nee. Wij doen bekabeling en voorwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de inregeling en het beheer van apparatuur.',
-    },
-    {
-      question: 'Zijn jullie landelijk actief?',
-      answer: 'Ja, wij werken door heel Nederland. Van serverruimtes en kantoren tot retail, magazijnen en zorg/onderwijs.',
-    },
-    {
-      question: 'Cat6 of Cat6A - wat is het verschil?',
-      answer: 'Cat6A: 10 Gbps tot 100 meter (~500 MHz). Cat6: 10 Gbps tot ~55 meter (~250 MHz). Voor toekomstbestendigheid adviseren we meestal Cat6A.',
-    },
-    {
-      question: 'Hoe leveren jullie op?',
-      answer: 'Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Alles gedocumenteerd en traceerbaar - klaar voor beheer door jouw MSP/IT-partner.',
-    },
-  ];
-
   // Import echte blog posts
   const blogPosts = [
     {
@@ -195,10 +176,10 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] mb-6">
-              Bekabeling voor infrastructuur
+              {t.home.servicesSection.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. Alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>functioneel getest en opgeleverd met kabelplan</Link>. <strong>Wij doen het voorwerk</strong>; <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen <strong>inregeling en beheer</strong>.
+              {t.home.servicesSection.subtitle}
             </p>
           </div>
 
@@ -237,18 +218,18 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-6">
-            Waarom SIGNAALMAKERS
+            {t.home.usps.title}
           </h2>
           <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
-            Bekabeling is ons vak. Netjes, gedocumenteerd en klaar voor gebruik. Wij doen het voorwerk - jij als MSP/IT(er) doet de rest.
+            {t.home.usps.subtitle}
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Cable, title: 'Infra-first', desc: 'Cat6/Cat6A, audio, camera - alle bekabeling voor infrastructuur. Professioneel aangelegd en afgewerkt.' },
-              { icon: CheckCircle2, title: 'Praktisch opgeleverd', desc: 'Functioneel getest met meetrapporten, labels en kabelplan. Transparant en traceerbaar voor beheer door MSP/IT.' },
-              { icon: Server, title: 'Strakke patchkasten', desc: 'Kabelmanagement, paneelindeling en labeling. Overzichtelijk en beheersbaar.' },
-              { icon: Building2, title: 'Landelijk actief', desc: 'Door heel Nederland. Van serverruimtes tot zorg - overal hetzelfde vakmanschap.' },
+              { icon: Cable, title: t.home.usps.infraFirst.title, desc: t.home.usps.infraFirst.desc },
+              { icon: CheckCircle2, title: t.home.usps.practicalDelivery.title, desc: t.home.usps.practicalDelivery.desc },
+              { icon: Server, title: t.home.usps.patchCabinets.title, desc: t.home.usps.patchCabinets.desc },
+              { icon: Building2, title: t.home.usps.nationwide.title, desc: t.home.usps.nationwide.desc },
             ].map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6 shadow-lg">
@@ -423,11 +404,11 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-[#0E243A] text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16">
-            Veelgestelde vragen
+            {t.home.faqSection.title}
           </h2>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            {faqs.map((faq, index) => (
+            {Object.values(t.faq.common).map((faq, index) => (
               <div key={index} className="bg-white/10 rounded-xl backdrop-blur hover:bg-white/15 transition-colors duration-300">
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
