@@ -58,8 +58,8 @@ function App() {
                 </div>
               }>
               <Routes>
+                {/* Default locale (nl-NL) - no prefix */}
                 <Route path="/" element={<Home />} />
-
                 <Route path="/diensten" element={<Diensten />} />
                 <Route path="/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
                 <Route path="/diensten/audiokabels" element={<Audiokabels />} />
@@ -67,25 +67,65 @@ function App() {
                 <Route path="/diensten/patchkasten" element={<Patchkasten />} />
                 <Route path="/diensten/certificeren" element={<Certificeren />} />
                 <Route path="/abonnementen" element={<Abonnementen />} />
-
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
-
                 <Route path="/over-ons" element={<OverOns />} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/offerte" element={<Offerte />} />
-
-                {/* Sectoren */}
                 <Route path="/sectoren" element={<Sectoren />} />
                 <Route path="/sectoren/serverruimtes" element={<Serverruimtes />} />
                 <Route path="/sectoren/kantoren" element={<Kantoren />} />
                 <Route path="/sectoren/retail" element={<RetailHoreca />} />
                 <Route path="/sectoren/magazijn" element={<Magazijn />} />
                 <Route path="/sectoren/onderwijs" element={<OnderwijsZorg />} />
-
-                {/* Sitemap */}
                 <Route path="/sitemap" element={<Sitemap />} />
+
+                {/* Belgian locale (nl-BE) - /nl-be prefix */}
+                <Route path="/nl-be" element={<Home />} />
+                <Route path="/nl-be/diensten" element={<Diensten />} />
+                <Route path="/nl-be/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
+                <Route path="/nl-be/diensten/audiokabels" element={<Audiokabels />} />
+                <Route path="/nl-be/diensten/camera-bekabeling" element={<CameraBekabealing />} />
+                <Route path="/nl-be/diensten/patchkasten" element={<Patchkasten />} />
+                <Route path="/nl-be/diensten/certificeren" element={<Certificeren />} />
+                <Route path="/nl-be/abonnementen" element={<Abonnementen />} />
+                <Route path="/nl-be/blog" element={<Blog />} />
+                <Route path="/nl-be/blog/:slug" element={<BlogPost />} />
+                <Route path="/nl-be/over-ons" element={<OverOns />} />
+                <Route path="/nl-be/faq" element={<FAQ />} />
+                <Route path="/nl-be/contact" element={<Contact />} />
+                <Route path="/nl-be/offerte" element={<Offerte />} />
+                <Route path="/nl-be/sectoren" element={<Sectoren />} />
+                <Route path="/nl-be/sectoren/serverruimtes" element={<Serverruimtes />} />
+                <Route path="/nl-be/sectoren/kantoren" element={<Kantoren />} />
+                <Route path="/nl-be/sectoren/retail" element={<RetailHoreca />} />
+                <Route path="/nl-be/sectoren/magazijn" element={<Magazijn />} />
+                <Route path="/nl-be/sectoren/onderwijs" element={<OnderwijsZorg />} />
+                <Route path="/nl-be/sitemap" element={<Sitemap />} />
+
+                {/* English locale (en) - /en prefix */}
+                <Route path="/en" element={<Home />} />
+                <Route path="/en/diensten" element={<Diensten />} />
+                <Route path="/en/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
+                <Route path="/en/diensten/audiokabels" element={<Audiokabels />} />
+                <Route path="/en/diensten/camera-bekabeling" element={<CameraBekabealing />} />
+                <Route path="/en/diensten/patchkasten" element={<Patchkasten />} />
+                <Route path="/en/diensten/certificeren" element={<Certificeren />} />
+                <Route path="/en/abonnementen" element={<Abonnementen />} />
+                <Route path="/en/blog" element={<Blog />} />
+                <Route path="/en/blog/:slug" element={<BlogPost />} />
+                <Route path="/en/over-ons" element={<OverOns />} />
+                <Route path="/en/faq" element={<FAQ />} />
+                <Route path="/en/contact" element={<Contact />} />
+                <Route path="/en/offerte" element={<Offerte />} />
+                <Route path="/en/sectoren" element={<Sectoren />} />
+                <Route path="/en/sectoren/serverruimtes" element={<Serverruimtes />} />
+                <Route path="/en/sectoren/kantoren" element={<Kantoren />} />
+                <Route path="/en/sectoren/retail" element={<RetailHoreca />} />
+                <Route path="/en/sectoren/magazijn" element={<Magazijn />} />
+                <Route path="/en/sectoren/onderwijs" element={<OnderwijsZorg />} />
+                <Route path="/en/sitemap" element={<Sitemap />} />
 
                 {/* 404 - Catch all route */}
                 <Route path="*" element={<NotFound />} />
