@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
       <p>Wij leveren op: geteste, gelabelde, gedocumenteerde bekabeling. Jullie sluiten de apparatuur aan, configureren het netwerk en de klant is blij.</p>
 
       <h2>Praktijkvoorbeeld: nieuw kantoor voor jullie klant</h2>
-      <p>Jullie klant gaat verhuizen naar een nieuw kantoor. Jullie regelen de IT-infrastructuur: routers, switches, wifi, telefonie, servers. Wij regelen de bekabeling:</p>
+      <p>Jullie klant gaat verhuizen naar een <a href="/sectoren/kantoren" style="color: #FF6A00; font-weight: 600;">nieuw kantoor</a>. Jullie regelen de IT-infrastructuur: routers, switches, wifi, telefonie, servers. Wij regelen de bekabeling:</p>
       <ul>
         <li>40 datapunten voor werkplekken (Cat6A)</li>
         <li>6 kabels naar access point-locaties (Cat6A, PoE++)</li>
@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Uitbreidingen:</strong> Extra werkplekken, nieuwe afdeling, meer access points</li>
         <li><strong>Wifi-netwerk installaties:</strong> Kabels naar access point-locaties</li>
         <li><strong>Patchkast-opruimacties:</strong> Bestaande patchkast herbouwen met kabelmanagement</li>
-        <li><strong>Server-/datacenterbekabeling:</strong> 10 Gigabit bekabeling (Cat6A/Cat7)</li>
+        <li><strong>Server-/datacenterbekabeling:</strong> 10 Gigabit bekabeling (Cat6A/Cat7) voor <a href="/sectoren/serverruimtes" style="color: #FF6A00; font-weight: 600;">serverruimtes en datacenters</a></li>
       </ul>
 
       <h2>Werkgebied en beschikbaarheid</h2>
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
       <p>Het probleem? Vaak wordt er naar de router, switch of wifi gekeken, terwijl het echte probleem in de bekabeling zit: een te lange kabel, een verkeerd afgemonteerd datapunt of Cat5-bekabeling die niet geschikt is voor moderne snelheden.</p>
 
       <h2>De rol van bekabeling in moderne IT-omgevingen</h2>
-      <p>Steeds meer bedrijfsprocessen draaien op netwerkverkeer. Denk aan:</p>
+      <p>Steeds meer bedrijfsprocessen in <a href="/sectoren/kantoren" style="color: #FF6A00; font-weight: 600;">moderne kantoren</a> draaien op netwerkverkeer. Denk aan:</p>
       <ul>
         <li>Clouddiensten en SaaS-applicaties</li>
         <li>VoIP-telefonie en MS Teams</li>
@@ -240,7 +240,7 @@ export const blogPosts: BlogPost[] = [
       <p>Daarnaast hebben moderne access points vaak PoE+ of PoE++ nodig (30W tot 60W). Cat6A is ontworpen om deze vermogens veilig te verwerken zonder oververhitting.</p>
 
       <h2>Praktijkvoorbeeld: kantoorpand met 3 verdiepingen</h2>
-      <p>Stel: een kantoor van 3 verdiepingen, elk 200m². Voor goede wifi-dekking plaatsen we:</p>
+      <p>Stel: een <a href="/sectoren/kantoren" style="color: #FF6A00; font-weight: 600;">kantoor</a> van 3 verdiepingen, elk 200m². Voor goede wifi-dekking plaatsen we:</p>
       <ul>
         <li>6 access points (2 per verdieping, strategisch geplaatst)</li>
         <li>6 UTP-kabels van patchkast naar access point-locaties</li>
@@ -348,7 +348,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Wanneer is het slimme moment om te moderniseren?</h2>
       <ul>
-        <li><strong>Bij een verhuizing:</strong> Nieuw pand = nieuwe bekabeling, meteen goed</li>
+        <li><strong>Bij een verhuizing:</strong> Nieuw pand = nieuwe bekabeling, meteen goed (zie <a href="/sectoren/kantoren" style="color: #FF6A00; font-weight: 600;">kantoorbekabeling</a>)</li>
         <li><strong>Bij een verbouwing:</strong> Plafonds en wanden zijn toch open, ideaal moment</li>
         <li><strong>Bij uitbreiding:</strong> Meer werkplekken = meer datapunten, combineer met vernieuwing</li>
         <li><strong>Bij grote IT-investeringen:</strong> Nieuwe servers, switches of wifi? Zorg dat de bekabeling niet de bottleneck is</li>
@@ -461,7 +461,7 @@ export const blogPosts: BlogPost[] = [
       <p>Zorg dat elk datapunt EN de bijbehorende patchpaneel-poort hetzelfde nummer krijgen.</p>
 
       <h3>Stap 5: Patchkast indelen</h3>
-      <p>Verdeel de patchkast logisch:</p>
+      <p>Verdeel de <a href="/diensten/patchkasten" style="color: #FF6A00; font-weight: 600;">patchkast</a> logisch (dit is extra belangrijk in <a href="/sectoren/serverruimtes" style="color: #FF6A00; font-weight: 600;">serverruimtes</a> waar overzicht cruciaal is):</p>
       <ul>
         <li>Patchpaneel A = verdieping 1</li>
         <li>Patchpaneel B = verdieping 2</li>
@@ -592,7 +592,7 @@ export const blogPosts: BlogPost[] = [
       <p>Het resultaat: een patchkast waar je MSP of IT-partner blij van wordt.</p>
 
       <h2>De relatie met MSP's en IT-beheerders</h2>
-      <p>MSP's en netwerkbeheerders waarderen goed kabelmanagement enorm. Waarom?</p>
+      <p>MSP's en netwerkbeheerders die werken in <a href="/sectoren/serverruimtes" style="color: #FF6A00; font-weight: 600;">serverruimtes</a> en datacenters waarderen goed kabelmanagement enorm. Waarom?</p>
       <ul>
         <li>Ze kunnen snel schakelen bij problemen (geen uren zoeken)</li>
         <li>Uitbreidingen en aanpassingen gaan soepel</li>
