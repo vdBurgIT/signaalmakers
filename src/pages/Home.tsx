@@ -40,7 +40,7 @@ export default function Home() {
     {
       icon: CheckCircle2,
       title: 'Meten & Certificeren',
-      description: 'Gecertificeerd opgeleverd met meetrapporten, labels en schema\'s. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
+      description: 'Praktische oplevercheck: functioneel getest, gelabeld en opgeleverd met kabelplan. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
       link: '/diensten/certificeren',
     },
   ];
@@ -60,7 +60,7 @@ export default function Home() {
     },
     {
       question: 'Hoe leveren jullie op?',
-      answer: 'Gecertificeerd met meetrapporten, labels en schema\'s. Alles gedocumenteerd en traceerbaar - klaar voor beheer door jouw MSP/IT-partner.',
+      answer: 'Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Alles gedocumenteerd en traceerbaar - klaar voor beheer door jouw MSP/IT-partner.',
     },
   ];
 
@@ -90,7 +90,7 @@ export default function Home() {
     <>
       <SEO
         title="SIGNAALMAKERS – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk"
-        description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Volledig gecertificeerd met meetrapporten. Landelijk actief."
+        description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Functioneel getest en opgeleverd met kabelplan. Landelijk actief."
         keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling"
         url="https://signaalmakers.nl/"
       />
@@ -145,7 +145,7 @@ export default function Home() {
                 Databekabeling &amp; netwerkbekabeling door heel Nederland
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                Specialist in <strong>databekabeling</strong> en <strong>netwerkbekabeling</strong> (Cat6/Cat6A), audiokabels en camera-bekabeling. We trekken kabels, monteren af, labelen en leveren <strong>gecertificeerd</strong> op met meetrapporten. Voor <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen inregeling en beheer.
+                Specialist in <strong>databekabeling</strong> en <strong>netwerkbekabeling</strong> (Cat6/Cat6A), audiokabels en camera-bekabeling. We trekken kabels, monteren af, labelen en leveren functioneel getest op met kabelplan. Voor <Link to="/sectoren/serverruimtes" style={{ fontWeight: 600 }}>serverruimtes</Link>, <Link to="/sectoren/kantoren" style={{ fontWeight: 600 }}>kantoren</Link>, <Link to="/sectoren/retail" style={{ fontWeight: 600 }}>retail/horeca</Link>, <Link to="/sectoren/magazijn" style={{ fontWeight: 600 }}>magazijnen</Link> en <Link to="/sectoren/onderwijs" style={{ fontWeight: 600 }}>onderwijs/zorg</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen inregeling en beheer.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -195,7 +195,7 @@ export default function Home() {
               Bekabeling voor infrastructuur
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. Alles netjes <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gemeten en gecertificeerd</Link>. <strong>Wij doen het voorwerk</strong>; <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen <strong>inregeling en beheer</strong>.
+              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. Alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>functioneel getest en opgeleverd met kabelplan</Link>. <strong>Wij doen het voorwerk</strong>; <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> regelen <strong>inregeling en beheer</strong>.
             </p>
           </div>
 
@@ -243,7 +243,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: Cable, title: 'Infra-first', desc: 'Cat6/Cat6A, audio, camera - alle bekabeling voor infrastructuur. Professioneel aangelegd en afgewerkt.' },
-              { icon: CheckCircle2, title: 'Gecertificeerd', desc: 'Meetrapporten, labels en schema\'s. Transparant en traceerbaar voor beheer door MSP/IT.' },
+              { icon: CheckCircle2, title: 'Praktisch opgeleverd', desc: 'Functioneel getest met meetrapporten, labels en kabelplan. Transparant en traceerbaar voor beheer door MSP/IT.' },
               { icon: Server, title: 'Strakke patchkasten', desc: 'Kabelmanagement, paneelindeling en labeling. Overzichtelijk en beheersbaar.' },
               { icon: Building2, title: 'Landelijk actief', desc: 'Door heel Nederland. Van serverruimtes tot zorg - overal hetzelfde vakmanschap.' },
             ].map((item, index) => (
@@ -288,7 +288,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Gecertificeerd met meetrapporten</span>
+                  <span>Functioneel getest met kabelplan</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -320,7 +320,7 @@ export default function Home() {
                 </li> */}
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Opleverdossier met meetrapporten</span>
+                  <span>Opleverdossier met kabelplan</span>
                 </li>
               </ul>
             </div>

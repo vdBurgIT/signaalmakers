@@ -9,14 +9,14 @@ export default function Diensten() {
     {
       icon: Cable,
       title: 'Netwerkbekabeling (Cat6/Cat6A)',
-      description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Gecertificeerd met meten, labels en schema\'s.',
+      description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Functioneel getest met meetrapporten, labels en kabelplan.',
       link: '/diensten/netwerkbekabeling',
       features: [
         'Cat6A: 10 Gbps tot 100m (~500 MHz)',
         'Cat6: 10 Gbps tot ~55m (~250 MHz)',
         'Aandacht voor EMI/crosstalk en PoE',
         'Strakke patchkasten en routeplanning',
-        'Gecertificeerde oplevering met meetrapporten',
+        'Praktische oplevercheck met kabelplan',
       ],
     },
     {
@@ -61,12 +61,12 @@ export default function Diensten() {
     {
       icon: CheckCircle2,
       title: 'Meten & Certificeren',
-      description: 'Testen op doorvoer/integriteit. Alles gelabeld en gedocumenteerd. Opleverdossier: meetrapporten, labels, schema\'s - duidelijk voor beheer.',
+      description: 'Praktische oplevercheck: functioneel testen, labelen en documenteren. Opleverdossier met meetrapporten, labels en kabelplan - duidelijk voor beheer.',
       link: '/diensten/certificeren',
       features: [
-        'Meten op doorvoer en integriteit',
+        'Functioneel testen per traject',
         'Labels en documentatie',
-        'Opleverdossier met meetrapporten',
+        'Opleverdossier met kabelplan',
         'Schema\'s en overzichten',
         'Duidelijk voor MSP/IT beheer',
       ],
@@ -77,7 +77,7 @@ export default function Diensten() {
     <>
       <SEO
         title="Databekabeling, Netwerkbekabeling & Infrastructuur | SIGNAALMAKERS"
-        description="Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten. Volledig gecertificeerd met meetrapporten. Landelijk actief."
+        description="Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten. Functioneel getest en opgeleverd met kabelplan. Landelijk actief."
         keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner"
         url="https://signaalmakers.nl/diensten"
         breadcrumbs={[
@@ -99,7 +99,7 @@ export default function Diensten() {
               Bekabeling voor infrastructuur
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. We trekken/leggen, monteren af, patchen, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>leveren gecertificeerd</Link> op met meetrapporten. <strong>Wij doen het voorwerk</strong>; <strong>MSP/IT-partners</strong> regelen inregeling en beheer.
+              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. We trekken/leggen, monteren af, patchen, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>leveren functioneel getest op</Link> met kabelplan. <strong>Wij doen het voorwerk</strong>; <strong>MSP/IT-partners</strong> regelen inregeling en beheer.
             </p>
           </div>
         </div>
@@ -176,8 +176,8 @@ export default function Diensten() {
               },
               {
                 icon: CheckCircle2,
-                title: 'Gecertificeerd',
-                desc: 'Meetrapporten, labels en schema\'s. Transparant en traceerbaar. Alles gedocumenteerd voor beheer door MSP/IT.',
+                title: 'Praktisch opgeleverd',
+                desc: 'Functioneel getest met meetrapporten, labels en kabelplan. Transparant en traceerbaar voor beheer door MSP/IT.',
               },
               {
                 icon: Building2,

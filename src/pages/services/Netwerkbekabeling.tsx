@@ -19,7 +19,7 @@ export default function Netwerkbekabeling() {
     },
     {
       question: 'Leveren jullie ook meetrapporten?',
-      answer: 'Ja, alle trajecten worden getest en gecertificeerd volgens kabelnormen. U ontvangt een compleet opleverdossier met meetrapporten, labels en schema\u2019s. Dit geeft zekerheid dat de bekabeling voldoet aan de specificaties.'
+      answer: 'Ja, alle trajecten worden functioneel getest. U ontvangt een overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Dit geeft zekerheid dat de bekabeling werkt zoals verwacht.'
     },
     {
       question: 'Wat kost databekabeling per aansluitpunt?',
@@ -77,7 +77,7 @@ export default function Netwerkbekabeling() {
               Databekabeling &amp; netwerkbekabeling die presteert
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Gecertificeerd opgeleverd: meten, labels, schema&apos;s. Wij doen het voorwerk — MSP/IT doet inregeling.
+              Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Praktische oplevercheck: functioneel testen, labels, kabelplan. Wij doen het voorwerk — MSP/IT doet inregeling.
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Netwerkbekabeling() {
               Wat we doen
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Cat6/Cat6A bekabeling voor 1-10 Gbps. Werkplekken en ruimtes naar de <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link>. Aandacht voor EMI/crosstalk, PoE-geschikt en strakke routeplanning. Alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd met meetrapporten.
+              Cat6/Cat6A bekabeling voor 1-10 Gbps. Werkplekken en ruimtes naar de <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link>. Aandacht voor EMI/crosstalk, PoE-geschikt en strakke routeplanning. <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>Praktische oplevercheck</Link> met meetrapporten en kabelplan.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">

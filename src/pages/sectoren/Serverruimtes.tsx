@@ -8,7 +8,7 @@ export default function Serverruimtes() {
     <>
       <SEO
         title="Serverruimtes & Datacenters – Cat6A bekabeling | SIGNAALMAKERS"
-        description="Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, gecertificeerde oplevering. Voorwerk voor MSP/IT — landelijk."
+        description="Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, praktische oplevercheck. Voorwerk voor MSP/IT — landelijk."
         keywords="serverruimte bekabeling, datacenter bekabeling, Cat6A 10Gbps, patchkast datacenter, MSP bekabeling partner"
         url="https://signaalmakers.nl/sectoren/serverruimtes"
         breadcrumbs={[
@@ -28,7 +28,7 @@ export default function Serverruimtes() {
               Bekabeling voor serverruimtes &amp; datacenters
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Cat6A bekabeling voor 10 Gbps, strakke patchkasten en gecertificeerde oplevering. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Landelijk werkzaam.
+              Cat6A bekabeling voor 10 Gbps, strakke patchkasten en praktische oplevercheck. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Landelijk werkzaam.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Serverruimtes() {
               Professionele bekabeling voor kritieke omgevingen
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              In serverruimtes en datacenters is betrouwbare bekabeling essentieel. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6A trajecten</Link> voor 10 Gbps, strakke <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link> met doordacht kabelmanagement en volledige <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificering</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link> doet configuratie en beheer.
+              In serverruimtes en datacenters is betrouwbare bekabeling essentieel. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6A trajecten</Link> voor 10 Gbps, strakke <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link> met doordacht kabelmanagement en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>praktische oplevercheck</Link>. Wij doen het voorwerk — <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link> doet configuratie en beheer.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -66,7 +66,7 @@ export default function Serverruimtes() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Elk traject gemeten en gecertificeerd conform kabelnormen</span>
+                    <span>Elk traject functioneel getest met professionele apparatuur</span>
                   </li>
                 </ul>
               </div>
@@ -99,7 +99,7 @@ export default function Serverruimtes() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8 mb-16">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – MSP/IT doet de rest</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                SIGNAALMAKERS legt de bekabeling: trajecten trekken, patchkasten monteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, firewalls en doen configuratie (VLAN&apos;s, routing, monitoring).
+                SIGNAALMAKERS legt de bekabeling: trajecten trekken, patchkasten monteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>functioneel testen</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, firewalls en doen configuratie (VLAN&apos;s, routing, monitoring).
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, MSP/IT beheert de logica en apparatuur. Geen overlap, professioneel resultaat.
@@ -142,7 +142,7 @@ export default function Serverruimtes() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span>Meetrapporten en certificaten</span>
+                      <span>Meetrapporten en kabelplan</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -163,7 +163,7 @@ export default function Serverruimtes() {
               Bekabeling voor jouw serverruimte of datacenter
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Vraag een offerte aan voor Cat6A bekabeling, patchkasten en certificering. Landelijk werkzaam — van nieuwbouw tot uitbreiding.
+              Vraag een offerte aan voor Cat6A bekabeling, patchkasten en praktische oplevercheck. Landelijk werkzaam — van nieuwbouw tot uitbreiding.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

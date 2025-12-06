@@ -43,7 +43,7 @@ export default function Retail() {
               Professionele bekabeling voor winkels en horeca
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Van kleine winkel tot groot winkelcentrum, van café tot restaurant: wij leggen de bekabeling voor kassa\u2019s, camera\u2019s, audio en netwerk. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>gebalanceerde audio</Link> — alles <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd.
+              Van kleine winkel tot groot winkelcentrum, van café tot restaurant: wij leggen de bekabeling voor kassa\u2019s, camera\u2019s, audio en netwerk. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>PoE voor camera\u2019s</Link> en <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>gebalanceerde audio</Link> — alles met <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>praktische oplevercheck</Link>.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -125,7 +125,7 @@ export default function Retail() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – partners doen de rest</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\u2019s.
+                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>functioneel testen</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\u2019s.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, partners doen apparatuur en configuratie. Geen overlap, professioneel resultaat.

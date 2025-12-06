@@ -12,7 +12,7 @@ export default function FAQ() {
     algemeen: [
       {
         question: 'Doen jullie ook inregeling en apparatuur?',
-        answer: 'Nee. Wij doen bekabeling en voorwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de inregeling en het beheer van apparatuur. Zo is er een duidelijke scheiding tussen het voorwerk (wij) en de inregeling (MSP/IT).',
+        answer: 'Nee. Wij doen bekabeling en voorwerk: kabels trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners doen de inregeling en het beheer van apparatuur. Zo is er een duidelijke scheiding tussen het voorwerk (wij) en de inregeling (MSP/IT).',
       },
       {
         question: 'Zijn jullie landelijk actief?',
@@ -24,7 +24,7 @@ export default function FAQ() {
       },
       {
         question: 'Hoe leveren jullie op?',
-        answer: 'Gecertificeerd met meetrapporten, labels en schema\'s. Alles gedocumenteerd en traceerbaar - klaar voor beheer door jouw MSP/IT-partner. Een volledig opleverdossier met alle specificaties en metingen.',
+        answer: 'Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Alles gedocumenteerd en traceerbaar - klaar voor beheer door jouw MSP/IT-partner. Een overzichtelijk opleverdossier met meetrapporten en schema\'s.',
       },
     ],
   };

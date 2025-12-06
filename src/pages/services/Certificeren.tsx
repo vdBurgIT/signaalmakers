@@ -10,16 +10,16 @@ export default function Certificeren() {
 
   const faqs = [
     {
-      question: 'Wat houdt certificering in?',
-      answer: 'Certificering betekent dat elk kabeltraject wordt getest met professionele meetapparatuur volgens kabelnormen. We controleren doorvoer, signaalverlies, afmontering en integriteit. Je ontvangt meetrapporten die bewijzen dat de bekabeling voldoet aan de specificaties en klaar is voor gebruik.'
+      question: 'Wat verstaan jullie onder "certificeren"?',
+      answer: 'Onder certificeren verstaan wij een praktische oplevercheck. We testen elke aangelegde kabel met apparatuur, labelen de verbindingen en leveren een overzichtelijk opleverrapport met kabelplan. Zo weet je zeker dat alles functioneert en traceerbaar is gedocumenteerd.'
     },
     {
-      question: 'Waarom is certificering belangrijk?',
-      answer: 'Zonder certificering weet niemand of de bekabeling echt presteert zoals verwacht. Certificering voorkomt discussies achteraf, geeft transparantie over kwaliteit en versnelt troubleshooting. Voor MSP\u2019s en IT-beheerders is het essentieel bewijs dat de infrastructuur betrouwbaar is.'
+      question: 'Waarom is deze oplevercheck belangrijk?',
+      answer: 'Zonder testen en documentatie weet niemand of de bekabeling echt werkt zoals verwacht. Een praktische oplevercheck voorkomt discussies achteraf, geeft transparantie over kwaliteit en versnelt troubleshooting. Voor MSP\u2019s en IT-beheerders is het essentieel bewijs dat de infrastructuur betrouwbaar is.'
     },
     {
-      question: 'Welke normen gebruiken jullie?',
-      answer: 'We certificeren volgens kabelnormen en internationale standaarden voor gestructureerde bekabeling. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Alle meetrapporten vermelden de toegepaste norm en meetwaarden.'
+      question: 'Hoe testen jullie de kabels?',
+      answer: 'We testen elk kabeltraject functioneel met professionele meetapparatuur. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Elk traject krijgt een pass/fail status. Alle meetrapporten vermelden de meetwaarden, kabelnummers en locaties voor tracering.'
     },
     {
       question: 'Wat staat er in een meetrapport?',
@@ -38,8 +38,8 @@ export default function Certificeren() {
       answer: 'Als een traject faalt, zoeken we de oorzaak (slechte afmontering, beschadiging, te lang traject). We herstellen het probleem en testen opnieuw tot het traject voldoet. Pas daarna leveren we op — alleen trajecten die aan de norm voldoen worden geaccepteerd.'
     },
     {
-      question: 'Zijn de kosten van certificering inbegrepen?',
-      answer: 'Ja, meten en certificeren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij — zo garanderen we kwaliteit en transparantie bij elke oplevering.'
+      question: 'Zijn de kosten van deze oplevercheck inbegrepen?',
+      answer: 'Ja, functioneel testen en documenteren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij — zo garanderen we kwaliteit en transparantie bij elke oplevering.'
     }
   ];
 
@@ -57,9 +57,9 @@ export default function Certificeren() {
   return (
     <>
       <SEO
-        title="Meten & Certificeren – oplevering met meetrapporten | SIGNAALMAKERS"
-        description="Testen op doorvoer en integriteit. Labels, schema's en opleverdossier. Transparant en traceerbaar — klaar voor MSP/IT."
-        keywords="meten certificeren, meetrapporten, bekabeling testen, opleverdossier, labeling, infrastructuur certificering"
+        title="Meten & Certificeren – Praktische oplevercheck | SIGNAALMAKERS"
+        description="Functioneel testen, labelen en opleveren met meetrapporten. Praktische oplevercheck voor traceerbaar beheer — klaar voor MSP/IT."
+        keywords="meten certificeren, meetrapporten, bekabeling testen, opleverdossier, labeling, oplevercheck, functioneel testen"
         url="https://signaalmakers.nl/diensten/certificeren"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
@@ -77,7 +77,7 @@ export default function Certificeren() {
               Meten & Certificeren
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Testen op doorvoer en integriteit. Alle kabels gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema's en labels – transparant en traceerbaar. Klaar voor beheer door MSP/IT.
+              Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema's en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.
             </p>
           </div>
         </div>
@@ -92,15 +92,15 @@ export default function Certificeren() {
               Wat je krijgt
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Elk traject wordt getest, gedocumenteerd en gelabeld. Opleverdossier met meetrapporten, schema's en labels. Bewijs dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>bekabeling</Link> voldoet aan de norm en klaar is voor beheer door MSP/IT.
+              Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Opleverdossier met meetrapporten, schema's en labels. Bewijs dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>bekabeling</Link> werkt en klaar is voor beheer door MSP/IT.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="bg-gray-50 rounded-xl p-8">
                 <BarChart3 className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Meten per traject</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Functioneel testen per traject</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Elk kabeltraject wordt getest op doorvoer en integriteit. Professionele meetapparatuur volgens de norm. Bewijs dat alles presteert zoals verwacht.
+                  Elk kabeltraject wordt functioneel getest met professionele meetapparatuur. We controleren of de kabel presteert zoals verwacht en geschikt is voor gebruik.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
@@ -144,7 +144,7 @@ export default function Certificeren() {
                 <FileCheck className="w-12 h-12 text-[#FF6A00] mb-6" />
                 <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Opleverdossier</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Volledig opleverdossier met meetrapporten, labels en schema's. Transparant en traceerbaar. Bewijs dat alle trajecten voldoen aan de norm en klaar zijn voor beheer door MSP/IT.
+                  Overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Transparant en traceerbaar. Bewijs dat alle trajecten functioneren en klaar zijn voor beheer door MSP/IT.
                 </p>
                 <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
                   <li className="flex items-start gap-2">
@@ -157,11 +157,11 @@ export default function Certificeren() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Routeschema's en documentatie</span>
+                    <span>Kabelplan en documentatie</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Certificering per kabeltraject</span>
+                    <span>Functionele testresultaten per kabel</span>
                   </li>
                 </ul>
               </div>
@@ -174,10 +174,10 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Waarom meten en certificeren?
+              Waarom een praktische oplevercheck?
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              Zonder testen en documentatie weet niemand of de bekabeling voldoet aan de norm. Met een opleverdossier is alles transparant, traceerbaar en klaar voor beheer.
+              Zonder testen en documentatie weet niemand of de bekabeling echt werkt. Met een opleverdossier is alles transparant, traceerbaar en klaar voor beheer.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -212,7 +212,7 @@ export default function Certificeren() {
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Standaard bij elk traject</h3>
               <p className="text-gray-700 leading-relaxed">
-                Meten en certificeren is standaard bij elk bekabelingstraject. Geen extra kosten. Het hoort er gewoon bij – zo weet je zeker dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>infrastructuur</Link> voldoet aan de norm en klaar is voor beheer door MSP/IT.
+                Deze praktische oplevercheck is standaard bij elk bekabelingstraject. Geen extra kosten. Het hoort er gewoon bij – zo weet je zeker dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>infrastructuur</Link> functioneert en klaar is voor beheer door MSP/IT.
               </p>
             </div>
           </div>
@@ -255,10 +255,10 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Klaar voor gecertificeerde oplevering?
+              Klaar voor professionele oplevering?
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen. Alle trajecten worden gemeten, gelabeld en gedocumenteerd.
+              Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen. Alle trajecten worden functioneel getest, gelabeld en gedocumenteerd.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

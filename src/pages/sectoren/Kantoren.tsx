@@ -43,7 +43,7 @@ export default function Kantoren() {
               Professionele infrastructuur voor kantooromgevingen
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              Van werkplekken tot vergaderruimtes, van wifi-access points tot IP-telefonie: wij leggen de bekabeling die je kantoor draaiende houdt. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>gebalanceerde audio</Link> en <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link>—allemaal <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>gecertificeerd</Link> opgeleverd.
+              Van werkplekken tot vergaderruimtes, van wifi-access points tot IP-telefonie: wij leggen de bekabeling die je kantoor draaiende houdt. <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>Cat6/Cat6A trajecten</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>gebalanceerde audio</Link> en <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link>—allemaal met <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>praktische oplevercheck</Link>.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -98,7 +98,7 @@ export default function Kantoren() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span>Meetrapporten en certificering conform kabelnormen</span>
+                      <span>Meetrapporten en praktische oplevercheck</span>
                     </li>
                   </ul>
                 </div>
@@ -126,7 +126,7 @@ export default function Kantoren() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen het voorwerk – MSP/IT doet inregeling</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, wifi-controllers en doen configuratie (VLAN\u2019s, SSID\u2019s, netwerksegmentatie).
+                SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>functioneel testen</Link>. <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT-partners</Link> installeren switches, routers, wifi-controllers en doen configuratie (VLAN\u2019s, SSID\u2019s, netwerksegmentatie).
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Voor audio en camera\u2019s werken we samen met installateurs en beveiligingsbedrijven: wij leggen de bekabeling, zij sluiten apparatuur aan en regelen af. Duidelijke scheiding, professioneel resultaat.
