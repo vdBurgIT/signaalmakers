@@ -23,26 +23,26 @@ export default function Home() {
   const services = [
     {
       icon: Cable,
-      title: 'Netwerkbekabeling Cat6/Cat6A',
-      description: 'Cat6/Cat6A bekabeling voor 1–10 Gbps. Professioneel aangelegd, netjes afgewerkt en klaar voor stabiele verbindingen. Voorwerk voor MSP/IT — wij leveren de infra.',
+      title: t.home.servicesCards.network.title,
+      description: t.home.servicesCards.network.description,
       link: '/diensten/netwerkbekabeling',
     },
     {
       icon: Server,
-      title: 'Patchkasten',
-      description: 'Strak ingericht en beheersbaar. Kabelmanagement, paneelindeling, labeling en documentatie. Overzicht en controle voor jouw IT-beheer.',
+      title: t.home.servicesCards.patchCabinets.title,
+      description: t.home.servicesCards.patchCabinets.description,
       link: '/diensten/patchkasten',
     },
     {
       icon: Volume2,
-      title: 'Audiokabels',
-      description: 'Audiokabels voor professionele installaties. Storingsvrije routes, netjes afgewerkt en gedocumenteerd. Infra-voorwerk voor audio-partners.',
+      title: t.home.servicesCards.audio.title,
+      description: t.home.servicesCards.audio.description,
       link: '/diensten/audiokabels',
     },
     {
       icon: CheckCircle2,
-      title: 'Meten & Certificeren',
-      description: 'Praktische oplevercheck: functioneel getest, gelabeld en opgeleverd met kabelplan. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
+      title: t.home.servicesCards.certification.title,
+      description: t.home.servicesCards.certification.description,
       link: '/diensten/certificeren',
     },
   ];
@@ -203,7 +203,7 @@ export default function Home() {
                     to={service.link}
                     className="inline-flex items-center text-[#FF6A00] text-base font-semibold hover:text-[#E55F00] transition-colors group-hover:gap-3 gap-2 mt-auto"
                   >
-                    Meer informatie
+                    {t.home.servicesCards.network.link}
                     <span className="transition-all duration-300">→</span>
                   </Link>
                 </div>
@@ -246,10 +246,10 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-6">
-            Voor wie werken wij?
+            {t.home.whoWeWorkFor.title}
           </h2>
           <p className="text-lg md:text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
-            Wij werken enkel voor MSP's en ICT-bedrijven. Ben je geen MSP of ICT-bedrijf maar heb je wel behoefte aan goede bekabeling? Dan brengen we je graag in contact met een van onze partners.
+            {t.home.whoWeWorkFor.subtitle}
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
@@ -257,27 +257,17 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center mb-6">
                 <Building2 className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor MSP's & IT-partners</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">{t.home.whoWeWorkFor.msp.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Wij zijn geen concurrent, maar jouw bekabelingspartner. Wij leveren het voorwerk: alle bekabeling voor infrastructuur. Jij doet inregeling en beheer.
+                {t.home.whoWeWorkFor.msp.description}
               </p>
               <ul className="space-y-3 text-gray-700 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Netwerk, audio en camera-bekabeling</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Patchkasten: strak en beheersbaar</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Functioneel getest met kabelplan</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Jij doet inregeling, wij het voorwerk</span>
-                </li>
+                {t.home.whoWeWorkFor.msp.benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -285,27 +275,17 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center mb-6">
                 <Server className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">Voor bedrijven & organisaties</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#0E243A] mb-6">{t.home.whoWeWorkFor.business.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Wij werken samen met jouw MSP of IT-partner. Wij regelen de bekabeling, zodat jouw IT-partner direct verder kan. Heb je nog geen IT-partner voor inregeling en beheer? Dan brengen we je graag in contact via ons betrouwbare partnernetwerk.
+                {t.home.whoWeWorkFor.business.description}
               </p>
               <ul className="space-y-3 text-gray-700 mb-6">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Serverruimtes, kantoren, retail, zorg</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Samenwerking met jouw MSP/IT-partner</span>
-                </li>
-                {/* <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Alleen bekabeling, geen IT-beheer</span>
-                </li> */}
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Opleverdossier met kabelplan</span>
-                </li>
+                {t.home.whoWeWorkFor.business.benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -315,10 +295,10 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-gradient-to-br from-[#0E243A] to-[#1a3a5c]" id="werkgebied">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-6">
-            Waar we werken
+            {t.home.serviceArea.title}
           </h2>
           <p className="text-lg md:text-xl text-gray-300 text-center mb-12 max-w-3xl mx-auto leading-relaxed">
-            Heel Nederland. Van Rotterdam tot Groningen, van Amsterdam tot Maastricht. Bekabeling voor infrastructuur: netwerk, audio en camera. Voor MSP's, IT-bedrijven, serverruimtes, kantoren, retail, magazijnen en zorg.
+            {t.home.serviceArea.subtitle}
           </p>
 
           <div className="max-w-5xl mx-auto">
@@ -336,10 +316,10 @@ export default function Home() {
               {/* Tekst naast de kaart */}
               <div className="w-full lg:w-1/2 text-center lg:text-left">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                  Landelijke dekking
+                  {t.home.serviceArea.mapTitle}
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Wij werken in alle 12 provincies. Bekabeling voor infrastructuur (netwerk, audio, camera) voor serverruimtes, kantoren, retail, magazijnen en zorg.
+                  {t.home.serviceArea.mapDescription}
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {['Groningen', 'Friesland', 'Drenthe', 'Overijssel', 'Flevoland', 'Gelderland', 'Utrecht', 'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Limburg'].map((provincie) => (
@@ -366,7 +346,7 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0E243A] text-center mb-16">
-            Laatste blogs
+            {t.home.blogSection.title}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -382,7 +362,7 @@ export default function Home() {
                     to={`/blog/${post.slug}`}
                     className="inline-flex items-center text-[#FF6A00] font-semibold hover:text-[#E55F00] transition-colors group-hover:gap-3 gap-2"
                   >
-                    Lees meer
+                    {t.home.blogSection.readMore}
                     <span className="transition-all duration-300">→</span>
                   </Link>
                 </div>
@@ -395,7 +375,7 @@ export default function Home() {
               to="/blog"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
             >
-              Alle blogs bekijken
+              {t.home.blogSection.viewAll}
             </Link>
           </div>
         </div>
@@ -435,7 +415,7 @@ export default function Home() {
               to="/faq"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
             >
-              Meer vragen? Bekijk onze FAQ
+              {t.home.faqSection.viewMore}
             </Link>
           </div>
         </div>

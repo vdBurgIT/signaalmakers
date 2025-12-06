@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Instagram, Linkedin, MessageCircle, Mail, Phone, MapPin, Building2 } from 'lucide-react';
+import { useTranslation } from '../i18n';
 
 export default function Footer() {
+  const t = useTranslation();
+
   return (
     <footer className="bg-[#0E243A] text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -18,7 +21,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-4">
-              Jouw projecten, onze zekerheid. Gewoon geregeld.
+              {t.footer.description}
             </p>
             <div className="flex gap-4">
               <a
@@ -52,52 +55,52 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Diensten</h3>
+            <h3 className="font-bold text-lg mb-4">{t.footer.services}</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link to="/diensten/netwerkbekabeling" className="hover:text-[#FF6A00] transition-colors">
-                  Netwerkbekabeling
+                  {t.services.network.shortTitle}
                 </Link>
               </li>
               <li>
                 <Link to="/diensten/audiokabels" className="hover:text-[#FF6A00] transition-colors">
-                  Audiokabels
+                  {t.services.audio.title}
                 </Link>
               </li>
               <li>
                 <Link to="/diensten/camera-bekabeling" className="hover:text-[#FF6A00] transition-colors">
-                  Camera-bekabeling
+                  {t.services.camera.title}
                 </Link>
               </li>
               <li>
                 <Link to="/diensten/patchkasten" className="hover:text-[#FF6A00] transition-colors">
-                  Patchkasten
+                  {t.services.patchCabinets.title}
                 </Link>
               </li>
               <li>
                 <Link to="/diensten/certificeren" className="hover:text-[#FF6A00] transition-colors">
-                  Meten &amp; Certificeren
+                  {t.services.certification.shortTitle}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Bedrijf</h3>
+            <h3 className="font-bold text-lg mb-4">{t.footer.company}</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link to="/over-ons" className="hover:text-[#FF6A00] transition-colors">
-                  Over ons
+                  {t.nav.about}
                 </Link>
               </li>
               <li>
                 <Link to="/blog" className="hover:text-[#FF6A00] transition-colors">
-                  Blog
+                  {t.nav.blog}
                 </Link>
               </li>
               <li>
                 <Link to="/faq" className="hover:text-[#FF6A00] transition-colors">
-                  FAQ
+                  {t.nav.faq}
                 </Link>
               </li>
               <li>
@@ -107,14 +110,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/contact" className="hover:text-[#FF6A00] transition-colors">
-                  Contact
+                  {t.nav.contact}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact</h3>
+            <h3 className="font-bold text-lg mb-4">{t.nav.contact}</h3>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
@@ -141,7 +144,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} SIGNAALMAKERS. Alle rechten voorbehouden.</p>
+          <p>{t.footer.copyright}</p>
         </div>
       </div>
     </footer>

@@ -40,6 +40,28 @@ export const nlNL = {
       title: 'Bekabeling voor infrastructuur',
       subtitle: 'Een betrouwbaar netwerk begint bij goede bekabeling. Wij leveren netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Alles functioneel getest en opgeleverd met kabelplan. Wij doen het voorwerk; MSP/IT-partners regelen inregeling en beheer.',
     },
+    servicesCards: {
+      network: {
+        title: 'Netwerkbekabeling Cat6/Cat6A',
+        description: 'Cat6/Cat6A bekabeling voor 1–10 Gbps. Professioneel aangelegd, netjes afgewerkt en klaar voor stabiele verbindingen. Voorwerk voor MSP/IT — wij leveren de infra.',
+        link: 'Meer informatie',
+      },
+      patchCabinets: {
+        title: 'Patchkasten',
+        description: 'Strak ingericht en beheersbaar. Kabelmanagement, paneelindeling, labeling en documentatie. Overzicht en controle voor jouw IT-beheer.',
+        link: 'Meer informatie',
+      },
+      audio: {
+        title: 'Audiokabels',
+        description: 'Audiokabels voor professionele installaties. Storingsvrije routes, netjes afgewerkt en gedocumenteerd. Infra-voorwerk voor audio-partners.',
+        link: 'Meer informatie',
+      },
+      certification: {
+        title: 'Meten & Certificeren',
+        description: 'Praktische oplevercheck: functioneel getest, gelabeld en opgeleverd met kabelplan. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
+        link: 'Meer informatie',
+      },
+    },
     usps: {
       title: 'Waarom SIGNAALMAKERS?',
       subtitle: 'Bekabeling is ons vak. Netjes, gedocumenteerd en klaar voor gebruik. Wij doen het voorwerk - jij als MSP/IT(er) doet de rest.',
@@ -60,18 +82,43 @@ export const nlNL = {
         desc: 'Door heel Nederland. Van serverruimtes tot zorg - overal hetzelfde vakmanschap.',
       },
     },
+    whoWeWorkFor: {
+      title: 'Voor wie werken wij?',
+      subtitle: 'Wij werken enkel voor MSP\'s en ICT-bedrijven. Ben je geen MSP of ICT-bedrijf maar heb je wel behoefte aan goede bekabeling? Dan brengen we je graag in contact met een van onze partners.',
+      msp: {
+        title: 'Voor MSP\'s & IT-partners',
+        description: 'Wij zijn geen concurrent, maar jouw bekabelingspartner. Wij leveren het voorwerk: alle bekabeling voor infrastructuur. Jij doet inregeling en beheer.',
+        benefits: [
+          'Netwerk, audio en camera-bekabeling',
+          'Patchkasten: strak en beheersbaar',
+          'Functioneel getest met kabelplan',
+          'Jij doet inregeling, wij het voorwerk',
+        ],
+      },
+      business: {
+        title: 'Voor bedrijven & organisaties',
+        description: 'Wij werken samen met jouw MSP of IT-partner. Wij regelen de bekabeling, zodat jouw IT-partner direct verder kan. Heb je nog geen IT-partner voor inregeling en beheer? Dan brengen we je graag in contact via ons betrouwbare partnernetwerk.',
+        benefits: [
+          'Serverruimtes, kantoren, retail, zorg',
+          'Samenwerking met jouw MSP/IT-partner',
+          'Opleverdossier met kabelplan',
+        ],
+      },
+    },
     serviceArea: {
-      title: 'Landelijk actief',
-      subtitle: 'Van Amsterdam tot Maastricht, van Rotterdam tot Groningen',
-      description: 'SIGNAALMAKERS werkt door heel Nederland. Van serverruimtes en kantoren tot retail, magazijnen, onderwijs en zorg.',
+      title: 'Waar we werken',
+      subtitle: 'Heel Nederland. Van Rotterdam tot Groningen, van Amsterdam tot Maastricht. Bekabeling voor infrastructuur: netwerk, audio en camera. Voor MSP\'s, IT-bedrijven, serverruimtes, kantoren, retail, magazijnen en zorg.',
+      mapTitle: 'Landelijke dekking',
+      mapDescription: 'Wij werken in alle 12 provincies. Bekabeling voor infrastructuur (netwerk, audio, camera) voor serverruimtes, kantoren, retail, magazijnen en zorg.',
+    },
+    blogSection: {
+      title: 'Laatste blogs',
+      readMore: 'Lees meer',
+      viewAll: 'Alle blogs bekijken',
     },
     faqSection: {
       title: 'Veelgestelde vragen',
-    },
-    blogSection: {
-      title: 'Laatste artikelen',
-      subtitle: 'Praktische kennis over netwerkbekabeling en infrastructuur',
-      readMore: 'Lees artikel',
+      viewMore: 'Meer vragen? Bekijk onze FAQ',
     },
   },
 
