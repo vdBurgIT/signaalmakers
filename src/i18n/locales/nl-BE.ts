@@ -553,6 +553,14 @@ export const nlBE: TranslationKeys = {
     },
   },
 
+  blog: {
+    hero: {
+      title: 'Blog',
+      subtitle: 'Tips, uitleg en achtergronden over bekabeling en installaties',
+    },
+    readMore: 'Lees meer',
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Databekabeling & Netwerkbekabeling België (Cat6/Cat6A)',
@@ -588,6 +596,11 @@ export const nlBE: TranslationKeys = {
       title: 'Abonnementen - Gegarandeerde capaciteit voor bekabeling | SIGNAALMAKERS',
       description: 'Klaar met wachten op offertes? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en tot 30% korting op materiaal. Essential vanaf €99/mnd, Priority €199/mnd, Express €599/mnd.',
       keywords: 'bekabeling abonnement belgië, databekabeling pakket belgië, MSP partner belgië, gegarandeerde capaciteit, vaste doorlooptijd, bekabeling korting belgië',
+    },
+    blog: {
+      title: 'Blog - Praktische tips over bekabeling | SIGNAALMAKERS',
+      description: 'Lees praktische tips over databekabeling, patchkasten, signaallijnen en bekabelingsprojecten. Advies van de bekabelingsspecialist.',
+      keywords: 'blog bekabeling belgië, databekabeling tips belgië, patchkast advies belgië, bekabeling uitleg belgië',
     },
   },
 

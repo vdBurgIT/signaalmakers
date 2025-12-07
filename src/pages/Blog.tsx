@@ -2,20 +2,23 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { blogPosts } from '../data/blogPosts';
+import { useTranslation } from '../i18n';
 
 export default function Blog() {
+  const t = useTranslation();
   const posts = blogPosts;
 
   return (
     <>
       <SEO
-        title="Blog - Praktische tips over bekabeling | SIGNAALMAKERS"
-        description="Lees praktische tips over databekabeling, patchkasten, signaallijnen en bekabelingsprojecten. Advies van de bekabelingsspecialist."
-        keywords="blog bekabeling, databekabeling tips, patchkast advies, bekabeling uitleg"
+        title={t.seo.blog.title}
+        description={t.seo.blog.description}
+        keywords={t.seo.blog.keywords}
         url="https://signaalmakers.nl/blog"
+        hreflangPath="/blog"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Blog', item: 'https://signaalmakers.nl/blog' }
+          { name: t.nav.blog, item: 'https://signaalmakers.nl/blog' }
         ]}
       />
       <div>
@@ -26,10 +29,10 @@ export default function Blog() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Blog
+              {t.blog.hero.title}
             </h1>
             <p className="text-lg text-gray-300">
-              Tips, uitleg en achtergronden over bekabeling en installaties
+              {t.blog.hero.subtitle}
             </p>
           </div>
         </div>
@@ -57,7 +60,7 @@ export default function Blog() {
                       to={`/blog/${post.slug}`}
                       className="inline-flex items-center text-[#FF6A00] font-semibold hover:text-[#E55F00] transition-colors"
                     >
-                      Lees meer
+                      {t.blog.readMore}
                       <span className="ml-2">→</span>
                     </Link>
                   </div>

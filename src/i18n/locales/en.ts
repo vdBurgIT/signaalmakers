@@ -553,6 +553,14 @@ export const en: TranslationKeys = {
     },
   },
 
+  blog: {
+    hero: {
+      title: 'Blog',
+      subtitle: 'Tips, explanations and insights about cabling and installations',
+    },
+    readMore: 'Read more',
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Data Cabling & Network Cabling Netherlands & Belgium (Cat6/Cat6A)',
@@ -588,6 +596,11 @@ export const en: TranslationKeys = {
       title: 'Subscriptions - Guaranteed capacity for cabling | SIGNAALMAKERS',
       description: 'Tired of waiting for quotes? With our subscriptions, you get guaranteed capacity, fixed turnaround times, and up to 30% discount on materials. Essential from €99/mo, Priority €199/mo, Express €599/mo.',
       keywords: 'cabling subscription, data cabling package, MSP partner, guaranteed capacity, fixed turnaround time, cabling discount',
+    },
+    blog: {
+      title: 'Blog - Practical cabling tips | SIGNAALMAKERS',
+      description: 'Read practical tips about data cabling, patch cabinets, signal lines and cabling projects. Advice from cabling specialists.',
+      keywords: 'cabling blog, data cabling tips, patch cabinet advice, cabling explained',
     },
   },
 

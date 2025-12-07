@@ -551,6 +551,14 @@ export const nlNL = {
     },
   },
 
+  blog: {
+    hero: {
+      title: 'Blog',
+      subtitle: 'Tips, uitleg en achtergronden over bekabeling en installaties',
+    },
+    readMore: 'Lees meer',
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk',
@@ -586,6 +594,11 @@ export const nlNL = {
       title: 'Abonnementen - Gegarandeerde capaciteit voor bekabeling | SIGNAALMAKERS',
       description: 'Klaar met wachten op offertes? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en tot 30% korting op materiaal. Essential vanaf €99/mnd, Priority €199/mnd, Express €599/mnd.',
       keywords: 'bekabeling abonnement, databekabeling pakket, MSP partner, gegarandeerde capaciteit, vaste doorlooptijd, bekabeling korting',
+    },
+    blog: {
+      title: 'Blog - Praktische tips over bekabeling | SIGNAALMAKERS',
+      description: 'Lees praktische tips over databekabeling, patchkasten, signaallijnen en bekabelingsprojecten. Advies van de bekabelingsspecialist.',
+      keywords: 'blog bekabeling, databekabeling tips, patchkast advies, bekabeling uitleg',
     },
   },
 
