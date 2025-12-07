@@ -240,11 +240,7 @@ export default function Abonnementen() {
               {t.subscriptions.targetAudience.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              {t.subscriptions.targetAudience.description.split('MSP\'s, ICT-bedrijven')[0]}
-              <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link>
-              {t.subscriptions.targetAudience.description.split('MSP\'s, ICT-bedrijven')[1].split('bekabelingsprojecten')[0]}
-              <Link to="/diensten" style={{ fontWeight: 600 }}>bekabelingsprojecten</Link>
-              {t.subscriptions.targetAudience.description.split('bekabelingsprojecten')[1]}
+              {t.subscriptions.targetAudience.description}
             </p>
             <Link
               to="/contact"

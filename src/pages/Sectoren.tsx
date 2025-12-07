@@ -117,9 +117,7 @@ export default function Sectoren() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.sectoren.infoBoxTitle}</h3>
               <p className="text-gray-700 leading-relaxed">
-                {t.sectoren.infoBoxText.split('MSP/IT-partners')[0]}
-                <Link to="/blog/msp-bekabelingspartner" className="font-semibold text-[#FF6A00] hover:underline">MSP/IT-partners</Link>
-                {t.sectoren.infoBoxText.split('MSP/IT-partners')[1]}
+                {t.sectoren.infoBoxText}
               </p>
             </div>
           </div>

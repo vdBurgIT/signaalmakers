@@ -49,19 +49,8 @@ export default function OverOns() {
             </h2>
 
             <div className="text-lg text-gray-700 space-y-6 mb-16 leading-relaxed">
-              <p>
-                {t.about.whoWeAre.paragraph1.split('bekabeling voor infrastructuur')[0]}
-                <Link to="/diensten" style={{ fontWeight: 600 }}>bekabeling voor infrastructuur</Link>
-                {t.about.whoWeAre.paragraph1.split('bekabeling voor infrastructuur')[1].split('certificeren')[0]}
-                <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>certificeren</Link>
-                {t.about.whoWeAre.paragraph1.split('certificeren')[1]}
-              </p>
-
-              <p>
-                {t.about.whoWeAre.paragraph2.split('bekabelingspartner voor MSP\'s')[0]}
-                <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>bekabelingspartner voor MSP&apos;s</Link>
-                {t.about.whoWeAre.paragraph2.split('bekabelingspartner voor MSP\'s')[1]}
-              </p>
+              <p>{t.about.whoWeAre.paragraph1}</p>
+              <p>{t.about.whoWeAre.paragraph2}</p>
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-gray-50 border-l-4 border-[#FF6A00] rounded-xl p-10 mb-16">
@@ -163,9 +152,7 @@ export default function OverOns() {
               {t.about.mspPartner.title}
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
-              {t.about.mspPartner.subtitle.split('MSP\'s, systeembeheerders en IT-bedrijven')[0]}
-              <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, systeembeheerders en IT-bedrijven</Link>
-              {t.about.mspPartner.subtitle.split('MSP\'s, systeembeheerders en IT-bedrijven')[1]}
+              {t.about.mspPartner.subtitle}
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -200,9 +187,7 @@ export default function OverOns() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.about.mspPartner.result.title}</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  {t.about.mspPartner.result.paragraph.split('MSP of IT-partner')[0]}
-                  <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP of IT-partner</Link>
-                  {t.about.mspPartner.result.paragraph.split('MSP of IT-partner')[1]}
+                  {t.about.mspPartner.result.paragraph}
                 </p>
               </div>
             </div>
