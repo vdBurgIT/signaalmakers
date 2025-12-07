@@ -178,6 +178,11 @@ export const nlBE: TranslationKeys = {
   faq: {
     title: 'Veelgestelde vragen',
     subtitle: 'SIGNAALMAKERS – Bekabeling voor infrastructuur in België en Nederland',
+    intro: 'Heb je vragen over bekabeling voor infrastructuur? Op deze pagina vind je antwoorden op de meest gestelde vragen over netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificeren. SIGNAALMAKERS werkt in België en Nederland als bekabelingspartner voor MSP\'s, IT-bedrijven en organisaties. Wij doen het voorwerk - MSP/IT doet inregeling en beheer.',
+    categoryLabel: 'Bekabeling voor infrastructuur',
+    ctaTitle: 'Staat je vraag er niet bij?',
+    ctaText: 'Neem gerust contact met ons op. We beantwoorden graag al je vragen.',
+    ctaButton: 'Neem contact op',
     common: {
       doYouDoConfiguration: {
         question: 'Doen jullie ook inregeling en apparatuur?',
@@ -292,6 +297,11 @@ export const nlBE: TranslationKeys = {
       title: 'Databekabeling, Netwerkbekabeling & Infrastructuur België | SIGNAALMAKERS',
       description: 'Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten in België. Functioneel getest en opgeleverd met kabelplan.',
       keywords: 'databekabeling belgië, netwerkbekabeling belgië, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling belgië',
+    },
+    faq: {
+      title: 'FAQ – alles over bekabeling & oplevering België | SIGNAALMAKERS',
+      description: 'Antwoorden op Cat6/Cat6A, certificeren, rollen MSP/IT, actief in België.',
+      keywords: 'Cat6 Cat6A verschil, bekabeling certificeren belgië, MSP IT rollen belgië, bekabeling belgië, infrastructuur bekabeling FAQ belgië',
     },
   },
 

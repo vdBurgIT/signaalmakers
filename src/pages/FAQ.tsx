@@ -4,33 +4,35 @@ import { Helmet } from 'react-helmet-async';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BackgroundOverlay from '../components/BackgroundOverlay';
+import { useTranslation } from '../i18n';
 
 export default function FAQ() {
+  const t = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = {
     algemeen: [
       {
-        question: 'Doen jullie ook inregeling en apparatuur?',
-        answer: 'Nee. Wij doen bekabeling en voorwerk: kabels trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners doen de inregeling en het beheer van apparatuur. Zo is er een duidelijke scheiding tussen het voorwerk (wij) en de inregeling (MSP/IT).',
+        question: t.faq.common.doYouDoConfiguration.question,
+        answer: t.faq.common.doYouDoConfiguration.answer,
       },
       {
-        question: 'Zijn jullie landelijk actief?',
-        answer: 'Ja, wij werken door heel Nederland. Van serverruimtes en kantoren tot retail, magazijnen, onderwijs en zorg. Bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio en camera.',
+        question: t.faq.common.nationwide.question,
+        answer: t.faq.common.nationwide.answer,
       },
       {
-        question: 'Cat6 of Cat6A - wat is het verschil?',
-        answer: 'Cat6A: 10 Gbps tot 100 meter (~500 MHz). Cat6: 10 Gbps tot ~55 meter (~250 MHz). Cat6A is toekomstbestendiger en beter beschermd tegen EMI/crosstalk. Voor professionele installaties adviseren we meestal Cat6A.',
+        question: t.faq.common.cat6Difference.question,
+        answer: t.faq.common.cat6Difference.answer,
       },
       {
-        question: 'Hoe leveren jullie op?',
-        answer: 'Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Alles gedocumenteerd en traceerbaar - klaar voor beheer door jouw MSP/IT-partner. Een overzichtelijk opleverdossier met meetrapporten en schema\'s.',
+        question: t.faq.common.delivery.question,
+        answer: t.faq.common.delivery.answer,
       },
     ],
   };
 
   const allFaqs = [
-    ...faqs.algemeen.map(f => ({ ...f, category: 'Bekabeling voor infrastructuur' })),
+    ...faqs.algemeen.map(f => ({ ...f, category: t.faq.categoryLabel })),
   ];
 
   // JSON-LD Schema voor FAQ en Service
@@ -119,10 +121,11 @@ export default function FAQ() {
   return (
     <>
       <SEO
-        title="FAQ – alles over bekabeling & oplevering | SIGNAALMAKERS"
-        description="Antwoorden op Cat6/Cat6A, certificeren, rollen MSP/IT, landelijk actief."
-        keywords="Cat6 Cat6A verschil, bekabeling certificeren, MSP IT rollen, landelijk bekabeling, infrastructuur bekabeling FAQ"
+        title={t.seo.faq.title}
+        description={t.seo.faq.description}
+        keywords={t.seo.faq.keywords}
         url="https://signaalmakers.nl/faq"
+        hreflangPath="/faq"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
           { name: 'FAQ', item: 'https://signaalmakers.nl/faq' }
@@ -141,10 +144,10 @@ export default function FAQ() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Veelgestelde vragen
+                {t.faq.title}
               </h1>
               <p className="text-lg text-gray-300">
-                SIGNAALMAKERS – Bekabeling voor infrastructuur door heel Nederland
+                {t.faq.subtitle}
               </p>
             </div>
           </div>
@@ -155,10 +158,7 @@ export default function FAQ() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <p className="text-gray-700 leading-relaxed">
-                Heb je vragen over bekabeling voor infrastructuur? Op deze pagina vind je antwoorden op de meest gestelde vragen
-                over netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificeren. SIGNAALMAKERS werkt door
-                heel Nederland als bekabelingspartner voor MSP's, IT-bedrijven en organisaties. Wij doen het voorwerk - MSP/IT doet
-                inregeling en beheer.
+                {t.faq.intro}
               </p>
             </div>
           </div>
@@ -195,15 +195,15 @@ export default function FAQ() {
               </div>
 
               <div className="mt-12 bg-[#0E243A] text-white rounded-lg p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Staat je vraag er niet bij?</h2>
+                <h2 className="text-2xl font-bold mb-4">{t.faq.ctaTitle}</h2>
                 <p className="text-gray-300 mb-6">
-                  Neem gerust contact met ons op. We beantwoorden graag al je vragen.
+                  {t.faq.ctaText}
                 </p>
                 <Link
                   to="/contact"
                   className="inline-block bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
                 >
-                  Neem contact op
+                  {t.faq.ctaButton}
                 </Link>
               </div>
             </div>

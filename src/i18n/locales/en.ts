@@ -178,6 +178,11 @@ export const en: TranslationKeys = {
   faq: {
     title: 'Frequently asked questions',
     subtitle: 'SIGNAALMAKERS – Infrastructure cabling in the Netherlands and Belgium',
+    intro: 'Questions about infrastructure cabling? This page answers the most frequently asked questions about network (Cat6/Cat6A), audio cables, camera cabling, patch cabinets and certification. SIGNAALMAKERS works throughout the Netherlands and Belgium as a cabling partner for MSPs, IT companies and organizations. We do the infrastructure - MSP/IT handles configuration and management.',
+    categoryLabel: 'Infrastructure cabling',
+    ctaTitle: 'Question not listed?',
+    ctaText: 'Feel free to contact us. We\'re happy to answer all your questions.',
+    ctaButton: 'Contact us',
     common: {
       doYouDoConfiguration: {
         question: 'Do you also handle configuration and equipment?',
@@ -292,6 +297,11 @@ export const en: TranslationKeys = {
       title: 'Data Cabling, Network Cabling & Infrastructure | SIGNAALMAKERS',
       description: 'Specialist in data cabling (Cat6/Cat6A), network cabling, audio cables, camera cabling and patch cabinets. Functionally tested and delivered with cable plans. Active in Netherlands and Belgium.',
       keywords: 'data cabling, network cabling, Cat6 cabling, Cat6A cabling, audio cables, camera cabling, patch cabinets, certification, infrastructure cabling, MSP partner',
+    },
+    faq: {
+      title: 'FAQ – everything about cabling & delivery | SIGNAALMAKERS',
+      description: 'Answers about Cat6/Cat6A, certification, MSP/IT roles, active in Netherlands & Belgium.',
+      keywords: 'Cat6 Cat6A difference, cabling certification, MSP IT roles, infrastructure cabling FAQ, Netherlands Belgium cabling',
     },
   },
 
