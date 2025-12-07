@@ -153,6 +153,49 @@ export const en: TranslationKeys = {
     },
   },
 
+  sectoren: {
+    title: 'Cabling for every sector',
+    subtitle: 'Network, audio and camera cabling for offices, retail, healthcare, education and warehouses. Cat6/Cat6A, PoE and balanced lines — certified delivery. Netherlands and Belgium.',
+    sectionTitle: 'Our expertise by sector',
+    sectionSubtitle: 'We deliver infrastructure cabling in various sectors. From server rooms to retail, from education to warehouses — wherever professional cabling is needed.',
+    infoBoxTitle: 'We only do infrastructure work',
+    infoBoxText: 'For all sectors: we install cabling and deliver certified. MSP/IT partners handle configuration and equipment management. Clear separation, professional results.',
+    ctaTitle: 'Cabling for your sector',
+    ctaSubtitle: 'Request a quote or contact us for more information about cabling in your sector.',
+    ctaButton1: 'Request quote',
+    ctaButton2: 'Contact us',
+    moreInfo: 'More info',
+    items: {
+      serverRooms: {
+        title: 'Server Rooms & Data Centers',
+        shortTitle: 'Server Rooms',
+        description: 'Cat6A cabling for 10 Gbps, professional patch cabinets and certified delivery. Infrastructure for MSP/IT.',
+        heroTitle: 'Cabling for server rooms & data centers',
+        heroSubtitle: 'Cat6A cabling for 10 Gbps, professional patch cabinets and practical delivery check. We install the cabling — MSP/IT handles configuration and management. Active in the Netherlands and Belgium.',
+      },
+      offices: {
+        title: 'Offices',
+        description: 'Network cabling, audio and cameras for modern office environments. Professional and future-proof.',
+        heroTitle: 'Cabling for offices',
+        heroSubtitle: 'Network cabling, audio and cameras for modern office environments. Cat6/Cat6A, PoE, wifi infrastructure—professional and future-proof. Active in the Netherlands and Belgium.',
+      },
+      retail: {
+        title: 'Retail & Hospitality',
+        description: 'Cabling for POS systems, cameras and audio. Fast, clean and with minimal disruption to operations.',
+        heroTitle: 'Cabling for retail & hospitality',
+        heroSubtitle: 'Cabling for POS systems, cameras and audio. Cat6/Cat6A, PoE — fast, clean and with minimal disruption to operations. Active in the Netherlands and Belgium.',
+      },
+      warehouse: {
+        title: 'Warehouse & Logistics',
+        description: 'Robust cabling for scanners, cameras and network. Suitable for heavy-duty environments.',
+      },
+      education: {
+        title: 'Education & Healthcare',
+        description: 'Reliable infrastructure for schools, hospitals and care institutions. Safe and documented.',
+      },
+    },
+  },
+
   sectors: {
     serverRooms: {
       title: 'Server Rooms & Data Centers',
@@ -302,6 +345,11 @@ export const en: TranslationKeys = {
       title: 'FAQ – everything about cabling & delivery | SIGNAALMAKERS',
       description: 'Answers about Cat6/Cat6A, certification, MSP/IT roles, active in Netherlands & Belgium.',
       keywords: 'Cat6 Cat6A difference, cabling certification, MSP IT roles, infrastructure cabling FAQ, Netherlands Belgium cabling',
+    },
+    sectoren: {
+      title: 'Sectors – Infrastructure cabling | SIGNAALMAKERS',
+      description: 'Infrastructure cabling for offices, retail, healthcare, education and warehouses. Cat6/Cat6A, PoE, balanced lines — Netherlands & Belgium.',
+      keywords: 'office cabling, retail cabling, healthcare infrastructure, education network, warehouse cabling, Netherlands Belgium',
     },
   },
 

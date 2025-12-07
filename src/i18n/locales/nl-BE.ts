@@ -153,6 +153,49 @@ export const nlBE: TranslationKeys = {
     },
   },
 
+  sectoren: {
+    title: 'Bekabeling voor iedere sector',
+    subtitle: 'Netwerk, audio en camera-bekabeling voor kantoren, retail, zorg, onderwijs en magazijnen in België. Cat6/Cat6A, PoE en gebalanceerde lijnen — gecertificeerd opgeleverd.',
+    sectionTitle: 'Onze expertise per sector',
+    sectionSubtitle: 'Wij leveren bekabeling voor infrastructuur in diverse sectoren in België. Van serverruimtes tot retail, van onderwijs tot magazijnen — overal waar professionele bekabeling nodig is.',
+    infoBoxTitle: 'Wij doen alleen het voorwerk',
+    infoBoxText: 'Voor alle sectoren geldt: wij leggen bekabeling en leveren gecertificeerd op. MSP/IT-partners doen inregeling en beheer van apparatuur. Duidelijke scheiding, professioneel resultaat.',
+    ctaTitle: 'Bekabeling voor jouw sector',
+    ctaSubtitle: 'Vraag een offerte aan of neem contact op voor meer informatie over bekabeling in jouw sector.',
+    ctaButton1: 'Vraag offerte aan',
+    ctaButton2: 'Neem contact op',
+    moreInfo: 'Meer info',
+    items: {
+      serverRooms: {
+        title: 'Serverruimtes & Datacenters',
+        shortTitle: 'Serverruimtes',
+        description: 'Cat6A bekabeling voor 10 Gbps, strakke patchkasten en gecertificeerde oplevering. Voorwerk voor MSP/IT in België.',
+        heroTitle: 'Bekabeling voor serverruimtes & datacenters',
+        heroSubtitle: 'Cat6A bekabeling voor 10 Gbps, strakke patchkasten en praktische oplevercheck. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Actief in heel België.',
+      },
+      offices: {
+        title: 'Kantoren',
+        description: 'Netwerkbekabeling, audio en camera\'s voor moderne kantooromgevingen in België. Professioneel en toekomstbestendig.',
+        heroTitle: 'Bekabeling voor kantoren',
+        heroSubtitle: 'Netwerkbekabeling, audio en camera\'s voor moderne kantooromgevingen. Cat6/Cat6A, PoE, wifi-trajecten—professioneel en toekomstbestendig. Actief in heel België.',
+      },
+      retail: {
+        title: 'Retail & Horeca',
+        description: 'Bekabeling voor kassa\'s, camera\'s en audio in België. Snel, netjes en met minimale verstoring van de bedrijfsvoering.',
+        heroTitle: 'Bekabeling voor retail & horeca',
+        heroSubtitle: 'Bekabeling voor kassa\'s, camera\'s en audio. Cat6/Cat6A, PoE — snel, netjes en met minimale verstoring van de bedrijfsvoering. Actief in heel België.',
+      },
+      warehouse: {
+        title: 'Magazijn & Logistiek',
+        description: 'Robuuste bekabeling voor scanners, camera\'s en netwerk in België. Geschikt voor zware omgevingen.',
+      },
+      education: {
+        title: 'Onderwijs & Zorg',
+        description: 'Betrouwbare infrastructuur voor scholen, ziekenhuizen en zorginstellingen in België. Veilig en gedocumenteerd.',
+      },
+    },
+  },
+
   sectors: {
     serverRooms: {
       title: 'Serverruimtes & Datacenters',
@@ -302,6 +345,11 @@ export const nlBE: TranslationKeys = {
       title: 'FAQ – alles over bekabeling & oplevering België | SIGNAALMAKERS',
       description: 'Antwoorden op Cat6/Cat6A, certificeren, rollen MSP/IT, actief in België.',
       keywords: 'Cat6 Cat6A verschil, bekabeling certificeren belgië, MSP IT rollen belgië, bekabeling belgië, infrastructuur bekabeling FAQ belgië',
+    },
+    sectoren: {
+      title: 'Sectoren – Bekabeling voor infrastructuur België | SIGNAALMAKERS',
+      description: 'Bekabeling voor infrastructuur in kantoren, retail, zorg, onderwijs en magazijnen in België. Cat6/Cat6A, PoE, gebalanceerde lijnen.',
+      keywords: 'bekabeling kantoor belgië, retail bekabeling belgië, zorg infrastructuur belgië, onderwijs netwerk belgië, magazijn bekabeling belgië',
     },
   },
 

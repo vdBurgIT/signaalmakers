@@ -160,6 +160,8 @@ export const nlNL = {
     infoBoxText: 'Voor alle sectoren geldt: wij leggen bekabeling en leveren gecertificeerd op. MSP/IT-partners doen inregeling en beheer van apparatuur. Duidelijke scheiding, professioneel resultaat.',
     ctaTitle: 'Bekabeling voor jouw sector',
     ctaSubtitle: 'Vraag een offerte aan of neem contact op voor meer informatie over bekabeling in jouw sector.',
+    ctaButton1: 'Vraag offerte aan',
+    ctaButton2: 'Neem contact op',
     moreInfo: 'Meer info',
     items: {
       serverRooms: {
@@ -341,6 +343,11 @@ export const nlNL = {
       title: 'FAQ – alles over bekabeling & oplevering | SIGNAALMAKERS',
       description: 'Antwoorden op Cat6/Cat6A, certificeren, rollen MSP/IT, landelijk actief.',
       keywords: 'Cat6 Cat6A verschil, bekabeling certificeren, MSP IT rollen, landelijk bekabeling, infrastructuur bekabeling FAQ',
+    },
+    sectoren: {
+      title: 'Sectoren – Bekabeling voor infrastructuur | SIGNAALMAKERS',
+      description: 'Bekabeling voor infrastructuur in kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE, gebalanceerde lijnen — landelijk.',
+      keywords: 'bekabeling kantoor, retail bekabeling, zorg infrastructuur, onderwijs netwerk, magazijn bekabeling',
     },
   },
 
