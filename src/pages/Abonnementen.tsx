@@ -2,25 +2,33 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, Zap, Clock, TrendingUp } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import { useTranslation } from '../i18n';
 
 export default function Abonnementen() {
+  const t = useTranslation();
+
   return (
     <>
       <SEO
-        title="Abonnementen - Gegarandeerde capaciteit voor bekabeling | SIGNAALMAKERS"
-        description="Klaar met wachten op offertes? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en tot 30% korting op materiaal. Essential vanaf €99/mnd, Priority €199/mnd, Express €599/mnd."
-        keywords="bekabeling abonnement, databekabeling pakket, MSP partner, gegarandeerde capaciteit, vaste doorlooptijd, bekabeling korting"
+        title={t.seo.subscriptions.title}
+        description={t.seo.subscriptions.description}
+        keywords={t.seo.subscriptions.keywords}
         url="https://signaalmakers.nl/abonnementen"
+        hreflangPath="/abonnementen"
+        breadcrumbs={[
+          { name: 'Home', item: 'https://signaalmakers.nl/' },
+          { name: t.nav.subscriptions, item: 'https://signaalmakers.nl/abonnementen' }
+        ]}
       />
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Jouw projecten, onze zekerheid
+              {t.subscriptions.hero.title}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Klaar met wachten op offertes en eindeloze lead-times? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en flinke kortingen op alles wat telt. Gewoon geregeld.
+              {t.subscriptions.hero.subtitle}
             </p>
           </div>
         </div>
@@ -32,16 +40,16 @@ export default function Abonnementen() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Waarom kiezen voor onze abonnementen?
+              {t.subscriptions.benefits.title}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-20">
             {[
-              { icon: Clock, title: 'Altijd plek', desc: 'Gegarandeerde projectdagen elke maand. Geen wachtlijsten, geen gedoe.' },
-              { icon: Zap, title: 'Voorrang', desc: 'Express-abonnees hebben doorlooptijd vanaf 21 dagen. Sneller dan standaard.' },
-              { icon: TrendingUp, title: 'Kortingen', desc: 'Tot 30% korting op materiaal, tot 15% op uren en tot 60% op reiskosten.' },
-              { icon: CheckCircle2, title: 'Flexibiliteit', desc: 'Max. 2 extra projectdagen per maand tegen lage boekingsfee.' },
+              { icon: Clock, title: t.subscriptions.benefits.alwaysSpace.title, desc: t.subscriptions.benefits.alwaysSpace.desc },
+              { icon: Zap, title: t.subscriptions.benefits.priority.title, desc: t.subscriptions.benefits.priority.desc },
+              { icon: TrendingUp, title: t.subscriptions.benefits.discounts.title, desc: t.subscriptions.benefits.discounts.desc },
+              { icon: CheckCircle2, title: t.subscriptions.benefits.flexibility.title, desc: t.subscriptions.benefits.flexibility.desc },
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6 shadow-lg">
@@ -58,167 +66,167 @@ export default function Abonnementen() {
       <section className="py-20 md:py-28 bg-white" id="pakketten">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] text-center mb-16">
-            Kies jouw pakket
+            {t.subscriptions.packages.title}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {/* Essential */}
             <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" id="essential">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-2">Essential</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-2">{t.subscriptions.packages.essential.name}</h3>
               <div className="text-4xl font-bold text-[#0E243A] mb-6">
-                €99<span className="text-lg text-gray-600">/mnd</span>
+                {t.subscriptions.packages.essential.price}<span className="text-lg text-gray-600">{t.subscriptions.packages.perMonth}</span>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-[#0E243A]">2 gegarandeerde projectdagen</span>
-                    <p className="text-sm text-gray-600">per maand (virtuele capaciteit)</p>
+                    <span className="font-semibold text-[#0E243A]">{t.subscriptions.packages.essential.guaranteedDays}</span>
+                    <p className="text-sm text-gray-600">{t.subscriptions.packages.essential.guaranteedDaysDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-[#0E243A]">Doorlooptijd tot 2 maanden</span>
+                    <span className="font-semibold text-[#0E243A]">{t.subscriptions.packages.essential.leadTime}</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">5% korting op uren</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.essential.hourDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">10% korting op materiaal</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.essential.materialDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">Reiskosten per km</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.essential.travelCosts}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">Spoed: +€400/dag</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.essential.urgentFee}</span>
                 </li>
               </ul>
               <Link
                 to="/contact"
                 className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
-                Aanmelden
+                {t.subscriptions.packages.signUp}
               </Link>
             </div>
 
             {/* Priority */}
             <div className="bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] text-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform scale-105 border-2 border-[#FF6A00] relative" id="priority">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FF6A00] text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Populair
+                {t.subscriptions.packages.popular}
               </div>
-              <h3 className="text-2xl font-bold mb-2">Priority</h3>
+              <h3 className="text-2xl font-bold mb-2">{t.subscriptions.packages.priority.name}</h3>
               <div className="text-4xl font-bold mb-6">
-                €199<span className="text-lg text-gray-300">/mnd</span>
+                {t.subscriptions.packages.priority.price}<span className="text-lg text-gray-300">{t.subscriptions.packages.perMonth}</span>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold">4 gegarandeerde projectdagen</span>
-                    <p className="text-sm text-gray-300">per maand (virtuele capaciteit)</p>
+                    <span className="font-semibold">{t.subscriptions.packages.priority.guaranteedDays}</span>
+                    <p className="text-sm text-gray-300">{t.subscriptions.packages.priority.guaranteedDaysDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold">Doorlooptijd tot 6 weken</span>
+                    <span className="font-semibold">{t.subscriptions.packages.priority.leadTime}</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>10% korting op uren</span>
+                  <span>{t.subscriptions.packages.priority.hourDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>20% korting op materiaal</span>
+                  <span>{t.subscriptions.packages.priority.materialDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>40% korting op reiskosten</span>
+                  <span>{t.subscriptions.packages.priority.travelDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Spoed: +€300/dag</span>
+                  <span>{t.subscriptions.packages.priority.urgentFee}</span>
                 </li>
               </ul>
               <Link
                 to="/contact"
                 className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
-                Aanmelden
+                {t.subscriptions.packages.signUp}
               </Link>
             </div>
 
             {/* Express */}
             <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" id="express">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-2">Express</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-2">{t.subscriptions.packages.express.name}</h3>
               <div className="text-4xl font-bold text-[#0E243A] mb-6">
-                €599<span className="text-lg text-gray-600">/mnd</span>
+                {t.subscriptions.packages.express.price}<span className="text-lg text-gray-600">{t.subscriptions.packages.perMonth}</span>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-[#0E243A]">8 gegarandeerde projectdagen</span>
-                    <p className="text-sm text-gray-600">per maand (virtuele capaciteit)</p>
+                    <span className="font-semibold text-[#0E243A]">{t.subscriptions.packages.express.guaranteedDays}</span>
+                    <p className="text-sm text-gray-600">{t.subscriptions.packages.express.guaranteedDaysDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-[#0E243A]">Doorlooptijd vanaf 21 dagen</span>
-                    <p className="text-sm text-gray-600">(supersnelle SLA)</p>
+                    <span className="font-semibold text-[#0E243A]">{t.subscriptions.packages.express.leadTime}</span>
+                    <p className="text-sm text-gray-600">{t.subscriptions.packages.express.leadTimeDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">15% korting op uren</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.express.hourDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">30% korting op materiaal</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.express.materialDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">60% korting op reiskosten</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.express.travelDiscount}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="text-[#0E243A]">Spoed: +€250/dag</span>
+                  <span className="text-[#0E243A]">{t.subscriptions.packages.express.urgentFee}</span>
                 </li>
               </ul>
               <Link
                 to="/contact"
                 className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
-                Aanmelden
+                {t.subscriptions.packages.signUp}
               </Link>
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto bg-blue-50 rounded-2xl p-8 border-l-4 border-[#FF6A00]">
-            <h3 className="text-xl font-bold text-[#0E243A] mb-4">Extra projectdagen nodig?</h3>
+            <h3 className="text-xl font-bold text-[#0E243A] mb-4">{t.subscriptions.packages.extraDays.title}</h3>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Heb je in een bepaalde maand meer capaciteit nodig? Boek maximaal 2 extra projectdagen per maand tegen een lage boekingsfee:
+              {t.subscriptions.packages.extraDays.description}
             </p>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span><strong>Essential:</strong> €99 boekingsfee + dagprijs met 5% korting</span>
+                <span><strong>{t.subscriptions.packages.essential.name}:</strong> {t.subscriptions.packages.extraDays.essentialFee}</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span><strong>Priority:</strong> €79 boekingsfee + dagprijs met 10% korting</span>
+                <span><strong>{t.subscriptions.packages.priority.name}:</strong> {t.subscriptions.packages.extraDays.priorityFee}</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                <span><strong>Express:</strong> €59 boekingsfee + dagprijs met 15% korting</span>
+                <span><strong>{t.subscriptions.packages.express.name}:</strong> {t.subscriptions.packages.extraDays.expressFee}</span>
               </li>
             </ul>
           </div>
@@ -229,16 +237,20 @@ export default function Abonnementen() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Voor wie zijn deze pakketten?
+              {t.subscriptions.targetAudience.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Onze abonnementen zijn bedoeld voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link> en organisaties met een vaste stroom aan <Link to="/diensten" style={{ fontWeight: 600 }}>bekabelingsprojecten</Link>. Je betaalt alleen wat je gebruikt: uren, materiaal en reiskosten. Maar je weet zeker dat we er zijn wanneer jij ons nodig hebt.
+              {t.subscriptions.targetAudience.description.split('MSP\'s, ICT-bedrijven')[0]}
+              <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's, ICT-bedrijven</Link>
+              {t.subscriptions.targetAudience.description.split('MSP\'s, ICT-bedrijven')[1].split('bekabelingsprojecten')[0]}
+              <Link to="/diensten" style={{ fontWeight: 600 }}>bekabelingsprojecten</Link>
+              {t.subscriptions.targetAudience.description.split('bekabelingsprojecten')[1]}
             </p>
             <Link
               to="/contact"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
             >
-              Word partner
+              {t.subscriptions.targetAudience.button}
             </Link>
           </div>
         </div>
@@ -248,26 +260,26 @@ export default function Abonnementen() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] text-center mb-16">
-              Veelgestelde vragen
+              {t.subscriptions.faq.title}
             </h2>
 
             <div className="space-y-6">
               {[
                 {
-                  q: 'Wat betekent "gegarandeerde projectdagen"?',
-                  a: 'Je hebt elke maand recht op het aantal dagen dat bij je abonnement hoort. Dit is virtuele capaciteit: je bent verzekerd van plek in onze planning. Je betaalt alleen de werkelijke uren, materiaal en reiskosten.'
+                  q: t.subscriptions.faq.q1,
+                  a: t.subscriptions.faq.a1
                 },
                 {
-                  q: 'Moet ik alle dagen per maand gebruiken?',
-                  a: 'Nee. Je betaalt alleen wat je gebruikt. De gegarandeerde dagen geven je zekerheid dat we capaciteit voor je reserveren, maar je bent niet verplicht ze te gebruiken.'
+                  q: t.subscriptions.faq.q2,
+                  a: t.subscriptions.faq.a2
                 },
                 {
-                  q: 'Kan ik mijn abonnement opzeggen?',
-                  a: 'Ja, abonnementen zijn maandelijks opzegbaar na 12 maanden. Geen kleine lettertjes, geen verborgen kosten.'
+                  q: t.subscriptions.faq.q3,
+                  a: t.subscriptions.faq.a3
                 },
                 {
-                  q: 'Wat als ik meer dagen nodig heb?',
-                  a: 'Je kunt maximaal 2 extra projectdagen per maand boeken tegen een lage boekingsfee. De kortingen op uren en materiaal blijven van toepassing.'
+                  q: t.subscriptions.faq.q4,
+                  a: t.subscriptions.faq.a4
                 },
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-xl p-8 shadow-lg">

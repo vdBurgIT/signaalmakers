@@ -462,6 +462,95 @@ export const nlNL = {
     },
   },
 
+  subscriptions: {
+    hero: {
+      title: 'Jouw projecten, onze zekerheid',
+      subtitle: 'Klaar met wachten op offertes en eindeloze lead-times? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en flinke kortingen op alles wat telt. Gewoon geregeld.',
+    },
+    benefits: {
+      title: 'Waarom kiezen voor onze abonnementen?',
+      alwaysSpace: {
+        title: 'Altijd plek',
+        desc: 'Gegarandeerde projectdagen elke maand. Geen wachtlijsten, geen gedoe.',
+      },
+      priority: {
+        title: 'Voorrang',
+        desc: 'Express-abonnees hebben doorlooptijd vanaf 21 dagen. Sneller dan standaard.',
+      },
+      discounts: {
+        title: 'Kortingen',
+        desc: 'Tot 30% korting op materiaal, tot 15% op uren en tot 60% op reiskosten.',
+      },
+      flexibility: {
+        title: 'Flexibiliteit',
+        desc: 'Max. 2 extra projectdagen per maand tegen lage boekingsfee.',
+      },
+    },
+    packages: {
+      title: 'Kies jouw pakket',
+      popular: 'Populair',
+      perMonth: '/mnd',
+      signUp: 'Aanmelden',
+      essential: {
+        name: 'Essential',
+        price: '€99',
+        guaranteedDays: '2 gegarandeerde projectdagen',
+        guaranteedDaysDesc: 'per maand (virtuele capaciteit)',
+        leadTime: 'Doorlooptijd tot 2 maanden',
+        hourDiscount: '5% korting op uren',
+        materialDiscount: '10% korting op materiaal',
+        travelCosts: 'Reiskosten per km',
+        urgentFee: 'Spoed: +€400/dag',
+      },
+      priority: {
+        name: 'Priority',
+        price: '€199',
+        guaranteedDays: '4 gegarandeerde projectdagen',
+        guaranteedDaysDesc: 'per maand (virtuele capaciteit)',
+        leadTime: 'Doorlooptijd tot 6 weken',
+        hourDiscount: '10% korting op uren',
+        materialDiscount: '20% korting op materiaal',
+        travelDiscount: '40% korting op reiskosten',
+        urgentFee: 'Spoed: +€300/dag',
+      },
+      express: {
+        name: 'Express',
+        price: '€599',
+        guaranteedDays: '8 gegarandeerde projectdagen',
+        guaranteedDaysDesc: 'per maand (virtuele capaciteit)',
+        leadTime: 'Doorlooptijd vanaf 21 dagen',
+        leadTimeDesc: '(supersnelle SLA)',
+        hourDiscount: '15% korting op uren',
+        materialDiscount: '30% korting op materiaal',
+        travelDiscount: '60% korting op reiskosten',
+        urgentFee: 'Spoed: +€250/dag',
+      },
+      extraDays: {
+        title: 'Extra projectdagen nodig?',
+        description: 'Heb je in een bepaalde maand meer capaciteit nodig? Boek maximaal 2 extra projectdagen per maand tegen een lage boekingsfee:',
+        essentialFee: '€99 boekingsfee + dagprijs met 5% korting',
+        priorityFee: '€79 boekingsfee + dagprijs met 10% korting',
+        expressFee: '€59 boekingsfee + dagprijs met 15% korting',
+      },
+    },
+    targetAudience: {
+      title: 'Voor wie zijn deze pakketten?',
+      description: 'Onze abonnementen zijn bedoeld voor MSP\'s, ICT-bedrijven en organisaties met een vaste stroom aan bekabelingsprojecten. Je betaalt alleen wat je gebruikt: uren, materiaal en reiskosten. Maar je weet zeker dat we er zijn wanneer jij ons nodig hebt.',
+      button: 'Word partner',
+    },
+    faq: {
+      title: 'Veelgestelde vragen',
+      q1: 'Wat betekent "gegarandeerde projectdagen"?',
+      a1: 'Je hebt elke maand recht op het aantal dagen dat bij je abonnement hoort. Dit is virtuele capaciteit: je bent verzekerd van plek in onze planning. Je betaalt alleen de werkelijke uren, materiaal en reiskosten.',
+      q2: 'Moet ik alle dagen per maand gebruiken?',
+      a2: 'Nee. Je betaalt alleen wat je gebruikt. De gegarandeerde dagen geven je zekerheid dat we capaciteit voor je reserveren, maar je bent niet verplicht ze te gebruiken.',
+      q3: 'Kan ik mijn abonnement opzeggen?',
+      a3: 'Ja, abonnementen zijn maandelijks opzegbaar na 12 maanden. Geen kleine lettertjes, geen verborgen kosten.',
+      q4: 'Wat als ik meer dagen nodig heb?',
+      a4: 'Je kunt maximaal 2 extra projectdagen per maand boeken tegen een lage boekingsfee. De kortingen op uren en materiaal blijven van toepassing.',
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk',
@@ -492,6 +581,11 @@ export const nlNL = {
       title: 'Over Ons – Bekabeling voor infrastructuur | SIGNAALMAKERS',
       description: 'SIGNAALMAKERS: bekabeling voor infrastructuur. Netwerk, audio, camera\'s — Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT — landelijk.',
       keywords: 'over signaalmakers, bekabeling infrastructuur, netwerkbekabeling specialist, MSP partner bekabeling, Cat6A bekabeling Nederland',
+    },
+    subscriptions: {
+      title: 'Abonnementen - Gegarandeerde capaciteit voor bekabeling | SIGNAALMAKERS',
+      description: 'Klaar met wachten op offertes? Met onze abonnementen heb je gegarandeerde capaciteit, vaste doorlooptijden en tot 30% korting op materiaal. Essential vanaf €99/mnd, Priority €199/mnd, Express €599/mnd.',
+      keywords: 'bekabeling abonnement, databekabeling pakket, MSP partner, gegarandeerde capaciteit, vaste doorlooptijd, bekabeling korting',
     },
   },
 

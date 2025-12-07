@@ -464,6 +464,95 @@ export const en: TranslationKeys = {
     },
   },
 
+  subscriptions: {
+    hero: {
+      title: 'Your projects, our guarantee',
+      subtitle: 'Tired of waiting for quotes and endless lead times? With our subscriptions, you get guaranteed capacity, fixed turnaround times, and substantial discounts on everything that matters. Simply sorted.',
+    },
+    benefits: {
+      title: 'Why choose our subscriptions?',
+      alwaysSpace: {
+        title: 'Always available',
+        desc: 'Guaranteed project days every month. No waiting lists, no hassle.',
+      },
+      priority: {
+        title: 'Priority access',
+        desc: 'Express subscribers get turnaround times from 21 days. Faster than standard.',
+      },
+      discounts: {
+        title: 'Discounts',
+        desc: 'Up to 30% discount on materials, up to 15% on hours, and up to 60% on travel costs.',
+      },
+      flexibility: {
+        title: 'Flexibility',
+        desc: 'Book up to 2 additional project days per month at a low booking fee.',
+      },
+    },
+    packages: {
+      title: 'Choose your package',
+      popular: 'Popular',
+      perMonth: '/mo',
+      signUp: 'Sign up',
+      essential: {
+        name: 'Essential',
+        price: '€99',
+        guaranteedDays: '2 guaranteed project days',
+        guaranteedDaysDesc: 'per month (virtual capacity)',
+        leadTime: 'Turnaround time up to 2 months',
+        hourDiscount: '5% discount on hours',
+        materialDiscount: '10% discount on materials',
+        travelCosts: 'Travel costs per km',
+        urgentFee: 'Urgent: +€400/day',
+      },
+      priority: {
+        name: 'Priority',
+        price: '€199',
+        guaranteedDays: '4 guaranteed project days',
+        guaranteedDaysDesc: 'per month (virtual capacity)',
+        leadTime: 'Turnaround time up to 6 weeks',
+        hourDiscount: '10% discount on hours',
+        materialDiscount: '20% discount on materials',
+        travelDiscount: '40% discount on travel costs',
+        urgentFee: 'Urgent: +€300/day',
+      },
+      express: {
+        name: 'Express',
+        price: '€599',
+        guaranteedDays: '8 guaranteed project days',
+        guaranteedDaysDesc: 'per month (virtual capacity)',
+        leadTime: 'Turnaround time from 21 days',
+        leadTimeDesc: '(super-fast SLA)',
+        hourDiscount: '15% discount on hours',
+        materialDiscount: '30% discount on materials',
+        travelDiscount: '60% discount on travel costs',
+        urgentFee: 'Urgent: +€250/day',
+      },
+      extraDays: {
+        title: 'Need extra project days?',
+        description: 'Need more capacity in a given month? Book up to 2 additional project days per month at a low booking fee:',
+        essentialFee: '€99 booking fee + day rate with 5% discount',
+        priorityFee: '€79 booking fee + day rate with 10% discount',
+        expressFee: '€59 booking fee + day rate with 15% discount',
+      },
+    },
+    targetAudience: {
+      title: 'Who are these packages for?',
+      description: 'Our subscriptions are designed for MSPs, IT companies, and organizations with a steady stream of cabling projects. You only pay for what you use: hours, materials, and travel costs. But you\'re assured we\'re there when you need us.',
+      button: 'Become a partner',
+    },
+    faq: {
+      title: 'Frequently asked questions',
+      q1: 'What does "guaranteed project days" mean?',
+      a1: 'You\'re entitled to the number of days included in your subscription each month. This is virtual capacity: you\'re guaranteed a spot in our planning. You only pay for actual hours, materials, and travel costs.',
+      q2: 'Do I have to use all days each month?',
+      a2: 'No. You only pay for what you use. The guaranteed days give you the assurance that we reserve capacity for you, but you\'re not obligated to use them.',
+      q3: 'Can I cancel my subscription?',
+      a3: 'Yes, subscriptions can be canceled monthly after 12 months. No fine print, no hidden costs.',
+      q4: 'What if I need more days?',
+      a4: 'You can book up to 2 additional project days per month at a low booking fee. The discounts on hours and materials remain applicable.',
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Data Cabling & Network Cabling Netherlands & Belgium (Cat6/Cat6A)',
@@ -494,6 +583,11 @@ export const en: TranslationKeys = {
       title: 'About Us – Infrastructure cabling | SIGNAALMAKERS',
       description: 'SIGNAALMAKERS: infrastructure cabling. Network, audio, cameras — Cat6/Cat6A, PoE, balanced lines. Groundwork for MSP/IT — Netherlands & Belgium.',
       keywords: 'about signaalmakers, infrastructure cabling, network cabling specialist, MSP cabling partner, Cat6A cabling Netherlands Belgium',
+    },
+    subscriptions: {
+      title: 'Subscriptions - Guaranteed capacity for cabling | SIGNAALMAKERS',
+      description: 'Tired of waiting for quotes? With our subscriptions, you get guaranteed capacity, fixed turnaround times, and up to 30% discount on materials. Essential from €99/mo, Priority €199/mo, Express €599/mo.',
+      keywords: 'cabling subscription, data cabling package, MSP partner, guaranteed capacity, fixed turnaround time, cabling discount',
     },
   },
 
