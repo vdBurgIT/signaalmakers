@@ -379,8 +379,8 @@ export const nlBE: TranslationKeys = {
       },
     },
     mspPartner: {
-      title: 'Partner voor MSP's en IT-dienstverleners',
-      subtitle: 'Veel MSP's, systeembeheerders en IT-bedrijven schakelen SIGNAALMAKERS in als specialist voor de fysieke laag. Wij leggen de kabels, jij als MSP/IT-partner doet de configuratie en het beheer.',
+      title: 'Partner voor MSP\'s en IT-dienstverleners',
+      subtitle: 'Veel MSP\'s, systeembeheerders en IT-bedrijven schakelen SIGNAALMAKERS in als specialist voor de fysieke laag. Wij leggen de kabels, jij als MSP/IT-partner doet de configuratie en het beheer.',
       weEnsure: {
         title: 'Wij zorgen dat:',
         item1: 'De juiste datakabels op de juiste plek liggen',
