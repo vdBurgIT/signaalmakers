@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import { useTranslation } from '../i18n';
 
 export default function Contact() {
+  const t = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -45,7 +47,7 @@ export default function Contact() {
       if (result.ok) {
         setSubmitStatus({
           type: 'success',
-          message: 'Bedankt voor je bericht! We nemen zo snel mogelijk contact op.',
+          message: t.contact.form.successMessage,
         });
         // Reset form
         setFormData({
@@ -61,14 +63,14 @@ export default function Contact() {
       } else {
         setSubmitStatus({
           type: 'error',
-          message: result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.',
+          message: result.error || t.contact.form.errorMessage,
         });
       }
     } catch (error: unknown) {
       console.error('Contact form submission error:', error);
       setSubmitStatus({
         type: 'error',
-        message: 'Er is een fout opgetreden bij het verzenden van je bericht. Neem direct contact met ons op via info@signaalmakers.nl',
+        message: t.contact.form.errorMessageDetail,
       });
     } finally {
       setIsSubmitting(false);
@@ -85,13 +87,14 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact – Bekabeling voor infrastructuur | SIGNAALMAKERS"
-        description="Netwerk, audio, camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij doen voorwerk — MSP/IT doet inregeling. Landelijk."
-        keywords="contact bekabeling, offerte infrastructuur bekabeling, MSP partner contact, Cat6A bekabeling aanvragen"
+        title={t.seo.contact.title}
+        description={t.seo.contact.description}
+        keywords={t.seo.contact.keywords}
         url="https://signaalmakers.nl/contact"
+        hreflangPath="/contact"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Contact', item: 'https://signaalmakers.nl/contact' }
+          { name: t.nav.contact, item: 'https://signaalmakers.nl/contact' }
         ]}
       />
       <div>
@@ -102,10 +105,10 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Neem contact op
+              {t.contact.hero.title}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Netwerk, audio of camera-bekabeling nodig? Wij doen het voorwerk – jij als MSP/IT doet inregeling. Cat6/Cat6A, PoE, gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam.
+              {t.contact.hero.subtitle}
             </p>
           </div>
         </div>
@@ -118,7 +121,7 @@ export default function Contact() {
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <div className="bg-gray-50 rounded-lg p-8">
-                  <h2 className="text-2xl font-bold text-[#0E243A] mb-6">Stuur ons een bericht</h2>
+                  <h2 className="text-2xl font-bold text-[#0E243A] mb-6">{t.contact.form.title}</h2>
 
                   <form
                     onSubmit={handleSubmit}
@@ -128,7 +131,7 @@ export default function Contact() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                          Naam *
+                          {t.contact.form.nameRequired}
                         </label>
                         <input
                           type="text"
@@ -143,7 +146,7 @@ export default function Contact() {
 
                       <div>
                         <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
-                          Bedrijf
+                          {t.contact.form.company}
                         </label>
                         <input
                           type="text"
@@ -159,7 +162,7 @@ export default function Contact() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                          E-mail *
+                          {t.contact.form.emailRequired}
                         </label>
                         <input
                           type="email"
@@ -174,7 +177,7 @@ export default function Contact() {
 
                       <div>
                         <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                          Telefoon
+                          {t.contact.form.phone}
                         </label>
                         <input
                           type="tel"
@@ -189,7 +192,7 @@ export default function Contact() {
 
                     <div>
                       <label htmlFor="address" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Adres/Plaats
+                        {t.contact.form.address}
                       </label>
                       <input
                         type="text"
@@ -203,7 +206,7 @@ export default function Contact() {
 
                     <div>
                       <label htmlFor="customerType" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Type organisatie *
+                        {t.contact.form.customerType}
                       </label>
                       <select
                         id="customerType"
@@ -213,14 +216,14 @@ export default function Contact() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6A00] focus:border-transparent"
                       >
-                        <option value="msp">MSP / IT-bedrijf</option>
-                        <option value="zakelijk">Zakelijke klant</option>
+                        <option value="msp">{t.contact.form.customerTypeMsp}</option>
+                        <option value="zakelijk">{t.contact.form.customerTypeBusiness}</option>
                       </select>
                     </div>
 
                     <div>
                       <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Onderwerp *
+                        {t.contact.form.subject}
                       </label>
                       <input
                         type="text"
@@ -235,7 +238,7 @@ export default function Contact() {
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Bericht *
+                        {t.contact.form.message}
                       </label>
                       <textarea
                         id="message"
@@ -265,7 +268,7 @@ export default function Contact() {
                       disabled={isSubmitting}
                       className="w-full bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      {isSubmitting ? 'Bezig met verzenden...' : 'Verstuur bericht'}
+                      {isSubmitting ? t.contact.form.submitting : t.contact.form.submit}
                     </button>
                   </form>
                 </div>
@@ -273,36 +276,36 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-[#0E243A] mb-4">Contactgegevens</h3>
+                  <h3 className="text-xl font-bold text-[#0E243A] mb-4">{t.contact.details.title}</h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <MapPin className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-gray-900">Adres</p>
-                        <p className="text-gray-600">Bredaseweg 108A</p>
-                        <p className="text-gray-600">4902 NS Oosterhout</p>
+                        <p className="font-semibold text-gray-900">{t.contact.details.address}</p>
+                        <p className="text-gray-600">{t.contact.details.addressLine1}</p>
+                        <p className="text-gray-600">{t.contact.details.addressLine2}</p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <Phone className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-gray-900">Telefoon</p>
+                        <p className="font-semibold text-gray-900">{t.contact.details.phone}</p>
                         <a
                           href="tel:+31645251333"
                           onClick={(e) => {
                             if (window.innerWidth > 768) {
                               e.preventDefault();
                               navigator.clipboard.writeText('+31 6 45251333').then(() => {
-                                alert('📋 Telefoonnummer gekopieerd: +31 6 45251333');
+                                alert(t.contact.details.phoneCopied);
                               }).catch(() => {
-                                alert('📱 Bel ons op: +31 6 45251333');
+                                alert(t.contact.details.phoneAlert);
                               });
                             }
                           }}
                           className="text-gray-600 hover:text-[#FF6A00] cursor-pointer"
                         >
-                          +31 6 45251333
+                          {t.contact.details.phoneNumber}
                         </a>
                       </div>
                     </div>
@@ -310,9 +313,9 @@ export default function Contact() {
                     <div className="flex items-start gap-3">
                       <Mail className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-gray-900">E-mail</p>
+                        <p className="font-semibold text-gray-900">{t.contact.details.email}</p>
                         <a href="mailto:info@signaalmakers.nl" className="text-gray-600 hover:text-[#FF6A00]">
-                          info@signaalmakers.nl
+                          {t.contact.details.emailAddress}
                         </a>
                       </div>
                     </div>
@@ -320,7 +323,7 @@ export default function Contact() {
                 </div>
 
                 <div className="bg-[#0E243A] text-white rounded-lg p-6">
-                  <h3 className="text-xl font-bold mb-4">Direct contact</h3>
+                  <h3 className="text-xl font-bold mb-4">{t.contact.directContact.title}</h3>
                   <div className="space-y-3">
                     <a
                       href="tel:+31645251333"
@@ -329,9 +332,9 @@ export default function Contact() {
                         if (window.innerWidth > 768) {
                           e.preventDefault();
                           navigator.clipboard.writeText('+31 6 45251333').then(() => {
-                            alert('📋 Telefoonnummer gekopieerd: +31 6 45251333\n\nJe kunt ons bellen via je mobiel.');
+                            alert(t.contact.details.phoneCopiedDesktop);
                           }).catch(() => {
-                            alert('📱 Bel ons op: +31 6 45251333');
+                            alert(t.contact.details.phoneAlert);
                           });
                         }
                         // Op mobiel: gewoon bellen (default gedrag)
@@ -339,7 +342,7 @@ export default function Contact() {
                       className="block bg-[#FF6A00] text-white px-6 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center cursor-pointer"
                     >
                       <Phone className="w-5 h-5 inline mr-2" />
-                      Bel nu
+                      {t.contact.directContact.callNow}
                     </a>
                     <a
                       href="https://wa.me/31645251333"
@@ -348,25 +351,25 @@ export default function Contact() {
                       className="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold text-center"
                     >
                       <MessageCircle className="w-5 h-5 inline mr-2" />
-                      WhatsApp nu
+                      {t.contact.directContact.whatsappNow}
                     </a>
                   </div>
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-[#0E243A] mb-4">Openingstijden</h3>
+                  <h3 className="text-xl font-bold text-[#0E243A] mb-4">{t.contact.openingHours.title}</h3>
                   <div className="space-y-2 text-gray-600">
                     <div className="flex justify-between">
-                      <span>Maandag - Vrijdag</span>
-                      <span className="font-semibold">09:00 - 17:00</span>
+                      <span>{t.contact.openingHours.weekdays}</span>
+                      <span className="font-semibold">{t.contact.openingHours.weekdaysTime}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Zaterdag</span>
-                      <span className="font-semibold">Op afspraak</span>
+                      <span>{t.contact.openingHours.saturday}</span>
+                      <span className="font-semibold">{t.contact.openingHours.saturdayTime}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Zondag</span>
-                      <span className="font-semibold">Op afspraak</span>
+                      <span>{t.contact.openingHours.sunday}</span>
+                      <span className="font-semibold">{t.contact.openingHours.sundayTime}</span>
                     </div>
                   </div>
                 </div>
@@ -375,12 +378,12 @@ export default function Contact() {
 
             {/* MSP/IT Disclaimer */}
             <div className="mt-12 bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wij doen alleen het voorwerk</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.contact.disclaimer.title}</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                SIGNAALMAKERS legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera&apos;s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren — geen configuratie, geen apparatuur, geen beheer.
+                {t.contact.disclaimer.paragraph1}
               </p>
               <p className="text-gray-700 leading-relaxed">
-                <strong>MSP/IT-partners</strong> doen inregeling en beheer van switches, routers, access points. <strong>Audio-installateurs</strong> sluiten speakers aan en regelen af. <strong>Beveiligingsbedrijven</strong> installeren camera&apos;s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partner).
+                {t.contact.disclaimer.paragraph2}
               </p>
             </div>
 
@@ -395,12 +398,12 @@ export default function Contact() {
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Locatie SIGNAALMAKERS - Bredaseweg 108A, Oosterhout"
+                  title={t.contact.map.title}
                   className="rounded-lg"
                 ></iframe>
               </div>
               <p className="text-center text-gray-600 mt-4">
-                <strong>Werkgebied:</strong> Heel Nederland
+                <strong>{t.contact.map.serviceArea}</strong> {t.contact.map.serviceAreaName}
               </p>
             </div>
           </div>

@@ -337,6 +337,133 @@ export const nlBE: TranslationKeys = {
     },
   },
 
+  about: {
+    hero: {
+      title: 'Bekabeling voor infrastructuur',
+      subtitle: 'Netwerk, audio, camera\'s – Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij leggen de bekabeling, jij als MSP/IT doet inregeling en beheer. Duidelijke scheiding, professioneel voorwerk en actief in België.',
+    },
+    whoWeAre: {
+      title: 'Wie we zijn',
+      paragraph1: 'SIGNAALMAKERS is specialist in bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen), camera\'s (PoE), patchkasten en certificering. Wij doen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en certificeren. MSP/IT doet inregeling en beheer van apparatuur.',
+      paragraph2: 'Wij werken in heel België voor MKB-bedrijven, kantoren, retail, zorg, onderwijs en magazijnen. Daarnaast zijn wij vaste bekabelingspartner voor MSP\'s, IT-dienstverleners en audio/beveiligingsbedrijven. Zij regelen apparatuur en configuratie – wij zorgen dat de bekabeling en aansluitpunten tot in detail op orde zijn.',
+    },
+    whatWeDeliver: {
+      title: 'Wat we leveren',
+      network: 'Netwerkbekabeling (Cat6/Cat6A) — 1-10 Gbps, PoE-geschikt',
+      audio: 'Audiokabels — gebalanceerde lijnen voor vaste installaties',
+      camera: 'Camera-bekabeling — PoE trajecten voor IP-camera\'s',
+      patchCabinets: 'Patchkasten — strak ingericht, kabelmanagement, labeling',
+      certification: 'Meten & Certificeren — meetrapporten, labels, schema\'s',
+    },
+    whatWeDoNot: {
+      title: 'Wat we nadrukkelijk NIET doen',
+      paragraph: 'Wij doen alleen het voorwerk – kabeltrajecten trekken, afmonteren, labelen en certificeren. Geen configuratie, geen apparatuur, geen beheer. Juist die duidelijke scheiding maakt ons dé bekabelingspartner voor MSP\'s, IT-specialisten, audiobedrijven en beveiligingsbedrijven: zij houden controle over apparatuur en configuratie, wij zorgen voor professionele bekabeling waar zij op kunnen vertrouwen.',
+      item1: 'Installatie van switches, routers, access points, speakers of camera\'s',
+      item2: 'Configuratie (VLAN\'s, IP-adressering, firewall, audio-afregeling)',
+      item3: 'Beheer, MSP-diensten, serverbeheer of monitoring',
+      item4: 'Apparatuur leveren of aanbevelingen over merken/modellen',
+    },
+    standsFor: {
+      title: 'SIGNAALMAKERS staat voor',
+      professional: {
+        title: 'Professionele bekabeling',
+        desc: 'Strakke, professionele bekabeling die technisch en optisch klopt. Netjes afgewerkt volgens gestructureerde bekabelingsnormen.',
+      },
+      clear: {
+        title: 'Duidelijke afspraken',
+        desc: 'Eerlijke communicatie, heldere documentatie en labeling. Elke kabel is terug te vinden.',
+      },
+      nationwide: {
+        title: 'Actief in België',
+        desc: 'Werkzaam door heel België — van Antwerpen tot Luik, van Brussel tot Gent.',
+      },
+    },
+    mspPartner: {
+      title: 'Partner voor MSP's en IT-dienstverleners',
+      subtitle: 'Veel MSP's, systeembeheerders en IT-bedrijven schakelen SIGNAALMAKERS in als specialist voor de fysieke laag. Wij leggen de kabels, jij als MSP/IT-partner doet de configuratie en het beheer.',
+      weEnsure: {
+        title: 'Wij zorgen dat:',
+        item1: 'De juiste datakabels op de juiste plek liggen',
+        item2: 'De patchkast netjes en logisch bekabeld is',
+        item3: 'Wifi-access points direct ingeprikt kunnen worden',
+        item4: 'Alles gelabeld en gedocumenteerd is',
+      },
+      result: {
+        title: 'Resultaat:',
+        paragraph: 'De verantwoordelijkheid blijft helder — jij als MSP of IT-partner beheert het netwerk, SIGNAALMAKERS regelt de kabels en aansluitingen. Geen overlap, geen gedoe, alleen professionele samenwerking.',
+      },
+    },
+    cta: {
+      title: 'Een solide basis onder jouw datanetwerk',
+      subtitle: 'Of het nu gaat om een nieuw kantoorpand, uitbreiding van een bestaande omgeving, wifi-bekabeling voor access points of het moderniseren van oude bekabeling: SIGNAALMAKERS regelt het voor je — in heel België.',
+      button: 'Wil je een stabiel en overzichtelijk netwerk? Neem contact op',
+    },
+  },
+
+  contact: {
+    hero: {
+      title: 'Neem contact op',
+      subtitle: 'Netwerk, audio of camera-bekabeling nodig in België? Wij doen het voorwerk – jij als MSP/IT doet inregeling. Cat6/Cat6A, PoE, gebalanceerde lijnen — gecertificeerd opgeleverd. Actief in heel België.',
+    },
+    form: {
+      title: 'Stuur ons een bericht',
+      name: 'Naam',
+      nameRequired: 'Naam *',
+      company: 'Bedrijf',
+      email: 'E-mail',
+      emailRequired: 'E-mail *',
+      phone: 'Telefoon',
+      address: 'Adres/Plaats',
+      customerType: 'Type organisatie *',
+      customerTypeMsp: 'MSP / IT-bedrijf',
+      customerTypeBusiness: 'Zakelijke klant',
+      subject: 'Onderwerp *',
+      message: 'Bericht *',
+      submitting: 'Bezig met verzenden...',
+      submit: 'Verstuur bericht',
+      successMessage: 'Bedankt voor je bericht! We nemen zo snel mogelijk contact op.',
+      errorMessage: 'Er is een fout opgetreden. Probeer het later opnieuw.',
+      errorMessageDetail: 'Er is een fout opgetreden bij het verzenden van je bericht. Neem direct contact met ons op via info@signaalmakers.nl',
+    },
+    details: {
+      title: 'Contactgegevens',
+      address: 'Adres',
+      addressLine1: 'Bredaseweg 108A',
+      addressLine2: '4902 NS Oosterhout',
+      phone: 'Telefoon',
+      phoneNumber: '+31 6 45251333',
+      email: 'E-mail',
+      emailAddress: 'info@signaalmakers.nl',
+      phoneCopied: '📋 Telefoonnummer gekopieerd: +31 6 45251333',
+      phoneCopiedDesktop: '📋 Telefoonnummer gekopieerd: +31 6 45251333\n\nJe kunt ons bellen via je mobiel.',
+      phoneAlert: '📱 Bel ons op: +31 6 45251333',
+    },
+    directContact: {
+      title: 'Direct contact',
+      callNow: 'Bel nu',
+      whatsappNow: 'WhatsApp nu',
+    },
+    openingHours: {
+      title: 'Openingstijden',
+      weekdays: 'Maandag - Vrijdag',
+      weekdaysTime: '09:00 - 17:00',
+      saturday: 'Zaterdag',
+      saturdayTime: 'Op afspraak',
+      sunday: 'Zondag',
+      sundayTime: 'Op afspraak',
+    },
+    disclaimer: {
+      title: 'Wij doen alleen het voorwerk',
+      paragraph1: 'SIGNAALMAKERS legt bekabeling voor infrastructuur: netwerk (Cat6/Cat6A), audio (gebalanceerde lijnen) en camera\'s (PoE). Wij trekken trajecten, monteren af, labelen en certificeren — geen configuratie, geen apparatuur, geen beheer.',
+      paragraph2: 'MSP/IT-partners doen inregeling en beheer van switches, routers, access points. Audio-installateurs sluiten speakers aan en regelen af. Beveiligingsbedrijven installeren camera\'s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partner).',
+    },
+    map: {
+      title: 'Locatie SIGNAALMAKERS - Bredaseweg 108A, Oosterhout',
+      serviceArea: 'Werkgebied:',
+      serviceAreaName: 'België en Nederland',
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Databekabeling & Netwerkbekabeling België (Cat6/Cat6A)',
@@ -357,6 +484,16 @@ export const nlBE: TranslationKeys = {
       title: 'Sectoren – Bekabeling voor infrastructuur België | SIGNAALMAKERS',
       description: 'Bekabeling voor infrastructuur in kantoren, retail, zorg, onderwijs en magazijnen in België. Cat6/Cat6A, PoE, gebalanceerde lijnen.',
       keywords: 'bekabeling kantoor belgië, retail bekabeling belgië, zorg infrastructuur belgië, onderwijs netwerk belgië, magazijn bekabeling belgië',
+    },
+    contact: {
+      title: 'Contact – Bekabeling voor infrastructuur België | SIGNAALMAKERS',
+      description: 'Netwerk, audio, camera-bekabeling in België. Cat6/Cat6A, PoE, gebalanceerde lijnen. Wij doen voorwerk — MSP/IT doet inregeling. Actief in België.',
+      keywords: 'contact bekabeling belgië, offerte infrastructuur bekabeling belgië, MSP partner contact belgië, Cat6A bekabeling aanvragen belgië',
+    },
+    about: {
+      title: 'Over Ons – Bekabeling voor infrastructuur België | SIGNAALMAKERS',
+      description: 'SIGNAALMAKERS: bekabeling voor infrastructuur in België. Netwerk, audio, camera\'s — Cat6/Cat6A, PoE, gebalanceerde lijnen. Voorwerk voor MSP/IT — actief in België.',
+      keywords: 'over signaalmakers belgië, bekabeling infrastructuur belgië, netwerkbekabeling specialist belgië, MSP partner bekabeling belgië, Cat6A bekabeling belgië',
     },
   },
 

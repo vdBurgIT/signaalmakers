@@ -337,6 +337,133 @@ export const en: TranslationKeys = {
     },
   },
 
+  about: {
+    hero: {
+      title: 'Infrastructure cabling',
+      subtitle: 'Network, audio, cameras – Cat6/Cat6A, PoE, balanced lines. We install the cabling, you as MSP/IT handle configuration and management. Clear separation, professional infrastructure work throughout the Netherlands and Belgium.',
+    },
+    whoWeAre: {
+      title: 'Who we are',
+      paragraph1: 'SIGNAALMAKERS specializes in infrastructure cabling: network (Cat6/Cat6A), audio (balanced lines), cameras (PoE), patch cabinets and certification. We do the groundwork – pulling cable runs, terminating, labeling and certifying. MSP/IT handles configuration and equipment management.',
+      paragraph2: 'We work throughout the Netherlands and Belgium for SME companies, offices, retail, healthcare, education and warehouses. We\'re also the permanent cabling partner for MSPs, IT service providers and audio/security companies. They handle equipment and configuration – we ensure cabling and connection points are perfect down to the last detail.',
+    },
+    whatWeDeliver: {
+      title: 'What we deliver',
+      network: 'Network Cabling (Cat6/Cat6A) — 1-10 Gbps, PoE-ready',
+      audio: 'Audio Cables — balanced lines for permanent installations',
+      camera: 'Camera Cabling — PoE runs for IP cameras',
+      patchCabinets: 'Patch Cabinets — professionally organized, cable management, labeling',
+      certification: 'Testing & Certification — test reports, labels, diagrams',
+    },
+    whatWeDoNot: {
+      title: 'What we explicitly do NOT do',
+      paragraph: 'We only do the groundwork – pulling cable runs, terminating, labeling and certifying. No configuration, no equipment, no management. This clear separation makes us the cabling partner for MSPs, IT specialists, audio and security companies: they maintain control over equipment and configuration, we provide professional cabling they can trust.',
+      item1: 'Installation of switches, routers, access points, speakers or cameras',
+      item2: 'Configuration (VLANs, IP addressing, firewall, audio calibration)',
+      item3: 'Management, MSP services, server management or monitoring',
+      item4: 'Equipment supply or recommendations on brands/models',
+    },
+    standsFor: {
+      title: 'SIGNAALMAKERS stands for',
+      professional: {
+        title: 'Professional cabling',
+        desc: 'Clean, professional cabling that\'s technically and visually correct. Neatly finished according to structured cabling standards.',
+      },
+      clear: {
+        title: 'Clear agreements',
+        desc: 'Honest communication, clear documentation and labeling. Every cable can be traced.',
+      },
+      nationwide: {
+        title: 'Netherlands & Belgium',
+        desc: 'Active throughout the Netherlands and Belgium — from Rotterdam to Groningen, Amsterdam to Maastricht, Antwerp to Ghent.',
+      },
+    },
+    mspPartner: {
+      title: 'Partner for MSPs and IT service providers',
+      subtitle: 'Many MSPs, system administrators and IT companies engage SIGNAALMAKERS as specialists for the physical layer. We install the cables, you as MSP/IT partner handle configuration and management.',
+      weEnsure: {
+        title: 'We ensure that:',
+        item1: 'The right data cables are in the right place',
+        item2: 'The patch cabinet is neatly and logically cabled',
+        item3: 'WiFi access points can be plugged in directly',
+        item4: 'Everything is labeled and documented',
+      },
+      result: {
+        title: 'Result:',
+        paragraph: 'Responsibilities remain clear — you as MSP or IT partner manage the network, SIGNAALMAKERS handles cables and connections. No overlap, no hassle, just professional collaboration.',
+      },
+    },
+    cta: {
+      title: 'A solid foundation for your data network',
+      subtitle: 'Whether it\'s a new office building, expanding an existing environment, WiFi cabling for access points or modernizing old cabling: SIGNAALMAKERS takes care of it for you — throughout the Netherlands and Belgium.',
+      button: 'Want a stable and well-organized network? Contact us',
+    },
+  },
+
+  contact: {
+    hero: {
+      title: 'Get in touch',
+      subtitle: 'Need network, audio or camera cabling? We handle the infrastructure – you as MSP/IT handle configuration. Cat6/Cat6A, PoE, balanced lines — certified delivery. Active in the Netherlands and Belgium.',
+    },
+    form: {
+      title: 'Send us a message',
+      name: 'Name',
+      nameRequired: 'Name *',
+      company: 'Company',
+      email: 'Email',
+      emailRequired: 'Email *',
+      phone: 'Phone',
+      address: 'Address/City',
+      customerType: 'Organization type *',
+      customerTypeMsp: 'MSP / IT Company',
+      customerTypeBusiness: 'Business Client',
+      subject: 'Subject *',
+      message: 'Message *',
+      submitting: 'Sending...',
+      submit: 'Send message',
+      successMessage: 'Thank you for your message! We\'ll get back to you as soon as possible.',
+      errorMessage: 'An error occurred. Please try again later.',
+      errorMessageDetail: 'An error occurred while sending your message. Please contact us directly at info@signaalmakers.nl',
+    },
+    details: {
+      title: 'Contact details',
+      address: 'Address',
+      addressLine1: 'Bredaseweg 108A',
+      addressLine2: '4902 NS Oosterhout',
+      phone: 'Phone',
+      phoneNumber: '+31 6 45251333',
+      email: 'Email',
+      emailAddress: 'info@signaalmakers.nl',
+      phoneCopied: '📋 Phone number copied: +31 6 45251333',
+      phoneCopiedDesktop: '📋 Phone number copied: +31 6 45251333\n\nYou can call us from your mobile.',
+      phoneAlert: '📱 Call us: +31 6 45251333',
+    },
+    directContact: {
+      title: 'Direct contact',
+      callNow: 'Call now',
+      whatsappNow: 'WhatsApp now',
+    },
+    openingHours: {
+      title: 'Opening hours',
+      weekdays: 'Monday - Friday',
+      weekdaysTime: '09:00 - 17:00',
+      saturday: 'Saturday',
+      saturdayTime: 'By appointment',
+      sunday: 'Sunday',
+      sundayTime: 'By appointment',
+    },
+    disclaimer: {
+      title: 'We only do infrastructure work',
+      paragraph1: 'SIGNAALMAKERS installs infrastructure cabling: network (Cat6/Cat6A), audio (balanced lines) and cameras (PoE). We pull cables, terminate, label and certify — no configuration, no equipment, no management.',
+      paragraph2: 'MSP/IT partners handle configuration and management of switches, routers, access points. Audio installers connect speakers and configure systems. Security companies install cameras and configure systems. Clear separation between infrastructure (us) and configuration (partner).',
+    },
+    map: {
+      title: 'Location SIGNAALMAKERS - Bredaseweg 108A, Oosterhout',
+      serviceArea: 'Service area:',
+      serviceAreaName: 'Netherlands & Belgium',
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Data Cabling & Network Cabling Netherlands & Belgium (Cat6/Cat6A)',
@@ -357,6 +484,16 @@ export const en: TranslationKeys = {
       title: 'Sectors – Infrastructure cabling | SIGNAALMAKERS',
       description: 'Infrastructure cabling for offices, retail, healthcare, education and warehouses. Cat6/Cat6A, PoE, balanced lines — Netherlands & Belgium.',
       keywords: 'office cabling, retail cabling, healthcare infrastructure, education network, warehouse cabling, Netherlands Belgium',
+    },
+    contact: {
+      title: 'Contact – Infrastructure cabling | SIGNAALMAKERS',
+      description: 'Network, audio, camera cabling. Cat6/Cat6A, PoE, balanced lines. We do infrastructure — MSP/IT handles configuration. Netherlands & Belgium.',
+      keywords: 'contact cabling, quote infrastructure cabling, MSP partner contact, Cat6A cabling request, Netherlands Belgium',
+    },
+    about: {
+      title: 'About Us – Infrastructure cabling | SIGNAALMAKERS',
+      description: 'SIGNAALMAKERS: infrastructure cabling. Network, audio, cameras — Cat6/Cat6A, PoE, balanced lines. Groundwork for MSP/IT — Netherlands & Belgium.',
+      keywords: 'about signaalmakers, infrastructure cabling, network cabling specialist, MSP cabling partner, Cat6A cabling Netherlands Belgium',
     },
   },
 
