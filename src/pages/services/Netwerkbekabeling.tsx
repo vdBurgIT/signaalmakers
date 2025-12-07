@@ -4,47 +4,16 @@ import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
 import { Cable, CheckCircle2, FileText, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
+import { useI18n } from '../../i18n/I18nContext';
 
 export default function Netwerkbekabeling() {
+  const { t, locale } = useI18n();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: 'Wat is het verschil tussen Cat6 en Cat6A?',
-      answer: 'Cat6A ondersteunt 10 Gbps tot 100 meter (~500 MHz) en heeft betere afscherming tegen EMI/crosstalk. Cat6 haalt 10 Gbps tot ongeveer 55 meter (~250 MHz). Voor professionele toepassingen adviseren we Cat6A vanwege de toekomstbestendigheid en betere PoE++ ondersteuning.'
-    },
-    {
-      question: 'Doen jullie ook de netwerkconfiguratie?',
-      answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de configuratie van switches, VLAN\u2019s en netwerkapparatuur. Dit zorgt voor duidelijke verantwoordelijkheden en professioneel eindresultaat.'
-    },
-    {
-      question: 'Leveren jullie ook meetrapporten?',
-      answer: 'Ja, alle trajecten worden functioneel getest. U ontvangt een overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Dit geeft zekerheid dat de bekabeling werkt zoals verwacht.'
-    },
-    {
-      question: 'Wat kost databekabeling per aansluitpunt?',
-      answer: 'De prijs hangt af van het aantal punten, kabellengte, gebouwtype en toegankelijkheid. Voor een indicatie: reken op €75-150 per punt inclusief materiaal, installatie en certificering. Vraag een offerte aan voor een exacte prijsopgave.'
-    },
-    {
-      question: 'Hoe lang duurt een bekabelingsproject?',
-      answer: 'Een standaard kantoor met 20-50 punten duurt 2-4 dagen. Grotere projecten plannen we in fasen. We werken buiten kantooruren indien gewenst om verstoring te minimaliseren.'
-    },
-    {
-      question: 'Werken jullie landelijk?',
-      answer: 'Ja, wij werken in heel Nederland. Van Amsterdam tot Groningen, van Rotterdam tot Maastricht. Voor grote projecten plannen we de werkzaamheden efficiënt in.'
-    },
-    {
-      question: 'Kunnen jullie bestaande bekabeling vervangen?',
-      answer: 'Ja, we kunnen oude Cat5/Cat5e bekabeling vervangen door Cat6A. We beoordelen eerst of we bestaande routes kunnen gebruiken of nieuwe trajecten moeten trekken voor optimale prestaties.'
-    },
-    {
-      question: 'Is Cat6A geschikt voor PoE?',
-      answer: 'Ja, Cat6A ondersteunt PoE++ (tot 100W per poort), ideaal voor IP-telefoons, access points, IP-camera\u2019s en andere PoE-apparaten. De betere afscherming voorkomt opwarming bij hoge PoE-belasting.'
-    }
-  ];
+  const faqs = t('services.network.faqs.items');
 
   const faqSchema = {
-    mainEntity: faqs.map(faq => ({
+    mainEntity: faqs.map((faq: { question: string; answer: string }) => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: {
@@ -54,17 +23,19 @@ export default function Netwerkbekabeling() {
     }))
   };
 
+  const baseUrl = locale === 'nl-NL' ? 'https://signaalmakers.nl' : locale === 'nl-BE' ? 'https://signaalmakers.nl/nl-be' : 'https://signaalmakers.nl/en';
+
   return (
     <>
       <SEO
-        title="Databekabeling & Netwerkbekabeling Cat6/Cat6A | SIGNAALMAKERS"
-        description="Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A). Professionele installatie met patchkasten, labeling en certificering. Landelijk actief."
-        keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering, patchkasten, meetrapporten"
-        url="https://signaalmakers.nl/diensten/netwerkbekabeling"
+        title={t('services.network.seo.title')}
+        description={t('services.network.seo.description')}
+        keywords={t('services.network.seo.keywords')}
+        url={`${baseUrl}/diensten/netwerkbekabeling`}
         breadcrumbs={[
-          { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' },
-          { name: 'Netwerkbekabeling', item: 'https://signaalmakers.nl/diensten/netwerkbekabeling' }
+          { name: t('nav.home'), item: `${baseUrl}/` },
+          { name: t('nav.services'), item: `${baseUrl}/diensten` },
+          { name: t('services.network.shortTitle'), item: `${baseUrl}/diensten/netwerkbekabeling` }
         ]}
       />
       <StructuredData type="LocalBusiness" />
@@ -74,10 +45,10 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Databekabeling &amp; netwerkbekabeling die presteert
+              {t('services.network.hero.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Praktische oplevercheck: functioneel testen, labels, kabelplan. Wij doen het voorwerk — MSP/IT doet inregeling.
+              {t('services.network.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -89,86 +60,52 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Wat we doen
+              {t('services.network.whatWeDo.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Cat6/Cat6A bekabeling voor 1-10 Gbps. Werkplekken en ruimtes naar de <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkast</Link>. Aandacht voor EMI/crosstalk, PoE-geschikt en strakke routeplanning. <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>Praktische oplevercheck</Link> met meetrapporten en kabelplan.
+              {t('services.network.whatWeDo.intro')} <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>{t('services.patchCabinets.title').toLowerCase()}</Link>. <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>{t('services.certification.heroTitle')}</Link>.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="bg-gray-50 rounded-xl p-8">
                 <Cable className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Wat we leveren</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.network.whatWeDo.deliverables.title')}</h3>
                 <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Kabels trekken van werkplek/ruimte naar patchkast</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Cat6, Cat6A of Cat7 bekabeling</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Afmonteren van aansluitpunten en patchpanelen</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Bundelen en netjes wegwerken</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Labelen van elke kabel</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Testen en opleveren met rapport</span>
-                  </li>
+                  {t('services.network.whatWeDo.deliverables.items').map((item: string, index: number) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-8">
                 <FileText className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Voor wie</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.network.whatWeDo.forWho.title')}</h3>
                 <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span><Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</Link> die monteurs en betrouwbare bekabeling nodig hebben</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Bedrijven die hun netwerk uitbreiden of vernieuwen</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Installateurs die het kabelwerk willen uitbesteden</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Kantoren, datacenters en bedrijfspanden</span>
-                  </li>
+                  {t('services.network.whatWeDo.forWho.items').map((item: string, index: number) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                      <span>{index === 0 ? <><Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</Link> die monteurs en betrouwbare bekabeling nodig hebben</> : item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8 mb-16">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Cat6 of Cat6A – wat is het verschil?</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.network.whatWeDo.cat6Info.title')}</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Cat6A: 10 Gbps tot 100 meter (~500 MHz). Cat6: 10 Gbps tot ~55 meter (~250 MHz). Cat6A is toekomstbestendiger en beter beschermd tegen EMI/crosstalk. Voor professionele installaties adviseren we meestal Cat6A.
+                {t('services.network.whatWeDo.cat6Info.intro')}
               </p>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Cat6A: 10 Gbps tot 100m, ~500 MHz, geschikt voor PoE++</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Cat6: 10 Gbps tot ~55m, ~250 MHz, geschikt voor PoE+</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span>Toekomstbestendig: aandacht voor EMI/crosstalk en afstanden</span>
-                </li>
+                {t('services.network.whatWeDo.cat6Info.items').map((item: string, index: number) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -179,21 +116,17 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Waarom met ons werken?
+              {t('services.network.whyUs.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              Eén standaard manier van werken. Geen gedoe achteraf. Jouw <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP</Link> kan direct door met de configuratie.
+              {t('services.network.whyUs.subtitle')} <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP</Link>.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { title: 'Eén standaard', desc: 'We werken altijd op dezelfde manier. Netjes, logisch en volgens afspraak.' },
-                { title: 'Geen gedoe', desc: 'Alles wordt getest en gedocumenteerd. Als het niet werkt, horen we het graag.' },
-                { title: 'MSP-proof', desc: 'Kabels zijn gelabeld, gedocumenteerd en klaar voor configuratie door jouw IT-partner.' },
-              ].map((item, index) => (
+              {t('services.network.whyUs.items').map((item: { title: string; description: string }, index: number) => (
                 <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
                   <h3 className="text-xl font-bold text-[#0E243A] mb-3">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -205,10 +138,10 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              Veelgestelde vragen
+              {t('services.network.faqs.title')}
             </h2>
             <div className="space-y-4">
-              {faqs.map((faq, index) => (
+              {faqs.map((faq: { question: string; answer: string }, index: number) => (
                 <div key={index} className="bg-gray-50 rounded-lg overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
@@ -237,23 +170,23 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Klaar voor bekabeling?
+              {t('services.network.cta.title')}
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.
+              {t('services.network.cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/abonnementen"
                 className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Bekijk abonnementen
+                {t('services.network.cta.button1')}
               </Link>
               <Link
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg"
               >
-                Vraag offerte aan
+                {t('services.network.cta.button2')}
               </Link>
             </div>
           </div>

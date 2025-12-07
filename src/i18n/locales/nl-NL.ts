@@ -134,8 +134,109 @@ export const nlNL = {
       title: 'Netwerkbekabeling (Cat6/Cat6A)',
       shortTitle: 'Netwerkbekabeling',
       description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Functioneel getest met meetrapporten, labels en kabelplan.',
-      heroTitle: 'Databekabeling & netwerkbekabeling die presteert',
-      heroSubtitle: 'Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Praktische oplevercheck: functioneel testen, labels, kabelplan. Wij doen het voorwerk — MSP/IT doet inregeling.',
+      seo: {
+        title: 'Databekabeling & Netwerkbekabeling Cat6/Cat6A | SIGNAALMAKERS',
+        description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A). Professionele installatie met patchkasten, labeling en certificering. Landelijk actief.',
+        keywords: 'databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering, patchkasten, meetrapporten',
+      },
+      hero: {
+        title: 'Databekabeling & netwerkbekabeling die presteert',
+        subtitle: 'Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Praktische oplevercheck: functioneel testen, labels, kabelplan. Wij doen het voorwerk — MSP/IT doet inregeling.',
+      },
+      whatWeDo: {
+        title: 'Wat we doen',
+        intro: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Werkplekken en ruimtes naar de patchkast. Aandacht voor EMI/crosstalk, PoE-geschikt en strakke routeplanning. Praktische oplevercheck met meetrapporten en kabelplan.',
+        deliverables: {
+          title: 'Wat we leveren',
+          items: [
+            'Kabels trekken van werkplek/ruimte naar patchkast',
+            'Cat6, Cat6A of Cat7 bekabeling',
+            'Afmonteren van aansluitpunten en patchpanelen',
+            'Bundelen en netjes wegwerken',
+            'Labelen van elke kabel',
+            'Testen en opleveren met rapport',
+          ],
+        },
+        forWho: {
+          title: 'Voor wie',
+          items: [
+            'MSP\'s die monteurs en betrouwbare bekabeling nodig hebben',
+            'Bedrijven die hun netwerk uitbreiden of vernieuwen',
+            'Installateurs die het kabelwerk willen uitbesteden',
+            'Kantoren, datacenters en bedrijfspanden',
+          ],
+        },
+        cat6Info: {
+          title: 'Cat6 of Cat6A – wat is het verschil?',
+          intro: 'Cat6A: 10 Gbps tot 100 meter (~500 MHz). Cat6: 10 Gbps tot ~55 meter (~250 MHz). Cat6A is toekomstbestendiger en beter beschermd tegen EMI/crosstalk. Voor professionele installaties adviseren we meestal Cat6A.',
+          items: [
+            'Cat6A: 10 Gbps tot 100m, ~500 MHz, geschikt voor PoE++',
+            'Cat6: 10 Gbps tot ~55m, ~250 MHz, geschikt voor PoE+',
+            'Toekomstbestendig: aandacht voor EMI/crosstalk en afstanden',
+          ],
+        },
+      },
+      whyUs: {
+        title: 'Waarom met ons werken?',
+        subtitle: 'Eén standaard manier van werken. Geen gedoe achteraf. Jouw MSP kan direct door met de configuratie.',
+        items: [
+          {
+            title: 'Eén standaard',
+            description: 'We werken altijd op dezelfde manier. Netjes, logisch en volgens afspraak.',
+          },
+          {
+            title: 'Geen gedoe',
+            description: 'Alles wordt getest en gedocumenteerd. Als het niet werkt, horen we het graag.',
+          },
+          {
+            title: 'MSP-proof',
+            description: 'Kabels zijn gelabeld, gedocumenteerd en klaar voor configuratie door jouw IT-partner.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Wat is het verschil tussen Cat6 en Cat6A?',
+            answer: 'Cat6A ondersteunt 10 Gbps tot 100 meter (~500 MHz) en heeft betere afscherming tegen EMI/crosstalk. Cat6 haalt 10 Gbps tot ongeveer 55 meter (~250 MHz). Voor professionele toepassingen adviseren we Cat6A vanwege de toekomstbestendigheid en betere PoE++ ondersteuning.',
+          },
+          {
+            question: 'Doen jullie ook de netwerkconfiguratie?',
+            answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de configuratie van switches, VLAN's en netwerkapparatuur. Dit zorgt voor duidelijke verantwoordelijkheden en professioneel eindresultaat.',
+          },
+          {
+            question: 'Leveren jullie ook meetrapporten?',
+            answer: 'Ja, alle trajecten worden functioneel getest. U ontvangt een overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Dit geeft zekerheid dat de bekabeling werkt zoals verwacht.',
+          },
+          {
+            question: 'Wat kost databekabeling per aansluitpunt?',
+            answer: 'De prijs hangt af van het aantal punten, kabellengte, gebouwtype en toegankelijkheid. Voor een indicatie: reken op €75-150 per punt inclusief materiaal, installatie en certificering. Vraag een offerte aan voor een exacte prijsopgave.',
+          },
+          {
+            question: 'Hoe lang duurt een bekabelingsproject?',
+            answer: 'Een standaard kantoor met 20-50 punten duurt 2-4 dagen. Grotere projecten plannen we in fasen. We werken buiten kantooruren indien gewenst om verstoring te minimaliseren.',
+          },
+          {
+            question: 'Werken jullie landelijk?',
+            answer: 'Ja, wij werken in heel Nederland. Van Amsterdam tot Groningen, van Rotterdam tot Maastricht. Voor grote projecten plannen we de werkzaamheden efficiënt in.',
+          },
+          {
+            question: 'Kunnen jullie bestaande bekabeling vervangen?',
+            answer: 'Ja, we kunnen oude Cat5/Cat5e bekabeling vervangen door Cat6A. We beoordelen eerst of we bestaande routes kunnen gebruiken of nieuwe trajecten moeten trekken voor optimale prestaties.',
+          },
+          {
+            question: 'Is Cat6A geschikt voor PoE?',
+            answer: 'Ja, Cat6A ondersteunt PoE++ (tot 100W per poort), ideaal voor IP-telefoons, access points, IP-camera's en andere PoE-apparaten. De betere afscherming voorkomt opwarming bij hoge PoE-belasting.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor bekabeling?',
+        subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
     audio: {
       title: 'Audiokabels',
