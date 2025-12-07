@@ -4,47 +4,17 @@ import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
 import { FileCheck, CheckCircle2, ClipboardList, BarChart3, ChevronDown, ChevronUp } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
+import { useI18n } from '../../i18n/I18nContext';
 
 export default function Certificeren() {
+  const { t, locale } = useI18n();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: 'Wat verstaan jullie onder "certificeren"?',
-      answer: 'Onder certificeren verstaan wij een praktische oplevercheck. We testen elke aangelegde kabel met apparatuur, labelen de verbindingen en leveren een overzichtelijk opleverrapport met kabelplan. Zo weet je zeker dat alles functioneert en traceerbaar is gedocumenteerd.'
-    },
-    {
-      question: 'Waarom is deze oplevercheck belangrijk?',
-      answer: 'Zonder testen en documentatie weet niemand of de bekabeling echt werkt zoals verwacht. Een praktische oplevercheck voorkomt discussies achteraf, geeft transparantie over kwaliteit en versnelt troubleshooting. Voor MSP\u2019s en IT-beheerders is het essentieel bewijs dat de infrastructuur betrouwbaar is.'
-    },
-    {
-      question: 'Hoe testen jullie de kabels?',
-      answer: 'We testen elk kabeltraject functioneel met professionele meetapparatuur. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Elk traject krijgt een pass/fail status. Alle meetrapporten vermelden de meetwaarden, kabelnummers en locaties voor tracering.'
-    },
-    {
-      question: 'Wat staat er in een meetrapport?',
-      answer: 'Elk meetrapport bevat kabellengte, doorvoersnelheid, signaalverlies (insertion loss), reflectie (return loss), crosstalk en afmonteringskwaliteit. Ook zie je of het traject voldoet aan de norm (pass/fail). Rapporten bevatten kabelnummers en locaties voor tracering.'
-    },
-    {
-      question: 'Hoe lang duurt het testen en certificeren?',
-      answer: 'Het testen van een enkel traject duurt 2-5 minuten, afhankelijk van lengte en complexiteit. Voor een standaardinstallatie met 20-50 punten rekenen we 1-2 uur testwerk. Het labelen en documenteren neemt extra tijd in beslag, vaak gelijk aan de testtijd.'
-    },
-    {
-      question: 'Krijg ik ook een digitale kopie van de rapporten?',
-      answer: 'Ja, alle meetrapporten worden digitaal opgeleverd als PDF. Ook ontvang je schema\u2019s, labels en overzichten in digitale vorm. Zo kun je documentatie delen met MSP/IT-partners en archiveren voor toekomstig beheer en uitbreidingen.'
-    },
-    {
-      question: 'Wat als een kabel niet voldoet aan de norm?',
-      answer: 'Als een traject faalt, zoeken we de oorzaak (slechte afmontering, beschadiging, te lang traject). We herstellen het probleem en testen opnieuw tot het traject voldoet. Pas daarna leveren we op — alleen trajecten die aan de norm voldoen worden geaccepteerd.'
-    },
-    {
-      question: 'Zijn de kosten van deze oplevercheck inbegrepen?',
-      answer: 'Ja, functioneel testen en documenteren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij — zo garanderen we kwaliteit en transparantie bij elke oplevering.'
-    }
-  ];
+  const faqs = t('services.certification.faqs.items');
+  const baseUrl = locale === 'nl-NL' ? 'https://signaalmakers.nl' : locale === 'nl-BE' ? 'https://signaalmakers.nl/nl-be' : 'https://signaalmakers.nl/en';
 
   const faqSchema = {
-    mainEntity: faqs.map(faq => ({
+    mainEntity: faqs.map((faq: { question: string; answer: string }) => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: {
@@ -57,14 +27,14 @@ export default function Certificeren() {
   return (
     <>
       <SEO
-        title="Meten & Certificeren – Praktische oplevercheck | SIGNAALMAKERS"
-        description="Functioneel testen, labelen en opleveren met meetrapporten. Praktische oplevercheck voor traceerbaar beheer — klaar voor MSP/IT."
-        keywords="meten certificeren, meetrapporten, bekabeling testen, opleverdossier, labeling, oplevercheck, functioneel testen"
-        url="https://signaalmakers.nl/diensten/certificeren"
+        title={t('services.certification.seo.title')}
+        description={t('services.certification.seo.description')}
+        keywords={t('services.certification.seo.keywords')}
+        url={`${baseUrl}/diensten/certificeren`}
         breadcrumbs={[
-          { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' },
-          { name: 'Meten & Certificeren', item: 'https://signaalmakers.nl/diensten/certificeren' }
+          { name: t('nav.home'), item: `${baseUrl}/` },
+          { name: t('nav.services'), item: `${baseUrl}/diensten` },
+          { name: t('services.certification.shortTitle'), item: `${baseUrl}/diensten/certificeren` }
         ]}
       />
       <StructuredData type="LocalBusiness" />
@@ -74,10 +44,10 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Meten & Certificeren
+              {t('services.certification.hero.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema's en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.
+              {t('services.certification.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -89,80 +59,58 @@ export default function Certificeren() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Wat je krijgt
+              {t('services.certification.whatYouGet.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Opleverdossier met meetrapporten, schema's en labels. Bewijs dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>bekabeling</Link> werkt en klaar is voor beheer door MSP/IT.
+              {t('services.certification.whatYouGet.description')}
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="bg-gray-50 rounded-xl p-8">
                 <BarChart3 className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Functioneel testen per traject</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.certification.whatYouGet.testing.title')}</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Elk kabeltraject wordt functioneel getest met professionele meetapparatuur. We controleren of de kabel presteert zoals verwacht en geschikt is voor gebruik.
+                  {t('services.certification.whatYouGet.testing.description')}
                 </p>
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Doorvoer en bandbreedte</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Integriteit en signaalverlies</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Afmontering en connecties</span>
-                  </li>
+                  {(t('services.certification.whatYouGet.testing.items') as string[]).map((item: string, index: number) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-8">
                 <ClipboardList className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Labels en schema's</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.certification.whatYouGet.labeling.title')}</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Alle kabels gelabeld en genummerd. Schema's en overzichten voor traceerbaar beheer. Alles gedocumenteerd en klaar voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link>.
+                  {t('services.certification.whatYouGet.labeling.description')}
                 </p>
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Consistente labeling</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Logische nummeringsschema's</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Traceerbaar en beheersbaar</span>
-                  </li>
+                  {(t('services.certification.whatYouGet.labeling.items') as string[]).map((item: string, index: number) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-8 md:col-span-2">
                 <FileCheck className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Opleverdossier</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.certification.whatYouGet.deliverables.title')}</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Transparant en traceerbaar. Bewijs dat alle trajecten functioneren en klaar zijn voor beheer door MSP/IT.
+                  {t('services.certification.whatYouGet.deliverables.description')}
                 </p>
                 <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Meetrapporten per traject</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Labels en nummeringsschema's</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Kabelplan en documentatie</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                    <span>Functionele testresultaten per kabel</span>
-                  </li>
+                  {(t('services.certification.whatYouGet.deliverables.items') as string[]).map((item: string, index: number) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -174,33 +122,23 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              Waarom een praktische oplevercheck?
+              {t('services.certification.why.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              Zonder testen en documentatie weet niemand of de bekabeling echt werkt. Met een opleverdossier is alles transparant, traceerbaar en klaar voor beheer.
+              {t('services.certification.why.description')}
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">
-                  Vertrouwen voor <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP/IT</Link>
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Bewijs dat alles voldoet aan de norm. Labels en schema&apos;s maken beheer eenvoudig en traceerbaar.
-                </p>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Minder nazorg</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Fouten worden vooraf opgespoord en opgelost. Geen discussie achteraf over wat wel of niet werkt.
-                </p>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Transparantie</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Meetrapporten en documentatie geven volledige transparantie over de kwaliteit van de bekabeling.
-                </p>
-              </div>
+              {(t('services.certification.why.benefits') as Array<{ title: string; desc: string }>).map((item: { title: string; desc: string }, index: number) => (
+                <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
+                  <h3 className="text-xl font-bold text-[#0E243A] mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -210,9 +148,9 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">Standaard bij elk traject</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.certification.standard.title')}</h3>
               <p className="text-gray-700 leading-relaxed">
-                Deze praktische oplevercheck is standaard bij elk bekabelingstraject. Geen extra kosten. Het hoort er gewoon bij – zo weet je zeker dat de <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>infrastructuur</Link> functioneert en klaar is voor beheer door MSP/IT.
+                {t('services.certification.standard.description')}
               </p>
             </div>
           </div>
@@ -223,10 +161,10 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              Veelgestelde vragen
+              {t('services.certification.faqs.title')}
             </h2>
             <div className="space-y-4">
-              {faqs.map((faq, index) => (
+              {faqs.map((faq: { question: string; answer: string }, index: number) => (
                 <div key={index} className="bg-white rounded-lg overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
@@ -255,23 +193,23 @@ export default function Certificeren() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Klaar voor professionele oplevering?
+              {t('services.certification.cta.title')}
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen. Alle trajecten worden functioneel getest, gelabeld en gedocumenteerd.
+              {t('services.certification.cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/abonnementen"
                 className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Bekijk abonnementen
+                {t('services.certification.cta.button1')}
               </Link>
               <Link
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg"
               >
-                Neem contact op
+                {t('services.certification.cta.button2')}
               </Link>
             </div>
           </div>

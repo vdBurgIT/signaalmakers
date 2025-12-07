@@ -203,7 +203,7 @@ export const nlNL = {
           },
           {
             question: 'Doen jullie ook de netwerkconfiguratie?',
-            answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de configuratie van switches, VLAN's en netwerkapparatuur. Dit zorgt voor duidelijke verantwoordelijkheden en professioneel eindresultaat.',
+            answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de configuratie van switches, VLAN\'s en netwerkapparatuur. Dit zorgt voor duidelijke verantwoordelijkheden en professioneel eindresultaat.',
           },
           {
             question: 'Leveren jullie ook meetrapporten?',
@@ -227,7 +227,7 @@ export const nlNL = {
           },
           {
             question: 'Is Cat6A geschikt voor PoE?',
-            answer: 'Ja, Cat6A ondersteunt PoE++ (tot 100W per poort), ideaal voor IP-telefoons, access points, IP-camera's en andere PoE-apparaten. De betere afscherming voorkomt opwarming bij hoge PoE-belasting.',
+            answer: 'Ja, Cat6A ondersteunt PoE++ (tot 100W per poort), ideaal voor IP-telefoons, access points, IP-camera\'s en andere PoE-apparaten. De betere afscherming voorkomt opwarming bij hoge PoE-belasting.',
           },
         ],
       },
@@ -238,24 +238,157 @@ export const nlNL = {
         button2: 'Vraag offerte aan',
       },
     },
-    audio: {
-      title: 'Audiokabels',
-      description: 'Audiokabels voor professionele installaties. Storingsvrije routes, netjes afgewerkt en gedocumenteerd. Infra-voorwerk voor audio-partners.',
+    patchCabinets: {
+      title: 'Patchkasten',
+      shortTitle: 'Patchkasten',
+      description: 'Professionele patchkasten met doordacht kabelmanagement. Labels, schema\'s en overzichtelijke indeling. Klaar voor MSP/IT-beheer.',
+      seo: {
+        title: 'Patchkast opbouwen en optimaliseren - Overzichtelijk en beheersbaar | SIGNAALMAKERS',
+        description: 'Patchkast opruimen, opbouwen en optimaliseren. Oude rommel eruit, alles netjes gebundeld, gelabeld en gedocumenteerd. Voor MSP\'s en bedrijven in heel Nederland.',
+        keywords: 'patchkast opbouwen, patchkast opruimen, kabelmanagement, patchpanel, serverschakel, MSP patchkast',
+      },
+      hero: {
+        title: 'Patchkast-opbouw & optimalisatie',
+        subtitle: 'De patchkast is het hart van het netwerk. Als dat niet klopt, heb je problemen. Wij maken het netjes, logisch en beheersbaar.',
+      },
+      whatWeDo: {
+        title: 'Wat we doen',
+        intro: 'Patchkasten netjes inrichten of opruimen. Kabelmanagement, patchpanelen, labels en documentatie. Alles volgens best-practice, traceerbaar en MSP-proof.',
+      },
+      whyUs: {
+        title: 'Waarom een nette patchkast?',
+        subtitle: 'Troubleshooting is 10x sneller als je direct ziet waar kabels naartoe gaan. Goed kabelmanagement bespaart uren werk en voorkomt fouten.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Wat is het verschil tussen een patchkast en een serverkast?',
+            answer: 'Een patchkast bevat voornamelijk patchpanelen, switches en kabelmanagement voor netwerkbekabeling. Een serverkast bevat servers en heeft meer focus op koeling, voeding en beveiliging. Beide gebruiken vaak dezelfde 19-inch rack standaard maar met verschillende inrichting.',
+          },
+          {
+            question: 'Hoeveel ruimte heb ik nodig voor een patchkast?',
+            answer: 'Dat hangt af van het aantal aansluitpunten. Voor 24-48 poorten volstaat vaak een 12U wandkast. Grotere installaties (100+ punten) vereisen 42U vloerkasten. We adviseren altijd 30% extra ruimte voor toekomstige uitbreidingen en kabelmanagement.',
+          },
+          {
+            question: 'Wat is kabelmanagement en waarom is het belangrijk?',
+            answer: 'Kabelmanagement zijn systemen (kanalen, ringen, bundels) die kabels netjes en gestructureerd houden. Het voorkomt verwarring, beschadiging en airflow-problemen. Goed kabelmanagement bespaart uren werk bij onderhoud en uitbreidingen omdat alles traceerbaar blijft.',
+          },
+          {
+            question: 'Leveren jullie ook de patchkast zelf?',
+            answer: 'Nee, wij richten bestaande kasten in of werken met door jouw/MSP geleverde kasten. We adviseren wel over afmetingen, specs en merken. Dit houdt onze focus op vakmanschap: opbouw, bekabeling, labeling en documentatie.',
+          },
+          {
+            question: 'Hoe belangrijk is airflow in een patchkast?',
+            answer: 'Zeer belangrijk. Slechte airflow leidt tot oververhitting van switches en apparatuur, wat levensduur verkort en storingen veroorzaakt. We houden rekening met voor/achter routing, ventilatie-eisen en warmteafvoer bij opbouw van de kast.',
+          },
+          {
+            question: 'Kunnen jullie bestaande patchkasten opruimen en reorganiseren?',
+            answer: 'Ja, dat is een van onze meest gevraagde diensten. We verwijderen dode kabels, reorganiseren patchpanelen, verbeteren kabelmanagement en documenteren alles opnieuw. Vaak werken we buiten kantooruren om verstoring te minimaliseren.',
+          },
+          {
+            question: 'Wat kost het opruimen van een patchkast?',
+            answer: 'Dat hangt af van de complexiteit en omvang. Een standaard 24-poorts kast opruimen en reorganiseren kost €400-800. Grotere kasten (100+ poorten) of zeer vervuilde situaties kosten meer. Vraag een offerte aan voor een exacte prijsopgave.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor een nette patchkast?',
+        subtitle: 'Laat ons je patchkast opbouwen of opruimen. Alles netjes, logisch en gedocumenteerd.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
     camera: {
       title: 'Camera-bekabeling',
+      shortTitle: 'Camera-bekabeling',
       description: 'PoE-bekabeling voor IP-camera\'s. Binnen en buiten, netjes weggewerkt. Wij doen kabels, beveiligingsbedrijf doet camera\'s.',
+      seo: {
+        title: 'Camera-bekabeling – PoE trajecten voor IP-camera\'s | SIGNAALMAKERS',
+        description: 'PoE-bekabeling voor IP-camera\'s. UTP-kabels trekken, afmonteren en labelen. Binnen en buiten. Wij doen kabels, beveiligingsbedrijf doet camera\'s.',
+        keywords: 'camera bekabeling, IP camera bekabeling, PoE camera bekabeling, beveiligingscamera bekabeling',
+      },
+      hero: {
+        title: 'Camera-bekabeling voor IP-camera\'s',
+        subtitle: 'PoE-bekabeling voor IP-camera\'s. Cat6/Cat6A trajecten binnen en buiten. Wij trekken kabels, jouw beveiligingspartner installeert camera\'s.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Installeren jullie ook de camera\'s?',
+            answer: 'Nee, wij doen alleen de bekabeling: UTP-kabels trekken, afmonteren, testen en labelen. Camera-installatie, configuratie en inregeling doet jouw beveiligingsbedrijf. Dit zorgt voor duidelijke scheiding van verantwoordelijkheden.',
+          },
+          {
+            question: 'Welke kabel gebruik je voor IP-camera\'s?',
+            answer: 'Voor IP-camera\'s gebruiken we Cat6 of Cat6A UTP-kabels. Deze ondersteunen PoE (Power over Ethernet) waardoor de camera stroom én data via één kabel krijgt. Voor buitentrajecten gebruiken we outdoor-rated kabels met extra bescherming.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor camera-bekabeling?',
+        subtitle: 'Laat ons de PoE-trajecten aanleggen voor je camera\'s.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
-    patchCabinets: {
-      title: 'Patchkasten',
-      description: 'Professionele patchkasten met doordacht kabelmanagement. Labels, schema\'s en overzichtelijke indeling. Klaar voor MSP/IT-beheer.',
+    audio: {
+      title: 'Audiokabels',
+      shortTitle: 'Audiokabels',
+      description: 'Audiokabels voor professionele installaties. Storingsvrije routes, netjes afgewerkt en gedocumenteerd. Infra-voorwerk voor audio-partners.',
+      seo: {
+        title: 'Audiokabels – trek/afmontage voor vaste installaties | SIGNAALMAKERS',
+        description: 'Trek en afmontage van audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsvrije routes, netjes afgewerkt. Infra-voorwerk voor audio-installateurs.',
+        keywords: 'audiokabels, audio bekabeling, gebalanceerde lijnen, XLR bekabeling, audio installatie',
+      },
+      hero: {
+        title: 'Audiokabels voor vaste installaties',
+        subtitle: 'Trek en afmontage van audiokabels. Gebalanceerde lijnen, storingsvrije routes, netjes afgewerkt. Wij doen infra, audio-installateur doet apparatuur.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Doen jullie ook audio-apparatuur installeren?',
+            answer: 'Nee, wij doen alleen het trekken en afmonteren van audiokabels. Audio-apparatuur, inregeling en afstemming doet jouw audio-installateur. Wij zorgen voor de infrastructuur.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor audio-bekabeling?',
+        subtitle: 'Laat ons de audiokabels aanleggen voor je installatie.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
     certification: {
       title: 'Meten & Certificeren',
       shortTitle: 'Certificeren',
       description: 'Praktische oplevercheck: functioneel getest, gelabeld en opgeleverd met kabelplan. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
-      heroTitle: 'Meten & Certificeren',
-      heroSubtitle: 'Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema\'s en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.',
+      seo: {
+        title: 'Meten & Certificeren – Praktische oplevercheck | SIGNAALMAKERS',
+        description: 'Praktische oplevercheck: elke kabel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten en kabelplan. Transparant en traceerbaar.',
+        keywords: 'bekabeling certificeren, kabel testen, meetrapporten, oplevercheck, kabelplan',
+      },
+      hero: {
+        title: 'Meten & Certificeren',
+        subtitle: 'Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema\'s en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Wat is het verschil tussen functioneel testen en certificeren?',
+            answer: 'Functioneel testen controleert of de kabel werkt en data doorgeeft. Certificeren meet exact de prestaties (bandbreedte, crosstalk, verliezen) en vergelijkt deze met de norm. Wij doen standaard functioneel testen; volledige certificering op aanvraag.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor gecertificeerde oplevering?',
+        subtitle: 'Laat ons je bekabeling testen en documenteren.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
   },
 
