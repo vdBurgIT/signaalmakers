@@ -4,8 +4,10 @@ import StructuredData from '../components/StructuredData';
 import { ArrowLeft } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { getBlogPostBySlug, getRelatedPosts } from '../data/blogPosts';
+import { useTranslation } from '../i18n';
 
 export default function BlogPost() {
+  const t = useTranslation();
   const { slug } = useParams();
 
   const post = slug ? getBlogPostBySlug(slug) : undefined;
@@ -64,7 +66,7 @@ export default function BlogPost() {
           <div className="max-w-4xl mx-auto">
             <Link to="/blog" className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-6">
               <ArrowLeft className="w-4 h-4" />
-              Terug naar blog
+              {t.blog.backToBlog}
             </Link>
             <div className="flex items-center gap-4 mb-4">
               <span className="text-sm font-semibold text-[#FF6A00]">{post.category}</span>
@@ -91,7 +93,7 @@ export default function BlogPost() {
 
             {relatedPosts.length > 0 && (
               <div className="mt-12 pt-12 border-t border-gray-200">
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-6">Gerelateerde artikelen</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-6">{t.blog.relatedArticles}</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {relatedPosts.map((relatedPost) => (
                     <Link

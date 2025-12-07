@@ -559,6 +559,8 @@ export const en: TranslationKeys = {
       subtitle: 'Tips, explanations and insights about cabling and installations',
     },
     readMore: 'Read more',
+    backToBlog: 'Back to blog',
+    relatedArticles: 'Related articles',
   },
 
   seo: {

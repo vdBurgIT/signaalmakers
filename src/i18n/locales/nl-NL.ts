@@ -557,6 +557,8 @@ export const nlNL = {
       subtitle: 'Tips, uitleg en achtergronden over bekabeling en installaties',
     },
     readMore: 'Lees meer',
+    backToBlog: 'Terug naar blog',
+    relatedArticles: 'Gerelateerde artikelen',
   },
 
   seo: {
