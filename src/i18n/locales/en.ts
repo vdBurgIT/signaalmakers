@@ -136,27 +136,261 @@ export const en: TranslationKeys = {
       title: 'Network Cabling (Cat6/Cat6A)',
       shortTitle: 'Network Cabling',
       description: 'Cat6/Cat6A cabling for 1-10 Gbps. Right category, distances and bandwidth. Focus on EMI/crosstalk, PoE and professional patch cabinets. Functionally tested with test reports, labels and cable plans.',
-      heroTitle: 'Data cabling & network cabling that performs',
-      heroSubtitle: 'Professional data cabling and network cabling with Cat6/Cat6A according to best practices. Focus on EMI/crosstalk, PoE, route planning and professional patch cabinets. Practical delivery check: functional testing, labels, cable plans. We do the infrastructure — MSP/IT handles configuration.',
-    },
-    audio: {
-      title: 'Audio Cables',
-      description: 'Audio cables for professional installations. Interference-free routes, neatly finished and documented. Infrastructure work for audio partners.',
-    },
-    camera: {
-      title: 'Camera Cabling',
-      description: 'PoE cabling for IP cameras. Indoor and outdoor, neatly concealed. We do cabling, security companies do cameras.',
+      seo: {
+        title: 'Data Cabling & Network Cabling Cat6/Cat6A | SIGNAALMAKERS',
+        description: 'Specialist in data cabling and network cabling (Cat6/Cat6A). Professional installation with patch cabinets, labeling and certification. Active nationwide.',
+        keywords: 'data cabling, network cabling, Cat6 cabling, Cat6A cabling, EMI crosstalk, PoE cabling, certified delivery, patch cabinets, test reports',
+      },
+      hero: {
+        title: 'Data cabling & network cabling that performs',
+        subtitle: 'Professional data cabling and network cabling with Cat6/Cat6A according to best practices. Focus on EMI/crosstalk, PoE, route planning and professional patch cabinets. Practical delivery check: functional testing, labels, cable plans. We do the infrastructure — MSP/IT handles configuration.',
+      },
+      whatWeDo: {
+        title: 'What we do',
+        intro: 'Cat6/Cat6A cabling for 1-10 Gbps. Workstations and spaces to the patch cabinet. Focus on EMI/crosstalk, PoE-ready and professional route planning. Practical delivery check with test reports and cable plans.',
+        deliverables: {
+          title: 'What we deliver',
+          items: [
+            'Pull cables from workspace/room to patch cabinet',
+            'Cat6, Cat6A or Cat7 cabling',
+            'Terminate connection points and patch panels',
+            'Bundle and neatly conceal',
+            'Label every cable',
+            'Test and deliver with report',
+          ],
+        },
+        forWho: {
+          title: 'Who we work for',
+          items: [
+            'MSPs who need technicians and reliable cabling',
+            'Businesses expanding or upgrading their network',
+            'Installers who want to outsource cable work',
+            'Offices, data centers and commercial buildings',
+          ],
+        },
+        cat6Info: {
+          title: 'Cat6 or Cat6A – what\'s the difference?',
+          intro: 'Cat6A: 10 Gbps up to 100 meters (~500 MHz). Cat6: 10 Gbps up to ~55 meters (~250 MHz). Cat6A is more future-proof and better protected against EMI/crosstalk. For professional installations we usually recommend Cat6A.',
+          items: [
+            'Cat6A: 10 Gbps up to 100m, ~500 MHz, suitable for PoE++',
+            'Cat6: 10 Gbps up to ~55m, ~250 MHz, suitable for PoE+',
+            'Future-proof: focus on EMI/crosstalk and distances',
+          ],
+        },
+      },
+      whyUs: {
+        title: 'Why work with us?',
+        subtitle: 'One standard way of working. No hassle afterwards. Your MSP can proceed directly with configuration.',
+        items: [
+          {
+            title: 'One standard',
+            description: 'We always work the same way. Clean, logical and as agreed.',
+          },
+          {
+            title: 'No hassle',
+            description: 'Everything is tested and documented. If it doesn\'t work, we want to hear about it.',
+          },
+          {
+            title: 'MSP-ready',
+            description: 'Cables are labeled, documented and ready for configuration by your IT partner.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently asked questions',
+        items: [
+          {
+            question: 'What is the difference between Cat6 and Cat6A?',
+            answer: 'Cat6A supports 10 Gbps up to 100 meters (~500 MHz) and has better shielding against EMI/crosstalk. Cat6 achieves 10 Gbps up to approximately 55 meters (~250 MHz). For professional applications we recommend Cat6A due to its future-proofing and better PoE++ support.',
+          },
+          {
+            question: 'Do you also handle network configuration?',
+            answer: 'No, we only do the cable work: pulling cables, terminating, labeling and certifying. MSP/IT partners handle the configuration of switches, VLANs and network equipment. This ensures clear responsibilities and professional end results.',
+          },
+          {
+            question: 'Do you provide test reports?',
+            answer: 'Yes, all routes are functionally tested. You receive a comprehensive delivery package with test reports, labels and cable plans. This gives you certainty that the cabling works as expected.',
+          },
+          {
+            question: 'What does data cabling cost per connection point?',
+            answer: 'The price depends on the number of points, cable length, building type and accessibility. As an indication: expect €75-150 per point including materials, installation and certification. Request a quote for an exact price.',
+          },
+          {
+            question: 'How long does a cabling project take?',
+            answer: 'A standard office with 20-50 points takes 2-4 days. Larger projects are planned in phases. We work outside office hours if desired to minimize disruption.',
+          },
+          {
+            question: 'Do you work nationwide?',
+            answer: 'Yes, we work throughout the Netherlands. From Amsterdam to Groningen, from Rotterdam to Maastricht. For large projects we plan the work efficiently.',
+          },
+          {
+            question: 'Can you replace existing cabling?',
+            answer: 'Yes, we can replace old Cat5/Cat5e cabling with Cat6A. We first assess whether we can use existing routes or need to pull new runs for optimal performance.',
+          },
+          {
+            question: 'Is Cat6A suitable for PoE?',
+            answer: 'Yes, Cat6A supports PoE++ (up to 100W per port), ideal for IP phones, access points, IP cameras and other PoE devices. The better shielding prevents heating under high PoE loads.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ready for cabling?',
+        subtitle: 'Request a quote or choose a subscription with guaranteed capacity and discounts.',
+        button1: 'View subscriptions',
+        button2: 'Request quote',
+      },
     },
     patchCabinets: {
       title: 'Patch Cabinets',
+      shortTitle: 'Patch Cabinets',
       description: 'Professional patch cabinets with thoughtful cable management. Labels, diagrams and clear layout. Ready for MSP/IT management.',
+      seo: {
+        title: 'Build and Optimize Patch Cabinets - Clear and Manageable | SIGNAALMAKERS',
+        description: 'Clean up, build and optimize patch cabinets. Old clutter out, everything neatly bundled, labeled and documented. For MSPs and businesses throughout the Netherlands.',
+        keywords: 'build patch cabinet, clean up patch cabinet, cable management, patch panel, server rack, MSP patch cabinet',
+      },
+      hero: {
+        title: 'Patch cabinet setup & optimization',
+        subtitle: 'The patch cabinet is the heart of the network. If that\'s not right, you have problems. We make it clean, logical and manageable.',
+      },
+      whatWeDo: {
+        title: 'What we do',
+        intro: 'Neatly organize or clean up patch cabinets. Cable management, patch panels, labels and documentation. Everything according to best practices, traceable and MSP-ready.',
+      },
+      whyUs: {
+        title: 'Why a clean patch cabinet?',
+        subtitle: 'Troubleshooting is 10x faster when you can immediately see where cables go. Good cable management saves hours of work and prevents mistakes.',
+      },
+      faqs: {
+        title: 'Frequently asked questions',
+        items: [
+          {
+            question: 'What is the difference between a patch cabinet and a server rack?',
+            answer: 'A patch cabinet mainly contains patch panels, switches and cable management for network cabling. A server rack contains servers and focuses more on cooling, power and security. Both often use the same 19-inch rack standard but with different configurations.',
+          },
+          {
+            question: 'How much space do I need for a patch cabinet?',
+            answer: 'That depends on the number of connection points. For 24-48 ports, a 12U wall cabinet is often sufficient. Larger installations (100+ points) require 42U floor racks. We always recommend 30% extra space for future expansions and cable management.',
+          },
+          {
+            question: 'What is cable management and why is it important?',
+            answer: 'Cable management consists of systems (channels, rings, bundles) that keep cables neat and structured. It prevents confusion, damage and airflow problems. Good cable management saves hours of work during maintenance and expansions because everything remains traceable.',
+          },
+          {
+            question: 'Do you also supply the patch cabinet itself?',
+            answer: 'No, we organize existing cabinets or work with cabinets supplied by you/MSP. We do advise on dimensions, specs and brands. This keeps our focus on craftsmanship: setup, cabling, labeling and documentation.',
+          },
+          {
+            question: 'How important is airflow in a patch cabinet?',
+            answer: 'Very important. Poor airflow leads to overheating of switches and equipment, which shortens lifespan and causes failures. We consider front/back routing, ventilation requirements and heat dissipation when setting up the cabinet.',
+          },
+          {
+            question: 'Can you clean up and reorganize existing patch cabinets?',
+            answer: 'Yes, that\'s one of our most requested services. We remove dead cables, reorganize patch panels, improve cable management and document everything anew. We often work outside office hours to minimize disruption.',
+          },
+          {
+            question: 'What does cleaning up a patch cabinet cost?',
+            answer: 'That depends on complexity and size. Cleaning up and reorganizing a standard 24-port cabinet costs €400-800. Larger cabinets (100+ ports) or very messy situations cost more. Request a quote for an exact price.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ready for a clean patch cabinet?',
+        subtitle: 'Let us build or clean up your patch cabinet. Everything neat, logical and documented.',
+        button1: 'View subscriptions',
+        button2: 'Request quote',
+      },
+    },
+    camera: {
+      title: 'Camera Cabling',
+      shortTitle: 'Camera Cabling',
+      description: 'PoE cabling for IP cameras. Indoor and outdoor, neatly concealed. We do cables, security companies do cameras.',
+      seo: {
+        title: 'Camera Cabling – PoE Runs for IP Cameras | SIGNAALMAKERS',
+        description: 'PoE cabling for IP cameras. Pull, terminate and label UTP cables. Indoor and outdoor. We do cables, security companies do cameras.',
+        keywords: 'camera cabling, IP camera cabling, PoE camera cabling, security camera cabling',
+      },
+      hero: {
+        title: 'Camera cabling for IP cameras',
+        subtitle: 'PoE cabling for IP cameras. Cat6/Cat6A runs indoor and outdoor. We pull cables, your security partner installs cameras.',
+      },
+      faqs: {
+        title: 'Frequently asked questions',
+        items: [
+          {
+            question: 'Do you also install the cameras?',
+            answer: 'No, we only do the cabling: pull UTP cables, terminate, test and label. Camera installation, configuration and setup is done by your security company. This ensures clear separation of responsibilities.',
+          },
+          {
+            question: 'Which cable do you use for IP cameras?',
+            answer: 'For IP cameras we use Cat6 or Cat6A UTP cables. These support PoE (Power over Ethernet) so the camera gets power and data via one cable. For outdoor runs we use outdoor-rated cables with extra protection.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ready for camera cabling?',
+        subtitle: 'Let us install the PoE runs for your cameras.',
+        button1: 'View subscriptions',
+        button2: 'Request quote',
+      },
+    },
+    audio: {
+      title: 'Audio Cables',
+      shortTitle: 'Audio Cables',
+      description: 'Audio cables for professional installations. Interference-free routes, neatly finished and documented. Infrastructure work for audio partners.',
+      seo: {
+        title: 'Audio Cables – Pull/Termination for Permanent Installations | SIGNAALMAKERS',
+        description: 'Pull and terminate audio cables for permanent installations. Balanced lines, interference-free routes, neatly finished. Infrastructure work for audio installers.',
+        keywords: 'audio cables, audio cabling, balanced lines, XLR cabling, audio installation',
+      },
+      hero: {
+        title: 'Audio cables for permanent installations',
+        subtitle: 'Pull and terminate audio cables. Balanced lines, interference-free routes, neatly finished. We do infrastructure, audio installer handles equipment.',
+      },
+      faqs: {
+        title: 'Frequently asked questions',
+        items: [
+          {
+            question: 'Do you also install audio equipment?',
+            answer: 'No, we only pull and terminate audio cables. Audio equipment, setup and tuning is done by your audio installer. We provide the infrastructure.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ready for audio cabling?',
+        subtitle: 'Let us install the audio cables for your installation.',
+        button1: 'View subscriptions',
+        button2: 'Request quote',
+      },
     },
     certification: {
       title: 'Testing & Certification',
       shortTitle: 'Certification',
       description: 'Practical delivery check: functionally tested, labeled and delivered with cable plans. Transparent and traceable - ready for MSP/IT management.',
-      heroTitle: 'Testing & Certification',
-      heroSubtitle: 'Practical delivery check: every cable functionally tested, labeled and documented. Delivery package with test reports, diagrams and cable plans – transparent and traceable. Ready for MSP/IT management.',
+      seo: {
+        title: 'Testing & Certification – Practical Delivery Check | SIGNAALMAKERS',
+        description: 'Practical delivery check: every cable tested, labeled and documented. Delivery package with test reports and cable plans. Transparent and traceable.',
+        keywords: 'cabling certification, cable testing, test reports, delivery check, cable plan',
+      },
+      hero: {
+        title: 'Testing & Certification',
+        subtitle: 'Practical delivery check: every cable functionally tested, labeled and documented. Delivery package with test reports, diagrams and cable plans – transparent and traceable. Ready for MSP/IT management.',
+      },
+      faqs: {
+        title: 'Frequently asked questions',
+        items: [
+          {
+            question: 'What is the difference between functional testing and certification?',
+            answer: 'Functional testing checks if the cable works and transmits data. Certification measures exactly the performance (bandwidth, crosstalk, losses) and compares it to the standard. We do functional testing as standard; full certification on request.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ready for certified delivery?',
+        subtitle: 'Let us test and document your cabling.',
+        button1: 'View subscriptions',
+        button2: 'Request quote',
+      },
     },
   },
 

@@ -136,27 +136,261 @@ export const nlBE: TranslationKeys = {
       title: 'Netwerkbekabeling (Cat6/Cat6A)',
       shortTitle: 'Netwerkbekabeling',
       description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Functioneel getest met meetrapporten, labels en kabelplan.',
-      heroTitle: 'Databekabeling & netwerkbekabeling die presteert',
-      heroSubtitle: 'Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Praktische oplevercheck: functioneel testen, labels, kabelplan. Wij doen het voorwerk — MSP/IT doet inregeling.',
-    },
-    audio: {
-      title: 'Audiokabels',
-      description: 'Audiokabels voor professionele installaties. Storingsvrije routes, netjes afgewerkt en gedocumenteerd. Infra-voorwerk voor audio-partners.',
-    },
-    camera: {
-      title: 'Camera-bekabeling',
-      description: 'PoE-bekabeling voor IP-camera\'s. Binnen en buiten, netjes weggewerkt. Wij doen kabels, beveiligingsbedrijf doet camera\'s.',
+      seo: {
+        title: 'Databekabeling & Netwerkbekabeling Cat6/Cat6A | SIGNAALMAKERS',
+        description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A). Professionele installatie met patchkasten, labeling en certificering. Actief in België en Nederland.',
+        keywords: 'databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, EMI crosstalk, PoE bekabeling, gecertificeerde oplevering, patchkasten, meetrapporten',
+      },
+      hero: {
+        title: 'Databekabeling & netwerkbekabeling die presteert',
+        subtitle: 'Professionele databekabeling en netwerkbekabeling met Cat6/Cat6A volgens best-practice. Aandacht voor EMI/crosstalk, PoE, routeplanning en strakke patchkasten. Praktische oplevercheck: functioneel testen, labels, kabelplan. Wij doen het voorwerk — MSP/IT doet inregeling.',
+      },
+      whatWeDo: {
+        title: 'Wat we doen',
+        intro: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Werkplekken en ruimtes naar de patchkast. Aandacht voor EMI/crosstalk, PoE-geschikt en strakke routeplanning. Praktische oplevercheck met meetrapporten en kabelplan.',
+        deliverables: {
+          title: 'Wat we leveren',
+          items: [
+            'Kabels trekken van werkplek/ruimte naar patchkast',
+            'Cat6, Cat6A of Cat7 bekabeling',
+            'Afmonteren van aansluitpunten en patchpanelen',
+            'Bundelen en netjes wegwerken',
+            'Labelen van elke kabel',
+            'Testen en opleveren met rapport',
+          ],
+        },
+        forWho: {
+          title: 'Voor wie',
+          items: [
+            'MSP\'s die monteurs en betrouwbare bekabeling nodig hebben',
+            'Bedrijven die hun netwerk uitbreiden of vernieuwen',
+            'Installateurs die het kabelwerk willen uitbesteden',
+            'Kantoren, datacenters en bedrijfspanden',
+          ],
+        },
+        cat6Info: {
+          title: 'Cat6 of Cat6A – wat is het verschil?',
+          intro: 'Cat6A: 10 Gbps tot 100 meter (~500 MHz). Cat6: 10 Gbps tot ~55 meter (~250 MHz). Cat6A is toekomstbestendiger en beter beschermd tegen EMI/crosstalk. Voor professionele installaties adviseren we meestal Cat6A.',
+          items: [
+            'Cat6A: 10 Gbps tot 100m, ~500 MHz, geschikt voor PoE++',
+            'Cat6: 10 Gbps tot ~55m, ~250 MHz, geschikt voor PoE+',
+            'Toekomstbestendig: aandacht voor EMI/crosstalk en afstanden',
+          ],
+        },
+      },
+      whyUs: {
+        title: 'Waarom met ons werken?',
+        subtitle: 'Eén standaard manier van werken. Geen gedoe achteraf. Uw MSP kan direct door met de configuratie.',
+        items: [
+          {
+            title: 'Eén standaard',
+            description: 'We werken altijd op dezelfde manier. Netjes, logisch en volgens afspraak.',
+          },
+          {
+            title: 'Geen gedoe',
+            description: 'Alles wordt getest en gedocumenteerd. Als het niet werkt, horen we het graag.',
+          },
+          {
+            title: 'MSP-proof',
+            description: 'Kabels zijn gelabeld, gedocumenteerd en klaar voor configuratie door uw IT-partner.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Wat is het verschil tussen Cat6 en Cat6A?',
+            answer: 'Cat6A ondersteunt 10 Gbps tot 100 meter (~500 MHz) en heeft betere afscherming tegen EMI/crosstalk. Cat6 haalt 10 Gbps tot ongeveer 55 meter (~250 MHz). Voor professionele toepassingen adviseren we Cat6A vanwege de toekomstbestendigheid en betere PoE++ ondersteuning.',
+          },
+          {
+            question: 'Doen jullie ook de netwerkconfiguratie?',
+            answer: 'Nee, wij doen alleen het kabelwerk: kabels trekken, afmonteren, labelen en certificeren. MSP/IT-partners doen de configuratie van switches, VLAN\'s en netwerkapparatuur. Dit zorgt voor duidelijke verantwoordelijkheden en professioneel eindresultaat.',
+          },
+          {
+            question: 'Leveren jullie ook meetrapporten?',
+            answer: 'Ja, alle trajecten worden functioneel getest. U ontvangt een overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Dit geeft zekerheid dat de bekabeling werkt zoals verwacht.',
+          },
+          {
+            question: 'Wat kost databekabeling per aansluitpunt?',
+            answer: 'De prijs hangt af van het aantal punten, kabellengte, gebouwtype en toegankelijkheid. Voor een indicatie: reken op €75-150 per punt inclusief materiaal, installatie en certificering. Vraag een offerte aan voor een exacte prijsopgave.',
+          },
+          {
+            question: 'Hoe lang duurt een bekabelingsproject?',
+            answer: 'Een standaard kantoor met 20-50 punten duurt 2-4 dagen. Grotere projecten plannen we in fasen. We werken buiten kantooruren indien gewenst om verstoring te minimaliseren.',
+          },
+          {
+            question: 'Werken jullie in België?',
+            answer: 'Ja, wij werken in heel België en Nederland. Van Antwerpen tot Luik, van Brussel tot Gent. Voor grote projecten plannen we de werkzaamheden efficiënt in.',
+          },
+          {
+            question: 'Kunnen jullie bestaande bekabeling vervangen?',
+            answer: 'Ja, we kunnen oude Cat5/Cat5e bekabeling vervangen door Cat6A. We beoordelen eerst of we bestaande routes kunnen gebruiken of nieuwe trajecten moeten trekken voor optimale prestaties.',
+          },
+          {
+            question: 'Is Cat6A geschikt voor PoE?',
+            answer: 'Ja, Cat6A ondersteunt PoE++ (tot 100W per poort), ideaal voor IP-telefoons, access points, IP-camera\'s en andere PoE-apparaten. De betere afscherming voorkomt opwarming bij hoge PoE-belasting.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor bekabeling?',
+        subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
     patchCabinets: {
       title: 'Patchkasten',
+      shortTitle: 'Patchkasten',
       description: 'Professionele patchkasten met doordacht kabelmanagement. Labels, schema\'s en overzichtelijke indeling. Klaar voor MSP/IT-beheer.',
+      seo: {
+        title: 'Patchkast opbouwen en optimaliseren - Overzichtelijk en beheersbaar | SIGNAALMAKERS',
+        description: 'Patchkast opruimen, opbouwen en optimaliseren. Oude rommel eruit, alles netjes gebundeld, gelabeld en gedocumenteerd. Voor MSP\'s en bedrijven in België en Nederland.',
+        keywords: 'patchkast opbouwen, patchkast opruimen, kabelmanagement, patchpanel, serverschakel, MSP patchkast',
+      },
+      hero: {
+        title: 'Patchkast-opbouw & optimalisatie',
+        subtitle: 'De patchkast is het hart van het netwerk. Als dat niet klopt, hebt u problemen. Wij maken het netjes, logisch en beheersbaar.',
+      },
+      whatWeDo: {
+        title: 'Wat we doen',
+        intro: 'Patchkasten netjes inrichten of opruimen. Kabelmanagement, patchpanelen, labels en documentatie. Alles volgens best-practice, traceerbaar en MSP-proof.',
+      },
+      whyUs: {
+        title: 'Waarom een nette patchkast?',
+        subtitle: 'Troubleshooting is 10x sneller als u direct ziet waar kabels naartoe gaan. Goed kabelmanagement bespaart uren werk en voorkomt fouten.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Wat is het verschil tussen een patchkast en een serverkast?',
+            answer: 'Een patchkast bevat voornamelijk patchpanelen, switches en kabelmanagement voor netwerkbekabeling. Een serverkast bevat servers en heeft meer focus op koeling, voeding en beveiliging. Beide gebruiken vaak dezelfde 19-inch rack standaard maar met verschillende inrichting.',
+          },
+          {
+            question: 'Hoeveel ruimte heb ik nodig voor een patchkast?',
+            answer: 'Dat hangt af van het aantal aansluitpunten. Voor 24-48 poorten volstaat vaak een 12U wandkast. Grotere installaties (100+ punten) vereisen 42U vloerkasten. We adviseren altijd 30% extra ruimte voor toekomstige uitbreidingen en kabelmanagement.',
+          },
+          {
+            question: 'Wat is kabelmanagement en waarom is het belangrijk?',
+            answer: 'Kabelmanagement zijn systemen (kanalen, ringen, bundels) die kabels netjes en gestructureerd houden. Het voorkomt verwarring, beschadiging en airflow-problemen. Goed kabelmanagement bespaart uren werk bij onderhoud en uitbreidingen omdat alles traceerbaar blijft.',
+          },
+          {
+            question: 'Leveren jullie ook de patchkast zelf?',
+            answer: 'Nee, wij richten bestaande kasten in of werken met door u/MSP geleverde kasten. We adviseren wel over afmetingen, specs en merken. Dit houdt onze focus op vakmanschap: opbouw, bekabeling, labeling en documentatie.',
+          },
+          {
+            question: 'Hoe belangrijk is airflow in een patchkast?',
+            answer: 'Zeer belangrijk. Slechte airflow leidt tot oververhitting van switches en apparatuur, wat levensduur verkort en storingen veroorzaakt. We houden rekening met voor/achter routing, ventilatie-eisen en warmteafvoer bij opbouw van de kast.',
+          },
+          {
+            question: 'Kunnen jullie bestaande patchkasten opruimen en reorganiseren?',
+            answer: 'Ja, dat is een van onze meest gevraagde diensten. We verwijderen dode kabels, reorganiseren patchpanelen, verbeteren kabelmanagement en documenteren alles opnieuw. Vaak werken we buiten kantooruren om verstoring te minimaliseren.',
+          },
+          {
+            question: 'Wat kost het opruimen van een patchkast?',
+            answer: 'Dat hangt af van de complexiteit en omvang. Een standaard 24-poorts kast opruimen en reorganiseren kost €400-800. Grotere kasten (100+ poorten) of zeer vervuilde situaties kosten meer. Vraag een offerte aan voor een exacte prijsopgave.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor een nette patchkast?',
+        subtitle: 'Laat ons uw patchkast opbouwen of opruimen. Alles netjes, logisch en gedocumenteerd.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
+    },
+    camera: {
+      title: 'Camera-bekabeling',
+      shortTitle: 'Camera-bekabeling',
+      description: 'PoE-bekabeling voor IP-camera\'s. Binnen en buiten, netjes weggewerkt. Wij doen kabels, beveiligingsbedrijf doet camera\'s.',
+      seo: {
+        title: 'Camera-bekabeling – PoE trajecten voor IP-camera\'s | SIGNAALMAKERS',
+        description: 'PoE-bekabeling voor IP-camera\'s. UTP-kabels trekken, afmonteren en labelen. Binnen en buiten. Wij doen kabels, beveiligingsbedrijf doet camera\'s.',
+        keywords: 'camera bekabeling, IP camera bekabeling, PoE camera bekabeling, beveiligingscamera bekabeling',
+      },
+      hero: {
+        title: 'Camera-bekabeling voor IP-camera\'s',
+        subtitle: 'PoE-bekabeling voor IP-camera\'s. Cat6/Cat6A trajecten binnen en buiten. Wij trekken kabels, uw beveiligingspartner installeert camera\'s.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Installeren jullie ook de camera\'s?',
+            answer: 'Nee, wij doen alleen de bekabeling: UTP-kabels trekken, afmonteren, testen en labelen. Camera-installatie, configuratie en inregeling doet uw beveiligingsbedrijf. Dit zorgt voor duidelijke scheiding van verantwoordelijkheden.',
+          },
+          {
+            question: 'Welke kabel gebruikt u voor IP-camera\'s?',
+            answer: 'Voor IP-camera\'s gebruiken we Cat6 of Cat6A UTP-kabels. Deze ondersteunen PoE (Power over Ethernet) waardoor de camera stroom én data via één kabel krijgt. Voor buitentrajecten gebruiken we outdoor-rated kabels met extra bescherming.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor camera-bekabeling?',
+        subtitle: 'Laat ons de PoE-trajecten aanleggen voor uw camera\'s.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
+    },
+    audio: {
+      title: 'Audiokabels',
+      shortTitle: 'Audiokabels',
+      description: 'Audiokabels voor professionele installaties. Storingsvrije routes, netjes afgewerkt en gedocumenteerd. Infra-voorwerk voor audio-partners.',
+      seo: {
+        title: 'Audiokabels – trek/afmontage voor vaste installaties | SIGNAALMAKERS',
+        description: 'Trek en afmontage van audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsvrije routes, netjes afgewerkt. Infra-voorwerk voor audio-installateurs.',
+        keywords: 'audiokabels, audio bekabeling, gebalanceerde lijnen, XLR bekabeling, audio installatie',
+      },
+      hero: {
+        title: 'Audiokabels voor vaste installaties',
+        subtitle: 'Trek en afmontage van audiokabels. Gebalanceerde lijnen, storingsvrije routes, netjes afgewerkt. Wij doen infra, audio-installateur doet apparatuur.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Doen jullie ook audio-apparatuur installeren?',
+            answer: 'Nee, wij doen alleen het trekken en afmonteren van audiokabels. Audio-apparatuur, inregeling en afstemming doet uw audio-installateur. Wij zorgen voor de infrastructuur.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor audio-bekabeling?',
+        subtitle: 'Laat ons de audiokabels aanleggen voor uw installatie.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
     certification: {
       title: 'Meten & Certificeren',
       shortTitle: 'Certificeren',
       description: 'Praktische oplevercheck: functioneel getest, gelabeld en opgeleverd met kabelplan. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
-      heroTitle: 'Meten & Certificeren',
-      heroSubtitle: 'Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema\'s en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.',
+      seo: {
+        title: 'Meten & Certificeren – Praktische oplevercheck | SIGNAALMAKERS',
+        description: 'Praktische oplevercheck: elke kabel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten en kabelplan. Transparant en traceerbaar.',
+        keywords: 'bekabeling certificeren, kabel testen, meetrapporten, oplevercheck, kabelplan',
+      },
+      hero: {
+        title: 'Meten & Certificeren',
+        subtitle: 'Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema\'s en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.',
+      },
+      faqs: {
+        title: 'Veelgestelde vragen',
+        items: [
+          {
+            question: 'Wat is het verschil tussen functioneel testen en certificeren?',
+            answer: 'Functioneel testen controleert of de kabel werkt en data doorgeeft. Certificeren meet exact de prestaties (bandbreedte, crosstalk, verliezen) en vergelijkt deze met de norm. Wij doen standaard functioneel testen; volledige certificering op aanvraag.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Klaar voor gecertificeerde oplevering?',
+        subtitle: 'Laat ons uw bekabeling testen en documenteren.',
+        button1: 'Bekijk abonnementen',
+        button2: 'Vraag offerte aan',
+      },
     },
   },
 
