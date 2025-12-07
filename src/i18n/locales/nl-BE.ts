@@ -561,7 +561,6 @@ export const nlBE: TranslationKeys = {
     readMore: 'Lees meer',
     backToBlog: 'Terug naar blog',
     relatedArticles: 'Gerelateerde artikelen',
-    dutchOnlyNotice: '',  // Not needed for Dutch locale
   },
 
   seo: {
