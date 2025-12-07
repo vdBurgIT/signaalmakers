@@ -3,86 +3,60 @@ import { Cable, Server, Volume2, CheckCircle2, Building2, Camera } from 'lucide-
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
+import { useTranslation } from '../i18n';
 
 export default function Diensten() {
+  const t = useTranslation();
+
   const services = [
     {
       icon: Cable,
-      title: 'Netwerkbekabeling (Cat6/Cat6A)',
-      description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Functioneel getest met meetrapporten, labels en kabelplan.',
+      title: t.diensten.services.network.title,
+      description: t.diensten.services.network.description,
       link: '/diensten/netwerkbekabeling',
-      features: [
-        'Cat6A: 10 Gbps tot 100m (~500 MHz)',
-        'Cat6: 10 Gbps tot ~55m (~250 MHz)',
-        'Aandacht voor EMI/crosstalk en PoE',
-        'Strakke patchkasten en routeplanning',
-        'Praktische oplevercheck met kabelplan',
-      ],
+      features: t.diensten.services.network.features,
     },
     {
       icon: Volume2,
-      title: 'Audiokabels',
-      description: 'Trek/afmontage audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsarme routes en netjes afgewerkt. Gelabeld, gedocumenteerd en klaar voor de audio-installateur.',
+      title: t.diensten.services.audio.title,
+      description: t.diensten.services.audio.description,
       link: '/diensten/audiokabels',
-      features: [
-        'Trekken en monteren audiokabels',
-        'Gebalanceerde lijnen, storingsvrij',
-        'Netjes afgewerkt en gelabeld',
-        'Gedocumenteerd voor audio-partner',
-        'Voorwerk - installateur doet inregeling',
-      ],
+      features: t.diensten.services.audio.features,
     },
     {
       icon: Camera,
-      title: 'Camera-bekabeling',
-      description: 'Bekabelingstrajecten voor IP-camera\'s (PoE). Gebalanceerde trajecten, strakke patchkasten en consistente labeling. Opleverdossier met meetrapporten - MSP/IT sluit apparatuur aan.',
+      title: t.diensten.services.camera.title,
+      description: t.diensten.services.camera.description,
       link: '/diensten/camera-bekabeling',
-      features: [
-        'Bekabeling voor IP-camera\'s (PoE)',
-        'Gebalanceerde trajecten en routes',
-        'Strakke patchkasten en labeling',
-        'Opleverdossier met meetrapporten',
-        'MSP/IT sluit apparatuur aan',
-      ],
+      features: t.diensten.services.camera.features,
     },
     {
       icon: Server,
-      title: 'Patchkasten & Serverkasten',
-      description: 'Strak ingericht en beheersbaar. Kabelmanagement, paneelindeling, labeling en documentatie. Airflow/voeding in acht genomen - ideaal voor beheer door MSP/IT.',
+      title: t.diensten.services.patchCabinets.title,
+      description: t.diensten.services.patchCabinets.description,
       link: '/diensten/patchkasten',
-      features: [
-        'Kabelgeleiding & paneelindeling',
-        'Labeling en schema\'s',
-        'Airflow/voeding in acht genomen',
-        'Netjes en beheersbaar',
-        'Ideaal voor beheer door MSP/IT',
-      ],
+      features: t.diensten.services.patchCabinets.features,
     },
     {
       icon: CheckCircle2,
-      title: 'Meten & Certificeren',
-      description: 'Praktische oplevercheck: functioneel testen, labelen en documenteren. Opleverdossier met meetrapporten, labels en kabelplan - duidelijk voor beheer.',
+      title: t.diensten.services.certification.title,
+      description: t.diensten.services.certification.description,
       link: '/diensten/certificeren',
-      features: [
-        'Functioneel testen per traject',
-        'Labels en documentatie',
-        'Opleverdossier met kabelplan',
-        'Schema\'s en overzichten',
-        'Duidelijk voor MSP/IT beheer',
-      ],
+      features: t.diensten.services.certification.features,
     },
   ];
 
   return (
     <>
       <SEO
-        title="Databekabeling, Netwerkbekabeling & Infrastructuur | SIGNAALMAKERS"
-        description="Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten. Functioneel getest en opgeleverd met kabelplan. Landelijk actief."
-        keywords="databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner"
+        title={t.seo.diensten.title}
+        description={t.seo.diensten.description}
+        keywords={t.seo.diensten.keywords}
         url="https://signaalmakers.nl/diensten"
+        hreflangPath="/diensten"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Diensten', item: 'https://signaalmakers.nl/diensten' }
+          { name: t.nav.services, item: 'https://signaalmakers.nl/diensten' }
         ]}
       />
       <StructuredData type="LocalBusiness" />
@@ -96,10 +70,10 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Bekabeling voor infrastructuur
+              {t.diensten.title}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Een betrouwbaar netwerk begint bij <strong>goede bekabeling</strong>. Wij leveren <Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>netwerk (Cat6/Cat6A)</Link>, <Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>audiokabels</Link>, <Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>camera-bekabeling</Link> en <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>patchkasten</Link>. We trekken/leggen, monteren af, patchen, labelen en <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>leveren functioneel getest op</Link> met kabelplan. <strong>Wij doen het voorwerk</strong>; <strong>MSP/IT-partners</strong> regelen inregeling en beheer.
+              {t.diensten.subtitle}
             </p>
           </div>
         </div>
@@ -111,10 +85,10 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-              Bekabeling voor infrastructuur
+              {t.diensten.sectionTitle}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificeren. Alles netjes aangelegd, afgewerkt en gedocumenteerd - klaar voor MSP/IT.
+              {t.diensten.sectionSubtitle}
             </p>
           </div>
 
@@ -145,7 +119,7 @@ export default function Diensten() {
                   to={service.link}
                   className="inline-flex items-center text-[#FF6A00] text-lg font-semibold hover:text-[#E55F00] transition-colors group hover:gap-3 gap-2"
                 >
-                  Meer informatie
+                  {t.common.readMore}
                   <span className="transition-all duration-300">→</span>
                 </Link>
               </div>
@@ -160,10 +134,10 @@ export default function Diensten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-4">
-              Waarom SIGNAALMAKERS
+              {t.diensten.usps.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Wij doen het voorwerk: bekabeling voor infrastructuur. Netjes, gedocumenteerd en klaar voor gebruik. MSP/IT doet inregeling en beheer.
+              {t.diensten.usps.subtitle}
             </p>
           </div>
 
@@ -171,18 +145,18 @@ export default function Diensten() {
             {[
               {
                 icon: Cable,
-                title: 'Infra-first',
-                desc: 'Netwerk (Cat6/Cat6A), audio, camera - alle bekabeling voor infrastructuur. Geen IT-beheer, geen configuratie. Alleen het voorwerk.',
+                title: t.diensten.usps.infraFirst.title,
+                desc: t.diensten.usps.infraFirst.desc,
               },
               {
                 icon: CheckCircle2,
-                title: 'Praktisch opgeleverd',
-                desc: 'Functioneel getest met meetrapporten, labels en kabelplan. Transparant en traceerbaar voor beheer door MSP/IT.',
+                title: t.diensten.usps.practicalDelivery.title,
+                desc: t.diensten.usps.practicalDelivery.desc,
               },
               {
                 icon: Building2,
-                title: 'Landelijk actief',
-                desc: 'Door heel Nederland. Van serverruimtes tot zorg - overal hetzelfde vakmanschap. Voorwerk voor MSP/IT.',
+                title: t.diensten.usps.nationwide.title,
+                desc: t.diensten.usps.nationwide.desc,
               },
             ].map((item, index) => (
               <div
@@ -204,23 +178,23 @@ export default function Diensten() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              Klaar voor betrouwbare bekabeling?
+              {t.diensten.ctaTitle}
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              MSP's, IT-bedrijven en organisaties door heel Nederland kiezen SIGNAALMAKERS voor bekabeling die gewoon werkt. Wij doen het voorwerk - jij doet de rest.
+              {t.diensten.ctaSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/offerte"
                 className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Vraag offerte aan
+                {t.diensten.ctaButton1}
               </Link>
               <Link
                 to="/contact"
                 className="inline-block border-2 border-[#0E243A] text-[#0E243A] px-8 py-4 rounded-lg hover:bg-[#0E243A] hover:text-white transition-all duration-300 font-semibold text-lg"
               >
-                Plan intake
+                {t.diensten.ctaButton2}
               </Link>
             </div>
           </div>

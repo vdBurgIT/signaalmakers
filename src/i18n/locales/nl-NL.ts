@@ -151,6 +151,47 @@ export const nlNL = {
     },
   },
 
+  sectoren: {
+    title: 'Bekabeling voor iedere sector',
+    subtitle: 'Netwerk, audio en camera-bekabeling voor kantoren, retail, zorg, onderwijs en magazijnen. Cat6/Cat6A, PoE en gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam.',
+    sectionTitle: 'Onze expertise per sector',
+    sectionSubtitle: 'Wij leveren bekabeling voor infrastructuur in diverse sectoren. Van serverruimtes tot retail, van onderwijs tot magazijnen — overal waar professionele bekabeling nodig is.',
+    infoBoxTitle: 'Wij doen alleen het voorwerk',
+    infoBoxText: 'Voor alle sectoren geldt: wij leggen bekabeling en leveren gecertificeerd op. MSP/IT-partners doen inregeling en beheer van apparatuur. Duidelijke scheiding, professioneel resultaat.',
+    ctaTitle: 'Bekabeling voor jouw sector',
+    ctaSubtitle: 'Vraag een offerte aan of neem contact op voor meer informatie over bekabeling in jouw sector.',
+    moreInfo: 'Meer info',
+    items: {
+      serverRooms: {
+        title: 'Serverruimtes & Datacenters',
+        shortTitle: 'Serverruimtes',
+        description: 'Cat6A bekabeling voor 10 Gbps, strakke patchkasten en gecertificeerde oplevering. Voorwerk voor MSP/IT.',
+        heroTitle: 'Bekabeling voor serverruimtes & datacenters',
+        heroSubtitle: 'Cat6A bekabeling voor 10 Gbps, strakke patchkasten en praktische oplevercheck. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Landelijk werkzaam.',
+      },
+      offices: {
+        title: 'Kantoren',
+        description: 'Netwerkbekabeling, audio en camera\'s voor moderne kantooromgevingen. Professioneel en toekomstbestendig.',
+        heroTitle: 'Bekabeling voor kantoren',
+        heroSubtitle: 'Netwerkbekabeling, audio en camera\'s voor moderne kantooromgevingen. Cat6/Cat6A, PoE, wifi-trajecten—professioneel en toekomstbestendig. Landelijk werkzaam.',
+      },
+      retail: {
+        title: 'Retail & Horeca',
+        description: 'Bekabeling voor kassa\'s, camera\'s en audio. Snel, netjes en met minimale verstoring van de bedrijfsvoering.',
+        heroTitle: 'Bekabeling voor retail & horeca',
+        heroSubtitle: 'Bekabeling voor kassa\'s, camera\'s en audio. Cat6/Cat6A, PoE — snel, netjes en met minimale verstoring van de bedrijfsvoering. Landelijk werkzaam.',
+      },
+      warehouse: {
+        title: 'Magazijn & Logistiek',
+        description: 'Robuuste bekabeling voor scanners, camera\'s en netwerk. Geschikt voor zware omgevingen.',
+      },
+      education: {
+        title: 'Onderwijs & Zorg',
+        description: 'Betrouwbare infrastructuur voor scholen, ziekenhuizen en zorginstellingen. Veilig en gedocumenteerd.',
+      },
+    },
+  },
+
   sectors: {
     serverRooms: {
       title: 'Serverruimtes & Datacenters',
@@ -196,11 +237,100 @@ export const nlNL = {
     },
   },
 
+  diensten: {
+    title: 'Bekabeling voor infrastructuur',
+    subtitle: 'Een betrouwbaar netwerk begint bij goede bekabeling. Wij leveren netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Alles functioneel getest en opgeleverd met kabelplan. Wij doen het voorwerk; MSP/IT-partners regelen inregeling en beheer.',
+    sectionTitle: 'Bekabeling voor infrastructuur',
+    sectionSubtitle: 'Netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificeren. Alles netjes aangelegd, afgewerkt en gedocumenteerd - klaar voor MSP/IT.',
+    ctaTitle: 'Klaar voor betrouwbare bekabeling?',
+    ctaSubtitle: 'MSP\'s, IT-bedrijven en organisaties door heel Nederland kiezen SIGNAALMAKERS voor bekabeling die gewoon werkt. Wij doen het voorwerk - jij doet de rest.',
+    ctaButton1: 'Vraag offerte aan',
+    ctaButton2: 'Plan intake',
+    services: {
+      network: {
+        title: 'Netwerkbekabeling (Cat6/Cat6A)',
+        description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Functioneel getest met meetrapporten, labels en kabelplan.',
+        features: [
+          'Cat6A: 10 Gbps tot 100m (~500 MHz)',
+          'Cat6: 10 Gbps tot ~55m (~250 MHz)',
+          'Aandacht voor EMI/crosstalk en PoE',
+          'Strakke patchkasten en routeplanning',
+          'Praktische oplevercheck met kabelplan',
+        ],
+      },
+      audio: {
+        title: 'Audiokabels',
+        description: 'Trek/afmontage audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsarme routes en netjes afgewerkt. Gelabeld, gedocumenteerd en klaar voor de audio-installateur.',
+        features: [
+          'Trekken en monteren audiokabels',
+          'Gebalanceerde lijnen, storingsvrij',
+          'Netjes afgewerkt en gelabeld',
+          'Gedocumenteerd voor audio-partner',
+          'Voorwerk - installateur doet inregeling',
+        ],
+      },
+      camera: {
+        title: 'Camera-bekabeling',
+        description: 'Bekabelingstrajecten voor IP-camera\'s (PoE). Gebalanceerde trajecten, strakke patchkasten en consistente labeling. Opleverdossier met meetrapporten - MSP/IT sluit apparatuur aan.',
+        features: [
+          'Bekabeling voor IP-camera\'s (PoE)',
+          'Gebalanceerde trajecten en routes',
+          'Strakke patchkasten en labeling',
+          'Opleverdossier met meetrapporten',
+          'MSP/IT sluit apparatuur aan',
+        ],
+      },
+      patchCabinets: {
+        title: 'Patchkasten & Serverkasten',
+        description: 'Strak ingericht en beheersbaar. Kabelmanagement, paneelindeling, labeling en documentatie. Airflow/voeding in acht genomen - ideaal voor beheer door MSP/IT.',
+        features: [
+          'Kabelgeleiding & paneelindeling',
+          'Labeling en schema\'s',
+          'Airflow/voeding in acht genomen',
+          'Netjes en beheersbaar',
+          'Ideaal voor beheer door MSP/IT',
+        ],
+      },
+      certification: {
+        title: 'Meten & Certificeren',
+        description: 'Praktische oplevercheck: functioneel testen, labelen en documenteren. Opleverdossier met meetrapporten, labels en kabelplan - duidelijk voor beheer.',
+        features: [
+          'Functioneel testen per traject',
+          'Labels en documentatie',
+          'Opleverdossier met kabelplan',
+          'Schema\'s en overzichten',
+          'Duidelijk voor MSP/IT beheer',
+        ],
+      },
+    },
+    usps: {
+      title: 'Waarom SIGNAALMAKERS',
+      subtitle: 'Wij doen het voorwerk: bekabeling voor infrastructuur. Netjes, gedocumenteerd en klaar voor gebruik. MSP/IT doet inregeling en beheer.',
+      infraFirst: {
+        title: 'Infra-first',
+        desc: 'Netwerk (Cat6/Cat6A), audio, camera - alle bekabeling voor infrastructuur. Geen IT-beheer, geen configuratie. Alleen het voorwerk.',
+      },
+      practicalDelivery: {
+        title: 'Praktisch opgeleverd',
+        desc: 'Functioneel getest met meetrapporten, labels en kabelplan. Transparant en traceerbaar voor beheer door MSP/IT.',
+      },
+      nationwide: {
+        title: 'Landelijk actief',
+        desc: 'Door heel Nederland. Van serverruimtes tot zorg - overal hetzelfde vakmanschap. Voorwerk voor MSP/IT.',
+      },
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Databekabeling & Netwerkbekabeling (Cat6/Cat6A) | Landelijk',
       description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Functioneel getest en opgeleverd met kabelplan. Landelijk actief.',
       keywords: 'databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, labeling, infrastructuur bekabeling, MSP partner, voorwerk bekabeling',
+    },
+    diensten: {
+      title: 'Databekabeling, Netwerkbekabeling & Infrastructuur | SIGNAALMAKERS',
+      description: 'Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten. Functioneel getest en opgeleverd met kabelplan. Landelijk actief.',
+      keywords: 'databekabeling, netwerkbekabeling, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling, MSP partner',
     },
   },
 

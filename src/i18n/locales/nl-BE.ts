@@ -198,11 +198,100 @@ export const nlBE: TranslationKeys = {
     },
   },
 
+  diensten: {
+    title: 'Bekabeling voor infrastructuur',
+    subtitle: 'Een betrouwbaar netwerk begint bij goede bekabeling. Wij leveren netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling en patchkasten. Alles functioneel getest en opgeleverd met kabelplan. Wij doen het voorwerk; MSP/IT-partners regelen inregeling en beheer.',
+    sectionTitle: 'Bekabeling voor infrastructuur',
+    sectionSubtitle: 'Netwerk (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificeren. Alles netjes aangelegd, afgewerkt en gedocumenteerd - klaar voor MSP/IT.',
+    ctaTitle: 'Klaar voor betrouwbare bekabeling?',
+    ctaSubtitle: 'MSP\'s, IT-bedrijven en organisaties in België kiezen SIGNAALMAKERS voor bekabeling die gewoon werkt. Wij doen het voorwerk - jij doet de rest.',
+    ctaButton1: 'Vraag offerte aan',
+    ctaButton2: 'Plan intake',
+    services: {
+      network: {
+        title: 'Netwerkbekabeling (Cat6/Cat6A)',
+        description: 'Cat6/Cat6A bekabeling voor 1-10 Gbps. Juiste categorie, afstanden en bandbreedte. Aandacht voor EMI/crosstalk, PoE en strakke patchkasten. Functioneel getest met meetrapporten, labels en kabelplan.',
+        features: [
+          'Cat6A: 10 Gbps tot 100m (~500 MHz)',
+          'Cat6: 10 Gbps tot ~55m (~250 MHz)',
+          'Aandacht voor EMI/crosstalk en PoE',
+          'Strakke patchkasten en routeplanning',
+          'Praktische oplevercheck met kabelplan',
+        ],
+      },
+      audio: {
+        title: 'Audiokabels',
+        description: 'Trek/afmontage audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsarme routes en netjes afgewerkt. Gelabeld, gedocumenteerd en klaar voor de audio-installateur.',
+        features: [
+          'Trekken en monteren audiokabels',
+          'Gebalanceerde lijnen, storingsvrij',
+          'Netjes afgewerkt en gelabeld',
+          'Gedocumenteerd voor audio-partner',
+          'Voorwerk - installateur doet inregeling',
+        ],
+      },
+      camera: {
+        title: 'Camera-bekabeling',
+        description: 'Bekabelingstrajecten voor IP-camera\'s (PoE). Gebalanceerde trajecten, strakke patchkasten en consistente labeling. Opleverdossier met meetrapporten - MSP/IT sluit apparatuur aan.',
+        features: [
+          'Bekabeling voor IP-camera\'s (PoE)',
+          'Gebalanceerde trajecten en routes',
+          'Strakke patchkasten en labeling',
+          'Opleverdossier met meetrapporten',
+          'MSP/IT sluit apparatuur aan',
+        ],
+      },
+      patchCabinets: {
+        title: 'Patchkasten & Serverkasten',
+        description: 'Strak ingericht en beheersbaar. Kabelmanagement, paneelindeling, labeling en documentatie. Airflow/voeding in acht genomen - ideaal voor beheer door MSP/IT.',
+        features: [
+          'Kabelgeleiding & paneelindeling',
+          'Labeling en schema\'s',
+          'Airflow/voeding in acht genomen',
+          'Netjes en beheersbaar',
+          'Ideaal voor beheer door MSP/IT',
+        ],
+      },
+      certification: {
+        title: 'Meten & Certificeren',
+        description: 'Praktische oplevercheck: functioneel testen, labelen en documenteren. Opleverdossier met meetrapporten, labels en kabelplan - duidelijk voor beheer.',
+        features: [
+          'Functioneel testen per traject',
+          'Labels en documentatie',
+          'Opleverdossier met kabelplan',
+          'Schema\'s en overzichten',
+          'Duidelijk voor MSP/IT beheer',
+        ],
+      },
+    },
+    usps: {
+      title: 'Waarom SIGNAALMAKERS',
+      subtitle: 'Wij doen het voorwerk: bekabeling voor infrastructuur. Netjes, gedocumenteerd en klaar voor gebruik. MSP/IT doet inregeling en beheer.',
+      infraFirst: {
+        title: 'Infra-first',
+        desc: 'Netwerk (Cat6/Cat6A), audio, camera - alle bekabeling voor infrastructuur. Geen IT-beheer, geen configuratie. Alleen het voorwerk.',
+      },
+      practicalDelivery: {
+        title: 'Praktisch opgeleverd',
+        desc: 'Functioneel getest met meetrapporten, labels en kabelplan. Transparant en traceerbaar voor beheer door MSP/IT.',
+      },
+      nationwide: {
+        title: 'Actief in België',
+        desc: 'Door heel België. Van serverruimtes tot zorg - overal hetzelfde vakmanschap. Voorwerk voor MSP/IT.',
+      },
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Databekabeling & Netwerkbekabeling België (Cat6/Cat6A)',
       description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A) in België. Audiokabels, camera-bekabeling en patchkasten. Actief in Antwerpen, Brussel, Gent, Leuven.',
       keywords: 'databekabeling belgië, netwerkbekabeling belgië, Cat6 bekabeling antwerpen, Cat6A bekabeling brussel, audiokabels belgië, camera bekabeling belgië, patchkasten belgië, infrastructuur bekabeling belgië',
+    },
+    diensten: {
+      title: 'Databekabeling, Netwerkbekabeling & Infrastructuur België | SIGNAALMAKERS',
+      description: 'Specialist in databekabeling (Cat6/Cat6A), netwerkbekabeling, audiokabels, camera-bekabeling en patchkasten in België. Functioneel getest en opgeleverd met kabelplan.',
+      keywords: 'databekabeling belgië, netwerkbekabeling belgië, Cat6 bekabeling, Cat6A bekabeling, audiokabels, camera bekabeling, patchkasten, certificeren, infrastructuur bekabeling belgië',
     },
   },
 

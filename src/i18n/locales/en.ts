@@ -198,11 +198,100 @@ export const en: TranslationKeys = {
     },
   },
 
+  diensten: {
+    title: 'Cabling for infrastructure',
+    subtitle: 'A reliable network starts with quality cabling. We deliver network cabling (Cat6/Cat6A), audio cables, camera cabling and patch cabinets. Everything functionally tested and delivered with cable plans. We do the groundwork; MSP/IT partners handle configuration and management.',
+    sectionTitle: 'Cabling for infrastructure',
+    sectionSubtitle: 'Network (Cat6/Cat6A), audio cables, camera cabling, patch cabinets and certification. Everything professionally installed, finished and documented - ready for MSP/IT.',
+    ctaTitle: 'Ready for reliable cabling?',
+    ctaSubtitle: 'MSPs, IT companies and organizations throughout the Netherlands and Belgium choose SIGNAALMAKERS for cabling that simply works. We do the infrastructure - you do the rest.',
+    ctaButton1: 'Request quote',
+    ctaButton2: 'Schedule intake',
+    services: {
+      network: {
+        title: 'Network Cabling (Cat6/Cat6A)',
+        description: 'Cat6/Cat6A cabling for 1-10 Gbps. Right category, distances and bandwidth. Focus on EMI/crosstalk, PoE and professional patch cabinets. Functionally tested with test reports, labels and cable plans.',
+        features: [
+          'Cat6A: 10 Gbps up to 100m (~500 MHz)',
+          'Cat6: 10 Gbps up to ~55m (~250 MHz)',
+          'Focus on EMI/crosstalk and PoE',
+          'Professional patch cabinets and route planning',
+          'Practical delivery check with cable plan',
+        ],
+      },
+      audio: {
+        title: 'Audio Cables',
+        description: 'Installation of audio cables for permanent installations. Balanced lines, interference-free routes and neatly finished. Labeled, documented and ready for the audio installer.',
+        features: [
+          'Pulling and installing audio cables',
+          'Balanced lines, interference-free',
+          'Neatly finished and labeled',
+          'Documented for audio partner',
+          'Infrastructure work - installer handles configuration',
+        ],
+      },
+      camera: {
+        title: 'Camera Cabling',
+        description: 'Cabling for IP cameras (PoE). Balanced routes, professional patch cabinets and consistent labeling. Delivery package with test reports - MSP/IT connects equipment.',
+        features: [
+          'Cabling for IP cameras (PoE)',
+          'Balanced routes and paths',
+          'Professional patch cabinets and labeling',
+          'Delivery package with test reports',
+          'MSP/IT connects equipment',
+        ],
+      },
+      patchCabinets: {
+        title: 'Patch Cabinets & Server Cabinets',
+        description: 'Professionally organized and manageable. Cable management, panel layout, labeling and documentation. Airflow/power considered - ideal for MSP/IT management.',
+        features: [
+          'Cable management & panel layout',
+          'Labeling and diagrams',
+          'Airflow/power considered',
+          'Clean and manageable',
+          'Ideal for MSP/IT management',
+        ],
+      },
+      certification: {
+        title: 'Testing & Certification',
+        description: 'Practical delivery check: functional testing, labeling and documentation. Delivery package with test reports, labels and cable plan - clear for management.',
+        features: [
+          'Functional testing per route',
+          'Labels and documentation',
+          'Delivery package with cable plan',
+          'Diagrams and overviews',
+          'Clear for MSP/IT management',
+        ],
+      },
+    },
+    usps: {
+      title: 'Why SIGNAALMAKERS',
+      subtitle: 'We do the infrastructure: cabling for your projects. Clean, documented and ready for use. MSP/IT handles configuration and management.',
+      infraFirst: {
+        title: 'Infrastructure first',
+        desc: 'Network (Cat6/Cat6A), audio, camera - all cabling for infrastructure. No IT management, no configuration. Only the groundwork.',
+      },
+      practicalDelivery: {
+        title: 'Practical delivery',
+        desc: 'Functionally tested with test reports, labels and cable plans. Transparent and traceable for MSP/IT management.',
+      },
+      nationwide: {
+        title: 'Netherlands & Belgium',
+        desc: 'Throughout the Netherlands and Belgium. From server rooms to healthcare - same craftsmanship everywhere. Infrastructure for MSP/IT.',
+      },
+    },
+  },
+
   seo: {
     home: {
       title: 'SIGNAALMAKERS – Data Cabling & Network Cabling Netherlands & Belgium (Cat6/Cat6A)',
       description: 'Specialist in data cabling and network cabling (Cat6/Cat6A), audio cables, camera cabling and patch cabinets in the Netherlands and Belgium. Functionally tested and delivered with cable plans.',
       keywords: 'data cabling, network cabling, Cat6 cabling, Cat6A cabling, audio cables, camera cabling, patch cabinets, certification, labeling, infrastructure cabling, MSP partner, cabling contractor, Netherlands, Belgium',
+    },
+    diensten: {
+      title: 'Data Cabling, Network Cabling & Infrastructure | SIGNAALMAKERS',
+      description: 'Specialist in data cabling (Cat6/Cat6A), network cabling, audio cables, camera cabling and patch cabinets. Functionally tested and delivered with cable plans. Active in Netherlands and Belgium.',
+      keywords: 'data cabling, network cabling, Cat6 cabling, Cat6A cabling, audio cables, camera cabling, patch cabinets, certification, infrastructure cabling, MSP partner',
     },
   },
 
