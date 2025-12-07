@@ -27,6 +27,13 @@ export const nlNL = {
     about: 'Over ons',
     contact: 'Contact',
     quote: 'Offerte',
+    servicesMenu: {
+      network: 'Netwerkbekabeling',
+      audio: 'Audiokabels',
+      camera: 'Camera-bekabeling',
+      patchCabinets: 'Patchkasten',
+      certification: 'Meten & Certificeren',
+    },
   },
 
   home: {

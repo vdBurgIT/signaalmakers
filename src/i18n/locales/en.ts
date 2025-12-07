@@ -29,6 +29,13 @@ export const en: TranslationKeys = {
     about: 'About',
     contact: 'Contact',
     quote: 'Quote',
+    servicesMenu: {
+      network: 'Network Cabling',
+      audio: 'Audio Cables',
+      camera: 'Camera Cabling',
+      patchCabinets: 'Patch Cabinets',
+      certification: 'Testing & Certification',
+    },
   },
 
   home: {

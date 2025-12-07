@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { LocaleSwitcher } from './LocaleSwitcher';
+import { useTranslation } from '../i18n';
 
 export default function Header() {
+  const t = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const location = useLocation();
@@ -42,54 +44,54 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-6">
             <Link to="/" className="hover:text-[#FF6A00] transition-colors">
-              Home
+              {t.nav.home}
             </Link>
 
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-[#FF6A00] transition-colors">
-                Diensten
+                {t.nav.services}
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white text-[#0E243A] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                 <Link to="/diensten/netwerkbekabeling" className="block px-4 py-3 hover:bg-gray-100">
-                  Netwerkbekabeling
+                  {t.nav.servicesMenu.network}
                 </Link>
                 <Link to="/diensten/audiokabels" className="block px-4 py-3 hover:bg-gray-100">
-                  Audiokabels
+                  {t.nav.servicesMenu.audio}
                 </Link>
                 <Link to="/diensten/camera-bekabeling" className="block px-4 py-3 hover:bg-gray-100">
-                  Camera-bekabeling
+                  {t.nav.servicesMenu.camera}
                 </Link>
                 <Link to="/diensten/patchkasten" className="block px-4 py-3 hover:bg-gray-100">
-                  Patchkasten
+                  {t.nav.servicesMenu.patchCabinets}
                 </Link>
                 <Link to="/diensten/certificeren" className="block px-4 py-3 hover:bg-gray-100">
-                  Meten &amp; Certificeren
+                  {t.nav.servicesMenu.certification}
                 </Link>
               </div>
             </div>
 
             <Link to="/sectoren" className="hover:text-[#FF6A00] transition-colors">
-              Sectoren
+              {t.nav.sectors}
             </Link>
 
             <Link to="/abonnementen" className="hover:text-[#FF6A00] transition-colors">
-              Abonnementen
+              {t.nav.subscriptions}
             </Link>
             <Link to="/blog" className="hover:text-[#FF6A00] transition-colors">
-              Blog
+              {t.nav.blog}
             </Link>
             <Link to="/over-ons" className="hover:text-[#FF6A00] transition-colors">
-              Over ons
+              {t.nav.about}
             </Link>
             <Link to="/faq" className="hover:text-[#FF6A00] transition-colors">
-              FAQ
+              {t.nav.faq}
             </Link>
             <Link
               to="/contact"
               className="bg-[#FF6A00] text-white px-6 py-2 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
             >
-              Contact
+              {t.nav.contact}
             </Link>
             <LocaleSwitcher />
           </div>
@@ -109,7 +111,7 @@ export default function Header() {
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Home
+              {t.nav.home}
             </Link>
 
             <div>
@@ -117,7 +119,7 @@ export default function Header() {
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className="flex items-center gap-1 py-2 hover:text-[#FF6A00] transition-colors"
               >
-                Diensten
+                {t.nav.services}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
               {isServicesOpen && (
@@ -127,35 +129,35 @@ export default function Header() {
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Netwerkbekabeling
+                    {t.nav.servicesMenu.network}
                   </Link>
                   <Link
                     to="/diensten/audiokabels"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Audiokabels
+                    {t.nav.servicesMenu.audio}
                   </Link>
                   <Link
                     to="/diensten/camera-bekabeling"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Camera-bekabeling
+                    {t.nav.servicesMenu.camera}
                   </Link>
                   <Link
                     to="/diensten/patchkasten"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Patchkasten
+                    {t.nav.servicesMenu.patchCabinets}
                   </Link>
                   <Link
                     to="/diensten/certificeren"
                     className="block py-2 text-sm hover:text-[#FF6A00]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Meten &amp; Certificeren
+                    {t.nav.servicesMenu.certification}
                   </Link>
                 </div>
               )}
@@ -166,7 +168,7 @@ export default function Header() {
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Sectoren
+              {t.nav.sectors}
             </Link>
 
             <Link
@@ -174,35 +176,35 @@ export default function Header() {
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Abonnementen
+              {t.nav.subscriptions}
             </Link>
             <Link
               to="/blog"
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Blog
+              {t.nav.blog}
             </Link>
             <Link
               to="/over-ons"
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Over ons
+              {t.nav.about}
             </Link>
             <Link
               to="/faq"
               className="block py-2 hover:text-[#FF6A00] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              FAQ
+              {t.nav.faq}
             </Link>
             <Link
               to="/contact"
               className="block bg-[#FF6A00] text-white px-6 py-2 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-center mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact
+              {t.nav.contact}
             </Link>
             <div className="mt-4 pt-4 border-t border-gray-600">
               <LocaleSwitcher />
