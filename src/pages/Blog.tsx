@@ -42,6 +42,11 @@ export default function Blog() {
         <BackgroundOverlay variant="wifi" density="light" color="grey" />
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            {t.blog.dutchOnlyNotice && (
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded max-w-4xl mx-auto">
+                <p className="text-blue-700 font-medium text-center">{t.blog.dutchOnlyNotice}</p>
+              </div>
+            )}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {posts.map((post, index) => (
                 <article key={index} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">

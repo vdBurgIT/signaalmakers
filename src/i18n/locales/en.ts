@@ -561,6 +561,7 @@ export const en: TranslationKeys = {
     readMore: 'Read more',
     backToBlog: 'Back to blog',
     relatedArticles: 'Related articles',
+    dutchOnlyNotice: 'Note: Blog articles are currently only available in Dutch.',
   },
 
   seo: {

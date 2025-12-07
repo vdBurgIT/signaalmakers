@@ -82,6 +82,11 @@ export default function BlogPost() {
         <BackgroundOverlay variant="network" density="light" color="grey" />
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
+            {t.blog.dutchOnlyNotice && (
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 rounded">
+                <p className="text-blue-700 font-medium">{t.blog.dutchOnlyNotice}</p>
+              </div>
+            )}
             <article
               className="prose prose-lg max-w-none"
               dangerouslySetInnerHTML={{ __html: post.content }}
