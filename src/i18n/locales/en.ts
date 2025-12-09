@@ -254,12 +254,72 @@ export const en: TranslationKeys = {
         subtitle: 'The patch cabinet is the heart of the network. If that\'s not right, you have problems. We make it clean, logical and manageable.',
       },
       whatWeDo: {
-        title: 'What we do',
-        intro: 'Neatly organize or clean up patch cabinets. Cable management, patch panels, labels and documentation. Everything according to best practices, traceable and MSP-ready.',
+        title: 'What we deliver',
+        description: 'Professionally organized patch and server cabinets. Cable management, panel layout, labeling and documentation. Airflow/power considered – ideal for MSP/IT management.',
       },
-      whyUs: {
-        title: 'Why a clean patch cabinet?',
-        subtitle: 'Troubleshooting is 10x faster when you can immediately see where cables go. Good cable management saves hours of work and prevents mistakes.',
+      actions: {
+        title: 'What we do',
+        items: [
+          'Remove old clutter and unnecessary cabling',
+          'Rebuild patch cabinet from scratch',
+          'Cable management and bundling',
+          'Label all connections',
+          'Document the final setup',
+        ],
+      },
+      results: {
+        title: 'Result',
+        items: [
+          'Clear cabinet that\'s quick to work with',
+          'MSPs can work faster, fewer mistakes',
+          'Easier management in the future',
+          'Fewer failures from incorrect connections',
+        ],
+      },
+      why: {
+        title: 'Why a professional patch cabinet?',
+        description: 'A messy patch cabinet costs time and money. Tracing errors takes longer, expansions are difficult and the chance of failures increases. Professional patch cabinets with cable management, labeling and diagrams save hours of work during maintenance and expansions. Ideal for MSP/IT management.',
+      },
+      beforeAfter: {
+        title: 'Before and after',
+        before: {
+          title: 'Before our cleanup',
+          items: [
+            'Loose cables and poor routing',
+            'No labeling or documentation',
+            'Unnecessary and dead cables',
+            'Difficult to trace errors',
+            'Expansions become increasingly difficult',
+          ],
+        },
+        after: {
+          title: 'After our setup',
+          items: [
+            'Clean cables and routing',
+            'Everything labeled and documented',
+            'Only working cables',
+            'Errors quickly found',
+            'Easy to expand',
+          ],
+        },
+      },
+      forMSP: {
+        title: 'For MSPs',
+        description: 'A professional patch cabinet means your technicians can work faster. Less time searching, fewer mistakes, better control over the network.',
+        benefits: [
+          {
+            title: 'Work faster',
+            desc: 'No time wasted searching for the right cable. Everything is labeled and logically organized.',
+          },
+          {
+            title: 'Fewer mistakes',
+            desc: 'Clear numbering and documentation prevents cables from being connected incorrectly.',
+          },
+          {
+            title: 'Better management',
+            desc: 'You can see at a glance what\'s where. Planning expansions becomes easier.',
+          },
+        ],
       },
       faqs: {
         title: 'Frequently asked questions',
@@ -308,11 +368,65 @@ export const en: TranslationKeys = {
       seo: {
         title: 'Camera Cabling – PoE Runs for IP Cameras | SIGNAALMAKERS',
         description: 'PoE cabling for IP cameras. Pull, terminate and label UTP cables. Indoor and outdoor. We do cables, security companies do cameras.',
-        keywords: 'camera cabling, IP camera cabling, PoE camera cabling, security camera cabling',
+        keywords: 'camera cabling, IP camera cabling, PoE camera cabling, security camera cabling, Netherlands',
       },
       hero: {
         title: 'Camera cabling for IP cameras',
         subtitle: 'PoE cabling for IP cameras. Cat6/Cat6A runs indoor and outdoor. We pull cables, your security partner installs cameras.',
+      },
+      whatWeDo: {
+        title: 'What we deliver',
+        intro: 'Cable runs for IP cameras based on Cat6/Cat6A. PoE-ready, balanced routes and clean termination in the patch cabinet. Everything documented and ready for MSP/IT.',
+        deliverables: {
+          title: 'What we deliver',
+          items: [
+            'Pull cabling for IP cameras (PoE)',
+            'Cat6/Cat6A runs (PoE-ready)',
+            'Balanced routes and shielding',
+            'Clean termination in patch cabinet',
+            'Consistent labeling and documentation',
+            'Handover package with test reports',
+          ],
+        },
+        forWho: {
+          title: 'For whom',
+          items: [
+            'MSPs and IT companies for camera installations',
+            'Security companies that want to outsource groundwork',
+            'Offices, retail and warehouses',
+            'Education, healthcare and public spaces',
+          ],
+        },
+      },
+      poeInfo: {
+        title: 'PoE-ready cabling',
+        description: 'We pull Cat6/Cat6A cabling suitable for PoE (Power over Ethernet). This allows IP cameras to receive both data and power via one cable. Attention to EMI/crosstalk and correct distances. Everything tested and documented.',
+      },
+      whyUs: {
+        title: 'Why SIGNAALMAKERS for camera cabling?',
+        subtitle: 'We lay the foundation for reliable camera systems. PoE-ready, balanced routes and clean termination. MSP/IT can start configuration immediately.',
+        benefits: [
+          {
+            title: 'PoE-ready',
+            desc: 'Cat6/Cat6A cabling suitable for PoE. Data and power over one cable. Attention to distances and EMI.',
+          },
+          {
+            title: 'Clean termination',
+            desc: 'Balanced routes, bundling and labeling. Clean patch cabinets and consistent documentation.',
+          },
+          {
+            title: 'Ready for MSP/IT',
+            desc: 'Handover package with test reports and diagrams. MSP/IT can connect and configure cameras immediately.',
+          },
+        ],
+      },
+      partnership: {
+        title: 'Collaboration with MSPs and security companies',
+        subtitle: 'We often work together with security companies and MSPs. We lay the cabling – they connect cameras and handle configuration. Clear separation between groundwork and setup.',
+        disclaimer: {
+          title: 'We only do the groundwork',
+          description: 'We pull cabling for IP cameras and terminate in the patch cabinet. Balanced runs, PoE-ready and neatly labeled. Security companies and MSPs handle camera connection and configuration. This creates a clear separation between groundwork (us) and setup (MSP/security).',
+        },
       },
       faqs: {
         title: 'Frequently asked questions',
@@ -325,11 +439,31 @@ export const en: TranslationKeys = {
             question: 'Which cable do you use for IP cameras?',
             answer: 'For IP cameras we use Cat6 or Cat6A UTP cables. These support PoE (Power over Ethernet) so the camera gets power and data via one cable. For outdoor runs we use outdoor-rated cables with extra protection.',
           },
+          {
+            question: 'What is PoE and why is it useful?',
+            answer: 'PoE (Power over Ethernet) means an IP camera receives both data and power via one UTP cable. This saves pulling separate power cables and makes placement flexible. You do need a PoE switch or injector to supply the power.',
+          },
+          {
+            question: 'How far can a camera cable run?',
+            answer: 'The maximum distance for Cat6/Cat6A cabling is 100 meters (from switch to camera). For longer distances you can use fiber optic, PoE extenders or additional switches. We always advise on feasible distances during design.',
+          },
+          {
+            question: 'Can you also pull outdoor camera cabling?',
+            answer: 'Yes, we also pull outdoor cables. We use outdoor-rated Cat6/Cat6A with UV-resistant jacket and extra protection against moisture. Cables are neatly concealed in conduits, pipes or installed underground.',
+          },
+          {
+            question: 'How many cameras can a PoE switch power?',
+            answer: 'This depends on the switch capacity and the cameras. A standard PoE camera uses 4-15 Watts. A 24-port PoE switch typically has a 120-370 Watt budget. Always calculate a 20% margin for future expansions.',
+          },
+          {
+            question: 'Do I receive documentation of the camera cabling?',
+            answer: 'Yes, always. You receive a handover package with test reports, cable plan, labeling scheme and photos of the final installation. This way your security company knows exactly which cable goes where and can connect cameras immediately.',
+          },
         ],
       },
       cta: {
         title: 'Ready for camera cabling?',
-        subtitle: 'Let us install the PoE runs for your cameras.',
+        subtitle: 'Request a quote or choose a subscription with guaranteed capacity and discounts.',
         button1: 'View subscriptions',
         button2: 'Request quote',
       },
@@ -341,11 +475,64 @@ export const en: TranslationKeys = {
       seo: {
         title: 'Audio Cables – Pull/Termination for Permanent Installations | SIGNAALMAKERS',
         description: 'Pull and terminate audio cables for permanent installations. Balanced lines, interference-free routes, neatly finished. Infrastructure work for audio installers.',
-        keywords: 'audio cables, audio cabling, balanced lines, XLR cabling, audio installation',
+        keywords: 'audio cables, audio cabling, balanced lines, XLR cabling, audio installation, Netherlands',
       },
       hero: {
         title: 'Audio cables for permanent installations',
         subtitle: 'Pull and terminate audio cables. Balanced lines, interference-free routes, neatly finished. We do infrastructure, audio installer handles equipment.',
+      },
+      disclaimer: {
+        title: 'We only do the groundwork',
+        description: 'We pull audio cables and terminate. Balanced lines, interference-free and neatly labeled. Audio installers handle setup and equipment connection. This creates a clear separation between groundwork (us) and setup (audio partner).',
+      },
+      whatWeDo: {
+        title: 'What we deliver',
+        intro: 'Audio cables for permanent installations: meeting rooms, offices, retail and healthcare. Balanced lines, interference-free routes and consistent labeling. Everything documented and ready for the audio installer.',
+        deliverables: {
+          title: 'What we deliver',
+          items: [
+            'Pull audio cables (balanced lines)',
+            'Interference-free routes and shielding',
+            'Neatly finished and bundling',
+            'Consistent labeling and documentation',
+            'Handover package for audio partner',
+          ],
+        },
+        forWho: {
+          title: 'For whom',
+          items: [
+            'Audio installers who want to outsource groundwork',
+            'MSPs and IT companies for AV cabling',
+            'Offices with meeting rooms and auditoriums',
+            'Retail, healthcare and education',
+          ],
+        },
+      },
+      whyUs: {
+        title: 'Why SIGNAALMAKERS for audio cables?',
+        subtitle: 'We lay the foundation for reliable sound systems. Balanced lines, interference-free and neatly finished. Audio partners can start setup immediately.',
+        benefits: [
+          {
+            title: 'Balanced lines',
+            desc: 'Interference-free cabling according to standards. Attention to EMI and shielding.',
+          },
+          {
+            title: 'Neatly finished',
+            desc: 'Clean routing, bundling and labeling. Everything documented and traceable.',
+          },
+          {
+            title: 'Ready for setup',
+            desc: 'Audio installer can start immediately. No hassle with groundwork afterwards.',
+          },
+        ],
+      },
+      partnership: {
+        title: 'Collaboration with audio installers',
+        subtitle: 'We often work together with audio partners. We lay cables and terminate – they install equipment and handle setup. Clear separation between groundwork and setup.',
+      },
+      balancedLines: {
+        title: 'Balanced lines for permanent installations',
+        description: 'We pull balanced audio cables for professional installations. Interference-free routes, shielding against EMI and neatly finished. Everything labeled and documented. This way your audio partner can start setup immediately.',
       },
       faqs: {
         title: 'Frequently asked questions',
@@ -354,19 +541,44 @@ export const en: TranslationKeys = {
             question: 'Do you also install audio equipment?',
             answer: 'No, we only pull and terminate audio cables. Audio equipment, setup and tuning is done by your audio installer. We provide the infrastructure.',
           },
+          {
+            question: 'What are balanced lines?',
+            answer: 'Balanced lines use two signal conductors and a ground to suppress interference. This is the standard for professional audio installations because it minimizes noise and EMI. We pull cables with proper shielding and routing to prevent interference.',
+          },
+          {
+            question: 'Which cable do you use for audio cables?',
+            answer: 'For professional installations we use balanced audio cables with shielding (for example Cat6 for digital audio or balanced microphone/line cables for analog). The choice depends on the type of installation and distances.',
+          },
+          {
+            question: 'How do you prevent interference on audio cables?',
+            answer: 'We keep distance from power cables, fluorescent lighting and other interference sources. Balanced cabling with shielding helps suppress interference. We also avoid parallel routing with high-voltage cables and ensure proper grounding.',
+          },
+          {
+            question: 'For which spaces are audio cables suitable?',
+            answer: 'Audio cables are suitable for permanent installations such as meeting rooms, auditoriums, offices, retail (background music), healthcare and education. Anywhere professional sound is needed with fixed speakers, microphones or AV equipment.',
+          },
+          {
+            question: 'How much does pulling audio cables cost?',
+            answer: 'This depends on the number of runs, lengths and complexity. Standard meeting room (4-8 speakers) costs €600-1200 for cabling. Larger spaces or more complex installations cost more. Request a quote for exact pricing.',
+          },
+          {
+            question: 'Do I receive documentation of the audio cables?',
+            answer: 'Yes, always. You receive a handover package with cable plan, labeling scheme and photos of the final installation. This way your audio installer knows exactly which cable goes where and can connect equipment immediately.',
+          },
         ],
       },
       cta: {
-        title: 'Ready for audio cabling?',
-        subtitle: 'Let us install the audio cables for your installation.',
+        title: 'Ready for audio cables?',
+        subtitle: 'Request a quote or choose a subscription with guaranteed capacity and discounts.',
         button1: 'View subscriptions',
-        button2: 'Request quote',
+        button2: 'Contact us',
       },
     },
     certification: {
       title: 'Testing & Certification',
       shortTitle: 'Certification',
       description: 'Practical delivery check: functionally tested, labeled and delivered with cable plans. Transparent and traceable - ready for MSP/IT management.',
+      heroTitle: 'Testing & Certification',
       seo: {
         title: 'Testing & Certification – Practical Delivery Check | SIGNAALMAKERS',
         description: 'Practical delivery check: every cable tested, labeled and documented. Delivery package with test reports and cable plans. Transparent and traceable.',
@@ -376,12 +588,94 @@ export const en: TranslationKeys = {
         title: 'Testing & Certification',
         subtitle: 'Practical delivery check: every cable functionally tested, labeled and documented. Delivery package with test reports, diagrams and cable plans – transparent and traceable. Ready for MSP/IT management.',
       },
+      whatYouGet: {
+        title: 'What you get',
+        description: 'Always functionally tested, labeled and delivered with a clear cable plan. Delivery package with test reports, diagrams and labels. Proof that the cabling works and is ready for MSP/IT management.',
+        testing: {
+          title: 'Functional testing per run',
+          description: 'Every cable run is functionally tested with professional measuring equipment. We check if the cable performs as expected and is suitable for use.',
+          items: [
+            'Throughput and bandwidth',
+            'Integrity and signal loss',
+            'Termination and connections',
+          ],
+        },
+        labeling: {
+          title: 'Labels and diagrams',
+          description: 'All cables labeled and numbered. Diagrams and overviews for traceable management. Everything documented and ready for MSP/IT.',
+          items: [
+            'Consistent labeling',
+            'Logical numbering schemes',
+            'Traceable and manageable',
+          ],
+        },
+        deliverables: {
+          title: 'Delivery package',
+          description: 'Clear delivery package with test reports, labels and cable plans. Transparent and traceable. Proof that all runs function and are ready for MSP/IT management.',
+          items: [
+            'Test reports per run',
+            'Labels and numbering schemes',
+            'Cable plans and documentation',
+            'Functional test results per cable',
+          ],
+        },
+      },
+      why: {
+        title: 'Why a practical delivery check?',
+        description: 'Without testing and documentation, nobody knows if the cabling actually works. With a delivery package everything is transparent, traceable and ready for management.',
+        benefits: [
+          {
+            title: 'Confidence for MSP/IT',
+            desc: 'Proof that everything meets the standard. Labels and diagrams make management easy and traceable.',
+          },
+          {
+            title: 'Less follow-up',
+            desc: 'Errors are detected and resolved in advance. No discussion afterwards about what works or doesn\'t.',
+          },
+          {
+            title: 'Transparency',
+            desc: 'Test reports and documentation provide complete transparency about cabling quality.',
+          },
+        ],
+      },
+      standard: {
+        title: 'Standard with every run',
+        description: 'This practical delivery check is standard with every cabling run. No extra costs. It\'s simply included – so you know for sure that the infrastructure functions and is ready for MSP/IT management.',
+      },
       faqs: {
         title: 'Frequently asked questions',
         items: [
           {
-            question: 'What is the difference between functional testing and certification?',
-            answer: 'Functional testing checks if the cable works and transmits data. Certification measures exactly the performance (bandwidth, crosstalk, losses) and compares it to the standard. We do functional testing as standard; full certification on request.',
+            question: 'What do you mean by "certification"?',
+            answer: 'By certification we mean a practical delivery check. We test every installed cable with equipment, label the connections and deliver a clear delivery report with cable plan. So you know for sure that everything functions and is traceably documented.',
+          },
+          {
+            question: 'Why is this delivery check important?',
+            answer: 'Without testing and documentation, nobody knows if the cabling really works as expected. A practical delivery check prevents discussions afterwards, provides transparency about quality and speeds up troubleshooting. For MSPs and IT administrators it\'s essential proof that the infrastructure is reliable.',
+          },
+          {
+            question: 'How do you test the cables?',
+            answer: 'We functionally test every cable run with professional measuring equipment. For Cat6 we test up to 250 MHz, for Cat6A up to 500 MHz. Each run gets a pass/fail status. All test reports include the measurements, cable numbers and locations for tracing.',
+          },
+          {
+            question: 'What\'s in a test report?',
+            answer: 'Each test report contains cable length, throughput speed, signal loss (insertion loss), reflection (return loss), crosstalk and termination quality. You also see if the run meets the standard (pass/fail). Reports contain cable numbers and locations for tracing.',
+          },
+          {
+            question: 'How long does testing and certification take?',
+            answer: 'Testing a single run takes 2-5 minutes, depending on length and complexity. For a standard installation with 20-50 points we estimate 1-2 hours of testing. Labeling and documenting takes extra time, often equal to the testing time.',
+          },
+          {
+            question: 'Do I also get a digital copy of the reports?',
+            answer: 'Yes, all test reports are delivered digitally as PDF. You also receive diagrams, labels and overviews in digital form. So you can share documentation with MSP/IT partners and archive it for future management and expansions.',
+          },
+          {
+            question: 'What if a cable doesn\'t meet the standard?',
+            answer: 'If a run fails, we find the cause (poor termination, damage, run too long). We fix the problem and test again until the run meets the standard. Only then do we deliver — only runs that meet the standard are accepted.',
+          },
+          {
+            question: 'Are the costs of this delivery check included?',
+            answer: 'Yes, functional testing and documenting is standard included with all our cabling runs. No surprises or extra costs. It\'s simply included — this is how we guarantee quality and transparency with every delivery.',
           },
         ],
       },

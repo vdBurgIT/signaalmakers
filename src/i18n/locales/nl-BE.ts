@@ -254,12 +254,72 @@ export const nlBE: TranslationKeys = {
         subtitle: 'De patchkast is het hart van het netwerk. Als dat niet klopt, hebt u problemen. Wij maken het netjes, logisch en beheersbaar.',
       },
       whatWeDo: {
-        title: 'Wat we doen',
-        intro: 'Patchkasten netjes inrichten of opruimen. Kabelmanagement, patchpanelen, labels en documentatie. Alles volgens best-practice, traceerbaar en MSP-proof.',
+        title: 'Wat we leveren',
+        description: 'Strak ingerichte patchkasten en serverkasten. Kabelmanagement, paneelindeling, labeling en documentatie. Airflow/voeding in acht genomen – ideaal voor beheer door MSP/IT.',
       },
-      whyUs: {
-        title: 'Waarom een nette patchkast?',
-        subtitle: 'Troubleshooting is 10x sneller als u direct ziet waar kabels naartoe gaan. Goed kabelmanagement bespaart uren werk en voorkomt fouten.',
+      actions: {
+        title: 'Wat we doen',
+        items: [
+          'Oude rommel en overbodige bekabeling opruimen',
+          'Patchkast opnieuw opbouwen',
+          'Kabelmanagement en bundeling',
+          'Labelen van alle aansluitingen',
+          'Documenteren van de eindopstelling',
+        ],
+      },
+      results: {
+        title: 'Resultaat',
+        items: [
+          'Overzichtelijke kast waar u snel mee kunt werken',
+          'MSP kan sneller werken, minder fouten',
+          'Makkelijker beheer in de toekomst',
+          'Minder storingen door foute aansluitingen',
+        ],
+      },
+      why: {
+        title: 'Waarom een strakke patchkast?',
+        description: 'Een rommelige patchkast kost tijd en geld. Fouten traceren duurt langer, uitbreidingen zijn lastig en de kans op storingen groeit. Strakke patchkasten met kabelmanagement, labeling en schema\'s besparen uren werk bij onderhoud en uitbreidingen. Ideaal voor beheer door MSP/IT.',
+      },
+      beforeAfter: {
+        title: 'Voor en na',
+        before: {
+          title: 'Voor onze opruiming',
+          items: [
+            'Losse kabels en slechte routing',
+            'Geen labeling of documentatie',
+            'Overbodige en dode kabels',
+            'Moeilijk om fouten te traceren',
+            'Uitbreidingen worden steeds lastiger',
+          ],
+        },
+        after: {
+          title: 'Na onze opbouw',
+          items: [
+            'Nette kabels en routing',
+            'Alles gelabeld en gedocumenteerd',
+            'Alleen werkende kabels',
+            'Fouten snel te vinden',
+            'Makkelijk uit te breiden',
+          ],
+        },
+      },
+      forMSP: {
+        title: 'Voor MSP\'s',
+        description: 'Een nette patchkast betekent dat uw technici sneller kunnen werken. Minder tijd zoeken, minder fouten, meer grip op het netwerk.',
+        benefits: [
+          {
+            title: 'Sneller werken',
+            desc: 'Geen tijd verliezen met zoeken naar de juiste kabel. Alles is gelabeld en logisch opgebouwd.',
+          },
+          {
+            title: 'Minder fouten',
+            desc: 'Duidelijke nummering en documentatie voorkomt dat kabels verkeerd worden aangesloten.',
+          },
+          {
+            title: 'Beter beheer',
+            desc: 'U kunt in één oogopslag zien wat waar zit. Uitbreidingen plannen wordt makkelijker.',
+          },
+        ],
       },
       faqs: {
         title: 'Veelgestelde vragen',
@@ -308,11 +368,65 @@ export const nlBE: TranslationKeys = {
       seo: {
         title: 'Camera-bekabeling – PoE trajecten voor IP-camera\'s | SIGNAALMAKERS',
         description: 'PoE-bekabeling voor IP-camera\'s. UTP-kabels trekken, afmonteren en labelen. Binnen en buiten. Wij doen kabels, beveiligingsbedrijf doet camera\'s.',
-        keywords: 'camera bekabeling, IP camera bekabeling, PoE camera bekabeling, beveiligingscamera bekabeling',
+        keywords: 'camera bekabeling, IP camera bekabeling, PoE camera bekabeling, beveiligingscamera bekabeling, Antwerpen, Brussel, Gent',
       },
       hero: {
         title: 'Camera-bekabeling voor IP-camera\'s',
         subtitle: 'PoE-bekabeling voor IP-camera\'s. Cat6/Cat6A trajecten binnen en buiten. Wij trekken kabels, uw beveiligingspartner installeert camera\'s.',
+      },
+      whatWeDo: {
+        title: 'Wat we leveren',
+        intro: 'Bekabelingstrajecten voor IP-camera\'s op basis van Cat6/Cat6A. PoE-geschikt, gebalanceerde routes en strakke afwerking in de patchkast. Alles gedocumenteerd en klaar voor MSP/IT.',
+        deliverables: {
+          title: 'Wat we leveren',
+          items: [
+            'Trek bekabeling voor IP-camera\'s (PoE)',
+            'Cat6/Cat6A trajecten (PoE-geschikt)',
+            'Gebalanceerde routes en afscherming',
+            'Strakke afwerking in patchkast',
+            'Consistente labeling en documentatie',
+            'Opleverdossier met meetrapporten',
+          ],
+        },
+        forWho: {
+          title: 'Voor wie',
+          items: [
+            'MSP\'s en IT-bedrijven voor camera-installaties',
+            'Beveiligingsbedrijven die voorwerk willen uitbesteden',
+            'Kantoren, retail en magazijnen in Antwerpen, Brussel, Gent',
+            'Onderwijs, zorg en publieke ruimtes',
+          ],
+        },
+      },
+      poeInfo: {
+        title: 'PoE-geschikt bekabelen',
+        description: 'Wij trekken Cat6/Cat6A bekabeling geschikt voor PoE (Power over Ethernet). Zo kunnen IP-camera\'s zowel data als stroom over één kabel ontvangen. Aandacht voor EMI/crosstalk en juiste afstanden. Alles getest en gedocumenteerd.',
+      },
+      whyUs: {
+        title: 'Waarom SIGNAALMAKERS voor camera-bekabeling?',
+        subtitle: 'Wij leggen de basis voor betrouwbare camerasystemen. PoE-geschikt, gebalanceerde routes en strakke afwerking. MSP/IT kan direct aan de slag met configuratie.',
+        benefits: [
+          {
+            title: 'PoE-geschikt',
+            desc: 'Cat6/Cat6A bekabeling geschikt voor PoE. Data en stroom over één kabel. Aandacht voor afstanden en EMI.',
+          },
+          {
+            title: 'Strakke afwerking',
+            desc: 'Gebalanceerde routes, bundeling en labeling. Strakke patchkasten en consistente documentatie.',
+          },
+          {
+            title: 'Klaar voor MSP/IT',
+            desc: 'Opleverdossier met meetrapporten en schema\'s. MSP/IT kan direct camera\'s aansluiten en configureren.',
+          },
+        ],
+      },
+      partnership: {
+        title: 'Samenwerking met MSP en beveiligingsbedrijven',
+        subtitle: 'Wij werken vaak samen met beveiligingsbedrijven en MSP\'s. Wij leggen de bekabeling – zij sluiten camera\'s aan en regelen configuratie. Duidelijke scheiding tussen voorwerk en inregeling.',
+        disclaimer: {
+          title: 'Wij doen alleen het voorwerk',
+          description: 'Wij trekken bekabeling voor IP-camera\'s en monteren af in de patchkast. Gebalanceerde trajecten, PoE-geschikt en netjes gelabeld. Beveiligingsbedrijven en MSP\'s doen de aansluiting en configuratie van camera\'s. Zo is er een duidelijke scheiding tussen het voorwerk (wij) en de inregeling (MSP/beveiliging).',
+        },
       },
       faqs: {
         title: 'Veelgestelde vragen',
@@ -325,11 +439,31 @@ export const nlBE: TranslationKeys = {
             question: 'Welke kabel gebruikt u voor IP-camera\'s?',
             answer: 'Voor IP-camera\'s gebruiken we Cat6 of Cat6A UTP-kabels. Deze ondersteunen PoE (Power over Ethernet) waardoor de camera stroom én data via één kabel krijgt. Voor buitentrajecten gebruiken we outdoor-rated kabels met extra bescherming.',
           },
+          {
+            question: 'Wat is PoE en waarom is dat handig?',
+            answer: 'PoE (Power over Ethernet) betekent dat een IP-camera zowel data als stroom via één UTP-kabel krijgt. Dit scheelt apart stroomkabels trekken en maakt plaatsing flexibel. U heeft wel een PoE-switch of injector nodig om de stroom te leveren.',
+          },
+          {
+            question: 'Hoe ver kan een camera-kabel liggen?',
+            answer: 'De maximale afstand voor Cat6/Cat6A bekabeling is 100 meter (van switch tot camera). Voor langere afstanden kunt u glasvezel, PoE-extenders of extra switches gebruiken. We adviseren bij het ontwerp altijd over haalbare afstanden.',
+          },
+          {
+            question: 'Kunnen jullie ook buiten camera-bekabeling trekken?',
+            answer: 'Ja, we trekken ook buitenkabels. We gebruiken outdoor-rated Cat6/Cat6A met UV-bestendige mantel en extra bescherming tegen vocht. Kabels worden netjes weggewerkt in goten, leidingen of ondergronds aangelegd.',
+          },
+          {
+            question: 'Hoeveel camera\'s kan een PoE-switch voeden?',
+            answer: 'Dat hangt af van het vermogen van de switch en de camera\'s. Een standaard PoE-camera gebruikt 4-15 Watt. Een 24-poorts PoE-switch heeft vaak 120-370 Watt budget. Reken altijd een marge van 20% voor toekomstige uitbreidingen.',
+          },
+          {
+            question: 'Krijg ik documentatie van de camera-bekabeling?',
+            answer: 'Ja, altijd. U krijgt een opleverdossier met meetrapporten, kabelplan, labeling-schema en foto\'s van de eindopstelling. Zo weet uw beveiligingsbedrijf precies welke kabel waar naartoe loopt en kunnen zij direct camera\'s aansluiten.',
+          },
         ],
       },
       cta: {
         title: 'Klaar voor camera-bekabeling?',
-        subtitle: 'Laat ons de PoE-trajecten aanleggen voor uw camera\'s.',
+        subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
         button1: 'Bekijk abonnementen',
         button2: 'Vraag offerte aan',
       },
@@ -341,11 +475,64 @@ export const nlBE: TranslationKeys = {
       seo: {
         title: 'Audiokabels – trek/afmontage voor vaste installaties | SIGNAALMAKERS',
         description: 'Trek en afmontage van audiokabels voor vaste installaties. Gebalanceerde lijnen, storingsvrije routes, netjes afgewerkt. Infra-voorwerk voor audio-installateurs.',
-        keywords: 'audiokabels, audio bekabeling, gebalanceerde lijnen, XLR bekabeling, audio installatie',
+        keywords: 'audiokabels, audio bekabeling, gebalanceerde lijnen, XLR bekabeling, audio installatie, Antwerpen, Brussel, Gent',
       },
       hero: {
         title: 'Audiokabels voor vaste installaties',
         subtitle: 'Trek en afmontage van audiokabels. Gebalanceerde lijnen, storingsvrije routes, netjes afgewerkt. Wij doen infra, audio-installateur doet apparatuur.',
+      },
+      disclaimer: {
+        title: 'Wij doen alleen het voorwerk',
+        description: 'Wij trekken audiokabels en monteren af. Gebalanceerde lijnen, storingsvrij en netjes gelabeld. Audio-installateurs doen de inregeling en aansluiting van apparatuur. Zo is er een duidelijke scheiding tussen het voorwerk (wij) en de inregeling (audio-partner).',
+      },
+      whatWeDo: {
+        title: 'Wat we leveren',
+        intro: 'Audiokabels voor vaste installaties: vergaderruimtes, kantoren, retail en zorg. Gebalanceerde lijnen, storingsarme routes en consistente labeling. Alles gedocumenteerd en klaar voor de audio-installateur.',
+        deliverables: {
+          title: 'Wat we leveren',
+          items: [
+            'Trek audiokabels (gebalanceerde lijnen)',
+            'Storingsarme routes en afscherming',
+            'Netjes afgewerkt en bundeling',
+            'Consistente labeling en documentatie',
+            'Opleverdossier voor audio-partner',
+          ],
+        },
+        forWho: {
+          title: 'Voor wie',
+          items: [
+            'Audio-installateurs die voorwerk willen uitbesteden',
+            'MSP\'s en IT-bedrijven voor AV-bekabeling',
+            'Kantoren met vergaderruimtes in Antwerpen, Brussel, Gent',
+            'Retail, zorg en onderwijs',
+          ],
+        },
+      },
+      whyUs: {
+        title: 'Waarom SIGNAALMAKERS voor audiokabels?',
+        subtitle: 'Wij leggen de basis voor betrouwbare geluidssystemen. Gebalanceerde lijnen, storingsvrij en netjes afgewerkt. Audio-partners kunnen direct aan de slag met inregeling.',
+        benefits: [
+          {
+            title: 'Gebalanceerde lijnen',
+            desc: 'Storingsarme bekabeling volgens de standaard. Aandacht voor EMI en afscherming.',
+          },
+          {
+            title: 'Netjes afgewerkt',
+            desc: 'Strakke routing, bundeling en labeling. Alles gedocumenteerd en traceerbaar.',
+          },
+          {
+            title: 'Klaar voor inregeling',
+            desc: 'Audio-installateur kan direct aan de slag. Geen gedoe met voorwerk achteraf.',
+          },
+        ],
+      },
+      partnership: {
+        title: 'Samenwerking met audio-installateurs',
+        subtitle: 'Wij werken vaak samen met audio-partners. Wij leggen de kabels en monteren af – zij installeren apparatuur en regelen in. Duidelijke scheiding tussen voorwerk en inregeling.',
+      },
+      balancedLines: {
+        title: 'Gebalanceerde lijnen voor vaste installaties',
+        description: 'Wij trekken gebalanceerde audiokabels voor professionele installaties. Storingsarme routes, afscherming tegen EMI en netjes afgewerkt. Alles gelabeld en gedocumenteerd. Zo kan uw audio-partner direct aan de slag met inregeling.',
       },
       faqs: {
         title: 'Veelgestelde vragen',
@@ -354,19 +541,44 @@ export const nlBE: TranslationKeys = {
             question: 'Doen jullie ook audio-apparatuur installeren?',
             answer: 'Nee, wij doen alleen het trekken en afmonteren van audiokabels. Audio-apparatuur, inregeling en afstemming doet uw audio-installateur. Wij zorgen voor de infrastructuur.',
           },
+          {
+            question: 'Wat zijn gebalanceerde lijnen?',
+            answer: 'Gebalanceerde lijnen gebruiken twee signaaladers en een aarde om storingen te onderdrukken. Dit is de standaard voor professionele audio-installaties omdat het ruis en EMI minimaliseert. We trekken kabels met juiste afscherming en routing om interferentie te voorkomen.',
+          },
+          {
+            question: 'Welke kabel gebruikt u voor audiokabels?',
+            answer: 'Voor professionele installaties gebruiken we gebalanceerde audiokabels met afscherming (bijvoorbeeld Cat6 voor digitale audio of gebalanceerde microfoon/lijnkabels voor analoog). De keuze hangt af van het type installatie en afstanden.',
+          },
+          {
+            question: 'Hoe voorkomt u storing op audiokabels?',
+            answer: 'We houden afstand van stroomkabels, TL-verlichting en andere storingsbronnen. Gebalanceerde bekabeling met afscherming helpt interferentie te onderdrukken. Ook vermijden we parallelle routing met hoogspanningskabels en zorgen we voor juiste aarding.',
+          },
+          {
+            question: 'Voor welke ruimtes zijn audiokabels geschikt?',
+            answer: 'Audiokabels zijn geschikt voor vaste installaties zoals vergaderruimtes, auditoriums, kantoren, retail (achtergrondmuziek), zorg en onderwijs. Overal waar professioneel geluid nodig is met vaste speakers, microfoons of AV-apparatuur.',
+          },
+          {
+            question: 'Hoeveel kost het trekken van audiokabels?',
+            answer: 'Dat hangt af van het aantal trajecten, lengtes en complexiteit. Standaard vergaderruimte (4-8 speakers) kost €600-1200 voor bekabeling. Grotere ruimtes of complexere installaties kosten meer. Vraag een offerte aan voor exacte prijzen.',
+          },
+          {
+            question: 'Krijg ik documentatie van de audiokabels?',
+            answer: 'Ja, altijd. U krijgt een opleverdossier met kabelplan, labeling-schema en foto\'s van de eindopstelling. Zo weet uw audio-installateur precies welke kabel waar naartoe loopt en kunnen zij direct apparatuur aansluiten.',
+          },
         ],
       },
       cta: {
-        title: 'Klaar voor audio-bekabeling?',
-        subtitle: 'Laat ons de audiokabels aanleggen voor uw installatie.',
+        title: 'Klaar voor audiokabels?',
+        subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
         button1: 'Bekijk abonnementen',
-        button2: 'Vraag offerte aan',
+        button2: 'Neem contact op',
       },
     },
     certification: {
       title: 'Meten & Certificeren',
       shortTitle: 'Certificeren',
       description: 'Praktische oplevercheck: functioneel getest, gelabeld en opgeleverd met kabelplan. Transparant en traceerbaar - klaar voor beheer door MSP/IT.',
+      heroTitle: 'Meten & Certificeren',
       seo: {
         title: 'Meten & Certificeren – Praktische oplevercheck | SIGNAALMAKERS',
         description: 'Praktische oplevercheck: elke kabel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten en kabelplan. Transparant en traceerbaar.',
@@ -376,12 +588,94 @@ export const nlBE: TranslationKeys = {
         title: 'Meten & Certificeren',
         subtitle: 'Praktische oplevercheck: elke kabel functioneel getest, gelabeld en gedocumenteerd. Opleverdossier met meetrapporten, schema\'s en kabelplan – transparant en traceerbaar. Klaar voor beheer door MSP/IT.',
       },
+      whatYouGet: {
+        title: 'Wat u krijgt',
+        description: 'Altijd functioneel getest, gelabeld en opgeleverd met een duidelijk kabelplan. Opleverdossier met meetrapporten, schema\'s en labels. Bewijs dat de bekabeling werkt en klaar is voor beheer door MSP/IT.',
+        testing: {
+          title: 'Functioneel testen per traject',
+          description: 'Elk kabeltraject wordt functioneel getest met professionele meetapparatuur. We controleren of de kabel presteert zoals verwacht en geschikt is voor gebruik.',
+          items: [
+            'Doorvoer en bandbreedte',
+            'Integriteit en signaalverlies',
+            'Afmontering en connecties',
+          ],
+        },
+        labeling: {
+          title: 'Labels en schema\'s',
+          description: 'Alle kabels gelabeld en genummerd. Schema\'s en overzichten voor traceerbaar beheer. Alles gedocumenteerd en klaar voor MSP/IT.',
+          items: [
+            'Consistente labeling',
+            'Logische nummeringsschema\'s',
+            'Traceerbaar en beheersbaar',
+          ],
+        },
+        deliverables: {
+          title: 'Opleverdossier',
+          description: 'Overzichtelijk opleverdossier met meetrapporten, labels en kabelplan. Transparant en traceerbaar. Bewijs dat alle trajecten functioneren en klaar zijn voor beheer door MSP/IT.',
+          items: [
+            'Meetrapporten per traject',
+            'Labels en nummeringsschema\'s',
+            'Kabelplan en documentatie',
+            'Functionele testresultaten per kabel',
+          ],
+        },
+      },
+      why: {
+        title: 'Waarom een praktische oplevercheck?',
+        description: 'Zonder testen en documentatie weet niemand of de bekabeling echt werkt. Met een opleverdossier is alles transparant, traceerbaar en klaar voor beheer.',
+        benefits: [
+          {
+            title: 'Vertrouwen voor MSP/IT',
+            desc: 'Bewijs dat alles voldoet aan de norm. Labels en schema\'s maken beheer eenvoudig en traceerbaar.',
+          },
+          {
+            title: 'Minder nazorg',
+            desc: 'Fouten worden vooraf opgespoord en opgelost. Geen discussie achteraf over wat wel of niet werkt.',
+          },
+          {
+            title: 'Transparantie',
+            desc: 'Meetrapporten en documentatie geven volledige transparantie over de kwaliteit van de bekabeling.',
+          },
+        ],
+      },
+      standard: {
+        title: 'Standaard bij elk traject',
+        description: 'Deze praktische oplevercheck is standaard bij elk bekabelingstraject. Geen extra kosten. Het hoort er gewoon bij – zo weet u zeker dat de infrastructuur functioneert en klaar is voor beheer door MSP/IT.',
+      },
       faqs: {
         title: 'Veelgestelde vragen',
         items: [
           {
-            question: 'Wat is het verschil tussen functioneel testen en certificeren?',
-            answer: 'Functioneel testen controleert of de kabel werkt en data doorgeeft. Certificeren meet exact de prestaties (bandbreedte, crosstalk, verliezen) en vergelijkt deze met de norm. Wij doen standaard functioneel testen; volledige certificering op aanvraag.',
+            question: 'Wat verstaat u onder "certificeren"?',
+            answer: 'Onder certificeren verstaan wij een praktische oplevercheck. We testen elke aangelegde kabel met apparatuur, labelen de verbindingen en leveren een overzichtelijk opleverrapport met kabelplan. Zo weet u zeker dat alles functioneert en traceerbaar is gedocumenteerd.',
+          },
+          {
+            question: 'Waarom is deze oplevercheck belangrijk?',
+            answer: 'Zonder testen en documentatie weet niemand of de bekabeling echt werkt zoals verwacht. Een praktische oplevercheck voorkomt discussies achteraf, geeft transparantie over kwaliteit en versnelt troubleshooting. Voor MSP\'s en IT-beheerders is het essentieel bewijs dat de infrastructuur betrouwbaar is.',
+          },
+          {
+            question: 'Hoe test u de kabels?',
+            answer: 'We testen elk kabeltraject functioneel met professionele meetapparatuur. Voor Cat6 testen we tot 250 MHz, voor Cat6A tot 500 MHz. Elk traject krijgt een pass/fail status. Alle meetrapporten vermelden de meetwaarden, kabelnummers en locaties voor tracering.',
+          },
+          {
+            question: 'Wat staat er in een meetrapport?',
+            answer: 'Elk meetrapport bevat kabellengte, doorvoersnelheid, signaalverlies (insertion loss), reflectie (return loss), crosstalk en afmonteringskwaliteit. Ook ziet u of het traject voldoet aan de norm (pass/fail). Rapporten bevatten kabelnummers en locaties voor tracering.',
+          },
+          {
+            question: 'Hoe lang duurt het testen en certificeren?',
+            answer: 'Het testen van een enkel traject duurt 2-5 minuten, afhankelijk van lengte en complexiteit. Voor een standaardinstallatie met 20-50 punten rekenen we 1-2 uur testwerk. Het labelen en documenteren neemt extra tijd in beslag, vaak gelijk aan de testtijd.',
+          },
+          {
+            question: 'Krijg ik ook een digitale kopie van de rapporten?',
+            answer: 'Ja, alle meetrapporten worden digitaal opgeleverd als PDF. Ook ontvangt u schema\'s, labels en overzichten in digitale vorm. Zo kunt u documentatie delen met MSP/IT-partners en archiveren voor toekomstig beheer en uitbreidingen.',
+          },
+          {
+            question: 'Wat als een kabel niet voldoet aan de norm?',
+            answer: 'Als een traject faalt, zoeken we de oorzaak (slechte afmontering, beschadiging, te lang traject). We herstellen het probleem en testen opnieuw tot het traject voldoet. Pas daarna leveren we op — alleen trajecten die aan de norm voldoen worden geaccepteerd.',
+          },
+          {
+            question: 'Zijn de kosten van deze oplevercheck inbegrepen?',
+            answer: 'Ja, functioneel testen en documenteren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij — zo garanderen we kwaliteit en transparantie bij elke oplevering.',
           },
         ],
       },
