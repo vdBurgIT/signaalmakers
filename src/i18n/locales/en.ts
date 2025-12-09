@@ -16,7 +16,7 @@ export const en: TranslationKeys = {
     phone: 'Call us',
     email: 'Email us',
     serviceArea: 'Service area',
-    nationwide: 'Active internationally',
+    nationwide: 'Netherlands & Belgium',
   },
 
   nav: {
@@ -47,7 +47,7 @@ export const en: TranslationKeys = {
     },
     servicesSection: {
       title: 'Cabling for infrastructure',
-      subtitle: 'A reliable network starts with quality cabling. We deliver network cabling (Cat6/Cat6A), audio cables, camera cabling and patch cabinets. Everything functionally tested and delivered with cable plans. We do the groundwork; MSP/IT partners handle configuration and management.',
+      subtitle: 'A reliable network starts with quality cabling. We deliver network cabling (Cat6/Cat6A), audio cables, camera cabling and patch cabinets. Everything functionally tested and delivered with cable plans. We handle the physical infrastructure layer; MSP/IT partners handle configuration and management.',
     },
     servicesCards: {
       network: {
@@ -67,19 +67,19 @@ export const en: TranslationKeys = {
       },
       certification: {
         title: 'Testing & Certification',
-        description: 'Practical delivery check: functionally tested, labeled and delivered with cable plan. Transparent and traceable - ready for MSP/IT management.',
+        description: 'Professional commissioning: functionally tested, labeled and delivered with cable plan. Transparent and traceable - ready for MSP/IT management.',
         link: 'More information',
       },
     },
     usps: {
       title: 'Why SIGNAALMAKERS?',
-      subtitle: 'Cabling is our expertise. Clean, documented and ready for use. We do the infrastructure — you as MSP/IT do the rest.',
+      subtitle: 'Cabling is our expertise. Clean, documented and ready for use. We handle the infrastructure — you as MSP/IT do the rest.',
       infraFirst: {
-        title: 'Infrastructure first',
+        title: 'Infrastructure specialists',
         desc: 'Cat6/Cat6A, audio, camera - all cabling for infrastructure. Professionally installed and finished.',
       },
       practicalDelivery: {
-        title: 'Practical delivery',
+        title: 'Complete documentation',
         desc: 'Functionally tested with test reports, labels and cable plans. Transparent and traceable for MSP/IT management.',
       },
       patchCabinets: {
@@ -143,11 +143,11 @@ export const en: TranslationKeys = {
       },
       hero: {
         title: 'Data cabling & network cabling that performs',
-        subtitle: 'Professional data cabling and network cabling with Cat6/Cat6A according to best practices. Focus on EMI/crosstalk, PoE, route planning and professional patch cabinets. Practical delivery check: functional testing, labels, cable plans. We do the infrastructure — MSP/IT handles configuration.',
+        subtitle: 'Professional data cabling and network cabling with Cat6/Cat6A according to best practices. Focus on EMI/crosstalk, PoE, route planning and professional patch cabinets. Professional commissioning: functional testing, labels, cable plans. We handle the infrastructure — MSP/IT handles configuration.',
       },
       whatWeDo: {
         title: 'What we do',
-        intro: 'Cat6/Cat6A cabling for 1-10 Gbps. Workstations and spaces to the patch cabinet. Focus on EMI/crosstalk, PoE-ready and professional route planning. Practical delivery check with test reports and cable plans.',
+        intro: 'Cat6/Cat6A cabling for 1-10 Gbps. From endpoints to distribution points. Focus on EMI/crosstalk, PoE-ready and professional route planning. Professional commissioning with test reports and cable plans.',
         deliverables: {
           title: 'What we deliver',
           items: [
@@ -392,7 +392,7 @@ export const en: TranslationKeys = {
           title: 'For whom',
           items: [
             'MSPs and IT companies for camera installations',
-            'Security companies that want to outsource groundwork',
+            'Security companies that want to outsource infrastructure',
             'Offices, retail and warehouses',
             'Education, healthcare and public spaces',
           ],
@@ -422,10 +422,10 @@ export const en: TranslationKeys = {
       },
       partnership: {
         title: 'Collaboration with MSPs and security companies',
-        subtitle: 'We often work together with security companies and MSPs. We lay the cabling – they connect cameras and handle configuration. Clear separation between groundwork and setup.',
+        subtitle: 'We often work together with security companies and MSPs. We lay the cabling – they connect cameras and handle configuration. Clear separation between infrastructure and setup.',
         disclaimer: {
-          title: 'We only do the groundwork',
-          description: 'We pull cabling for IP cameras and terminate in the patch cabinet. Balanced runs, PoE-ready and neatly labeled. Security companies and MSPs handle camera connection and configuration. This creates a clear separation between groundwork (us) and setup (MSP/security).',
+          title: 'We specialize in infrastructure',
+          description: 'We pull cabling for IP cameras and terminate in the patch cabinet. Balanced runs, PoE-ready and neatly labeled. Security companies and MSPs handle camera connection and configuration. This creates a clear separation between infrastructure (us) and setup (MSP/security).',
         },
       },
       faqs: {
@@ -482,8 +482,8 @@ export const en: TranslationKeys = {
         subtitle: 'Pull and terminate audio cables. Balanced lines, interference-free routes, neatly finished. We do infrastructure, audio installer handles equipment.',
       },
       disclaimer: {
-        title: 'We only do the groundwork',
-        description: 'We pull audio cables and terminate. Balanced lines, interference-free and neatly labeled. Audio installers handle setup and equipment connection. This creates a clear separation between groundwork (us) and setup (audio partner).',
+        title: 'We specialize in infrastructure',
+        description: 'We pull audio cables and terminate. Balanced lines, interference-free and neatly labeled. Audio installers handle setup and equipment connection. This creates a clear separation between infrastructure (us) and setup (audio partner).',
       },
       whatWeDo: {
         title: 'What we deliver',
@@ -501,7 +501,7 @@ export const en: TranslationKeys = {
         forWho: {
           title: 'For whom',
           items: [
-            'Audio installers who want to outsource groundwork',
+            'Audio installers who want to outsource infrastructure',
             'MSPs and IT companies for AV cabling',
             'Offices with meeting rooms and auditoriums',
             'Retail, healthcare and education',
@@ -522,13 +522,13 @@ export const en: TranslationKeys = {
           },
           {
             title: 'Ready for setup',
-            desc: 'Audio installer can start immediately. No hassle with groundwork afterwards.',
+            desc: 'Audio installer can start immediately. No hassle with infrastructure work afterwards.',
           },
         ],
       },
       partnership: {
         title: 'Collaboration with audio installers',
-        subtitle: 'We often work together with audio partners. We lay cables and terminate – they install equipment and handle setup. Clear separation between groundwork and setup.',
+        subtitle: 'We often work together with audio partners. We lay cables and terminate – they install equipment and handle setup. Clear separation between infrastructure and setup.',
       },
       balancedLines: {
         title: 'Balanced lines for permanent installations',
@@ -577,16 +577,16 @@ export const en: TranslationKeys = {
     certification: {
       title: 'Testing & Certification',
       shortTitle: 'Certification',
-      description: 'Practical delivery check: functionally tested, labeled and delivered with cable plans. Transparent and traceable - ready for MSP/IT management.',
+      description: 'Professional commissioning: functionally tested, labeled and delivered with cable plans. Transparent and traceable - ready for MSP/IT management.',
       heroTitle: 'Testing & Certification',
       seo: {
-        title: 'Testing & Certification – Practical Delivery Check | SIGNAALMAKERS',
-        description: 'Practical delivery check: every cable tested, labeled and documented. Delivery package with test reports and cable plans. Transparent and traceable.',
+        title: 'Testing & Certification – Professional Commissioning | SIGNAALMAKERS',
+        description: 'Professional commissioning: every cable tested, labeled and documented. Delivery package with test reports and cable plans. Transparent and traceable.',
         keywords: 'cabling certification, cable testing, test reports, delivery check, cable plan',
       },
       hero: {
         title: 'Testing & Certification',
-        subtitle: 'Practical delivery check: every cable functionally tested, labeled and documented. Delivery package with test reports, diagrams and cable plans – transparent and traceable. Ready for MSP/IT management.',
+        subtitle: 'Professional commissioning: every cable functionally tested, labeled and documented. Delivery package with test reports, diagrams and cable plans – transparent and traceable. Ready for MSP/IT management.',
       },
       whatYouGet: {
         title: 'What you get',
@@ -621,7 +621,7 @@ export const en: TranslationKeys = {
         },
       },
       why: {
-        title: 'Why a practical delivery check?',
+        title: 'Why professional commissioning?',
         description: 'Without testing and documentation, nobody knows if the cabling actually works. With a delivery package everything is transparent, traceable and ready for management.',
         benefits: [
           {
@@ -640,18 +640,18 @@ export const en: TranslationKeys = {
       },
       standard: {
         title: 'Standard with every run',
-        description: 'This practical delivery check is standard with every cabling run. No extra costs. It\'s simply included – so you know for sure that the infrastructure functions and is ready for MSP/IT management.',
+        description: 'This professional commissioning is standard with every cabling run. No extra costs. It\'s simply included – so you know for sure that the infrastructure functions and is ready for MSP/IT management.',
       },
       faqs: {
         title: 'Frequently asked questions',
         items: [
           {
             question: 'What do you mean by "certification"?',
-            answer: 'By certification we mean a practical delivery check. We test every installed cable with equipment, label the connections and deliver a clear delivery report with cable plan. So you know for sure that everything functions and is traceably documented.',
+            answer: 'By certification we mean professional commissioning. We test every installed cable with equipment, label the connections and deliver a clear delivery report with cable plan. So you know for sure that everything functions and is traceably documented.',
           },
           {
-            question: 'Why is this delivery check important?',
-            answer: 'Without testing and documentation, nobody knows if the cabling really works as expected. A practical delivery check prevents discussions afterwards, provides transparency about quality and speeds up troubleshooting. For MSPs and IT administrators it\'s essential proof that the infrastructure is reliable.',
+            question: 'Why is this commissioning important?',
+            answer: 'Without testing and documentation, nobody knows if the cabling really works as expected. Professional commissioning prevents discussions afterwards, provides transparency about quality and speeds up troubleshooting. For MSPs and IT administrators it\'s essential proof that the infrastructure is reliable.',
           },
           {
             question: 'How do you test the cables?',
@@ -674,7 +674,7 @@ export const en: TranslationKeys = {
             answer: 'If a run fails, we find the cause (poor termination, damage, run too long). We fix the problem and test again until the run meets the standard. Only then do we deliver — only runs that meet the standard are accepted.',
           },
           {
-            question: 'Are the costs of this delivery check included?',
+            question: 'Are the costs of this commissioning included?',
             answer: 'Yes, functional testing and documenting is standard included with all our cabling runs. No surprises or extra costs. It\'s simply included — this is how we guarantee quality and transparency with every delivery.',
           },
         ],
@@ -741,7 +741,7 @@ export const en: TranslationKeys = {
     },
     offices: {
       title: 'Offices',
-      description: 'Cabling for offices: network, audio, cameras. Cat6/Cat6A, PoE, wifi infrastructure. Professional groundwork for MSP/IT in the Netherlands and Belgium.',
+      description: 'Cabling for offices: network, audio, cameras. Cat6/Cat6A, PoE, wifi infrastructure. Professional infrastructure for MSP/IT in the Netherlands and Belgium.',
       heroTitle: 'Cabling for offices',
       heroSubtitle: 'Network cabling, audio and cameras for modern office environments. Cat6/Cat6A, PoE, wifi infrastructure—professional and future-proof. Active in the Netherlands and Belgium.',
     },
@@ -783,7 +783,7 @@ export const en: TranslationKeys = {
 
   diensten: {
     title: 'Cabling for infrastructure',
-    subtitle: 'A reliable network starts with quality cabling. We deliver network cabling (Cat6/Cat6A), audio cables, camera cabling and patch cabinets. Everything functionally tested and delivered with cable plans. We do the groundwork; MSP/IT partners handle configuration and management.',
+    subtitle: 'A reliable network starts with quality cabling. We deliver network cabling (Cat6/Cat6A), audio cables, camera cabling and patch cabinets. Everything functionally tested and delivered with cable plans. We handle the physical infrastructure layer; MSP/IT partners handle configuration and management.',
     sectionTitle: 'Cabling for infrastructure',
     sectionSubtitle: 'Network (Cat6/Cat6A), audio cables, camera cabling, patch cabinets and certification. Everything professionally installed, finished and documented - ready for MSP/IT.',
     ctaTitle: 'Ready for reliable cabling?',
@@ -837,9 +837,9 @@ export const en: TranslationKeys = {
       },
       certification: {
         title: 'Testing & Certification',
-        description: 'Practical delivery check: functional testing, labeling and documentation. Delivery package with test reports, labels and cable plan - clear for management.',
+        description: 'Professional commissioning: functional testing, labeling and documentation. Delivery package with test reports, labels and cable plan - clear for management.',
         features: [
-          'Functional testing per route',
+          'Functional testing per run',
           'Labels and documentation',
           'Delivery package with cable plan',
           'Diagrams and overviews',
@@ -849,13 +849,13 @@ export const en: TranslationKeys = {
     },
     usps: {
       title: 'Why SIGNAALMAKERS',
-      subtitle: 'We do the infrastructure: cabling for your projects. Clean, documented and ready for use. MSP/IT handles configuration and management.',
+      subtitle: 'We handle the infrastructure: cabling for your projects. Clean, documented and ready for use. MSP/IT handles configuration and management.',
       infraFirst: {
-        title: 'Infrastructure first',
-        desc: 'Network (Cat6/Cat6A), audio, camera - all cabling for infrastructure. No IT management, no configuration. Only the groundwork.',
+        title: 'Infrastructure specialists',
+        desc: 'Network (Cat6/Cat6A), audio, camera - all cabling for infrastructure. No IT management, no configuration. Physical infrastructure layer only.',
       },
       practicalDelivery: {
-        title: 'Practical delivery',
+        title: 'Complete documentation',
         desc: 'Functionally tested with test reports, labels and cable plans. Transparent and traceable for MSP/IT management.',
       },
       nationwide: {
@@ -872,7 +872,7 @@ export const en: TranslationKeys = {
     },
     whoWeAre: {
       title: 'Who we are',
-      paragraph1: 'SIGNAALMAKERS specializes in infrastructure cabling: network (Cat6/Cat6A), audio (balanced lines), cameras (PoE), patch cabinets and certification. We do the groundwork – pulling cable runs, terminating, labeling and certifying. MSP/IT handles configuration and equipment management.',
+      paragraph1: 'SIGNAALMAKERS specializes in infrastructure cabling: network (Cat6/Cat6A), audio (balanced lines), cameras (PoE), patch cabinets and certification. We handle the physical infrastructure layer – pulling cable runs, terminating, labeling and certifying. MSP/IT handles configuration and equipment management.',
       paragraph2: 'We work throughout the Netherlands and Belgium for SME companies, offices, retail, healthcare, education and warehouses. We\'re also the permanent cabling partner for MSPs, IT service providers and audio/security companies. They handle equipment and configuration – we ensure cabling and connection points are perfect down to the last detail.',
     },
     whatWeDeliver: {
@@ -885,7 +885,7 @@ export const en: TranslationKeys = {
     },
     whatWeDoNot: {
       title: 'What we explicitly do NOT do',
-      paragraph: 'We only do the groundwork – pulling cable runs, terminating, labeling and certifying. No configuration, no equipment, no management. This clear separation makes us the cabling partner for MSPs, IT specialists, audio and security companies: they maintain control over equipment and configuration, we provide professional cabling they can trust.',
+      paragraph: 'We specialize in the physical infrastructure layer – pulling cable runs, terminating, labeling and certifying. No configuration, no equipment, no management. This clear separation makes us the cabling partner for MSPs, IT specialists, audio and security companies: they maintain control over equipment and configuration, we provide professional cabling they can trust.',
       item1: 'Installation of switches, routers, access points, speakers or cameras',
       item2: 'Configuration (VLANs, IP addressing, firewall, audio calibration)',
       item3: 'Management, MSP services, server management or monitoring',
