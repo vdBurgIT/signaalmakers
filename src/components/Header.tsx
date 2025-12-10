@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { LocaleSwitcher } from './LocaleSwitcher';
+import { LocaleSwitcher, MobileLocaleSwitcher } from './LocaleSwitcher';
 import { useTranslation } from '../i18n';
 import { LocaleLink } from './LocaleLink';
 
@@ -208,7 +208,7 @@ export default function Header() {
               {t.nav.contact}
             </LocaleLink>
             <div className="mt-4 pt-4 border-t border-gray-600">
-              <LocaleSwitcher />
+              <MobileLocaleSwitcher />
             </div>
           </div>
         )}

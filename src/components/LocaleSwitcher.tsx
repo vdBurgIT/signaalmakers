@@ -109,17 +109,59 @@ export function LocaleSwitcher() {
 }
 
 /**
- * Compact locale switcher for mobile/header
+ * Mobile locale switcher with simple buttons
  */
-export function CompactLocaleSwitcher() {
-  const { locale } = useI18n();
+export function MobileLocaleSwitcher() {
+  const { locale, setLocale } = useI18n();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const localeLabels: Record<Locale, string> = {
+    'nl-NL': 'Nederlands',
+    'nl-BE': 'België',
+    'en': 'English',
+  };
+
+  const handleLocaleChange = (newLocale: Locale) => {
+    if (newLocale === locale) return;
+
+    setLocale(newLocale);
+    const newPath = getPathForLocale(location.pathname, newLocale);
+    navigate(newPath);
+  };
 
   return (
-    <div className="flex items-center gap-1">
-      <Globe className="w-4 h-4 text-gray-400" />
-      <span className="text-sm text-gray-600">
-        {localeFlags[locale]}
-      </span>
+    <div className="space-y-2">
+      <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
+        <Globe className="w-4 h-4" />
+        <span>Taal / Language</span>
+      </div>
+      <div className="flex flex-col gap-2">
+        {locales.map((loc) => (
+          <button
+            key={loc}
+            onClick={() => handleLocaleChange(loc)}
+            className={`w-full text-left px-4 py-2 rounded-lg transition-colors flex items-center justify-between ${
+              loc === locale
+                ? 'bg-[#FF6A00] text-white'
+                : 'bg-gray-700 text-white hover:bg-gray-600'
+            }`}
+          >
+            <span className="text-sm font-medium">
+              {localeLabels[loc]}
+            </span>
+            {loc === locale && (
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            )}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
