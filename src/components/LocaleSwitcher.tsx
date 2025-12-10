@@ -3,11 +3,11 @@
  * Allows users to switch between nl-NL, nl-BE and en
  */
 
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Globe } from 'lucide-react';
+import { Globe, X } from 'lucide-react';
 import { useI18n } from '../i18n/I18nContext';
-import { Locale, locales, localeNames, localeFlags, getPathForLocale } from '../i18n/config';
+import { Locale, locales, getPathForLocale } from '../i18n/config';
 
 export function LocaleSwitcher() {
   const { locale, setLocale } = useI18n();
@@ -109,59 +109,103 @@ export function LocaleSwitcher() {
 }
 
 /**
- * Mobile locale switcher with simple buttons
+ * Compact mobile locale switcher for header - icon button with modal
  */
-export function MobileLocaleSwitcher() {
+export function CompactMobileLocaleSwitcher() {
   const { locale, setLocale } = useI18n();
   const navigate = useNavigate();
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
 
   const localeLabels: Record<Locale, string> = {
+    'nl-NL': 'NL',
+    'nl-BE': 'BE',
+    'en': 'EN',
+  };
+
+  const localeFullNames: Record<Locale, string> = {
     'nl-NL': 'Nederlands',
     'nl-BE': 'België',
     'en': 'English',
   };
 
   const handleLocaleChange = (newLocale: Locale) => {
-    if (newLocale === locale) return;
+    if (newLocale === locale) {
+      setIsOpen(false);
+      return;
+    }
 
     setLocale(newLocale);
     const newPath = getPathForLocale(location.pathname, newLocale);
     navigate(newPath);
+    setIsOpen(false);
   };
 
   return (
-    <div className="space-y-2">
-      <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
-        <Globe className="w-4 h-4" />
-        <span>Taal / Language</span>
-      </div>
-      <div className="flex flex-col gap-2">
-        {locales.map((loc) => (
-          <button
-            key={loc}
-            onClick={() => handleLocaleChange(loc)}
-            className={`w-full text-left px-4 py-2 rounded-lg transition-colors flex items-center justify-between ${
-              loc === locale
-                ? 'bg-[#FF6A00] text-white'
-                : 'bg-gray-700 text-white hover:bg-gray-600'
-            }`}
-          >
-            <span className="text-sm font-medium">
-              {localeLabels[loc]}
-            </span>
-            {loc === locale && (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            )}
-          </button>
-        ))}
-      </div>
-    </div>
+    <>
+      {/* Compact button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-1 px-2 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+        aria-label="Switch language"
+      >
+        <Globe className="w-5 h-5" />
+        <span className="text-xs font-bold">{localeLabels[locale]}</span>
+      </button>
+
+      {/* Full screen modal */}
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-[100]"
+            onClick={() => setIsOpen(false)}
+          />
+
+          {/* Modal content */}
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-sm bg-[#0E243A] rounded-lg shadow-2xl z-[101] p-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2 text-white">
+                <Globe className="w-5 h-5" />
+                <span className="font-semibold">Kies taal / Choose language</span>
+              </div>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-white hover:text-gray-300"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            <div className="space-y-2">
+              {locales.map((loc) => (
+                <button
+                  key={loc}
+                  onClick={() => handleLocaleChange(loc)}
+                  className={`w-full text-left px-4 py-3 rounded-lg transition-colors flex items-center justify-between ${
+                    loc === locale
+                      ? 'bg-[#FF6A00] text-white'
+                      : 'bg-gray-700 text-white hover:bg-gray-600'
+                  }`}
+                >
+                  <span className="font-medium">
+                    {localeFullNames[loc]}
+                  </span>
+                  {loc === locale && (
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+    </>
   );
 }

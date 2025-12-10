@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { LocaleSwitcher, MobileLocaleSwitcher } from './LocaleSwitcher';
+import { LocaleSwitcher, CompactMobileLocaleSwitcher } from './LocaleSwitcher';
 import { useTranslation } from '../i18n';
 import { LocaleLink } from './LocaleLink';
 
@@ -97,12 +97,15 @@ export default function Header() {
             <LocaleSwitcher />
           </div>
 
-          <button
-            className="lg:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile buttons: Language switcher and Menu */}
+          <div className="lg:hidden flex items-center gap-2">
+            <CompactMobileLocaleSwitcher />
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {isMobileMenuOpen && (
@@ -207,9 +210,6 @@ export default function Header() {
             >
               {t.nav.contact}
             </LocaleLink>
-            <div className="mt-4 pt-4 border-t border-gray-600">
-              <MobileLocaleSwitcher />
-            </div>
           </div>
         )}
       </nav>
