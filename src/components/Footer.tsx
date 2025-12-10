@@ -108,7 +108,7 @@ export default function Footer() {
               </li>
               <li>
                 <LocaleLink to="/sitemap" className="hover:text-[#FF6A00] transition-colors">
-                  Sitemap
+                  {t.sitemap.title}
                 </LocaleLink>
               </li>
               <li>
