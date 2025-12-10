@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../../components/LocaleLink';
 import { useState } from 'react';
 import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
@@ -10,7 +11,7 @@ export default function Patchkasten() {
   const { t, locale } = useI18n();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const faqs = t('services.patchCabinets.faqs.items');
+  const faqs = t.services.patchCabinets.faqs.items;
   const baseUrl = locale === 'nl-NL' ? 'https://signaalmakers.nl' : locale === 'nl-BE' ? 'https://signaalmakers.nl/nl-be' : 'https://signaalmakers.nl/en';
 
   const faqSchema = {
@@ -27,14 +28,15 @@ export default function Patchkasten() {
   return (
     <>
       <SEO
-        title={t('services.patchCabinets.seo.title')}
-        description={t('services.patchCabinets.seo.description')}
-        keywords={t('services.patchCabinets.seo.keywords')}
+        title={t.services.patchCabinets.seo.title}
+        description={t.services.patchCabinets.seo.description}
+        keywords={t.services.patchCabinets.seo.keywords}
         url={`${baseUrl}/diensten/patchkasten`}
+        hreflangPath="/diensten/patchkasten"
         breadcrumbs={[
-          { name: t('nav.home'), item: `${baseUrl}/` },
-          { name: t('nav.services'), item: `${baseUrl}/diensten` },
-          { name: t('services.patchCabinets.shortTitle'), item: `${baseUrl}/diensten/patchkasten` }
+          { name: t.nav.home, item: `${baseUrl}/` },
+          { name: t.nav.services, item: `${baseUrl}/diensten` },
+          { name: t.services.patchCabinets.shortTitle, item: `${baseUrl}/diensten/patchkasten` }
         ]}
       />
       <StructuredData type="LocalBusiness" />
@@ -44,10 +46,10 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              {t('services.patchCabinets.hero.title')}
+              {t.services.patchCabinets.hero.title}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              {t('services.patchCabinets.hero.subtitle')}
+              {t.services.patchCabinets.hero.subtitle}
             </p>
           </div>
         </div>
@@ -59,18 +61,18 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              {t('services.patchCabinets.whatWeDo.title')}
+              {t.services.patchCabinets.whatWeDo.title}
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              {t('services.patchCabinets.whatWeDo.description')}
+              {t.services.patchCabinets.whatWeDo.description}
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="bg-gray-50 rounded-xl p-8">
                 <Server className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.patchCabinets.actions.title')}</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.services.patchCabinets.actions.title}</h3>
                 <ul className="space-y-3 text-gray-700">
-                  {(t('services.patchCabinets.actions.items') as string[]).map((item: string, index: number) => (
+                  {(t.services.patchCabinets.actions.items as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
@@ -81,9 +83,9 @@ export default function Patchkasten() {
 
               <div className="bg-gray-50 rounded-xl p-8">
                 <LayoutGrid className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.patchCabinets.results.title')}</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.services.patchCabinets.results.title}</h3>
                 <ul className="space-y-3 text-gray-700">
-                  {(t('services.patchCabinets.results.items') as string[]).map((item: string, index: number) => (
+                  {(t.services.patchCabinets.results.items as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
@@ -94,9 +96,9 @@ export default function Patchkasten() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.patchCabinets.why.title')}</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.services.patchCabinets.why.title}</h3>
               <p className="text-gray-700 leading-relaxed">
-                {t('services.patchCabinets.why.description')}
+                {t.services.patchCabinets.why.description}
               </p>
             </div>
           </div>
@@ -107,7 +109,7 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              {t('services.patchCabinets.beforeAfter.title')}
+              {t.services.patchCabinets.beforeAfter.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12">
@@ -116,10 +118,10 @@ export default function Patchkasten() {
                   <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
                     <span className="text-red-600 text-2xl font-bold">✗</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0E243A]">{t('services.patchCabinets.beforeAfter.before.title')}</h3>
+                  <h3 className="text-2xl font-bold text-[#0E243A]">{t.services.patchCabinets.beforeAfter.before.title}</h3>
                 </div>
                 <ul className="space-y-3 text-gray-700">
-                  {(t('services.patchCabinets.beforeAfter.before.items') as string[]).map((item: string, index: number) => (
+                  {(t.services.patchCabinets.beforeAfter.before.items as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
                       <span className="text-red-500 font-bold mt-0.5">✗</span>
                       <span>{item}</span>
@@ -133,10 +135,10 @@ export default function Patchkasten() {
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
                     <CheckCircle2 className="w-7 h-7 text-green-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0E243A]">{t('services.patchCabinets.beforeAfter.after.title')}</h3>
+                  <h3 className="text-2xl font-bold text-[#0E243A]">{t.services.patchCabinets.beforeAfter.after.title}</h3>
                 </div>
                 <ul className="space-y-3 text-gray-700">
-                  {(t('services.patchCabinets.beforeAfter.after.items') as string[]).map((item: string, index: number) => (
+                  {(t.services.patchCabinets.beforeAfter.after.items as string[]).map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
@@ -153,14 +155,14 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              {t('services.patchCabinets.forMSP.title')}
+              {t.services.patchCabinets.forMSP.title}
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              {t('services.patchCabinets.forMSP.description')}
+              {t.services.patchCabinets.forMSP.description}
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {(t('services.patchCabinets.forMSP.benefits') as Array<{ title: string; desc: string }>).map((item: { title: string; desc: string }, index: number) => {
+              {(t.services.patchCabinets.forMSP.benefits as Array<{ title: string; desc: string }>).map((item: { title: string; desc: string }, index: number) => {
                 const icons = [FileCheck, CheckCircle2, LayoutGrid];
                 const IconComponent = icons[index] || CheckCircle2;
                 return (
@@ -182,7 +184,7 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              {t('services.patchCabinets.faqs.title')}
+              {t.services.patchCabinets.faqs.title}
             </h2>
             <div className="space-y-4">
               {faqs.map((faq: { question: string; answer: string }, index: number) => (
@@ -214,24 +216,24 @@ export default function Patchkasten() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('services.patchCabinets.cta.title')}
+              {t.services.patchCabinets.cta.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              {t('services.patchCabinets.cta.subtitle')}
+              {t.services.patchCabinets.cta.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <LocaleLink
                 to="/abonnementen"
                 className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
-                {t('services.patchCabinets.cta.button1')}
-              </Link>
-              <Link
+                {t.services.patchCabinets.cta.button1}
+              </LocaleLink>
+              <LocaleLink
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg"
               >
-                {t('services.patchCabinets.cta.button2')}
-              </Link>
+                {t.services.patchCabinets.cta.button2}
+              </LocaleLink>
             </div>
           </div>
         </div>

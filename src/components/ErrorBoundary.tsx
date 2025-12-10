@@ -29,7 +29,7 @@ class ErrorBoundary extends Component<Props, State> {
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // Log errors in development, terser will remove console.error in production
     if (process.env.NODE_ENV === 'development') {
-      console.error('Error caught by boundary:', error, errorInfo);
+
     }
     // In production, you could send to an error tracking service here
     // e.g., Sentry.captureException(error, { contexts: { react: errorInfo } });
@@ -73,13 +73,12 @@ class ErrorBoundary extends Component<Props, State> {
             )}
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/"
+              <LocaleLink to="/"
                 onClick={() => this.setState({ hasError: false, error: null })}
                 className="bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
               >
                 Terug naar home
-              </Link>
+              </LocaleLink>
               <button
                 onClick={() => window.location.reload()}
                 className="border-2 border-[#0E243A] text-[#0E243A] px-8 py-3 rounded-lg hover:bg-[#0E243A] hover:text-white transition-colors font-semibold"
@@ -91,9 +90,9 @@ class ErrorBoundary extends Component<Props, State> {
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-gray-600 text-sm">
                 Blijft het probleem zich voordoen?{' '}
-                <Link to="/contact" className="text-[#FF6A00] hover:text-[#E55F00] font-semibold">
+                <LocaleLink to="/contact" className="text-[#FF6A00] hover:text-[#E55F00] font-semibold">
                   Neem contact met ons op
-                </Link>
+                </LocaleLink>
               </p>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import {
   Cable,
   Server,
@@ -132,18 +133,18 @@ export default function Home() {
                 {t.home.hero.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
+                <LocaleLink
                   to="/offerte"
                   className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg text-center shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   {t.home.hero.ctaQuote}
-                </Link>
-                <Link
+                </LocaleLink>
+                <LocaleLink
                   to="/contact"
                   className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg text-center"
                 >
                   {t.common.contact}
-                </Link>
+                </LocaleLink>
               </div>
             </div>
             <div className="hidden lg:block">
@@ -199,13 +200,13 @@ export default function Home() {
                   <p className="text-base text-gray-600 mb-6 leading-relaxed flex-grow">
                     {service.description}
                   </p>
-                  <Link
+                  <LocaleLink
                     to={service.link}
                     className="inline-flex items-center text-[#FF6A00] text-base font-semibold hover:text-[#E55F00] transition-colors group-hover:gap-3 gap-2 mt-auto"
                   >
                     {t.home.servicesCards.network.link}
                     <span className="transition-all duration-300">→</span>
-                  </Link>
+                  </LocaleLink>
                 </div>
               ))}
             </div>
@@ -358,25 +359,25 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#0E243A] mb-3">{post.title}</h3>
                   <p className="text-gray-600 mb-4 leading-relaxed">{post.excerpt}</p>
-                  <Link
+                  <LocaleLink
                     to={`/blog/${post.slug}`}
                     className="inline-flex items-center text-[#FF6A00] font-semibold hover:text-[#E55F00] transition-colors group-hover:gap-3 gap-2"
                   >
                     {t.home.blogSection.readMore}
                     <span className="transition-all duration-300">→</span>
-                  </Link>
+                  </LocaleLink>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Link
+            <LocaleLink
               to="/blog"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
             >
               {t.home.blogSection.viewAll}
-            </Link>
+            </LocaleLink>
           </div>
         </div>
       </section>
@@ -411,12 +412,12 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link
+            <LocaleLink
               to="/faq"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105"
             >
               {t.home.faqSection.viewMore}
-            </Link>
+            </LocaleLink>
           </div>
         </div>
       </section>

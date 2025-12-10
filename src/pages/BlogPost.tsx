@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
 import { ArrowLeft } from 'lucide-react';
@@ -50,6 +51,7 @@ export default function BlogPost() {
         description={post.excerpt}
         keywords={`${post.category.toLowerCase()}, blog, ict, technologie`}
         url={`https://signaalmakers.nl/blog/${post.slug}`}
+        hreflangPath={`/blog/${post.slug}`}
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
           { name: 'Blog', item: 'https://signaalmakers.nl/blog' },
@@ -64,10 +66,10 @@ export default function BlogPost() {
         </div>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Link to="/blog" className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-6">
+            <LocaleLink to="/blog" className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-6">
               <ArrowLeft className="w-4 h-4" />
               {t.blog.backToBlog}
-            </Link>
+            </LocaleLink>
             <div className="flex items-center gap-4 mb-4">
               <span className="text-sm font-semibold text-[#FF6A00]">{post.category}</span>
             </div>
@@ -96,7 +98,7 @@ export default function BlogPost() {
                 <h3 className="text-2xl font-bold text-[#0E243A] mb-6">{t.blog.relatedArticles}</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {relatedPosts.map((relatedPost) => (
-                    <Link
+                    <LocaleLink
                       key={relatedPost.slug}
                       to={`/blog/${relatedPost.slug}`}
                       className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow"
@@ -106,7 +108,7 @@ export default function BlogPost() {
                       </div>
                       <h4 className="text-xl font-bold text-[#0E243A] mb-2">{relatedPost.title}</h4>
                       <p className="text-gray-600 line-clamp-2">{relatedPost.excerpt}</p>
-                    </Link>
+                    </LocaleLink>
                   ))}
                 </div>
               </div>

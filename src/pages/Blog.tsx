@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { getBlogPostsByLocale } from '../data/blogPosts';
@@ -56,13 +57,13 @@ export default function Blog() {
                     <p className="text-gray-600 mb-4 line-clamp-3">
                       {post.excerpt}
                     </p>
-                    <Link
+                    <LocaleLink
                       to={`/blog/${post.slug}`}
                       className="inline-flex items-center text-[#FF6A00] font-semibold hover:text-[#E55F00] transition-colors"
                     >
                       {t.blog.readMore}
                       <span className="ml-2">→</span>
-                    </Link>
+                    </LocaleLink>
                   </div>
                 </article>
               ))}

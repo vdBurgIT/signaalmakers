@@ -1,14 +1,18 @@
-import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import { Home, Search, ArrowRight } from 'lucide-react';
+import { useTranslation } from '../i18n';
 
 export default function NotFound() {
+  const t = useTranslation();
+
   return (
     <>
       <SEO
-        title="Pagina niet gevonden - 404 | SIGNAALMAKERS"
-        description="De pagina die je zoekt bestaat niet of is verplaatst."
+        title={t.seo.notFound?.title || "Pagina niet gevonden - 404 | SIGNAALMAKERS"}
+        description={t.seo.notFound?.description || "De pagina die je zoekt bestaat niet of is verplaatst."}
         url="https://signaalmakers.nl/404"
+        hreflangPath="/404"
       />
       <div className="min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] text-white">
         <div className="text-center px-4 max-w-2xl mx-auto">
@@ -21,29 +25,26 @@ export default function NotFound() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-4 mb-8">
-            <Link
-              to="/"
+            <LocaleLink to="/"
               className="bg-[#FF6A00] text-white px-6 py-4 rounded-lg hover:bg-[#e55e00] transition-colors flex flex-col items-center gap-2 group"
             >
               <Home className="w-6 h-6 group-hover:scale-110 transition-transform" />
               <span className="font-semibold">Terug naar home</span>
-            </Link>
+            </LocaleLink>
 
-            <Link
-              to="/diensten"
+            <LocaleLink to="/diensten"
               className="bg-white/10 backdrop-blur text-white px-6 py-4 rounded-lg hover:bg-white/20 transition-colors flex flex-col items-center gap-2 group"
             >
               <Search className="w-6 h-6 group-hover:scale-110 transition-transform" />
               <span className="font-semibold">Onze diensten</span>
-            </Link>
+            </LocaleLink>
 
-            <Link
-              to="/contact"
+            <LocaleLink to="/contact"
               className="bg-white/10 backdrop-blur text-white px-6 py-4 rounded-lg hover:bg-white/20 transition-colors flex flex-col items-center gap-2 group"
             >
               <ArrowRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
               <span className="font-semibold">Contact opnemen</span>
-            </Link>
+            </LocaleLink>
           </div>
 
           <div className="text-gray-400">
@@ -57,18 +58,18 @@ export default function NotFound() {
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-[#FFFFFF] mb-6 text-center">Populaire pagina's</h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <Link to="/diensten/netwerkbekabeling" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <LocaleLink to="/diensten/netwerkbekabeling" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
                 <h4 className="font-bold text-[#0E243A] mb-2">Netwerkbekabeling</h4>
                 <p className="text-gray-600 text-sm">Cat6/Cat6A bekabeling voor infrastructuur</p>
-              </Link>
-              <Link to="/sectoren" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+              </LocaleLink>
+              <LocaleLink to="/sectoren" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
                 <h4 className="font-bold text-[#0E243A] mb-2">Sectoren</h4>
                 <p className="text-gray-600 text-sm">Bekabeling per sector</p>
-              </Link>
-              <Link to="/contact" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+              </LocaleLink>
+              <LocaleLink to="/contact" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
                 <h4 className="font-bold text-[#0E243A] mb-2">Contact</h4>
                 <p className="text-gray-600 text-sm">Neem contact met ons op</p>
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </div>

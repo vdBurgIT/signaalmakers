@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import { CheckCircle2, Zap, Clock, TrendingUp } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
@@ -107,12 +108,12 @@ export default function Abonnementen() {
                   <span className="text-[#0E243A]">{t.subscriptions.packages.essential.urgentFee}</span>
                 </li>
               </ul>
-              <Link
+              <LocaleLink
                 to="/contact"
                 className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
                 {t.subscriptions.packages.signUp}
-              </Link>
+              </LocaleLink>
             </div>
 
             {/* Priority */}
@@ -155,12 +156,12 @@ export default function Abonnementen() {
                   <span>{t.subscriptions.packages.priority.urgentFee}</span>
                 </li>
               </ul>
-              <Link
+              <LocaleLink
                 to="/contact"
                 className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
                 {t.subscriptions.packages.signUp}
-              </Link>
+              </LocaleLink>
             </div>
 
             {/* Express */}
@@ -201,12 +202,12 @@ export default function Abonnementen() {
                   <span className="text-[#0E243A]">{t.subscriptions.packages.express.urgentFee}</span>
                 </li>
               </ul>
-              <Link
+              <LocaleLink
                 to="/contact"
                 className="block text-center bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold"
               >
                 {t.subscriptions.packages.signUp}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
 
@@ -242,12 +243,12 @@ export default function Abonnementen() {
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
               {t.subscriptions.targetAudience.description}
             </p>
-            <Link
+            <LocaleLink
               to="/contact"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
             >
               {t.subscriptions.targetAudience.button}
-            </Link>
+            </LocaleLink>
           </div>
         </div>
       </section>

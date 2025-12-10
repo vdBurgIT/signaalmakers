@@ -40,34 +40,34 @@ export default function Sitemap() {
                   <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Hoofdpagina's</h2>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/" className="text-[#FF6A00] hover:underline font-medium">
                         Home
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/over-ons" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/over-ons" className="text-[#FF6A00] hover:underline font-medium">
                         Over ons
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/abonnementen" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/abonnementen" className="text-[#FF6A00] hover:underline font-medium">
                         Abonnementen
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/faq" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/faq" className="text-[#FF6A00] hover:underline font-medium">
                         Veelgestelde vragen (FAQ)
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/offerte" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/offerte" className="text-[#FF6A00] hover:underline font-medium">
                         Offerte aanvragen
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/contact" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/contact" className="text-[#FF6A00] hover:underline font-medium">
                         Contact
-                      </Link>
+                      </LocaleLink>
                     </li>
                   </ul>
                 </div>
@@ -77,34 +77,34 @@ export default function Sitemap() {
                   <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Diensten</h2>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/diensten" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/diensten" className="text-[#FF6A00] hover:underline font-medium">
                         Alle diensten
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/diensten/netwerkbekabeling" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/diensten/netwerkbekabeling" className="text-[#FF6A00] hover:underline">
                         Netwerkbekabeling
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/diensten/patchkasten" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/diensten/patchkasten" className="text-[#FF6A00] hover:underline">
                         Patchkasten
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/diensten/audiokabels" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/diensten/audiokabels" className="text-[#FF6A00] hover:underline">
                         Audiokabels
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/diensten/camera-bekabeling" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/diensten/camera-bekabeling" className="text-[#FF6A00] hover:underline">
                         Camera-bekabeling
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/diensten/certificeren" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/diensten/certificeren" className="text-[#FF6A00] hover:underline">
                         Meten & Certificeren
-                      </Link>
+                      </LocaleLink>
                     </li>
                   </ul>
                 </div>
@@ -114,34 +114,34 @@ export default function Sitemap() {
                   <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Sectoren</h2>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/sectoren" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/sectoren" className="text-[#FF6A00] hover:underline font-medium">
                         Alle sectoren
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/sectoren/kantoren" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/sectoren/kantoren" className="text-[#FF6A00] hover:underline">
                         Kantoren
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/sectoren/retail" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/sectoren/retail" className="text-[#FF6A00] hover:underline">
                         Retail & Horeca
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/sectoren/magazijn" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/sectoren/magazijn" className="text-[#FF6A00] hover:underline">
                         Magazijn & Logistiek
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/sectoren/onderwijs" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/sectoren/onderwijs" className="text-[#FF6A00] hover:underline">
                         Onderwijs & Zorg
-                      </Link>
+                      </LocaleLink>
                     </li>
                     <li>
-                      <Link to="/sectoren/serverruimtes" className="text-[#FF6A00] hover:underline">
+                      <LocaleLink to="/sectoren/serverruimtes" className="text-[#FF6A00] hover:underline">
                         Serverruimtes & Datacenters
-                      </Link>
+                      </LocaleLink>
                     </li>
                   </ul>
                 </div>
@@ -151,15 +151,15 @@ export default function Sitemap() {
                   <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Blog</h2>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/blog" className="text-[#FF6A00] hover:underline font-medium">
+                      <LocaleLink to="/blog" className="text-[#FF6A00] hover:underline font-medium">
                         Alle blogartikelen
-                      </Link>
+                      </LocaleLink>
                     </li>
                     {blogPosts.map((post) => (
                       <li key={post.slug}>
-                        <Link to={`/blog/${post.slug}`} className="text-[#FF6A00] hover:underline">
+                        <LocaleLink to={`/blog/${post.slug}`} className="text-[#FF6A00] hover:underline">
                           {post.title}
-                        </Link>
+                        </LocaleLink>
                       </li>
                     ))}
                   </ul>
@@ -170,7 +170,7 @@ export default function Sitemap() {
               <div className="mt-8 bg-gradient-to-br from-blue-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-lg p-6">
                 <h3 className="text-xl font-bold text-[#0E243A] mb-2">Hulp nodig?</h3>
                 <p className="text-gray-700 mb-4">
-                  Kunt u niet vinden wat u zoekt? Neem gerust <Link to="/contact" className="text-[#FF6A00] hover:underline font-semibold">contact met ons op</Link>. 
+                  Kunt u niet vinden wat u zoekt? Neem gerust <LocaleLink to="/contact" className="text-[#FF6A00] hover:underline font-semibold">contact met ons op</LocaleLink>. 
                   Wij helpen u graag verder met al uw vragen over netwerkbekabeling, databekabeling en infrastructuur.
                 </p>
                 <p className="text-gray-700">

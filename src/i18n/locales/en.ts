@@ -733,23 +733,311 @@ export const en: TranslationKeys = {
 
   sectors: {
     serverRooms: {
-      title: 'Server Rooms & Data Centers',
-      shortTitle: 'Server Rooms',
-      description: 'Cat6A cabling for server rooms and data centers in the Netherlands and Belgium. 10 Gbps, professional patch cabinets, practical delivery check. Infrastructure for MSP/IT.',
-      heroTitle: 'Cabling for server rooms & data centers',
-      heroSubtitle: 'Cat6A cabling for 10 Gbps, professional patch cabinets and practical delivery check. We install the cabling — MSP/IT handles configuration and management. Active in the Netherlands and Belgium.',
+      seo: {
+        title: 'Server Rooms & Data Centers – Cat6A Cabling | SIGNAALMAKERS',
+        description: 'Cat6A cabling for server rooms and data centers. 10 Gbps, professional patch cabinets, practical delivery check. Infrastructure for MSP/IT — Netherlands & Belgium.',
+        keywords: 'server room cabling, data center cabling, Cat6A 10Gbps, data center patch cabinet, MSP cabling partner',
+      },
+      hero: {
+        title: 'Cabling for server rooms & data centers',
+        subtitle: 'Cat6A cabling for 10 Gbps, professional patch cabinets and practical delivery check. We install the cabling — MSP/IT handles configuration and management. Active in the Netherlands and Belgium.',
+      },
+      mainSection: {
+        title: 'Professional cabling for mission-critical environments',
+        subtitle: 'In server rooms and data centers, reliable cabling is essential. Cat6A runs for 10 Gbps, professional patch cabinets with thoughtful cable management and practical delivery check. We handle the infrastructure — MSP/IT handles configuration and management.',
+      },
+      features: [
+        {
+          title: 'Cat6A for 10 Gbps',
+          description: 'Cabling that handles 10 Gbps over 100 meters. Ideal for server-to-switch connections, storage networks and uplinks. Attention to EMI/crosstalk and future-proofing.',
+          items: [
+            'Cat6A S/FTP shielded for interference-free transmission',
+            'Short and long runs, always with future expansion in mind',
+            'Every run functionally tested with professional equipment',
+          ],
+        },
+        {
+          title: 'Professional patch cabinets',
+          description: 'Thoughtfully organized patch cabinets with cable management, labels and diagrams. Airflow considered, space for switches and PDUs. Ready for MSP/IT management.',
+          items: [
+            'Logical panel layout and labeling (port, VLAN-ready)',
+            'Cable management and airflow for optimal cooling',
+            'Diagrams and documentation for MSP/IT management',
+          ],
+        },
+      ],
+      infoBox: {
+        title: 'We handle the infrastructure – MSP/IT handles the rest',
+        text: 'SIGNAALMAKERS installs the cabling: pulling runs, mounting patch cabinets, labeling and functional testing. MSP/IT partners install switches, routers, firewalls and handle configuration (VLANs, routing, monitoring). This separation ensures clear responsibilities: we deliver a solid physical layer, MSP/IT manages logic and equipment. No overlap, professional results.',
+      },
+      deliverables: {
+        title: 'What we deliver for server rooms',
+        network: {
+          title: 'Cabling',
+          items: [
+            'Cat6A runs for 10 Gbps server-to-switch',
+            'Uplinks, storage networks and management interfaces',
+            'Out-of-band management cabling if desired',
+          ],
+        },
+        patchCabinets: {
+          title: 'Patch Cabinets & Documentation',
+          items: [
+            'Patch panels, cable management and labeling',
+            'Test reports and cable plan',
+            'Diagrams and Excel overviews for management',
+          ],
+        },
+      },
+      cta: {
+        title: 'Cabling for your server room or data center',
+        subtitle: 'Request a quote for Cat6A cabling, patch cabinets and practical delivery check. Active in Netherlands & Belgium — from new construction to expansion.',
+        button1: 'Request quote',
+        button2: 'Contact us',
+      },
     },
     offices: {
-      title: 'Offices',
-      description: 'Cabling for offices: network, audio, cameras. Cat6/Cat6A, PoE, wifi infrastructure. Professional infrastructure for MSP/IT in the Netherlands and Belgium.',
-      heroTitle: 'Cabling for offices',
-      heroSubtitle: 'Network cabling, audio and cameras for modern office environments. Cat6/Cat6A, PoE, wifi infrastructure—professional and future-proof. Active in the Netherlands and Belgium.',
+      seo: {
+        title: 'Offices – Network Cabling and Infrastructure | SIGNAALMAKERS',
+        description: 'Cabling for offices: network, audio, cameras. Cat6/Cat6A, PoE, wifi infrastructure. Professional infrastructure for MSP/IT—Netherlands & Belgium.',
+        keywords: 'office cabling, office network cabling, wifi cabling, Cat6A office, MSP partner office',
+      },
+      hero: {
+        title: 'Cabling for offices',
+        subtitle: 'Network cabling, audio and cameras for modern office environments. Cat6/Cat6A, PoE, wifi infrastructure—professional and future-proof. Active in the Netherlands and Belgium.',
+      },
+      mainSection: {
+        title: 'Professional infrastructure for office environments',
+        subtitle: 'From workstations to meeting rooms, from wifi access points to IP telephony: we install the cabling that keeps your office running. Cat6/Cat6A runs, balanced audio and camera cabling—all with practical delivery check.',
+      },
+      features: [
+        { title: 'Workstations & network', description: 'Cat6/Cat6A runs for data points, PoE for IP phones and access points. Everything neatly finished and labeled.' },
+        { title: 'Wifi & access points', description: 'PoE runs to ceiling or wall for wifi access points. MSP/IT handles configuration and roaming.' },
+        { title: 'Audio & cameras', description: 'Balanced lines for permanent audio installations and PoE runs for IP cameras. Infrastructure work for installers.' },
+      ],
+      deliverables: {
+        title: 'What we deliver for offices',
+        network: {
+          title: 'Network Cabling',
+          items: [
+            'Cat6/Cat6A runs for workstations and meeting rooms',
+            'PoE runs for IP phones, access points and cameras',
+            'Patch cabinet professionally organized with labels and diagrams',
+            'Test reports and practical delivery check',
+          ],
+        },
+        audioCamera: {
+          title: 'Audio & Camera',
+          items: [
+            'Balanced audio cables for permanent speakers and installations',
+            'PoE runs for IP cameras (indoor/outdoor)',
+            'Infrastructure work for audio/security companies—we do cables, they do equipment',
+          ],
+        },
+      },
+      infoBox: {
+        title: 'We handle the infrastructure – MSP/IT handles configuration',
+        text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and functional testing. MSP/IT partners install switches, routers, wifi controllers and handle configuration (VLANs, SSIDs, network segmentation). For audio and cameras we work with installers and security companies: we install the cabling, they connect equipment and configure. Clear separation, professional results.',
+      },
+      cta: {
+        title: 'Cabling for your office',
+        subtitle: 'From new construction to renovation, from small office to large corporate building: request a quote for professional cabling.',
+        button1: 'Request quote',
+        button2: 'Contact us',
+      },
     },
     retail: {
-      title: 'Retail & Hospitality',
-      description: 'Cabling for retail and hospitality: POS systems, cameras, audio, network. Cat6/Cat6A, PoE — fast, clean, minimal disruption.',
-      heroTitle: 'Cabling for retail & hospitality',
-      heroSubtitle: 'Cabling for POS systems, cameras and audio. Cat6/Cat6A, PoE — fast, clean and with minimal disruption to operations. Active in the Netherlands and Belgium.',
+      seo: {
+        title: 'Retail & Hospitality – Cabling for Stores and Restaurants | SIGNAALMAKERS',
+        description: 'Cabling for retail and hospitality: POS systems, cameras, audio, network. Cat6/Cat6A, PoE — fast, clean, minimal disruption. Netherlands & Belgium.',
+        keywords: 'retail cabling, hospitality cabling, POS cabling, store camera, PoE retail cabling',
+      },
+      hero: {
+        title: 'Cabling for retail & hospitality',
+        subtitle: 'Cabling for POS systems, cameras and audio. Cat6/Cat6A, PoE — fast, clean and with minimal disruption to operations. Active in the Netherlands and Belgium.',
+      },
+      mainSection: {
+        title: 'Professional cabling for stores and restaurants',
+        subtitle: 'From small store to large shopping center, from café to restaurant: we install the cabling for POS systems, cameras, audio and network. Cat6/Cat6A runs, PoE for cameras and balanced audio — all with practical delivery check.',
+      },
+      features: [
+        { title: 'POS systems & network', description: 'Cat6 runs for POS systems, card readers and back office. PoE for wifi access points. Everything neatly concealed.' },
+        { title: 'Cameras & security', description: 'PoE runs for IP cameras (indoor/outdoor). Infrastructure work for security companies — we do cables, they do equipment.' },
+        { title: 'Audio & ambiance', description: 'Balanced audio cables for permanent speakers and installations. Infrastructure work for audio installers.' },
+      ],
+      specialSection: {
+        title: 'Minimal disruption, maximum results',
+        text: 'We work outside business hours or in phases, so your store or restaurant can stay open. Cabling is neatly concealed in walls, ceilings or conduits — no loose cables, professional end result.',
+      },
+      deliverables: {
+        title: '',
+        network: {
+          title: 'Network Cabling',
+          items: [
+            'Cat6 runs for POS systems, card readers and back office',
+            'PoE for wifi access points and IP phones',
+            'Patch cabinet in server room or back office',
+          ],
+        },
+        audioCamera: {
+          title: 'Camera & Audio',
+          items: [
+            'PoE runs for IP cameras (indoor/outdoor)',
+            'Balanced audio cables for permanent speakers',
+            'Infrastructure work for audio/security companies',
+          ],
+        },
+      },
+      infoBox: {
+        title: 'We handle the infrastructure – partners handle the rest',
+        text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and functional testing. MSP/IT partners install switches, access points and handle configuration. Audio installers connect speakers, security companies install cameras. This separation ensures clear responsibilities: we deliver a solid physical layer, partners handle equipment and configuration. No overlap, professional results.',
+      },
+      cta: {
+        title: 'Cabling for your store or restaurant',
+        subtitle: 'From new construction to renovation, from small business to large shopping center: request a quote for professional cabling.',
+        button1: 'Request quote',
+        button2: 'Contact us',
+      },
+    },
+    warehouse: {
+      seo: {
+        title: 'Warehouse & Logistics – Robust Cabling | SIGNAALMAKERS',
+        description: 'Cabling for warehouses and logistics: network, scanners, cameras. Cat6/Cat6A, PoE — robust and suitable for heavy-duty environments. Netherlands & Belgium.',
+        keywords: 'warehouse cabling, logistics cabling, scanner cabling, warehouse network, PoE warehouse',
+      },
+      hero: {
+        title: 'Cabling for warehouse & logistics',
+        subtitle: 'Robust cabling for scanners, cameras and network. Cat6/Cat6A, PoE — suitable for heavy-duty environments. Active in the Netherlands and Belgium.',
+      },
+      mainSection: {
+        title: 'Robust infrastructure for warehouse and logistics',
+        subtitle: 'In warehouses and logistics environments, cabling must be resilient. Cat6/Cat6A runs for network and scanners, PoE for cameras and wifi access points — all robustly installed and certified delivery.',
+      },
+      features: [
+        { title: 'Network & scanners', description: 'Cat6/Cat6A runs for workstations, scanners and printers. PoE for wifi access points in large halls.' },
+        { title: 'Cameras & security', description: 'PoE runs for IP cameras (indoor/outdoor). Robust mounting suitable for industrial environments.' },
+        { title: 'Robust & reliable', description: 'Cables protected in conduits or pipes, shock-resistant mounting. Suitable for heavy-duty environments.' },
+      ],
+      deliverables: {
+        title: 'What we deliver for warehouses and logistics',
+        network: {
+          title: 'Network Cabling',
+          items: [
+            'Cat6/Cat6A runs for workstations, scanners and printers',
+            'PoE for wifi access points in large halls',
+            'Robust installation in cable conduits or pipes',
+            'Patch cabinet centrally or decentrally organized',
+          ],
+        },
+        security: {
+          title: 'Camera & Security',
+          items: [
+            'PoE runs for IP cameras (indoor/outdoor)',
+            'Shock-resistant mounting suitable for industrial environments',
+            'Infrastructure work for security companies — we do cables, they do equipment',
+          ],
+        },
+      },
+      extraSections: [
+        {
+          title: 'Suitable for heavy-duty environments',
+          text: 'Warehouses and logistics environments place high demands on cabling: temperature fluctuations, dust, moisture and mechanical stress. We use robust cables and installation methods that can take a beating.',
+          items: [
+            'Protection in cable conduits or pipes',
+            'Shock-resistant mounting at height or on walls',
+            'Clear labeling for maintenance and expansions',
+          ],
+        },
+        {
+          title: 'Infrastructure for MSP/IT',
+          text: 'We install the cabling, MSP/IT partners install switches, access points and handle configuration. Clear separation between physical layer (us) and logic (MSP/IT).',
+          items: [
+            'Patch cabinets professionally organized with labels and diagrams',
+            'Test reports and certification according to cable standards',
+            'Delivery package with all documentation',
+          ],
+        },
+      ],
+      infoBox: {
+        title: 'We handle the infrastructure – MSP/IT handles the rest',
+        text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and certifying. MSP/IT partners install switches, access points and handle configuration. Security companies install cameras and configure systems. This creates a clear separation between infrastructure (us) and configuration (partners).',
+      },
+      cta: {
+        title: 'Cabling for your warehouse or logistics environment',
+        subtitle: 'From new construction to expansion, from small warehouse to large distribution center: request a quote for robust cabling.',
+        button1: 'Request quote',
+        button2: 'Contact us',
+      },
+    },
+    education: {
+      seo: {
+        title: 'Education & Healthcare – Reliable Cabling | SIGNAALMAKERS',
+        description: 'Cabling for education and healthcare: network, cameras, audio. Cat6/Cat6A, PoE — safe, documented and reliable. Netherlands & Belgium.',
+        keywords: 'education cabling, healthcare cabling, school network, hospital cabling, PoE education',
+      },
+      hero: {
+        title: 'Cabling for education & healthcare',
+        subtitle: 'Reliable infrastructure for schools, hospitals and care institutions. Cat6/Cat6A, PoE, audio — safe and documented. Active in the Netherlands and Belgium.',
+      },
+      mainSection: {
+        title: 'Reliable infrastructure for education and healthcare',
+        subtitle: 'Schools, hospitals and care institutions require reliable, safe and well-documented cabling. Cat6/Cat6A runs for network, PoE for cameras and audio — all certified and documented.',
+      },
+      features: [
+        { title: 'Network & wifi', description: 'Cat6/Cat6A runs for workstations, classrooms and patient rooms. PoE for wifi access points and IP phones.' },
+        { title: 'Cameras & security', description: 'PoE runs for IP cameras. Safety and privacy according to GDPR/standards. Infrastructure work for security companies.' },
+        { title: 'Audio & communication', description: 'Balanced audio cables for intercom, PA systems and permanent speakers. Infrastructure work for audio installers.' },
+      ],
+      deliverables: {
+        title: 'What we deliver for education and healthcare',
+        network: {
+          title: 'Network Cabling',
+          items: [
+            'Cat6/Cat6A runs for workstations, classrooms and patient rooms',
+            'PoE for wifi access points, IP phones and intercom',
+            'Patch cabinets professionally organized and documented',
+            'Complete certification and test reports',
+          ],
+        },
+        audioCamera: {
+          title: 'Camera & Audio',
+          items: [
+            'PoE runs for IP cameras (privacy/GDPR-compliant)',
+            'Balanced audio cables for intercom and PA systems',
+            'Infrastructure work for audio/security companies',
+          ],
+        },
+      },
+      extraSections: [
+        {
+          title: 'Safe and documented',
+          text: 'In education and healthcare, privacy and safety are essential. We deliver documented cabling with diagrams, labels and test reports. All according to GDPR/standards and structured cabling principles.',
+          items: [
+            'Complete documentation and diagrams',
+            'Labeling and test reports for compliance',
+            'Professional delivery according to standards',
+          ],
+        },
+        {
+          title: 'Infrastructure for MSP/IT',
+          text: 'We install the cabling, MSP/IT partners install switches, access points and handle configuration (VLANs, network segmentation). Clear separation between physical layer (us) and logic (MSP/IT).',
+          items: [
+            'Patch cabinets ready for MSP/IT management',
+            'Diagrams and documentation for IT management',
+            'Delivery package with all test reports',
+          ],
+        },
+      ],
+      infoBox: {
+        title: 'We handle the infrastructure – MSP/IT handles the rest',
+        text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and certifying. MSP/IT partners install switches, access points and handle configuration. Audio installers connect intercom and speakers, security companies install cameras. This creates a clear separation between infrastructure (us) and configuration (partners).',
+      },
+      cta: {
+        title: 'Cabling for your school or care institution',
+        subtitle: 'From new construction to renovation, from elementary school to hospital: request a quote for reliable, documented cabling.',
+        button1: 'Request quote',
+        button2: 'Contact us',
+      },
     },
   },
 
@@ -1131,6 +1419,96 @@ export const en: TranslationKeys = {
       title: 'Blog - Practical cabling tips | SIGNAALMAKERS',
       description: 'Read practical tips about data cabling, patch cabinets, signal lines and cabling projects. Advice from cabling specialists.',
       keywords: 'cabling blog, data cabling tips, patch cabinet advice, cabling explained',
+    },
+  },
+
+  offerte: {
+    seo: {
+      title: 'Request Quote – Infrastructure cabling | SIGNAALMAKERS',
+      description: 'Request a quote for network, audio or camera cabling. Cat6/Cat6A, PoE, balanced lines — certified delivery. Netherlands & Belgium.',
+      keywords: 'cabling quote, infrastructure quote, Cat6A quote, network cabling price, MSP cabling quote',
+    },
+    hero: {
+      title: 'Request a quote',
+      subtitle: 'Need network, audio or camera cabling? Fill out the form and we\'ll contact you within 24 hours for a no-obligation quote.',
+    },
+    benefits: {
+      fast: {
+        title: 'Fast response',
+        description: 'We\'ll contact you within 24 hours for a no-obligation quote',
+      },
+      clear: {
+        title: 'Clear quote',
+        description: 'Transparent pricing per project, including testing and certification',
+      },
+      nationwide: {
+        title: 'Netherlands & Belgium',
+        description: 'Throughout the Netherlands and Belgium – from Amsterdam to Antwerp',
+      },
+    },
+    form: {
+      title: 'Quote request',
+      labels: {
+        name: 'Name *',
+        company: 'Company',
+        email: 'Email *',
+        phone: 'Phone',
+        address: 'Address/Project location *',
+        projectType: 'Project type *',
+        numLocations: 'Number of locations/data points (estimate)',
+        description: 'Project description *',
+      },
+      projectTypes: {
+        network: 'Network cabling (Cat6/Cat6A)',
+        audio: 'Audio cables (balanced lines)',
+        camera: 'Camera cabling (PoE)',
+        patchCabinet: 'Patch cabinets',
+        certification: 'Testing & Certification',
+      },
+      placeholders: {
+        numLocations: 'E.g. 20 data points, 5 camera locations',
+        description: 'Describe the project: what needs to be done, which rooms, any specific requirements...',
+      },
+      button: {
+        submit: 'Submit quote request',
+        submitting: 'Submitting...',
+      },
+      messages: {
+        success: 'Thank you for your quote request! We\'ll contact you as soon as possible.',
+        errorGeneric: 'An error occurred. Please try again later.',
+        errorNetwork: 'An error occurred while submitting your request. Please contact us directly at info@signaalmakers.nl',
+      },
+      submission: {
+        subject: 'Quote request',
+        customerType: 'offerte',
+        messageTemplate: {
+          projectType: 'Project type',
+          numLocations: 'Number of locations/data points',
+          notSpecified: 'Not specified',
+          description: 'Project description',
+        },
+      },
+    },
+    sidebar: {
+      whatToExpect: {
+        title: 'What to expect',
+        items: [
+          'Response within 24 hours',
+          'No-obligation custom quote',
+          'Transparent pricing per project',
+          'Testing & certification included',
+        ],
+      },
+      infrastructure: {
+        title: 'We handle infrastructure only',
+        description: 'We install cabling and deliver certified work. MSP/IT partners handle configuration and management. Clear separation, professional results.',
+        linkText: 'MSP/IT partners',
+      },
+      directContact: {
+        title: 'Direct contact',
+        phone: 'Phone',
+        email: 'Email',
+      },
     },
   },
 

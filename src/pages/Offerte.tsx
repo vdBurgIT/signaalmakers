@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import { useState } from 'react';
 import SEO from '../components/SEO';
 import { CheckCircle2, FileText, Clock, MapPin } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
+import { useTranslation } from '../i18n';
 
 export default function Offerte() {
+  const t = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -27,13 +31,13 @@ export default function Offerte() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
 
-    // Map project type to readable format
+    // Map project type to readable format using translations
     const projectTypeMap: Record<string, string> = {
-      netwerk: 'Netwerkbekabeling',
-      audio: 'Audiokabels',
-      camera: 'Camera-bekabeling',
-      patchkast: 'Patchkasten',
-      certificeren: 'Meten & Certificeren',
+      netwerk: t.offerte.form.projectTypes.network,
+      audio: t.offerte.form.projectTypes.audio,
+      camera: t.offerte.form.projectTypes.camera,
+      patchkast: t.offerte.form.projectTypes.patchCabinet,
+      certificeren: t.offerte.form.projectTypes.certification,
     };
 
     try {
@@ -53,9 +57,9 @@ export default function Offerte() {
           email: formData.email,
           phone: formData.phone,
           address: formData.address,
-          customerType: 'offerte',
-          subject: 'Offerte-aanvraag',
-          message: `Type project: ${projectTypeMap[formData.projectType] || formData.projectType}\nAantal locaties/datapunten: ${formData.numLocations || 'Niet opgegeven'}\n\nProjectomschrijving:\n${formData.description}`,
+          customerType: t.offerte.form.submission.customerType,
+          subject: t.offerte.form.submission.subject,
+          message: `${t.offerte.form.submission.messageTemplate.projectType}: ${projectTypeMap[formData.projectType] || formData.projectType}\n${t.offerte.form.submission.messageTemplate.numLocations}: ${formData.numLocations || t.offerte.form.submission.messageTemplate.notSpecified}\n\n${t.offerte.form.submission.messageTemplate.description}:\n${formData.description}`,
         }),
       });
 
@@ -64,7 +68,7 @@ export default function Offerte() {
       if (result.ok) {
         setSubmitStatus({
           type: 'success',
-          message: 'Bedankt voor je offerte-aanvraag! We nemen zo snel mogelijk contact op.',
+          message: t.offerte.form.messages.success,
         });
         // Reset form
         setFormData({
@@ -80,14 +84,14 @@ export default function Offerte() {
       } else {
         setSubmitStatus({
           type: 'error',
-          message: result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.',
+          message: result.error || t.offerte.form.messages.errorGeneric,
         });
       }
     } catch (error: unknown) {
-      console.error('Quote form submission error:', error);
+
       setSubmitStatus({
         type: 'error',
-        message: 'Er is een fout opgetreden bij het verzenden van je aanvraag. Neem direct contact met ons op via info@signaalmakers.nl',
+        message: t.offerte.form.messages.errorNetwork,
       });
     } finally {
       setIsSubmitting(false);
@@ -104,10 +108,11 @@ export default function Offerte() {
   return (
     <>
       <SEO
-        title="Offerte aanvragen – Bekabeling voor infrastructuur | SIGNAALMAKERS"
-        description="Vraag een offerte aan voor netwerk, audio of camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam."
-        keywords="offerte bekabeling, offerte infrastructuur, Cat6A offerte, netwerkbekabeling prijs, MSP bekabeling offerte"
+        title={t.offerte.seo.title}
+        description={t.offerte.seo.description}
+        keywords={t.offerte.seo.keywords}
         url="https://signaalmakers.nl/offerte"
+        hreflangPath="/offerte"
         breadcrumbs={[
           { name: 'Home', item: 'https://signaalmakers.nl/' },
           { name: 'Offerte', item: 'https://signaalmakers.nl/offerte' }
@@ -118,10 +123,10 @@ export default function Offerte() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Vraag een offerte aan
+              {t.offerte.hero.title}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Netwerk, audio of camera-bekabeling nodig? Vul het formulier in en wij nemen binnen 24 uur contact op voor een vrijblijvende offerte.
+              {t.offerte.hero.subtitle}
             </p>
           </div>
         </div>
@@ -137,9 +142,9 @@ export default function Offerte() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6 mx-auto">
                   <Clock className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Snelle reactie</h3>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">{t.offerte.benefits.fast.title}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Binnen 24 uur nemen we contact op voor een vrijblijvende offerte
+                  {t.offerte.benefits.fast.description}
                 </p>
               </div>
 
@@ -147,9 +152,9 @@ export default function Offerte() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6 mx-auto">
                   <FileText className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Duidelijke offerte</h3>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">{t.offerte.benefits.clear.title}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Transparante prijzen per traject, inclusief meten en certificeren
+                  {t.offerte.benefits.clear.description}
                 </p>
               </div>
 
@@ -157,9 +162,9 @@ export default function Offerte() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6 mx-auto">
                   <MapPin className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0E243A] mb-3">Landelijk werkzaam</h3>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3">{t.offerte.benefits.nationwide.title}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Door heel Nederland – van Rotterdam tot Groningen
+                  {t.offerte.benefits.nationwide.description}
                 </p>
               </div>
             </div>
@@ -167,7 +172,7 @@ export default function Offerte() {
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <div className="bg-gray-50 rounded-lg p-8">
-                  <h2 className="text-2xl font-bold text-[#0E243A] mb-6">Offerte-aanvraag</h2>
+                  <h2 className="text-2xl font-bold text-[#0E243A] mb-6">{t.offerte.form.title}</h2>
 
                   <form
                     onSubmit={handleSubmit}
@@ -177,7 +182,7 @@ export default function Offerte() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                          Naam *
+                          {t.offerte.form.labels.name}
                         </label>
                         <input
                           type="text"
@@ -192,7 +197,7 @@ export default function Offerte() {
 
                       <div>
                         <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
-                          Bedrijf
+                          {t.offerte.form.labels.company}
                         </label>
                         <input
                           type="text"
@@ -208,7 +213,7 @@ export default function Offerte() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                          E-mail *
+                          {t.offerte.form.labels.email}
                         </label>
                         <input
                           type="email"
@@ -223,7 +228,7 @@ export default function Offerte() {
 
                       <div>
                         <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                          Telefoon
+                          {t.offerte.form.labels.phone}
                         </label>
                         <input
                           type="tel"
@@ -238,7 +243,7 @@ export default function Offerte() {
 
                     <div>
                       <label htmlFor="address" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Adres/Locatie project *
+                        {t.offerte.form.labels.address}
                       </label>
                       <input
                         type="text"
@@ -253,7 +258,7 @@ export default function Offerte() {
 
                     <div>
                       <label htmlFor="projectType" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Type project *
+                        {t.offerte.form.labels.projectType}
                       </label>
                       <select
                         id="projectType"
@@ -263,17 +268,17 @@ export default function Offerte() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6A00] focus:border-transparent"
                       >
-                        <option value="netwerk">Netwerkbekabeling (Cat6/Cat6A)</option>
-                        <option value="audio">Audiokabels (gebalanceerde lijnen)</option>
-                        <option value="camera">Camera-bekabeling (PoE)</option>
-                        <option value="patchkast">Patchkasten</option>
-                        <option value="certificeren">Meten & Certificeren</option>
+                        <option value="netwerk">{t.offerte.form.projectTypes.network}</option>
+                        <option value="audio">{t.offerte.form.projectTypes.audio}</option>
+                        <option value="camera">{t.offerte.form.projectTypes.camera}</option>
+                        <option value="patchkast">{t.offerte.form.projectTypes.patchCabinet}</option>
+                        <option value="certificeren">{t.offerte.form.projectTypes.certification}</option>
                       </select>
                     </div>
 
                     <div>
                       <label htmlFor="numLocations" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Aantal locaties/datapunten (indicatie)
+                        {t.offerte.form.labels.numLocations}
                       </label>
                       <input
                         type="text"
@@ -281,14 +286,14 @@ export default function Offerte() {
                         name="numLocations"
                         value={formData.numLocations}
                         onChange={handleChange}
-                        placeholder="Bijv. 20 datapunten, 5 camera-locaties"
+                        placeholder={t.offerte.form.placeholders.numLocations}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6A00] focus:border-transparent"
                       />
                     </div>
 
                     <div>
                       <label htmlFor="description" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Projectomschrijving *
+                        {t.offerte.form.labels.description}
                       </label>
                       <textarea
                         id="description"
@@ -297,7 +302,7 @@ export default function Offerte() {
                         rows={6}
                         value={formData.description}
                         onChange={handleChange}
-                        placeholder="Beschrijf het project: wat moet er gebeuren, welke ruimtes, eventuele specifieke eisen..."
+                        placeholder={t.offerte.form.placeholders.description}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6A00] focus:border-transparent resize-none"
                       />
                     </div>
@@ -319,7 +324,7 @@ export default function Offerte() {
                       disabled={isSubmitting}
                       className="w-full bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      {isSubmitting ? 'Bezig met verzenden...' : 'Verstuur offerte-aanvraag'}
+                      {isSubmitting ? t.offerte.form.button.submitting : t.offerte.form.button.submit}
                     </button>
                   </form>
                 </div>
@@ -327,39 +332,31 @@ export default function Offerte() {
 
               <div className="space-y-6">
                 <div className="bg-[#0E243A] text-white rounded-lg p-6">
-                  <h3 className="text-xl font-bold mb-4">Wat te verwachten</h3>
+                  <h3 className="text-xl font-bold mb-4">{t.offerte.sidebar.whatToExpect.title}</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">Reactie binnen 24 uur</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">Vrijblijvende offerte op maat</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">Transparante prijzen per traject</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">Meten & certificeren inbegrepen</span>
-                    </li>
+                    {t.offerte.sidebar.whatToExpect.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-[#0E243A] mb-3">Wij doen alleen voorwerk</h3>
+                  <h3 className="text-lg font-bold text-[#0E243A] mb-3">{t.offerte.sidebar.infrastructure.title}</h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    Wij leggen bekabeling en leveren gecertificeerd op. <Link to="/blog/msp-bekabelingspartner" className="font-semibold text-[#FF6A00] hover:underline">MSP/IT-partners</Link> doen inregeling en beheer. Duidelijke scheiding, professioneel resultaat.
+                    {t.offerte.sidebar.infrastructure.description.split(t.offerte.sidebar.infrastructure.linkText)[0]}
+                    <LocaleLink to="/blog/msp-bekabelingspartner" className="font-semibold text-[#FF6A00] hover:underline">{t.offerte.sidebar.infrastructure.linkText}</LocaleLink>
+                    {t.offerte.sidebar.infrastructure.description.split(t.offerte.sidebar.infrastructure.linkText)[1]}
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-[#0E243A] mb-3">Direct contact</h3>
+                  <h3 className="text-lg font-bold text-[#0E243A] mb-3">{t.offerte.sidebar.directContact.title}</h3>
                   <div className="space-y-2 text-sm">
-                    <p><strong>Telefoon:</strong> <a href="tel:+31645251333" className="text-[#FF6A00] hover:underline">+31 6 45251333</a></p>
-                    <p><strong>E-mail:</strong> <a href="mailto:info@signaalmakers.nl" className="text-[#FF6A00] hover:underline">info@signaalmakers.nl</a></p>
+                    <p><strong>{t.offerte.sidebar.directContact.phone}:</strong> <a href="tel:+31645251333" className="text-[#FF6A00] hover:underline">+31 6 45251333</a></p>
+                    <p><strong>{t.offerte.sidebar.directContact.email}:</strong> <a href="mailto:info@signaalmakers.nl" className="text-[#FF6A00] hover:underline">info@signaalmakers.nl</a></p>
                   </div>
                 </div>
               </div>

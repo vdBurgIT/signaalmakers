@@ -32,6 +32,7 @@ export default function Audiokabels() {
         description={t.services.audio.seo.description}
         keywords={t.services.audio.seo.keywords}
         url={`${baseUrl}/diensten/audiokabels`}
+        hreflangPath="/diensten/audiokabels"
         breadcrumbs={[
           { name: t.nav.home, item: `${baseUrl}/` },
           { name: t.nav.services, item: `${baseUrl}/diensten` },

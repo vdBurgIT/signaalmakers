@@ -3,6 +3,7 @@ import SEO from '../components/SEO';
 import { Helmet } from 'react-helmet-async';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { useTranslation } from '../i18n';
 
@@ -199,12 +200,12 @@ export default function FAQ() {
                 <p className="text-gray-300 mb-6">
                   {t.faq.ctaText}
                 </p>
-                <Link
+                <LocaleLink
                   to="/contact"
                   className="inline-block bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
                 >
                   {t.faq.ctaButton}
-                </Link>
+                </LocaleLink>
               </div>
             </div>
           </div>

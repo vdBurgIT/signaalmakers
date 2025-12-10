@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { Instagram, Linkedin, MessageCircle, Mail, Phone, MapPin, Building2 } from 'lucide-react';
 import { useTranslation } from '../i18n';
+import { LocaleLink } from './LocaleLink';
 
 export default function Footer() {
   const t = useTranslation();
@@ -61,29 +61,29 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">{t.footer.services}</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link to="/diensten/netwerkbekabeling" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/diensten/netwerkbekabeling" className="hover:text-[#FF6A00] transition-colors">
                   {t.services.network.shortTitle}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/diensten/audiokabels" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/diensten/audiokabels" className="hover:text-[#FF6A00] transition-colors">
                   {t.services.audio.title}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/diensten/camera-bekabeling" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/diensten/camera-bekabeling" className="hover:text-[#FF6A00] transition-colors">
                   {t.services.camera.title}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/diensten/patchkasten" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/diensten/patchkasten" className="hover:text-[#FF6A00] transition-colors">
                   {t.services.patchCabinets.title}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/diensten/certificeren" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/diensten/certificeren" className="hover:text-[#FF6A00] transition-colors">
                   {t.services.certification.shortTitle}
-                </Link>
+                </LocaleLink>
               </li>
             </ul>
           </div>
@@ -92,29 +92,29 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">{t.footer.company}</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link to="/over-ons" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/over-ons" className="hover:text-[#FF6A00] transition-colors">
                   {t.nav.about}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/blog" className="hover:text-[#FF6A00] transition-colors">
                   {t.nav.blog}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/faq" className="hover:text-[#FF6A00] transition-colors">
                   {t.nav.faq}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/sitemap" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/sitemap" className="hover:text-[#FF6A00] transition-colors">
                   Sitemap
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#FF6A00] transition-colors">
+                <LocaleLink to="/contact" className="hover:text-[#FF6A00] transition-colors">
                   {t.nav.contact}
-                </Link>
+                </LocaleLink>
               </li>
             </ul>
           </div>

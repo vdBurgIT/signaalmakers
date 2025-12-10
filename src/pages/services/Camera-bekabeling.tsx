@@ -32,6 +32,7 @@ export default function CameraBekaeling() {
         description={t.services.camera.seo.description}
         keywords={t.services.camera.seo.keywords}
         url={`${baseUrl}/diensten/camera-bekabeling`}
+        hreflangPath="/diensten/camera-bekabeling"
         breadcrumbs={[
           { name: t.nav.home, item: `${baseUrl}/` },
           { name: t.nav.services, item: `${baseUrl}/diensten` },

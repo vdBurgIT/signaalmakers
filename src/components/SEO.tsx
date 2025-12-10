@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Hreflang } from '../i18n';
+import { Hreflang, getCanonicalUrl } from '../i18n';
 import { useI18n } from '../i18n';
 
 interface BreadcrumbItem {
@@ -44,6 +44,13 @@ const SEO = ({
   // Determine og:locale based on current locale
   const ogLocale = locale === 'nl-NL' ? 'nl_NL' : locale === 'nl-BE' ? 'nl_BE' : 'en_US';
 
+  // Generate locale-aware canonical URL
+  // If hreflangPath is provided, use it to generate the canonical URL
+  // Otherwise, use the provided url
+  const canonicalUrl = hreflangPath
+    ? getCanonicalUrl(hreflangPath, locale)
+    : url;
+
   return (
     <>
       {includehreflang && <Hreflang path={hreflangPath} />}
@@ -56,7 +63,7 @@ const SEO = ({
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
@@ -84,13 +91,13 @@ const SEO = ({
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={url} />
+      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={url} />
+      {/* Canonical URL - Now locale-aware! */}
+      <link rel="canonical" href={canonicalUrl} />
 
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">

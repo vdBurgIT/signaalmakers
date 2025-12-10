@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import { Cable, Server, Volume2, CheckCircle2, Building2, Camera } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
@@ -115,13 +116,13 @@ export default function Diensten() {
                     </li>
                   ))}
                 </ul>
-                <Link
+                <LocaleLink
                   to={service.link}
                   className="inline-flex items-center text-[#FF6A00] text-lg font-semibold hover:text-[#E55F00] transition-colors group hover:gap-3 gap-2"
                 >
                   {t.common.readMore}
                   <span className="transition-all duration-300">→</span>
-                </Link>
+                </LocaleLink>
               </div>
             ))}
           </div>
@@ -184,18 +185,18 @@ export default function Diensten() {
               {t.diensten.ctaSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <LocaleLink
                 to="/offerte"
                 className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
                 {t.diensten.ctaButton1}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 to="/contact"
                 className="inline-block border-2 border-[#0E243A] text-[#0E243A] px-8 py-4 rounded-lg hover:bg-[#0E243A] hover:text-white transition-all duration-300 font-semibold text-lg"
               >
                 {t.diensten.ctaButton2}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </div>

@@ -6,3 +6,4 @@ export * from './config';
 export * from './I18nContext';
 export * from './Hreflang';
 export * from './locales';
+export * from './localeUrl';

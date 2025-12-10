@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import { Building2, ShoppingBag, PackageSearch, GraduationCap, Server } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
@@ -86,7 +87,7 @@ export default function Sectoren() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {sectoren.map((sector, index) => (
-                <Link
+                <LocaleLink
                   key={index}
                   to={sector.link}
                   className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100"
@@ -104,7 +105,7 @@ export default function Sectoren() {
                     {t.sectoren.moreInfo}
                     <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
                   </div>
-                </Link>
+                </LocaleLink>
               ))}
             </div>
           </div>
@@ -134,18 +135,18 @@ export default function Sectoren() {
               {t.sectoren.ctaSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <LocaleLink
                 to="/offerte"
                 className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
                 {t.sectoren.ctaButton1}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg"
               >
                 {t.sectoren.ctaButton2}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </div>

@@ -67,7 +67,7 @@ export default function Contact() {
         });
       }
     } catch (error: unknown) {
-      console.error('Contact form submission error:', error);
+
       setSubmitStatus({
         type: 'error',
         message: t.contact.form.errorMessageDetail,

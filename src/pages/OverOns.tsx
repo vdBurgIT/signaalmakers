@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import { Cable, Zap, CheckCircle2, Building2, Users } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
@@ -58,23 +59,23 @@ export default function OverOns() {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.network.split(' —')[0]}</Link></strong> — {t.about.whatWeDeliver.network.split(' —')[1]}</span>
+                  <span className="leading-relaxed"><strong><LocaleLink to="/diensten/netwerkbekabeling" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.network.split(' —')[0]}</LocaleLink></strong> — {t.about.whatWeDeliver.network.split(' —')[1]}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/audiokabels" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.audio.split(' —')[0]}</Link></strong> — {t.about.whatWeDeliver.audio.split(' —')[1]}</span>
+                  <span className="leading-relaxed"><strong><LocaleLink to="/diensten/audiokabels" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.audio.split(' —')[0]}</LocaleLink></strong> — {t.about.whatWeDeliver.audio.split(' —')[1]}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.camera.split(' —')[0]}</Link></strong> — {t.about.whatWeDeliver.camera.split(' —')[1]}</span>
+                  <span className="leading-relaxed"><strong><LocaleLink to="/diensten/camera-bekabeling" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.camera.split(' —')[0]}</LocaleLink></strong> — {t.about.whatWeDeliver.camera.split(' —')[1]}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.patchCabinets.split(' —')[0]}</Link></strong> — {t.about.whatWeDeliver.patchCabinets.split(' —')[1]}</span>
+                  <span className="leading-relaxed"><strong><LocaleLink to="/diensten/patchkasten" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.patchCabinets.split(' —')[0]}</LocaleLink></strong> — {t.about.whatWeDeliver.patchCabinets.split(' —')[1]}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                  <span className="leading-relaxed"><strong><Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.certification.split(' —')[0]}</Link></strong> — {t.about.whatWeDeliver.certification.split(' —')[1]}</span>
+                  <span className="leading-relaxed"><strong><LocaleLink to="/diensten/certificeren" style={{ fontWeight: 600 }}>{t.about.whatWeDeliver.certification.split(' —')[0]}</LocaleLink></strong> — {t.about.whatWeDeliver.certification.split(' —')[1]}</span>
                 </li>
               </ul>
             </div>
@@ -204,12 +205,12 @@ export default function OverOns() {
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
               {t.about.cta.subtitle}
             </p>
-            <Link
+            <LocaleLink
               to="/contact"
               className="inline-block bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
             >
               {t.about.cta.button}
-            </Link>
+            </LocaleLink>
           </div>
         </div>
       </section>

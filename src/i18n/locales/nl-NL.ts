@@ -731,23 +731,311 @@ export const nlNL = {
 
   sectors: {
     serverRooms: {
-      title: 'Serverruimtes & Datacenters',
-      shortTitle: 'Serverruimtes',
-      description: 'Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, praktische oplevercheck. Voorwerk voor MSP/IT — landelijk.',
-      heroTitle: 'Bekabeling voor serverruimtes & datacenters',
-      heroSubtitle: 'Cat6A bekabeling voor 10 Gbps, strakke patchkasten en praktische oplevercheck. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Landelijk werkzaam.',
+      seo: {
+        title: 'Serverruimtes & Datacenters – Cat6A bekabeling | SIGNAALMAKERS',
+        description: 'Cat6A bekabeling voor serverruimtes en datacenters. 10 Gbps, strakke patchkasten, praktische oplevercheck. Voorwerk voor MSP/IT — landelijk.',
+        keywords: 'serverruimte bekabeling, datacenter bekabeling, Cat6A 10Gbps, patchkast datacenter, MSP bekabeling partner',
+      },
+      hero: {
+        title: 'Bekabeling voor serverruimtes & datacenters',
+        subtitle: 'Cat6A bekabeling voor 10 Gbps, strakke patchkasten en praktische oplevercheck. Wij leggen de bekabeling — MSP/IT doet inregeling en beheer. Landelijk werkzaam.',
+      },
+      mainSection: {
+        title: 'Professionele bekabeling voor kritieke omgevingen',
+        subtitle: 'In serverruimtes en datacenters is betrouwbare bekabeling essentieel. Cat6A trajecten voor 10 Gbps, strakke patchkasten met doordacht kabelmanagement en praktische oplevercheck. Wij doen het voorwerk — MSP/IT doet configuratie en beheer.',
+      },
+      features: [
+        {
+          title: 'Cat6A voor 10 Gbps',
+          description: 'Bekabeling die 10 Gbps aankan over 100 meter. Ideaal voor server-to-switch verbindingen, storage-netwerken en uplinks. Aandacht voor EMI/crosstalk en toekomstbestendigheid.',
+          items: [
+            'Cat6A S/FTP afgeschermd voor storingsvrije transmissie',
+            'Korte en lange runs, altijd met oog voor toekomstige uitbreiding',
+            'Elk traject functioneel getest met professionele apparatuur',
+          ],
+        },
+        {
+          title: 'Strakke patchkasten',
+          description: 'Doordacht ingerichte patchkasten met kabelmanagement, labels en schema\'s. Airflow in acht genomen, ruimte voor switches en PDU\'s. Klaar voor beheer door MSP/IT.',
+          items: [
+            'Logische paneelindeling en labeling (poort, VLAN-ready)',
+            'Kabelmanagement en airflow voor optimale koeling',
+            'Schema\'s en documentatie voor MSP/IT-beheer',
+          ],
+        },
+      ],
+      infoBox: {
+        title: 'Wij doen het voorwerk – MSP/IT doet de rest',
+        text: 'SIGNAALMAKERS legt de bekabeling: trajecten trekken, patchkasten monteren, labelen en functioneel testen. MSP/IT-partners installeren switches, routers, firewalls en doen configuratie (VLAN\'s, routing, monitoring). Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, MSP/IT beheert de logica en apparatuur. Geen overlap, professioneel resultaat.',
+      },
+      deliverables: {
+        title: 'Wat we leveren voor serverruimtes',
+        network: {
+          title: 'Bekabeling',
+          items: [
+            'Cat6A trajecten voor 10 Gbps server-to-switch',
+            'Uplinks, storage-netwerken en management-interfaces',
+            'Out-of-band management bekabeling indien gewenst',
+          ],
+        },
+        patchCabinets: {
+          title: 'Patchkasten & Documentatie',
+          items: [
+            'Patchpanelen, kabelmanagement en labeling',
+            'Meetrapporten en kabelplan',
+            'Schema\'s en Excel-overzichten voor beheer',
+          ],
+        },
+      },
+      cta: {
+        title: 'Bekabeling voor jouw serverruimte of datacenter',
+        subtitle: 'Vraag een offerte aan voor Cat6A bekabeling, patchkasten en praktische oplevercheck. Landelijk werkzaam — van nieuwbouw tot uitbreiding.',
+        button1: 'Vraag offerte aan',
+        button2: 'Neem contact op',
+      },
     },
     offices: {
-      title: 'Kantoren',
-      description: 'Bekabeling voor kantoren: netwerk, audio, camera\'s. Cat6/Cat6A, PoE, wifi-trajecten. Professioneel voorwerk voor MSP/IT—landelijk.',
-      heroTitle: 'Bekabeling voor kantoren',
-      heroSubtitle: 'Netwerkbekabeling, audio en camera\'s voor moderne kantooromgevingen. Cat6/Cat6A, PoE, wifi-trajecten—professioneel en toekomstbestendig. Landelijk werkzaam.',
+      seo: {
+        title: 'Kantoren – Netwerkbekabeling en infrastructuur | SIGNAALMAKERS',
+        description: 'Bekabeling voor kantoren: netwerk, audio, camera\'s. Cat6/Cat6A, PoE, wifi-trajecten. Professioneel voorwerk voor MSP/IT—landelijk.',
+        keywords: 'kantoor bekabeling, netwerkbekabeling kantoor, wifi bekabeling, Cat6A kantoor, MSP partner kantoor',
+      },
+      hero: {
+        title: 'Bekabeling voor kantoren',
+        subtitle: 'Netwerkbekabeling, audio en camera\'s voor moderne kantooromgevingen. Cat6/Cat6A, PoE, wifi-trajecten—professioneel en toekomstbestendig. Landelijk werkzaam.',
+      },
+      mainSection: {
+        title: 'Professionele infrastructuur voor kantooromgevingen',
+        subtitle: 'Van werkplekken tot vergaderruimtes, van wifi-access points tot IP-telefonie: wij leggen de bekabeling die je kantoor draaiende houdt. Cat6/Cat6A trajecten, gebalanceerde audio en camera-bekabeling—allemaal met praktische oplevercheck.',
+      },
+      features: [
+        { title: 'Werkplekken & netwerk', description: 'Cat6/Cat6A trajecten voor datapunten, PoE voor IP-telefoons en access points. Alles netjes afgewerkt en gelabeld.' },
+        { title: 'Wifi & access points', description: 'PoE-trajecten naar plafond of wand voor wifi-access points. MSP/IT doet configuratie en roaming.' },
+        { title: 'Audio & camera\'s', description: 'Gebalanceerde lijnen voor vaste audio-installaties en PoE-trajecten voor IP-camera\'s. Voorwerk voor installateur.' },
+      ],
+      deliverables: {
+        title: 'Wat we leveren voor kantoren',
+        network: {
+          title: 'Netwerkbekabeling',
+          items: [
+            'Cat6/Cat6A trajecten voor werkplekken en vergaderruimtes',
+            'PoE-trajecten voor IP-telefoons, access points en camera\'s',
+            'Patchkast strak ingericht met labels en schema\'s',
+            'Meetrapporten en praktische oplevercheck',
+          ],
+        },
+        audioCamera: {
+          title: 'Audio & Camera',
+          items: [
+            'Gebalanceerde audiokabels voor vaste speakers en installaties',
+            'PoE-trajecten voor IP-camera\'s (in-/outdoor)',
+            'Voorwerk voor audio/beveiligingsbedrijven—wij doen kabels, zij doen apparatuur',
+          ],
+        },
+      },
+      infoBox: {
+        title: 'Wij doen het voorwerk – MSP/IT doet inregeling',
+        text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners installeren switches, routers, wifi-controllers en doen configuratie (VLAN\'s, SSID\'s, netwerksegmentatie). Voor audio en camera\'s werken we samen met installateurs en beveiligingsbedrijven: wij leggen de bekabeling, zij sluiten apparatuur aan en regelen af. Duidelijke scheiding, professioneel resultaat.',
+      },
+      cta: {
+        title: 'Bekabeling voor jouw kantoor',
+        subtitle: 'Van nieuwbouw tot renovatie, van klein kantoor tot groot bedrijfspand: vraag een offerte aan voor professionele bekabeling.',
+        button1: 'Vraag offerte aan',
+        button2: 'Neem contact op',
+      },
     },
     retail: {
-      title: 'Retail & Horeca',
-      description: 'Bekabeling voor retail en horeca: kassa\'s, camera\'s, audio, netwerk. Cat6/Cat6A, PoE — snel, netjes, minimale verstoring. Landelijk.',
-      heroTitle: 'Bekabeling voor retail & horeca',
-      heroSubtitle: 'Bekabeling voor kassa\'s, camera\'s en audio. Cat6/Cat6A, PoE — snel, netjes en met minimale verstoring van de bedrijfsvoering. Landelijk werkzaam.',
+      seo: {
+        title: 'Retail & Horeca – Bekabeling voor winkels en horeca | SIGNAALMAKERS',
+        description: 'Bekabeling voor retail en horeca: kassa\'s, camera\'s, audio, netwerk. Cat6/Cat6A, PoE — snel, netjes, minimale verstoring. Landelijk.',
+        keywords: 'retail bekabeling, horeca bekabeling, kassa bekabeling, camera winkel, PoE bekabeling retail',
+      },
+      hero: {
+        title: 'Bekabeling voor retail & horeca',
+        subtitle: 'Bekabeling voor kassa\'s, camera\'s en audio. Cat6/Cat6A, PoE — snel, netjes en met minimale verstoring van de bedrijfsvoering. Landelijk werkzaam.',
+      },
+      mainSection: {
+        title: 'Professionele bekabeling voor winkels en horeca',
+        subtitle: 'Van kleine winkel tot groot winkelcentrum, van café tot restaurant: wij leggen de bekabeling voor kassa\'s, camera\'s, audio en netwerk. Cat6/Cat6A trajecten, PoE voor camera\'s en gebalanceerde audio — alles met praktische oplevercheck.',
+      },
+      features: [
+        { title: 'Kassa\'s & netwerk', description: 'Cat6 trajecten voor kassa\'s, pinapparaten en back-office. PoE voor wifi-access points. Alles netjes weggewerkt.' },
+        { title: 'Camera\'s & beveiliging', description: 'PoE-trajecten voor IP-camera\'s (binnen/buiten). Voorwerk voor beveiligingsbedrijven — wij doen kabels, zij doen apparatuur.' },
+        { title: 'Audio & sfeer', description: 'Gebalanceerde audiokabels voor vaste speakers en installaties. Voorwerk voor audio-installateurs.' },
+      ],
+      specialSection: {
+        title: 'Minimale verstoring, maximaal resultaat',
+        text: 'Wij werken buiten openingstijden of in fasen, zodat je winkel of horecagelegenheid open kan blijven. Bekabeling wordt netjes weggewerkt in wanden, plafonds of kanalen — geen losse kabels, professioneel eindresultaat.',
+      },
+      deliverables: {
+        title: '',
+        network: {
+          title: 'Netwerkbekabeling',
+          items: [
+            'Cat6 trajecten voor kassa\'s, pinapparaten en back-office',
+            'PoE voor wifi-access points en IP-telefoons',
+            'Patchkast in serverruimte of achterkantoor',
+          ],
+        },
+        audioCamera: {
+          title: 'Camera & Audio',
+          items: [
+            'PoE-trajecten voor IP-camera\'s (binnen/buiten)',
+            'Gebalanceerde audiokabels voor vaste speakers',
+            'Voorwerk voor audio/beveiligingsbedrijven',
+          ],
+        },
+      },
+      infoBox: {
+        title: 'Wij doen het voorwerk – partners doen de rest',
+        text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\'s. Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, partners doen apparatuur en configuratie. Geen overlap, professioneel resultaat.',
+      },
+      cta: {
+        title: 'Bekabeling voor jouw winkel of horecagelegenheid',
+        subtitle: 'Van nieuwbouw tot verbouwing, van kleine zaak tot groot winkelcentrum: vraag een offerte aan voor professionele bekabeling.',
+        button1: 'Vraag offerte aan',
+        button2: 'Neem contact op',
+      },
+    },
+    warehouse: {
+      seo: {
+        title: 'Magazijn & Logistiek – Robuuste bekabeling | SIGNAALMAKERS',
+        description: 'Bekabeling voor magazijnen en logistiek: netwerk, scanners, camera\'s. Cat6/Cat6A, PoE — robuust en geschikt voor zware omgevingen. Landelijk.',
+        keywords: 'magazijn bekabeling, logistiek bekabeling, scanner bekabeling, warehouse netwerk, PoE magazijn',
+      },
+      hero: {
+        title: 'Bekabeling voor magazijn & logistiek',
+        subtitle: 'Robuuste bekabeling voor scanners, camera\'s en netwerk. Cat6/Cat6A, PoE — geschikt voor zware omgevingen. Landelijk werkzaam.',
+      },
+      mainSection: {
+        title: 'Robuuste infrastructuur voor magazijn en logistiek',
+        subtitle: 'In magazijnen en logistieke omgevingen moet bekabeling tegen een stootje kunnen. Cat6/Cat6A trajecten voor netwerk en scanners, PoE voor camera\'s en wifi-access points — allemaal robuust uitgevoerd en gecertificeerd opgeleverd.',
+      },
+      features: [
+        { title: 'Netwerk & scanners', description: 'Cat6/Cat6A trajecten voor werkstations, scanners en printers. PoE voor wifi-access points in grote hallen.' },
+        { title: 'Camera\'s & beveiliging', description: 'PoE-trajecten voor IP-camera\'s (binnen/buiten). Robuuste montage geschikt voor industriële omgevingen.' },
+        { title: 'Robuust & betrouwbaar', description: 'Kabels beschermd in goten of buis, schokbestendig gemonteerd. Geschikt voor zware omgevingen.' },
+      ],
+      deliverables: {
+        title: 'Wat we leveren voor magazijnen en logistiek',
+        network: {
+          title: 'Netwerkbekabeling',
+          items: [
+            'Cat6/Cat6A trajecten voor werkstations, scanners en printers',
+            'PoE voor wifi-access points in grote hallen',
+            'Robuuste uitvoering in kabelgoten of buizen',
+            'Patchkast centraal of decentraal ingericht',
+          ],
+        },
+        security: {
+          title: 'Camera & Beveiliging',
+          items: [
+            'PoE-trajecten voor IP-camera\'s (binnen/buiten)',
+            'Schokbestendige montage geschikt voor industriële omgevingen',
+            'Voorwerk voor beveiligingsbedrijven — wij doen kabels, zij doen apparatuur',
+          ],
+        },
+      },
+      extraSections: [
+        {
+          title: 'Geschikt voor zware omgevingen',
+          text: 'Magazijnen en logistieke omgevingen stellen hoge eisen aan bekabeling: temperatuurwisselingen, stof, vocht en mechanische belasting. Wij gebruiken robuuste kabels en montagewijzen die tegen een stootje kunnen.',
+          items: [
+            'Bescherming in kabelgoten of buizen',
+            'Schokbestendige montage op hoogte of aan wanden',
+            'Duidelijke labeling voor onderhoud en uitbreidingen',
+          ],
+        },
+        {
+          title: 'Voorwerk voor MSP/IT',
+          text: 'Wij leggen de bekabeling, MSP/IT-partners installeren switches, access points en doen configuratie. Duidelijke scheiding tussen fysieke laag (wij) en logica (MSP/IT).',
+          items: [
+            'Patchkasten strak ingericht met labels en schema\'s',
+            'Meetrapporten en certificering conform kabelnormen',
+            'Opleverdossier met alle documentatie',
+          ],
+        },
+      ],
+      infoBox: {
+        title: 'Wij doen het voorwerk – MSP/IT doet de rest',
+        text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en certificeren. MSP/IT-partners installeren switches, access points en doen configuratie. Beveiligingsbedrijven installeren camera\'s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).',
+      },
+      cta: {
+        title: 'Bekabeling voor jouw magazijn of logistieke omgeving',
+        subtitle: 'Van nieuwbouw tot uitbreiding, van klein magazijn tot groot distributiecentrum: vraag een offerte aan voor robuuste bekabeling.',
+        button1: 'Vraag offerte aan',
+        button2: 'Neem contact op',
+      },
+    },
+    education: {
+      seo: {
+        title: 'Onderwijs & Zorg – Betrouwbare bekabeling | SIGNAALMAKERS',
+        description: 'Bekabeling voor onderwijs en zorg: netwerk, camera\'s, audio. Cat6/Cat6A, PoE — veilig, gedocumenteerd en betrouwbaar. Landelijk.',
+        keywords: 'onderwijs bekabeling, zorg bekabeling, school netwerk, ziekenhuis bekabeling, PoE onderwijs',
+      },
+      hero: {
+        title: 'Bekabeling voor onderwijs & zorg',
+        subtitle: 'Betrouwbare infrastructuur voor scholen, ziekenhuizen en zorginstellingen. Cat6/Cat6A, PoE, audio — veilig en gedocumenteerd. Landelijk werkzaam.',
+      },
+      mainSection: {
+        title: 'Betrouwbare infrastructuur voor onderwijs en zorg',
+        subtitle: 'Scholen, ziekenhuizen en zorginstellingen vragen om betrouwbare, veilige en goed gedocumenteerde bekabeling. Cat6/Cat6A trajecten voor netwerk, PoE voor camera\'s en audio — alles gecertificeerd en gedocumenteerd.',
+      },
+      features: [
+        { title: 'Netwerk & wifi', description: 'Cat6/Cat6A trajecten voor werkplekken, klaslokalen en patiëntenruimtes. PoE voor wifi-access points en IP-telefoons.' },
+        { title: 'Camera\'s & beveiliging', description: 'PoE-trajecten voor IP-camera\'s. Veiligheid en privacy volgens AVG/NEN-normen. Voorwerk voor beveiligingsbedrijven.' },
+        { title: 'Audio & communicatie', description: 'Gebalanceerde audiokabels voor intercom, omroepinstallaties en vaste speakers. Voorwerk voor audio-installateurs.' },
+      ],
+      deliverables: {
+        title: 'Wat we leveren voor onderwijs en zorg',
+        network: {
+          title: 'Netwerkbekabeling',
+          items: [
+            'Cat6/Cat6A trajecten voor werkplekken, klaslokalen en patiëntenruimtes',
+            'PoE voor wifi-access points, IP-telefoons en intercom',
+            'Patchkasten strak ingericht en gedocumenteerd',
+            'Volledige certificering en meetrapporten',
+          ],
+        },
+        audioCamera: {
+          title: 'Camera & Audio',
+          items: [
+            'PoE-trajecten voor IP-camera\'s (privacy/AVG-proof)',
+            'Gebalanceerde audiokabels voor intercom en omroepinstallaties',
+            'Voorwerk voor audio/beveiligingsbedrijven',
+          ],
+        },
+      },
+      extraSections: [
+        {
+          title: 'Veilig en gedocumenteerd',
+          text: 'In onderwijs en zorg is privacy en veiligheid essentieel. Wij leveren gedocumenteerde bekabeling met schema\'s, labels en meetrapporten. Alles volgens AVG/NEN-normen en conform structured cabling principes.',
+          items: [
+            'Volledige documentatie en schema\'s',
+            'Labeling en meetrapporten voor compliance',
+            'Professionele oplevering volgens normen',
+          ],
+        },
+        {
+          title: 'Voorwerk voor MSP/IT',
+          text: 'Wij leggen de bekabeling, MSP/IT-partners installeren switches, access points en doen configuratie (VLAN\'s, netwerksegmentatie). Duidelijke scheiding tussen fysieke laag (wij) en logica (MSP/IT).',
+          items: [
+            'Patchkasten klaar voor beheer door MSP/IT',
+            'Schema\'s en documentatie voor IT-beheer',
+            'Opleverdossier met alle meetrapporten',
+          ],
+        },
+      ],
+      infoBox: {
+        title: 'Wij doen het voorwerk – MSP/IT doet de rest',
+        text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en certificeren. MSP/IT-partners installeren switches, access points en doen configuratie. Audio-installateurs sluiten intercom en speakers aan, beveiligingsbedrijven installeren camera\'s. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).',
+      },
+      cta: {
+        title: 'Bekabeling voor jouw school of zorginstelling',
+        subtitle: 'Van nieuwbouw tot renovatie, van basisschool tot ziekenhuis: vraag een offerte aan voor betrouwbare, gedocumenteerde bekabeling.',
+        button1: 'Vraag offerte aan',
+        button2: 'Neem contact op',
+      },
     },
   },
 
@@ -1129,6 +1417,96 @@ export const nlNL = {
       title: 'Blog - Praktische tips over bekabeling | SIGNAALMAKERS',
       description: 'Lees praktische tips over databekabeling, patchkasten, signaallijnen en bekabelingsprojecten. Advies van de bekabelingsspecialist.',
       keywords: 'blog bekabeling, databekabeling tips, patchkast advies, bekabeling uitleg',
+    },
+  },
+
+  offerte: {
+    seo: {
+      title: 'Offerte aanvragen – Bekabeling voor infrastructuur | SIGNAALMAKERS',
+      description: 'Vraag een offerte aan voor netwerk, audio of camera-bekabeling. Cat6/Cat6A, PoE, gebalanceerde lijnen — gecertificeerd opgeleverd. Landelijk werkzaam.',
+      keywords: 'offerte bekabeling, offerte infrastructuur, Cat6A offerte, netwerkbekabeling prijs, MSP bekabeling offerte',
+    },
+    hero: {
+      title: 'Vraag een offerte aan',
+      subtitle: 'Netwerk, audio of camera-bekabeling nodig? Vul het formulier in en wij nemen binnen 24 uur contact op voor een vrijblijvende offerte.',
+    },
+    benefits: {
+      fast: {
+        title: 'Snelle reactie',
+        description: 'Binnen 24 uur nemen we contact op voor een vrijblijvende offerte',
+      },
+      clear: {
+        title: 'Duidelijke offerte',
+        description: 'Transparante prijzen per traject, inclusief meten en certificeren',
+      },
+      nationwide: {
+        title: 'Landelijk werkzaam',
+        description: 'Door heel Nederland – van Rotterdam tot Groningen',
+      },
+    },
+    form: {
+      title: 'Offerte-aanvraag',
+      labels: {
+        name: 'Naam *',
+        company: 'Bedrijf',
+        email: 'E-mail *',
+        phone: 'Telefoon',
+        address: 'Adres/Locatie project *',
+        projectType: 'Type project *',
+        numLocations: 'Aantal locaties/datapunten (indicatie)',
+        description: 'Projectomschrijving *',
+      },
+      projectTypes: {
+        network: 'Netwerkbekabeling (Cat6/Cat6A)',
+        audio: 'Audiokabels (gebalanceerde lijnen)',
+        camera: 'Camera-bekabeling (PoE)',
+        patchCabinet: 'Patchkasten',
+        certification: 'Meten & Certificeren',
+      },
+      placeholders: {
+        numLocations: 'Bijv. 20 datapunten, 5 camera-locaties',
+        description: 'Beschrijf het project: wat moet er gebeuren, welke ruimtes, eventuele specifieke eisen...',
+      },
+      button: {
+        submit: 'Verstuur offerte-aanvraag',
+        submitting: 'Bezig met verzenden...',
+      },
+      messages: {
+        success: 'Bedankt voor je offerte-aanvraag! We nemen zo snel mogelijk contact op.',
+        errorGeneric: 'Er is een fout opgetreden. Probeer het later opnieuw.',
+        errorNetwork: 'Er is een fout opgetreden bij het verzenden van je aanvraag. Neem direct contact met ons op via info@signaalmakers.nl',
+      },
+      submission: {
+        subject: 'Offerte-aanvraag',
+        customerType: 'offerte',
+        messageTemplate: {
+          projectType: 'Type project',
+          numLocations: 'Aantal locaties/datapunten',
+          notSpecified: 'Niet opgegeven',
+          description: 'Projectomschrijving',
+        },
+      },
+    },
+    sidebar: {
+      whatToExpect: {
+        title: 'Wat te verwachten',
+        items: [
+          'Reactie binnen 24 uur',
+          'Vrijblijvende offerte op maat',
+          'Transparante prijzen per traject',
+          'Meten & certificeren inbegrepen',
+        ],
+      },
+      infrastructure: {
+        title: 'Wij doen alleen voorwerk',
+        description: 'Wij leggen bekabeling en leveren gecertificeerd op. MSP/IT-partners doen inregeling en beheer. Duidelijke scheiding, professioneel resultaat.',
+        linkText: 'MSP/IT-partners',
+      },
+      directContact: {
+        title: 'Direct contact',
+        phone: 'Telefoon',
+        email: 'E-mail',
+      },
     },
   },
 

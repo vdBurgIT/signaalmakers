@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LocaleLink } from '../../components/LocaleLink';
 import { useState } from 'react';
 import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
@@ -10,7 +11,7 @@ export default function Netwerkbekabeling() {
   const { t, locale } = useI18n();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const faqs = t('services.network.faqs.items');
+  const faqs = t.services.network.faqs.items;
 
   const faqSchema = {
     mainEntity: faqs.map((faq: { question: string; answer: string }) => ({
@@ -28,14 +29,15 @@ export default function Netwerkbekabeling() {
   return (
     <>
       <SEO
-        title={t('services.network.seo.title')}
-        description={t('services.network.seo.description')}
-        keywords={t('services.network.seo.keywords')}
+        title={t.services.network.seo.title}
+        description={t.services.network.seo.description}
+        keywords={t.services.network.seo.keywords}
         url={`${baseUrl}/diensten/netwerkbekabeling`}
+        hreflangPath="/diensten/netwerkbekabeling"
         breadcrumbs={[
-          { name: t('nav.home'), item: `${baseUrl}/` },
-          { name: t('nav.services'), item: `${baseUrl}/diensten` },
-          { name: t('services.network.shortTitle'), item: `${baseUrl}/diensten/netwerkbekabeling` }
+          { name: t.nav.home, item: `${baseUrl}/` },
+          { name: t.nav.services, item: `${baseUrl}/diensten` },
+          { name: t.services.network.shortTitle, item: `${baseUrl}/diensten/netwerkbekabeling` }
         ]}
       />
       <StructuredData type="LocalBusiness" />
@@ -45,10 +47,10 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              {t('services.network.hero.title')}
+              {t.services.network.hero.title}
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              {t('services.network.hero.subtitle')}
+              {t.services.network.hero.subtitle}
             </p>
           </div>
         </div>
@@ -60,18 +62,18 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6">
-              {t('services.network.whatWeDo.title')}
+              {t.services.network.whatWeDo.title}
             </h2>
             <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              {t('services.network.whatWeDo.intro')} <Link to="/diensten/patchkasten" style={{ fontWeight: 600 }}>{t('services.patchCabinets.title').toLowerCase()}</Link>. <Link to="/diensten/certificeren" style={{ fontWeight: 600 }}>{t('services.certification.heroTitle')}</Link>.
+              {t.services.network.whatWeDo.intro} <LocaleLink to="/diensten/patchkasten" style={{ fontWeight: 600 }}>{t.services.patchCabinets.title.toLowerCase()}</LocaleLink>. <LocaleLink to="/diensten/certificeren" style={{ fontWeight: 600 }}>{t.services.certification.heroTitle}</LocaleLink>.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="bg-gray-50 rounded-xl p-8">
                 <Cable className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.network.whatWeDo.deliverables.title')}</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.services.network.whatWeDo.deliverables.title}</h3>
                 <ul className="space-y-3 text-gray-700">
-                  {t('services.network.whatWeDo.deliverables.items').map((item: string, index: number) => (
+                  {t.services.network.whatWeDo.deliverables.items.map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
@@ -82,12 +84,12 @@ export default function Netwerkbekabeling() {
 
               <div className="bg-gray-50 rounded-xl p-8">
                 <FileText className="w-12 h-12 text-[#FF6A00] mb-6" />
-                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.network.whatWeDo.forWho.title')}</h3>
+                <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.services.network.whatWeDo.forWho.title}</h3>
                 <ul className="space-y-3 text-gray-700">
-                  {t('services.network.whatWeDo.forWho.items').map((item: string, index: number) => (
+                  {t.services.network.whatWeDo.forWho.items.map((item: string, index: number) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
-                      <span>{index === 0 ? <><Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</Link> die monteurs en betrouwbare bekabeling nodig hebben</> : item}</span>
+                      <span>{index === 0 ? <><LocaleLink to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP's</LocaleLink> die monteurs en betrouwbare bekabeling nodig hebben</> : item}</span>
                     </li>
                   ))}
                 </ul>
@@ -95,12 +97,12 @@ export default function Netwerkbekabeling() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-[#FF6A00] rounded-xl p-8 mb-16">
-              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t('services.network.whatWeDo.cat6Info.title')}</h3>
+              <h3 className="text-2xl font-bold text-[#0E243A] mb-4">{t.services.network.whatWeDo.cat6Info.title}</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                {t('services.network.whatWeDo.cat6Info.intro')}
+                {t.services.network.whatWeDo.cat6Info.intro}
               </p>
               <ul className="space-y-2 text-gray-700">
-                {t('services.network.whatWeDo.cat6Info.items').map((item: string, index: number) => (
+                {t.services.network.whatWeDo.cat6Info.items.map((item: string, index: number) => (
                   <li key={index} className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF6A00] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
@@ -116,14 +118,14 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
-              {t('services.network.whyUs.title')}
+              {t.services.network.whyUs.title}
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
-              {t('services.network.whyUs.subtitle')} <Link to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP</Link>.
+              {t.services.network.whyUs.subtitle} <LocaleLink to="/blog/msp-bekabelingspartner" style={{ fontWeight: 600 }}>MSP</LocaleLink>.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {t('services.network.whyUs.items').map((item: { title: string; description: string }, index: number) => (
+              {t.services.network.whyUs.items.map((item: { title: string; description: string }, index: number) => (
                 <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
                   <h3 className="text-xl font-bold text-[#0E243A] mb-3">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.description}</p>
@@ -138,7 +140,7 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-12 text-center">
-              {t('services.network.faqs.title')}
+              {t.services.network.faqs.title}
             </h2>
             <div className="space-y-4">
               {faqs.map((faq: { question: string; answer: string }, index: number) => (
@@ -170,24 +172,24 @@ export default function Netwerkbekabeling() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('services.network.cta.title')}
+              {t.services.network.cta.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              {t('services.network.cta.subtitle')}
+              {t.services.network.cta.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <LocaleLink
                 to="/abonnementen"
                 className="bg-[#FF6A00] text-white px-8 py-4 rounded-lg hover:bg-[#E55F00] transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
               >
-                {t('services.network.cta.button1')}
-              </Link>
-              <Link
+                {t.services.network.cta.button1}
+              </LocaleLink>
+              <LocaleLink
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0E243A] transition-all duration-300 font-semibold text-lg"
               >
-                {t('services.network.cta.button2')}
-              </Link>
+                {t.services.network.cta.button2}
+              </LocaleLink>
             </div>
           </div>
         </div>
