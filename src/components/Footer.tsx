@@ -128,13 +128,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-[#FF6A00]" />
-                <a href="tel:+31645251333" className="hover:text-[#FF6A00] transition-colors">
+                <a href="tel:+31645251333" className="hover:text-[#FF6A00] transition-colors" aria-label="Bel SIGNAALMAKERS">
                   +31 6 45251333
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-[#FF6A00]" />
-                <a href="mailto:info@signaalmakers.nl" className="hover:text-[#FF6A00] transition-colors">
+                <a href="mailto:info@signaalmakers.nl" className="hover:text-[#FF6A00] transition-colors" aria-label="Mail SIGNAALMAKERS">
                   info@signaalmakers.nl
                 </a>
               </li>

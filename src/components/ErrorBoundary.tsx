@@ -1,8 +1,16 @@
 import { Component, ErrorInfo, ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { LocaleLink } from './LocaleLink';
 
 interface Props {
   children: ReactNode;
+  translations?: {
+    title: string;
+    description: string;
+    backToHome: string;
+    reload: string;
+    contactPrompt: string;
+    contactLink: string;
+  };
 }
 
 interface State {
@@ -37,6 +45,15 @@ class ErrorBoundary extends Component<Props, State> {
 
   render() {
     if (this.state.hasError) {
+      const t = this.props.translations || {
+        title: 'Er is iets misgegaan',
+        description: 'Onze excuses voor het ongemak. Er is een onverwachte fout opgetreden.',
+        backToHome: 'Terug naar home',
+        reload: 'Pagina herladen',
+        contactPrompt: 'Blijft het probleem zich voordoen?',
+        contactLink: 'Neem contact met ons op',
+      };
+
       return (
         <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
           <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-8 text-center">
@@ -57,10 +74,10 @@ class ErrorBoundary extends Component<Props, State> {
                 </svg>
               </div>
               <h1 className="text-3xl font-bold text-[#0E243A] mb-2">
-                Er is iets misgegaan
+                {t.title}
               </h1>
               <p className="text-gray-600 mb-6">
-                Onze excuses voor het ongemak. Er is een onverwachte fout opgetreden.
+                {t.description}
               </p>
             </div>
 
@@ -77,21 +94,21 @@ class ErrorBoundary extends Component<Props, State> {
                 onClick={() => this.setState({ hasError: false, error: null })}
                 className="bg-[#FF6A00] text-white px-8 py-3 rounded-lg hover:bg-[#E55F00] transition-colors font-semibold"
               >
-                Terug naar home
+                {t.backToHome}
               </LocaleLink>
               <button
                 onClick={() => window.location.reload()}
                 className="border-2 border-[#0E243A] text-[#0E243A] px-8 py-3 rounded-lg hover:bg-[#0E243A] hover:text-white transition-colors font-semibold"
               >
-                Pagina herladen
+                {t.reload}
               </button>
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-gray-600 text-sm">
-                Blijft het probleem zich voordoen?{' '}
+                {t.contactPrompt}{' '}
                 <LocaleLink to="/contact" className="text-[#FF6A00] hover:text-[#E55F00] font-semibold">
-                  Neem contact met ons op
+                  {t.contactLink}
                 </LocaleLink>
               </p>
             </div>

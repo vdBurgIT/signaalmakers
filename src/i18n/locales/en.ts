@@ -1512,6 +1512,28 @@ export const en: TranslationKeys = {
     },
   },
 
+  error: {
+    title: 'Something went wrong',
+    description: 'We apologize for the inconvenience. An unexpected error has occurred.',
+    backToHome: 'Back to home',
+    reload: 'Reload page',
+    contactPrompt: 'Does the problem persist?',
+    contactLink: 'Contact us',
+  },
+
+  sitemap: {
+    title: 'Sitemap',
+    description: 'Welcome to the SIGNAALMAKERS sitemap. Here you will find a complete overview of all pages on our website. This sitemap helps you quickly find the information you are looking for about network cabling, our services, sectors and more.',
+    mainPages: 'Main pages',
+    allServices: 'All services',
+    allSectors: 'All sectors',
+    allBlogPosts: 'All blog posts',
+    helpTitle: 'Need help?',
+    helpDescription: 'Can\'t find what you\'re looking for? Feel free to contact us. We are happy to help you with all your questions about network cabling, data cabling and infrastructure.',
+    helpContact: 'For direct questions you can also call us at',
+    helpEmail: 'or email us at',
+  },
+
   footer: {
     tagline: 'Your projects, our certainty. Simply arranged.',
     description: 'Professional data cabling, network cabling and infrastructure in the Netherlands and Belgium. Cat6/Cat6A, audio, camera - functionally tested and delivered with cable plans.',

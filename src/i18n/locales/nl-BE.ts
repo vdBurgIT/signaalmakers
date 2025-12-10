@@ -1512,6 +1512,28 @@ export const nlBE: TranslationKeys = {
     },
   },
 
+  error: {
+    title: 'Er is iets misgegaan',
+    description: 'Onze excuses voor het ongemak. Er is een onverwachte fout opgetreden.',
+    backToHome: 'Terug naar home',
+    reload: 'Pagina herladen',
+    contactPrompt: 'Blijft het probleem zich voordoen?',
+    contactLink: 'Neem contact met ons op',
+  },
+
+  sitemap: {
+    title: 'Sitemap',
+    description: 'Welkom op de sitemap van SIGNAALMAKERS. Hier vindt u een compleet overzicht van alle pagina\'s op onze website. Deze sitemap helpt u om snel de informatie te vinden die u zoekt over netwerkbekabeling, onze diensten, sectoren en meer.',
+    mainPages: 'Hoofdpagina\'s',
+    allServices: 'Alle diensten',
+    allSectors: 'Alle sectoren',
+    allBlogPosts: 'Alle blogartikelen',
+    helpTitle: 'Hulp nodig?',
+    helpDescription: 'Kunt u niet vinden wat u zoekt? Neem gerust contact met ons op. Wij helpen u graag verder met al uw vragen over netwerkbekabeling, databekabeling en infrastructuur.',
+    helpContact: 'Voor directe vragen kunt u ons ook bellen op',
+    helpEmail: 'of mailen naar',
+  },
+
   footer: {
     tagline: 'Jouw projecten, onze zekerheid. Gewoon geregeld.',
     description: 'Professionele databekabeling, netwerkbekabeling en infrastructuur in België en Nederland. Cat6/Cat6A, audio, camera - functioneel getest en opgeleverd met kabelplan.',

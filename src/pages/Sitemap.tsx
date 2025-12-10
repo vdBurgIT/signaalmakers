@@ -1,18 +1,21 @@
-import { Link } from 'react-router-dom';
+import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import { blogPosts } from '../data/blogPosts';
+import { useTranslation } from '../i18n';
 
 export default function Sitemap() {
+  const t = useTranslation();
+
   return (
     <>
       <SEO
-        title="Sitemap - Alle pagina's van SIGNAALMAKERS"
-        description="Overzicht van alle pagina's van SIGNAALMAKERS: diensten, sectoren, blog en contactinformatie. Professionele netwerkbekabeling door heel Nederland."
+        title={`${t.sitemap.title} - ${t.common.brandName}`}
+        description={t.sitemap.description}
         keywords="sitemap, overzicht, diensten, netwerkbekabeling, sectoren"
         url="https://signaalmakers.nl/sitemap"
         breadcrumbs={[
-          { name: 'Home', item: 'https://signaalmakers.nl/' },
-          { name: 'Sitemap', item: 'https://signaalmakers.nl/sitemap' }
+          { name: t.nav.home, item: 'https://signaalmakers.nl/' },
+          { name: t.sitemap.title, item: 'https://signaalmakers.nl/sitemap' }
         ]}
       />
 
@@ -21,10 +24,9 @@ export default function Sitemap() {
         <section className="bg-[#0E243A] text-white py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">Sitemap</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">{t.sitemap.title}</h1>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Welkom op de sitemap van SIGNAALMAKERS. Hier vindt u een compleet overzicht van alle pagina's op onze website. 
-                Deze sitemap helpt u om snel de informatie te vinden die u zoekt over netwerkbekabeling, onze diensten, sectoren en meer.
+                {t.sitemap.description}
               </p>
             </div>
           </div>
@@ -37,36 +39,36 @@ export default function Sitemap() {
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Hoofdpagina's */}
                 <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Hoofdpagina's</h2>
+                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">{t.sitemap.mainPages}</h2>
                   <ul className="space-y-2">
                     <li>
                       <LocaleLink to="/" className="text-[#FF6A00] hover:underline font-medium">
-                        Home
+                        {t.nav.home}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/over-ons" className="text-[#FF6A00] hover:underline font-medium">
-                        Over ons
+                        {t.nav.about}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/abonnementen" className="text-[#FF6A00] hover:underline font-medium">
-                        Abonnementen
+                        {t.nav.subscriptions}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/faq" className="text-[#FF6A00] hover:underline font-medium">
-                        Veelgestelde vragen (FAQ)
+                        {t.nav.faq}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/offerte" className="text-[#FF6A00] hover:underline font-medium">
-                        Offerte aanvragen
+                        {t.nav.quote}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/contact" className="text-[#FF6A00] hover:underline font-medium">
-                        Contact
+                        {t.nav.contact}
                       </LocaleLink>
                     </li>
                   </ul>
@@ -74,36 +76,36 @@ export default function Sitemap() {
 
                 {/* Diensten */}
                 <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Diensten</h2>
+                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">{t.footer.services}</h2>
                   <ul className="space-y-2">
                     <li>
                       <LocaleLink to="/diensten" className="text-[#FF6A00] hover:underline font-medium">
-                        Alle diensten
+                        {t.sitemap.allServices}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/diensten/netwerkbekabeling" className="text-[#FF6A00] hover:underline">
-                        Netwerkbekabeling
+                        {t.services.network.shortTitle}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/diensten/patchkasten" className="text-[#FF6A00] hover:underline">
-                        Patchkasten
+                        {t.services.patchCabinets.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/diensten/audiokabels" className="text-[#FF6A00] hover:underline">
-                        Audiokabels
+                        {t.services.audio.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/diensten/camera-bekabeling" className="text-[#FF6A00] hover:underline">
-                        Camera-bekabeling
+                        {t.services.camera.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/diensten/certificeren" className="text-[#FF6A00] hover:underline">
-                        Meten & Certificeren
+                        {t.services.certification.shortTitle}
                       </LocaleLink>
                     </li>
                   </ul>
@@ -111,36 +113,36 @@ export default function Sitemap() {
 
                 {/* Sectoren */}
                 <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Sectoren</h2>
+                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">{t.footer.sectors}</h2>
                   <ul className="space-y-2">
                     <li>
                       <LocaleLink to="/sectoren" className="text-[#FF6A00] hover:underline font-medium">
-                        Alle sectoren
+                        {t.sitemap.allSectors}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/sectoren/kantoren" className="text-[#FF6A00] hover:underline">
-                        Kantoren
+                        {t.sectors.offices.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/sectoren/retail" className="text-[#FF6A00] hover:underline">
-                        Retail & Horeca
+                        {t.sectors.retail.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/sectoren/magazijn" className="text-[#FF6A00] hover:underline">
-                        Magazijn & Logistiek
+                        {t.sectors.warehouse.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/sectoren/onderwijs" className="text-[#FF6A00] hover:underline">
-                        Onderwijs & Zorg
+                        {t.sectors.education.title}
                       </LocaleLink>
                     </li>
                     <li>
                       <LocaleLink to="/sectoren/serverruimtes" className="text-[#FF6A00] hover:underline">
-                        Serverruimtes & Datacenters
+                        {t.sectors.serverRooms.title}
                       </LocaleLink>
                     </li>
                   </ul>
@@ -148,11 +150,11 @@ export default function Sitemap() {
 
                 {/* Blog */}
                 <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">Blog</h2>
+                  <h2 className="text-2xl font-bold text-[#0E243A] mb-4">{t.nav.blog}</h2>
                   <ul className="space-y-2">
                     <li>
                       <LocaleLink to="/blog" className="text-[#FF6A00] hover:underline font-medium">
-                        Alle blogartikelen
+                        {t.sitemap.allBlogPosts}
                       </LocaleLink>
                     </li>
                     {blogPosts.map((post) => (
@@ -168,14 +170,14 @@ export default function Sitemap() {
 
               {/* Extra Info */}
               <div className="mt-8 bg-gradient-to-br from-blue-50 to-orange-50 border-l-4 border-[#FF6A00] rounded-lg p-6">
-                <h3 className="text-xl font-bold text-[#0E243A] mb-2">Hulp nodig?</h3>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-2">{t.sitemap.helpTitle}</h3>
                 <p className="text-gray-700 mb-4">
-                  Kunt u niet vinden wat u zoekt? Neem gerust <LocaleLink to="/contact" className="text-[#FF6A00] hover:underline font-semibold">contact met ons op</LocaleLink>. 
-                  Wij helpen u graag verder met al uw vragen over netwerkbekabeling, databekabeling en infrastructuur.
+                  {t.sitemap.helpDescription.split('contact met ons op')[0]}
+                  <LocaleLink to="/contact" className="text-[#FF6A00] hover:underline font-semibold">{t.nav.contact}</LocaleLink>
+                  {t.sitemap.helpDescription.includes('.') ? '.' : ''}
                 </p>
                 <p className="text-gray-700">
-                  Voor directe vragen kunt u ons ook bellen op <a href="tel:+31645251333" className="text-[#FF6A00] hover:underline font-semibold">+31 6 45251333</a> of 
-                  mailen naar <a href="mailto:info@signaalmakers.nl" className="text-[#FF6A00] hover:underline font-semibold">info@signaalmakers.nl</a>.
+                  {t.sitemap.helpContact} <a href="tel:+31645251333" className="text-[#FF6A00] hover:underline font-semibold">+31 6 45251333</a> {t.sitemap.helpEmail} <a href="mailto:info@signaalmakers.nl" className="text-[#FF6A00] hover:underline font-semibold">info@signaalmakers.nl</a>.
                 </p>
               </div>
             </div>

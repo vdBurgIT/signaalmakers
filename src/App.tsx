@@ -4,7 +4,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import ErrorBoundary from './components/ErrorBoundary';
+import ErrorBoundaryWithI18n from './components/ErrorBoundaryWithI18n';
 import { I18nProvider } from './i18n';
 
 function ScrollToTop() {
@@ -41,10 +41,10 @@ const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ './pages/N
 
 function App() {
   return (
-    <ErrorBoundary>
-      <HelmetProvider>
-        <Router>
-          <I18nProvider>
+    <HelmetProvider>
+      <Router>
+        <I18nProvider>
+          <ErrorBoundaryWithI18n>
             <ScrollToTop />
             <div className="min-h-screen flex flex-col">
               <Header />
@@ -134,10 +134,10 @@ function App() {
             </main>
             <Footer />
           </div>
-          </I18nProvider>
-        </Router>
-      </HelmetProvider>
-    </ErrorBoundary>
+          </ErrorBoundaryWithI18n>
+        </I18nProvider>
+      </Router>
+    </HelmetProvider>
   );
 }
 
