@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import { CheckCircle2, Zap, Clock, TrendingUp } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';

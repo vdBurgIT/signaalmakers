@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import { Building2, ShoppingBag, PackageSearch, GraduationCap, Server } from 'lucide-react';

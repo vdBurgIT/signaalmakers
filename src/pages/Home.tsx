@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import {
   Cable,

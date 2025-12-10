@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import { Cable, Server, Volume2, CheckCircle2, Building2, Camera } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';

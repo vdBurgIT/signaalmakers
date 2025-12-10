@@ -1534,6 +1534,28 @@ export const en: TranslationKeys = {
     helpEmail: 'or email us at',
   },
 
+  notFound: {
+    title: 'Page not found',
+    description: 'Oops! No good signal! The page you are looking for does not exist or has been moved. Perhaps these links can help you:',
+    backHome: 'Back to home',
+    ourServices: 'Our services',
+    contactUs: 'Contact us',
+    menuHelp: 'Or use the menu at the top to navigate to the desired page.',
+    popularPages: 'Popular pages',
+    networkCabling: {
+      title: 'Network Cabling',
+      description: 'Cat6/Cat6A cabling for infrastructure',
+    },
+    sectors: {
+      title: 'Sectors',
+      description: 'Cabling by sector',
+    },
+    contact: {
+      title: 'Contact',
+      description: 'Get in touch with us',
+    },
+  },
+
   footer: {
     tagline: 'Your projects, our certainty. Simply arranged.',
     description: 'Professional data cabling, network cabling and infrastructure in the Netherlands and Belgium. Cat6/Cat6A, audio, camera - functionally tested and delivered with cable plans.',

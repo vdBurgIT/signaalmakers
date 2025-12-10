@@ -2,7 +2,6 @@ import { useState } from 'react';
 import SEO from '../components/SEO';
 import { Helmet } from 'react-helmet-async';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { useTranslation } from '../i18n';

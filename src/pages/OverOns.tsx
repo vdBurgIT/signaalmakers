@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import { Cable, Zap, CheckCircle2, Building2, Users } from 'lucide-react';

@@ -1532,6 +1532,28 @@ export const nlNL = {
     helpEmail: 'of mailen naar',
   },
 
+  notFound: {
+    title: 'Pagina niet gevonden',
+    description: 'Oeps! Geen goed signaal! De pagina die je zoekt bestaat niet of is verplaatst. Misschien kunnen deze links je verder helpen:',
+    backHome: 'Terug naar home',
+    ourServices: 'Onze diensten',
+    contactUs: 'Contact opnemen',
+    menuHelp: 'Of gebruik het menu bovenaan om te navigeren naar de gewenste pagina.',
+    popularPages: 'Populaire pagina\'s',
+    networkCabling: {
+      title: 'Netwerkbekabeling',
+      description: 'Cat6/Cat6A bekabeling voor infrastructuur',
+    },
+    sectors: {
+      title: 'Sectoren',
+      description: 'Bekabeling per sector',
+    },
+    contact: {
+      title: 'Contact',
+      description: 'Neem contact met ons op',
+    },
+  },
+
   footer: {
     tagline: 'Jouw projecten, onze zekerheid. Gewoon geregeld.',
     description: 'Professionele databekabeling, netwerkbekabeling en infrastructuur door heel Nederland. Cat6/Cat6A, audio, camera - functioneel getest en opgeleverd met kabelplan.',

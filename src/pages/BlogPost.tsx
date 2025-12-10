@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
