@@ -2,10 +2,78 @@ import { LocaleLink } from '../components/LocaleLink';
 import { CheckCircle2, Zap, Clock, TrendingUp } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import SEO from '../components/SEO';
+import StructuredData from '../components/StructuredData';
 import { useTranslation } from '../i18n';
 
 export default function Abonnementen() {
   const t = useTranslation();
+
+  // Product schema for subscription packages
+  const productSchemas = [
+    {
+      '@type': 'Product',
+      name: t.subscriptions.packages.essential.name,
+      description: `${t.subscriptions.packages.essential.guaranteedDays} - ${t.subscriptions.packages.essential.leadTime}. Inclusief korting op materiaal en reiskosten.`,
+      brand: {
+        '@type': 'Organization',
+        name: 'SIGNAALMAKERS'
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '99.00',
+        priceCurrency: 'EUR',
+        priceValidUntil: '2026-12-31',
+        availability: 'https://schema.org/InStock',
+        url: 'https://signaalmakers.nl/abonnementen#essential',
+        seller: {
+          '@type': 'Organization',
+          name: 'SIGNAALMAKERS'
+        }
+      }
+    },
+    {
+      '@type': 'Product',
+      name: t.subscriptions.packages.priority.name,
+      description: `${t.subscriptions.packages.priority.guaranteedDays} - ${t.subscriptions.packages.priority.leadTime}. Tot 30% korting op materiaal, geen reiskosten.`,
+      brand: {
+        '@type': 'Organization',
+        name: 'SIGNAALMAKERS'
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '199.00',
+        priceCurrency: 'EUR',
+        priceValidUntil: '2026-12-31',
+        availability: 'https://schema.org/InStock',
+        url: 'https://signaalmakers.nl/abonnementen#priority',
+        seller: {
+          '@type': 'Organization',
+          name: 'SIGNAALMAKERS'
+        }
+      }
+    },
+    {
+      '@type': 'Product',
+      name: t.subscriptions.packages.express.name,
+      description: `${t.subscriptions.packages.express.guaranteedDays} - ${t.subscriptions.packages.express.leadTime}. Tot 30% korting op materiaal, geen reiskosten, geen urgentiefee.`,
+      brand: {
+        '@type': 'Organization',
+        name: 'SIGNAALMAKERS'
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '599.00',
+        priceCurrency: 'EUR',
+        priceValidUntil: '2026-12-31',
+        availability: 'https://schema.org/InStock',
+        url: 'https://signaalmakers.nl/abonnementen#express',
+        seller: {
+          '@type': 'Organization',
+          name: 'SIGNAALMAKERS'
+        }
+      }
+    }
+  ];
 
   return (
     <>
@@ -20,6 +88,9 @@ export default function Abonnementen() {
           { name: t.nav.subscriptions, item: 'https://signaalmakers.nl/abonnementen' }
         ]}
       />
+      {productSchemas.map((schema, index) => (
+        <StructuredData key={index} type="Product" data={schema} />
+      ))}
 
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
