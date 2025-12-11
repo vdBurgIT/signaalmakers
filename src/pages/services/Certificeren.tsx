@@ -2,7 +2,7 @@ import { LocaleLink } from '../../components/LocaleLink';
 import { useState } from 'react';
 import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
-import { FileCheck, CheckCircle2, ClipboardList, BarChart3, ChevronDown, ChevronUp } from 'lucide-react';
+import { FileCheck, CheckCircle2, ClipboardList, BarChart3, ChevronDown, ChevronUp, Building2, ShoppingBag, Server } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 import { useI18n } from '../../i18n/I18nContext';
 
