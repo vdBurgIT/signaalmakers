@@ -124,6 +124,67 @@ export default function Sectoren() {
         </div>
       </section>
 
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              {t.sectoren.servicesSection.title}
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 text-center leading-relaxed">
+              {t.sectoren.servicesSection.description}
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <LocaleLink
+                to="/diensten/netwerkbekabeling"
+                className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6">
+                  <Cable className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3 group-hover:text-[#FF6A00] transition-colors">
+                  Netwerkbekabeling
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Cat6/Cat6A bekabeling voor infrastructuur
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/diensten/camera-bekabeling"
+                className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6">
+                  <Camera className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3 group-hover:text-[#FF6A00] transition-colors">
+                  Camera-bekabeling
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  PoE bekabeling voor IP-camera's
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/diensten/certificeren"
+                className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00] to-[#E55F00] rounded-xl flex items-center justify-center text-white mb-6">
+                  <FileCheck className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-[#0E243A] mb-3 group-hover:text-[#FF6A00] transition-colors">
+                  Certificeren
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Testen en certificeren van bekabeling
+                </p>
+              </LocaleLink>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="py-20 md:py-28 bg-gradient-to-br from-[#0E243A] to-[#1a3a5a] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

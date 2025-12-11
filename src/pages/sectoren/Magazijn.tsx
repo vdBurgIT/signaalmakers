@@ -1,6 +1,6 @@
 import { LocaleLink } from '../../components/LocaleLink';
 import SEO from '../../components/SEO';
-import { PackageSearch, CheckCircle2, Cable, Shield } from 'lucide-react';
+import { Cable, Camera, CheckCircle2, PackageSearch, Server, Shield } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 import { useTranslation } from '../../i18n';
 
@@ -124,6 +124,69 @@ export default function Magazijn() {
           </div>
         </div>
       </section>
+
+      {/* Relevante diensten - SEO internal linking */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              {sector.services.title}
+            </h2>
+            <p className="text-gray-600 text-center mb-12 leading-relaxed">
+              {sector.services.description}
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <LocaleLink
+                to="/diensten/netwerkbekabeling"
+                className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Cable className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Netwerkbekabeling
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Robuuste Cat6A bekabeling voor scanners en printers
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/diensten/camera-bekabeling"
+                className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Camera className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Camera-bekabeling
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Schokbestendige PoE bekabeling voor camera's
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/diensten/patchkasten"
+                className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Server className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Patchkasten
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Decentrale patchkasten voor grote hallen
+                </p>
+              </LocaleLink>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section className="py-20 md:py-28 bg-gray-50">
         <div className="container mx-auto px-4">

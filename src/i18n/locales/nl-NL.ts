@@ -713,7 +713,11 @@ export const nlNL = {
     sectionSubtitle: 'Wij leveren bekabeling voor infrastructuur in diverse sectoren. Van serverruimtes tot retail, van onderwijs tot magazijnen — overal waar professionele bekabeling nodig is.',
     infoBoxTitle: 'Wij doen alleen het voorwerk',
     infoBoxText: 'Voor alle sectoren geldt: wij leggen bekabeling en leveren gecertificeerd op. MSP/IT-partners doen inregeling en beheer van apparatuur. Duidelijke scheiding, professioneel resultaat.',
-    ctaTitle: 'Bekabeling voor jouw sector',
+    servicesSection: {
+      title: 'Onze diensten',
+      description: 'Professionele bekabeling voor elke sector',
+    },
+        ctaTitle: 'Bekabeling voor jouw sector',
     ctaSubtitle: 'Vraag een offerte aan of neem contact op voor meer informatie over bekabeling in jouw sector.',
     ctaButton1: 'Vraag offerte aan',
     ctaButton2: 'Neem contact op',
@@ -807,7 +811,27 @@ export const nlNL = {
           ],
         },
       },
-      cta: {
+      services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            cta: {
         title: 'Bekabeling voor jouw serverruimte of datacenter',
         subtitle: 'Vraag een offerte aan voor Cat6A bekabeling, patchkasten en praktische oplevercheck. Landelijk werkzaam — van nieuwbouw tot uitbreiding.',
         button1: 'Vraag offerte aan',
@@ -857,7 +881,11 @@ export const nlNL = {
         title: 'Wij doen het voorwerk – MSP/IT doet inregeling',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners installeren switches, routers, wifi-controllers en doen configuratie (VLAN\'s, SSID\'s, netwerksegmentatie). Voor audio en camera\'s werken we samen met installateurs en beveiligingsbedrijven: wij leggen de bekabeling, zij sluiten apparatuur aan en regelen af. Duidelijke scheiding, professioneel resultaat.',
       },
-      cta: {
+      services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            cta: {
         title: 'Bekabeling voor jouw kantoor',
         subtitle: 'Van nieuwbouw tot renovatie, van klein kantoor tot groot bedrijfspand: vraag een offerte aan voor professionele bekabeling.',
         button1: 'Vraag offerte aan',
@@ -910,7 +938,11 @@ export const nlNL = {
         title: 'Wij doen het voorwerk – partners doen de rest',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\'s. Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, partners doen apparatuur en configuratie. Geen overlap, professioneel resultaat.',
       },
-      cta: {
+      services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            cta: {
         title: 'Bekabeling voor jouw winkel of horecagelegenheid',
         subtitle: 'Van nieuwbouw tot verbouwing, van kleine zaak tot groot winkelcentrum: vraag een offerte aan voor professionele bekabeling.',
         button1: 'Vraag offerte aan',
@@ -980,7 +1012,11 @@ export const nlNL = {
         title: 'Wij doen het voorwerk – MSP/IT doet de rest',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en certificeren. MSP/IT-partners installeren switches, access points en doen configuratie. Beveiligingsbedrijven installeren camera\'s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).',
       },
-      cta: {
+      services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            cta: {
         title: 'Bekabeling voor jouw magazijn of logistieke omgeving',
         subtitle: 'Van nieuwbouw tot uitbreiding, van klein magazijn tot groot distributiecentrum: vraag een offerte aan voor robuuste bekabeling.',
         button1: 'Vraag offerte aan',
@@ -1050,7 +1086,11 @@ export const nlNL = {
         title: 'Wij doen het voorwerk – MSP/IT doet de rest',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en certificeren. MSP/IT-partners installeren switches, access points en doen configuratie. Audio-installateurs sluiten intercom en speakers aan, beveiligingsbedrijven installeren camera\'s. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).',
       },
-      cta: {
+      services: {
+        title: 'Relevante diensten',
+        description: 'Onze diensten voor deze omgeving',
+      },
+            cta: {
         title: 'Bekabeling voor jouw school of zorginstelling',
         subtitle: 'Van nieuwbouw tot renovatie, van basisschool tot ziekenhuis: vraag een offerte aan voor betrouwbare, gedocumenteerde bekabeling.',
         button1: 'Vraag offerte aan',

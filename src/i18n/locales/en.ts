@@ -715,7 +715,11 @@ export const en: TranslationKeys = {
     sectionSubtitle: 'We deliver infrastructure cabling in various sectors. From server rooms to retail, from education to warehouses — wherever professional cabling is needed.',
     infoBoxTitle: 'We only do infrastructure work',
     infoBoxText: 'For all sectors: we install cabling and deliver certified. MSP/IT partners handle configuration and equipment management. Clear separation, professional results.',
-    ctaTitle: 'Cabling for your sector',
+    servicesSection: {
+      title: 'Our services',
+      description: 'Professional cabling for every sector',
+    },
+        ctaTitle: 'Cabling for your sector',
     ctaSubtitle: 'Request a quote or contact us for more information about cabling in your sector.',
     ctaButton1: 'Request quote',
     ctaButton2: 'Contact us',
@@ -813,7 +817,27 @@ export const en: TranslationKeys = {
         title: 'Also relevant for your sector',
         description: 'Our services are deployed across various industries and sectors',
       },
-      cta: {
+      services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            cta: {
         title: 'Cabling for your server room or data center',
         subtitle: 'Request a quote for Cat6A cabling, patch cabinets and practical delivery check. Active in Netherlands & Belgium — from new construction to expansion.',
         button1: 'Request quote',
@@ -867,7 +891,11 @@ export const en: TranslationKeys = {
         title: 'Also relevant for your sector',
         description: 'Our services are deployed across various industries and sectors',
       },
-      cta: {
+      services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            cta: {
         title: 'Cabling for your office',
         subtitle: 'From new construction to renovation, from small office to large corporate building: request a quote for professional cabling.',
         button1: 'Request quote',
@@ -924,7 +952,11 @@ export const en: TranslationKeys = {
         title: 'Also relevant for your sector',
         description: 'Our services are deployed across various industries and sectors',
       },
-      cta: {
+      services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            cta: {
         title: 'Cabling for your store or restaurant',
         subtitle: 'From new construction to renovation, from small business to large shopping center: request a quote for professional cabling.',
         button1: 'Request quote',
@@ -998,7 +1030,11 @@ export const en: TranslationKeys = {
         title: 'Also relevant for your sector',
         description: 'Our services are deployed across various industries and sectors',
       },
-      cta: {
+      services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            cta: {
         title: 'Cabling for your warehouse or logistics environment',
         subtitle: 'From new construction to expansion, from small warehouse to large distribution center: request a quote for robust cabling.',
         button1: 'Request quote',
@@ -1072,7 +1108,11 @@ export const en: TranslationKeys = {
         title: 'Also relevant for your sector',
         description: 'Our services are deployed across various industries and sectors',
       },
-      cta: {
+      services: {
+        title: 'Relevant services',
+        description: 'Our services for this environment',
+      },
+            cta: {
         title: 'Cabling for your school or care institution',
         subtitle: 'From new construction to renovation, from elementary school to hospital: request a quote for reliable, documented cabling.',
         button1: 'Request quote',

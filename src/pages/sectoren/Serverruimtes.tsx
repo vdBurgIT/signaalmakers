@@ -1,6 +1,6 @@
 import { LocaleLink } from '../../components/LocaleLink';
 import SEO from '../../components/SEO';
-import { Server, CheckCircle2, Cable, Zap } from 'lucide-react';
+import { Cable, CheckCircle2, FileCheck, Server, Zap } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 import { useTranslation } from '../../i18n';
 
@@ -120,6 +120,69 @@ export default function Serverruimtes() {
           </div>
         </div>
       </section>
+
+      {/* Relevante diensten - SEO internal linking */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              {sector.services.title}
+            </h2>
+            <p className="text-gray-600 text-center mb-12 leading-relaxed">
+              {sector.services.description}
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <LocaleLink
+                to="/diensten/netwerkbekabeling"
+                className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Cable className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Netwerkbekabeling
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Cat6A bekabeling voor 10 Gbps server verbindingen
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/diensten/patchkasten"
+                className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Server className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Patchkasten
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Strak ingerichte patchkasten met kabelmanagement
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/diensten/certificeren"
+                className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <FileCheck className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Certificeren
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Professioneel testen en certificeren van bekabeling
+                </p>
+              </LocaleLink>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section className="py-20 md:py-28 bg-gray-50">
         <div className="container mx-auto px-4">
