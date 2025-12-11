@@ -21,7 +21,7 @@ const Diensten = lazy(() => import(/* webpackChunkName: "diensten" */ './pages/D
 const Netwerkbekabeling = lazy(() => import(/* webpackChunkName: "netwerk" */ './pages/services/Netwerkbekabeling'));
 const Patchkasten = lazy(() => import(/* webpackChunkName: "patchkasten" */ './pages/services/Patchkasten'));
 const Audiokabels = lazy(() => import(/* webpackChunkName: "audio" */ './pages/services/Audiokabels'));
-const CameraBekabealing = lazy(() => import(/* webpackChunkName: "camera" */ './pages/services/Camera-bekabeling'));
+const CameraBekabeling = lazy(() => import(/* webpackChunkName: "camera" */ './pages/services/Camera-bekabeling'));
 const Certificeren = lazy(() => import(/* webpackChunkName: "certificeren" */ './pages/services/Certificeren'));
 const Abonnementen = lazy(() => import(/* webpackChunkName: "abonnementen" */ './pages/Abonnementen'));
 const Blog = lazy(() => import(/* webpackChunkName: "blog" */ './pages/Blog'));
@@ -63,7 +63,7 @@ function App() {
                 <Route path="/diensten" element={<Diensten />} />
                 <Route path="/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
                 <Route path="/diensten/audiokabels" element={<Audiokabels />} />
-                <Route path="/diensten/camera-bekabeling" element={<CameraBekabealing />} />
+                <Route path="/diensten/camera-bekabeling" element={<CameraBekabeling />} />
                 <Route path="/diensten/patchkasten" element={<Patchkasten />} />
                 <Route path="/diensten/certificeren" element={<Certificeren />} />
                 <Route path="/abonnementen" element={<Abonnementen />} />
@@ -86,7 +86,7 @@ function App() {
                 <Route path="/nl-be/diensten" element={<Diensten />} />
                 <Route path="/nl-be/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
                 <Route path="/nl-be/diensten/audiokabels" element={<Audiokabels />} />
-                <Route path="/nl-be/diensten/camera-bekabeling" element={<CameraBekabealing />} />
+                <Route path="/nl-be/diensten/camera-bekabeling" element={<CameraBekabeling />} />
                 <Route path="/nl-be/diensten/patchkasten" element={<Patchkasten />} />
                 <Route path="/nl-be/diensten/certificeren" element={<Certificeren />} />
                 <Route path="/nl-be/abonnementen" element={<Abonnementen />} />
@@ -109,7 +109,7 @@ function App() {
                 <Route path="/en/diensten" element={<Diensten />} />
                 <Route path="/en/diensten/netwerkbekabeling" element={<Netwerkbekabeling />} />
                 <Route path="/en/diensten/audiokabels" element={<Audiokabels />} />
-                <Route path="/en/diensten/camera-bekabeling" element={<CameraBekabealing />} />
+                <Route path="/en/diensten/camera-bekabeling" element={<CameraBekabeling />} />
                 <Route path="/en/diensten/patchkasten" element={<Patchkasten />} />
                 <Route path="/en/diensten/certificeren" element={<Certificeren />} />
                 <Route path="/en/abonnementen" element={<Abonnementen />} />
