@@ -58,9 +58,9 @@ const mspCablingPartner: LocalizedBlogPost = {
         <li><strong>Patchkasten opbouwen:</strong> Professioneel kabelmanagement, labeling, patchpanelen monteren</li>
         <li><strong>Wifi-bekabeling:</strong> Kabels naar access point-locaties (jullie hangen de AP's op en configureren ze)</li>
         <li><strong>Signaallijnen en AV-bekabeling:</strong> Voor vergaderruimtes, presentatieschermen, audiosystemen</li>
-        <li><strong>Testen en documenteren:</strong> Elke kabel meten, kabelplan maken, opleverrapport</li>
+        <li><strong><a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">Testen en certificeren</a>:</strong> Elke kabel meten, kabelplan maken, opleverrapport</li>
       </ul>
-      <p>Wij leveren op: geteste, gelabelde, gedocumenteerde bekabeling. Jullie sluiten de apparatuur aan, configureren het netwerk en de klant is blij.</p>
+      <p>Wij leveren op: <a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">geteste, gelabelde, gedocumenteerde bekabeling</a>. Jullie sluiten de apparatuur aan, configureren het netwerk en de klant is blij.</p>
 
       <h2>Praktijkvoorbeeld: nieuw kantoor voor jullie klant</h2>
       <p>Jullie klant gaat verhuizen naar een <a href="/sectoren/kantoren" style="color: #FF6A00; font-weight: 600;">nieuw kantoor</a>. Jullie regelen de IT-infrastructuur: routers, switches, wifi, telefonie, servers. Wij regelen de bekabeling:</p>
@@ -70,7 +70,7 @@ const mspCablingPartner: LocalizedBlogPost = {
         <li>2 kabels naar serverruimte (Cat7 voor 10 Gigabit)</li>
         <li>4 kabels naar printers en multifunctionals</li>
         <li>Patchkast opbouwen met 48-poorts patchpaneel, kabelmanagement, labeling</li>
-        <li>Alles testen, meten en documenteren met kabelplan en testrapport</li>
+        <li>Alles <a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">testen, meten en documenteren met kabelplan en testrapport</a></li>
       </ul>
       <p>Jullie krijgen een kant-en-klare bekabeling. Jullie hangen de switches en access points op, configureren alles en de klant kan aan de slag. Geen gedoe, geen verrassingen.</p>
 
@@ -174,9 +174,9 @@ const mspCablingPartner: LocalizedBlogPost = {
         <li><strong>Patchkasten opbouwen:</strong> Professioneel kabelmanagement, labeling, patchpanelen monteren</li>
         <li><strong>Wifi-bekabeling:</strong> Kabels naar access point-locaties (jullie hangen de AP's op en configureren ze)</li>
         <li><strong>Signaallijnen en AV-bekabeling:</strong> Voor vergaderruimtes, presentatieschermen, audiosystemen</li>
-        <li><strong>Testen en documenteren:</strong> Elke kabel meten, kabelplan maken, opleverrapport</li>
+        <li><strong><a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">Testen en certificeren</a>:</strong> Elke kabel meten, kabelplan maken, opleverrapport</li>
       </ul>
-      <p>Wij leveren op: geteste, gelabelde, gedocumenteerde bekabeling. Jullie sluiten de apparatuur aan, configureren het netwerk en de klant is blij.</p>
+      <p>Wij leveren op: <a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">geteste, gelabelde, gedocumenteerde bekabeling</a>. Jullie sluiten de apparatuur aan, configureren het netwerk en de klant is blij.</p>
 
       <h2>Praktijkvoorbeeld: nieuw kantoor voor jullie klant</h2>
       <p>Jullie klant gaat verhuizen naar een <a href="/sectoren/kantoren" style="color: #FF6A00; font-weight: 600;">nieuw kantoor</a>. Jullie regelen de IT-infrastructuur: routers, switches, wifi, telefonie, servers. Wij regelen de bekabeling:</p>
@@ -186,7 +186,7 @@ const mspCablingPartner: LocalizedBlogPost = {
         <li>2 kabels naar serverruimte (Cat7 voor 10 Gigabit)</li>
         <li>4 kabels naar printers en multifunctionals</li>
         <li>Patchkast opbouwen met 48-poorts patchpaneel, kabelmanagement, labeling</li>
-        <li>Alles testen, meten en documenteren met kabelplan en testrapport</li>
+        <li>Alles <a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">testen, meten en documenteren met kabelplan en testrapport</a></li>
       </ul>
       <p>Jullie krijgen een kant-en-klare bekabeling. Jullie hangen de switches en access points op, configureren alles en de klant kan aan de slag. Geen gedoe, geen verrassingen.</p>
 
@@ -379,11 +379,11 @@ const networkCablingImportantLayer: LocalizedBlogPost = {
       <p>Veel bedrijven investeren in dure routers, switches en wifi-apparatuur, maar vergeten de basis: de netwerkbekabeling. Toch is dit de fysieke laag (Layer 1 in het OSI-model) waarop alles draait. In dit artikel leggen we uit waarom goede bekabeling essentieel is voor een stabiel datanetwerk.</p>
 
       <h2>Wat is de fysieke netwerklaag precies?</h2>
-      <p>De fysieke netwerklaag omvat alle UTP-kabels, datapunten, patchkasten en aansluitingen. Het is de infrastructuur die alle apparaten met elkaar verbindt. Denk aan het wegennet van Nederland: je kunt de mooiste auto's hebben, maar zonder goede wegen kom je nergens.</p>
+      <p>De fysieke netwerklaag omvat alle <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">UTP-kabels, datapunten</a>, <a href="/diensten/patchkasten" style="color: #FF6A00; font-weight: 600;">patchkasten</a> en aansluitingen. Het is de infrastructuur die alle apparaten met elkaar verbindt. Denk aan het wegennet van Nederland: je kunt de mooiste auto's hebben, maar zonder goede wegen kom je nergens.</p>
 
       <h2>Waarom is goede netwerkbekabeling zo belangrijk?</h2>
       <ul>
-        <li><strong>Snelheid en stabiliteit:</strong> Cat6A en Cat7 bekabeling ondersteunen 10 Gigabit snelheden. Dat maakt het verschil tussen een stabiele verbinding en constante vertragingen.</li>
+        <li><strong>Snelheid en stabiliteit:</strong> <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A en Cat7 bekabeling</a> ondersteunen 10 Gigabit snelheden. Dat maakt het verschil tussen een stabiele verbinding en constante vertragingen.</li>
         <li><strong>Schaalbaarheid:</strong> Professionele bekabeling groeit mee. Wifi-access points, camera's, telefonie — alles heeft datakabels nodig.</li>
         <li><strong>Betrouwbaarheid:</strong> Een goede kabel geeft jarenlang 100% uptime. Een slechte kabel zorgt voor onverklaarbare storingen waar je MSP dagenlang naar kan zoeken.</li>
         <li><strong>Kostenbesparing:</strong> Achteraf bekabeling vervangen is 5x duurder dan het meteen goed doen. Plus: hoeveel downtime-kosten maak je door slecht bekabelde netwerken?</li>
@@ -415,13 +415,13 @@ const networkCablingImportantLayer: LocalizedBlogPost = {
       <p>MSP-bedrijven en netwerkbeheerders weten: configuratie, switches en wifi zijn hun domein. Maar de bekabeling? Daar willen ze op kunnen vertrouwen. Geen halve kabels, geen Cat5-troep uit 2005, geen slecht afgemonteerde datapunten. Ze willen een professioneel bekabeld netwerk waar ze hun apparatuur op kunnen aansluiten zonder zorgen.</p>
 
       <h2>Waarom SIGNAALMAKERS?</h2>
-      <p>Wij doen alleen netwerkbekabeling. Geen IT-beheer, geen configuratie, geen hardware-installatie. Alleen datakabels trekken, patchkasten opbouwen en aansluitpunten afmaken. Dat maakt ons geen concurrent, maar een vaste partner voor MSP's en IT-bedrijven.</p>
+      <p>Wij doen alleen netwerkbekabeling. Geen IT-beheer, geen configuratie, geen hardware-installatie. Alleen <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">datakabels trekken</a>, <a href="/diensten/patchkasten" style="color: #FF6A00; font-weight: 600;">patchkasten opbouwen</a> en aansluitpunten afmaken. Dat maakt ons geen concurrent, maar een vaste partner voor MSP's en IT-bedrijven.</p>
       <p>Wij zorgen dat de fysieke laag klopt. Jullie doen de rest.</p>
 
       <h2>Conclusie</h2>
-      <p>Een goed datanetwerk begint bij de basis: de bekabeling. Investeer in Cat6A of Cat7, zorg voor strak kabelmanagement, label alles en documenteer het goed. Want als de bekabeling klopt, klopt de rest vanzelf.</p>
+      <p>Een goed datanetwerk begint bij de basis: de bekabeling. Investeer in <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A of Cat7</a>, zorg voor <a href="/diensten/patchkasten" style="color: #FF6A00; font-weight: 600;">strak kabelmanagement</a>, label alles en <a href="/diensten/certificeren" style="color: #FF6A00; font-weight: 600;">documenteer het goed</a>. Want als de bekabeling klopt, klopt de rest vanzelf.</p>
 
-      <p>Wil je weten of jouw netwerkbekabeling nog klopt? Of ben je van plan een nieuw kantoor te bekabelen? <a href="/contact">Neem contact op</a> voor een vrijblijvend advies.</p>
+      <p>Wil je weten of jouw netwerkbekabeling nog klopt? Of ben je van plan een nieuw kantoor te bekabelen? <a href="/contact" style="color: #FF6A00; font-weight: 600;">Neem contact op</a> voor een vrijblijvend advies.</p>
     `,
   },
   'nl-BE': {
@@ -439,7 +439,7 @@ const networkCablingImportantLayer: LocalizedBlogPost = {
 
       <h2>Waarom is goede netwerkbekabeling zo belangrijk?</h2>
       <ul>
-        <li><strong>Snelheid en stabiliteit:</strong> Cat6A en Cat7 bekabeling ondersteunen 10 Gigabit snelheden. Dat maakt het verschil tussen een stabiele verbinding en constante vertragingen.</li>
+        <li><strong>Snelheid en stabiliteit:</strong> <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A en Cat7 bekabeling</a> ondersteunen 10 Gigabit snelheden. Dat maakt het verschil tussen een stabiele verbinding en constante vertragingen.</li>
         <li><strong>Schaalbaarheid:</strong> Professionele bekabeling groeit mee. Wifi-access points, camera's, telefonie — alles heeft datakabels nodig.</li>
         <li><strong>Betrouwbaarheid:</strong> Een goede kabel geeft jarenlang 100% uptime. Een slechte kabel zorgt voor onverklaarbare storingen waar je MSP dagenlang naar kan zoeken.</li>
         <li><strong>Kostenbesparing:</strong> Achteraf bekabeling vervangen is 5x duurder dan het meteen goed doen. Plus: hoeveel downtime-kosten maak je door slecht bekabelde netwerken?</li>
@@ -572,8 +572,8 @@ const wifiCablingExplained: LocalizedBlogPost = {
       <h2>Hoe ziet een professioneel wifi-netwerk eruit?</h2>
       <p>Een typische wifi-installatie bestaat uit:</p>
       <ul>
-        <li><strong>Patchkast met PoE-switch:</strong> Centrale bekabeling en stroomvoorziening</li>
-        <li><strong>UTP-kabels naar access point-locaties:</strong> Cat6A voor 10 Gigabit + PoE++</li>
+        <li><strong><a href="/diensten/patchkasten" style="color: #FF6A00; font-weight: 600;">Patchkast met PoE-switch</a>:</strong> Centrale bekabeling en stroomvoorziening</li>
+        <li><strong>UTP-kabels naar access point-locaties:</strong> <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A voor 10 Gigabit</a> + PoE++</li>
         <li><strong>Access points op strategische plekken:</strong> Plafondmontage voor optimale dekking</li>
         <li><strong>Controller-software:</strong> Centraal beheer van alle access points</li>
       </ul>
@@ -613,9 +613,9 @@ const wifiCablingExplained: LocalizedBlogPost = {
       <p>We installeren GEEN access points, doen GEEN wifi-configuratie en GEEN site surveys. Dat laten we over aan jouw MSP of IT-partner. Wij zorgen alleen dat de kabels kloppen, zodat zij hun access points probleemloos kunnen aansluiten.</p>
 
       <h2>Conclusie</h2>
-      <p>Goede wifi begint met goede bekabeling. Professionele wifi-netwerken draaien op bekabelde access points, niet op wifi-versterkers. Investeer in Cat6A bekabeling, plaats access points op de juiste plekken, en je hebt een wifi-netwerk dat echt werkt.</p>
+      <p>Goede wifi begint met goede bekabeling. Professionele wifi-netwerken draaien op bekabelde access points, niet op wifi-versterkers. Investeer in <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A bekabeling</a>, plaats access points op de juiste plekken, en je hebt een wifi-netwerk dat echt werkt.</p>
 
-      <p>Wil je bekabeling aanleggen voor wifi-access points? <a href="/contact">Neem contact op</a> voor een vrijblijvend gesprek.</p>
+      <p>Wil je <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">bekabeling aanleggen voor wifi-access points</a>? <a href="/contact" style="color: #FF6A00; font-weight: 600;">Neem contact op</a> voor een vrijblijvend gesprek.</p>
     `,
   },
   'nl-BE': {
@@ -650,8 +650,8 @@ const wifiCablingExplained: LocalizedBlogPost = {
       <h2>Hoe ziet een professioneel wifi-netwerk eruit?</h2>
       <p>Een typische wifi-installatie bestaat uit:</p>
       <ul>
-        <li><strong>Patchkast met PoE-switch:</strong> Centrale bekabeling en stroomvoorziening</li>
-        <li><strong>UTP-kabels naar access point-locaties:</strong> Cat6A voor 10 Gigabit + PoE++</li>
+        <li><strong><a href="/diensten/patchkasten" style="color: #FF6A00; font-weight: 600;">Patchkast met PoE-switch</a>:</strong> Centrale bekabeling en stroomvoorziening</li>
+        <li><strong>UTP-kabels naar access point-locaties:</strong> <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A voor 10 Gigabit</a> + PoE++</li>
         <li><strong>Access points op strategische plekken:</strong> Plafondmontage voor optimale dekking</li>
         <li><strong>Controller-software:</strong> Centraal beheer van alle access points</li>
       </ul>
@@ -691,9 +691,9 @@ const wifiCablingExplained: LocalizedBlogPost = {
       <p>We installeren GEEN access points, doen GEEN wifi-configuratie en GEEN site surveys. Dat laten we over aan jouw MSP of IT-partner. Wij zorgen alleen dat de kabels kloppen, zodat zij hun access points probleemloos kunnen aansluiten.</p>
 
       <h2>Conclusie</h2>
-      <p>Goede wifi begint met goede bekabeling. Professionele wifi-netwerken draaien op bekabelde access points, niet op wifi-versterkers. Investeer in Cat6A bekabeling, plaats access points op de juiste plekken, en je hebt een wifi-netwerk dat echt werkt.</p>
+      <p>Goede wifi begint met goede bekabeling. Professionele wifi-netwerken draaien op bekabelde access points, niet op wifi-versterkers. Investeer in <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">Cat6A bekabeling</a>, plaats access points op de juiste plekken, en je hebt een wifi-netwerk dat echt werkt.</p>
 
-      <p>Wil je bekabeling aanleggen voor wifi-access points? <a href="/contact">Neem contact op</a> voor een vrijblijvend gesprek.</p>
+      <p>Wil je <a href="/diensten/netwerkbekabeling" style="color: #FF6A00; font-weight: 600;">bekabeling aanleggen voor wifi-access points</a>? <a href="/contact" style="color: #FF6A00; font-weight: 600;">Neem contact op</a> voor een vrijblijvend gesprek.</p>
     `,
   },
   'en': {
