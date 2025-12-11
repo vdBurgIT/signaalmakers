@@ -20,6 +20,19 @@ export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [hoveredProvince, setHoveredProvince] = useState<string | null>(null);
 
+  // FAQ data for structured data
+  const faqs = Object.values(t.faq.common);
+  const faqSchema = {
+    mainEntity: faqs.map((faq: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   const services = [
     {
       icon: Cable,
@@ -80,6 +93,7 @@ export default function Home() {
       />
       <StructuredData type="LocalBusiness" />
       <StructuredData type="WebSite" />
+      <StructuredData type="FAQPage" data={faqSchema} />
       <div>
       <section className="bg-gradient-to-br from-[#0E243A] via-[#1a3a5a] to-[#0E243A] text-white py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
