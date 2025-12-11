@@ -1,6 +1,6 @@
 import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
-import { Building2, ShoppingBag, PackageSearch, GraduationCap, Server } from 'lucide-react';
+import { Building2, ShoppingBag, PackageSearch, GraduationCap, Server, Cable, Camera, FileCheck } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { useTranslation } from '../i18n';
 
