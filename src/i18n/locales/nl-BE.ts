@@ -233,6 +233,10 @@ export const nlBE: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor bekabeling?',
         subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
@@ -354,6 +358,10 @@ export const nlBE: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor een nette patchkast?',
         subtitle: 'Laat ons uw patchkast opbouwen of opruimen. Alles netjes, logisch en gedocumenteerd.',
@@ -461,6 +469,10 @@ export const nlBE: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor camera-bekabeling?',
         subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
@@ -566,6 +578,10 @@ export const nlBE: TranslationKeys = {
             answer: 'Ja, altijd. U krijgt een opleverdossier met kabelplan, labeling-schema en foto\'s van de eindopstelling. Zo weet uw audio-installateur precies welke kabel waar naartoe loopt en kunnen zij direct apparatuur aansluiten.',
           },
         ],
+      },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
       },
       cta: {
         title: 'Klaar voor audiokabels?',
@@ -679,6 +695,10 @@ export const nlBE: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor gecertificeerde oplevering?',
         subtitle: 'Laat ons uw bekabeling testen en documenteren.',
@@ -789,6 +809,10 @@ export const nlBE: TranslationKeys = {
           ],
         },
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Bekabeling voor jouw serverruimte of datacenter',
         subtitle: 'Vraag een offerte aan voor Cat6A bekabeling, patchkasten en praktische oplevercheck. Actief in heel België en Nederland — van nieuwbouw tot uitbreiding.',
@@ -838,6 +862,10 @@ export const nlBE: TranslationKeys = {
       infoBox: {
         title: 'Wij doen het voorwerk – MSP/IT doet inregeling',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners installeren switches, routers, wifi-controllers en doen configuratie (VLAN\'s, SSID\'s, netwerksegmentatie). Voor audio en camera\'s werken we samen met installateurs en beveiligingsbedrijven: wij leggen de bekabeling, zij sluiten apparatuur aan en regelen af. Duidelijke scheiding, professioneel resultaat.',
+      },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
       },
       cta: {
         title: 'Bekabeling voor jouw kantoor',
@@ -891,6 +919,10 @@ export const nlBE: TranslationKeys = {
       infoBox: {
         title: 'Wij doen het voorwerk – partners doen de rest',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en functioneel testen. MSP/IT-partners installeren switches, access points en doen configuratie. Audio-installateurs sluiten speakers aan, beveiligingsbedrijven installeren camera\'s. Deze scheiding zorgt voor duidelijke verantwoordelijkheden: wij leveren een solide fysieke laag, partners doen apparatuur en configuratie. Geen overlap, professioneel resultaat.',
+      },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
       },
       cta: {
         title: 'Bekabeling voor jouw winkel of horecagelegenheid',
@@ -962,6 +994,10 @@ export const nlBE: TranslationKeys = {
         title: 'Wij doen het voorwerk – MSP/IT doet de rest',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en certificeren. MSP/IT-partners installeren switches, access points en doen configuratie. Beveiligingsbedrijven installeren camera\'s en configureren systemen. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).',
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Bekabeling voor jouw magazijn of logistieke omgeving',
         subtitle: 'Van nieuwbouw tot uitbreiding, van klein magazijn tot groot distributiecentrum in België: vraag een offerte aan voor robuuste bekabeling.',
@@ -1031,6 +1067,10 @@ export const nlBE: TranslationKeys = {
       infoBox: {
         title: 'Wij doen het voorwerk – MSP/IT doet de rest',
         text: 'SIGNAALMAKERS legt bekabeling: trajecten trekken, afmonteren, labelen en certificeren. MSP/IT-partners installeren switches, access points en doen configuratie. Audio-installateurs sluiten intercom en speakers aan, beveiligingsbedrijven installeren camera\'s. Zo is er een duidelijke scheiding tussen voorwerk (wij) en inregeling (partners).',
+      },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze diensten worden ingezet in diverse branches en sectoren',
       },
       cta: {
         title: 'Bekabeling voor jouw school of zorginstelling',

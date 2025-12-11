@@ -231,6 +231,10 @@ export const nlNL = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze netwerkbekabeling wordt ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor bekabeling?',
         subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
@@ -352,6 +356,10 @@ export const nlNL = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze patchkasten worden ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor een nette patchkast?',
         subtitle: 'Laat ons je patchkast opbouwen of opruimen. Alles netjes, logisch en gedocumenteerd.',
@@ -459,6 +467,10 @@ export const nlNL = {
           },
         ],
       },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze camera-bekabeling wordt ingezet in diverse branches en sectoren',
+      },
       cta: {
         title: 'Klaar voor camera-bekabeling?',
         subtitle: 'Vraag een offerte aan of kies voor een abonnement met gegarandeerde capaciteit en kortingen.',
@@ -564,6 +576,10 @@ export const nlNL = {
             answer: 'Ja, altijd. Je krijgt een opleverdossier met kabelplan, labeling-schema en foto\'s van de eindopstelling. Zo weet jouw audio-installateur precies welke kabel waar naartoe loopt en kunnen zij direct apparatuur aansluiten.',
           },
         ],
+      },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Onze audiokabels worden ingezet in diverse branches en sectoren',
       },
       cta: {
         title: 'Klaar voor audiokabels?',
@@ -676,6 +692,10 @@ export const nlNL = {
             answer: 'Ja, functioneel testen en documenteren is standaard inbegrepen bij al onze bekabelingstrajecten. Geen verrassingen of extra kosten. Het hoort er gewoon bij — zo garanderen we kwaliteit en transparantie bij elke oplevering.',
           },
         ],
+      },
+      sectors: {
+        title: 'Ook interessant voor jouw sector',
+        description: 'Ons meten & certificeren wordt ingezet in diverse branches en sectoren',
       },
       cta: {
         title: 'Klaar voor gecertificeerde oplevering?',

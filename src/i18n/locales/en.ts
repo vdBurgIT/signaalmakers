@@ -233,6 +233,10 @@ export const en: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
+      },
       cta: {
         title: 'Ready for cabling?',
         subtitle: 'Request a quote or choose a subscription with guaranteed capacity and discounts.',
@@ -354,6 +358,10 @@ export const en: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
+      },
       cta: {
         title: 'Ready for a clean patch cabinet?',
         subtitle: 'Let us build or clean up your patch cabinet. Everything neat, logical and documented.',
@@ -461,6 +469,10 @@ export const en: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
+      },
       cta: {
         title: 'Ready for camera cabling?',
         subtitle: 'Request a quote or choose a subscription with guaranteed capacity and discounts.',
@@ -566,6 +578,10 @@ export const en: TranslationKeys = {
             answer: 'Yes, always. You receive a handover package with cable plan, labeling scheme and photos of the final installation. This way your audio installer knows exactly which cable goes where and can connect equipment immediately.',
           },
         ],
+      },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
       },
       cta: {
         title: 'Ready for audio cables?',
@@ -679,6 +695,10 @@ export const en: TranslationKeys = {
           },
         ],
       },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
+      },
       cta: {
         title: 'Ready for certified delivery?',
         subtitle: 'Let us test and document your cabling.',
@@ -789,6 +809,10 @@ export const en: TranslationKeys = {
           ],
         },
       },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
+      },
       cta: {
         title: 'Cabling for your server room or data center',
         subtitle: 'Request a quote for Cat6A cabling, patch cabinets and practical delivery check. Active in Netherlands & Belgium — from new construction to expansion.',
@@ -838,6 +862,10 @@ export const en: TranslationKeys = {
       infoBox: {
         title: 'We handle the infrastructure – MSP/IT handles configuration',
         text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and functional testing. MSP/IT partners install switches, routers, wifi controllers and handle configuration (VLANs, SSIDs, network segmentation). For audio and cameras we work with installers and security companies: we install the cabling, they connect equipment and configure. Clear separation, professional results.',
+      },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
       },
       cta: {
         title: 'Cabling for your office',
@@ -891,6 +919,10 @@ export const en: TranslationKeys = {
       infoBox: {
         title: 'We handle the infrastructure – partners handle the rest',
         text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and functional testing. MSP/IT partners install switches, access points and handle configuration. Audio installers connect speakers, security companies install cameras. This separation ensures clear responsibilities: we deliver a solid physical layer, partners handle equipment and configuration. No overlap, professional results.',
+      },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
       },
       cta: {
         title: 'Cabling for your store or restaurant',
@@ -962,6 +994,10 @@ export const en: TranslationKeys = {
         title: 'We handle the infrastructure – MSP/IT handles the rest',
         text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and certifying. MSP/IT partners install switches, access points and handle configuration. Security companies install cameras and configure systems. This creates a clear separation between infrastructure (us) and configuration (partners).',
       },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
+      },
       cta: {
         title: 'Cabling for your warehouse or logistics environment',
         subtitle: 'From new construction to expansion, from small warehouse to large distribution center: request a quote for robust cabling.',
@@ -1031,6 +1067,10 @@ export const en: TranslationKeys = {
       infoBox: {
         title: 'We handle the infrastructure – MSP/IT handles the rest',
         text: 'SIGNAALMAKERS installs cabling: pulling runs, terminating, labeling and certifying. MSP/IT partners install switches, access points and handle configuration. Audio installers connect intercom and speakers, security companies install cameras. This creates a clear separation between infrastructure (us) and configuration (partners).',
+      },
+      sectors: {
+        title: 'Also relevant for your sector',
+        description: 'Our services are deployed across various industries and sectors',
       },
       cta: {
         title: 'Cabling for your school or care institution',

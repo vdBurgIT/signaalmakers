@@ -2,7 +2,7 @@ import { LocaleLink } from '../../components/LocaleLink';
 import { useState } from 'react';
 import SEO from '../../components/SEO';
 import StructuredData from '../../components/StructuredData';
-import { Cable, CheckCircle2, FileText, ChevronDown, ChevronUp } from 'lucide-react';
+import { Cable, CheckCircle2, FileText, ChevronDown, ChevronUp, Building2, ShoppingBag, Server } from 'lucide-react';
 import BackgroundOverlay from '../../components/BackgroundOverlay';
 import { useI18n } from '../../i18n/I18nContext';
 
@@ -162,6 +162,67 @@ export default function Netwerkbekabeling() {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Relevante sectoren - SEO internal linking */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0E243A] mb-6 text-center">
+              {t.services.network.sectors.title}
+            </h2>
+            <p className="text-gray-600 text-center mb-12 leading-relaxed">
+              {t.services.network.sectors.description}
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <LocaleLink
+                to="/sectoren/kantoren"
+                className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Building2 className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Kantoren
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Cat6/Cat6A bekabeling voor moderne kantooromgevingen
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/sectoren/retail"
+                className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <ShoppingBag className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Retail & Horeca
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Bekabeling voor kassasystemen, wifi en camera's
+                </p>
+              </LocaleLink>
+
+              <LocaleLink
+                to="/sectoren/serverruimtes"
+                className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Server className="w-6 h-6 text-[#FF6A00]" />
+                  <h3 className="text-xl font-bold text-[#0E243A] group-hover:text-[#FF6A00] transition-colors">
+                    Serverruimtes
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Structured cabling voor datacenters en serverruimtes
+                </p>
+              </LocaleLink>
             </div>
           </div>
         </div>
