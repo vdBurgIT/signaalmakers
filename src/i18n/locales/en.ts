@@ -821,23 +821,7 @@ export const en: TranslationKeys = {
         title: 'Relevant services',
         description: 'Our services for this environment',
       },
-            services: {
-        title: 'Relevant services',
-        description: 'Our services for this environment',
-      },
-            services: {
-        title: 'Relevant services',
-        description: 'Our services for this environment',
-      },
-            services: {
-        title: 'Relevant services',
-        description: 'Our services for this environment',
-      },
-            services: {
-        title: 'Relevant services',
-        description: 'Our services for this environment',
-      },
-            cta: {
+      cta: {
         title: 'Cabling for your server room or data center',
         subtitle: 'Request a quote for Cat6A cabling, patch cabinets and practical delivery check. Active in Netherlands & Belgium — from new construction to expansion.',
         button1: 'Request quote',

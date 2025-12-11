@@ -815,23 +815,7 @@ export const nlNL = {
         title: 'Relevante diensten',
         description: 'Onze diensten voor deze omgeving',
       },
-            services: {
-        title: 'Relevante diensten',
-        description: 'Onze diensten voor deze omgeving',
-      },
-            services: {
-        title: 'Relevante diensten',
-        description: 'Onze diensten voor deze omgeving',
-      },
-            services: {
-        title: 'Relevante diensten',
-        description: 'Onze diensten voor deze omgeving',
-      },
-            services: {
-        title: 'Relevante diensten',
-        description: 'Onze diensten voor deze omgeving',
-      },
-            cta: {
+      cta: {
         title: 'Bekabeling voor jouw serverruimte of datacenter',
         subtitle: 'Vraag een offerte aan voor Cat6A bekabeling, patchkasten en praktische oplevercheck. Landelijk werkzaam — van nieuwbouw tot uitbreiding.',
         button1: 'Vraag offerte aan',

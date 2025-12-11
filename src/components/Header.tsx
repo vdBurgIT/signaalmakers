@@ -49,26 +49,28 @@ export default function Header() {
             </LocaleLink>
 
             <div className="relative group">
-              <button className="flex items-center gap-1 hover:text-[#FF6A00] transition-colors">
+              <button className="flex items-center gap-1 hover:text-[#FF6A00] transition-colors py-2">
                 {t.nav.services}
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white text-[#0E243A] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <LocaleLink to="/diensten/netwerkbekabeling" className="block px-4 py-3 hover:bg-gray-100">
-                  {t.nav.servicesMenu.network}
-                </LocaleLink>
-                <LocaleLink to="/diensten/audiokabels" className="block px-4 py-3 hover:bg-gray-100">
-                  {t.nav.servicesMenu.audio}
-                </LocaleLink>
-                <LocaleLink to="/diensten/camera-bekabeling" className="block px-4 py-3 hover:bg-gray-100">
-                  {t.nav.servicesMenu.camera}
-                </LocaleLink>
-                <LocaleLink to="/diensten/patchkasten" className="block px-4 py-3 hover:bg-gray-100">
-                  {t.nav.servicesMenu.patchCabinets}
-                </LocaleLink>
-                <LocaleLink to="/diensten/certificeren" className="block px-4 py-3 hover:bg-gray-100">
-                  {t.nav.servicesMenu.certification}
-                </LocaleLink>
+              <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                <div className="w-64 bg-white text-[#0E243A] rounded-lg shadow-xl">
+                  <LocaleLink to="/diensten/netwerkbekabeling" className="block px-4 py-3 hover:bg-gray-100 rounded-t-lg">
+                    {t.nav.servicesMenu.network}
+                  </LocaleLink>
+                  <LocaleLink to="/diensten/audiokabels" className="block px-4 py-3 hover:bg-gray-100">
+                    {t.nav.servicesMenu.audio}
+                  </LocaleLink>
+                  <LocaleLink to="/diensten/camera-bekabeling" className="block px-4 py-3 hover:bg-gray-100">
+                    {t.nav.servicesMenu.camera}
+                  </LocaleLink>
+                  <LocaleLink to="/diensten/patchkasten" className="block px-4 py-3 hover:bg-gray-100">
+                    {t.nav.servicesMenu.patchCabinets}
+                  </LocaleLink>
+                  <LocaleLink to="/diensten/certificeren" className="block px-4 py-3 hover:bg-gray-100 rounded-b-lg">
+                    {t.nav.servicesMenu.certification}
+                  </LocaleLink>
+                </div>
               </div>
             </div>
 
