@@ -725,6 +725,10 @@ export const nlBE: TranslationKeys = {
     ctaButton2: 'Neem contact op',
     moreInfo: 'Meer info',
     items: {
+      msp: {
+        title: 'MSP Partners',
+        description: 'De uitvoerende partner voor MSP\'s en IT-dienstverleners in België en Nederland. Wij leggen de basis: bekabeling, WiFi en infrastructuur. Jij doet beheer.',
+      },
       serverRooms: {
         title: 'Serverruimtes & Datacenters',
         shortTitle: 'Serverruimtes',
@@ -1101,6 +1105,130 @@ export const nlBE: TranslationKeys = {
         subtitle: 'Van nieuwbouw tot renovatie, van basisschool tot ziekenhuis in België: vraag een offerte aan voor betrouwbare, gedocumenteerde bekabeling.',
         button1: 'Vraag offerte aan',
         button2: 'Neem contact op',
+      },
+    },
+    msp: {
+      seo: {
+        title: 'MSP Partners – Bekabelingspartner voor Managed Service Providers | SIGNAALMAKERS',
+        description: 'Bekabelingspartner achter de schermen voor MSP\'s in België en Nederland. Wij doen alleen het voorwerk: netwerkbekabeling, databekabeling, infrastructuur. Geen concurrentie, white-label mogelijk.',
+        keywords: 'MSP bekabeling, MSP partner, netwerkpartner MSP, white label bekabeling, IT infrastructuur MSP, databekabeling MSP, voorwerk bekabeling',
+      },
+      hero: {
+        badge: 'Voor MSP\'s & IT-dienstverleners',
+        title: 'Signaalmakers – jouw bekabelingspartner achter de schermen',
+        subtitle: 'Jij wilt als Managed Service Provider maar één ding: stabiele, professionele IT-omgevingen opleveren voor je klanten. Wij doen alleen het voorwerk – netwerkbekabeling, databekabeling en infrastructuur – zodat jouw diensten, hardware en moderne werkplekken vlekkeloos landen.',
+        cta: 'Vraag offerte aan',
+        ctaSecondary: 'Neem contact op',
+      },
+      intro: {
+        paragraphs: [
+          'Jij wilt als Managed Service Provider (MSP) maar één ding: stabiele, professionele IT-omgevingen opleveren voor je klanten. Zakelijk internet, veilige firewalls, stabiele wifi, moderne werkplekken, VoIP, printers, security – daar ligt jouw kracht. Je team is goed in ontwerpen, licenties, beheer en support.',
+          'Maar iedere keer loop je tegen dezelfde bottleneck aan: de fysieke basis in het pand. De kabels. De patchkasten. De voorbereiding. De rommel die je eigenlijk níet meer door je eigen engineers wilt laten doen.',
+          'Precies daar komt Signaalmakers in beeld. Wij doen één ding, en dat doen we extreem goed: wij verzorgen alléén het voorwerk – netwerkbekabeling, databekabeling en infrastructuur – en blijven weg van de installatie en configuratie van apparatuur of hardware.',
+        ],
+      },
+      problem: {
+        title: 'Herken je dit als MSP?',
+        items: [
+          'Je verkoopt moeiteloos internet, wifi-oplossingen en moderne werkplekken, maar je mist mensen om alle bekabeling in het pand netjes aan te leggen.',
+          'Je engineers zijn goud waard voor design, configuratie en beheer, maar je zet ze nu te vaak in als "kabeltrekker" of "patchkast-reddingsploeg".',
+          'Je planning klapt dicht op uitrolmomenten, omdat er niemand is die de infrastructuur op locatie strak kan voorbereiden.',
+          'Je wilt niet werken met onderaannemers die óók hardware of diensten aan jouw klant proberen te verkopen.',
+          'Je weet dat er geld blijft liggen, simpelweg omdat je de fysieke laag niet schaalbaar geregeld krijgt.',
+        ],
+      },
+      whatWeDo: {
+        title: 'Wat Signaalmakers wél doet (en juist zo sterk maakt)',
+        intro: 'Wij richten ons volledig op de fysieke laag: professionele netwerkbekabeling en databekabeling in bedrijfsgebouwen, kantoren, winkels, scholen, zorglocaties en horeca in België en Nederland.',
+        sections: [
+          {
+            title: 'Netwerkbekabeling en databekabeling',
+            items: [
+              'UTP-bekabeling (Cat6, Cat6A, Cat7) aanleggen van patchkast naar werkplekken, wifi-posities, balies, kassa\'s, printers, camera-posities en vergaderruimtes.',
+              'Kabelroutes uitdenken en realiseren: van meterkast naar verdiepingen, via plafonds, goten en schachten.',
+              'Afmonteren van datapunten op wandcontactdozen, patchpanelen en keystones.',
+              'Structuur en labeling aanbrengen zodat iedere kabel herleidbaar is: jouw engineer ziet in één oogopslag wat waarheen gaat.',
+            ],
+          },
+          {
+            title: 'Patchkasten en infrastructuur',
+            items: [
+              'Patchkasten opbouwen, herstructureren en "ont-rommelen".',
+              'Kabelmanagement aanbrengen: bundelen, geleiden en netjes wegwerken van kabels.',
+              'Voorbereiding van aansluitposities voor switches, routers, firewalls, wifi-controllers en andere apparatuur (maar zonder deze zelf te plaatsen of in bedrijf te stellen).',
+              'Loze leidingen, doorvoeren en montagepunten realiseren voor huidige en toekomstige toepassingen.',
+            ],
+          },
+          {
+            title: 'Voorwerk voor wifi, audio, camera\'s en andere diensten',
+            items: [
+              'Databekabeling tot aan de plekken waar jij access points, camera\'s, intercoms of audioapparatuur wilt gebruiken.',
+              'Signaallijnen en reservelijnen aanleggen, zodat je later flexibel kunt uitbreiden zonder opnieuw te moeten slopen of trekken.',
+            ],
+          },
+          {
+            title: 'Meten en documenteren',
+            items: [
+              'Metingen uitvoeren op datalijnen zodat je weet dat de infrastructuur op orde is.',
+              'Basisdocumentatie opleveren met kabelnummers, locaties, patchkastindeling en fotoregistratie – ideaal voor servicedesk en remote support.',
+            ],
+          },
+        ],
+      },
+      whatWeDoNot: {
+        title: 'En minstens zo belangrijk: wat wij NIET doen',
+        intro: 'Om het heel scherp te stellen:',
+        items: [
+          'Wij leveren géén hardware: geen modems, routers, switches, firewalls, access points, camera\'s, servers, pc\'s, printers of telefoons.',
+          'Wij installeren géén apparatuur: wij hangen geen access points, camera\'s, speakers of andere devices op en stellen ze niet in bedrijf.',
+          'Wij configureren géén netwerkapparatuur, wifi-oplossingen, cloudomgevingen, werkplekken of security.',
+          'Wij verkopen géén internetabonnementen, licenties, beheercontracten of andere IT-diensten aan jouw klanten.',
+        ],
+        conclusion: 'Signaalmakers stopt bij de wandcontactdoos, het patchpaneel en de geteste kabel. De hardware, het design, de configuratie en het beheer zijn en blijven volledig van jou als MSP of IT-dienstverlener.',
+      },
+      benefits: {
+        title: 'Waarom MSP\'s blij worden van werken met Signaalmakers',
+        subtitle: 'Direct herkenbare voordelen:',
+        items: [
+          {
+            title: 'Heldere rolverdeling',
+            description: 'Signaalmakers = fysieke infrastructuur. Jij = hardware, diensten, contracten en beheer. Geen overlapping, geen concurrentie, geen gedoe.',
+          },
+          {
+            title: 'Geen concurrentie richting jouw klant',
+            description: 'Wij zijn geen IT-dienstverlener en geen MSP. We nemen géén klantrelatie over, leveren geen licenties en verkopen niets aan jouw eindklant. Wij zijn jouw stille bekabelingspartner achter de schermen.',
+          },
+          {
+            title: 'Schaalbaar zonder extra FTE\'s',
+            description: 'Je hoeft geen eigen bekabelingsploeg op te bouwen om te kunnen groeien. Met Signaalmakers als vaste partner kun je meer projecten verkopen en opleveren in België en Nederland, zonder dat je personeelskosten meteen mee exploderen.',
+          },
+          {
+            title: 'Meer focus voor jouw engineers',
+            description: 'Jouw engineers kunnen zich richten op wat jouw MSP uniek maakt: design, configuratie, migraties, beheer, security, monitoring, SLA\'s. Het "vuile werk" van kabels, patchkasten en infrastructuur nemen wij je volledig uit handen.',
+          },
+          {
+            title: 'Minder faalkosten, snellere oplevering',
+            description: 'Omdat de basis klopt – kabels, trajecten, labeling, patchkasten en documentatie – kan jouw engineer sneller, gestructureerder en foutloos installeren. Dat betekent minder storingen, minder herhaalbezoeken en een professionelere oplevering bij jouw klant.',
+          },
+        ],
+      },
+      whiteLabel: {
+        title: 'Altijd onder jouw vlag, desgewenst white-label',
+        description: 'Wij werken 100% voor MSP\'s, system integrators en IT-dienstverleners in België en Nederland. Wil je dat we white-label werken? Dan zijn wij "jullie bekabelingspartner" of "jullie monteurs". Voor de klant ben jij de regisseur – wij zijn de stille kracht op de achtergrond.',
+      },
+      summary: {
+        title: 'Samengevat: zo helpen wij jou als MSP echt vooruit',
+        items: [
+          'Jij verkoopt en beheert internet, wifi, moderne werkplekken en security.',
+          'Jij bepaalt de hardware, het ontwerp en de configuratie.',
+          'Signaalmakers legt de netwerkbekabeling, databekabeling en infrastructuur neer waarop al jouw oplossingen probleemloos kunnen draaien.',
+          'Jij ziet een nette patchkast, goede documentatie en een voorspelbare basis – klaar voor oplevering, beheer en groei.',
+        ],
+        cta: {
+          title: 'Wil je als MSP groeien zonder eigen bekabelingsafdeling, zonder extra FTE\'s en zonder risico op concurrentie richting jouw klant?',
+          description: 'Dan is Signaalmakers de partner waar je naar zocht: wij doen alleen het voorwerk – professioneel, schaalbaar en volledig in jouw voordeel – zodat jouw diensten, hardware en moderne werkplekken straks bij iedere klant vlekkeloos landen.',
+          button: 'Start samenwerking',
+        },
       },
     },
   },

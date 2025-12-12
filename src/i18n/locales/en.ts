@@ -725,6 +725,10 @@ export const en: TranslationKeys = {
     ctaButton2: 'Contact us',
     moreInfo: 'More info',
     items: {
+      msp: {
+        title: 'MSP Partners',
+        description: 'The execution partner for MSPs and IT service providers. We lay the foundation: cabling, WiFi and infrastructure. You handle management.',
+      },
       serverRooms: {
         title: 'Server Rooms & Data Centers',
         shortTitle: 'Server Rooms',
@@ -1101,6 +1105,130 @@ export const en: TranslationKeys = {
         subtitle: 'From new construction to renovation, from elementary school to hospital: request a quote for reliable, documented cabling.',
         button1: 'Request quote',
         button2: 'Contact us',
+      },
+    },
+    msp: {
+      seo: {
+        title: 'MSP Partners – Cabling Partner for Managed Service Providers | SIGNAALMAKERS',
+        description: 'Cabling partner behind the scenes for MSPs. We only do infrastructure work: network cabling, data cabling, infrastructure. No competition, white-label available.',
+        keywords: 'MSP cabling, MSP partner, network partner MSP, white label cabling, IT infrastructure MSP, data cabling MSP, infrastructure work',
+      },
+      hero: {
+        badge: 'For MSPs & IT Service Providers',
+        title: 'Signaalmakers – your cabling partner behind the scenes',
+        subtitle: 'As a Managed Service Provider, you want one thing: deliver stable, professional IT environments to your clients. We only do infrastructure work – network cabling, data cabling and infrastructure – so your services, hardware and modern workplaces land flawlessly.',
+        cta: 'Request quote',
+        ctaSecondary: 'Contact us',
+      },
+      intro: {
+        paragraphs: [
+          'As a Managed Service Provider (MSP), you want one thing: deliver stable, professional IT environments to your clients. Business internet, secure firewalls, stable WiFi, modern workplaces, VoIP, printers, security – that\'s your strength. Your team excels at design, licenses, management and support.',
+          'But every time you hit the same bottleneck: the physical foundation in the building. The cables. The patch cabinets. The preparation. The mess you don\'t want your own engineers handling anymore.',
+          'This is exactly where Signaalmakers comes in. We do one thing, and we do it extremely well: we only handle infrastructure work – network cabling, data cabling and infrastructure – and stay away from equipment or hardware installation and configuration.',
+        ],
+      },
+      problem: {
+        title: 'Do you recognize this as an MSP?',
+        items: [
+          'You sell internet, WiFi solutions and modern workplaces effortlessly, but lack people to install all the cabling in the building properly.',
+          'Your engineers are gold for design, configuration and management, but you\'re using them too often as "cable pullers" or "patch cabinet rescue squads".',
+          'Your planning collapses at rollout moments because there\'s nobody who can prepare the infrastructure on-site properly.',
+          'You don\'t want to work with subcontractors who also try to sell hardware or services to your client.',
+          'You know money is left on the table simply because you can\'t get the physical layer scalably organized.',
+        ],
+      },
+      whatWeDo: {
+        title: 'What Signaalmakers does (and what makes us so strong)',
+        intro: 'We focus entirely on the physical layer: professional network cabling and data cabling in commercial buildings, offices, stores, schools, care facilities and hospitality.',
+        sections: [
+          {
+            title: 'Network cabling and data cabling',
+            items: [
+              'Install UTP cabling (Cat6, Cat6A, Cat7) from patch cabinet to workstations, WiFi locations, desks, cash registers, printers, camera positions and meeting rooms.',
+              'Design and implement cable routes: from distribution panel to floors, via ceilings, trays and shafts.',
+              'Terminate data points on wall outlets, patch panels and keystones.',
+              'Apply structure and labeling so every cable is traceable: your engineer sees at a glance what goes where.',
+            ],
+          },
+          {
+            title: 'Patch cabinets and infrastructure',
+            items: [
+              'Build, restructure and "de-clutter" patch cabinets.',
+              'Install cable management: bundle, guide and neatly hide cables.',
+              'Prepare connection positions for switches, routers, firewalls, WiFi controllers and other equipment (but without placing or commissioning them ourselves).',
+              'Install conduits, penetrations and mounting points for current and future applications.',
+            ],
+          },
+          {
+            title: 'Infrastructure for WiFi, audio, cameras and other services',
+            items: [
+              'Data cabling to locations where you want to use access points, cameras, intercoms or audio equipment.',
+              'Install signal lines and reserve lines, so you can expand flexibly later without having to demolish or pull again.',
+            ],
+          },
+          {
+            title: 'Measure and document',
+            items: [
+              'Perform measurements on data lines so you know the infrastructure is in order.',
+              'Deliver basic documentation with cable numbers, locations, patch cabinet layout and photo registration – ideal for service desk and remote support.',
+            ],
+          },
+        ],
+      },
+      whatWeDoNot: {
+        title: 'And just as important: what we DON\'T do',
+        intro: 'To be very clear:',
+        items: [
+          'We supply NO hardware: no modems, routers, switches, firewalls, access points, cameras, servers, PCs, printers or phones.',
+          'We install NO equipment: we don\'t mount access points, cameras, speakers or other devices and don\'t commission them.',
+          'We configure NO network equipment, WiFi solutions, cloud environments, workplaces or security.',
+          'We sell NO internet subscriptions, licenses, management contracts or other IT services to your clients.',
+        ],
+        conclusion: 'Signaalmakers stops at the wall outlet, patch panel and tested cable. The hardware, design, configuration and management are and remain entirely yours as MSP or IT service provider.',
+      },
+      benefits: {
+        title: 'Why MSPs are happy working with Signaalmakers',
+        subtitle: 'Directly recognizable advantages:',
+        items: [
+          {
+            title: 'Clear role division',
+            description: 'Signaalmakers = physical infrastructure. You = hardware, services, contracts and management. No overlap, no competition, no hassle.',
+          },
+          {
+            title: 'No competition toward your client',
+            description: 'We\'re not an IT service provider or MSP. We don\'t take over client relationships, deliver no licenses and sell nothing to your end client. We\'re your silent cabling partner behind the scenes.',
+          },
+          {
+            title: 'Scalable without additional FTEs',
+            description: 'You don\'t need to build your own cabling team to grow. With Signaalmakers as a permanent partner, you can sell and deliver more projects without your personnel costs immediately exploding.',
+          },
+          {
+            title: 'More focus for your engineers',
+            description: 'Your engineers can focus on what makes your MSP unique: design, configuration, migrations, management, security, monitoring, SLAs. We take the "dirty work" of cables, patch cabinets and infrastructure completely off your hands.',
+          },
+          {
+            title: 'Reduced failure costs, faster delivery',
+            description: 'Because the foundation is correct – cables, routes, labeling, patch cabinets and documentation – your engineer can install faster, more structured and error-free. That means fewer failures, fewer repeat visits and a more professional delivery to your client.',
+          },
+        ],
+      },
+      whiteLabel: {
+        title: 'Always under your brand, white-label if desired',
+        description: 'We work 100% for MSPs, system integrators and IT service providers. Want us to work white-label? Then we\'re "your cabling partner" or "your installers". To the client you\'re the director – we\'re the silent force in the background.',
+      },
+      summary: {
+        title: 'In summary: how we really help you forward as an MSP',
+        items: [
+          'You sell and manage internet, WiFi, modern workplaces and security.',
+          'You determine the hardware, design and configuration.',
+          'Signaalmakers installs the network cabling, data cabling and infrastructure on which all your solutions can run flawlessly.',
+          'You see a neat patch cabinet, good documentation and a predictable foundation – ready for delivery, management and growth.',
+        ],
+        cta: {
+          title: 'Want to grow as an MSP without your own cabling department, without additional FTEs and without risk of competition toward your client?',
+          description: 'Then Signaalmakers is the partner you were looking for: we only do infrastructure work – professional, scalable and entirely in your favor – so your services, hardware and modern workplaces land flawlessly at every client.',
+          button: 'Start partnership',
+        },
       },
     },
   },

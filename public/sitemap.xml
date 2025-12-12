@@ -5,182 +5,189 @@
 
   <url>
     <loc>https://signaalmakers.nl/</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/diensten</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/abonnementen</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/over-ons</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/faq</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/contact</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/offerte</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/sectoren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/sitemap</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/diensten/netwerkbekabeling</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/diensten/audiokabels</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/diensten/camera-bekabeling</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/diensten/patchkasten</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/diensten/certificeren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
+    <loc>https://signaalmakers.nl/sectoren/msp</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://signaalmakers.nl/sectoren/serverruimtes</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/sectoren/kantoren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/sectoren/retail</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/sectoren/magazijn</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/sectoren/onderwijs</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/msp-bekabelingspartner</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/netwerkbekabeling-belangrijkste-laag</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/wifi-bekabeling-uitgelegd</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/bekabeling-moderniseren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/kabelplan-essentieel</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/blog/kabelmanagement-documentatie</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -190,182 +197,189 @@
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/diensten</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/abonnementen</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/over-ons</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/faq</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/contact</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/offerte</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/sectoren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/sitemap</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/diensten/netwerkbekabeling</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/diensten/audiokabels</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/diensten/camera-bekabeling</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/diensten/patchkasten</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/diensten/certificeren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
+    <loc>https://signaalmakers.nl/nl-be/sectoren/msp</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://signaalmakers.nl/nl-be/sectoren/serverruimtes</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/sectoren/kantoren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/sectoren/retail</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/sectoren/magazijn</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/sectoren/onderwijs</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog/msp-bekabelingspartner</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog/netwerkbekabeling-belangrijkste-laag</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog/wifi-bekabeling-uitgelegd</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog/bekabeling-moderniseren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog/kabelplan-essentieel</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/nl-be/blog/kabelmanagement-documentatie</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -375,182 +389,189 @@
 
   <url>
     <loc>https://signaalmakers.nl/en/</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/diensten</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/abonnementen</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/over-ons</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/faq</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/contact</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/offerte</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/sectoren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/sitemap</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/diensten/netwerkbekabeling</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/diensten/audiokabels</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/diensten/camera-bekabeling</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/diensten/patchkasten</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/diensten/certificeren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
+    <loc>https://signaalmakers.nl/en/sectoren/msp</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://signaalmakers.nl/en/sectoren/serverruimtes</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/sectoren/kantoren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/sectoren/retail</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/sectoren/magazijn</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/sectoren/onderwijs</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog/msp-bekabelingspartner</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog/netwerkbekabeling-belangrijkste-laag</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog/wifi-bekabeling-uitgelegd</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog/bekabeling-moderniseren</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog/kabelplan-essentieel</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://signaalmakers.nl/en/blog/kabelmanagement-documentatie</loc>
-    <lastmod>2025-12-10</lastmod>
+    <lastmod>2025-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

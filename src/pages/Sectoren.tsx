@@ -1,6 +1,6 @@
 import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
-import { Building2, ShoppingBag, PackageSearch, GraduationCap, Server, Cable, Camera, FileCheck } from 'lucide-react';
+import { Building2, ShoppingBag, PackageSearch, GraduationCap, Server, Users, Cable, Camera, FileCheck } from 'lucide-react';
 import BackgroundOverlay from '../components/BackgroundOverlay';
 import { useTranslation } from '../i18n';
 
@@ -8,6 +8,14 @@ export default function Sectoren() {
   const t = useTranslation();
 
   const sectoren = [
+    {
+      icon: Users,
+      title: t.sectoren.items.msp.title,
+      description: t.sectoren.items.msp.description,
+      link: '/sectoren/msp',
+      color: 'from-[#FF6A00] to-[#E55F00]',
+      featured: true
+    },
     {
       icon: Server,
       title: t.sectoren.items.serverRooms.title,

@@ -31,6 +31,7 @@ const FAQ = lazy(() => import(/* webpackChunkName: "faq" */ './pages/FAQ'));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
 const Offerte = lazy(() => import(/* webpackChunkName: "offerte" */ './pages/Offerte'));
 const Sectoren = lazy(() => import(/* webpackChunkName: "sectoren" */ './pages/Sectoren'));
+const MSP = lazy(() => import(/* webpackChunkName: "msp" */ './pages/sectoren/MSP'));
 const Serverruimtes = lazy(() => import(/* webpackChunkName: "serverruimtes" */ './pages/sectoren/Serverruimtes'));
 const Kantoren = lazy(() => import(/* webpackChunkName: "kantoren" */ './pages/sectoren/Kantoren'));
 const RetailHoreca = lazy(() => import(/* webpackChunkName: "retail" */ './pages/sectoren/Retail'));
@@ -74,6 +75,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/offerte" element={<Offerte />} />
                 <Route path="/sectoren" element={<Sectoren />} />
+                <Route path="/sectoren/msp" element={<MSP />} />
                 <Route path="/sectoren/serverruimtes" element={<Serverruimtes />} />
                 <Route path="/sectoren/kantoren" element={<Kantoren />} />
                 <Route path="/sectoren/retail" element={<RetailHoreca />} />
@@ -97,6 +99,7 @@ function App() {
                 <Route path="/nl-be/contact" element={<Contact />} />
                 <Route path="/nl-be/offerte" element={<Offerte />} />
                 <Route path="/nl-be/sectoren" element={<Sectoren />} />
+                <Route path="/nl-be/sectoren/msp" element={<MSP />} />
                 <Route path="/nl-be/sectoren/serverruimtes" element={<Serverruimtes />} />
                 <Route path="/nl-be/sectoren/kantoren" element={<Kantoren />} />
                 <Route path="/nl-be/sectoren/retail" element={<RetailHoreca />} />
@@ -120,6 +123,7 @@ function App() {
                 <Route path="/en/contact" element={<Contact />} />
                 <Route path="/en/offerte" element={<Offerte />} />
                 <Route path="/en/sectoren" element={<Sectoren />} />
+                <Route path="/en/sectoren/msp" element={<MSP />} />
                 <Route path="/en/sectoren/serverruimtes" element={<Serverruimtes />} />
                 <Route path="/en/sectoren/kantoren" element={<Kantoren />} />
                 <Route path="/en/sectoren/retail" element={<RetailHoreca />} />

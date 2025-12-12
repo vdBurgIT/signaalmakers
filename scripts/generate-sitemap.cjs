@@ -42,6 +42,7 @@ const pages = [
   { path: '/diensten/certificeren', priority: 0.7, changefreq: 'monthly' },
 
   // Sector pages
+  { path: '/sectoren/msp', priority: 0.9, changefreq: 'weekly' },
   { path: '/sectoren/serverruimtes', priority: 0.7, changefreq: 'monthly' },
   { path: '/sectoren/kantoren', priority: 0.7, changefreq: 'monthly' },
   { path: '/sectoren/retail', priority: 0.7, changefreq: 'monthly' },
