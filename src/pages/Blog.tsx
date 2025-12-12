@@ -1,12 +1,46 @@
 import { LocaleLink } from '../components/LocaleLink';
 import SEO from '../components/SEO';
+import StructuredData from '../components/StructuredData';
 import BackgroundOverlay from '../components/BackgroundOverlay';
+import { Calendar } from 'lucide-react';
 import { getBlogPostsByLocale } from '../data/blogPosts';
 import { useI18n } from '../i18n';
+
+// Helper function to convert Dutch date to ISO format
+function convertToISO(dutchDate: string): string {
+  const months: Record<string, string> = {
+    'januari': '01', 'februari': '02', 'maart': '03', 'april': '04',
+    'mei': '05', 'juni': '06', 'juli': '07', 'augustus': '08',
+    'september': '09', 'oktober': '10', 'november': '11', 'december': '12'
+  };
+  const parts = dutchDate.split(' ');
+  const day = parts[0].padStart(2, '0');
+  const month = months[parts[1]];
+  const year = parts[2];
+  return `${year}-${month}-${day}`;
+}
 
 export default function Blog() {
   const { t, locale } = useI18n();
   const posts = getBlogPostsByLocale(locale);
+
+  // Blog CollectionPage structured data
+  const blogSchema = {
+    name: t.seo.blog.title,
+    description: t.seo.blog.description,
+    url: 'https://signaalmakers.nl/blog',
+    blogPost: posts.slice(0, 10).map(post => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: convertToISO(post.date),
+      author: {
+        '@type': 'Organization',
+        name: 'Signaalmakers'
+      },
+      url: `https://signaalmakers.nl/blog/${post.slug}`
+    }))
+  };
 
   return (
     <>
@@ -21,7 +55,8 @@ export default function Blog() {
           { name: t.nav.blog, item: 'https://signaalmakers.nl/blog' }
         ]}
       />
-      <div>
+      <StructuredData type="Blog" data={blogSchema} />
+      <main>
       <section className="bg-[#0E243A] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <BackgroundOverlay variant="data" density="light" color="blue" />
@@ -45,10 +80,14 @@ export default function Blog() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {posts.map((post, index) => (
                 <article key={index} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="h-48 bg-gradient-to-br from-[#0E243A] to-[#1a3a5a]"></div>
+                  <div className="h-48 bg-gradient-to-br from-[#0E243A] to-[#1a3a5a]" role="img" aria-label={post.title}></div>
                   <div className="p-6">
                     <div className="flex items-center gap-4 mb-3">
                       <span className="text-sm font-semibold text-[#FF6A00]">{post.category}</span>
+                      <span className="flex items-center text-sm text-gray-500">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {post.date}
+                      </span>
                     </div>
                     <h2 className="text-xl font-bold text-[#0E243A] mb-3">
                       {post.title}
@@ -70,7 +109,7 @@ export default function Blog() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
     </>
   );
 }
