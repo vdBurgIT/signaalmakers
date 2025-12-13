@@ -16,6 +16,7 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         name: BUSINESS_INFO.name,
         legalName: BUSINESS_INFO.legalName,
         alternateName: BUSINESS_INFO.alternateName, // BELANGRIJK: Merkvarianten voor Google brand recognition
+        slogan: 'Jouw projecten, onze zekerheid', // Merkslogan (consistent door hele site)
         description: BUSINESS_INFO.description.nl,
         url: BUSINESS_INFO.contact.url,
         logo: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`,
