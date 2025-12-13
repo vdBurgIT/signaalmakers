@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ErrorBoundaryWithI18n from './components/ErrorBoundaryWithI18n';
 import { I18nProvider } from './i18n';
+import StructuredData from './components/StructuredData';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -47,6 +48,9 @@ function App() {
         <I18nProvider>
           <ErrorBoundaryWithI18n>
             <ScrollToTop />
+            {/* Site-wide structured data for brand/entity SEO */}
+            <StructuredData type="WebSite" />
+            <StructuredData type="LocalBusiness" />
             <div className="min-h-screen flex flex-col">
               <Header />
               <main className="flex-grow">

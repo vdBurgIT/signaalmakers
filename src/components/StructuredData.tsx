@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { BUSINESS_INFO, getPostalAddress, getGeoCoordinates } from '../config/business';
 
 interface StructuredDataProps {
   type?: 'LocalBusiness' | 'WebSite' | 'FAQPage' | 'HowTo' | 'Article' | 'Blog';
@@ -11,27 +12,19 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
       return {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        '@id': 'https://signaalmakers.nl/#organization',
-        name: 'SIGNAALMAKERS',
-        description: 'Specialist in databekabeling en netwerkbekabeling (Cat6/Cat6A), audiokabels, camera-bekabeling, patchkasten en certificering voor bedrijven in heel Nederland.',
-        url: 'https://signaalmakers.nl',
-        logo: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png',
-        image: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png',
-        telephone: '+31 6 45251333',
-        email: 'info@signaalmakers.nl',
-        vatID: '82907196',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'Bredaseweg 108A',
-          postalCode: '4902 NS',
-          addressLocality: "Oosterhout",
-          addressCountry: 'NL'
-        },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: '51.64011591833564',
-          longitude: '4.8473775344267365',
-        },
+        '@id': `${BUSINESS_INFO.contact.url}/#organization`,
+        name: BUSINESS_INFO.name,
+        legalName: BUSINESS_INFO.legalName,
+        alternateName: BUSINESS_INFO.alternateName, // BELANGRIJK: Merkvarianten voor Google brand recognition
+        description: BUSINESS_INFO.description.nl,
+        url: BUSINESS_INFO.contact.url,
+        logo: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`,
+        image: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`,
+        telephone: BUSINESS_INFO.contact.telephone,
+        email: BUSINESS_INFO.contact.email,
+        vatID: BUSINESS_INFO.registration.kvk,
+        address: getPostalAddress(), // Centrale source: alleen Bredaseweg 108A
+        geo: getGeoCoordinates(),
         areaServed: [
           { '@type': 'AdministrativeArea', name: 'Zuid-Holland', '@id': 'https://nl.wikipedia.org/wiki/Zuid-Holland' },
           { '@type': 'AdministrativeArea', name: 'Noord-Holland', '@id': 'https://nl.wikipedia.org/wiki/Noord-Holland' },
@@ -144,14 +137,15 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
       return {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        '@id': 'https://signaalmakers.nl/#website',
-        url: 'https://signaalmakers.nl',
-        name: 'SIGNAALMAKERS',
-        description: 'Specialist in databekabeling en netwerkbekabeling door heel Nederland',
+        '@id': `${BUSINESS_INFO.contact.url}/#website`,
+        url: BUSINESS_INFO.contact.url,
+        name: BUSINESS_INFO.name,
+        alternateName: BUSINESS_INFO.alternateName, // BELANGRIJK: Merkvarianten voor Google brand recognition
+        description: BUSINESS_INFO.description.nl,
         publisher: {
-          '@id': 'https://signaalmakers.nl/#organization'
+          '@id': `${BUSINESS_INFO.contact.url}/#organization`
         },
-        inLanguage: 'nl-NL',
+        inLanguage: ['nl-NL', 'nl-BE', 'en-US'], // Meertalig support
         ...data
       };
     }
@@ -178,17 +172,17 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         '@type': 'Article',
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://signaalmakers.nl/#organization',
-          name: 'SIGNAALMAKERS',
+          '@id': `${BUSINESS_INFO.contact.url}/#organization`,
+          name: BUSINESS_INFO.name,
           logo: {
             '@type': 'ImageObject',
-            url: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png'
+            url: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`
           }
         },
         author: {
           '@type': 'Organization',
-          '@id': 'https://signaalmakers.nl/#organization',
-          name: 'SIGNAALMAKERS'
+          '@id': `${BUSINESS_INFO.contact.url}/#organization`,
+          name: BUSINESS_INFO.name
         },
         ...data
       };
@@ -200,8 +194,8 @@ export default function StructuredData({ type = 'LocalBusiness', data }: Structu
         '@type': 'Blog',
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://signaalmakers.nl/#organization',
-          name: 'SIGNAALMAKERS'
+          '@id': `${BUSINESS_INFO.contact.url}/#organization`,
+          name: BUSINESS_INFO.name
         },
         ...data
       };

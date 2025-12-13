@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Hreflang, getCanonicalUrl } from '../i18n';
 import { useI18n } from '../i18n';
+import { BUSINESS_INFO, getPostalAddress, getGeoCoordinates } from '../config/business';
 
 interface BreadcrumbItem {
   name: string;
@@ -70,7 +71,8 @@ const SEO = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content={ogLocale} />
-      <meta property="og:site_name" content="SIGNAALMAKERS" />
+      <meta property="og:site_name" content={BUSINESS_INFO.seo.siteName} />
+      <meta name="application-name" content={BUSINESS_INFO.seo.siteName} />
 
       {/* Article specific tags */}
       {article && (
@@ -117,27 +119,17 @@ const SEO = ({
                 },
               }
             : {
-                name: 'SIGNAALMAKERS',
+                name: BUSINESS_INFO.name,
+                alternateName: BUSINESS_INFO.alternateName, // Merkvarianten voor brand recognition
                 slogan: 'Jouw projecten, onze zekerheid',
                 description: description,
                 url: url,
-                logo: 'https://signaalmakers.nl/images/logo/logo_signaalmakers_fc.png',
+                logo: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`,
                 image: image,
-                telephone: '+31 6 45251333',
-                email: 'info@signaalmakers.nl',
-                address: {
-                  '@type': 'PostalAddress',
-                  streetAddress: 'Bredaseweg 108A',
-                  postalCode: '4902 NS',
-                  addressLocality: 'Oosterhout',
-                  addressRegion: 'Noord-Brabant',
-                  addressCountry: 'NL',
-                },
-                geo: {
-                  '@type': 'GeoCoordinates',
-                  latitude: '51.64011591833564',
-                  longitude: '4.8473775344267365',
-                },
+                telephone: BUSINESS_INFO.contact.telephone,
+                email: BUSINESS_INFO.contact.email,
+                address: getPostalAddress(), // Centrale source: alleen Bredaseweg 108A
+                geo: getGeoCoordinates(),
                 areaServed: [
                   { '@type': 'AdministrativeArea', name: 'Zuid-Holland', '@id': 'https://nl.wikipedia.org/wiki/Zuid-Holland' },
                   { '@type': 'AdministrativeArea', name: 'Noord-Holland', '@id': 'https://nl.wikipedia.org/wiki/Noord-Holland' },
