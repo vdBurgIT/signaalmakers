@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Hreflang, getCanonicalUrl } from '../i18n';
 import { useI18n } from '../i18n';
-import { BUSINESS_INFO, getPostalAddress, getGeoCoordinates } from '../config/business';
+import { BUSINESS_INFO } from '../config/business';
 
 interface BreadcrumbItem {
   name: string;
@@ -101,70 +101,34 @@ const SEO = ({
       {/* Canonical URL - Now locale-aware! */}
       <link rel="canonical" href={canonicalUrl} />
 
-      {/* JSON-LD Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': type === 'article' ? 'Article' : 'Organization',
-          ...(type === 'article'
-            ? {
-                headline: fullTitle,
-                description: description,
-                image: image,
-                datePublished: article?.publishedTime,
-                dateModified: article?.modifiedTime,
-                author: {
-                  '@type': 'Organization',
-                  name: article?.author || 'SIGNAALMAKERS',
-                },
-              }
-            : {
-                name: BUSINESS_INFO.name,
-                alternateName: BUSINESS_INFO.alternateName, // Merkvarianten voor brand recognition
-                slogan: 'Jouw projecten, onze zekerheid',
-                description: description,
-                url: url,
-                logo: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`,
-                image: image,
-                telephone: BUSINESS_INFO.contact.telephone,
-                email: BUSINESS_INFO.contact.email,
-                address: getPostalAddress(), // Centrale source: alleen Bredaseweg 108A
-                geo: getGeoCoordinates(),
-                areaServed: [
-                  { '@type': 'AdministrativeArea', name: 'Zuid-Holland', '@id': 'https://nl.wikipedia.org/wiki/Zuid-Holland' },
-                  { '@type': 'AdministrativeArea', name: 'Noord-Holland', '@id': 'https://nl.wikipedia.org/wiki/Noord-Holland' },
-                  { '@type': 'AdministrativeArea', name: 'Utrecht', '@id': 'https://nl.wikipedia.org/wiki/Utrecht_(provincie)' },
-                  { '@type': 'AdministrativeArea', name: 'Noord-Brabant', '@id': 'https://nl.wikipedia.org/wiki/Noord-Brabant' },
-                  { '@type': 'AdministrativeArea', name: 'Gelderland', '@id': 'https://nl.wikipedia.org/wiki/Gelderland' },
-                  { '@type': 'AdministrativeArea', name: 'Overijssel', '@id': 'https://nl.wikipedia.org/wiki/Overijssel' },
-                  { '@type': 'AdministrativeArea', name: 'Limburg', '@id': 'https://nl.wikipedia.org/wiki/Limburg_(Nederland)' },
-                  { '@type': 'AdministrativeArea', name: 'Friesland', '@id': 'https://nl.wikipedia.org/wiki/Friesland' },
-                  { '@type': 'AdministrativeArea', name: 'Groningen', '@id': 'https://nl.wikipedia.org/wiki/Groningen_(provincie)' },
-                  { '@type': 'AdministrativeArea', name: 'Drenthe', '@id': 'https://nl.wikipedia.org/wiki/Drenthe' },
-                  { '@type': 'AdministrativeArea', name: 'Flevoland', '@id': 'https://nl.wikipedia.org/wiki/Flevoland' },
-                  { '@type': 'AdministrativeArea', name: 'Zeeland', '@id': 'https://nl.wikipedia.org/wiki/Zeeland' },
-                  { '@type': 'City', name: 'Amsterdam', '@id': 'https://nl.wikipedia.org/wiki/Amsterdam' },
-                  { '@type': 'City', name: 'Rotterdam', '@id': 'https://nl.wikipedia.org/wiki/Rotterdam' },
-                  { '@type': 'City', name: 'Den Haag', '@id': 'https://nl.wikipedia.org/wiki/Den_Haag' },
-                  { '@type': 'City', name: 'Utrecht', '@id': 'https://nl.wikipedia.org/wiki/Utrecht_(stad)' },
-                  { '@type': 'City', name: 'Eindhoven', '@id': 'https://nl.wikipedia.org/wiki/Eindhoven' },
-                  { '@type': 'City', name: 'Tilburg', '@id': 'https://nl.wikipedia.org/wiki/Tilburg' },
-                  { '@type': 'City', name: 'Groningen', '@id': 'https://nl.wikipedia.org/wiki/Groningen_(stad)' },
-                  { '@type': 'City', name: 'Almere', '@id': 'https://nl.wikipedia.org/wiki/Almere' },
-                  { '@type': 'City', name: 'Breda', '@id': 'https://nl.wikipedia.org/wiki/Breda' },
-                  { '@type': 'City', name: 'Nijmegen', '@id': 'https://nl.wikipedia.org/wiki/Nijmegen' },
-                  { '@type': 'City', name: 'Arnhem', '@id': 'https://nl.wikipedia.org/wiki/Arnhem' },
-                  { '@type': 'City', name: 'Haarlem', '@id': 'https://nl.wikipedia.org/wiki/Haarlem' },
-                  { '@type': 'City', name: 'Enschede', '@id': 'https://nl.wikipedia.org/wiki/Enschede' },
-                  { '@type': 'City', name: 'Apeldoorn', '@id': 'https://nl.wikipedia.org/wiki/Apeldoorn' }
-                ],
-                sameAs: [
-                  'https://www.linkedin.com/company/signaalmakers',
-                  'https://www.instagram.com/signaalmakers/',
-                ],
-              }),
-        })}
-      </script>
+      {/* JSON-LD Structured Data - Only for Articles (site-wide WebSite+LocalBusiness in App.tsx) */}
+      {type === 'article' && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: fullTitle,
+            description: description,
+            image: image,
+            datePublished: article?.publishedTime,
+            dateModified: article?.modifiedTime,
+            author: {
+              '@type': 'Organization',
+              '@id': `${BUSINESS_INFO.contact.url}/#organization`,
+              name: BUSINESS_INFO.name,
+            },
+            publisher: {
+              '@type': 'Organization',
+              '@id': `${BUSINESS_INFO.contact.url}/#organization`,
+              name: BUSINESS_INFO.name,
+              logo: {
+                '@type': 'ImageObject',
+                url: `${BUSINESS_INFO.contact.url}/images/logo/logo_signaalmakers_fc.png`,
+              },
+            },
+          })}
+        </script>
+      )}
 
       {/* Breadcrumb JSON-LD */}
       {breadcrumbs && breadcrumbs.length > 0 && (
